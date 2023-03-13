@@ -81,6 +81,19 @@ h3 {
     text-transform: uppercase;
 }
 
+h4 {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 2vw;
+    line-height: 74.5%;
+    /* or 18px */
+
+ 
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+}
+
 p {
     
         font-family: 'Barlow';
