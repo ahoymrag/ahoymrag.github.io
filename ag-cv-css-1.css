@@ -123,6 +123,16 @@ p {
 
 }
 
+.centeredDiv {
+    width:100%;
+    height:auto;
+    display:flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+}
+
 .subHeader-text {
     font-family: 'Barlow';
     font-style: normal;
