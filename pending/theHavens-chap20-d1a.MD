@@ -37,6 +37,6 @@ I figured the best place to start would be somewhere everyone knew. I decided th
 
 I started an e-mail thread - but then worried that no one would check their email - so I started a groupme - but then worried that it was too european - so I landed on a SMS group chat and praised God for the wild chance that everyone had an iphone - and I can text instructions from my computer. Amen.
 
-As for the boat. Wasn't sure quiet yet on it - but we marched forward with the plan
+As for the boat. Wasn't ssure quiet yet on it - but we marched forward with the plan
 
 Dave Gunn worked as a caddy, whose caddy master technically had a boat, so - perhaps that was a possiblity of using the Marina off branford. I know that we probably wouldn't be able to get away with renting something - we needed someone who would cover for us unloading and loading. Saying that perhaps he had to get a particular boating aspect of it going i thought it'd be best.
