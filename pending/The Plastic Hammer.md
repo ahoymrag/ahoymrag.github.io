@@ -5,7 +5,8 @@ Above THIS line - is the table of contents
 
 Above this LINE - is a draft for the table of contents
 
-Draft of Table of Contents
+## Draft of Table of Contents
+
 Who cares why I wrote this book?
 What Nostaliga tells us
 The computer problem 
@@ -30,9 +31,11 @@ Will there be competition in heaven?
 The road to victory
 The Plastic Hammer
 
-Above this Line - is like copy copy 
+## START OF COPY COPY 
 
-Below THIS line - are draft drafts (April 2023 and beyond)
+## Above this Line - is like copy copy 
+
+## Below THIS line - are draft drafts (April 2023 and beyond)
 
 Beyond this draft
 
@@ -43,6 +46,8 @@ I find myself skipping those preludes, introductions and skip to chapter 1. Some
 
 What I hope this book is not
 So sort of apologetic where I compare the culture of the modern world and point fingers . I will be instead point elbows - for they can do more damage - lest to the temple. 
+
+I hope this book doesn't bring folly into the world. Bad theology. I hope it is not revered to the point that the author becomes more important than the subject matter. I hope that everyone who reads it, as I type this in markdown on computer code - could find light in it. 
 
 
 Nostalgia Tells Us

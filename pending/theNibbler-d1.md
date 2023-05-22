@@ -1,12 +1,12 @@
 
 
 
-The Nibbler
+# The Nibbler
 Written for the screen by Alex Gonzalez
 
 
 
-"The Nibbler" is an action-packed crime thriller that follows the journey of Rob Meglio, a determined detective known as The Nibbler, as he unravels a web of secrets and confronts his past. Faced with a series of mysterious robberies in the city, Rob finds himself entangled in a dangerous game orchestrated by his arch-nemesis, The Ghost.
+ "The Nibbler" is an action-packed crime thriller that follows the journey of Rob Meglio, a determined detective known as The Nibbler, as he unravels a web of secrets and confronts his past. Faced with a series of mysterious robberies in the city, Rob finds himself entangled in a dangerous game orchestrated by his arch-nemesis, The Ghost.
 
 “The Nibbler : Shadows of Deception” is a gripping mystery thriller that delves into a web of secrets and deceit surrounding the mayor of New Haven, his past as a child actor, and the emergence of a ruthless killer known as The Weevil. As the city teeters on the brink of scandal, Rob Meglio, aka The Nibbler, finds himself entangled in a complex web of conspiracies.
 
@@ -214,7 +214,20 @@ Themes
 Music
 
 
-Script
+# Script
+
+## Screenplay Draft 1 
+
+Title: The Nibbler
+Fade in:
+
+### EXT. DARK ALLEY - NIGHT
+We see ROB MEGLIO as a hard-boiled detective, dressed in a fedora hat and a trench coat, walking down a dark alley. He takes out his magnifying glass and begins searching for clues.
+
+ROB (voiceover): They call me the Nibbler. I'm a detective, and I'm on the trail of a scandal.
+
+He starts by examining a wall around Yale. 
+
 
 
 
@@ -601,7 +614,7 @@ Next sceen - asked it to write
 
 FADE IN:
 INT. ROB'S APARTMENT - NIGHT
-Rob is sitting in his armchair, staring at the wall. He looks tired and defeated.
+Rob is sitting in his armchair, staring at the wall. He looks tired and defeated. He walks over
 ROB (voiceover):
 I've been on this case for months. Every lead I follow ends up being a dead end.
 Rob takes a sip of his whiskey and looks at the picture of his late wife on the table.
