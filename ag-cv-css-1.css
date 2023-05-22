@@ -2,6 +2,9 @@
 
 /* FONTS H1, H3 = BARLOW */
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700;800;900&display=swap');
+:root {
+    white: #fff;
+}
 
 
 html {
@@ -28,12 +31,16 @@ nav {
     bottom:0;
     width:100%;
     z-index: 10;
+    background-color:var(--white)!important;
 
 }
 
 nav a {
     text-decoration: none;
     color:black;
+    background-color:white;
+    border-style:solid;
+    border-color:black;
     
 }
 
@@ -211,6 +218,7 @@ p {
     width: 100vw;
     max-height:20vh;
     display:flex;
+    flex-direction: column;
     justify-content: center;
     align-items:center;
 
@@ -308,6 +316,16 @@ p {
 
 .jobs_title_h1 {
     text-align:center;
-}.  
+}
 
- 
+.breadCrumb-wrap
+{
+    width:100%!important;
+    height:25px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    background-color:rgba(127, 28, 28, 0);
+}
+
