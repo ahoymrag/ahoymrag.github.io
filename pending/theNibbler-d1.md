@@ -224,16 +224,24 @@ Fade in:
 ### EXT. DARK ALLEY - NIGHT
 We see ROB MEGLIO as a hard-boiled detective, dressed in a fedora hat and a trench coat, walking down a dark alley. He takes out his magnifying glass and begins searching for clues.
 
-* ROB (voiceover): 
+> ROB (voiceover): 
 
-In the depths of my memories lie moments of glory, when I basked in the praise of the masses. But now, I question whether that applause was mere facade, veiling the truth that lurks in the shadows.
+>> In the depths of my memories lie moments of glory, when I basked in the praise of the masses. But now, I question whether that applause was mere facade, veiling the truth that lurks in the shadows.
 
-New Haven... a city draped in shadows, where the scales of justice tremble upon a fragile precipice. Within me resides an unyielding pursuit of truth, burdened by the weight of an elusive past.
+>> New Haven... a city draped in shadows, where the scales of justice tremble upon a fragile precipice. Within me resides an unyielding pursuit of truth, burdened by the weight of an elusive past.
 
-I am Rob Meglio, once celebrated as The Nibbler, a hero whose name resonated through the hearts of the public. The mayor himself praised my deeds, but now I question where I truly stand in the delicate balance of right and wrong.
+>> I am Rob Meglio, once celebrated as The Nibbler, a hero whose name resonated through the hearts of the public. The mayor himself praised my deeds, but now I question where I truly stand in the delicate balance of right and wrong.
 
 
+## INT. POLICE DEPARTMENT - DAY
 
+A bustling police department filled with detectives and officers working diligently. ROB MEGLIO (40s, sharp-witted, determined), known as The Nibbler, walks briskly through the bustling room. A YOUNG ROOKIE DETECTIVE (20s, eager, inexperienced), JAMES CARTER, follows closely behind, wearing a freshly pressed suit.
+
+Rob stops at his cluttered desk and gestures for James to join him. James nervously approaches, clutching a notepad and pen.
+
+ROB
+(looking around)
+Welcome to the team, James. I'm Rob Meglio, but around here, they call me The Nibbler. Ready to learn the ropes?
 
 
 
