@@ -224,9 +224,14 @@ Fade in:
 ### EXT. DARK ALLEY - NIGHT
 We see ROB MEGLIO as a hard-boiled detective, dressed in a fedora hat and a trench coat, walking down a dark alley. He takes out his magnifying glass and begins searching for clues.
 
-ROB (voiceover): They call me the Nibbler. I'm a detective, and I'm on the trail of a scandal.
+* ROB (voiceover): 
 
-He starts by examining a wall around Yale. 
+In the depths of my memories lie moments of glory, when I basked in the praise of the masses. But now, I question whether that applause was mere facade, veiling the truth that lurks in the shadows.
+
+New Haven... a city draped in shadows, where the scales of justice tremble upon a fragile precipice. Within me resides an unyielding pursuit of truth, burdened by the weight of an elusive past.
+
+I am Rob Meglio, once celebrated as The Nibbler, a hero whose name resonated through the hearts of the public. The mayor himself praised my deeds, but now I question where I truly stand in the delicate balance of right and wrong.
+
 
 
 

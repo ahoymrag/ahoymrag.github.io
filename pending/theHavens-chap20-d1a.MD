@@ -10,9 +10,14 @@ In markdown format?
 So, by and by, as the days grew - so did Kenny’s Lewis thoughts. 
 Kenny Lewis didn’t care about the wealth or the acclaim no - nor was he pressed by grandeur or self acclaim - lest at first - no - what Kenny Lewis really wanted. More than any Gold - was the adventure - the chance to use his gadgets among his friends. 
 
-And I really wanted that too - I wanted something to do - something to call my own. Life as an Elderman was sparsely demanding - and I needed something to get me out of this slunk. 
+And I really wanted that too - I wanted something to do - something to call my own. Working as an Elderman wasn't as all consuming as I initilally hoped it would be - and I needed something.
 
-Knowing that Kenny Lewis would never assemble such a crew  - nor that he would admit that he needed help at all - as - so I made short work of it. 
+Knowing that Kenny Lewis would never take action about the coin. Knowing that he would keep it in his room and that it would eventually end up in a drawer somewhere - between a portable solar panel and some HDMI converter. No - no, Kenny Lewis would never do it. 
+
+So the next morning - as I was outside watching the birds swivel and hunt and the first smell of the salt air. I spotted a seagull, and realized that I was in New Haven Connecticut. In the cusp of the 21st century - among the roaring 20s. I had a couple of years left before anyone would bat an eye of such antics - thus I deemed it necessary to assemble such a crew and hunt for treasure.
+
+So thus - I lit a cowboy killer - and watched the smoke flutter among the budding spring leaves. 
+
 We needed 
 Someone with a boat
 Someone who knew how to use the boat
@@ -29,3 +34,5 @@ The more people I added - the more possibilities of why would anyone help us - I
 The first order of business was to assemble a time and place to meet. Least to msyelf  - I needed to have something preparred before hand - as one simply cannot invite people without having a place for them to get excited about going. 
 
 I figured the best place to start would be somewhere everyone knew. I decided that the rooftop of Elm City Social - could be an option - but when I called to ask they said that the rooftop only opens after labor day - so the search continued. 
+
+I started an e-mail thread - but then worried that no one would check their email - so I started a groupme - but then worried that it was too european - so I landed on a SMS group chat and praised God for the wild chance that everyone had an iphone - and I can text instructions from my computer. Amen.
