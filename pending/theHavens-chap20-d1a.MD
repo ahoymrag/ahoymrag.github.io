@@ -40,3 +40,24 @@ I started an e-mail thread - but then worried that no one would check their emai
 As for the boat. Wasn't ssure quiet yet on it - but we marched forward with the plan
 
 Dave Gunn worked as a caddy, whose caddy master technically had a boat, so - perhaps that was a possiblity of using the Marina off branford. I know that we probably wouldn't be able to get away with renting something - we needed someone who would cover for us unloading and loading. Saying that perhaps he had to get a particular boating aspect of it going i thought it'd be best.
+
+That night I researched via google and chatgpt how to 
+
+And 
+
+
+That night I was overwhelmed. Overwhelmed that I had all this work to do. Overwhelmed that I had all of these ideas but no one to share them with. No partner - nothing but the moon. And it was in that weird eye looking moon that just makes one feel like they're up to something evil. 
+
+It like no one cared. Feels like no one. 
+
+But aye - I recognized this voice - and did 16 pushups instead. And immediatelly after sproadically cleaned the room and then did 16 more. And took a vow to the moon that I would do ten sets that day. 
+
+And it burned this feeling. Increased with each Marb red - and look at the towel beneath the door - covering the fact that I was smoking more than marb red blowing trees out the window on this evil eye cat New Haven. 
+
+
+Ooo the branches on github which drive me crazy.
+
+
+
+Updates to chaos
+- upset and don't know why - well i know why - it's simple - that she could go out and have fun as i'm home working and feeling sad - and doesn't seem to care to ask how my day was going - or just doesn't want to see me - is the kind of feeling.

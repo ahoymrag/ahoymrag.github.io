@@ -128,3 +128,33 @@ Sunday 5.21
 - Said goodbye to Pablo
 - Cuddled 
 - Asscension Serivce
+
+
+5.22 = 
+- Monday No Hang 
+
+5.23 = 
+- Late Night Ruddies + 
+- Sleep Cuddles
+
+5.24 = 
+- Home Depot 
+- + Plants +
+-  Diner 
+- + Nacho Libre
+
+5.25 = 
+- Work day on State Street - 
+- Sat in Park for a bit 
+- Went to East Rock Brewrery for E-mails 
++ Mens + Ladies Group
+
+5.26 = 
+- Friday - Hung out at Stella Blues - bit of a bust - went to trinity with Edadoro
+
+5.27 Saturday 
+- Went to Honda 
+- Went with Home Depo and Walmart with Jasmine and Jojo - then went climbing / crunched at fussy - then went to the THC brewing company with Josh and Aidan and Jojo and played Happy Salmon - and scateogories -danced with Ellen 
+
+
+
