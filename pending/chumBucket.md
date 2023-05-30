@@ -129,7 +129,6 @@ Sunday 5.21
 - Cuddled 
 - Asscension Serivce
 
-
 5.22 = 
 - Monday No Hang 
 
@@ -155,6 +154,8 @@ Sunday 5.21
 5.27 Saturday 
 - Went to Honda 
 - Went with Home Depo and Walmart with Jasmine and Jojo - then went climbing / crunched at fussy - then went to the THC brewing company with Josh and Aidan and Jojo and played Happy Salmon - and scateogories -danced with Ellen 
+
+
 
 
 
