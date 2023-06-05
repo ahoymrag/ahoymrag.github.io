@@ -155,7 +155,14 @@ Sunday 5.21
 - Went to Honda 
 - Went with Home Depo and Walmart with Jasmine and Jojo - then went climbing / crunched at fussy - then went to the THC brewing company with Josh and Aidan and Jojo and played Happy Salmon - and scateogories -danced with Ellen 
 
+6.1 - Thursday
+All day crunch 
 
+6.2 Friday
+- Griffs with Jasmine and Jojo and Christina - met randoms playing pool - Unicorn game - Est Est with Leah - slept over <3
 
+6.3 Saturday
+Trader Joes - Sammys - Random CT parks - cuddles and movie and cooking and cuddles and hard talks
 
-
+6.4 - Sunday
+CPC - Sat together - Craig got voted into - Congregational Photo Chaos - Nice Sammy in the Park behind the MGMT school - reconnect - first ahoy meeting
