@@ -1,2 +1,5 @@
 # ahoymrag.github.io
 the long awaited portfolio of Alex Gonzalez of Sleepy Hollow
+
+
+thank you for coming to the official - long awaited - long winded - human written - about page of Alex Gonzalez, myself, which whom I shall record in the third person, until I feel the guilt of being aggrogant - best it be be ironic 
