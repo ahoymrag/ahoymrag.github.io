@@ -61,7 +61,7 @@ h1 {
     font-family: 'Barlow';
     font-style: normal;
     font-weight: 900;
-    font-size: clamp(2rem, -0.875rem + 10.333vw, 15.5rem);
+    font-size: clamp(2rem, -0.875rem + 12.333vw, 15.5rem);
     line-height: 84.5%;
     /* or 75px */
     
