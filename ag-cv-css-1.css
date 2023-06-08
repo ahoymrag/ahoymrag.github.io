@@ -57,6 +57,19 @@ h1 {
     text-transform: uppercase;
 }
 
+.h11 {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 900;
+    font-size: clamp(2rem, -0.875rem + 10.333vw, 15.5rem);
+    line-height: 84.5%;
+    /* or 75px */
+    
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    text-align:center;
+}
+
 h2 
     {
         font-family: 'Barlow';
