@@ -166,3 +166,13 @@ Trader Joes - Sammys - Random CT parks - cuddles and movie and cooking and cuddl
 
 6.4 - Sunday
 CPC - Sat together - Craig got voted into - Congregational Photo Chaos - Nice Sammy in the Park behind the MGMT school - reconnect - first ahoy meeting
+
+6.5 - Monday = City Climb - late night drive into westville to get a bevy at a bar that wasn't that great 
+
+6.6 - Tuesday = Franz Fernandad - Sleepy Cuddles - Laughs outside for keeping jojo asleep - crunched and stressed 
+
+6.7 - Wednesday = Met with OISS agent
+
+
+6.8 - Thursday = 
+Food Truck Meetup - Best Video Adventure - Pride and Prejudice Cuddle - Lifegroup - Snake Oil - Rudy's Cheeky Whalers for 4 dollars 
