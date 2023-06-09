@@ -9,3 +9,7 @@ thank you for coming to the official - long awaited - long winded - human writte
 I'm originally from Tarrytown - Sleepy Hollow - a small costal town off the mighty hudson river. Grew up across the street from a private school with a ton of private woodland property and a town pool. Life was full of imagination and mischef. 
 
 I remember the first time messing with computers. Fascinated. 
+
+# And now
+
+And now I'm in the Havens of CT - but I might trek elsewhere - or stay here for life and make a little indie mischef - who knows - the Lord does. 
