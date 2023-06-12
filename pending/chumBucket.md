@@ -176,3 +176,11 @@ CPC - Sat together - Craig got voted into - Congregational Photo Chaos - Nice Sa
 
 6.8 - Thursday = 
 Food Truck Meetup - Best Video Adventure - Pride and Prejudice Cuddle - Lifegroup - Snake Oil - Rudy's Cheeky Whalers for 4 dollars 
+
+
+6.9 = Friday =
+Lawyer - Cocktails with Canolis - Elm City Rooftop 
+
+6.10 - Saturday = Cuddles in Morning + Craig's 40th - Tallboyz Premiere - Tallboyz afterparty - Diner
+
+6.11 - Sunday = Sat together at church - Snuck behind the school of MGMT
