@@ -13,3 +13,7 @@ I remember the first time messing with computers. Fascinated.
 # And now
 
 And now I'm in the Havens of CT - but I might trek elsewhere - or stay here for life and make a little indie mischef - who knows - the Lord does. 
+
+# For work
+
+For work - for a while - I would take any work - being fascianted by work itself. 
