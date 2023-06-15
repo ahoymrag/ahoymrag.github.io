@@ -184,3 +184,8 @@ Lawyer - Cocktails with Canolis - Elm City Rooftop
 6.10 - Saturday = Cuddles in Morning + Craig's 40th - Tallboyz Premiere - Tallboyz afterparty - Diner
 
 6.11 - Sunday = Sat together at church - Snuck behind the school of MGMT
+
+
+
+
+6.14 - Wednesday - Got  Bagels 
