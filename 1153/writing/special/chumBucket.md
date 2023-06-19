@@ -156,36 +156,54 @@ Sunday 5.21
 - Went with Home Depo and Walmart with Jasmine and Jojo - then went climbing / crunched at fussy - then went to the THC brewing company with Josh and Aidan and Jojo and played Happy Salmon - and scateogories -danced with Ellen 
 
 6.1 - Thursday
-All day crunch 
+All day crunch - did we go to Lifegroup?
 
 6.2 Friday
 - Griffs with Jasmine and Jojo and Christina - met randoms playing pool - Unicorn game - Est Est with Leah - slept over <3
 
 6.3 Saturday
-Trader Joes - Sammys - Random CT parks - cuddles and movie and cooking and cuddles and hard talks
+Trader Joes - Sammys - Random CT parks - cuddles and movie and cooking and cuddles and hard talks 
 
 6.4 - Sunday
-CPC - Sat together - Craig got voted into - Congregational Photo Chaos - Nice Sammy in the Park behind the MGMT school - reconnect - first ahoy meeting
+CPC - Sat together - Craig got voted into - Congregational Photo Chaos - Nice Sammy in the Park behind the MGMT school - reconnect - first ahoy meeting that night at the playwright with Chris and Dave
 
 6.5 - Monday = City Climb - late night drive into westville to get a bevy at a bar that wasn't that great 
 
-6.6 - Tuesday = Franz Fernandad - Sleepy Cuddles - Laughs outside for keeping jojo asleep - crunched and stressed 
+6.6 - Tuesday = Franz Fernandad - Sleepy Cuddles - Laughs outside for keeping jojo asleep - crunched and stressed beforehand 
 
-6.7 - Wednesday = Met with OISS agent
-
+6.7 - Wednesday = Met with OISS agent 
 
 6.8 - Thursday = 
 Food Truck Meetup - Best Video Adventure - Pride and Prejudice Cuddle - Lifegroup - Snake Oil - Rudy's Cheeky Whalers for 4 dollars 
 
 
 6.9 = Friday =
-Lawyer - Cocktails with Canolis - Elm City Rooftop 
+Lawyer - Cocktails with Canolis - Elm City Rooftop - Sleeps Cuddle?
 
 6.10 - Saturday = Cuddles in Morning + Craig's 40th - Tallboyz Premiere - Tallboyz afterparty - Diner
 
-6.11 - Sunday = Sat together at church - Snuck behind the school of MGMT
+6.11 - Sunday = Sat together at church - Snuck behind the school of MGMT - AG went away to Parents
+
+6.12 - Monday - AG away at parents 
+
+6.13 - Tuesday - Got Grill - Hung out all day - movies and cuddle sleeps 
+
+6.14 - Wednesday - Got  Bagels - went to beach - Crunch Cuddle - Rob Interview - More Grill
+
+6.15 - Thursday - Little Cheeky Bev for Lunch - Ellen hung out with coursemates - AG went to men's group
+
+6.16 - Friday - Beach Date - Sammies on Beach - Greenhouse Man told us off - ate pasta - hung out - 30 year welcome party - rudies - Ellen Texts mom's of Intentions 
+
+6.17 - CPC 30 Year - Brew + Unicorns + Dancing + Service + Reception + Dancing in front of everyone at CPC - mistaken for husband - Debating Future + Slaps and Cuddles 
+
+6.18 - CPC Pizza Truck - 30 year - group picture - fun with Leah - nice party - Leah + Wings + Brendan + josh + wine - Grill city - made wings and wings and onions and mushys - hashbrowns - agchuttary
+
+6.19 - About to go to sleepy hollow
 
 
 
-
-6.14 - Wednesday - Got  Bagels 
+#Little ways to love E:
+[] Finish Song
+[] Poem
+[] CDs
+[] Add to Scrap
