@@ -174,6 +174,10 @@ Above all, Rob Meglio embodies the principles of justice and ethics. His unwaver
 
 In the world of crime and mystery, Rob Meglio, The Nibbler, is a complex and multi-faceted character, driven by a desire to bring the truth to light and uphold justice. His early love for puzzles, journey through darkness, charm, popularity, and unwavering ethical compass make him a captivating protagonist with a compelling backstory.
 
+Chapter 10
+Rob enters an ice rinnk and lights a cigar.
+The attendandt says you can't smoke in here
+He says - quiet honey - go back to the ring
 
 
 The Ghost
