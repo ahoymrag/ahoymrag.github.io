@@ -1,38 +1,76 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>All Ape</title>
+    <title>All Ape Product</title>
     <style>
+
+     
         body {
             margin: 0;
             padding: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            background-image: url("6.png");
+            text-align: center;
+            height:100vh;
+            background-image: url("./assets/6.png");
             background-size:cover;
             box-shadow: inset 0 0 10px #c9c9c9;
             animation: gradientAnimation 10s linear infinite ease-in-out;
+            
         }
         
         .container {
-            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             padding: 20px;
+           
+
+        }
+
+        header {
+            width:100%;
+            height:220px;
+            display:flex;
+            justify-content:center;
+            align-items:center;
         }
         
         .logo {
-            max-width: 33%;
-            max-width:100px;
+            width:200px;
+            max-width:200px;
             height: auto;
-            margin-bottom: 20px;
+            margin:5px;
+            opacity:.95;
+        
+            }
+
+        .logo:hover {
+            opacity: 0.93;
+            cursor: pointer;
+      
         }
 
-        .logo-product {
+
+        .ape-product-menu {
+            width:100%;
+            max-width:700px;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+
+
             
-            max-width:300px;
+        }
+
+
+        .logo-product {
+            width:100%;
+            height:auto;
+            min-width:200px;
+            min-height:200px;
+            max-width:200px;
+            max-height:200px;
             height: auto;
-            margin-bottom: 20px;
+            margin-right:5px;
         }
         
         .github-link {
@@ -41,54 +79,66 @@
             width:200px;
             max-width:200px;
             height:auto;
+            margin:2.5px;
+            filter:invert(100%);
+            mix-blend-mode: darken;
+            opacity:.95;
+        }
+
+        .github-link:hover { 
+            opacity: 0.93;
+            filter:invert(0%);
+            mix-blend-mode: lighten;
         }
 
 
-        @keyframes gradientAnimation {
-    0% {
-        background: linear-gradient(to right, #e2e2e2, #c0c0c0);
-    }
-    25% {
-        background: linear-gradient(to right, #d0d0d0, #c0c0c0);
-    }
-    50% {
-        background: linear-gradient(to right, #c0c0c0, #a0a0a0);
-    }
-    75% {
-        background: linear-gradient(to right, #a0a0a0, #808080);
-    }
-    100% {
-        background: linear-gradient(to right, #808080, #e2e2e2);
-    }
-}
+                @keyframes gradientAnimation {
+            0% {
+                background: linear-gradient(to right, #e2e2e2, #c0c0c0);
+            }
+            25% {
+                background: linear-gradient(to right, #d0d0d0, #c0c0c0);
+            }
+            50% {
+                background: linear-gradient(to right, #c0c0c0, #a0a0a0);
+            }
+            75% {
+                background: linear-gradient(to right, #a0a0a0, #808080);
+            }
+            100% {
+                background: linear-gradient(to right, #808080, #e2e2e2);
+            }
+        }
 
 
-.fullwidth-wrap {
-    width:100%;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    margin-bottom: 20px;
+        .fullwidth-wrap {
+            width:100%;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            margin-bottom: 20px;
 
-}
+        }
 
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="fullwidth-wrap">
+    <header>
         <div class="logo">
-            <img src="./1.png" alt="Logo" class="logo">
+            <img src="./assets/1.png" alt="Logo" class="logo">
         </div>
-    </div>
+    </header>
+   
+    <div class="container">
+       
     <div class="ape-product-menu">
-        <a href="https://github.com/ApeWorX/ape" class="github-link"><img src="./2.png" alt="Logo" class="logo-product">
+        <a href="https://github.com/ApeWorX/ape" class="github-link"><img src="./assets/2.png" alt="Logo" class="logo-product">
         </a>
-        <a href="https://github.com/ApeWorX/ape" class="github-link"><img src="./3.png" alt="Logo" class="logo-product">
+        <a href="https://github.com/ApeWorX/ape" class="github-link"><img src="./assets/3.png" alt="Logo" class="logo-product">
         </a>
-        <a href="https://github.com/ApeWorX/ape" class="github-link"><img src="./3_silver.png" alt="Logo" class="logo-product">
+        <a href="https://github.com/ApeWorX/ape" class="github-link"><img src="./assets/3_silver.png" alt="Logo" class="logo-product">
         </a>
-        <a href="https://github.com/ApeWorX/ape" class="github-link"><img src="./4.png" alt="Logo" class="logo-product">
+        <a href="https://github.com/ApeWorX/ape" class="github-link"><img src="./assets/4.png" alt="Logo" class="logo-product">
         </a>
 
     </div>
