@@ -200,7 +200,13 @@ Lawyer - Cocktails with Canolis - Elm City Rooftop - Sleeps Cuddle?
 
 6.19 - About to go to sleepy hollow
 
+6.21 - Wednesday - First day of summer + 
 
+6.22 - Thursday - Cleanup of Party + Honest Talks + Intesellar Cuddle - Grill Lunch - Lifegroup - 
+
+6.23 - Graduation Day
+
+6.24 - Saturday - early start - gcafe saw rices - cramps and hard talks - forgiveness - love - stir crazy - random trip up the coast
 
 #Little ways to love E:
 [] Finish Song
