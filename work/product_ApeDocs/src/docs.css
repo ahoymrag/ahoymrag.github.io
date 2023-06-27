@@ -1,0 +1,203 @@
+/*docs css*/
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --main :#0a192f;
+    --mainlight: #172a46;
+    --nav :#09192f;
+    --white :#ccd6f6;
+    --cyan :#ea00ff;
+    }
+* {
+    margin: 0;
+    padding: 0;
+
+}
+/*TEST 1*/
+
+html {
+  margin:0;
+  padding:0px;
+    background-color:black;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+body {
+    background-size: cover;
+    background-blend-mode: lighten;
+}
+
+
+/*Nav Logo */
+.navLogo {
+    width:50px;
+    height:50px;
+    background-image: url("../assets/nav-logo.png");
+    background-size:cover;
+    padding:5px;
+    margin:5px;
+    transition: transform 3s;
+    transition:cubic-bezier(0.165, 0.84, 0.44, 1) 3s;
+}
+
+.navLogo:hover {
+    transform:scale(1.3);
+}
+
+.desktop-Logo-center-left {
+    position:absolute;
+    background-color: rgba(255, 255, 255, 0);
+    width: 620px;
+    height: 180px;
+    top: 470px;
+    left:150px;
+    transform: scale(1.0);
+    background-image: url("../assets/doc-logo.png");
+    background-size:contain;
+    background-repeat: no-repeat;
+    transition: transform 1.153s;
+}
+
+.desktop-Logo-center-left:hover{
+    transform:scale(1.1153);
+}
+
+.desktop-MenuHolder-center-left {
+    position:absolute;
+    width: 620px;
+    height:90px;
+    top:680px;
+    left:150px;
+    border-radius: 50px;
+    border-color: rgb(54, 54, 54);
+    box-sizing: border-box;
+    background-color: #2243ff00;
+    display:inline-flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.desktop-MenuButton {
+    width:100%;
+    height:90px;
+    border-radius: 25px;
+    font-family: 'Barlow', sans-serif;
+    text-transform: uppercase;
+    border: 0.6px solid;
+    background-color: #141518d9;
+    font-size:22px;
+    color:white;
+    font-weight:900;
+    letter-spacing: -0.01em;
+    transition: transform 1.153s;
+    border: 1px solid var(--cyan);
+    box-shadow: rgb(95, 240, 208, 15%)  0px 0px 50px;
+}
+
+.desktop-MenuButton:hover {
+    color: var(--main);
+    background-color: var(--cyan);
+    box-shadow: var(--cyan) 0px 0px 50px;
+    cursor: pointer;
+    transform:scale(1.153);
+}
+
+.FG-center-right {
+    float: right;
+    width:45%;
+    height:auto;
+    transition: transform 1.153s;
+}
+
+.FG-center-right:hover {
+    transform: scale(0.5153);
+}
+
+.glowButton {
+    max-width:250px;
+    padding: 2px;
+    position: relative;
+    z-index:1;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    margin-right:25px;
+    filter: brightness(120%);
+  }
+
+  .glowButton:before {
+    z-index:-1;
+    position: absolute;
+    content:"";
+    width:230px;
+    height:230px;
+    left:10px;
+    top:0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    filter: blur(20px);
+
+  }
+
+  .gradient {
+    background-color: #0b090a;
+    padding: 30px;
+    color: white;
+    font-size: 35px;
+    font-family: arial;
+    text-align: center;
+  }
+
+  a {
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+  }
+
+  a::before,
+  a::after {
+   content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+  }
+  a::before {
+    background-color: #54b3d6;
+    height: 2px;
+    bottom: 0;
+    transform-origin: 100% 50%;
+    transform: scaleX(0);
+    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+  a::after {
+    content: attr(data-replace);
+    height: 100%;
+    top: 0;
+    transform-origin: 100% 50%;
+    transform: translate3d(200%, 0, 0);
+    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+    color: #54b3d6;
+  }
+
+  a:hover::before {
+    transform-origin: 0% 50%;
+    transform: scaleX(1);
+  }
+  a:hover::after {
+    transform: translate3d(0, 0, 0);
+  }
+
+  a span {
+    display: inline-block;
+    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+
+  a:hover span {
+    transform: translate3d(-200%, 0, 0);
+  }
+
+  a {
+	text-decoration: none;
+	color: #18272F;
+	font-weight: 700;
+	vertical-align: top;
+}
