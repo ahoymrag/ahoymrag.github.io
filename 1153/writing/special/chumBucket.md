@@ -208,6 +208,11 @@ Lawyer - Cocktails with Canolis - Elm City Rooftop - Sleeps Cuddle?
 
 6.24 - Saturday - early start - gcafe saw rices - cramps and hard talks - forgiveness - love - stir crazy - random trip up the coast
 
+6.25 - Sunday - painting in park - cuddles - cuddles - cuddles - yorkside Pizza
+
+6.26 - Monday - Scalloops Scallops - Big Y - Ham and CHeese Brie - Thunderstorms - Jammie - Records - Set List 
+
+6.27 - Just dropped Ellen home - she's going to present poster 
 #Little ways to love E:
 [] Finish Song
 [] Poem
