@@ -1,64 +1,112 @@
 <html>
-    <head>
-        <title>CPC3</title>
-    </head>
-    <body>
-        CPC3
-    
-<style>
-    .main-container-level-1 {
-        width:100%;
-        height:100vh;
-        background-color:rgb(255, 248, 248);
-        display:flex;
-        align-items: center;
-        justify-content: center;
-    }
+<head>
+    <title>CPC3</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: rgb(0, 7, 32);
+        }
 
-    .main-container-level-2 {
-        width:80%;
-        height:auto;
-        min-height:200px;
-        background-color:antiquewhite;
-        border-style:solid;
-        border-color: black;
-        border-width:1px;
-    }
-</style>
+        .sidebar {
+            width: 10%;
+            height: 100vh;
+            background-color: #ffffff;
+            color: #fff;
+            padding: 20px;
+            position: fixed;
+            left: 0;
+            top: 0;
+            border-style:solid;
+            border-color:rgb(0, 43, 58);
+        }
 
+        a {
+            text-decoration: none;
+            color:rgb(0, 0, 53);
+            font-size:2vw;
+            text-transform: uppercase;
+            font-weight: 900;
 
+        }
 
-<main>
+        a:hover {
+            opacity: .5;
+        }
 
-<div class="main-container-level-1">
-    <div class="main-container-level-2">
-        Events
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sidebar ul li {
+            margin-bottom: 10px;
+        }
+
+        .content {
+            margin-left: 20%;
+            padding: 20px;
+        }
+
+        .main-container-level-1 {
+            width: 100%;
+            height: 100vh;
+            background-color: rgb(255, 248, 248);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .main-container-level-2 {
+            width: 80%;
+            height: auto;
+            min-height: 200px;
+            background-color: antiquewhite;
+            border-style: solid;
+            border-color: black;
+            border-width: 1px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Live Events</a></li>
+            <li><a href="#">Sass Links</a></li>
+            <li><a href="#">Another Link</a></li>
+        </ul>
     </div>
-    <div class="main-container-level-2">
-        <table>
-            <tr>
-                <td>Event Name</td>
-                <td>Event Description</td>
-                <td>Event Date</td>
-            </tr>
-            <tr>
-                <td>Event Name</td>
-                <td>Event Description</td>
-                <td>Event Date</td>
-            </tr>
-            <tr>
-                <td>Event Name</td>
-                <td>Event Description</td>
-                <td>Event Date</td>
-            </tr>
-        </table>
+
+    <div class="content">
+        <main>
+            <div class="main-container-level-1">
+                <div class="main-container-level-2">
+                    Events
+                </div>
+                <div class="main-container-level-2">
+                    <table>
+                        <tr>
+                            <td>Event Name</td>
+                            <td>Event Description</td>
+                            <td>Event Date</td>
+                        </tr>
+                        <tr>
+                            <td>Event Name</td>
+                            <td>Event Description</td>
+                            <td>Event Date</td>
+                        </tr>
+                        <tr>
+                            <td>Event Name</td>
+                            <td>Event Description</td>
+                            <td>Event Date</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </main>
     </div>
-</div>
-
-
-</main>
-
-
 
     <!-- FIREBASE LINK UP-->
     <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
@@ -73,6 +121,6 @@
         
         // Initialize Cloud Firestore
         var db = firebase.firestore();
-      </script>
-    </body>
+    </script>
+</body>
 </html>
