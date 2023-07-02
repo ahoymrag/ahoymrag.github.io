@@ -1,11 +1,13 @@
 <html>
 <head>
+ <!-- IMPORT OF VUE -->
+ <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <title>CPC3</title>
     <style>
         body {
             margin: 0;
             padding: 0;
-            background-color: rgb(144, 168, 255);
+            background-color: rgb(47, 92, 255);
         }
 
         .sidebar {
@@ -81,29 +83,46 @@
 
     <div class="content">
         <main>
+         
+              
             <div class="main-container-level-1">
                 <div class="main-container-level-2">
-                    Events
+                    
+                    <div id="app">
+                        <div class="main-container-level-2">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Event Name</th>
+                                        <th>Event Description</th>
+                                        <th>Event Date</th>
+                                        <th>Event Image</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr v-for="event in events" :key="event.id">
+                                        <td>{{ event.name }}</td>
+                                        <td>{{ event.description }}</td>
+                                        <td>{{ event.date }}</td>
+                                        <td><img :src="event.image" alt="Event Image"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
                 </div>
-                <div class="main-container-level-2">
-                    <table>
-                        <tr>
-                            <td>Event Name</td>
-                            <td>Event Description</td>
-                            <td>Event Date</td>
-                        </tr>
-                        <tr>
-                            <td>Event Name</td>
-                            <td>Event Description</td>
-                            <td>Event Date</td>
-                        </tr>
-                        <tr>
-                            <td>Event Name</td>
-                            <td>Event Description</td>
-                            <td>Event Date</td>
-                        </tr>
-                    </table>
-                </div>
+              
             </div>
         </main>
     </div>
@@ -122,5 +141,7 @@
         // Initialize Cloud Firestore
         var db = firebase.firestore();
     </script>
+
+    <script src="events.js"></script>
 </body>
 </html>
