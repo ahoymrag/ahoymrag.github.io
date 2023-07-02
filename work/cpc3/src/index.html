@@ -4,5 +4,75 @@
     </head>
     <body>
         CPC3
+    
+<style>
+    .main-container-level-1 {
+        width:100%;
+        height:100vh;
+        background-color:rgb(255, 248, 248);
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main-container-level-2 {
+        width:80%;
+        height:auto;
+        min-height:200px;
+        background-color:antiquewhite;
+        border-style:solid;
+        border-color: black;
+        border-width:1px;
+    }
+</style>
+
+
+
+<main>
+
+<div class="main-container-level-1">
+    <div class="main-container-level-2">
+        Events
+    </div>
+    <div class="main-container-level-2">
+        <table>
+            <tr>
+                <td>Event Name</td>
+                <td>Event Description</td>
+                <td>Event Date</td>
+            </tr>
+            <tr>
+                <td>Event Name</td>
+                <td>Event Description</td>
+                <td>Event Date</td>
+            </tr>
+            <tr>
+                <td>Event Name</td>
+                <td>Event Description</td>
+                <td>Event Date</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+
+</main>
+
+
+
+    <!-- FIREBASE LINK UP-->
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-firestore.js"></script>
+    <script>
+        // Initialize Firebase
+        firebase.initializeApp({
+          apiKey: 'YOUR_API_KEY',
+          authDomain: 'YOUR_AUTH_DOMAIN',
+          projectId: 'cpc3-c26db',
+        });
+        
+        // Initialize Cloud Firestore
+        var db = firebase.firestore();
+      </script>
     </body>
 </html>
