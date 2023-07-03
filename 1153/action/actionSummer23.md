@@ -22,3 +22,11 @@
 
 # Ahoy Web App
 [] Podcast Page
+
+
+
+# July 2023
+## July 3 
+[]Head back to Sleepy Hollow
+= Attempted to Create a Repo for CPC and an organization - got most of it set up but having trouble deploying
+

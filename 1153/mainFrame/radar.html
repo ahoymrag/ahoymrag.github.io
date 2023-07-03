@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Local Weather Radar</title>
+    <style>
+        #radar-container {
+            width: 100%;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Local Weather Radar</h1>
+    <div id="radar-container"></div>
+
+    <script>
+        // Replace 'YOUR_API_KEY' with your actual Weather Underground API key
+        var apiKey = 'YOUR_API_KEY';
+
+        // Replace 'YOUR_LOCATION' with your desired location (e.g., city, zip code)
+        var location = 'YOUR_LOCATION';
+
+        // Construct the URL to fetch the radar image from Weather.com
+        var url = 'https://api.weather.com/v3/radar/image?apiKey=' + apiKey + '&format=gif&height=500&width=1000&product=n0r&layers=radar' +
+            '&bbox=-123.23,37.63,-121.67,39.09&location=' + location;
+
+        // Create an img element to display the radar image
+        var radarImg = document.createElement('img');
+        radarImg.src = url;
+
+        // Add the radar image to the radar container div
+        var radarContainer = document.getElementById('radar-container');
+        radarContainer.appendChild(radarImg);
+    </script>
+</body>
+</html>
