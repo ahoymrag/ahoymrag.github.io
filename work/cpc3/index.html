@@ -1,0 +1,147 @@
+<html>
+<head>
+ <!-- IMPORT OF VUE -->
+ <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>CPC3</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: rgb(47, 92, 255);
+        }
+
+        .sidebar {
+            width: 10%;
+            height: 100vh;
+            background-color: #ffffff;
+            color: #fff;
+            padding: 20px;
+            position: fixed;
+            left: 0;
+            top: 0;
+            border-style:solid;
+            border-color:rgb(0, 43, 58);
+        }
+
+        a {
+            text-decoration: none;
+            color:rgb(0, 0, 53);
+            font-size:2vw;
+            text-transform: uppercase;
+            font-weight: 900;
+
+        }
+
+        a:hover {
+            opacity: .5;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sidebar ul li {
+            margin-bottom: 10px;
+        }
+
+        .content {
+            margin-left: 20%;
+            padding: 20px;
+        }
+
+        .main-container-level-1 {
+            width: 100%;
+            height: 100vh;
+            background-color: rgb(255, 248, 248);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .main-container-level-2 {
+            width: 80%;
+            height: auto;
+            min-height: 200px;
+            background-color: antiquewhite;
+            border-style: solid;
+            border-color: black;
+            border-width: 1px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Live Events</a></li>
+            <li><a href="#">Sass Links</a></li>
+            <li><a href="#">Another Link</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <main>
+         
+              
+            <div class="main-container-level-1">
+                <div class="main-container-level-2">
+                    
+                    <div id="app">
+                        <div class="main-container-level-2">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Event Name</th>
+                                        <th>Event Description</th>
+                                        <th>Event Date</th>
+                                        <th>Event Image</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr v-for="event in events" :key="event.id">
+                                        <td>{{ event.name }}</td>
+                                        <td>{{ event.description }}</td>
+                                        <td>{{ event.date }}</td>
+                                        <td><img :src="event.image" alt="Event Image"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+              
+            </div>
+        </main>
+    </div>
+
+    <!-- FIREBASE LINK UP-->
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-firestore.js"></script>
+    <script>
+        // Initialize Firebase
+        firebase.initializeApp({
+          apiKey: 'YOUR_API_KEY',
+          authDomain: 'YOUR_AUTH_DOMAIN',
+          projectId: 'cpc3-c26db',
+        });
+        
+        // Initialize Cloud Firestore
+        var db = firebase.firestore();
+    </script>
+
+    <script src="events.js"></script>
+</body>
+</html>
