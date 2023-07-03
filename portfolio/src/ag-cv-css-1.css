@@ -303,7 +303,9 @@ p {
 
 .portfolio-item {
     width:100%;
-    height:75vh;
+    min-height:75vh;
+    height:auto;
+    max-height:100vh;
     border-style:solid;
     border-color:black;
 
