@@ -1,9 +1,21 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
 /*MainFrame CSS*/
 body {
-    background-color: ivory;
+    background-color: rgb(78, 0, 118);
     color: grey;
     font-size: 16px;
     font-weight: 900px;
+    font-family: 'Press Start 2P', cursive;
+    
+}
+
+h4 {
+    font-weight:600;
+    text-transform:uppercase;
+    margin-bottom:5px;
 }
 
 .search-bar {
@@ -11,7 +23,7 @@ position: fixed;
 top: 0;
 left: 0;
 right: 0;
-background-color: #eed3ff;
+background-color: #eed3ff77;
 padding: 10px;
 min-width:300px;
 z-index: 9999;
