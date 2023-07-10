@@ -1,6 +1,7 @@
 The Plastic Hammer 
 Total Monte
-
+(as of 7.5.23) ((on a plane in London))
+ 
 Above THIS line - is the table of contents 
 
 Above this LINE - is a draft for the table of contents
@@ -17,10 +18,12 @@ LOL Yolo
 What do we do everyday? What is there to do?
 What about Judas? 
 What are we building? The new Tower of Babbble 
+Firestorm
 The great beyond - a toast against reincarnation 
 God’s Paintbrush is Gravity 
 What about the aliens?
 To polish the old bishop 
+Why do we hate people?
 Why can’t I stop sinning?
 Why can’t I pay attention in church 
 The Screwtape Screwball 
@@ -31,6 +34,12 @@ Will there be competition in heaven?
 The road to victory
 The Plastic Hammer
 
+## Bonus Contents for the table of contents
+- It is easier to destory than to creeate 
+- What then - are we called to do ?
+- How do we know if we're really saved? Or is this just a bunch of bullshit. 
+
+
 ## START OF COPY COPY 
 
 ## Above this Line - is like copy copy 
@@ -40,19 +49,37 @@ The Plastic Hammer
 Beyond this draft
 
 Who cares why I wrote this book
-I’ve never enjoyed authors who go on and on about their personal journey and why they wrote their book. 
-I find myself skipping those preludes, introductions and skip to chapter 1. Sometimes this doesn’t happen until 30 pages or so. I will spare the reader this personal annoyance and simply state that I wrote this book because I felt like I had to work some things out - figured it be productive to do it publicly. Alright, enough of that, let’s get into it. 
+I’ve never enjoyed authors who go on and on about their personal journey and and lengthly explainations as to why they wrote their book. 
+
+I find myself skipping those preludes, introductions and skip to chapter 1 if not 2 if not 3. I want to see the heart of the book. Sometimes this doesn’t happen until 30 pages or so. I will spare the reader this personal annoyance and simply state that I wrote this book because I felt like I had to work some things out and I figured that the best use of extensial dilemmas are t be productive to do it publicly. Alright, enough of that, let’s get into it. 
+
+# morever 
+
+# but the for the sake 
+
+Know that I am no learned man by any sense of the word. I have absolutely no creditenals to be writing any sort of theology - I am a product of the Jackass MTV generation - and spent much of my early childhood trying to do just that - become a jackass - become famous. Far from Christ - far from reality. 
+
+# What I hope this book is not - part 1 
+
+A corny - self help - paperback - where everyone . Instead - consider this a rant, a vent, in an organized way - with the chief intention - of getting out the potatoes - for the silver of hope - that someone one day - somehow - will read it and "not feel alone". Truth is, I can give a rats bollucks if someone else feels alone - it's a perpectual state that I have found myself in and find no empathy. Pitchforks and monsters aside - I do feel that it is my duty - and I feel called to write this - the same way that some might feel called to jump into a burning building. It is crazy and reckless - but here we are - what is one going to do? Cower? 
 
 
-What I hope this book is not
-So sort of apologetic where I compare the culture of the modern world and point fingers . I will be instead point elbows - for they can do more damage - lest to the temple. 
+# What I hope this book is not - part 2 
+So sort of apologetic where I compare the culture of the modern world and point fingers to the past. FOr the modern world - has always been the modern world. The modern world is everyone all at once - to everyone who is living in it. THe modern world - will always be modern to at the time of writing. 
+
+I wrote a rap once that I have never published nor uttered before - but I think it holds a feelble attempt at a truth - it ended with the lines "it's the same old crap" and it's true. It's 
+
+It's getting crazy out there - Vanity Fair - has there ever been a time that can compare? Yeah, it's the same ol crap - yippie yap yap don't talk back. 
+
+ . I will be instead point elbows - for they can do more damage - lest to the temple. 
 
 I hope this book doesn't bring folly into the world. Bad theology. I hope it is not revered to the point that the author becomes more important than the subject matter. I hope that everyone who reads it, as I type this in markdown on computer code - could find light in it. 
 
+# Nostalgia
 
-Nostalgia Tells Us
+## What does Nostalgia Tells Us?
 
-Nostalgia tells us many things. Those cheeky rose - - sunkissed winter memories - of the ray of light hitting the windowsill - touching the happy daffy - srpeading cross the kitchen to the coast of the toast as the irish butter melts in the wind.
+Nostalgia is a cheeky leaf that thinks it's a rose. A fragment of the mind - a divided section of thought that knows nothing of reason. Such cheeky rose - - sunkissed winter memories - of the ray of light hitting the windowsill - touching the happy daffy - srpeading cross the kitchen to the coast of the toast as the irish butter melts in the wind.
 
 rosey memories we have of a meal with our parents and siblings. Where everyone was smiling and laughing. Those memories that flash in our minds - that flicker a sense of longing that we can never go back. And lest - in jest - even the memory itself cannot be obtained. 
 
@@ -62,7 +89,9 @@ Hard to be upset with a lot of distraction.
 
 And still - scripture (lest the culture reminds us) of the ants and the 
 
-The Computer Problem
+Nostaliga brings the author back to a warm October night in the outskirts of his beloved Tarrytown. Tarrytown to me - will always be described - by me - if not completely touched with a hint of delusion - that Tarrytown is a small marina town - off the coast of the Hudson River - 30 min train ride to the Grand Central Station in Manhattan. There is one little pocket that speaks more than any pockets  always the same place - always that same feeling of coziness - that one doesn't have right away - but as soon as one looks backwards on an event - one can feel it. Nostaligia is never around a particular event - rather than a feeling - and often -that feeling happens after the 
+
+## The Computer Problem
 
 Files exist in Folders on the C Drive
 
@@ -75,6 +104,8 @@ So why waste time. Computers are studied.
 
 
 I would like us though - for a moment - to think about a part of a computer - that gave me a bit of illustration.
+
+For sure, you have heard the illustration of the vindresser and the vine. By now, you have heard countless illustrations about it - so let me attempt to add one more to add some chocolate to the mix. I like to think of it as a hard drive - a c hard drive - in which that can be found back to the roots of the folder. Ha
 
 It was listening to a sermon previous to holy week - in which the sermon addressed John 14 - which goes into the concept of the vinedresser and the vine. In the illustration - reality is described as coming out of a vine - and each individual human is the branch. 
 
@@ -233,8 +264,78 @@ I took a step back and felt like we were flying too close to the sun.
 For a while, I was enamored with Virtual Reality - and in a way - still am. For I like the control it yields of grabbing a tree, rotating it right, painting the bark a different color than found in nature - but still complimentary - to the universe that surrounds it. 
 
 
-Gravity is God’s Paintbrush 
-Think how gravity shapes. Think how it curves mountains - uses water to fall - and carve rock. Like a reductionist type painting 
+# Why do we hate people?
+
+I have no idea why other people hate people. I'll tell you why I do. 
+Firstly - I normally don't. What happens is I judge folks instantly - by the matter of speech, dress, and waht not - I paint them into a framework that makes sense for me. 
+
+As soon as I scribe this - it is not the obvious - it is not the murderer I hate - nor the serial offender - nor a politician - I hate folks who are just honestly - just honestly suck. 
+
+A couple come to mind. Folks who are ungrateful. My own mother. Myself. 
+
+It really broke my heart yesterday - that I felt that my mom was being passive agressive towards me - and wouldn't let me sleep before I had a long drive - she claimed that she was going to let me sleep of course - but she was "cleaning up and organizing" the closet - the one that I just spent 3 hours organziing - and packing and what not - to her liking. And I knew this was going to piss her off. And the tension grew - and she kept huffing and puffing and you can just feel the tanigable anger and disappointment within every breath. Angrily - I was like "mom - please - please please just give me 10 minutes." "I am not saying anything" Huff - Puff "Mom please - I just want to sleep - and I can't sleep - knowing that you are upset - knowing that you are upset at me - and I don't get why you won't just leave me alone."
+
+And that is why we hate people. The above.
+
+My mom - in that moment - though she would never admit it - would be a liar if she claimed that she didn't have an ounce of hatred in her heart towards me. For not cleaning up well - for always being a mess - for being 33 - and still needing her help - for sleeping as she worked - for being a lazy vagabond. "I hate that you think that I think that of you" - bullshit mom - you do. 
+
+And you are taking this all - because you are upset because of your own mother - and the way she used to torture you with simliar situations. Nothing was good - everything was dipped in negativitiy - and then boom - you have it - generational hatred. 
+
+And my grandmother has passed - it has been 3 months - but it is as if the baton has been passed - and the negative spirit has entered my own mother. 
+
+And boom - I used to always know when she was on the phone with my grandmother - for it would trickle off - and she would take it in me. 
+
+And what did I do in return? The little sainlty man that I am - I would hate those around me - I would be mad at my mother - and then mad at my stupid ass friends for living in Long Island - and having to trouble to get out there - mad at the sitaution with my girlfriend - find some excuse to be upset with her. 
+
+And all and all - because of the trickle effect.
+
+Now - I personally would be an absolute fool to say - or to even - ever - remotely blame my mother - for she did - and is doing the best she knows how - but I would be living in utter denial - if I were to proclaim that I am that stotic - that her opinons and what not do not affect me - for they do - and I find myself, when I am hanging around her for lengths - to be a really prickly man. 
+
+The only time she is pleasant is when she drinks and smokes weed around 5pm. 
+
+And she might read this one day - and be utter disgusted that I am revealing her secrets - I am not - but the truth is the truth and will be brought to the light. 
+
+So I get this - and write this - to illustrate a small - but notable example - that happened yesterday on July 4th - 2023 - and I write this - on a plane to London - to meet my girlfriend after a bit of not seeing her - and hanging with her mother. That of which - the cycle continues. 
+
+There has to be something to this all. 
+
+Now - let the reader know - and the record show - that I do not blame my mother at all for being under this condition - nor do I blame her in the slightest for passing it on to me - for I know it is not her. 
+
+## External Hatred
+
+Her hatred - comes externally - she is just a vessel for the enemy of our souls - puppet - being fed things to be upset with through the spiritual war. 
+
+So when you see her - it is not her - it is the demons inside of her - lest thats what they claim. I need to examine this. 
+
+If this is hard to imagine - think of what happens when you get a brain freeze. 
+
+When you crack an ice cube in your outh - do you not feel pain? A slight little adjustment - especially if you just had a hot coffee - and then were to suck an ice cube. 
+
+Now the metaphor falls apart a bit in the sense as one willfully entered the ice cube. They might have taken it from a soft drink - from the machine itself - stuck their head in a frozen lake - who knows - but it is true to think that they could have done with the ice cube. 
+
+Another example is wifi - imagine phones - robots - robots are dead and stupid until they have a signal. 
+
+If we do not be active in our thinking - of what we are thinking of - we are going to be prone to being this - to being channels of hatred. And as we know - hatred does not come from God. So then - one must beg the question, where does this stir up? Where does hatred come from? 
+
+I argue that it does not come from the human - it comes externally - from sin - it is a rebellion - for to love - is to not hate. 
+
+And hatred - real hatred - is not usally what we see on the news - or racisim - or what not - it is hating your mother - it is hating your girlfriend - it is being more selfish - that your little sleep is more important. It is an offesne - it is reciproal - it is destructive - and it always feels like a loss to forgive. Forgiving - in this case - if I were to forgive my mom - would see that she would have the upper hand - and continue the absue. But in her eyes -I am the one whose being absuvive - don't you see the irony? And how the devil and his losers have a field day with this all. 
+
+
+
+# # How to fight this : Putting on the armor - whatever the fuck that means 
+
+A trick that helps - is to imagine them in the garden - walking around. 
+
+I like to think of people as they first are. Walking around in the garden - beautifully radiant - without any wrinkles or scars upon their face - just as the spiritual soul God has made them. If that is too hard - I like to simply imagine folks as little kids - as kids who are going through something - and who do not know any better - they are just kids for the sake of kids. 
+
+
+# The Paintbrush of Gravity 
+
+Gravity. That elusive force that binds us all - pulls us all - draws us to the center. For in the ccenter of our eyes there is an iris and in the center of the milkyway galaxy - there is a 
+Think how gravity shapes. Think how it curves mountains - uses water to fall - and carve rock. Like a reductionist aired with the ability to deduct in order to shape. To sculpt mountains out of nothing. 
+
+
 
 Extra Chapters:
 
@@ -475,6 +576,8 @@ I like when authors say - well “now we have to define our terms” - it’s fu
 
 So for the sake of joining the club of authors who like to “define terms” let’s give it a whirl. 
 
+# Fire Storm 
+
 Firstly, what is an author?
 
 I would like to define an author as someone who writes words. Somebody who creates, fabricates, the core cheif visionary of a particular vision, thought. 
@@ -485,23 +588,21 @@ Well what is the point? The point of what? The point of life?
 
 What do we mean by the word point?
 
-Do we mean reason? Do we mean a sharp edge? 
+Do we mean reason? Do we mean a sharp edge? What is the meaning?
 
 Let’s think for a tick. 
 
 The reason - what is the point of anything?
 
-What is the point of drinking coffee in the morning? 
+What is the point of drinking coffee in the morning? To wake up the nerves a bit and to get out of the slumbered state. 
 
-To wake up the nerves a bit and to get out of the slumbered state. 
+What is the point of getting out of a slumbered state? To raise to a higher elevation of productivity?
 
-What is the point of getting out of a slumbered state?
+What is the point of productivity? To produce.
 
-To raise to a higher elevation of productivity?
+What are the points of buildings? To house creation? To protect us from the elements?
 
-What is the point of productivity?
-
-To produce.
+Why 
 
 What is the point of production.
 
@@ -605,3 +706,4 @@ Why
 
 “Part of the Christian Life - is to learn how toet aw die joyfully”
 Not to go
+

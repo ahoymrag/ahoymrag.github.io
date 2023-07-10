@@ -46,17 +46,18 @@ Havens - Once a Monthly - Total Submitted Thus Far
 
 Submission 1:
 
-Chapter 4 : The Underground Puppet Show
+## Chapter 4 : The Underground Puppet Show
 
 
-Last night - I went to watch a friend perform a puppet show in a basement of some hipster cafe. In a storage pantry - that was converted into a small room - for a puppet show. 
+Last night - I went to watch a friend perform a puppet show in a basement of some hipster cafe called Gather.
+Formally what looked like either a place for the horses or slaves - there was  In a storage pantry - that was converted into a small room - for a puppet show. 
 
 Be
 
 The Premiere Hipster Cafe, Koffee? But everyone knows it as “coffee with a K” - they’d even say it - and spell the word out 
 
  - “hey do you want to meet at coffee with a K” - i wonder what other business could be used the same. 
-Are you going to “Soup with an S?” Dip it with some Bread with a B?
+Are you going to “Soup with an S?” Butter it with some Bread with a B?
 
 All of this to say was that my coffee was from gCafe - but I let it slide and hid it close - I found a little coaster and put the Koffee slipped it over my coffee - so folks would think that it was from Koffee? But I knew it was from gCafe - and they knew that I knew and they knew and we marched. Because honestly who cares - i’ll most likely buy a cup from them.
 
@@ -87,13 +88,31 @@ Grow plants grow
 Grow grow
 Grown planty grow
 
-I didn't see the rest of the show - I snuck out back and puffed a heater before - Marboro 27s - not nearly the cowboy killers I usually snatch but close enough. Seems like I'm hanging with the cool kids these days - but who knows anymore. These havens are strange. There’s much life here - but it goes away every six months or so.
+I didn't see the rest of the show - I snuck out back and puffed a heater before - Marboro 27s - not nearly the cowboy killers I usually snatch but they were close enough. Seems like I'm hanging with the cool kids these days - but who knows anymore. These havens are strange. There’s much life here - but it goes away every six months or so.
 
 I heard that Beckett gave up on the show - that she now teaches spin classes and works at a butcher shop. I still see her from time to time, but a certain spark of friendship seems to have fizzled. Too much time has passed, too many encounters on random little artistic popups and backyard parties. We had our walks and talks and shared our fears - but now we’re friendly neighborhood strangers. Always encountering one another at a place - sharing a quick line or two of witty dialog - and that’s it. That’s it.
 
-Chapter 5: Views from the Havens
+## Chapter 5: Views from the Havens - Mainly People Watching From Outside my Blinds 
 
-When I first moved to the havens - I didn’t know what to do. 
+When I first moved to the havens - I was lost. 
+
+The land ladies of the apartment I rented off of Saint John's street - a stone's toss from Wooster Square - kept insiting that the street was safe - and that them two, sisters by blood, kept there eye's peeled and that - overall - it was a safe neighborhood. They kept saying it over and over - to the point - where I realized, it wasn't safe at all. 
+
+The first night - I caught someone ruffling through the garbage. At first I thought it was merely racoons - but as I looked oustide - sheepilsly through my window blinds - I saw a man dig through the recycle bin - and indifferently toss - out what he didn't find acceptable. Putting the other and the rest of the recycles in his garbage bin. 
+
+Fuck this - thought I - fuck this mothefucker who is just tossing trash around - serves him that he's a homeless. Ruining. Judging, hating, I felt zero empathy towards him. Sick of the dirty libs letting this happen. I realized that I was my father's son all along. 
+
+Fuck. 
+
+The next day -  I went outside and saw that the 
+
+## 
+
+Not knowing what to do with myself, my time, having not a single friend, I would wander the street during the day and seldo 
+
+I didn't know why I was there - or what was the vibe of the place. Surely it was a mix of demographics - there were folks on the streets - tattered and toothless - then the young gangsters with ski masks and dressed all black. The year was 2017 and I recently turned 27 - after a long life along the scatttered coast of the Hudson River. I needed a change. 
+
+Prior to moving to the havens I survived a bunch of odd jobs here and there - there and here. 
 
 I sought out little corners and alleyways - shortcuts - thinking that they would lead somewhere.
 And for the most part they did. 
@@ -114,7 +133,7 @@ Usually it was about their past, how they had it and how they lost it, and I fel
 For I felt lost too. 
 And we shared a certain loneliness that arouses when one wanders a city alone. 
 
-Chapter 6: Everyone, who's anyone, has got something going on
+## Chapter 6: Everyone, who's anyone, has got something going on
 New Haven is an interesting city - seems like everyone here has a highly defined purpose.
 Lest it seems like they do.
 Especially them Yallies.
@@ -127,7 +146,7 @@ But I don’t think so.
 I think they come here to study. 
 Lest that was until I met Randolph 
 
-Chapter 7: Randolph Curtis
+## Chapter 7: Randolph Curtis
 Randolph
 I didn’t know what to think of Randolph at first. When he first showed up to the apartment - he had nothing but a smile and a backpack. In the spirit of breaking ice, I decided the best move forward was to give a tour of the house. He remained silent when I showed him the basement - the living room - the kitchen. 
 Silent. But when we finally got to his room - the silence turned into a deep gaze - and I watched his eyes pace left and right - as if focused on some tiny invisible marble - “Randolph”- said I “how’s it going?”
@@ -171,7 +190,7 @@ I can’t shake it
 the weary heart of man
 bring forth some guidance for I know not where I stand. “
 
-Chapter 8 : Building a Boat - Taking Stock
+## Chapter 8 : Building a Boat - Taking Stock
 Nothing much happened for a while
 Nothing much happened for a while, until the day that Randolph came home with a bunch of home depot supplies - a bunch of various little tools - all shrink wrapped.
 Where was he getting the money I wondered.
@@ -179,7 +198,9 @@ It looked like he was building a boat.
 
 Chapter 8b: Taking Stock of it all
 
-It was late fall of that same year i moved in that house. And I took stock one night 
+It was late fall of that same year i moved in that house. It was a bit of a bit of a far cry from the Wooster apparentment. I asked the landlady who was working from the P&M management offices (a slum Lord from what someone at the shop told me) if it was a safe neighborhood. Yes yes, of course Mr. Otto - of course - it is incredibly safe - mostly just Yale Post Grads and young families - the word "safe spot kept coming up"
+
+At this point - I drove and walked around a little to now when things got dicey - it didn't take long - it was super obvivous. I mean - things where inside looks wild - I walked over - and hde didn't have a womn - he just bought it scolol. NOt konwing what t otmake of this amnn - I passwed a minute. 
 
 //
 
@@ -255,7 +276,7 @@ thought about Sara - and wondered how the job interview went. Probably well. Her
 I took note to ask her next time I see her - and I stumbled down the stairs for some wine.
 
 
-Chapter 11: Rollin to Abate with the Gypsies 
+## Chapter 11: Rollin to Abate with the Gypsies 
 As I ventured towards the kitchen I heard the loud snap of the door banging against the wall and heard some grunting and crashing sounds.
 I stepped out on the porch Dave was packing a pipe on the rocking chair we recently found - I spotted Dominic and his two brothers Sam and Gino dressed in suits - taking boxes and boxes out of the back of some rusty minivan. 
 Dominic spotted me and tossed the box into a pile. 
@@ -810,13 +831,15 @@ part 2
 A few good folk for the folk (The crew selection process)
 
 
-Scene 2: Montage: search for a boat (the boat selection process)
+## Scene 2: Montage: search for a boat (the boat selection process)
 
 
 Finally the Gypsys (Dom, Sam, Gino) save the day and hatch a boat to the Honda and drop it off of branford - they need to go through branford. So they drive along Whitney avenue - with their beat up truck pulling the beat up boat
 
 
-They head for the island - and begin checking all of their equipment
+They head for the island - and begin checking all of their equipment.
+
+I looked around and was pleased with the little crew I had assembled, they were self-sustianing bunch 
 
 
 The crew is fully stacked metal detectors, shovels, and wooden chests - snacks and other provisions
@@ -933,7 +956,33 @@ Confronting Chris
 Kenny writes Chris and told him - yes - he is just a bullshit artist - a hatcher of dreams - he didn’t know what to do with the power given so he thought he’d make a big distraction - is that what you want to hear?
 
 
+# On the day we set sail
 
+I woke up that morning and wanted to go back to bed. I scrolled through my instagram feed and pitied everyone out there who posted. For me, lest in that season, posting was a sign of weakness - a sign to get forth the thing that one ought to bring forth - it was a sign of utter weakness - all the way through - and yet here I was - consuming each feed. 
+
+I didn't want to do what I had to do - nay - we set up all the little details of this trip, who was going to man it - how it was going to be arranged - I thought over the sequence of the day over and over - and made timeline after timeline - sometimes of the same events - on a piece of paper. I would do this thing- from which I loved to do, where I would write the same list over and over again - in different places - in different states of the house - or in the room - or of mind. To see if I have reached the same conclusions - to see if therew as any hope in my thinking. For there is nothing like having a tednency for se;f-criticl - lest that could lead so completely towards self-loathing. 
+
+Regardless of al lthis - I knew that I had to be done. So I stuffed the sadness deep down - and headed towards the kitchen to make a keriug. Fresh stocked with some wal-mart - went out and poured a coffee. Went outside and soaked it in .It was a bright day in March - the kind of day that makes you realize that not everything is cold for at ime. 
+
+For the seasons of the havens are moved much too quick - there becomes spring - and then summer - and then autum nand tne the fall. As soon as one is used to one season - boom - it is over - and we now must march on to another. As soon as I was getting used to spring -boom the summer - and as I am getting older (27 at the time of writing this) I feel like time is slipping on and on. 
+
+But march was still delightful in the havens 
+
+I was the first one up by a mile. 
+
+I thought of the people i Knew in the havens. Thought of the quality of their character - judged them - realized that they really don't give a crap about me - that everyone is here just to be here - and that there is nothing really unifying us. At least Josh and his crew had a church family - whatever cult that was - I thought of joining - for at least they stick together - based around some common belief. Truth be told - I had no idea what they were all about - them born-again Christians as they have called it - and nor did I want anything to do with them - but they were so damn persistenat with inviting me to lunch - and my stomach - hadn't seen the grace of food in hours and hours - i thought I would entertain there notions for 45 min - as I snacked on their food. It was a fair deal I traded. At least these Christians have food - unlike the jews that I've met - nor the muslims - nor the peddling on the ground - these guys were meeting at panera bread. So long as it wasn't a bowling alley - i was settled. 
+
+Anyway - I was rambling and unfocused - later that afternoon - we were going to set sail - but my mind was a million miles away froom the problem .I was hungy. So I ate.
+
+# And then a knock
+
+And then a knock came at the door - which was weird - who knocks anympre.
+
+It was a man - mid 40s - dressed nicely in a suit - with silver grey and pepper - and just looked too goodlooking for the outfit he wearing, a small shorts and a long baggy pants - as if he was just coming out. 
+
+He introduced himself as Rick Christoff - a local developer - looking to run for mayor. I shook his hands - and in my pajamas admitted that I was an alderman. 
+
+No way! exclaimed he "That is amazing!" Look at me 
 
 ///
 

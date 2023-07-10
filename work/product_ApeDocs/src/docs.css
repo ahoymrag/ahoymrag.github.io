@@ -1,6 +1,7 @@
 /*docs css*/
 
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 :root{
     --main :#0a192f;
@@ -20,12 +21,15 @@ html {
   margin:0;
   padding:0px;
     background-color:black;
-    font-family: 'Barlow Condensed', sans-serif;
+font-family: 'Press Start 2P', cursive;
+
 }
 
 body {
     background-size: cover;
     background-blend-mode: lighten;
+    font-family: 'Press Start 2P', cursive;
+
 }
 
 

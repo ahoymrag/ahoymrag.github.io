@@ -1,0 +1,96 @@
+<html>
+<head> <!-- VERTICAL EDITION -->
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.png">
+    <link rel="stylesheet" type="text/css" href="/ahoymrag.github.io/work/product_ApeDocs/src/starz.css">
+    <link rel="stylesheet" href="/ahoymrag.github.io/work/product_ApeDocs/src/docs.css">
+    <script defer data-domain="docs.apeworx.io" src="https://plausible.io/js/script.js"></script>
+    <title>ApeDocs - ApeWorX, LTD </title>
+    <style>
+        #stars {
+            max-height: 90vh;
+        }
+        .tab-content {
+            display: none;
+            color: white;
+        }
+        .tab-content.active {
+            display: block;
+        }
+    </style>
+    <script>
+        function openTab(tabId) {
+            // Hide all tab content
+            const tabContents = document.getElementsByClassName("tab-content");
+            for (let i = 0; i < tabContents.length; i++) {
+                tabContents[i].classList.remove("active");
+            }
+
+            // Show the selected tab content
+            const selectedTab = document.getElementById(tabId);
+            selectedTab.classList.add("active");
+        }
+    </script>
+    <style>
+        #stars {
+            max-height:90vh;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <nav>
+            <a href="https://www.apeworx.io">
+                <div class="navLogo"></div>
+            </a>
+        </nav>
+
+     
+        
+      <style>
+        .bigBoyMenu-wrap {
+            background-color:green!important;
+        }
+      </style>
+       
+            <div class="bigBoyMenu-wrap">
+            <div class="desktop-Logo-center-left"></div>
+            <div class="desktop-MenuHolder-center-left">
+                <button class="desktop-MenuButton" onclick="openTab('tab-apeDocs');">
+                    Ape Documentation
+                </button>
+                <button class="desktop-MenuButton" onclick="openTab('tab-apePackages');">
+                    Other Packages
+                </button>
+                <button class="desktop-MenuButton" onclick="openTab('tab-apePlugins');">
+                    Plugins
+                </button>
+            </div>
+        </div>
+            
+        <section id="mainDocNavigator">
+            <div id="tab-apeDocs" class="tab-content active">
+                <p style="color: white;">This is where the tabbed content would go for the regular docs - using simple JavaScript</p>
+                <button class="desktop-MenuButton" >Here is a link to the Ape Offical Documentation </button>
+            </div>
+            <div id="tab-apePlugins" class="tab-content">
+                <div>
+                <img src="/ahoymrag.github.io/work/product_ApeDocs/assets/astronaut.png" class="FG-center-right">
+                <p style="color: white;">This is where the PLUGINS content would go for plugins - using simple JavaScript</p>
+                </div>
+            </div>
+            <div id="tab-apePackages" class="tab-content">
+                <p style="color: white;">This is where the tabbed content would go for packages - using simple JavaScript</p>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <p style="color: white;">This is Menu would go </p>
+            </div>
+        </section>
+
+
+    </div>
+<div id="stars"></div>
+</body>
+</html>
