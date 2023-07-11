@@ -188,7 +188,7 @@ Lawyer - Cocktails with Canolis - Elm City Rooftop - Sleeps Cuddle?
 
 6.13 - Tuesday - Got Grill - Hung out all day - movies and cuddle sleeps 
 
-6.14 - Wednesday - Got  Bagels - went to beach - Crunch Cuddle - Rob Interview - More Grill
+6.14 - Wednesday - Got  Bagels - went to beach - Crunch Cuddle - Rob Rutdlege Interview - More Grill
 
 6.15 - Thursday - Little Cheeky Bev for Lunch - Ellen hung out with coursemates - AG went to men's group
 
@@ -213,6 +213,8 @@ Lawyer - Cocktails with Canolis - Elm City Rooftop - Sleeps Cuddle?
 6.26 - Monday - Scalloops Scallops - Big Y - Ham and CHeese Brie - Thunderstorms - Jammie - Records - Set List 
 
 6.27 - Just dropped Ellen home - she's going to present poster 
+
+
 #Little ways to love E:
 [] Finish Song
 [] Poem
