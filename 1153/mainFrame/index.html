@@ -13,6 +13,7 @@
         <h1>1153 : mainframe</h1>
     </header>
     <main>
+        <!-- GITHUB UPDATES -->
         <div class="grid-container">
             <div id="agOOO" class="github-updates">
                 <h3>ahoy ooo GitHub Updates:</h3>
@@ -22,7 +23,15 @@
                 <h3>ag ooo GitHub Updates:</h3>
                 <div id="ahoyOOO-commit-info"></div>
             </div>
+            <div id="agbabbbycakes" class="github-updates">
+                <h3>agbabbbycakes GitHub Updates:</h3>
+                <div id="agbabbbycakes-commit-info"></div>
+            </div>
         </div>
+        <!-- END OF GITHUB UPDATES-->
+
+
+        <div class="grid-container">
         <div id="markDownPortal" class="github-updates">
             <h3>Markdown Portal</h3>
             This is where the preview of a markdown will go 
@@ -105,78 +114,111 @@
             <div id="ahoyOOO-commit-info"></div>
         </div>
     </div>
+    </div>
     </main>
+</div>
 
     <!-- CONDITIONAL LOGIC AND SCRIPTS -->
 
 
 <!-- SCRIPT FOR FETCHING GITHUB DATA -->
 <script>
-        // Function to fetch and display GitHub updates for 'agOOO' repository
-        function fetchAgOOOUpdates() {
-            // Replace 'YOUR_USERNAME' with your GitHub username
-            const username = 'oooahoyooo';
+    // Function to fetch and display GitHub updates for 'agOOO' repository
+    function fetchAgOOOUpdates() {
+        // Replace 'YOUR_USERNAME' with your GitHub username
+        const username = 'oooahoyooo';
 
-            // Replace 'YOUR_REPO_NAME' with the name of your GitHub repository
-            const repo = 'oooahoyooo.github.io';
+        // Replace 'YOUR_REPO_NAME' with the name of your GitHub repository
+        const repo = 'oooahoyooo.github.io';
 
-            // Fetch the latest commit from the repository
-            fetch(`https://api.github.com/repos/${username}/${repo}/commits`)
-                .then(response => response.json())
-                .then(data => {
-                    // Display the latest commit information
-                    const commit = data[0];
-                    const commitMessage = commit.commit.message;
-                    const commitAuthor = commit.commit.author.name;
-                    const commitDate = new Date(commit.commit.author.date);
+        // Fetch the latest commit from the repository
+        fetch(`https://api.github.com/repos/${username}/${repo}/commits`)
+            .then(response => response.json())
+            .then(data => {
+                // Display the latest commit information
+                const commit = data[0];
+                const commitMessage = commit.commit.message;
+                const commitAuthor = commit.commit.author.name;
+                const commitDate = new Date(commit.commit.author.date);
 
-                    const commitElement = document.getElementById('agOOO-commit-info');
-                    commitElement.innerHTML = `
-                        <h3>Latest Commit:</h3>
-                        <p><strong>Date:</strong> ${commitDate}</p>
-                        <p><strong>Message:</strong> ${commitMessage}</p>
-                    `;
-                })
-                .catch(error => {
-                    console.error('Error:', error);
-                });
-        }
+                const commitElement = document.getElementById('agOOO-commit-info');
+                commitElement.innerHTML = `
+                    <h3>Latest Commit:</h3>
+                    <p><strong>Date:</strong> ${commitDate}</p>
+                    <p><strong>Message:</strong> ${commitMessage}</p>
+                `;
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+    }
 
-        // Function to fetch and display GitHub updates for 'ahoyOOO' repository
-        function fetchAhoyOOOUpdates() {
-            // Replace 'YOUR_USERNAME' with your GitHub username
-            const username = 'ahoymrag';
+    // Function to fetch and display GitHub updates for 'ahoyOOO' repository
+    function fetchAhoyOOOUpdates() {
+        // Replace 'YOUR_USERNAME' with your GitHub username
+        const username = 'ahoymrag';
 
-            // Replace 'YOUR_REPO_NAME' with the name of your GitHub repository
-            const repo = 'ahoymrag.github.io';
+        // Replace 'YOUR_REPO_NAME' with the name of your GitHub repository
+        const repo = 'ahoymrag.github.io';
 
-            // Fetch the latest commit from the repository
-            fetch(`https://api.github.com/repos/${username}/${repo}/commits`)
-                .then(response => response.json())
-                .then(data => {
-                    // Display the latest commit information
-                    const commit = data[0];
-                    const commitMessage = commit.commit.message;
-                    const commitAuthor = commit.commit.author.name;
-                    const commitDate = new Date(commit.commit.author.date);
+        // Fetch the latest commit from the repository
+        fetch(`https://api.github.com/repos/${username}/${repo}/commits`)
+            .then(response => response.json())
+            .then(data => {
+                // Display the latest commit information
+                const commit = data[0];
+                const commitMessage = commit.commit.message;
+                const commitAuthor = commit.commit.author.name;
+                const commitDate = new Date(commit.commit.author.date);
 
-                    const commitElement = document.getElementById('ahoyOOO-commit-info');
-                    commitElement.innerHTML = `
-                        <h3>Latest Commit:</h3>
-                        <p><strong>Date:</strong> ${commitDate}</p>
-                        <p><strong>Message:</strong> ${commitMessage}</p>
-                    `;
-                })
-                .catch(error => {
-                    console.error('Error:', error);
-                });
-        }
+                const commitElement = document.getElementById('ahoyOOO-commit-info');
+                commitElement.innerHTML = `
+                    <h3>Latest Commit:</h3>
+                    <p><strong>Date:</strong> ${commitDate}</p>
+                    <p><strong>Message:</strong> ${commitMessage}</p>
+                `;
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+    }
 
-        // Fetch GitHub updates when the page loads
-        window.onload = function() {
-            fetchAgOOOUpdates();
-            fetchAhoyOOOUpdates();
-        };
-    </script>
+    // Function to fetch and display GitHub updates for 'agbabbbycakes' repository
+    function fetchAgbabbbycakesUpdates() {
+        // Replace 'YOUR_USERNAME' with your GitHub username
+        const username = 'agbabbbycakes';
+
+        // Replace 'YOUR_REPO_NAME' with the name of your GitHub repository
+        const repo = 'agbabbbycakes.github.io';
+
+        // Fetch the latest commit from the repository
+        fetch(`https://api.github.com/repos/${username}/${repo}/commits`)
+            .then(response => response.json())
+            .then(data => {
+                // Display the latest commit information
+                const commit = data[0];
+                const commitMessage = commit.commit.message;
+                const commitAuthor = commit.commit.author.name;
+                const commitDate = new Date(commit.commit.author.date);
+
+                const commitElement = document.getElementById('agbabbbycakes-commit-info');
+                commitElement.innerHTML = `
+                    <h3>Latest Commit:</h3>
+                    <p><strong>Date:</strong> ${commitDate}</p>
+                    <p><strong>Message:</strong> ${commitMessage}</p>
+                `;
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+    }
+
+    // Fetch GitHub updates when the page loads
+    window.onload = function() {
+        fetchAgOOOUpdates();
+        fetchAhoyOOOUpdates();
+        fetchAgbabbbycakesUpdates();
+    };
+</script>
 </body>
 </html>

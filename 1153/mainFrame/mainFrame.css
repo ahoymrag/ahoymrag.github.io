@@ -1,15 +1,23 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-
+  :root{
+   --alink :#ffa600;
+   --color: #ff0060;
+    }
 /*MainFrame CSS*/
 body {
-    background-color: rgb(78, 0, 118);
+    background-color: rgb(5, 0, 27);
     color: rgb(255, 255, 255);
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 900px;
-    font-family: 'Press Start 2P', 
+    font-family: 'Press Start 2P';
     
+    
+}
+
+a {
+    color: var(--alink);
 }
 
 h4 {
@@ -63,11 +71,11 @@ padding: 20px;
 }
 
 .github-updates {
-background-color: #c574ff;
+background-color: #0031c6b5;
 padding: 20px;
 border-style:solid;
 border-color:purple;
-color:purple;
+color: var(--color);
 }
 
 .markdown-list-menu {
@@ -78,7 +86,7 @@ color:purple;
 }
 
 .markdown-links {
-    color:purple;
+    color: var(--alink);
 }
 
 .markdown-links:hover {
