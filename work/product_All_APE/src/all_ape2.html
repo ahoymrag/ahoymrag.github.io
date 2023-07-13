@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Experimental</title>
+    <title>ApeWorx, LTD </title>
     <style>
         /* Global Styles */
         body {
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
+            background-color: black;
         }
 
         /* Main Styles */
@@ -18,7 +18,6 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: #f6f6f6;
         }
 
         .menu {
@@ -27,9 +26,13 @@
 
         .menu-item {
             flex: 1;
-            height: 200px;
-            background-color: #fff;
-            border-radius: 10px;
+            display:flex;
+            align-items:center;
+            justify-content: center;
+            min-width:20%;
+            height: 100%;
+            min-height:100vh;
+            border-radius: 7.5px;
             margin: 10px;
             text-align: center;
             transition: background-color 0.3s ease;
@@ -50,24 +53,127 @@
             font-weight: bold;
             font-size: 20px;
         }
+
+        .container-product {
+            background-color:red;
+            max-width:100vw;
+            overflow:hidden;
+        }
+
+        .splash {
+            width:100%;
+            min-height:20vh;
+            background-color:#ff8dd120;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .splash-logo {
+            width: 300px;
+            height:auto;
+
+        }
+
+        .product-logo {
+            min-width:220px;
+            max-width:220px;
+            height:auto;
+            overflow:hidden;
+        }
+
+        /* RESPONSIVE SUGAR */
+
+    /* BREAKPOINT 1 AT 920 */
+        @media only screen and (max-width: 920px) { 
+            .container-product { 
+            background-color:purple; 
+        }
+
+        .product-logo {
+            min-width:180px;
+            max-width:180px;
+            height:auto;
+            overflow:hidden;
+        }
+
+        }
+
+    /*BREAKPOINT 2 AT 720 */
+             @media only screen and (max-width: 720px) { 
+            .container-product { 
+            background-color:rgb(241, 0, 241); 
+        }
+
+        .product-logo {
+            min-width:100px;
+            max-width:100px;
+            height:auto;
+            max-height:50vh;
+            overflow:hidden;
+        }
+
+        }
+
+    /*BREAK POINT 3 AT 620 */
+        @media only screen and (max-width: 620px) { 
+
+            .container-product {
+                background-color:yellow;
+            }
+
+            .menu {
+                display:flex;
+                flex-direction:column;
+            }
+
+            .product-logo {
+            min-width:350px;
+            height:auto;
+            overflow:hidden;
+        }
+
+
+
+        }
+
+        .container-bottom {
+            background-color:green;
+            width:100%;
+            min-height:30vh;
+            display:flex;
+            align-items:center;
+            justify-content: center;
+        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="menu">
-            <div class="menu-item">
-                <a href="#">Experimental</a>
-            </div>
-            <div class="menu-item">
-                <a href="#">Pending Features</a>
-            </div>
-            <div class="menu-item">
-                <a href="#">Experimental</a>
-            </div>
-            <div class="menu-item">
-                <a href="#">Pending Features</a>
-            </div>
+    <div class="splash">
+        <img class="splash-logo" src="/ahoymrag.github.io/work/product_All_APE/assets/apeFull.png">
+        
+    </div>
+    <div class="container-product">
+    <div class="menu">
+        <div class="menu-item">
+            <a href="/ahoymrag.github.io/work/product_All_APE/src/apes/chaosnet_1/chaosnet.html"><img src="/ahoymrag.github.io/work/product_All_APE/assets/3.png" alt="Logo" class="product-logo">
+            </a>
         </div>
+        <div class="menu-item">
+            <a href="/ahoymrag.github.io/work/product_All_APE/src/apes/chaosnet_1/chaosnet.html" ><img src="/ahoymrag.github.io/work/product_All_APE/assets/2.png" alt="Logo" class="product-logo">
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="/ahoymrag.github.io/work/product_All_APE/src/apes/silverback_1/silverback.html"><img src="/ahoymrag.github.io/work/product_All_APE/assets/3_silver.png" alt="Logo" class="product-logo">
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="https://apeworx.io"><img src="/ahoymrag.github.io/work/product_All_APE/assets/4.png" alt="Logo" class="product-logo">
+            </a>
+        </div>
+    </div>
+    </div>
+    <div class="container-bottom">
+        Bottom Bottom
     </div>
 </body>
 </html>

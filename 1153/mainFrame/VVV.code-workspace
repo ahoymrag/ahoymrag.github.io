@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"path": "../../.."
+		},
+		{
+			"path": "../../../../OOO"
+		},
+		{
+			"path": "../../../../EEE"
+		},
+		{
+			"path": "../../../../CPC3"
+		},
+		{
+			"path": "../../../../WWW"
+		},
+		{
+			"path": "../../../../CCC"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "CPC3"
+	}
+}
