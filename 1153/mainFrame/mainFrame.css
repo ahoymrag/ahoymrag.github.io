@@ -4,6 +4,7 @@
   :root{
    --alink :#ffa600;
    --color: #ff0060;
+   --divBGcolor:#0031c671;
     }
 /*MainFrame CSS*/
 body {
@@ -37,7 +38,7 @@ position: fixed;
 top: 0;
 left: 0;
 right: 0;
-background-color: #eed3ff77;
+background-color:var(--divBGcolor);
 padding: 10px;
 min-width:300px;
 z-index: 9999;
@@ -46,10 +47,12 @@ border-color:purple;
 display:flex;
 align-items:center;
 justify-content: center;
+font-family: 'Press Start 2P';
+
 }
 
 .search-class {
-background-color:rgb(255, 255, 224);
+background-color:var(--divBGcolor);
 min-width:90%;
 display:flex;
 align-items:center;
@@ -60,6 +63,8 @@ text-align:center;
 border-style:solid;
 border-color:purple;
 color:purple!important;
+font-family: 'Press Start 2P';
+
 }
 
 .grid-container {
@@ -71,7 +76,7 @@ padding: 20px;
 }
 
 .github-updates {
-background-color: #0031c6b5;
+background-color: var(--divBGcolor);
 padding: 20px;
 border-style:solid;
 border-color:purple;
@@ -91,4 +96,13 @@ color: var(--color);
 
 .markdown-links:hover {
     opacity:.5;
+}
+
+.mainFrame-splash {
+    position:relative;
+    margin:20px;
+    margin-top:200px;
+    display:flex;
+    align-items:center;
+    justify-content: center;
 }
