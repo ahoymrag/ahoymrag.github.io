@@ -13,8 +13,6 @@ body {
     font-size: 12px;
     font-weight: 900px;
     font-family: 'Press Start 2P';
-    
-    
 }
 
 a {
@@ -92,6 +90,7 @@ color: var(--color);
 
 .markdown-links {
     color: var(--alink);
+    margin-top:8px;
 }
 
 .markdown-links:hover {
