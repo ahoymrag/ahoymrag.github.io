@@ -27,6 +27,29 @@
                 background-color: #e4e4e4;
             }
         </style>
+        <style>
+            /* Add styles for the modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
+    padding-top: 50px;
+}
+
+.modal iframe {
+    width: 90%;
+    height: 90%;
+    margin: 0 auto;
+    display: block;
+}
+
+        </style>
     </head>
     <body>
         <nav class="home-button-wrap">
@@ -82,13 +105,11 @@
             </style>
             
             <div id="port-silverTrailer" class="portfolio-item">
-                <img src="./portfolio/assets/companyLogos/silverBack.png" class="littleBuddyLogo">
                 <h1>Silverback trailer</h1> <h3>2023</h3>
                 <button class="portfolio-button">Watch </button><a href="#"></a>
             </div>
 
             <div id="port-panta" class="portfolio-item">
-                <img src="/ahoymrag.github.io/portfolio/assets/companyLogos/chaosNet.png" class="littleBuddyLogo">
                 <h1>pantalones intro</h1>
                 <h3>2023</h3>
                 <button class="portfolio-button">Watch </button><a href="#"></a>
@@ -96,17 +117,33 @@
             </div>
 
             <div id="port-chaosTrailer" class="portfolio-item">
-                <img src="/ahoymrag.github.io/portfolio/assets/companyLogos/apePay.png" class="littleBuddyLogo">
                 <h1>cHaosnet Trailer</h1><h3>2023</h3>
                 <button class="portfolio-button">Watch </button><a href="#"></a>
             </div>
+            <style>
+                #port-colorMusicVideo {
+                    min-width:100%;
+                }
+            </style>
             <div id="port-colorMusicVideo" class="portfolio-item">
-                <img src="/ahoymrag.github.io/portfolio/assets/companyLogos/apePay.png" class="littleBuddyLogo">
-                <h1>colorfields music videos</h1><h3>2021</h3>
-                <button class="portfolio-button">Watch 1</button><a href="#"></a>
-                <button class="portfolio-button">Watch 1</button><a href="#"></a>
-                <button class="portfolio-button">Watch 1</button><a href="#"></a>
+                <h1>Color Fields</h1><h2>Music Videos</h2><h3>2020</h3>
+                <button class="portfolio-button" data-modal-id="video1">Penudulum</button>
+                <button class="portfolio-button" data-modal-id="video2">Summertime</button>
             </div>
+            
+            <!-- Add hidden modal elements for each video -->
+            <div id="video1" class="modal">
+                <h2>Color Fields - Penudulum</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/keIDw9hVNB0" frameborder="0" allowfullscreen></iframe>
+            </div>
+            
+            <div id="video2" class="modal">
+                <h2>Color Fields - Summertime</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/kKMWBglaRMM" frameborder="0" allowfullscreen></iframe>
+            </div>
+            
+
+            
        
             <div id="port-PalBot2" class="portfolio-item">
                 <img src="/ahoymrag.github.io/portfolio/assets/companyLogos/apePay.png" class="littleBuddyLogo">
@@ -132,5 +169,36 @@
         <div class="centeredDiv">
             <a href="./the-canon.html"><h3>THE LIFETIME CANON OF FILM WORK</h3></a>
         </div>
+        <script>
+            // Get all buttons with the class "portfolio-button"
+            const buttons = document.querySelectorAll(".portfolio-button");
+        
+            // Add event listeners to each button
+            buttons.forEach(button => {
+                button.addEventListener("click", () => {
+                    // Get the data-modal-id attribute from the button
+                    const modalId = button.getAttribute("data-modal-id");
+                    
+                    // Get the corresponding modal element
+                    const modal = document.getElementById(modalId);
+        
+                    // Display the modal
+                    modal.style.display = "block";
+                });
+            });
+        
+            // Close the modal when the user clicks outside of it
+            window.addEventListener("click", event => {
+                // Get the target element that was clicked
+                const targetElement = event.target;
+        
+                // Check if the clicked element is a modal and not one of its descendants
+                if (targetElement.classList.contains("modal") && !targetElement.closest(".modal-content")) {
+                    targetElement.style.display = "none";
+                }
+            });
+        </script>
+        
+        
     </body>
 </html>
