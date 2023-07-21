@@ -1,4 +1,13 @@
-## Long Term Summer Goals 
+
+
+
+
+
+
+
+## Long Term Summer Goals
+[] PreProduction = Nibbler
+[] Revisit and Release and Submit Gustvo to Gavlin Festival 
 [] Release Nibbler 
 [] Ahoy App (iOS + Android + Web)
 [] Ahoy Auto
@@ -7,10 +16,21 @@
 
 
 ## Shorter Term
+[] Get workout Equipment
+[] Research and Schedule an AirBnB Boat Rental
+[] Learn how to Sail Class?
+[] Make a 3d Rendering of the Bungalows Using Unreal Engine
+[] Make a 3d Rendering of Ahoy Broadcast Station
+[] Research and Purchase 7k worth of land - for Bungalow Site 1
+
+
+## Bungalow Sites
+They will be a network of remote sites - given an acre of land or so - every 3 or so years a new one will emerge - so that by in 10 years - there will be 3-4 sites around the world 
+- First site is just to start 
 
 
 ## Shortest Term
-[] Book Flights + Accomdations for London (Get Pecans Set)
+[x] Book Flights + Accomdations for London (Get Pecans Set)
 [] 
 
 # Shopping List before London
@@ -23,30 +43,14 @@
 # Ahoy Web App
 [] Podcast Page
 
+# Plan and Organize
+1. Brew Crew Outlooks and Reach
+2. 
 
 
 # July 2023
 ## July 3 
 []Head back to Sleepy Hollow
 = Attempted to Create a Repo for CPC and an organization - got most of it set up but having trouble deploying
-Final Code - 9:20-9:55am
-[] Update Nibbler on vsCode?
-[] Get Journal Going on vsCode
-[] 1153 - linked up to readmes 
-
-
-[] Clean Room one more time - 10am - 10:30a
-[] Final Pack + House Clean 10:30-10:50
-[] Leave for Marshalls 
-- - [] Buy Shorts + Pants + 2 Shirts 
-
-## Later work
-[] CPC Podcast
-[] Ape One Pager + Docs Website
-[] Settle - Call Aetna - why is my insurance broken?
-
-## Research
-[] How to
-
-
+= Sent Ellen some Scalloop Pictures - backed up some more
 
