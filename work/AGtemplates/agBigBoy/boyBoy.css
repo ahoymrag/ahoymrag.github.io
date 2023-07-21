@@ -1,0 +1,176 @@
+/*All Ape CSS*/
+
+h2 {
+    color:white;
+    text-transform:uppercase;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-image: url("/ahoymrag.github.io/work/product_All_APE/assets/6.png");
+    background-size:cover;
+    background-attachment:fixed;
+    box-shadow: inset 0 0 10px #c9c9c9;
+    animation: gradientAnimation 10s linear infinite ease-in-out;
+    
+}
+
+/*COLOR */
+
+.borderWhite {
+    border-color:white;
+    border-style:solid;
+}
+
+/*STRUCTURE */
+
+header {
+    width:100%;
+    height:220px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+
+.part1-wrap {
+    height:100vh;
+}
+
+.part2-wrap {
+    height:100vh;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+
+
+
+
+.vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/*Menu Structure*/
+.ape-action-menu {
+    min-width:100%;
+    max-width:700px;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    background-color:rgba(161, 161, 161, 0.164);
+}
+/*End of Menu Structure*/
+
+/*Buttons*/
+.menuLinkButton {
+    color:black;
+    text-decoration: none;
+    min-width:100px;
+    min-height:50px;
+    margin-top:12.5px;
+    margin-bottom:12.5px;
+    background-color:red;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.menuLinkButton:hover {
+    background-color:#e2e2e2;
+}
+
+.logo {
+    width:100px;
+    max-width:200px;
+    height: auto;
+    margin:5px;
+    opacity:.95;
+
+    }
+
+.logo:hover {
+    opacity: 0.93;
+    cursor: pointer;
+
+}
+
+
+.ape-product-menu {
+    width:100%;
+    max-width:700px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+
+.logo-product {
+    width:100%;
+    height:auto;
+  
+    height: auto;
+    margin-right:5px;
+}
+
+.github-link {
+    font-size: 18px;
+    text-decoration: none;
+    max-width:200px;
+    max-height:200px;
+    overflow:hidden;
+    height:auto;
+    margin:2.5px;
+
+    opacity:.95;
+}
+
+.github-link:hover { 
+    opacity: 0.93;
+    filter:invert(50%);
+    mix-blend-mode: lighten;
+}
+
+
+        @keyframes gradientAnimation {
+    0% {
+        background: linear-gradient(to right, #e2e2e2, #c0c0c0);
+    }
+    25% {
+        background: linear-gradient(to right, #d0d0d0, #c0c0c0);
+    }
+    50% {
+        background: linear-gradient(to right, #c0c0c0, #a0a0a0);
+    }
+    75% {
+        background: linear-gradient(to right, #a0a0a0, #808080);
+    }
+    100% {
+        background: linear-gradient(to right, #808080, #e2e2e2);
+    }
+}
+
+
+.fullwidth-wrap {
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom: 20px;
+
+}
+
+
