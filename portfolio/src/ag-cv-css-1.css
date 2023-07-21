@@ -375,7 +375,7 @@ p {
     align-items:center;
     justify-content:center;
     background-color: #ffffffeb;
-    mix-blend-mode:difference;
+    mix-blend-mode:difference!important;
     width:100px;
     height:50px;
     text-align:center;
