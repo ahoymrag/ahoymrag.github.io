@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Refinement Visualization</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <style>
+        body {
+            background-color: #f8f8f8;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        circle {
+            stroke: #000;
+            stroke-width: 2.5px;
+            transition: fill 0.5s ease;
+        }
+        
+        line {
+            stroke: #000;
+            stroke-opacity: 0.6;
+            transition: stroke-opacity 0.5s ease;
+        }
+
+        .toggle-button {
+            padding: 20px 50px;
+            font-size: 20px;
+            margin: 10px;
+            background-color: #000;
+            color: #fff;
+            border: none;
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+        }
+
+        .toggle-button:hover {
+            background-color: #333;
+        }
+    </style>
+</head>
+<nav>
+    <a href="./index.html">Back to Experiments</a>
+        <div>
+            <a href="./graph_viz-whiz.html">Graph Viz</a>
+            <a href="./colorRefinement.html">Color Refinement</a>
+            <a href="./index.html">back to homepage</a>
+        </div>
+    </nav>
+<body>
+    <svg width="600" height="480"></svg>
+    <div style="display: flex; justify-content: center;">
+        <button class="toggle-button" onclick="startAnimation()">Start Animation</button>
+        <button class="toggle-button" onclick="resetGraph()">Reset</button>
+    </div>
+
+
+<style>
+    body {
+    background-color: #000;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+}
+        
+svg {
+    background-color: #000;
+}
+
+circle {
+    stroke: #fff;
+    stroke-width: 2.5px;
+    transition: fill 0.5s ease;
+}
+        
+line {
+    stroke: #fff;
+    stroke-opacity: 0.6;
+    transition: stroke-opacity 0.5s ease;
+}
+
+.toggle-button {
+    padding: 20px 50px;
+    font-size: 20px;
+    margin: 10px;
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #fff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.toggle-button:hover {
+    background-color: #666;
+    color: #fff;
+}
+
+</style>
+
+
+
+    <script>
+        var graph = {
+            nodes: [
+                {id: 0, color: "#fff"},
+                {id: 1, color: "#fff"},
+                {id: 2, color: "#fff"},
+                {id: 3, color: "#fff"}
+            ],
+            links: [
+                {source: 0, target: 1},
+                {source: 1, target: 2},
+                {source: 2, target: 0},
+                {source: 3, target: 1}
+            ]
+        };
+
+        var svg = d3.select("svg"),
+            width = +svg.attr("width"),
+            height = +svg.attr("height");
+
+        var simulation = d3.forceSimulation()
+            .nodes(graph.nodes)
+            .force("link", d3.forceLink(graph.links).distance(200))
+            .force("charge", d3.forceManyBody().strength(-400))
+            .force("center", d3.forceCenter(width / 2, height / 2))
+            .on("tick", ticked);
+
+        simulation.force("link")
+            .links(graph.links);
+
+        var link = svg.selectAll(".link")
+            .data(graph.links)
+            .enter().append("line")
+            .attr("class", "link");
+
+        var node = svg.selectAll(".node")
+            .data(graph.nodes)
+            .enter().append("circle")
+            .attr("class", "node")
+            .attr("r", 20)
+            .style("fill", d => d.color);
+
+        function ticked() {
+            link.attr("x1", d => d.source.x)
+                .attr("y1", d => d.source.y)
+                .attr("x2", d => d.target.x)
+                .attr("y2", d => d.target.y);
+
+            node.attr("cx", d => d.x)
+                .attr("cy", d => d.y);
+        }
+
+        function startAnimation() {
+            // Let's make the animation fluid and smooth:
+            // Gradually change colors and link opacity for visualization purposes
+            setTimeout(() => {
+                graph.nodes[0].color = "#000"; // Change first node to black
+                svg.selectAll(".node").style("fill", d => d.color);
+            }, 1000); // After 1 second
+
+            setTimeout(() => {
+                graph.links[0].strength = 0; // Reduce link opacity
+                svg.selectAll(".link").style("stroke-opacity", d => d.strength || 0.6);
+            }, 2000); // After 2 seconds
+        }
+
+        function resetGraph() {
+            graph.nodes.forEach(node => node.color = "#fff"); // Reset all nodes to white
+            svg.selectAll(".node").style("fill", d => d.color);
+            svg.selectAll(".link").style("stroke-opacity", 0.6); // Reset link opacity
+        }
+    </script>
+</body>
+</html>

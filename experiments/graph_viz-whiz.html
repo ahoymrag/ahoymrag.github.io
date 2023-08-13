@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Graph Visualizer</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://threejs.org/build/three.js"></script>
+    <style>
+body {
+    background-color: #000;
+    color: #0ff; /* Neon color */
+    font-family: 'Arial', sans-serif;
+}
+
+button {
+    background-color: #000;
+    border: 1px solid #0ff;
+    color: #0ff;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0ff;
+    color: #000;
+}
+
+#visualization {
+    width: 80vw;
+    height: 80vh;
+    margin: auto;
+}
+    </style>
+</head>
+<body>
+    <div id="visualization"></div>
+    <div id="controls">
+        <button onclick="pushData()">Push</button>
+        <button onclick="pullData()">Pull</button>
+        <button onclick="saveConfig()">Save Configuration</button>
+    </div>
+    <nav>
+        <a href="./index.html">Back to Experiments</a>
+            <div>
+                <a href="./graph_viz-whiz.html">Graph Viz</a>
+                <a href="./colorRefinement.html">Color Refinement</a>
+                <a href="./index.html">back to homepage</a>
+            </div>
+        </nav>
+
+    <script>
+// Simplified data for our bar graph
+let data = [10, 20, 30, 40, 50];
+
+// D3.js functions for the 2D bar graph
+function render2DGraph() {
+    const svg = d3.select("#visualization").append("svg")
+        .attr("width", 500)
+        .attr("height", 500);
+
+    svg.selectAll("rect")
+        .data(data)
+        .enter().append("rect")
+        .attr("x", (d, i) => i * 60)
+        .attr("y", d => 500 - d)
+        .attr("width", 50)
+        .attr("height", d => d)
+        .attr("fill", "#0ff"); // Neon color
+}
+
+// Three.js setup for the 3D graph
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+const renderer = new THREE.WebGLRenderer();
+renderer.setSize(window.innerWidth, window.innerHeight);
+document.getElementById("visualization").appendChild(renderer.domElement);
+
+function render3DGraph() {
+    // For simplicity, a 3D cube representing our 3D graph
+    const geometry = new THREE.BoxGeometry();
+    const material = new THREE.MeshBasicMaterial({color: "#0ff"});
+    const cube = new THREE.Mesh(geometry, material);
+    scene.add(cube);
+
+    camera.position.z = 5;
+
+    function animate() {
+        requestAnimationFrame(animate);
+
+        cube.rotation.x += 0.01;
+        cube.rotation.y += 0.01;
+
+        renderer.render(scene, camera);
+    }
+    animate();
+}
+
+function pushData() {
+    // Add random data
+    data.push(Math.random() * 100);
+    d3.selectAll("svg > *").remove();  // Clear previous graph
+    render2DGraph();
+}
+
+function pullData() {
+    // Remove the last data entry
+    data.pop();
+    d3.selectAll("svg > *").remove();  // Clear previous graph
+    render2DGraph();
+}
+
+function saveConfig() {
+    localStorage.setItem('graphData', JSON.stringify(data));
+    alert("Configuration saved!");
+}
+
+// Render initial graphs
+render2DGraph();
+render3DGraph();
+    </script>
+</body>
+</html>
