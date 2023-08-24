@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dynamic Dashboard</title>
+</head>
+<body>
+
+<div>
+    Menu 
+    <button @click="filterByAmount">Filter by Amount</button>
+</div>
+    
+
+
+
+
+<div id="app">
+    <table style="border-collapse: collapse; border: 1px solid #ccc; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); background-color: #f9f9f9;">
+      <tr style="background-color: #f8f8f8;">
+        <th style="padding: 8px; border-bottom: 1px solid #ccc;">Name</th>
+        <th style="padding: 8px; border-bottom: 1px solid #ccc;">Amount</th>
+        <th style="padding: 8px; border-bottom: 1px solid #ccc;">Account</th>
+        <th style="padding: 8px; border-bottom: 1px solid #ccc;">Frequency</th>
+        <th style="padding: 8px; border-bottom: 1px solid #ccc;">Kill?</th>
+      </tr>
+      <tr v-for="item in items" style="background-color: #fff;">
+        <td style="padding: 8px; border-bottom: 1px solid #ccc;">{{ item.name }}</td>
+        <td style="padding: 8px; border-bottom: 1px solid #ccc;">{{ item.amount }}</td>
+        <td style="padding: 8px; border-bottom: 1px solid #ccc;">{{ item.account }}</td>
+        <td style="padding: 8px; border-bottom: 1px solid #ccc;">{{ item.frequency }}</td>
+        <td style="padding: 8px; border-bottom: 1px solid #ccc;">{{ item.kill }}</td>
+      </tr>
+    </table>
+  </div>
+  <div id="three-container"></div>
+<script>
+    var scene = new THREE.Scene();
+var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+var renderer = new THREE.WebGLRenderer();
+renderer.setSize(window.innerWidth, window.innerHeight);
+document.getElementById('three-container').appendChild(renderer.domElement);
+
+// Add your 3D objects, lights, and other elements here
+
+renderer.render(scene, camera);
+
+</script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+  <script src="pecans.js"></script>
+
+
+
+<footer>
+  <a href="index.html">Back to 1153 Mainframe</a>
+</footer>
+
+</body>
+</html>
+
+
+
+
+  
+</body>
+</html>
