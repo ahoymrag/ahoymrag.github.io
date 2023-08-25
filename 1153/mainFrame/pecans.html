@@ -15,35 +15,82 @@
 
 
 <div id="app">
-    <table style="border-collapse: collapse; border: 1px solid #ccc; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); background-color: #f9f9f9;">
-      <tr style="background-color: #f8f8f8;">
-        <th style="padding: 8px; border-bottom: 1px solid #ccc;">Name</th>
-        <th style="padding: 8px; border-bottom: 1px solid #ccc;">Amount</th>
-        <th style="padding: 8px; border-bottom: 1px solid #ccc;">Account</th>
-        <th style="padding: 8px; border-bottom: 1px solid #ccc;">Frequency</th>
-        <th style="padding: 8px; border-bottom: 1px solid #ccc;">Kill?</th>
-      </tr>
-      <tr v-for="item in items" style="background-color: #fff;">
-        <td style="padding: 8px; border-bottom: 1px solid #ccc;">{{ item.name }}</td>
-        <td style="padding: 8px; border-bottom: 1px solid #ccc;">{{ item.amount }}</td>
-        <td style="padding: 8px; border-bottom: 1px solid #ccc;">{{ item.account }}</td>
-        <td style="padding: 8px; border-bottom: 1px solid #ccc;">{{ item.frequency }}</td>
-        <td style="padding: 8px; border-bottom: 1px solid #ccc;">{{ item.kill }}</td>
-      </tr>
-    </table>
-  </div>
-  <div id="three-container"></div>
-<script>
-    var scene = new THREE.Scene();
-var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-var renderer = new THREE.WebGLRenderer();
-renderer.setSize(window.innerWidth, window.innerHeight);
-document.getElementById('three-container').appendChild(renderer.domElement);
 
-// Add your 3D objects, lights, and other elements here
 
-renderer.render(scene, camera);
 
+
+
+
+
+
+
+
+
+    
+    <div style="display: flex; justify-content: center; align-items: center; background-color: #cfe2f3; padding: 16px;">
+        <table style="border-collapse: collapse; border: 1px solid #ccc; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); background-color: #f9f9f9;">
+            <tr style="background-color: #f8f8f8;">
+                <th style="padding: 8px; border-bottom: 1px solid #ccc;">Name</th>
+                <th style="padding: 8px; border-bottom: 1px solid #ccc;">Amount</th>
+                <th style="padding: 8px; border-bottom: 1px solid #ccc;">Account</th>
+                <th style="padding: 8px; border-bottom: 1px solid #ccc;">Frequency</th>
+                <th style="padding: 8px; border-bottom: 1px solid #ccc;">Kill?</th>
+            </tr>
+            <tr v-for="item in items" style="background-color: #fff;">
+                <td style="padding: 8px; border-bottom: 1px solid #ccc;">{{ item.name }}</td>
+                <td style="padding: 8px; border-bottom: 1px solid #ccc;">{{ item.amount }}</td>
+                <td style="padding: 8px; border-bottom: 1px solid #ccc;">{{ item.account }}</td>
+                <td style="padding: 8px; border-bottom: 1px solid #ccc;">{{ item.frequency }}</td>
+                <td style="padding: 8px; border-bottom: 1px solid #ccc;">{{ item.kill }}</td>
+            </tr>
+        </table>
+    </div>
+
+
+<section style="display: flex; justify-content: center; align-items: center;">
+    <div style="border: 1px solid #ccc; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); padding: 16px;">
+        <h1 style="text-align: center;">401(k)</h1>
+        <p style="text-align: center;">Date: Aug. 25, 2023</p>
+        <p style="text-align: center;">Account Balance as of August 24, 2023</p>
+        <h2 style="text-align: center;">$15,461.11</h2>
+        <table style="margin: 0 auto;">
+            <thead>
+                <tr>
+                    <th>Week</th>
+                    <th>4% Match of Weekly Salary</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Assuming a 72k annual salary, 4% match is calculated on weekly basis -->
+                <!-- Weekly salary is 72000 / 52 = 1384.62 -->
+                <!-- 4% of weekly salary is 55.38 -->
+                <!-- For 52 weeks, it will be presented in the table -->
+                <?php
+                    $weeklySalary = 72000 / 52;
+                    $weeklyMatch = $weeklySalary * 0.04;
+                    for ($week = 1; $week <= 52; $week++) {
+                        echo "<tr><td>Week $week</td><td>$$weeklyMatch</td></tr>";
+                    }
+                ?>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+
+</div>
+<section>
+    <div id="notepad-app">
+        <h1 style="text-align: center;">Pecan Notepad App</h1>
+        <div style="display: flex; justify-content: center; align-items: center; width: 50%; margin: 0 auto;">
+            <div style="width: 100%;">
+                <input type="text" v-model="noteName" placeholder="Enter note name" style="width: 100%; padding: 8px; margin-bottom: 16px;">
+                <textarea v-model="note" placeholder="Write your notes here" style="width: 100%; height: 200px; padding: 8px;"></textarea>
+                <button @click="saveNote" style="display: block; margin: 0 auto; margin-top: 16px; padding: 8px 16px; background-color: #4CAF50; color: white; border: none; border-radius: 4px; cursor: pointer;">Save</button>
+            </div>
+        </div>
+    </div>
+</section>
 </script>
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
   <script src="pecans.js"></script>
