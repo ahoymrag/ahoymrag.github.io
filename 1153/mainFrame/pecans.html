@@ -38,11 +38,50 @@
 
 
 
+<!-- AUTO SAVINGS -->
+<section id="autoSavings" style="display: flex; justify-content: center;">
+    <h1>
+        Automatic Savings Situations
+    </h1><h2>Total = 100 per month</h2>
+    <div style="background: #fff; border: 1px solid #ccc; border-radius: 10px; padding: 20px; width: 80%; margin: 0 auto; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);">
+        <table style="width: 100%; border-collapse: collapse;">
+            <tr>
 
-
-
-
-
+                <th style="padding: 8px; border-bottom: 1px solid #ccc; background-color: #f8f8f8;">Amount</th>
+                <th style="padding: 8px; border-bottom: 1px solid #ccc; background-color: #f8f8f8;">From Account</th>
+                <th style="padding: 8px; border-bottom: 1px solid #ccc; background-color: #f8f8f8;">To Account</th>
+            </tr>
+            <tr style="background-color: #fff;">
+                <td style="padding: 8px; border-bottom: 1px solid #ccc;"><p>100</p></td>
+                <td style="padding: 8px; border-bottom: 1px solid #ccc;">$100</td>
+                <td style="padding: 8px; border-bottom: 1px solid #ccc;">6053</td>
+                <td style="padding: 8px; border-bottom: 1px solid #ccc;">Fundrise</td>
+            </tr>
+        </table>
+    </div>
+</section>
+<!-- AUTO INVESTMENT -->
+    <section id="autoInvestment" style="display: flex; justify-content: center;">
+        <h1>
+            Automatic Investment Situations
+        </h1><h2>Total = 100 per month</h2>
+        <div style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border-radius: 10px; padding: 20px; width: 80%; margin: 0 auto;">
+            <table style="width: 100%; border-collapse: collapse; background-color: #e6f7ff; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);">
+                <tr>
+                    <th style="padding: 8px; border-bottom: 1px solid #ccc; background-color: #b3daff;">Name</th>
+                    <th style="padding: 8px; border-bottom: 1px solid #ccc; background-color: #b3daff;">Amount</th>
+                    <th style="padding: 8px; border-bottom: 1px solid #ccc; background-color: #b3daff;">From Account</th>
+                    <th style="padding: 8px; border-bottom: 1px solid #ccc; background-color: #b3daff;">To Account</th>
+                </tr>
+                <tr>
+                    <td><p>FUNDRISE REAL ES 2025840550 346489061883 WEB ID: K320479856</p></td>
+                    <td>$100</td>
+                    <td>6053</td>
+                    <td>Fundrise</td>
+                </tr>
+            </table>
+        </div>
+    </section>
 
 
 
@@ -66,36 +105,51 @@
         </table>
     </div>
 
+<section style="text-align: center; font-size: large; font-weight: bold;">
 
-<section style="display: flex; justify-content: center; align-items: center;">
-    <div style="border: 1px solid #ccc; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); padding: 16px;">
-        <h1 style="text-align: center;">401(k)</h1>
-        <p style="text-align: center;">Date: Aug. 25, 2023</p>
-        <p style="text-align: center;">Account Balance as of August 24, 2023</p>
-        <h2 style="text-align: center;">$15,461.11</h2>
-        <table style="margin: 0 auto;">
-            <thead>
-                <tr>
-                    <th>Week</th>
-                    <th>4% Match of Weekly Salary</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- Assuming a 72k annual salary, 4% match is calculated on weekly basis -->
-                <!-- Weekly salary is 72000 / 52 = 1384.62 -->
-                <!-- 4% of weekly salary is 55.38 -->
-                <!-- For 52 weeks, it will be presented in the table -->
-                <?php
-                    $weeklySalary = 72000 / 52;
-                    $weeklyMatch = $weeklySalary * 0.04;
-                    for ($week = 1; $week <= 52; $week++) {
-                        echo "<tr><td>Week $week</td><td>$$weeklyMatch</td></tr>";
-                    }
-                ?>
-            </tbody>
-        </table>
-    </div>
+<div class="a1k">
+    <h1>401k</h1>
+    <p>Date: Aug. 25, 2023</p>
+    <p>Account Balance as of August 24, 2023</p>
+    <h3>$15,461.11</h3>
+    <p>Date: Sep 1 2023</p>
+    <p>Account Balance as of Today</p>
+    <h3>$15,758.82</h3>
+</div>
+<style>
+    .a1k {
+        background-color:yellow;
+        padding:200px;
+    }
+</style>
 </section>
+
+    <section>    <h1>401(k) Prediction Calculator</h1>
+    <label for="interestRate">Annual Interest Rate (%):</label>
+    <input type="number" id="interestRate" name="interestRate">
+    <label for="years">Number of Years:</label>
+    <input type="number" id="years" name="years">
+    <button onclick="calculate()">Calculate</button>
+    <div id="result"></div></section>
+
+    <script>
+        function calculate() {
+            var weeklySalary = 72000 / 52;
+            var weeklyMatch = weeklySalary * 0.04;
+            var interestRate = document.getElementById('interestRate').value / 100;
+            var years = document.getElementById('years').value;
+            var balance = 15461.11; // starting balance
+
+            for (var year = 0; year < years; year++) {
+                for (var week = 0; week < 52; week++) {
+                    balance += weeklyMatch; // adding weekly contribution
+                    balance += (balance * interestRate) / 52; // compound interest calculation on a weekly basis
+                }
+            }
+
+            document.getElementById('result').innerHTML = `Predicted balance after ${years} years with an annual interest rate of ${interestRate * 100}% is: $${balance.toFixed(2)}`;
+        }
+    </script>
 
 
 </div>
