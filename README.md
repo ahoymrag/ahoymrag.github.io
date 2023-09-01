@@ -1,8 +1,8 @@
 # ahoymrag.github.io
-the long awaited portfolio of Alex Gonzalez of Sleepy Hollow
+I have long awaited to put something together to show off to the world. 
+Not sure why - figured I always had better things to do - and I would chip away at this - little by little - to have a self induced canon of work is appealing - the concept of having a single source for a life full of work and play - how does one compress it all digitally?
 
 
-Thank you for coming to the digital homestead - crafted by a man in his early 30s - trying to make sense of the world.
 
 # Origins
 
