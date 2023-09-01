@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>COOCOO</title>
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet">
     <style>
@@ -20,7 +22,17 @@
             padding: 20px;
             background-color: rgba(255, 255, 255, 0.7); /* semi-transparent background */
         }
-        /* Add your own styles for the e-commerce store and images */
+        @media (max-width: 600px) {
+        body {
+            padding: 20px;
+        }
+        section {
+            display: block;
+        }
+        .gallery-image {
+            width: 100%;
+        }
+    }
     </style>
 </head>
 <body>
@@ -64,7 +76,7 @@
         object-fit: cover;
     }
 </style>
-
+    <div class="gallery">
             <h2>Gallery</h2>
             <div style="display: grid; grid-template-columns: repeat(6, 1fr); gap: 20px;">
                 <img class="gallery-image" src="images/1.png" alt="Image 1">
@@ -82,8 +94,37 @@
                 <img class="gallery-image" src="images/13.png" alt="Image 13">
                 <img class="gallery-image" src="images/14.png" alt="Image 14">
                 <img class="gallery-image" src="images/15.png" alt="Image 15">
-             
             </div>
+            <style>
+                .enlarged {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    max-width: 90%;
+    max-height: 90%;
+}
+            </style>
+            <script>
+document.querySelectorAll('.gallery-image').forEach(img => {
+    img.addEventListener('click', function(event) {
+        event.stopPropagation();
+        this.classList.toggle('enlarged');
+    });
+});
+
+document.addEventListener('click', function() {
+    document.querySelectorAll('.gallery-image.enlarged').forEach(img => {
+        img.classList.remove('enlarged');
+    });
+});
+            </script>
+        </div>
+
+
+
+
         </section>
 
 
