@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Experimental Page</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Barlow', sans-serif;
+            color: #000;
+            background-color: #fff;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            color: #000;
+        }
+
+        a {
+            color: #000;
+        }
+
+        a:hover {
+            color: #000;
+        }
+
+        p {
+            color: #000;
+        }
+    </style>
+    <!-- TABLE STYLE -->
+    <style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    
+    th, td {
+        border: 1px solid #000;
+        padding: 8px;
+        text-align: left;
+    }
+    
+    th {
+        background-color: #ccc;
+    }
+    
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+    </style>
+</head>
+<body>
+    <h1>Left Hand Right</h1>
+    <p>This is a basic HTML page styled to resemble a Wikipedia page in black and white duotone, using the Barlow font.</p>
+    <a href="#">This is a link</a>
+
+    <table>
+        <tr>
+            <th>Development Build Name</th>
+            <th>Date Built</th>
+            <th>Access Button</th>
+            <th>Note</th>
+            <th>Direct Link</th>
+        </tr>
+        <tr>
+            <td>Build 1</td>
+            <td>2022-01-01</td>
+            <td><button onclick="location.href='link_to_build_1'">Play</button></td>
+            <td>Note for Build 1</td>
+            <td><a href="link_to_build_1">Link</a></td>
+        </tr>
+        <!-- Add more rows as needed -->
+    </table>
+    <footer>
+        <a href="../index.html">Back to VR Project Index</a>
+    </footer>
+</body>
+</html>
