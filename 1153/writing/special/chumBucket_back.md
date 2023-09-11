@@ -41,3 +41,12 @@ back from jfk and it's been a horizontal
 
 8.13.23 - said good bye - after seieng eachother for nearly 17 days every day - it has been a wild ride 
 # 8.13.23 - hung out outside at the yale school of mgmt
+
+
+
+
+SEPTEMBER
+
+9.10 - Brewed Beer - went to sunday funday at church - painted a little tiger on a little fellow but really it was all just a little silly - and cute -
+
+9.11 - we walked to work together - she held my milk crate - and it was lovely - i miss her - was sending cheeky photos
