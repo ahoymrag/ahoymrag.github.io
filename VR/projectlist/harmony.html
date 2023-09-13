@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Harmony's Last Stand - Game Design Document</title>
+  <style>
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+#container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+header {
+  background: #000000;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav, section {
+  padding: 20px;
+}
+
+nav {
+  width: 20%;
+}
+
+section {
+  width: 75%;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  margin-bottom: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+nav a:hover {
+  color: #50b3a2;
+}
+
+.section-header {
+  font-size: 24px;
+  border-bottom: 2px solid #333;
+  margin-bottom: 10px;
+}
+
+.sub-section-header {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  nav, section {
+    width: 100%;
+  }
+}
+
+.enemy-type {
+            font-weight: bold;
+        }
+        .description, .strategy {
+            margin-left: 2rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <header>
+      <h1>Harmony's Last Stand: A VR Fantasy Adventure</h1>
+    </header>
+    <nav id="table-of-contents">
+      <ul>
+        <li><a href="javascript:void(0);" onclick="scrollToElement('intro')">Introduction</a></li>
+        <li><a href="javascript:void(0);" onclick="scrollToElement('enemies')">Enemies</a></li>
+        <li><a href="javascript:void(0);" onclick="scrollToElement('player-cheat-sheet')">Player Cheat Sheet</a></li>
+        <li><a href="javascript:void(0);" onclick="scrollToElement('health-system')">Health System</a></li>
+      </ul>
+    </nav>
+    <section id="content">
+      <div id="intro" class="section-header">Introduction</div>
+      <p>"Harmony's Last Stand" is an immersive VR fantasy adventure set in the enchanting fairytale village of Harmonyhaven...</p>
+      <div class="container">
+
+        <section class="toc">
+            <h2>Table of Contents</h2>
+            <ul>
+                <li><a href="#intro">Introduction</a></li>
+                <li><a href="#quest">The Quest for Elemental Relics</a></li>
+                <li><a href="#final-confrontation">The Final Confrontation</a></li>
+                <li><a href="#harmony-restored">A World of Harmony Restored</a></li>
+            </ul>
+        </section>
+
+        <section id="intro">
+            <h2>Paragraph 1: Introduction</h2>
+            <p>"Harmony's Last Stand" is an immersive VR fantasy adventure set in the enchanting fairytale village of Harmonyhaven, a place where peace and serenity once flourished. However, a malevolent darkness now threatens the land, and it falls upon you and your VR companion to become the heroes who will save Harmonyhaven from impending chaos. In this cooperative VR experience, players step into the roles of valiant heroes with unique abilities. Together, you and your VR companion must defend Harmonyhaven from waves of menacing creatures led by the malevolent sorcerer, Moros, while also commanding and inspiring your armies to victory.</p>
+        </section>
+
+        <section id="quest">
+            <h2>Paragraph 2: The Quest for Elemental Relics</h2>
+            <p>As the game unfolds, players venture beyond the village's borders to collect elemental relics scattered across diverse VR environments. These relics bestow unique powers crucial for confronting Moros and his dark forces. Along your journey, you must solve environmental puzzles and face formidable mini-bosses to obtain these relics. Each relic unlocks new abilities and magic spells, not only enhancing your personal arsenal but also empowering your leadership on the battlefield as you inspire and command your troops to overcome challenges.</p>
+        </section>
+
+        <section id="final-confrontation">
+            <h2>Paragraph 3: The Final Confrontation</h2>
+            <p>With the elemental relics and newfound powers at your disposal, you and your VR companion return to Harmonyhaven for an epic showdown with Moros. This climactic VR boss battle demands cooperative gameplay, as you strategize and combine your unique abilities to defeat the evil sorcerer. Engage in dramatic combat, cast powerful spells, and execute precise attacks to save the village. Additionally, you must also lead your armies into battle, issuing orders and rallying your troops to face the overwhelming enemy forces.</p>
+        </section>
+
+        <section id="harmony-restored">
+            <h2>Paragraph 4: A World of Harmony Restored</h2>
+            <p>Following Moros' defeat, Harmonyhaven is bathed in light once more, and tranquility is restored. As a reward, players are treated to a heartwarming VR music experience. Here, you can use your VR controllers to create beautiful melodies that bring harmony back to the land. This musical finale serves as a testament to the players' success, not only in saving the village but also in leading their armies to victory. "Harmony's Last Stand" is a captivating VR adventure that combines action, magic, cooperation, and leadership, offering players an unforgettable journey to a world where heroes and commanders unite to restore peace.</p>
+        </section>
+
+    </div>
+      <div id="enemies" class="section-header">Enemies</div>
+      <p>Five enemy types inspired by graphics of nature, particularly trees and woodland creatures...</p>
+      <div class="container">
+
+        <h2>Five Enemy Types Inspired by Graphics of Nature:</h2>
+        
+        <ol>
+            <li>
+                <span class="enemy-type">Entwined Sprites</span>
+                <div class="description">
+                    - Description: These ethereal beings are formed from twisting vines and branches, resembling humanoid figures. They possess the ability to summon thorny tendrils and launch ranged attacks.
+                </div>
+                <div class="strategy">
+                    - Strategy: Coordinate with your VR companion to cut down their vines and target their weak points, while also commanding your troops to keep their distance from their ranged attacks.
+                </div>
+            </li>
+            <li>
+                <span class="enemy-type">Mossy Treants</span>
+                <div class="description">
+                    - Description: Moss-covered treants emerge from the earth, towering over players and casting spells to entangle and slow down the heroes. Their bark-like skin acts as natural armor.
+                </div>
+                <div class="strategy">
+                    - Strategy: Focus your attacks on their vulnerable roots while using your troops to distract and chip away at their defenses. Coordinate with your VR companion to unleash powerful spells to breach their bark armor.
+                </div>
+            </li>
+            <li>
+                <span class="enemy-type">Fey Sylphs</span>
+                <div class="description">
+                    - Description: Agile and elusive, these woodland spirits appear as shimmering, ephemeral figures made of leaves and petals. They can summon gusts of wind to disorient players and their armies.
+                </div>
+                <div class="strategy">
+                    - Strategy: Use quick reflexes and precise attacks to catch the fey sylphs. Encourage your troops to shield themselves from the gusts while you and your companion coordinate to close in and engage in close combat.
+                </div>
+            </li>
+            <li>
+                <span class="enemy-type">Thornbound Stags</span>
+                <div class="description">
+                    - Description: Massive, antlered stags covered in sharp thorns charge at players and their armies with incredible speed. Their charging attacks can deal massive damage.
+                </div>
+                <div class="strategy">
+                    - Strategy: Coordinate with your companion to create barriers and traps to slow down the charging stags. Send your troops to engage them at a distance while you target their thorn-covered hides.
+                </div>
+            </li>
+            <li>
+                <span class="enemy-type">Will-o'-the-Wisps</span>
+                <div class="description">
+                    - Description: Mischievous orbs of light flit through the forest, leading players and their armies astray. When threatened, they unleash blinding bursts of light that disorient and confuse.
+                </div>
+                <div class="strategy">
+                    - Strategy: Work closely with your VR companion to decipher the paths through the forest. Command your troops to stay vigilant and protect against the blinding light. Once you locate the wisps, use your abilities to capture or dispel them.
+                </div>
+            </li>
+        </ol>
+
+    </div>      <div id="player-cheat-sheet" class="section-header">Player Cheat Sheet</div>
+      <p>Player Abilities...</p>
+      <h1>PLAYER CHEET SHEET</h1>
+
+      <h2>Player Abilities:</h2>
+  
+      <table>
+          <thead>
+              <tr>
+                  <th>Ability</th>
+                  <th>PS4 Controller</th>
+                  <th>Oculus Quest 2 Controller</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>Basic Attack</td>
+                  <td>Press Square Button</td>
+                  <td>Press A Button</td>
+              </tr>
+              <tr>
+                  <td>Heavy Attack</td>
+                  <td>Press Triangle Button</td>
+                  <td>Press B Button</td>
+              </tr>
+              <tr>
+                  <td>Dodge/Roll</td>
+                  <td>Press Circle Button + Left Stick (Direction)</td>
+                  <td>Press B Button + Move Head (Direction)</td>
+              </tr>
+              <tr>
+                  <td>Cast Spell</td>
+                  <td>Press R1 Button + Motion Control (Gesture)</td>
+                  <td>Press Right Hand Trigger + Gesture with Right Hand</td>
+              </tr>
+              <tr>
+                  <td>Command Troops</td>
+                  <td>Hold L1 Button + Right Stick (Direction)</td>
+                  <td>Hold Left Hand Trigger + Move Left Hand (Direction)</td>
+              </tr>
+              <tr>
+                  <td>Inspire Troops</td>
+                  <td>Press L2 Button</td>
+                  <td>Press Left Hand Grip Button</td>
+              </tr>
+          </tbody>
+      </table>
+  
+      <h2>Gameplay Controller Map (PS4 Controller):</h2>
+      <p>Square Button: Basic Attack</p>
+      <p>Triangle Button: Heavy Attack</p>
+      <p>Circle Button + Left Stick (Direction): Dodge/Roll</p>
+      <p>R1 Button + Motion Control (Gesture): Cast Spell</p>
+      <p>L1 Button + Right Stick (Direction): Command Troops</p>
+      <p>L2 Button: Inspire Troops</p>
+  
+      <h2>Gameplay Controller Map (Oculus Quest 2 Controller):</h2>
+      <p>A Button: Basic Attack</p>
+      <p>B Button: Heavy Attack</p>
+      <p>B Button + Move Head (Direction): Dodge/Roll</p>
+      <p>Right Hand Trigger + Gesture with Right Hand: Cast Spell</p>
+      <p>Left Hand Trigger + Move Left Hand (Direction): Command Troops</p>
+      <p>Left Hand Grip Button: Inspire Troops</p>
+  
+      <p>This cheat sheet provides clear instructions for players on how to perform various actions and abilities using both the PS4 controller and the Oculus Quest 2 controller. It ensures a smooth and immersive gaming experience in "Harmony's Last Stand."</p>
+  
+      <div id="health-system" class="section-header">Health System</div>
+      <p>Health System...</p>
+      <h1>Harmony's Last Stand Game Mechanics</h1>
+
+      <h2>Health System:</h2>
+  
+      <ul>
+          <li>
+              <strong>Player Health (Heroes):</strong>
+              <ul>
+                  <li>Players start with a health bar that represents their own well-being.</li>
+                  <li>Health can be restored by collecting health potions found throughout the game world.</li>
+                  <li>If a player's health reaches zero, they are temporarily incapacitated and must be revived by their VR companion within a certain time frame, or the game ends.</li>
+              </ul>
+          </li>
+          <li>
+              <strong>Army Health:</strong>
+              <ul>
+                  <li>Each player has an army with its own collective health pool.</li>
+                  <li>Army health is displayed as a bar or a number alongside the player's HUD.</li>
+                  <li>Armies can be healed by the player using a special ability or by finding army-specific health power-ups.</li>
+              </ul>
+          </li>
+          <li>
+              <strong>World Health (Harmony Core):</strong>
+              <ul>
+                  <li>The world itself is represented by the Harmony Core, a magical crystal at the center of Harmonyhaven.</li>
+                  <li>The Harmony Core has its own health bar, representing the well-being of the village.</li>
+                  <li>Players must protect the Harmony Core from damage caused by enemy attacks or events in the game world.</li>
+                  <li>If the Harmony Core's health reaches zero, it's game over, and the village falls into darkness.</li>
+              </ul>
+          </li>
+      </ul>
+  
+      <h2>Power-Ups:</h2>
+  
+      <ul>
+          <li>
+              <strong>Health Potion:</strong>
+              <ul>
+                  <li>Restores a portion of the player's health when collected.</li>
+                  <li>Scattered throughout the game world, health potions are vital for player survival.</li>
+                  <li>Collectible using the basic interaction control.</li>
+              </ul>
+          </li>
+          <li>
+              <strong>Army Healing Totem:</strong>
+              <ul>
+                  <li>A magical totem that, when activated, gradually restores the health of the player's army.</li>
+                  <li>Players must deploy the totem strategically during battles to support their troops.</li>
+                  <li>Activation is done by casting a healing spell.</li>
+              </ul>
+          </li>
+          <li>
+              <strong>Harmony Crystal Shard:</strong>
+              <ul>
+                  <li>These rare shards can be found in hidden locations or rewarded for completing challenging tasks.</li>
+                  <li>When collected, they restore a significant amount of the Harmony Core's health.</li>
+                  <li>Collecting all shards in a level may offer additional rewards or unlock secret content.</li>
+              </ul>
+          </li>
+          <li>
+              <strong>Aura of Resilience:</strong>
+              <ul>
+                  <li>A power-up that temporarily boosts the player's and their army's resistance to damage.</li>
+                  <li>Finding and activating this power-up enhances survivability during intense battles.</li>
+                  <li>Activation can be triggered by casting a specific spell.</li>
+              </ul>
+          </li>
+          <li>
+              <strong>Wisdom's Blessing:</strong>
+              <ul>
+                  <li>This power-up temporarily increases the player's magic power, making their spells more potent.</li>
+                  <li>It allows players to deal more damage with their magical attacks.</li>
+                  <li>Activation involves collecting the power-up and casting spells while it's active.</li>
+              </ul>
+          </li>
+      </ul>
+  
+      <p>The combination of these health systems and power-ups adds depth to "Harmony's Last Stand," offering players strategic choices in managing their health and protecting the world. Players must make decisions about when to use their power-ups to ensure they can overcome challenges and safeguard the village of Harmonyhaven.</p>
+  
+    </section>
+  </div>
+
+  <script>
+    function scrollToElement(elementId) {
+      const element = document.getElementById(elementId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  </script>
+</body>
+</html>
