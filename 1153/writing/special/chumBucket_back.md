@@ -50,3 +50,6 @@ SEPTEMBER
 9.10 - Brewed Beer - went to sunday funday at church - painted a little tiger on a little fellow but really it was all just a little silly - and cute -
 
 9.11 - we walked to work together - she held my milk crate - and it was lovely - i miss her - was sending cheeky photos
+
+
+9.14.23 - watching you at gcafe talking with a participiant - as I work on the nibbler and a thousand code things at lunch - you slept over last night - we had some fun this morning and walked to work together - parked by your house on wooster - then we broke off - and then had lunch in the little alleyway of make haven
