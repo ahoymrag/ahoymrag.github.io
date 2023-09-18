@@ -844,13 +844,35 @@ h1 {
 
 </section>
 
+<style>
+    #lightbox {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.9);
+}
 
+#lightbox-img {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  padding: 60px;
+}
+</style>
 <section>
     <h1>Concept Art</h1>
-    <img src="s2.png">
-    <img src="i1.png">
+    <img src="./harmony-images/i1.png" onclick="showLightbox(this.src)">
+    <img src="./harmony-images/s2.png" onclick="showLightbox(this.src)">
 </section>
-
+<div id="lightbox" onclick="hideLightbox()">
+    <img id="lightbox-img" src="" alt="lightbox image">
+  </div>
 
 <style>
   footer {
@@ -862,6 +884,16 @@ h1 {
 </footer>
 <!-- End of the new section -->
 
+<script>
+    function showLightbox(imgSrc) {
+  document.getElementById('lightbox').style.display = 'block';
+  document.getElementById('lightbox-img').src = imgSrc;
+}
+
+function hideLightbox() {
+  document.getElementById('lightbox').style.display = 'none';
+}
+</script>
 
   <!-- SCRIPTS -->
   <script>
