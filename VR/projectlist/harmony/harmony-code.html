@@ -2,6 +2,8 @@
 <html>
 
 <head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css" rel="stylesheet" />
+
     <title>Harmony Last Stand - Code Overview</title>
     <style>
         body {
@@ -38,178 +40,403 @@
                 flex: 0 0 100%;
             }
         }
+
+        table {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
     </style>
 </head>
 
 <body>
+
+
+
     <h1>Harmony Last Stand - Code Overview</h1>
     <p>This page provides an overview of all the code used in the game Harmony Last Stand. You can copy and paste the
         code snippets as needed.</p>
 
+
+        <section id="projectHierachy">
+            <table>
+                <tr>
+                    <th>Folder / File</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>Assets</td>
+                    <td>The root folder for all your project assets.</td>
+                </tr>
+                <tr>
+                    <td>Scripts</td>
+                    <td>Place all your scripts here for easy access. Keep them organized by function or type.</td>
+                </tr>
+                <tr>
+                    <td>&emsp;PlayerController.cs</td>
+                    <td>Player movement and basic actions</td>
+                </tr>
+                <tr>
+                    <td>&emsp;BasicAttackScript.cs</td>
+                    <td>Charging and releasing the basic attack</td>
+                </tr>
+                <tr>
+                    <td>&emsp;HeavyAttackScript.cs</td>
+                    <td>Heavy attack actions</td>
+                </tr>
+                <tr>
+                    <td>&emsp;InspireTroopsScript.cs</td>
+                    <td>Inspiring and commanding troops</td>
+                </tr>
+                <tr>
+                    <td>&emsp;DodgeRollScript.cs</td>
+                    <td>Player's dodging/rolling actions</td>
+                </tr>
+                <tr>
+                    <td>&emsp;LaserBeamScript.cs</td>
+                    <td>Laser beam projectile actions</td>
+                </tr>
+                <tr>
+                    <td>&emsp;ElementalRelicScript.cs</td>
+                    <td>Elemental relic behavior and abilities</td>
+                </tr>
+                <tr>
+                    <td>&emsp;EnemyScript.cs</td>
+                    <td>Enemy movement, attacks, and abilities</td>
+                </tr>
+                <tr>
+                    <td>&emsp;EnemySpawnManagerScript.cs</td>
+                    <td>Enemy wave management and spawning logic</td>
+                </tr>
+                <tr>
+                    <td>&emsp;BossScript.cs</td>
+                    <td>Final boss battle mechanics</td>
+                </tr>
+                <tr>
+                    <td>&emsp;ObjectiveManagerScript.cs</td>
+                    <td>Game objectives and progression logic</td>
+                </tr>
+                <tr>
+                    <td>&emsp;UIManagerScript.cs</td>
+                    <td>User interface management</td>
+                </tr>
+                <tr>
+                    <td>&emsp;GameControllerScript.cs</td>
+                    <td>Game session management and scoring</td>
+                </tr>
+                <tr>
+                    <td>Prefabs</td>
+                    <td>Store reusable GameObjects, including player characters, enemies, elemental relics, and UI elements.</td>
+                </tr>
+                <tr>
+                    <td>&emsp;PlayerPrefab</td>
+                    <td>Player character prefab</td>
+                </tr>
+                <tr>
+                    <td>&emsp;EnemyPrefabs</td>
+                    <td>Enemy prefabs</td>
+                </tr>
+                <tr>
+                    <td>&emsp;ElementalRelicPrefabs</td>
+                    <td>Elemental relic prefabs</td>
+                </tr>
+                <tr>
+                    <td>&emsp;UIPrefabs</td>
+                    <td>UI element prefabs</td>
+                </tr>
+                <!-- Continue the rest of the hierarchy -->
+            
+                    <tr>
+                        <th>Folder / File</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>Assets</td>
+                        <td>The root folder for all your project assets.</td>
+                    </tr>
+                    <tr>
+                        <td>&emsp;Scripts</td>
+                        <td>Place all your scripts here for easy access. Keep them organized by function or type.</td>
+                    </tr>
+                    <tr>
+                        <td>&emsp;Prefabs</td>
+                        <td>Store reusable GameObjects, including player characters, enemies, elemental relics, and UI elements.</td>
+                    </tr>
+                    <tr>
+                        <td>&emsp;Materials, Textures, Audio</td>
+                        <td>Organize your project's graphical and audio assets here.</td>
+                    </tr>
+                    <tr>
+                        <td>&emsp;Scenes</td>
+                        <td>Keep your game scenes separate for clarity. Each scene corresponds to a different part of the game (e.g., MainMenu, Gameplay, Victory, GameOver).</td>
+                    </tr>
+                    <tr>
+                        <td>&emsp;Animations</td>
+                        <td>Store animation assets if you have any character or object animations.</td>
+                    </tr>
+                    <tr>
+                        <td>&emsp;Shaders, Fonts, Plugins, StreamingAssets, Editor, Resources</td>
+                        <td>Use these folders as needed for special assets, custom editor scripts, third-party plugins, streaming data, etc.</td>
+                    </tr>
+                    <tr>
+                        <td>&emsp;... (Continue the rest of the hierarchy)</td>
+                        <td>&emsp;... (Add descriptions for the other folders and files)</td>
+                    </tr>
+                
+            </table>
+        </section>
+
+<section id="codeOverview">
+    <h2>Site Map (Table Format)</h2>
+
+<table>
+    <tr>
+        <th>Script Name</th>
+        <th>Description</th>
+        <th>Attached To</th>
+        <th>Responsible For</th>
+    </tr>
+    <tr>
+        <td>PlayerController</td>
+        <td>Player movement and basic actions</td>
+        <td>Player GameObject</td>
+        <td>Player movement and basic actions</td>
+    </tr>
+    <tr>
+        <td>BasicAttackScript</td>
+        <td>Charging and releasing the basic attack</td>
+        <td>Player GameObject</td>
+        <td>Basic attack logic</td>
+    </tr>
+    <tr>
+        <td>HeavyAttackScript</td>
+        <td>Heavy attack actions</td>
+        <td>Player GameObject</td>
+        <td>Heavy attack logic</td>
+    </tr>
+    <tr>
+        <td>InspireTroopsScript</td>
+        <td>Inspiring and commanding troops</td>
+        <td>Player GameObject</td>
+        <td>Troop management and inspiration</td>
+    </tr>
+    <tr>
+        <td>DodgeRollScript</td>
+        <td>Player's dodging/rolling actions</td>
+        <td>Player GameObject</td>
+        <td>Dodging and rolling behavior</td>
+    </tr>
+    <tr>
+        <td>LaserBeamScript</td>
+        <td>Laser beam projectile actions</td>
+        <td>Laser Beam GameObject</td>
+        <td>Laser beam projectile behavior</td>
+    </tr>
+    <tr>
+        <td>ElementalRelicScript</td>
+        <td>Elemental relic behavior and abilities</td>
+        <td>Elemental Relic GameObjects</td>
+        <td>Elemental relic interactions</td>
+    </tr>
+    <tr>
+        <td>EnemyScript</td>
+        <td>Enemy movement, attacks, and abilities</td>
+        <td>Enemy GameObjects</td>
+        <td>Enemy behavior and interactions</td>
+    </tr>
+    <tr>
+        <td>EnemySpawnManagerScript</td>
+        <td>Enemy wave management and spawning logic</td>
+        <td>Spawn Manager GameObject</td>
+        <td>Enemy wave spawning</td>
+    </tr>
+    <tr>
+        <td>BossScript</td>
+        <td>Final boss battle mechanics</td>
+        <td>Boss GameObject</td>
+        <td>Final boss behavior and abilities</td>
+    </tr>
+    <tr>
+        <td>ObjectiveManagerScript</td>
+        <td>Game objectives and progression logic</td>
+        <td>Objective Manager GameObject</td>
+        <td>Game objectives and progression</td>
+    </tr>
+    <tr>
+        <td>UIManagerScript</td>
+        <td>User interface management</td>
+        <td>UI elements</td>
+        <td>User interface elements management</td>
+    </tr>
+    <tr>
+        <td>GameControllerScript</td>
+        <td>Game session management and scoring</td>
+        <td>Game Controller GameObject</td>
+        <td>Overall game flow and scoring</td>
+    </tr>
+</table>
+
+<p>This site map provides an overview of the key scripts and their responsibilities in the "Harmony's Last Stand" project. You can use this as a reference when planning and organizing your project's development.</p>
+
+</section>
+
+
+
     <div class="code-container" id="playerController">
         <div class="code-block">
-            <pre>
-            using UnityEngine;
-            
-            public class PlayerController : MonoBehaviour
-            {
-            // Reference to the VR camera rig or player's head
-            public Transform vrCamera;
-            
-            // Buttons and triggers
-            public OVRInput.Button basicAttackButton = OVRInput.Button.One;
-            public OVRInput.Button heavyAttackButton = OVRInput.Button.Two;
-            public OVRInput.Button inspireTroopsButton = OVRInput.Button.PrimaryHandTrigger;
-            
-            // Movement
-            public float moveSpeed = 3.0f;
-            
-            // Dodge/Roll
-            public float dodgeSpeed = 5.0f;
+            <h2>Code Snippet 1 </h2>
+            <h1>Player Controller Code </h1>
+            <pre>                <code class="language-csharp">
+                using UnityEngine;
 
-            // Basic Attack
-            private bool isChargingBasicAttack = false;
-            private float basicAttackChargeTime = 5.0f; // 5 seconds charge time
-            private float basicAttackChargeTimer = 0.0f;
-            
-            void Update()
-            {
-            // Get input from Oculus Quest 2 controller
-            Vector2 stickInput = OVRInput.Get(OVRInput.Axis2D.PrimaryThumbstick);
-            
-            // Move the player in the direction of the controller
-            Vector3 moveDirection = vrCamera.TransformDirection(new Vector3(stickInput.x, 0, stickInput.y)) * moveSpeed *
-            Time.deltaTime;
-            transform.Translate(moveDirection);
-            
-            // Check for basic attack
-            if (OVRInput.GetDown(basicAttackButton))
-            {
-            BasicAttack();
-            }
-            
-            // Check for heavy attack
-            if (OVRInput.GetDown(heavyAttackButton))
-            {
-            HeavyAttack();
-            }
-            
-            // Check for inspire troops button
-            if (OVRInput.GetDown(inspireTroopsButton))
-            {
-            InspireTroops();
-            }
-            
-            // Check for dodge/roll
-            if (OVRInput.Get(heavyAttackButton) && !Mathf.Approximately(stickInput.magnitude, 0))
-            {
-            DodgeRoll(stickInput);
-            }
-            }
-            
-            void BasicAttack()
-            {
-            // Implement basic attack logic here
-            Debug.Log("Basic Attack");
-
-            // Check for basic attack (A Button for Oculus Quest 2)
-            if (OVRInput.GetDown(basicAttackButton))
-            {
-                StartChargingBasicAttack();
-            }
-    
-            if (isChargingBasicAttack)
-            {
-                basicAttackChargeTimer += Time.deltaTime;
-    
-                // Check if the player has charged for the specified time
-                if (basicAttackChargeTimer >= basicAttackChargeTime)
+                public class PlayerController : MonoBehaviour
                 {
-                    ReleaseBasicAttack();
+                    // Reference to the VR camera rig or player's head
+                    public Transform vrCamera;
+                
+                    // Buttons and triggers
+                    public OVRInput.Button basicAttackButton = OVRInput.Button.One;
+                    public OVRInput.Button heavyAttackButton = OVRInput.Button.Two;
+                    public OVRInput.Button inspireTroopsButton = OVRInput.Button.PrimaryHandTrigger;
+                
+                    // Movement
+                    public float moveSpeed = 3.0f;
+                
+                    // Dodge/Roll
+                    public float dodgeSpeed = 5.0f;
+                
+                    // Basic Attack
+                    private bool isChargingBasicAttack = false;
+                    private float basicAttackChargeTime = 5.0f; // 5 seconds charge time
+                    private float basicAttackChargeTimer = 0.0f;
+                
+                    void Update()
+                    {
+                        // Get input from Oculus Quest 2 controller
+                        Vector2 stickInput = OVRInput.Get(OVRInput.Axis2D.PrimaryThumbstick);
+                
+                        // Move the player in the direction of the controller
+                        Vector3 moveDirection = vrCamera.TransformDirection(new Vector3(stickInput.x, 0, stickInput.y)) * moveSpeed * Time.deltaTime;
+                        transform.Translate(moveDirection);
+                
+                        // Check for basic attack (A Button for Oculus Quest 2)
+                        if (OVRInput.GetDown(basicAttackButton))
+                        {
+                            StartChargingBasicAttack();
+                        }
+                
+                        if (isChargingBasicAttack)
+                        {
+                            basicAttackChargeTimer += Time.deltaTime;
+                
+                            // Check if the player has charged for the specified time
+                            if (basicAttackChargeTimer >= basicAttackChargeTime)
+                            {
+                                ReleaseBasicAttack();
+                            }
+                        }
+                
+                        // Check for heavy attack
+                        if (OVRInput.GetDown(heavyAttackButton))
+                        {
+                            HeavyAttack();
+                        }
+                
+                        // Check for inspire troops button
+                        if (OVRInput.GetDown(inspireTroopsButton))
+                        {
+                            InspireTroops();
+                        }
+                
+                        // Check for dodge/roll
+                        if (OVRInput.Get(heavyAttackButton) && !Mathf.Approximately(stickInput.magnitude, 0))
+                        {
+                            DodgeRoll(stickInput);
+                        }
+                    }
+                
+                    void StartChargingBasicAttack()
+                    {
+                        // Implement logic to start charging the basic attack
+                        isChargingBasicAttack = true;
+                        basicAttackChargeTimer = 0.0f;
+                
+                        // Play charging animation or effects
+                        Debug.Log("Charging Basic Attack...");
+                    }
+                
+                    void ReleaseBasicAttack()
+                    {
+                        // Implement logic to release the basic attack (fire the laser beam)
+                        isChargingBasicAttack = false;
+                
+                        // Play the laser beam effect and sound
+                        FireLaserBeam();
+                
+                        // Reset the charge timer
+                        basicAttackChargeTimer = 0.0f;
+                    }
+                
+                    void FireLaserBeam()
+                    {
+                        // Implement logic to create and fire the laser beam
+                        Debug.Log("Firing Laser Beam!");
+                
+                        // Create the laser beam GameObject and position it at the player's hand
+                        GameObject laserBeam = Instantiate(laserBeamPrefab, handTransform.position, handTransform.rotation);
+                
+                        // Add force or velocity to the laser beam to make it move forward
+                        Rigidbody laserBeamRigidbody = laserBeam.GetComponent<Rigidbody>();
+                        laserBeamRigidbody.velocity = laserBeam.transform.forward * laserBeamSpeed;
+                
+                        // Set a timer to destroy the laser beam after a certain time
+                        Destroy(laserBeam, laserBeamDuration);
+                    }
+                
+                    void HeavyAttack()
+                    {
+                        // Implement heavy attack logic here
+                        Debug.Log("Heavy Attack");
+                    }
+                
+                    void InspireTroops()
+                    {
+                        // Implement inspire troops logic here
+                        Debug.Log("Inspire Troops");
+                    }
+                
+                    void DodgeRoll(Vector2 dodgeDirection)
+                    {
+                        // Implement dodge/roll logic here
+                        Vector3 moveDirection = vrCamera.TransformDirection(new Vector3(dodgeDirection.x, 0, dodgeDirection.y)) * dodgeSpeed * Time.deltaTime;
+                        transform.Translate(moveDirection);
+                    }
                 }
-            }
-        }
-    
-        void StartChargingBasicAttack()
-        {
-            // Implement logic to start charging the basic attack
-            isChargingBasicAttack = true;
-            basicAttackChargeTimer = 0.0f;
-    
-            // Play charging animation or effects
-            Debug.Log("Charging Basic Attack...");
-        }
-    
-        void ReleaseBasicAttack()
-        {
-            // Implement logic to release the basic attack (fire the laser beam)
-            isChargingBasicAttack = false;
-    
-            // Play the laser beam effect and sound
-            FireLaserBeam();
-    
-            // Reset the charge timer
-            basicAttackChargeTimer = 0.0f;
-        }
-    
-        void FireLaserBeam()
-        {
-            // Implement logic to create and fire the laser beam
-            Debug.Log("Firing Laser Beam!");
-    
-            // Create the laser beam GameObject and position it at the player's hand
-            GameObject laserBeam = Instantiate(laserBeamPrefab, handTransform.position, handTransform.rotation);
-    
-            // Add force or velocity to the laser beam to make it move forward
-            Rigidbody laserBeamRigidbody = laserBeam.GetComponent<Rigidbody>();
-            laserBeamRigidbody.velocity = laserBeam.transform.forward * laserBeamSpeed;
-    
-            // Set a timer to destroy the laser beam after a certain time
-            Destroy(laserBeam, laserBeamDuration);
-        }
-    }
-
-
-
-            }
-            
-            void HeavyAttack()
-            {
-            // Implement heavy attack logic here
-            Debug.Log("Heavy Attack");
-            }
-            
-            void InspireTroops()
-            {
-            // Implement inspire troops logic here
-            Debug.Log("Inspire Troops");
-            }
-            
-            void DodgeRoll(Vector2 dodgeDirection)
-            {
-            // Implement dodge/roll logic here
-            Vector3 moveDirection = vrCamera.TransformDirection(new Vector3(dodgeDirection.x, 0, dodgeDirection.y)) * dodgeSpeed *
-            Time.deltaTime;
-            transform.Translate(moveDirection);
-            }
-            }
-
+                
+            </code>
         </pre>
         </div>
     </div>
 
     <div class="code-container">
         <div class="code-block">
-            <h2>Code Snippet 1</h2>
-            <pre>
-        // Replace this with actual code
-        </pre>
-        </div>
+
 
         <div class="code-block">
             <h2>Code Snippet 2</h2>
             <h1>Entwined Sprites</h1>
-            <pre>
+            <pre>       
+                <code class="language-csharp">
             using UnityEngine;
             
             public class EntwinedSprites : MonoBehaviour
@@ -276,17 +503,18 @@
             
                 // Add any other necessary functions for enemy behavior here
             }
-            </pre>
+        </code></pre>
 
         </div>
     </div>
     <!-- MOSSY TWINES-->
-    <div class="code-container">
+
 
         <div class="code-block" id="mossyTwine">
             <h2>Code Snippet 3</h2>
             <h1>Mossy Twines</h1>
             <pre>
+                <code class="language-csharp">
             using UnityEngine;
 
             public class MossyTreants : MonoBehaviour
@@ -313,12 +541,16 @@
                 // Add any other necessary functions for enemy behavior here
             }
             
-            </pre>
+        </code> </pre></div>
 
         </div>
     </div>
+</div>
     <!-- Add more code blocks as needed -->
-
+<!-- Add Prism JS at the end of body -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+<!-- Add Prism C# language support -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-csharp.min.js"></script>
 </body>
 
 </html>
