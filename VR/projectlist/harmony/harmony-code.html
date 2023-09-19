@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Harmony Last Stand - Code Overview</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .code-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .code-block {
+            background-color: #f0f0f0;
+            padding: 10px;
+            flex: 1 0 calc(50% - 20px);
+            /* Change this line */
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            box-sizing: border-box;
+            /* Add this line */
+        }
+
+        .code-block pre {
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+        }
+
+        @media (max-width: 768px) {
+            .code-block {
+                flex: 0 0 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Harmony Last Stand - Code Overview</h1>
+    <p>This page provides an overview of all the code used in the game Harmony Last Stand. You can copy and paste the
+        code snippets as needed.</p>
+
+    <div class="code-container" id="playerController">
+        <div class="code-block">
+            <pre>
+            using UnityEngine;
+            
+            public class PlayerController : MonoBehaviour
+            {
+            // Reference to the VR camera rig or player's head
+            public Transform vrCamera;
+            
+            // Buttons and triggers
+            public OVRInput.Button basicAttackButton = OVRInput.Button.One;
+            public OVRInput.Button heavyAttackButton = OVRInput.Button.Two;
+            public OVRInput.Button inspireTroopsButton = OVRInput.Button.PrimaryHandTrigger;
+            
+            // Movement
+            public float moveSpeed = 3.0f;
+            
+            // Dodge/Roll
+            public float dodgeSpeed = 5.0f;
+
+            // Basic Attack
+            private bool isChargingBasicAttack = false;
+            private float basicAttackChargeTime = 5.0f; // 5 seconds charge time
+            private float basicAttackChargeTimer = 0.0f;
+            
+            void Update()
+            {
+            // Get input from Oculus Quest 2 controller
+            Vector2 stickInput = OVRInput.Get(OVRInput.Axis2D.PrimaryThumbstick);
+            
+            // Move the player in the direction of the controller
+            Vector3 moveDirection = vrCamera.TransformDirection(new Vector3(stickInput.x, 0, stickInput.y)) * moveSpeed *
+            Time.deltaTime;
+            transform.Translate(moveDirection);
+            
+            // Check for basic attack
+            if (OVRInput.GetDown(basicAttackButton))
+            {
+            BasicAttack();
+            }
+            
+            // Check for heavy attack
+            if (OVRInput.GetDown(heavyAttackButton))
+            {
+            HeavyAttack();
+            }
+            
+            // Check for inspire troops button
+            if (OVRInput.GetDown(inspireTroopsButton))
+            {
+            InspireTroops();
+            }
+            
+            // Check for dodge/roll
+            if (OVRInput.Get(heavyAttackButton) && !Mathf.Approximately(stickInput.magnitude, 0))
+            {
+            DodgeRoll(stickInput);
+            }
+            }
+            
+            void BasicAttack()
+            {
+            // Implement basic attack logic here
+            Debug.Log("Basic Attack");
+
+            // Check for basic attack (A Button for Oculus Quest 2)
+            if (OVRInput.GetDown(basicAttackButton))
+            {
+                StartChargingBasicAttack();
+            }
+    
+            if (isChargingBasicAttack)
+            {
+                basicAttackChargeTimer += Time.deltaTime;
+    
+                // Check if the player has charged for the specified time
+                if (basicAttackChargeTimer >= basicAttackChargeTime)
+                {
+                    ReleaseBasicAttack();
+                }
+            }
+        }
+    
+        void StartChargingBasicAttack()
+        {
+            // Implement logic to start charging the basic attack
+            isChargingBasicAttack = true;
+            basicAttackChargeTimer = 0.0f;
+    
+            // Play charging animation or effects
+            Debug.Log("Charging Basic Attack...");
+        }
+    
+        void ReleaseBasicAttack()
+        {
+            // Implement logic to release the basic attack (fire the laser beam)
+            isChargingBasicAttack = false;
+    
+            // Play the laser beam effect and sound
+            FireLaserBeam();
+    
+            // Reset the charge timer
+            basicAttackChargeTimer = 0.0f;
+        }
+    
+        void FireLaserBeam()
+        {
+            // Implement logic to create and fire the laser beam
+            Debug.Log("Firing Laser Beam!");
+    
+            // Create the laser beam GameObject and position it at the player's hand
+            GameObject laserBeam = Instantiate(laserBeamPrefab, handTransform.position, handTransform.rotation);
+    
+            // Add force or velocity to the laser beam to make it move forward
+            Rigidbody laserBeamRigidbody = laserBeam.GetComponent<Rigidbody>();
+            laserBeamRigidbody.velocity = laserBeam.transform.forward * laserBeamSpeed;
+    
+            // Set a timer to destroy the laser beam after a certain time
+            Destroy(laserBeam, laserBeamDuration);
+        }
+    }
+
+
+
+            }
+            
+            void HeavyAttack()
+            {
+            // Implement heavy attack logic here
+            Debug.Log("Heavy Attack");
+            }
+            
+            void InspireTroops()
+            {
+            // Implement inspire troops logic here
+            Debug.Log("Inspire Troops");
+            }
+            
+            void DodgeRoll(Vector2 dodgeDirection)
+            {
+            // Implement dodge/roll logic here
+            Vector3 moveDirection = vrCamera.TransformDirection(new Vector3(dodgeDirection.x, 0, dodgeDirection.y)) * dodgeSpeed *
+            Time.deltaTime;
+            transform.Translate(moveDirection);
+            }
+            }
+
+        </pre>
+        </div>
+    </div>
+
+    <div class="code-container">
+        <div class="code-block">
+            <h2>Code Snippet 1</h2>
+            <pre>
+        // Replace this with actual code
+        </pre>
+        </div>
+
+        <div class="code-block">
+            <h2>Code Snippet 2</h2>
+            <h1>Entwined Sprites</h1>
+            <pre>
+            using UnityEngine;
+            
+            public class EntwinedSprites : MonoBehaviour
+            {
+                public int health = 100; // Adjust as needed
+                public Transform target; // The player or VR companion
+                public float moveSpeed = 2f; // Movement speed of the enemy
+                public float attackRange = 2f; // Attack range of the enemy
+                public int damage = 10; // Damage dealt to the player or companion
+            
+                private bool isAttacking = false;
+            
+                void Update()
+                {
+                    if (!isAttacking)
+                    {
+                        // Move towards the target (player or companion)
+                        if (target != null)
+                        {
+                            Vector3 direction = (target.position - transform.position).normalized;
+                            transform.Translate(direction * moveSpeed * Time.deltaTime);
+                        }
+                    }
+                }
+            
+                public void TakeDamage(int damage)
+                {
+                    health -= damage;
+            
+                    if (health <= 0)
+                    {
+                        Die();
+                    }
+                }
+            
+                void Die()
+                {
+                    // Add death animation or logic here
+                    Destroy(gameObject);
+                }
+            
+                // Attack the player or companion
+                public void Attack()
+                {
+                    if (Vector3.Distance(transform.position, target.position) <= attackRange)
+                    {
+                        // Deal damage to the target
+                        PlayerController playerController = target.GetComponent<PlayerController>();
+                        if (playerController != null)
+                        {
+                            playerController.TakeDamage(damage);
+                        }
+            
+                        // Set a cooldown to prevent continuous attacks
+                        isAttacking = true;
+                        Invoke("ResetAttackCooldown", 1.0f);
+                    }
+                }
+            
+                void ResetAttackCooldown()
+                {
+                    isAttacking = false;
+                }
+            
+                // Add any other necessary functions for enemy behavior here
+            }
+            </pre>
+
+        </div>
+    </div>
+    <!-- MOSSY TWINES-->
+    <div class="code-container">
+
+        <div class="code-block" id="mossyTwine">
+            <h2>Code Snippet 3</h2>
+            <h1>Mossy Twines</h1>
+            <pre>
+            using UnityEngine;
+
+            public class MossyTreants : MonoBehaviour
+            {
+                public int health = 200; // Adjust as needed
+                public Transform target; // The player or VR companion
+            
+                public void TakeDamage(int damage)
+                {
+                    health -= damage;
+            
+                    if (health <= 0)
+                    {
+                        Die();
+                    }
+                }
+            
+                void Die()
+                {
+                    // Add death animation or logic here
+                    Destroy(gameObject);
+                }
+            
+                // Add any other necessary functions for enemy behavior here
+            }
+            
+            </pre>
+
+        </div>
+    </div>
+    <!-- Add more code blocks as needed -->
+
+</body>
+
+</html>
