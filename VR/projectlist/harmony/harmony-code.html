@@ -546,6 +546,138 @@
         </div>
     </div>
 </div>
+
+
+<section>
+    <h1>Code I'm working o n that's not working</h1>
+    <pre><code class="language-csharp">
+    using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.XR;
+
+public class PlayerController : MonoBehaviour
+{
+    public Transform vrCamera;
+    public float moveSpeed = 3.0f;
+    private bool isChargingBasicAttack = false;
+    private float basicAttackChargeTime = 5.0f;
+    private float basicAttackChargeTimer = 0.0f;
+    public GameObject laserBeamPrefab;  // Assign this in the Unity Inspector
+    public Transform handTransform;     // Assign this in the Unity Inspector
+    public float laserBeamSpeed = 10f;  // Speed of the laser beam
+    public float laserBeamDuration = 5f;// Time to destroy the laser beam
+
+
+    // Initialize XR Node references
+    private List<UnityEngine.XR.XRNodeState> nodeStates = new List<UnityEngine.XR.XRNodeState>();
+    private Vector2 primary2DAxis;
+
+    void Update()
+    {
+        UpdateNodeStates();
+
+        // Get input from the controllers
+        UnityEngine.XR.InputDevice device = GetDevice(UnityEngine.XR.XRNode.RightHand);
+        if (device.TryGetFeatureValue(CommonUsages.primary2DAxis, out primary2DAxis))
+        {
+            // Your code for movement
+            Vector3 moveDirection = vrCamera.TransformDirection(new Vector3(primary2DAxis.x, 0, primary2DAxis.y)) * moveSpeed * Time.deltaTime;
+            transform.Translate(moveDirection);
+        }
+
+        // Your code for other functionalities
+        // For example, for a basic attack:
+
+        if (device.TryGetFeatureValue(CommonUsages.primaryButton, out bool primaryButtonPressed) && primaryButtonPressed)
+        {
+            StartChargingBasicAttack();
+        }
+
+        if (isChargingBasicAttack)
+        {
+            basicAttackChargeTimer += Time.deltaTime;
+            if (basicAttackChargeTimer >= basicAttackChargeTime)
+            {
+                ReleaseBasicAttack();
+            }
+        }
+
+        // Implement the rest of your functionalities similarly
+    }
+
+    private void UpdateNodeStates()
+    {
+        UnityEngine.XR.InputTracking.GetNodeStates(nodeStates);
+    }
+
+    private UnityEngine.XR.InputDevice GetDevice(UnityEngine.XR.XRNode node)
+    {
+        UnityEngine.XR.InputDevice device = new UnityEngine.XR.InputDevice();
+        foreach (var item in nodeStates)
+        {
+            if (item.nodeType == node)
+            {
+                device = UnityEngine.XR.InputDevices.GetDeviceAtXRNode(node);
+                break;
+            }
+        }
+        return device;
+    }
+
+    void StartChargingBasicAttack()
+    {
+        isChargingBasicAttack = true;
+        basicAttackChargeTimer = 0.0f;
+        Debug.Log("Charging Basic Attack...");
+    }
+
+    void ReleaseBasicAttack()
+    {
+        isChargingBasicAttack = false;
+        Debug.Log("Released Basic Attack!");
+        basicAttackChargeTimer = 0.0f;
+    }
+
+ void FireLaserBeam()
+{
+    // Implement logic to create and fire the laser beam
+    Debug.Log("Firing Laser Beam!");
+
+    // Create the laser beam GameObject and position it at the player's hand
+    GameObject laserBeam = Instantiate(laserBeamPrefab, handTransform.position, handTransform.rotation);
+
+    // Add force or velocity to the laser beam to make it move forward
+    Rigidbody laserBeamRigidbody = laserBeam.GetComponent<Rigidbody>();
+    laserBeamRigidbody.velocity = laserBeam.transform.forward * laserBeamSpeed;
+
+    // Set a timer to destroy the laser beam after a certain time
+    Destroy(laserBeam, laserBeamDuration);
+}
+
+                
+                    void HeavyAttack()
+                    {
+                        // Implement heavy attack logic here
+                        Debug.Log("Heavy Attack");
+                    }
+                
+                    void InspireTroops()
+                    {
+                        // Implement inspire troops logic here
+                        Debug.Log("Inspire Troops");
+                    }
+                
+                    void DodgeRoll(Vector2 dodgeDirection)
+                    {
+                        // Implement dodge/roll logic here
+                        Vector3 moveDirection = vrCamera.TransformDirection(new Vector3(dodgeDirection.x, 0, dodgeDirection.y)) * dodgeSpeed * Time.deltaTime;
+                        transform.Translate(moveDirection);
+                    }
+                }
+
+</code></pre>
+</section>
     <!-- Add more code blocks as needed -->
 <!-- Add Prism JS at the end of body -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
