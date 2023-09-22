@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dev Log</title>
+    <style>
+        #logEntries {
+            margin-top: 20px;
+        }
+        .logEntry {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ccc;
+        }
+        body {
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            justify-content:center;
+            font-family: 'Roboto', sans-serif;
+            background-color:beige;
+            color: darkslategray;
+        }
+    </style>
+</head>
+<body>
+    <h1>AG Dev Log</h1>
+    <form id="logForm">
+        <label for="logTitle">Title:</label><br>
+        <input type="text" id="logTitle" name="logTitle"><br>
+        <label for="logContent">Content:</label><br>
+        <textarea id="logContent" name="logContent"></textarea><br>
+        <input type="submit" value="Submit">
+    </form>
+    <h2>Log Entries</h2>
+    <div id="logEntries"></div>
+    <a href="../../projects/index.html">Back to Project Page</a>
+    <script src="devLog.js"></script>
+</body>
+</html>
