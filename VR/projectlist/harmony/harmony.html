@@ -2,111 +2,8 @@
 <html>
 <head>
   <title>Harmony's Last Stand - Game Design Document</title>
-  <!-- AG Test commit on 9.14.23 -->
-  <style>
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
-  padding:20px;
-}
-
-#container {
-  width: 80%;
-  margin: auto;
-  overflow: hidden;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-header {
-  background: #000000;
-  color: white;
-  padding: 20px;
-  text-align: center;
-}
-
-nav, section {
-  padding: 20px;
-}
-
-nav {
-  width: 20%;
-}
-
-section {
-  width: 75%;
-}
-
-.container {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-}
-
-nav ul li {
-  margin-bottom: 10px;
-}
-
-nav a {
-  text-decoration: none;
-  color: #333;
-}
-
-nav a:hover {
-  color: #50b3a2;
-}
-
-.section-header {
-  font-size: 24px;
-  border-bottom: 2px solid #333;
-  margin-bottom: 10px;
-}
-
-.sub-section-header {
-  font-size: 18px;
-  margin-bottom: 10px;
-}
-
-h1 {
-  text-align: center;
-}
-
-@media screen and (max-width: 768px) {
-  nav, section {
-    width: 100%;
-  }
-}
-
-.enemy-type {
-            font-weight: bold;
-        }
-        .description, .strategy {
-            margin-left: 2rem;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
-        th, td {
-            border: 1px solid black;
-            padding: 10px;
-            text-align: left;
-        }
-        th {
-            background-color: #f2f2f2;
-        }
-  </style>
+  <!-- AG Test commit on 9.22.23 -->
+<link rel="stylesheet" href="./harmony.css">
 </head>
 <body>
   <div id="container">
@@ -116,7 +13,7 @@ h1 {
     <nav id="table-of-contents">
       <ul>
         <li><a href="javascript:void(0);" onclick="scrollToElement('intro')">Introduction</a></li>
-        <li><a href="javascript:void(0);" onclick="scrollToElement('enemies')">Enemies</a></li>
+        <li><a href="./enemies/harmony-e-mossy.html">Enemies</a></li>
         <li><a href="javascript:void(0);" onclick="scrollToElement('player-cheat-sheet')">Player Cheat Sheet</a></li>
         <li><a href="javascript:void(0);" onclick="scrollToElement('health-system')">Health System</a></li>
         <li><a href="./harmony-code.html" style="font-weight:900; #000000;">THE CODE</a></li>
