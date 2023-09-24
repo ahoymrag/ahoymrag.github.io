@@ -1,0 +1,108 @@
+<!-- Software Architecture Planning for "Harmony's Last Stand" -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Software Architecture Planning for "Harmony's Last Stand"</title>
+</head>
+<body>
+    <h1>Software Architecture Planning for "Harmony's Last Stand" in Unreal Engine 5</h1>
+
+    <p>This section provides an outline for the architecture of "Harmony's Last Stand," detailing key Unreal Engine 5 components such as GameState, GameMode, GameInstance, and GameManager.</p>
+
+    <section id="game-state">
+        <h2>GameState</h2>
+
+        <h3>Purpose</h3>
+        <ul>
+            <li>To keep track of gameplay-related variables and states that are shared among all players.</li>
+        </ul>
+
+        <h3>Key Responsibilities</h3>
+        <ol>
+            <li>Track the game timer (7 minutes per game session).</li>
+            <li>Store and update the Harmony Core's health.</li>
+            <li>Keep track of the current wave and round.</li>
+            <li>Maintain the global and local scores.</li>
+        </ol>
+
+        <h3>Implementation Steps</h3>
+        <ol>
+            <li>Create a new GameState class, either via Blueprints or C++.</li>
+            <li>Implement variables and functions for the above responsibilities.</li>
+            <li>Ensure GameState variables are replicated for multiplayer functionality.</li>
+        </ol>
+    </section>
+
+    <section id="game-mode">
+        <h2>GameMode</h2>
+
+        <h3>Purpose</h3>
+        <ul>
+            <li>To define the rules of the game and to manage the game flow.</li>
+        </ul>
+
+        <h3>Key Responsibilities</h3>
+        <ol>
+            <li>Spawn player characters and manage respawns.</li>
+            <li>Start and end the game based on conditions (e.g., timer reaching zero or Harmony Core's health dropping to zero).</li>
+            <li>Handle transitions between different game states (e.g., from gameplay to game over screen).</li>
+        </ol>
+
+        <h3>Implementation Steps</h3>
+        <ol>
+            <li>Create a new GameMode class.</li>
+            <li>Configure player spawning and game over conditions.</li>
+            <li>Implement the game rules defined in the Game Design Document.</li>
+        </ol>
+    </section>
+
+    <section id="game-instance">
+        <h2>GameInstance</h2>
+
+        <h3>Purpose</h3>
+        <ul>
+            <li>To hold data that should persist between different game sessions and levels.</li>
+        </ul>
+
+        <h3>Key Responsibilities</h3>
+        <ol>
+            <li>Store player profile information.</li>
+            <li>Maintain leaderboard data.</li>
+            <li>Save and load player preferences and settings.</li>
+        </ol>
+
+        <h3>Implementation Steps</h3>
+        <ol>
+            <li>Create a new GameInstance class.</li>
+            <li>Implement variables and functions for the above responsibilities.</li>
+            <li>Use save-game mechanisms to ensure data persistence.</li>
+        </ol>
+    </section>
+
+    <section id="game-manager">
+        <h2>GameManager</h2>
+
+        <h3>Purpose</h3>
+        <ul>
+            <li>To serve as the central hub for game-related logic not covered by the aforementioned classes.</li>
+        </ul>
+
+        <h3>Key Responsibilities</h3>
+        <ol>
+            <li>Manage enemy spawning and behavior.</li>
+            <li>Calculate scores based on the Points Allocation Rubric.</li>
+            <li>Manage local tournaments logic.</li>
+            <li>Coordinate between GameState, GameMode, and other classes to ensure smooth gameplay.</li>
+        </ol>
+
+        <h3>Implementation Steps</h3>
+        <ol>
+            <li>Create a GameManager class (Blueprint or C++) that operates under the GameState.</li>
+            <li>Link the GameManager with other components like AI controllers for enemies.</li>
+            <li>Implement key game mechanics like score calculation and enemy behavior as functions in GameManager.</li>
+        </ol>
+    </section>
+</body>
+</html>
