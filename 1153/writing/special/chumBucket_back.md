@@ -53,3 +53,14 @@ SEPTEMBER
 
 
 9.14.23 - watching you at gcafe talking with a participiant - as I work on the nibbler and a thousand code things at lunch - you slept over last night - we had some fun this morning and walked to work together - parked by your house on wooster - then we broke off - and then had lunch in the little alleyway of make haven
+
+9.15 - Friday - Apizza fest
+9.16 - Sat - Pig Roast Reunion
+9.17 - Sunday - went to poppys
+9.18 - Monday - Cod Climbing
+9.19 - Tuesday - Elln with Mahea
+9.20 - wednesday - date night - go to moor's in guilford - fall in love - 
+9.21 - thursday - lifegroup - ellen hosts
+9.22 - game night - lunch in little alleyway
+9.23
+9.24 - ellen in NYC with brother - sunday 
