@@ -9,6 +9,55 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </head>
 <body>
+
+<div class="superGallery">
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700;800;900&display=swap');
+
+    .bigAss img {
+        width: 100%;
+        height: auto;
+
+    }
+
+    h1 {
+        font-size: 16vw;
+        text-align: center;
+        padding:10px;
+        font-family: 'Barlow', sans-serif;
+        font-weight:900;
+        letter-spacing: -2.5px;
+
+    }
+
+  
+html {
+    font-family: 'Barlow', sans-serif;
+}
+            a {
+                font-size:52px;
+                color: #000000;
+                font-weight:900;
+                text-decoration:none;
+            }
+            a:hover {
+                text-decoration:underline;
+            }
+</style>
+<div class="bigAss">
+    <h1>Paintings</h1>
+    <p></p>
+    <img src="../gallery/portfolio-imagery/Alex Gonzalez Portfolio - Filmmaker - VR - 2020  2020-08-16 at 4.31.35 PM.png" alt="ahoy logo">
+    <img src="../gallery/portfolio-imagery/Alex Gonzalez Portfolio - Filmmaker - VR - 2020  2020-08-16 at 4.32.03 PM.png" alt="ahoy logo">
+
+</div>
+
+
+
+</div>
+
+
     <div class="container">
         <div id="gallery" class="row">
             <!-- Images will be inserted here -->
@@ -48,41 +97,7 @@
         <a href="/index.html" class="btn">Back to Home</a>
     </footer>
 
-    <style>
-        #gallery .col-md-4 {
-            margin-bottom: 20px;
-        }
-        #gallery img {
-            width: 100%;
-            height: auto;
-        }
-    </style>
-    <script>
-        $(document).ready(function() {
-            // Load initial images
-            loadImages();
-    
-            // Handle image click
-            $('#gallery').on('click', 'img', function() {
-                $('#popupImage').attr('src', $(this).attr('src'));
-                $('#imageModal').modal('show');
-            });
-    
-            // Handle scroll
-            $(window).scroll(function() {
-                if ($(window).scrollTop() + $(window).height() >= $(document).height()) {
-                    loadImages();
-                }
-            });
-        });
-    
-        function loadImages() {
-            for (let i = 0; i < 3; i++) {
-                let imageUrl = 'https://source.unsplash.com/random?' + Math.random();
-                $('#gallery').append('<div class="col-md-4"><img src="' + imageUrl + '"></div>');
-            }
-        }
-    </script>
+
 
 
 </body>
