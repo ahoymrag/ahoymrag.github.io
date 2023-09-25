@@ -1,0 +1,39 @@
+/* AGCV Index ADDONs */
+
+
+
+.menu-horizontal-wrap-A {
+    width:100%;
+    height:130px;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    align-items:center;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+.link-download {
+    font-size: 16px;
+    color:black;
+    opacity: .5;
+    text-align:center!important;
+    border-style:solid;
+    padding:20px;
+    border-color:white;
+    text-decoration: none;
+}
+
+.link-download:hover {
+    opacity: 1;
+    cursor: pointer;
+    border-style:solid;
+    border-color:black;
+}
+
+.footer-copy {
+    font-size: 12px;
+    color:rgba(0, 15, 44, 0.427)!important;
+    text-align:center!important;
+}
