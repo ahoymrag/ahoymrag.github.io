@@ -1,0 +1,65 @@
+/*portfolio CSS */
+
+            /* CSS FOR LOGOS */
+            .companyLogo-portfolio {
+                width: 100%;
+                height: auto;
+            }
+
+            /* Flexbox styles */
+            main {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .portfolio-item {
+                flex: 1 1 900px; /* Each item will have a minimum width of 300px */
+                margin: 10px;
+                padding: 20px;
+                background-color: #e4e4e4;
+            }
+
+            #port-silverBack {
+                background-attachment: fixed;
+                background-size:contain;
+                background-position: 0%;
+                background-image: url(/portfolio/assets/companyLogos/silverBack.png);
+            }
+
+            .littleBuddyLogo {
+                width:64px;
+                height:auto;
+                background-color:rgb(0, 0, 0);
+                border-style:solid;
+                border-radius:2px;
+                padding:20px;
+            }
+
+            #port-apePay {
+                background-image:url(/ahoymrag.github.io/portfolio/assets/companyLogos/apePay.png);
+                background-size:cover;
+                background-attachment: fixed;
+        
+            }
+        
+            #port-Chaos {
+                background-image:url(/ahoymrag.github.io/portfolio/assets/companyLogos/chaosNet.png);
+                background-size:cover;
+                background-attachment: fixed;
+            }
+
+            /* Media queries for mobile devices */
+@media screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    .portfolio-item {
+        flex: 1 1 auto; /* Each item will take the full width */
+    }
+
+    .littleBuddyLogo {
+        width: 32px; /* Reduce the size of the logo */
+        padding: 10px; /* Reduce the padding */
+    }
+}
