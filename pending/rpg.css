@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color: #f4f4f4;
+    max-height: 100vh;
+   
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+ul {
+    text-decoration: none;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly; 
+    max-width: 600px;
+    margin: 10px auto;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    color: #ddd;
+    background-color: rgba(255, 255, 255, 0.1); 
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); 
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#logo, #title {
+    max-width: 80%;
+    height: auto;
+    cursor: pointer;
+    display: block;
+    margin: 10px auto;
+}
+
+@media screen and (max-width: 600px) {
+    #logo, #title {
+        width: 90%;
+    }
+}
+
+#about {
+    background-color: transparent;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+#about h1, #about h2 {
+    color: #333;
+}
+
+#about p {
+    color: #666;
+}
+
+#about a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+#about a:hover {
+    text-decoration: underline;
+}
+
+.service-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
