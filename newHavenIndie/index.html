@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Haven Indie Paper</title>
+  <meta name="description" content="New Haven Indie Paper is your source for local indie music, art, film, and poetry events.">
+  <meta name="keywords" content="New Haven,Indie,Music,Art,Film,Poetry,Events">
+  <meta name="author" content="New Haven Indie Paper">
+
+  <link rel="stylesheet" href="./indieNewStyles.css">
+</head>
+
+<body>
+  <header>
+    <img src="./assets/n5.png" alt="New Haven Indie Paper Logo" id="logo">
+  </header>
+<main>
+  <div class="frontpage">
+    <div class="fp-cell fp-cell--1">
+        <div class="fp-item">1 Content Here will go content here and the content here will also go here and we will see how much stuff we could dooooo</div>
+    </div>
+    <div class="fp-cell fp-cell--2 ">
+        <div class="fp-item flexy-column">2
+          <br>
+          This is where the content will go for the second content of the page we are going to test the word wrapping now and se what's goo
+          <ul>Here is a little list of things that could go here
+            <li>Test</li>
+            <li>Test</li>
+            <li>Test</li>
+          </ul>
+        </div>
+    </div>
+    <div class="fp-cell fp-cell--3">
+        <div class="fp-item">3
+          Perhaps on this section there are events coming up in a very small table and compressed
+        </div>
+    </div>
+    <div class="fp-cell fp-cell--4 fp-cell--border-top">
+        <div class="fp-item flexy-column">4<br>
+        <h2>High Scores</h2>
+      <h3>Barcade</h3></div>
+    </div>
+    <div class="fp-cell fp-cell--5 fp-cell--border-top">
+        <div class="fp-item">5</div>
+    </div>
+    <div class="fp-cell fp-cell--6 fp-cell--border-top">
+        <div class="fp-item">6</div>
+    </div>
+    <div class="fp-cell fp-cell--7 fp-cell--border-top">
+        <div class="fp-item">7</div>
+    </div>
+</div>
+
+
+  <h1>New Haven Indie Paper</h1>
+  <h2>Table of Contents</h2>
+  <ul id="toc">
+    <li><a href="#" onclick="showEvent(1)">Event 1: Indie Music Festival</a></li>
+    <li><a href="#" onclick="showEvent(2)">Event 2: Local Art Show</a></li>
+    <li><a href="#" onclick="showEvent(3)">Event 3: Film Screening</a></li>
+    <li><a href="#" onclick="showEvent(4)">Event 4: Poetry Reading</a></li>
+    <!-- ...other events -->
+  </ul>
+
+  <div id="eventDetails"></div>
+  <div id="articles" class="grid-container"></div>
+
+</main>
+  <footer>
+    <div class="footer-content">
+      <h3>New Haven Indie Paper</h3>
+      <p>123 Main St, New Haven, CT 06510</p>
+      <p>Email: info@newhavenindiepaper.com</p>
+      <p>Phone: (123) 456-7890</p>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2023 New Haven Indie Paper, All Rights Reserved</p>
+      <p>Newspaper Founded and Supported by Alex Mundane and Ellen Martin</p>
+    </div>
+  </footer>
+
+  <script src="frontPage.js"></script>
+</body>
+
+</html>
