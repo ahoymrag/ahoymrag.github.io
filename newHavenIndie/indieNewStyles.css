@@ -1,0 +1,189 @@
+body {
+	background: #202020e9;
+	color: #5b4636;
+	font-family: 'Times New Roman', serif;
+	margin: 0;
+	padding: 0;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+
+
+  }
+
+  main {
+	background: #f4e9d8;
+	width: 8.5in;
+	height: 24in;
+	padding:20px;
+	color:black!important;
+	border: .51px solid #0000007e;
+	box-shadow: 0 0 0 2px #000000; /* This creates the second border */
+	background: #f4e9d8 url('paper_texture.png'); /* Replace 'paper_texture.png' with the path to your texture image */
+	background-size: cover; /* This makes sure the background image covers the whole element */
+}
+
+  @media print {
+	body {
+	  width: 8.5in;
+	  height: 11in;
+	  overflow: hidden;
+	}
+  
+	@page {
+	  size: 8.5in 11in;
+	  margin: 0;
+	}
+  
+	/* Other print styles as needed */
+  }
+  
+  h1, h2 {
+	font-weight: bold;
+  }
+  
+  #toc {
+	list-style-type: none;
+	padding: 0;
+  }
+  
+  #eventDetails {
+	border: 2px solid #5b4636;
+	padding: 10px;
+	margin-top: 20px;
+	display: none;
+  }
+  
+  @media print {
+	@page {
+	  size: 11in 8.5in landscape;
+	  margin: 0;
+	}
+  }
+
+  .grid-container {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	padding: 12px;
+  }
+  
+  .grid-item {
+	background-color: rgba(255, 255, 255, 0.8);
+	border: 1px solid rgb(0, 0, 0);
+	padding: 20px;
+	font-size: 16px;
+	text-align: left;
+  }
+
+  #logo {
+	width:100%;
+	mix-blend-mode: multiply;
+
+  }
+  
+
+  footer {
+	position: relative;
+
+	width:100%;
+	height: 250px;
+	background-color:#f4e9d8e8;
+	color:black;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+  }
+
+  .footer-content, .footer-bottom {
+	text-align: center;
+  }
+  
+  .footer-content h3, .footer-content p {
+	margin: 0 0 10px;
+  }
+  
+  .footer-bottom p {
+	margin: 0;
+  }
+
+ 
+  
+  .frontpage {
+	position: relative;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-column-gap: 32px;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	overflow: hidden;
+  
+	&:before,
+	&:after {
+	  position: absolute;
+	  top: 0;
+	  height: 100%;
+	  content: '';
+	}
+  
+	&:before {
+	  right: 50%;
+	  width: calc(25% + 8px);
+	  border-left: 1px solid #ccc;
+	  border-right: 1px solid #ccc;
+	}
+  
+	&:after {
+	  right: 0;
+	  width: calc(25% - 8px);
+	  border-left: 1px solid #ccc;
+	}
+  }
+  
+  .fp-cell {
+	position: relative;
+	z-index: 2;
+	padding: 16px 0;
+	background-color: #f4e9d8; /* changed to match body's background color */
+  }
+  
+  .fp-cell--border-top {
+	&:before {
+	  content: '';
+	  position: absolute;
+	  top: 0;
+	  left: -16px;
+	  right: -16px;
+	  border-top: 1px solid #000000;
+	}
+  }
+  
+  .fp-cell--1 {
+	grid-row: 1 / span 3;
+  }
+  
+  .fp-cell--2 {
+	grid-row: 1 / span 2;
+	grid-column: 2 / span 2;
+  }
+  
+  .fp-item {
+	background-color: #f4e9d8; /* changed to match body's background color */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 200px;
+	height: 100%;
+  }
+  
+  .flexy-column {
+	display: flex;
+	flex-direction: column;
+  }
+
+  .flexy-row {
+	display: flex;
+	flex-direction: row;
+  }
+
+  .flexy-row-center {
