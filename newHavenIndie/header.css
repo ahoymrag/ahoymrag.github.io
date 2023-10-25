@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+
+.volumeWrap {
+	width:100%;
+	display:flex;
+	align-items:center;
+	justify-content: center!important;
+
+}
+
+
+.volumeData {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: nowrap;
+  background: #f4e9d8;
+  text-align:center;
+  font-family: 'Merriweather', serif;
+  width: 8.5in;
+
+}
+.volumeData p {
+  margin: 0;
+}
+
+.volumeTable {
+	border-style:solid;
+	border-color:solid;
+	width: 100%; /* Make the table take the full width of its parent */
+	table-layout: fixed; /* This makes the columns of equal width */
+  }
+  
+  .volumeTable td {
+	padding: 10px; /* Add some padding to the cells for better readability */
+	text-align: center; /* Center the text in the cells */
+  }

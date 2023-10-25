@@ -1,0 +1,58 @@
+{
+	"howToInstructions": [
+	  {
+		"id": "div1",
+		"header": "How To",
+		"description": "This is how you would do something like add a description, the description doesn't have to be too complicated - just enough for the point to get across"
+	  },
+	  {
+		"id": "div2",
+		"header": "How To",
+		"description": ""
+	  },
+	  {
+		"id": "div3",
+		"header": "How To Become an Alderman",
+		"description": "In order to run for the position of Alderman in New Haven, one would typically need to follow certain procedures, although the exact process might vary. ... "
+	  },
+	  {
+		"id": "div4",
+		"header": "How To Become a Professor at Gateway Community College",
+		"description": {
+		  "Educational and Professional Qualifications": [
+			"Obtain a master's degree in the relevant field (a doctoral degree may be preferred).",
+			"Gain professional experience and have a record of academic achievements and publications."
+		  ],
+		  "Check Current Job Openings": [
+			"Visit Gateway Community College's official careers page to check for available professor positions."
+		  ],
+		  "Prepare Your Application": [
+			"Compile a well-organized application including a cover letter, resume, and any other required documents.",
+			"Highlight your relevant experience, educational background, and teaching philosophy."
+		  ],
+		  "Apply Online": [
+			"Submit your application through the online job portal provided on the college's careers page."
+		  ],
+		  "Prepare for Interviews": [
+			"Review common interview questions for academic positions.",
+			"Be ready to discuss your teaching philosophy, research interests, and how you can contribute to the college."
+		  ],
+		  "Follow Up": [
+			"Send a thank-you email to the interviewers expressing gratitude for the interview opportunity and reiterating your interest in the position."
+		  ]
+		}
+	  },
+	  {
+		"id": "div5",
+		"header": "How To Become an Alderman",
+		"description": "In order to run for the position of Alderman in New Haven, one would typically need to follow certain procedures, although the exact process might vary. ... "
+	  },
+	  {
+		"id": "div6",
+		"header": "How To Become an Alderman",
+		"description": "In order to run for the position of Alderman in New Haven, one would typically need to follow certain procedures, although the exact process might vary. ... "
+	  }
+	
+	]
+  }
+  
