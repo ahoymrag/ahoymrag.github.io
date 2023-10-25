@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ahoy Indie Media</title>
+    <style>
+        /* Basic styling */
+        body, h1 {
+            margin: 0;
+            padding: 0;
+        }
+        h1, p {
+            text-align: center;
+        }
+
+        /* Header */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Splash page */
+        .splash-page {
+            background-image: url('https://via.placeholder.com/1600x600');
+            height: 600px;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        /* Grid styling */
+        .grid-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .grid-item {
+            width: calc(50% - 20px);
+            margin: 10px;
+            box-sizing: border-box;
+            cursor: pointer;
+        }
+        @media (max-width: 768px) {
+            .grid-item {
+                width: 100%;
+            }
+        }
+
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.8);
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Give to Mission Anabaino</h1>
+    </header>
+
+    <div class="splash-page">
+        <h1>Give to Mission Anabaino</h1>
+    </div>
+
+    <div class="grid-container">
+        <div class="grid-item" id="pastor1">
+            <img src="https://via.placeholder.com/400x300" alt="Pastor 1">
+            <p>Pastor 1</p>
+        </div>
+        <div class="grid-item" id="pastor2">
+            <img src="https://via.placeholder.com/400x300" alt="Pastor 2">
+            <p>Pastor 2</p>
+        </div>
+        <!-- Add more grid items as needed -->
+    </div>
+
+    <!-- Modal for video popup -->
+    <div class="modal" id="modal">
+        <iframe id="video" width="560" height="315" frameborder="0"></iframe>
+    </div>
+
+    <script>
+        // Open video modal
+        function openModal(videoId) {
+            document.getElementById('modal').style.display = 'flex';
+            document.getElementById('video').src = `https://www.youtube.com/embed/${videoId}`;
+        }
+
+        // Close video modal
+        function closeModal() {
+            document.getElementById('modal').style.display = 'none';
+            document.getElementById('video').src = '';
+        }
+
+        // Attach event listeners
+        document.getElementById('pastor1').addEventListener('click', () => openModal('VIDEO_ID_1'));
+        document.getElementById('pastor2').addEventListener('click', () => openModal('VIDEO_ID_2'));
+        document.getElementById('modal').addEventListener('click', closeModal);
+    </script>
+</body>
+</html>
