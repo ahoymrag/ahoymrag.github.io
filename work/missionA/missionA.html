@@ -1,96 +1,63 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Ahoy Indie Media</title>
-    <style>
-        /* Basic styling */
-        body, h1 {
-            margin: 0;
-            padding: 0;
-        }
-        h1, p {
-            text-align: center;
-        }
-
-        /* Header */
-        header {
-            background-color: #333;
-            color: white;
-            padding: 10px;
-            text-align: center;
-        }
-
-        /* Splash page */
-        .splash-page {
-            background-image: url('https://via.placeholder.com/1600x600');
-            height: 600px;
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        /* Grid styling */
-        .grid-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        .grid-item {
-            width: calc(50% - 20px);
-            margin: 10px;
-            box-sizing: border-box;
-            cursor: pointer;
-        }
-        @media (max-width: 768px) {
-            .grid-item {
-                width: 100%;
-            }
-        }
-
-        /* Modal */
-        .modal {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0,0,0,0.8);
-            align-items: center;
-            justify-content: center;
-        }
-    </style>
+    <title>Mission Anabaino</title>
+<link rel="stylesheet" href="missionStyles.css">
 </head>
 <body>
     <header>
-        <h1>Give to Mission Anabaino</h1>
+        <h1>Support Mission Anabaino</h1>
     </header>
 
     <div class="splash-page">
-        <h1>Give to Mission Anabaino</h1>
+        <h1>Meet the</h1>
     </div>
-
+<div class="full-width-wrapper">
     <div class="grid-container">
         <div class="grid-item" id="pastor1">
-            <img src="https://via.placeholder.com/400x300" alt="Pastor 1">
+            <img src="assets/1.png" alt="Pastor 1">
             <p>Pastor 1</p>
         </div>
         <div class="grid-item" id="pastor2">
-            <img src="https://via.placeholder.com/400x300" alt="Pastor 2">
+            <img src="assets/2.png" alt="Pastor 2">
             <p>Pastor 2</p>
         </div>
 		<div class="grid-item" id="pastor3">
-            <img src="https://via.placeholder.com/400x300" alt="Pastor 3">
+            <img src="assets/1.png" alt="Pastor 3">
             <p>Pastor 3</p>
         </div>
 		<div class="grid-item" id="pastor4">
-            <img src="https://via.placeholder.com/400x300" alt="Pastor 4">
+            <img src="assets/2.png" alt="Pastor 4">
             <p>Pastor 4</p>
         </div>
         <!-- Add more grid items as needed -->
     </div>
+</div>
+
+
+
+<footer class="glass-footer">
+    <div class="footer-content">
+        <div class="footer-section about">
+            <h2>About Mission Anabaino</h2>
+            <p><a href="about.html">Learn More</a></p>
+            <p><a href="https://www.anabaino.org/giving">Partner with Us in Prayer and/or Financial Support
+            </a></p>
+        </div>
+        <div class="footer-section contact">
+            <h2>Contact Us</h2>
+            <p><a href="contact.html">Contact</a></p>
+            <p>Address: 123 Main St, Anytown, USA</p>
+            <p>Phone: (123) 456-7890</p>
+        </div>
+        <div class="footer-section logo">
+            <img src="assets/logo.png" alt="Mission Anabaino Logo">
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2023 Mission Anabaino</p>
+    </div>
+</footer>
 
     <!-- Modal for video popup -->
     <div class="modal" id="modal">
