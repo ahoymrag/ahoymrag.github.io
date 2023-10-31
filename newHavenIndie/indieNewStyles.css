@@ -225,3 +225,18 @@ body {
 	}
 
 	
+	.score-table {
+		width: 100%; /* Use the full width of the parent container */
+		table-layout: fixed; /* This makes the columns equal width */
+		border-style:solid;
+		border-color:black;
+
+	}
+	  
+	  .score-table th, .score-table td {
+		width: 20%; /* Divide the table into 5 equal columns */
+		text-align: center; /* Center the text in the cells */
+		padding: 10px; /* Add some padding around the cell content */
+		border-style:solid;
+		border-color:black;
+	}
