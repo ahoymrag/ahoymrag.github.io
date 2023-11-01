@@ -208,8 +208,47 @@
       <p>Newspaper Founded and Supported by Alex Mundane and Ellen Martin</p>
     </div>
   </footer>
+<script>
+fetch('./data/vol1/vol1.json')
+  .then(response => response.json())
+  .then(data => {
+    // Populate header
+    document.getElementById('logo').src = data.header.logo;
+    let volumeData = data.header.volumeData;
+    document.getElementById('vol1').innerHTML = `
+      <table class="volumeTable">
+        <tr>
+          <td><p>${volumeData.volume}</p></td>
+          <td><p>${volumeData.issue}</p></td>
+          <td><p>${volumeData.month}</p></td>
+          <td><p>${volumeData.editor}</p></td>
+        </tr>
+      </table>
+    `;
 
-  <script src="frontPage.js"></script>
+    // Populate main
+    let frontpage = data.main.frontpage;
+    document.querySelector('.fp-cell.fp-cell--1 .fp-item').textContent = frontpage.fpCell1;
+    document.querySelector('.fp-cell.fp-cell--2 .fp-item').textContent = frontpage.fpCell2;
+    document.querySelector('.fp-cell.fp-cell--3 .fp-item').textContent = frontpage.fpCell3;
+    document.querySelector('.fp-cell.fp-cell--4 .fp-item').textContent = frontpage.fpCell4;
+    document.querySelector('.fp-cell.fp-cell--5 .fp-item').textContent = frontpage.fpCell5;
+
+    // Populate table
+    let tableData = data.main.tableData;
+    let tableHTML = '<table class="newTable">';
+    tableData.forEach(row => {
+      tableHTML += '<tr>';
+      for (let cell in row) {
+        tableHTML += `<td>${row[cell]}</td>`;
+      }
+      tableHTML += '</tr>';
+    });
+    tableHTML += '</table>';
+    document.getElementById('page2').innerHTML = tableHTML;
+  });
+</script>
+  <!-- script src="frontPage.js"></script -->
   <!-- script src="how2data.js"></script -->
   
 </body>

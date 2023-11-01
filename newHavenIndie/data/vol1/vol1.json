@@ -1,0 +1,32 @@
+{
+  "header": {
+    "logo": "./assets/n5.png",
+    "volumeData": {
+      "volume": "Volume 1",
+      "issue": "Issue #12",
+      "month": "November 2023",
+      "editor": "Edited by People"
+    }
+  },
+  "main": {
+    "frontpage": {
+      "fpCell1": "This Data is indeed Dynamic - This is our first issue of The New Haven Mundane - a paper revolving around the mundane aspects our city - with the intention of making folks give a hoot about it. will go content here and the content here will also go here and we will see how much stuff we could dooooo",
+      "fpCell2": "I mean it - this is dynamic data - This is where the content will go for the second content of the page we are going to test the word wrapping now and se what's goo",
+      "fpCell3": "it's coming from a json file! Perhaps on this section there are events coming up in a very small table and compressed",      
+      "fpCell4": {
+        "title": "High Scores",
+        "table": {
+          "headers": ["Player", "Score"],
+          "rows": [
+            ["Player1", 1000],
+            ["Player2", 950],
+            ["Player3", 900]
+          ]
+        }
+      },
+      "fpCell5": "Barcade"
+
+    }
+  }
+
+}
