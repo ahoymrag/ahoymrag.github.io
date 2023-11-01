@@ -1,21 +1,41 @@
 {
-  "barista": {
-    "name": "John",
-    "image": "path/to/image.jpg",
-    "workplace": "The Haven",
-    "interview": [
-      {
-        "question": "How long have you been working at The Haven?",
-        "answer": "I've been working here for about 2 years now."
-      },
-      {
-        "question": "What is your favorite coffee to make?",
-        "answer": "I love making a classic cappuccino."
-      },
-      {
-        "question": "What do you enjoy most about your job?",
-        "answer": "I really like interacting with our customers and making their day a little better with a great cup of coffee."
-      }
-    ]
+    "barista": {
+      "name": "John",
+      "image": "path/to/image.jpg",
+      "workplace": "The Haven",
+      "interview": [
+        {
+          "question": "How long have you been working at The Haven?",
+          "answer": "I've been working here for about 2 years now."
+        },
+        {
+          "question": "What is your favorite coffee to make?",
+          "answer": "I love making a classic cappuccino."
+        },
+        {
+          "question": "What do you enjoy most about your job?",
+          "answer": "I really like interacting with our customers and making their day a little better with a great cup of coffee."
+        },
+        {
+          "question": "What is your favorite part of the day at work?",
+          "answer": "My favorite part of the day is the morning rush."
+        },
+        {
+          "question": "What is the most challenging part of your job?",
+          "answer": "The most challenging part is keeping up with the high demand during peak hours."
+        },
+        {
+          "question": "What is your favorite coffee blend?",
+          "answer": "My favorite blend is the house blend."
+        },
+        {
+          "question": "How did you get into coffee making?",
+          "answer": "I started as a barista in a small local cafe and fell in love with the craft."
+        },
+        {
+          "question": "What advice would you give to someone who wants to become a barista?",
+          "answer": "My advice would be to learn as much as you can about coffee and always be open to trying new things."
+        }
+      ]
+    }
   }
-}
