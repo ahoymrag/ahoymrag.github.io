@@ -1,0 +1,21 @@
+{
+  "barista": {
+    "name": "John",
+    "image": "path/to/image.jpg",
+    "workplace": "The Haven",
+    "interview": [
+      {
+        "question": "How long have you been working at The Haven?",
+        "answer": "I've been working here for about 2 years now."
+      },
+      {
+        "question": "What is your favorite coffee to make?",
+        "answer": "I love making a classic cappuccino."
+      },
+      {
+        "question": "What do you enjoy most about your job?",
+        "answer": "I really like interacting with our customers and making their day a little better with a great cup of coffee."
+      }
+    ]
+  }
+}
