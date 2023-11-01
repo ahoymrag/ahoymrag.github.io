@@ -25,3 +25,5 @@ I like my days. I spend most days waking up and getting right coding. Doing big 
 # For work
 
 For work - for a while - I would take any work - being fascianted by work itself. 
+for my day job I most service as the creative director and product designer for ApeWorx, LTD
+- I also serve as the Director of the AV Team at CPC New Haven and as the Director of Digital Commuincations for the organization Mission Anabaino
