@@ -1,0 +1,76 @@
+{
+  "FallPlantingDates": [
+    {
+      "Crop": "Arugula",
+      "StartSeedsOutdoorsFrostDates": "Sep 1 - Oct 6",
+      "StartSeedsOutdoorsMoonDates": "Sep 2 - 17",
+      "Transplant": "N/A",
+      "AverageDaysToMaturity": 40,
+      "FrostTolerance": "Frost-hardy"
+    },
+    {
+      "Crop": "Beets",
+      "StartSeedsOutdoorsFrostDates": "Jul 28 - Aug 25",
+      "StartSeedsOutdoorsMoonDates": "Jul 28 - Aug 3, Aug 20 - 25",
+      "Transplant": "N/A",
+      "AverageDaysToMaturity": 50,
+      "FrostTolerance": "Frost-tolerant"
+    },
+	{
+		"Crop": "Bok Choy",
+		"FrostDates": {
+		  "StartSeedsOutdoors": "Aug 11 - Sep 1"
+		},
+		"MoonDates": {
+		  "StartSeedsOutdoors": "Aug 11 - 19"
+		},
+		"Transplant": "N/A",
+		"AverageDaysToMaturity": 50,
+		"FrostTolerance": "Frost-tolerant"
+	  },
+	  {
+		"Crop": "Broccoli",
+		"FrostDates": {
+		  "StartSeedsOutdoors": "Jul 21 - 28",
+		  "Transplant": "Aug 11 - 25"
+		},
+		"MoonDates": {
+		  "StartSeedsOutdoors": "Jul 21",
+		  "Transplant": "Aug 11 - 19"
+		},
+		"AverageDaysToMaturity": 60,
+		"FrostTolerance": "Frost-tolerant"
+	  },
+	  {
+		"Crop": "Cabbage",
+		"FrostDates": {
+		  "StartSeedsOutdoors": "Jul 21 - 28",
+		  "Transplant": "Aug 11 - 18"
+		},
+		"MoonDates": {
+		  "StartSeedsOutdoors": "Jul 21",
+		  "Transplant": "Aug 11 - 18"
+		},
+		"AverageDaysToMaturity": 90,
+		"FrostTolerance": "Frost-tolerant"
+	  }
+	],
+
+  "SpringPlantingDates": [
+    {
+      "Crop": "Arugula",
+      "StartSeedsIndoorsFrostDates": "Feb 25 - Mar 11",
+      "PlantSeedlingsOrTransplantsFrostDates": "Mar 25 - Apr 1",
+      "StartSeedsOutdoorsFrostDates": "Apr 1 - 15",
+      "LastDateToPlant": "Sep 22"
+    },
+    {
+      "Crop": "Asparagus",
+      "StartSeedsIndoorsFrostDates": "N/A",
+      "PlantSeedlingsOrTransplantsFrostDates": "N/A",
+      "StartSeedsOutdoorsFrostDates": "Apr 8 - 22",
+      "LastDateToPlant": "Apr 22"
+    }
+
+  ]
+}

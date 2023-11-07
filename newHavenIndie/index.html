@@ -236,7 +236,7 @@
     </div>
 
     <style>
-<style>
+
   .grid-container {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
@@ -252,8 +252,21 @@
       text-align: center;
   }
 </style>
-  </style>
+<style>
+#history-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.grid-item {
+  border: 1px solid #ccc;
+  padding: 1px;
+
+}
+</style>
   
+  <!-- PAGE 8-->
   <div id="page8" class="grid-container">
       <!-- Local Flora and Fauna -->
       <div class="grid-item" id="flora-fauna">
@@ -304,26 +317,56 @@
           <!-- ...rest of the content... -->
       </div>
   </div>
+  <!-- PAGE 9 -->
+  <div id="page9">
+    <div id="page9">
+      <div class="history-container">
+        <h1 id="history-title"></h1>
+        <p id="history-content"></p>
+        <div id="photo-gallery"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PAGE 10 -->
+
+<div id="page10">
+
+  <div id="fall-planting-dates">
+    <h2>Fall Planting Dates</h2>
+    <table id="fall-planting-table">
+      <!-- Table rows will be inserted here by JavaScript -->
+    </table>
+  </div>
   
+  <div id="spring-planting-dates">
+    <h2>Spring Planting Dates</h2>
+    <table id="spring-planting-table">
+      <!-- Table rows will be inserted here by JavaScript -->
+    </table>
+  </div>
+  
+</div>
+
+
+
     
     </div>
 
 
 
-    <h1>New Haven Indie Paper</h1>
-    <h2>Table of Contents</h2>
-    <ul id="toc">
-      <li><a href="#" onclick="showEvent(1)">Event 1: Indie Music Festival</a></li>
-      <li><a href="#" onclick="showEvent(2)">Event 2: Local Art Show</a></li>
-      <li><a href="#" onclick="showEvent(3)">Event 3: Film Screening</a></li>
-      <li><a href="#" onclick="showEvent(4)">Event 4: Poetry Reading</a></li>
-      <!-- ...other events -->
-    </ul>
-
     <div id="eventDetails"></div>
     <div id="articles" class="grid-container"></div>
 
   </main>
+
+
+
+
+
+
+
+
   <footer>
     <div class="footer-content">
       <h3>New Haven Indie Paper</h3>
@@ -333,9 +376,17 @@
     </div>
     <div class="footer-bottom">
       <p>© 2023 New Haven Indie Paper, All Rights Reserved</p>
-      <p>Newspaper Founded and Supported by Alex Mundane and Ellen Martin</p>
+      <p>Newspaper Founded and Supported by Alex Mundane and Ellen Martin in the Fall of 2023</p>
     </div>
   </footer>
+
+
+
+
+
+
+
+
 <script>
 fetch('./data/vol1/vol1.json')
   .then(response => response.json())
@@ -401,6 +452,62 @@ fetch('./data/vol1/vol1.json')
   <!-- script src="frontPage.js"></script -->
   <!-- script src="how2data.js"></script -->
   
+<!-- FETCH HISTORY LESSON -->
+<script>
+fetch('./data/vol1/history_NHcementary.json')
+  .then(response => response.json())
+  .then(data => {
+    document.getElementById('history-title').textContent = data.title;
+
+    // Create a variable to hold the content HTML
+    let contentHTML = '';
+
+    // Loop through each property in the content object
+    for (let section in data.content) {
+      // Add a new div for each section with class 'grid-item'
+      contentHTML += `<div class="grid-item"><h2>${section}</h2><p>${data.content[section]}</p></div>`;
+    }
+
+    // Set the innerHTML of the history-content element
+    document.getElementById('history-content').innerHTML = contentHTML;
+
+    const gallery = document.getElementById('photo-gallery');
+    data.images.forEach(image => {
+      const img = document.createElement('img');
+      img.src = image;
+      img.alt = 'Historical Photo';
+      gallery.appendChild(img);
+    });
+  });
+</script>
+
+<!-- FETCH PLANT DATA -->
+<script>
+  fetch('./data/vol1/plantingDates.json')
+  .then(response => response.json())
+  .then(data => {
+    const fallTable = document.getElementById('fall-planting-table');
+    const springTable = document.getElementById('spring-planting-table');
+
+    // Populate Fall Planting Dates
+    data.FallPlantingDates.forEach(item => {
+      const row = fallTable.insertRow();
+      for (let key in item) {
+        const cell = row.insertCell();
+        cell.textContent = item[key];
+      }
+    });
+
+    // Populate Spring Planting Dates
+    data.SpringPlantingDates.forEach(item => {
+      const row = springTable.insertRow();
+      for (let key in item) {
+        const cell = row.insertCell();
+        cell.textContent = item[key];
+      }
+    });
+  });
+</script>
 </body>
 
 </html>
