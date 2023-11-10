@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ape Genius</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8;
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            padding: 20px;
+            border-radius: 10px;
+            flex: 1;
+            overflow: auto;
+            margin: 10px;
+        }
+        .chat-editor, .md-editor {
+            display: flex;
+            flex-direction: column;
+        }
+        .message-input {
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: auto;
+        }
+        .chat-window {
+            overflow-y: auto;
+            flex-grow: 1;
+        }
+        .chat-message {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #e9ecef;
+            border-radius: 5px;
+        }
+        textarea {
+            width: 100%;
+            height: 80%;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        .preview {
+            background-color: #f8f9fa;
+            height: 80%;
+            overflow-y: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-editor glass">
+        <h2>apeGenius</h2>
+        <div class="chat-window" id="chatWindow">
+            <!-- Chatbot messages will appear here -->
+        </div>
+        <input type="text" id="messageInput" class="message-input" placeholder="Type a message..." onkeypress="sendMessage(event)">
+    </div>
+    <div class="md-editor glass">
+        <h2>Markdown Editor</h2>
+        <textarea id="markdownInput" oninput="updatePreview()"></textarea>
+        <div class="preview" id="markdownPreview">
+            <!-- Preview will be shown here -->
+        </div>
+    </div>
+
+    <script>
+        function sendMessage(event) {
+            if(event.key === 'Enter') {
+                let input = document.getElementById('messageInput');
+                let message = input.value.trim();
+                if(message) {
+                    let chatWindow = document.getElementById('chatWindow');
+                    let userMsg = document.createElement('div');
+                    userMsg.classList.add('chat-message');
+                    userMsg.textContent = 'You: ' + message;
+                    chatWindow.appendChild(userMsg);
+                    
+                    // Example response
+                    let botMsg = document.createElement('div');
+                    botMsg.classList.add('chat-message');
+                    botMsg.textContent = 'apeGenius: Echo - ' + message;
+                    chatWindow.appendChild(botMsg);
+
+                    input.value = '';
+                    chatWindow.scrollTop = chatWindow.scrollHeight;
+                }
+            }
+        }
+
+        function updatePreview() {
+            var mdText = document.getElementById('markdownInput').value;
+            document.getElementById('markdownPreview').innerHTML = marked(mdText);
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</body>
+</html>

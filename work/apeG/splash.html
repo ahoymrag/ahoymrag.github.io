@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ape Genius - Splash</title>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet"> <!-- Add this line to import Barlow font -->
+    <style>
+           .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 600px;
+            height: 600px;
+            margin: auto;
+            overflow: auto;
+        }
+
+        /* Reduce the font size */
+        body {
+            font-family: 'Barlow', sans-serif;
+            font-size: 18px; /* Reduced font size */
+            /* ... other styles ... */
+        }
+                @keyframes gradient {
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%;}
+        }
+        body {
+            font-family: 'Barlow', sans-serif;
+            font-size: 24px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(-45deg, #85a3e0, #9fd8df, #b3dfe2);
+            background-size: 600% 600%;
+            animation: gradient 15s ease infinite;
+        }
+        body {
+            font-family: 'Barlow', sans-serif; /* Change the font to Barlow */
+            font-size: 24px; /* Increase the base font size */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8;
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            padding: 60px; /* Increase padding to make the glass bigger */
+            border-radius: 15px; /* Increase border radius to make the glass rounder */
+            text-align: center;
+        }
+        .logo {
+            max-width: 400px; /* Increase logo size */
+            margin-bottom: 30px; /* Increase margin */
+        }
+        .description {
+            margin-bottom: 30px; /* Increase margin */
+        }
+        .beta-button {
+            padding: 15px 30px; /* Increase padding to make the button bigger */
+            border: none;
+            border-radius: 7px; /* Increase border radius to make the button rounder */
+            background-color: #ffaa00;
+            color: rgb(0, 0, 0);
+            cursor: pointer;
+            border-style:solid;
+            border-color:black;
+            margin-bottom: 30px; /* Increase margin */
+        }
+        .password-input {
+            padding: 15px; /* Increase padding to make the input field bigger */
+            border-radius: 7px; /* Increase border radius to make the input field rounder */
+            border: 1px solid #ddd;
+        }
+
+        .glass-table {
+            margin: auto;
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 20px;
+            overflow: auto;
+        }
+
+        .glass-table th, .glass-table td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        .glass-table ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="glass">
+        <img src="apeG.jpeg" alt="Ape Genius Logo" class="logo">
+        <p class="description">Welcome to Ape Genius 
+            <style>
+                    .glass-table dl {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .glass-table dt, .glass-table dd {
+        flex: 1 0 50%; /* This means that each dt and dd will take up 50% of the width of the dl */
+        box-sizing: border-box;
+        padding: 10px;
+    }
+            </style>
+            <!-- 
+            <div class="glass-table">
+                <div class="glass-table">
+                    <dl>
+                        <dt>Vector Stores</dt>
+                        <dd>Create a Vector Store knowledge base files</dd>
+                        <dd>Upload all files to it</dd>
+                        <dd>The vector store is used to search for matchings</dd>
+                        <dd>Virtually unlimited files</dd>
+                        <dd>Strengths and Weaknesses:
+                            <ul>
+                                <li>Cheaper to maintain</li>
+                                <li>More deterministic control of input and output</li>
+                                <li>Matching process can miss useful bits to answer right</li>
+                                <li>Limit of -500k characters in knowledge base</li>
+                            </ul>
+                        </dd>
+        
+                        <dt>Ape Genius</dt>
+                        <dd>Compile all files in 1 .txt</dd>
+                        <dd>Deploy public bot</dd>
+                        <dd>A single request is made to GPT4 with compiled .txt along with user prompt</dd>
+                        <dd>Smarter about knowledge base</dd>
+                        <dd>Strengths and Weaknesses:
+                            <ul>
+                                <li>Cost scales with knowledge base size (can get very costly like more than $1.00 per request, atm it's around $0.50)</li>
+                                <li>Less control of prompts and macro instructions</li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </div>-->
+           
+            
+            
+            
+            
+            
+            
+
+        <button class="beta-button" onclick="showPasswordScreen()">Try the Beta</button>
+        <div id="passwordScreen" style="display:none;">
+            <input type="password" id="passwordInput" class="password-input" placeholder="Enter Password">
+            <button onclick="checkPassword()">Enter</button>
+        </div>
+    </div>
+
+    <script>
+        function showPasswordScreen() {
+            document.getElementById('passwordScreen').style.display = 'block';
+        }
+
+        function checkPassword() {
+            const password = document.getElementById('passwordInput').value;
+            if (password === 'password') {
+                window.location.href = 'apeG.html'; // Replace with the path to your main page
+            } else {
+                alert('Incorrect password, please try again.');
+            }
+        }
+    </script>
+</body>
+</html>
