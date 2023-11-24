@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Private Documents</title>
+    <script type="text/javascript">
+        function checkPassword() {
+            var password = document.getElementById('password').value;
+            if(password == '1153') {
+                document.getElementById('content').style.display = 'block';
+                document.getElementById('login').style.display = 'none';
+            } else {
+                alert('Incorrect password');
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="login">
+        <label for="password">Enter password:</label>
+        <input type="password" id="password">
+        <button onclick="checkPassword()">Submit</button>
+    </div>
+    <div id="content" style="display: none;">
+        <!-- Your private documents go here -->
+        <h1>Welcome to the private documents page!</h1>
+   
+        <a href="../1153/action/dreams/ahoydreams.md">Ahoy Dreams</a>
+   
+   
+   
+    </div>
+</body>
+</html>
