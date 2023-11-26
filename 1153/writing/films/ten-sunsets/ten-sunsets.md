@@ -34,10 +34,14 @@ Day 6 = Meeting Jerry
 - Goes to church - hasn't been in a while - since he was a boy - goes sneaks a cig outside - see's Pastor jerry - who asks him - and he starts unloading on to him 
 - and the two go on a walk 
 
-Day 5 = Living with a Purpose
-- his life is not over - and for all he knows this surgery could be a success - though the doctors do not think so - he might have 5% of his vision - be able to see some color and some blobs - but nothing as to marvel on the great creation - code, his primary source of income, he will have to do it all from scratch 
+Day 5 = Living with a Purpose - Man quits Job
+- his life is not over - and for all he knows this surgery could be a success - though the doctors do not think so - he might have 5% of his vision - be able to see some color and some blobs - but nothing as to marvel on the great creation - code, his primary source of income, he will have to do it all from scratch .
+
+- The Man quits his job
 
 Day 4 = Acceptance
+- Man stares at the frost in his car - and touches the frost to his finger - and holds the frost. He takes a cup and puts some water in - and freezes it. He waits to see it frozen in the .
+
 
 Day 3 = Saying Goodbye to Friends
 
@@ -50,3 +54,4 @@ Day 1 = The procedure
 The people it fleets 
 
 We live on this side of forever 
+
