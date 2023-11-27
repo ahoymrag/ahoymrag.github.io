@@ -28,3 +28,8 @@ new feature for 1153 - make a friendship matrix - a big table of friends and num
 # journal update
 - i was using notion for a while - but something feels right about having a repo around it - it makes it feel like i can see all of it in one screen
 
+
+# Business Ideas
+
+1. Coffee Shop Laundramat
+
