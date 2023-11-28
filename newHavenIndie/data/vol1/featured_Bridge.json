@@ -1,0 +1,35 @@
+{
+  "BridgeInformation": {
+    "Name": "Ferry Street Bridge",
+    "PrimaryPhotographer": "Nathan Holth",
+    "DocumentationDate": "August 27, 2019",
+   },
+    "FacilityCarried": "Ferry Street",
+    "FeatureIntersected": "Quinnipiac River",
+    "Location": {
+      "City": "New Haven",
+      "County": "New Haven County",
+      "State": "Connecticut",
+      "Country": "United States"
+    },
+    "StructureType": "Metal Variable Depth Deck Girder, Movable: Double Leaf Bascule and Approach Spans: Metal Deck Girder, Fixed",
+    "ConstructionDetails": {
+      "Year": 1940,
+      "BuilderOrContractor": "Unknown"
+    },
+    "RehabilitationDate": "2008",
+    "Dimensions": {
+      "MainSpanLength": "124.0 Feet (37.8 Meters)",
+      "StructureLength": "431.0 Feet (131.4 Meters)",
+      "RoadwayWidth": "43 Feet (13.11 Meters)"
+    },
+    "Spans": {
+      "MainSpans": 1,
+      "ApproachSpans": 2
+    },
+    "InventoryNumber": "3809",
+    "HistoricSignificanceRating": "View Information About HSR Ratings",
+    "BridgeDocumentation": "This bascule bridge is noteworthy as a product of Depression era relief programs, and also for its unique architectural details. The bridge features fixed approach spans that follow a unique arched design, with ribs that fan out around the curves. The bridge tender buildings are also noteworthy for their design. Overall the bridge expresses the period architectural thinking of Art Moderne and Art Deco. The bridge appears to be unaltered and is an outstanding example of period architecture.",
+    "AdditionalDetails": "View Archived National Bridge Inventory Report - Has Additional Details and Evaluation"
+  }
+
