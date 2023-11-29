@@ -1,5 +1,6 @@
-Song Book But For REal
-“Pretty pity”
+# Song Book But For REal
+
+## “Pretty pity”
 
 October 2023
 
@@ -20,7 +21,7 @@ Hollywood?
 //
 
 
-Last Night I lost my Wallet
+## Last Night I lost my Wallet
 
 
 C
@@ -36,7 +37,7 @@ But still i want to look like a peaky cheeky lad
 I want my girl to want me and I want her just as bad - KEMPS!
 
 Today I got some latte and a bacon egg and cheese
-I also got a gallon of water to fight the allergies
+I bought a gal of water - just to fight the allergies
 Not sure if the combo makes any sense
 But I got more stuff to do  for a has brown and a gallon 
 
@@ -56,8 +57,13 @@ I'll keep my mouth shut
 And reap what I sow
 
 
+Last night I went to sit down 
+but I really banged my knee
+I thanked the Lord for pain 
+and to release it as free
 
-Pretty Pretty City City
+
+## Pretty Pretty City City
 
 A D
 
