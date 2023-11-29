@@ -23,3 +23,13 @@
 - Background Nature Sounds
 - Add Object Sounds (Water, Fire, Wind)
 
+11.29.23 Dev Log
+
+1. added a landscape with a moss - check later if I could change the layers of the landscape - if it is easy - or if i should do it off the get go - want to make a water vibe today and get some of this art down
+2. bought and downloaded a stunning natural place pack 
+3. began to add to the mix - added water but idk if that's a good idea - gonna kill it for now
+4. added some movement to the players input - 
+5. going to try to style the world and then export it and see what happens
+
+
+
