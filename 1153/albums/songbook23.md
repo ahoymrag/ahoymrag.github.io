@@ -377,11 +377,32 @@ you get it?
 I vet it
 but you can't find my work upon them subreddit
 
+
+eyyyyyy
+what am i trying to say?
+stand down boy before you get in my way
+OKAY
+relax
+
+shh
+
 Oh you didn't think I had the chops to spit
 that i was just a coding monkey who liked to rhyme when he bit
 we'll see - AG
 
 
+
+## my gurl
+
+my little bitty itty bug
+just needs a little bitty itty hug
+them jeans - they snug
+i want a hug
+a hug from my bug
+
+be my blanket 
+let me get behind you and surely thank it
+spank it
 
 
 
