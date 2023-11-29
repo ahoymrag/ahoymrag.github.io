@@ -83,7 +83,15 @@ And now
 Now now what do we do?
 Say I do?
 
-Pretty Pretty Pity Party
+
+
+Oh Life - is pretty pretty - while you're living in - this city city 
+but know I'll skip across the pond for ye 
+or what it takes to make you mrs G
+
+- so Time
+
+## Pretty Pretty Pity Party
 I guess I just wanted invited 
 To your pretty little - pity party
 I must of got my invitation lost in the mail - the SNAIL MAIL!
@@ -91,15 +99,7 @@ I must of got my invitation lost in the mail - the SNAIL MAIL!
 
 
 
-
-I got some allergies
-
-
-
-
-
-
-6. Tarry Through The Night
+## Tarry Through The Night
 
 Verse 1:
 Dm
@@ -328,7 +328,7 @@ She asked me for a hit
 
 
 
-7. Little Phone Box
+## 7. Little Phone Box
 
 Dear Lord - can you - help me?
 For I’ve been wrong - and stubborn - and hated my brother in my heart
@@ -337,7 +337,7 @@ Doing everything wroong - that my father is chaos and my mother is baal
 When I read James - it feels like 
 
 
-8. On the coast
+## 8. On the coast
 
 So take my hand and tell me
 What I need the most
@@ -361,6 +361,25 @@ So take my hand and tell me
 
 
 
+## oh you didn't think? 
+
+oh you didn't think you'd hear me rap like this?
+I could put the baby in a nap like this
+I could write the cat in the HAT like this
+I could through a punch but I really want a kiss - i'm
+
+unshakable
+unmistakeable
+full of power from God
+whose capable
+
+you get it?
+I vet it
+but you can't find my work upon them subreddit
+
+Oh you didn't think I had the chops to spit
+that i was just a coding monkey who liked to rhyme when he bit
+we'll see - AG
 
 
 
@@ -369,8 +388,7 @@ So take my hand and tell me
 
 
 
-
-9. I used to be lost 
+## 9. I used to be lost 
 G - gblack - em
 
 I used to be lost 
@@ -404,7 +422,7 @@ In my mind
 
 
 
-10
+## 10
 C D G
 
 So you want to go to hollywood
