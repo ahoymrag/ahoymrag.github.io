@@ -314,6 +314,18 @@ p {
 }
 
 
+@keyframes pulse {
+    0% {
+        border-color: rgb(0, 0, 0);
+    }
+    50% {
+        border-color: rgb(255, 255, 255);
+    }
+    100% {
+        border-color: rgb(0, 0, 0);
+    }
+}
+
 .portfolio-item-un {
     width:100%;
     border-style:solid;
@@ -325,6 +337,7 @@ p {
     padding-bottom:100px;
     margin-bottom:10px;
     min-height:75vh;
+    animation: pulse 2s infinite;
 }
 
 
