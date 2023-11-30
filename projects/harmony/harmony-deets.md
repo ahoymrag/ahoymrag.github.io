@@ -33,3 +33,8 @@
 
 
 
+# 11.30.23 Dev Log
+
+Woke up with a project failed - it's my own fault - I was a little over zealous about how much I could possibly due with the 8k graphics - now got to figure out - if it is worth running some analysis - seeing if these rocks would work - or if i just completely use a different pack - part of me wants to just try with another pack - the other analyzer - 
+
+1. Attempted to 
