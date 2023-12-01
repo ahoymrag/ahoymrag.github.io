@@ -2,16 +2,16 @@
 ## Week 48
 ### Ahoy Beta v0.2.2
 
-1. **Now Playing**
-   - [ ] Add Logo
-   - [ ] Add Learn More Button
+1. **Now Playing** (now known as "home")
+   - [ x ] Add Logo
+   - [ x ] Add Learn More Button
 
 2. **General**
-   - [ ] Add a feedback button
+   - [ x ] Add a feedback button
    - [ ] Add a new bar for time above the bottom controls (fixed position)
 
 3. **Artists**
-   - [ ] Add Marco Worms to Artists
+   - [ x ] Add Marco Worms to Artists
    - [ ] Make Artists Page Dynamic + Shareable
 
 4. **Updates**
