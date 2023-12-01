@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Ten Sunsets - Markdown Display
+        </title>
+        <style>
+            h1 {
+                color: blue;
+            }
+
+            p {
+                color: green;
+            }
+        </style>
+        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    </head>
+    <body>
+        <div id="content"></div>
+        <script>
+            fetch('ten-sunsets.md')
+                .then(response => response.text())
+                .then(text => {
+                    var htmlString = marked(text);
+                    document.getElementById('content').innerHTML = htmlString;
+                });
+        </script>
+    </body>
+</html>
