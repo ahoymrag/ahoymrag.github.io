@@ -25,42 +25,45 @@ Hollywood?
 
 
 C
-Today I heard a joke 
-But can’t remember how it went
-Last night i lost my wallet but my money still was spent
-Tomorrow - I’ll look into it and tell the IRS
-I don’t know if they need to know just want to get it off my chest
+<br>
+Today I heard a joke<br>
+But can’t remember how it went<br>
+Last night i lost my wallet but my money still was spent<br>
+Tomorrow - I’ll look into it and tell the IRS<br>
+I don’t know if they need to know just want to get it off my chest<br>
 
-I have a week to figure out what kind of pants to wear
-I know the weddings liberal and they probably won’t care
-But still i want to look like a peaky cheeky lad
-I want my girl to want me and I want her just as bad - KEMPS!
+I have a week to figure out what kind of pants to wear<br>
+I know the weddings liberal and they probably won’t care<br>
+But still i want to look like a peaky cheeky lad<br>
+I want my girl to want me and I want her just as bad - KEMPS!<br>
 
-Today I got some latte and a bacon egg and cheese
-I bought a gal of water - just to fight the allergies
-Not sure if the combo makes any sense
-But I got more stuff to do  for a has brown and a gallon 
-
-I got to say I’m sorry that i’ve never spit since now
-I am not particularly
+Today I got some latte and a bacon egg and cheese<br>
+I bought a gal of water - just to fight the allergies<br>
+Not sure if the combo makes any sense<br>
+But I got more stuff to do  for a has brown and a gallon<br>
 
 
-
-I got to many things to do and your 
-
-
-Still down to ride?
-You are going to see my ugly side 
-We all got it 
-We all know 
-I'll keep my mouth shut 
-And reap what I sow
+I must admit this monitor that displays 90 degress
+is something like a drug when i'm coding by the breeze
 
 
-Last night I went to sit down 
-but I really banged my knee
-I thanked the Lord for pain 
-and to release it as free
+
+I got to say I’m sorry that i’ve never spit since now<br>
+I am not particularly<br>
+
+I got to many things to do and your<br>
+
+Still down to ride?<br>
+You are going to see my ugly side<br>
+We all got it<br>
+We all know<br>
+I'll keep my mouth shut<br>
+And reap what I sow<br>
+
+Last night I went to sit down<br>
+but I really banged my knee<br>
+I thanked the Lord for pain<br>
+and to release it as free<br>
 
 
 ## Pretty Pretty City City
