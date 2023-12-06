@@ -68,3 +68,11 @@ To evaluate your financial stability, especially from the perspective of a life 
 - **Income Diversification:** Explore more stable or higher-paying job options, or consider skill development for better opportunities.
 - **Financial Planning:** Regularly review and adjust your financial plan, considering savings, investments, retirement, and emergency funds.
 - **Insurance Review:** Evaluate different life insurance options to find a plan that best suits your needs and circumstances.
+
+# Ideas of People to talk to
+
+1. Etkin Tekken
+2. Andrew
+3. Steve Rado
+4. Monte
+5.
