@@ -4,25 +4,22 @@
 
 October 2023
 
-
 Last Night, I lost my wallet
 Pretty Pretty - City City
 Pretty Pity - Pity Party
 I got some Allergies
 Dance Baby Baby
 Tarry Through the Night
-Little Phone Box 
+Little Phone Box
+
 #
+
 Used to be Lost
 Hollywood?
 
-
-
 //
 
-
 ## Last Night I lost my Wallet
-
 
 C
 <br>
@@ -40,13 +37,10 @@ I want my girl to want me and I want her just as bad - KEMPS!<br>
 Today I got some latte and a bacon egg and cheese<br>
 I bought a gal of water - just to fight the allergies<br>
 Not sure if the combo makes any sense<br>
-But I got more stuff to do  for a has brown and a gallon<br>
-
+But I got more stuff to do for a has brown and a gallon<br>
 
 I must admit this monitor that displays 90 degress
 is something like a drug when i'm coding by the breeze
-
-
 
 I got to say I’m sorry that i’ve never spit since now<br>
 I am not particularly<br>
@@ -65,42 +59,36 @@ but I really banged my knee<br>
 I thanked the Lord for pain<br>
 and to release it as free<br>
 
-
 ## Pretty Pretty City City
 
 A D
 
-
 Oh life
 Is pretty pretty
 While you’re living in
-This city city 
+This city city
 
-Oh Life - is pretty pretty - when you’re living in this city city 
+Oh Life - is pretty pretty - when you’re living in this city city
 
 Your the cap - cap captain of my heart
 I like to hide behind a little tree
-So wild you like me 
+So wild you like me
 
 And now
 Now now what do we do?
 Say I do?
 
-
-
-Oh Life - is pretty pretty - while you're living in - this city city 
-but know I'll skip across the pond for ye 
+Oh Life - is pretty pretty - while you're living in - this city city
+but know I'll skip across the pond for ye
 or what it takes to make you mrs G
 
 - so Time
 
 ## Pretty Pretty Pity Party
-I guess I just wanted invited 
+
+I guess I just wanted invited
 To your pretty little - pity party
 I must of got my invitation lost in the mail - the SNAIL MAIL!
-
-
-
 
 ## Tarry Through The Night
 
@@ -119,16 +107,16 @@ Echoing some stars,
 G
 Off a cheap pint,
 Em
-BLUE MOON ,pbr 
+BLUE MOON ,pbr
 F
 For a cheap flight.
 
 Dm
 Woof
 G
-We didn’t show up to get down 
+We didn’t show up to get down
 Em
-But if you want 
+But if you want
 F
 We could (o no)
 
@@ -137,110 +125,89 @@ Ooo
 G
 We didn’t fit in to stand out
 Em
-But I guess 
+But I guess
 F
 We Should (o yes)
 
-
-
 Chorus <c am F G>
 ( C )
-Ooo well taryy through the night 
-And it will be alright 
+Ooo well taryy through the night
+And it will be alright
 ( A )
-O these moments won't last forever 
-One day we'll grow old 
+O these moments won't last forever
+One day we'll grow old
 But tonight we are
 Oooo
 You thought you knew what I was gonna say
-Its Just a little game for the games that like to play 
-I'm just some silly boy 
-Whose here to bring you joy 
+Its Just a little game for the games that like to play
+I'm just some silly boy
+Whose here to bring you joy
 
 O
-So rise up with me now 
-Stand and thank the host 
+So rise up with me now
+Stand and thank the host
 
 Hug someone you love
 And give thanks to the most
 
-
 Dm
-Staring at the sun 
+Staring at the sun
 Till my eyes swell
-
 
 Making claymation hot
 Ben wioot
 
-
 And grab a glass
-Oysters on deck 
+Oysters on deck
 
-
-Oy iy oy 
-O o o 
+Oy iy oy
+O o o
 
 O o o
 
 Dangling the legs off the back deck
 Halloween Christmas blind the night sky
 Feeling cozy on this day
-But the world spins around 
+But the world spins around
 Anyway
 
-
-
-Oo 
-This place is kind of nice 
+Oo
+This place is kind of nice
 But you know we march
 
 Oo
 
-
-
 Running through this town
 Like a banshee
-Irish exit on deck 
+Irish exit on deck
 Can you blame me?
 
-
- 
 Dm - G - Em - F
 Ooo
 We didn't set sail to get lost
-But if you want we could 
+But if you want we could
 Ooo
 
 Ooo
 We didn't cast nests to go broke
-But i guess we could 
+But i guess we could
 Ooo
 
 Chorus
 C am f g
 
-
-
-
-
-
 Ami ?
-I hope 
-Maybe 
-It's okay 
-Hey 
+I hope
+Maybe
+It's okay
+Hey
 Let's stay
-In this moment 
-In thus moment 
+In this moment
+In thus moment
 
+But I don't wanna set any fires
 
-
-But I don't wanna set any fires 
-
-
-
-What did you think I was going to say 
+What did you think I was going to say
 I suppose it's a bit on the nose
 So what should I do with such prose
 Hide it?
@@ -248,9 +215,9 @@ Hide it?
 I can't change your mind anyway
 Chorus:
 C
-o, so - well tarry through 
+o, so - well tarry through
 Am
-Well drive around the car till 3 am 
+Well drive around the car till 3 am
 F
 O so - well find a spot to land
 G
@@ -260,13 +227,13 @@ Wooooo wooo
 Am
 We didn't meet up to fade away
 Em
-Let's right our wrongs 
+Let's right our wrongs
 
 Verse 2:
 Dm
-Dangling the legs off a back porch 
+Dangling the legs off a back porch
 G
-Take a photo of a Fire for a quick torch 
+Take a photo of a Fire for a quick torch
 Em
 A toast to the ride,
 F
@@ -313,14 +280,9 @@ We echo stars,
 F
 In the endless night.
 
-
-
-
-
 Go away
 
 Am
-
 
 I get from my momma
 
@@ -329,42 +291,37 @@ She’s not impressed by shit
 bubble after 4
 She asked me for a hit
 
-
-
 ## 7. Little Phone Box
 
 Dear Lord - can you - help me?
 For I’ve been wrong - and stubborn - and hated my brother in my heart
 It seems like I’m
-Doing everything wroong - that my father is chaos and my mother is baal 
-When I read James - it feels like 
-
+Doing everything wroong - that my father is chaos and my mother is baal
+When I read James - it feels like
 
 ## 8. On the coast
 
 So take my hand and tell me
 What I need the most
 And if you can't baby
-Just leave me on the coast 
+Just leave me on the coast
 (X2)
 Leave .e on the coast
 Leave me on the coast
 And I will become a memory
-Your friendly handsome ghost 
+Your friendly handsome ghost
 
 Cause in this life I lost you
 And that windows long been gone
 And the only thing that comforts
-Is that our soul carries on 
+Is that our soul carries on
 For I know one day I'll see you
 Standing beneath that tree
 Free from sin and heartbreak
 And finally free
-So take my hand and tell me 
+So take my hand and tell me
 
-
-
-## oh you didn't think? 
+## oh you didn't think?
 
 oh you didn't think you'd hear me rap like this?
 I could put the baby in a nap like this
@@ -380,7 +337,6 @@ you get it?
 I vet it
 but you can't find my work upon them subreddit
 
-
 eyyyyyy
 what am i trying to say?
 stand down boy before you get in my way
@@ -393,8 +349,6 @@ Oh you didn't think I had the chops to spit
 that i was just a coding monkey who liked to rhyme when he bit
 we'll see - AG
 
-
-
 ## my gurl
 
 my little bitty itty bug
@@ -403,34 +357,29 @@ them jeans - they snug
 i want a hug
 a hug from my bug
 
-be my blanket 
+be my blanket
 let me get behind you and surely thank it
 spank it
 
+## 9. I used to be lost
 
-
-
-
-
-## 9. I used to be lost 
 G - gblack - em
 
-I used to be lost 
+I used to be lost
 I still feel lost
 
 Lies
 They hide
 Real things
 
-Truth 
+Truth
 Sounds sweet
 When it rings
 
 We earn and learn and yearn for the Lord
 
-
-We can't earn grace 
-We only live by faith 
+We can't earn grace
+We only live by faith
 Cover our sin
 Not new information
 Reminder that we can't earn grace
@@ -439,14 +388,11 @@ Accept that believe
 
 Was so far
 
-
-Caught in a trap 
-In my mind 
-
-
-
+Caught in a trap
+In my mind
 
 ## 10
+
 C D G
 
 So you want to go to hollywood
@@ -457,18 +403,14 @@ So you want to hop on a big ass jet
 Go some place you haven’t gone to yet
 Maybe there you’ll send a card
 Maybe I'll open it
-I will 
-But after a couple pbrs 
+I will
+But after a couple pbrs
 
 Standing still ain’t for you
 Life’s a party just for you
 
 So you want to write a fairy tale
 Go some world
-
-
-
-
 
 SONG OPTION 1
 (Verse 1)
@@ -483,7 +425,7 @@ We're the indie sailors, where dreams don't die.
 
 (Chorus)
 Am F
-Bla bla Blah Blah Blah  - we're the voices in the stream,
+Bla bla Blah Blah Blah - we're the voices in the stream,
 C G
 Riding the waves of the in-between.
 Am F
@@ -540,8 +482,6 @@ Am F
 In the stream, we find our chance,
 C G Am
 To the indie sea, we dance, we dance.
-
-
 
 Song Option 2
 
@@ -621,12 +561,11 @@ Can't let go, of your magnetic tempo.
 Am F
 And as the dawn creeps, with a little light to follow
 C G
-Surrender my kingship to the hollow 
+Surrender my kingship to the hollow
 Am F
 In the daybreak, we'll follow the echo,
 C G Am
 In the flashing lights, your shadow.
-
 
 Song Option 3
 (Verse 1)
@@ -719,4 +658,7 @@ The voyage was mine, through the perilous night,
 F C
 Hope is the shore, my guiding light.
 
+# peaky as a blinder
 
+- peaky as a blinder
+- sharp as a razor
