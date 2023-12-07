@@ -77,8 +77,54 @@ To evaluate your financial stability, especially from the perspective of a life 
 4. Monte
 5. Joey
 6. Folks from Yearn?
+7. Brianna Williams - Teaching
+8. Vickie Blume - Teaching
 
 # Dream Possiblities
 
 1. Make it big with ahoy
 2. Make it big with the vending machines
+
+Job I am looking for
+
+- Product Design and Creative Director
+- I have led teams of engineers through complicated endeavors - taught students of all ages through thesis level projects - been part of a highly selective filmmaking program sponsored by sundance - started and collapsed several companiese - somehow became a VR developer - and as of lately - I have been into data viz - and want to pursuit creating digital products. I was a brand manager for 7 years at a firm and have designed more quaretly corporate reports than the average person ever ought to. I have used wordpress, wix, squarespace - for clients - but prefer raw html + css + Javascript - and over the last yuear - i have essentially taken a docrate level class in react + web3 technology + backend work.
+
+I am a certified crazy person - I find myself waking up at 530 - and working hard - so - I am looking for a remote job of fellow crazies that pays well, develops hard, and I am looking for responsiblity - I thrive best when I am the captain of the team.
+
+My passion has always been filmmaking - perhaps there is
+
+I am the winner of a ETH Denver Hackathon in 2022 - developing a "block explorer" for the Vega company.
+
+Actions to get ahoy off the ground
+
+- E-mail Marketing - Announcement of it's existing - e-mail marketing
+- we are actively looking for beta testers, users, and any sort of angel investors - so that I can quit everything and devote my life to ahoy
+
+Daily Sugar (12.07.23)
+
+- chaosnet - continue to work on viz
+
+Ape Arrangement
+
+- AG wants to keep working on chaosnet + silverback - and make regular contributions - in exchange for personal expenses covered + (personal rent + car + office) = 1.6k a month - a handshake promise that if this ever becomes something again - he will be covered.
+
+This 1.6k could be in the form of gifts for services rendered - or idk - it can also be pure cash honestly. Which would probably be best for us all if possible. Less complicated - buys us time -
+
+For CV
+
+- Show Mailchimp Editing Campaign
+
+I am looking for a part time brand position - at a high senior level - I essentially earned my stripes and find that my skillset would be better at a macro level rather than a micro - the good news is I have been known to zoom in and out - if you want to see my chops in action - i've been recording myself for the last 10 years - mostly it keeps me honest - and makes the work meaningful to me - as the projects roll ono - it is easy to forget what one has already done.
+
+I can :
+
+- Make podcasts
+- come up with giant ideas for a podcasting network
+- develop VR apps
+- Create Web Apps that showcase real connected data viz to actual pipelines in MatLab + R
+- My work has been
+
+- I have made website systems for entire colleges - and also a baker - and also a person who just does paving. I like to work with people and have a heart for folks who are all in - so am I.
+
+Life is short - I am not here to mess around - if you are a serious person who needs a serious project - hit me up. If you are not - I am also down to talk with you - and have a vast array of junior engineers I can recommend for whatever task at hand.
