@@ -72,7 +72,13 @@ To evaluate your financial stability, especially from the perspective of a life 
 # Ideas of People to talk to
 
 1. Etkin Tekken
-2. Andrew
-3. Steve Rado
+2. Andrew - contacted - will call tomorrow
+3. Steve Rado - contacted - will call tomorrow
 4. Monte
-5.
+5. Joey
+6. Folks from Yearn?
+
+# Dream Possiblities
+
+1. Make it big with ahoy
+2. Make it big with the vending machines
