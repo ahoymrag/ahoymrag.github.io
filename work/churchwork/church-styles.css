@@ -1,0 +1,26 @@
+.stats-sheet {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 900;
+  text-align: center;
+  background-color: #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.stats-sheet h3 {
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+}
+
+.stats-sheet ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.stats-sheet li {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+}
