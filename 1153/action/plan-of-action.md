@@ -128,3 +128,24 @@ I can :
 - I have made website systems for entire colleges - and also a baker - and also a person who just does paving. I like to work with people and have a heart for folks who are all in - so am I.
 
 Life is short - I am not here to mess around - if you are a serious person who needs a serious project - hit me up. If you are not - I am also down to talk with you - and have a vast array of junior engineers I can recommend for whatever task at hand.
+
+Monday 12.11.23
+
+# Websites to inquire to make
+
+1. Dominic - could he know of anyone who might need a website? - If I do his for free - could
+2. Monte Ritz - what is he up to ? Catch up - does he have any work for me?
+
+I need around 2.5k additional each month - lest that is my accordance estimation - need to figure out by 1.15.24 - - ideally get a new job
+
+Add to Resume
+
+- Client Work
+- - List of Websites to best of of my memory - at CreateCR
+
+# People I should catch up with / network with
+
+1. Sam Carlson
+2. Phil Toran
+3. Kervin Marsalee?
+4. Sean Weiner
