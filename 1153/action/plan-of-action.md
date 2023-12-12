@@ -156,3 +156,62 @@ Seems like I don't have to freak out - that my deficit - which will not kick in 
 
 
 Ellen brought up a good point yesterday - regarding what to do - i'm working on list of things I like - things I don't like - about work - to try to find something that would be a suitable fit. 
+
+
+Things I like
+- Record Podcasts + Doing the Rob Show + Getting it on Ahoy
+- Mainting and updating things
+- Writing Raps
+- Writing Nice and clean ui
+- brainstorming business ideas
+- hackathon
+- Making Podcast Thumbnails and Campaigns
+- Writing 1 page
+- organizing films together and doing shoots 
+- Setting up businesses - connecting everything together 
+
+
+Things I think I WILL like
+- Thinking in a newspaper mentality 
+- Sending and Shipping Physical Products to People
+- Selling things and subscriptions 
+- choosing the products to sell
+- writing business plans 
+- selling things for income (films + art)
+- becoming an art merchant 
+
+Things i'm unsure if i like
+- doing vizaulisers 
+- making vr games
+- working freelance with alexis on chaosnet ands tuff
+
+## deets on that - the idea of ozesti 
+- the idea would be to 60 alexis - 40 alex - but alex has final design say 
+- other websites 
+
+cons with this would be - that i would feel obligated to not make moves - rather - perhaps i just pay alexis if i need him 
+
+- do i want this freelance lifestyle?
+- - book some time with allision 
+
+- but before i do - draft a plan - draft a cv and resume - - 
+- should i collect some of my skills
+
+
+Things I don't like
+- Promo Videos for People
+- Using my energy to make commercials for folks 
+- Hearing feedback on video 
+- Making videos at all
+
+
+# think about the commercial game
+- get brands to hire gotstyle - to make some dope commercials - 
+
+
+do a job search with ellen - maybe i can get a cool job in boston for 90k a year?
+
+
+or just get something simple - somehow make 5k a month - and double down on making ahoy + filmmaking on my own terms work - talk to etkin - talk to adam - get some money - give it an honest shot for 2 years - and then on the end of the 2nd - go to college - with hopefully enough saved - worried about not taking action and getting a little stale 
+
+in the short term - i can get another part time job that makes 2k a month - perhaps teaching is the move indeed

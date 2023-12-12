@@ -24,3 +24,14 @@ Friday - Night Market + Griffins
 10.22.23 - Sunday - Church + Hosted Paul, Mary, Nicole, Alexi, Josh - made a banging pasta dinner
 10.23.23 - Monday - walked to work together - walked back from work together - forgot what we had for dinner - - or we had a beer - two beers at cafe 9 - and then went climbing - and then made out a bit
 10.24.23 - Tuesday - Saw Toledo - Ellen had a convo with them
+
+
+
+
+
+
+
+Wintery Mix to add later
+
+Dec 8 - Lesson and Carols + Trinity with Paul and Josh
+Dec 9 - Boston

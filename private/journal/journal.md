@@ -59,3 +59,20 @@ Things I don't like
 
 
 Feelings arent looking for answers. 
+
+feeling a little anxious about it - thinking i wouldnt like the lifestyle and weary of getting myself caught in a bunch of wires - what if i just work for ape as a subcontractor and live frugally double down on ahoy - OR - be some excutive at some news network station - or just keep working for churches as I expand ahoy 
+
+
+if i work at another church like cpc that could be 5k retainer - to help design websites - one off?
+
+5k - 20 churches = 100k - hire help - for 20k a year - would be 80k
+
+7.5k a year for a church - would be 
+
+This sounds like a lot of work - what if I work with Etkin for 50k a year - and then do school stuff with patty for 5k a semester - would be 22+15+50+5 = still less than a creative director at a tech job
+
+would be cool to save a dying video business of sorts - or to work at a big network - or be in charge of show producers - or simply do it via ahoy - 
+
+i could also in earnest - work as a film director - and make commercials for people for 30k a pop
+
+it could be boring stuff too - just got to make it creative and fun - 
