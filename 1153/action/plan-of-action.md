@@ -208,6 +208,14 @@ Things I don't like
 # think about the commercial game
 - get brands to hire gotstyle - to make some dope commercials - 
 
+## think about academy life
+- work at yale
+- become a professor
+- work at a newspaper
+- 
+
+E says I have some time -and I should finish up the week proper - aye - I will.
+
 
 do a job search with ellen - maybe i can get a cool job in boston for 90k a year?
 
