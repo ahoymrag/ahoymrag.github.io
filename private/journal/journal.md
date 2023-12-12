@@ -14,3 +14,5 @@ trying to do it - got another 10 min - gonna go down
 # 12.14.23
 
 I am trying this out on my new chromebook - which I installed some linux - and thus vscode - it's a bit choppy but it works - and lets me write and think and do such - and perhaps just focus on code - as this is really all i Wanted this for - a place to write some code in peace. 
+
+Today I am about to rush get ready - and head to cpc - as it is our last podcast episode for a while - and I promised myself to get there on time. 
