@@ -1,5 +1,10 @@
 # Song Book But For REal
 
+List
+1. Tarry Through the Night
+
+
+
 ## “Pretty pity”
 
 October 2023
@@ -18,6 +23,10 @@ Used to be Lost
 Hollywood?
 
 //
+
+## NEW ONE
+
+
 
 ## Last Night I lost my Wallet
 
@@ -61,7 +70,8 @@ and to release it as free<br>
 
 ## Pretty Pretty City City
 
-A D
+Am C - - Em D A
+
 
 Oh life
 Is pretty pretty
@@ -91,7 +101,7 @@ To your pretty little - pity party
 I must of got my invitation lost in the mail - the SNAIL MAIL!
 
 ## Tarry Through The Night
-
+#### DM - G - Em F = = C Am F G
 Verse 1:
 Dm
 Riding high off the sound,
@@ -112,7 +122,16 @@ F
 For a cheap flight.
 
 Dm
-Woof
+Ooo
+G
+We didn’t stand in to stand out
+Em
+But I guess
+F
+We Should (o yes)
+
+Dm
+ooo
 G
 We didn’t show up to get down
 Em
@@ -120,35 +139,90 @@ But if you want
 F
 We could (o no)
 
-Dm
-Ooo
-G
-We didn’t fit in to stand out
-Em
-But I guess
-F
-We Should (o yes)
+## Chorus <c am F G>
 
-Chorus <c am F G>
 ( C )
 Ooo well taryy through the night
-And it will be alright
-( A )
-O these moments won't last forever
-One day we'll grow old
+And we will be alright
+( Am )
+but these moments won't last forever
+and One day we'll grow old
 But tonight we are
 Oooo
 You thought you knew what I was gonna say
-Its Just a little game for the games that like to play
+Its Just a little game that i like to play
 I'm just some silly boy
 Whose here to bring you joy
 
 O
 So rise up with me now
-Stand and thank the host
+Stand and grab a toast 
+hug someone you love
+and leave it on the coast
 
-Hug someone you love
-And give thanks to the most
+## VERSE 2 (Dm G Em F)
+
+Running right through this town
+Like a banshee
+Now the lights know the sound 
+So dimly
+
+Dangling some legs off the back porch
+Cold wind hits the air for a quick torch
+
+Oooo
+We didn't set sail to get lost
+but i guess we could
+
+oooo
+we didn't die young to die wrong
+but i hope we would
+
+Irish exit on deck
+Can you blame me?
+
+## BRIDGE 2
+
+
+## CHORUS 2
+
+
+## VERSE 3
+
+counting years like ants
+wanting the first chance
+to know your name
+
+buzzing round this crowd
+around this loud
+playing the wrong game
+
+oooo
+i didnt come through 
+to sell out
+but if you want
+i could
+
+i didnt go broke to make jokes
+but the jester in me would
+
+because ooo
+
+WE TARRY THROUGH THE NIGHT
+
+
+
+
+yearning for first place
+as i seek disgrace
+
+no no 
+this boy will go before - we think he will
+would i do it differently
+
+## Chorus Infinity
+
+## Ender
 
 Dm
 Staring at the sun
@@ -177,10 +251,7 @@ But you know we march
 
 Oo
 
-Running through this town
-Like a banshee
-Irish exit on deck
-Can you blame me?
+
 
 Dm - G - Em - F
 Ooo
@@ -396,7 +467,8 @@ In my mind
 C D G
 
 So you want to go to hollywood
-You got the chops but do you think you could?
+You got the chops 
+so you think you could?
 Make a dent in that evil weird pity place?
 
 So you want to hop on a big ass jet
@@ -407,7 +479,8 @@ I will
 But after a couple pbrs
 
 Standing still ain’t for you
-Life’s a party just for you
+Life’s a party just ain't true
+blue ska do - you can do - but in what state will it do to you?
 
 So you want to write a fairy tale
 Go some world
