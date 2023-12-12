@@ -9,3 +9,8 @@ time moves so fast - it's already mid decemember - not really - dec 5 - and the 
 Now i'm like - shit idk - i got sugar to do - but i'm sleepy and need a nap and then going to go home today to shower and what not.
 
 trying to do it - got another 10 min - gonna go down
+
+
+# 12.14.23
+
+I am trying this out on my new chromebook - which I installed some linux - and thus vscode - it's a bit choppy but it works - and lets me write and think and do such - and perhaps just focus on code - as this is really all i Wanted this for - a place to write some code in peace. 
