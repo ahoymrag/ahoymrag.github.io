@@ -30,6 +30,7 @@ Things I like
 - hackathon
 - Making Podcast Thumbnails and Campaigns
 - Writing 1 page
+- organizing films together and doing shoots 
 - Setting up businesses - connecting everything together 
 
 
@@ -39,6 +40,14 @@ Things I think I WILL like
 - Selling things and subscriptions 
 - choosing the products to sell
 - writing business plans 
+- selling things for income (films + art)
+- becoming an art merchant 
+
+Things i'm unsure if i like
+- doing vizaulisers 
+- making vr games
+- 
+
 
 
 Things I don't like
