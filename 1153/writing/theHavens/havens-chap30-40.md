@@ -17,13 +17,15 @@ The what?
 
 The canals. That's right - the canals.
 
-I don't even think the task would be that hard. You simple dig - and fill it with water. Perhaps we just need an inspiration - perhaps I ought to find my way into some Yale innovation meeting and make a big stink about it - draw some 3d models.
+I don't even think the task will be that hard. Block off street - dig - and fill that bitch with water. You simple dig - and fill it with water. Perhaps we just need an inspiration - perhaps I ought to find my way into some Yale innovation meeting and make a big stink about it - draw some 3d models.
 
 I know that I'd get laughed out of existiance if the alders - which only meet so often - had anything to do with it. Instead - I would need to be mayor.
 
 And if I were mayor - I wouldn't bother about any of this chit chat - I would make it very clear - that I would hire a seasoned boring professional - I would make comments on it - but I wouldn't - it would be a coalition - and I would simply inspire - go out there on a podium - and just waffle - have people think big picture - stop with all this reaction - stop apologizing to things outside of new haven - fuck that - we have problems here. Let's dig some canals and get to work.
 
 If we were, if we were to live in a canal based city - we could spread those who don't want to be here and push them into the connecticut wiilderness - where they can self govern. Okay - perhaps I am taking it all a little far - but it is hard to have empathy when there are folks on the street looking like they are going to straight stab you -
+
+I talked to everyone I can get my hands on about the matter - that night I went to olives and oils for a birthday party for aarney - I am not sure if i Have paid her back - probably something I should look into. 
 
 ## on homeless
 
@@ -40,3 +42,9 @@ Putting my misgivings about what to do with the folks in this city who just want
 I looked at a bird for a while - in between a glass - in between. Listening to a podcast of aliens and theology. I didn't think of this stuff for a while - but this season of loneliness and cold - as the winter began - i began to explore my own personal theology. I had a time to put away - and stare out the window. And then thought about all the ways in which I am inputting into myself. At the moment it was two shots of cheap espresso - i got it at life bowls - a place known for crushed berries and acaii bowls. I still haven't dared to try such. But I thought about the nature of man, thought of about if i was doing what I was supposed to be doing, and I thought about the treasure. Months have passed since we have found it.
 
 In total
+
+And by and by - that was the day I decided to help my new lab mate Luis from spain - build his nanon engineer particle emissor from Yale.
+
+I remember looking at the thing - and looking at all the wires and what not - and quietly repurposed my life - wondering if I was doing a enough - wondering what I was doing. 
+
+Talking to him was infectious - and couldn't stop thinking how there was a man out there 

@@ -149,3 +149,10 @@ Add to Resume
 2. Phil Toran
 3. Kervin Marsalee?
 4. Sean Weiner
+
+
+Seems like I don't have to freak out - that my deficit - which will not kick in for another 2 weeks - is 2.5k a month - assuming I do not use my emergency fund. 
+
+
+
+Ellen brought up a good point yesterday - regarding what to do - i'm working on list of things I like - things I don't like - about work - to try to find something that would be a suitable fit. 
