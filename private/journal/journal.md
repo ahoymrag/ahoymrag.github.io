@@ -46,7 +46,7 @@ Things I think I WILL like
 Things i'm unsure if i like
 - doing vizaulisers 
 - making vr games
-- 
+- teaching
 
 
 
