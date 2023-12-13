@@ -84,3 +84,10 @@ it could be boring stuff too - just got to make it creative and fun -
 want to shave and freshen up a bit 
 
 in the shower - i thought about taking forlough - and essentially parting ways from ape - not do a freelance thing - but take the time - and one day go back to bryant and ask for funds because i want to startup my own - means i wouldnt be working with the engineers anymore - but this might free me up to work with them in other ways - ie marco - instead of ape work on him with ahoy - vs a slow fade - what would it look like - as bryant suggested having lots of little indie things - if i go forlough - could i in the future be laid off? - didn't like the culture a lot - it's all consuming all the time - would rather explore ideas of my own - but also to be a consultant to ape - and be on whatever board - or stay relevant in the space? do i - perhaps I do by staying to in touch with worms and antlers and alexis - a post ape channel ? I got to go pick up the bug - will think later - help me Lord.
+
+
+Talked with bug about it - finalized 
+
+Thinking of cold calling a bunch of newspapers
+essentially need to make 3k additional each month to get by - 
+
