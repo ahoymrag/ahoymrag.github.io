@@ -68,8 +68,12 @@ Things I don't like
 - Start a true film studio and make motion pictures
 - Have a cottage and cabin in the woods
 - Start a successful local newspaper
+- Start a beer business
+- Start a successful media network (podcast, tv channel, film premieres)
 
-# think about starting a cofee house in state street
+# think about starting a studio coffee house in state street
+
+### Call it Third Space
 
 Feelings arent looking for answers.
 
@@ -107,3 +111,21 @@ essentially need to make 3k additional each month to get by -
 Feeling a bit more inspired today - had some good talks with the bug and some more business opp - feeling better - wrote a letter for ahy investment - and can't stop thinking about opening up a little venueee in New Haven - as I am helping other venues while I execute that - thinking of how coool it would be to have a shop - a tech exploration place - a placeeeee to make in house movies and commercials and brainstorm and develop - and how cool it would be to have like an editing website place - a place to edit films + moooovies - and a place to make commercials and talk shows - and then the other half of the room would be for live concerts - and coffee during the day - it could be run by young kids - and we could get financing - and do things in stages - open it up for the public - free donation for coffee - a place where we work and have venues - welcome table - place like gather.
 
 Still thinking about my life - going to go to gather now and work on mission anabaino stuff - some light ag.ooo (get it back) - and maybe work on some theology writing or more journaling / haven writing - so that by 2pm i'll be ready for the rob show - and i'll edit that - and hang around cpc for a bit and work on MA stuff until Ellen is ready - okay - so I go to gather now - work on some writing and dreams and business plan ideas. And then i'll head to cpc - to record the Rob show - while working on some Ahoy Login stuff - also while at gather if I feel guilty - do 30 min of mission anabaino - later after rob show I can clean up - and also do some ape stuff? or not - perhaps meet up with alexis tomorrow at sterling or wherever and work on some final ape transition. Do not want to think about ape today - but perhaps I can get it to a place where alexis could see where I was going - ie put buttons in and what not - and get a better unified layout look.
+
+At the cultured cafe - feeling pretty hopeful as I write out business plans for both the ahoy and the beer business.
+
+Also - it seems lest on telegram that crypto is melting away - i am sure that bryant and friends are going to make a bunch of money - and continue down that road - but i wouldn't want to go there - I want to make money in other ways - by ticket sales and waht not - i do not want to make money based on trades and stocks - though it is incredibly tempting - there is something holy about making money via providing a service - and to keep ideas and dreams sustainable - but then the devil whipsers - aye but to what end - perhaps this is all there is to there is there.
+
+### WHAT TO TELL PEOPLE THE PLAN IS
+
+I think the plan is to take some time off and rest - and read and write silly stories - and then start a venue in New Haven - make websites for hire in-between - or perhaps see what I could do with Daniel at Koffee? - but open up a venue and get to it. This venue will be half place for artists to perform - half movie studio + Half podcast house + experimental lab + half cafe - and the headquarters for ahoy indie media. It will have 2 sections - a public facing - and then a magical backroom - that we will give tours to upon request (think cheese demo).
+
+All the while continue to work on expanding MA + CPC
+
+Creatively - I would like to drop a book, a film, a book of lyrics, artwork, get into sculpting and sculpting my body.
+
+Personally I would like to marry Ellen.
+
+# how?
+
+Marry Ellen - visa + work + stuff
