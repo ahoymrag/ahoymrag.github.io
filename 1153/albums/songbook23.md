@@ -187,14 +187,14 @@ Can you blame me?
 ## CHORUS 2
 
 
-## VERSE 3
+## BRIDGE A
 
 counting years like ants
 wanting the first chance
 to know your name
 
 buzzing round this crowd
-around this loud
+around so loud
 playing the wrong game
 
 oooo
