@@ -46,6 +46,7 @@ Things I think I WILL like
 - setting up an music venue
 - designing a space for work and gather
 - designing a treehouse for the adventure in the woods
+- going bar to bar and venue to 
 
 Things i'm unsure if i like
 
