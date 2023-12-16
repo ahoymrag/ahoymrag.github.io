@@ -34,9 +34,6 @@
    - Conclusion
 
 
-
-
-
 ## Executive Summary
 
 ### Business Name
