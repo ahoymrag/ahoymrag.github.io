@@ -117,3 +117,6 @@ Still thinking about my life - going to go to gather now and work on mission ana
 # 12.16.23
 
 With the bug - sitting on the couch - about to head to mysitic seaport for the day - to get some christmas cheer going - excited - feels like i'm living the dream with the bug next to me. 
+
+# 12.19.23
+- Bugs leaving and about to take a poop and shower - i just wrote her a little bit of a cringey story about a little boy who gets lost until he finds his girl - yikes - i am weary that it is too self-centered and wasn't explicit in the ways in which i love her - but was deeper and inexpcilpit - more on that later. I feel a bit chubby as i smack down this coffee and stand shirtless as I choose my outfit and think of what to do with my time for the next couple of days. I think i want to paint and work out and work on some websites - lest this week - maybe see the tallboyz - maybe make some bread with daniel - tomorrow i have a podcast with daniel - and then another episode of the rob show. but i feel like i might want the time - thursday i have life group - and friday it would be cool to catch up with the boys - lest work on some motion pictures i've been meaning to motion depict. I wouuld like to get a couple of stories out of this - my resume - and a list of people to call jan 1st.
