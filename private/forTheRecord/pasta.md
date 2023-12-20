@@ -8,5 +8,11 @@
 
 as of dec 13 . 23
 
+## netflix
+#### agtechs@gmail.com
+#### love!@#ZANI
+As of 1.12.23
+
+
 
 # print this doc offline
