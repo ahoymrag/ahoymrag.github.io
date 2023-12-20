@@ -12,10 +12,24 @@ guestlist
 9. Colleen Rice
 10. 
 
-RSVP - head count
+
+# RSVP - head count
+
+# Theme 
+
+Small Group - All that Glitters
 
 1. tyler
 2. colleen
 3. tanilla
-4. jerry & michelle
-5. Paul fitzpatric
+4. jerry
+5. michelle
+6. Paul fitzpatric
+
+8 people would be solid
+or 10 people 
+
+Wallingford New Years Eve - 
+
+
+
