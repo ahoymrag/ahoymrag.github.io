@@ -20,6 +20,9 @@
 2. DVD of a movie
 3. Book
 4. Something Pot related
+5. Something Art Related
+
+## Ellie
 
 ## Josh Sanders
 1. Artwork 
@@ -34,6 +37,8 @@
 1. Bianca - Artwork
 2. Bryan - Jill, Luke, Ben
 3. Mark - Courtney
+
+4. Mari and Alex - some sort of nice oil
 
 ## Kyle
 - Book or Knife
