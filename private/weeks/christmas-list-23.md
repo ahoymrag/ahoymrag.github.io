@@ -1,10 +1,10 @@
 # Christmas List
 
 ## Dad
-1. Nice Olive Oil
+1. Nice Olive Oil - DONE
    - Nice olive oil bottle
-2. Nice Honey
-3. Peaky Cap
+2. Nice Honey - DONE
+3. Peaky Cap - DONE 
 4. Kitchen Gadget
 5. DVD of a movie he likes
 
@@ -13,10 +13,10 @@
 2. Kitchen Gloves
 3. Cozy Socks
 4. Biography Book
-5. DVD of a movie she likes
+5. DVD of a movie she likes - DONE (twilight zone + silence of the lambs)
 
 ## Aldo
-1. Musical Instrument
+1. Musical Instrument - DONE 
 2. DVD of a movie
 3. Book
 4. Something Pot related
