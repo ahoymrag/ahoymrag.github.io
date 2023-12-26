@@ -25,7 +25,7 @@ And if I were mayor - I wouldn't bother about any of this chit chat - I would ma
 
 If we were, if we were to live in a canal based city - we could spread those who don't want to be here and push them into the connecticut wiilderness - where they can self govern. Okay - perhaps I am taking it all a little far - but it is hard to have empathy when there are folks on the street looking like they are going to straight stab you -
 
-I talked to everyone I can get my hands on about the matter - that night I went to olives and oils for a birthday party for aarney - I am not sure if i Have paid her back - probably something I should look into. 
+I talked to everyone I can get my hands on about the matter - that night I went to olives and oils for a birthday party for aarney - I am not sure if i Have paid her back - probably something I should look into.
 
 ## on homeless
 
@@ -45,6 +45,18 @@ In total
 
 And by and by - that was the day I decided to help my new lab mate Luis from spain - build his nanon engineer particle emissor from Yale.
 
-I remember looking at the thing - and looking at all the wires and what not - and quietly repurposed my life - wondering if I was doing a enough - wondering what I was doing. 
+I remember looking at the thing - and looking at all the wires and what not - and quietly repurposed my life - wondering if I was doing a enough - wondering what I was doing.
 
-Talking to him was infectious - and couldn't stop thinking how there was a man out there 
+Talking to him was infectious - and couldn't stop thinking how there was a man out there building a time machine.
+
+## Chapter 33
+
+And as I sat in the tiny desk - with my spoils of screens - I thought about what to do next - and what the point of anything at all is.
+
+it was the day of the winter equionox - december 21st - 2023 - and I - jobless and looking at all these screens - was sick of the digital world - sick of all the screens and the different sproadic text files that one generates day in and out when one is doing things via hand via code.
+
+I wanted people - a team - more than just a rag tag group of treasure hunters - nor my poorly found alderman support group - I wanted to make things - and I wanted a showroom - and a place to be around people - but still have privacy - i wanted to start a business - but not just any business - but one that would scale.
+
+So I threw my hat into the areana and decided to open up a half laundramat - half venue - and half television broadcast network - a place that would have different vending machines.
+
+## Chapter 34

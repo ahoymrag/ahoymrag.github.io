@@ -1,9 +1,8 @@
 # Song Book But For REal
 
 List
+
 1. Tarry Through the Night
-
-
 
 ## “Pretty pity”
 
@@ -25,8 +24,6 @@ Hollywood?
 //
 
 ## NEW ONE
-
-
 
 ## Last Night I lost my Wallet
 
@@ -72,7 +69,6 @@ and to release it as free<br>
 
 Am C - - Em D A
 
-
 Oh life
 Is pretty pretty
 While you’re living in
@@ -101,7 +97,9 @@ To your pretty little - pity party
 I must of got my invitation lost in the mail - the SNAIL MAIL!
 
 ## Tarry Through The Night
+
 #### DM - G - Em F = = C Am F G
+
 Verse 1:
 Dm
 Riding high off the sound,
@@ -156,7 +154,7 @@ Whose here to bring you joy
 
 O
 So rise up with me now
-Stand and grab a toast 
+Stand and grab a toast
 hug someone you love
 and leave it on the coast
 
@@ -164,8 +162,8 @@ and leave it on the coast
 
 Running right through this town
 Like a banshee
-Now the lights know the sound 
-So dimly
+Now the lights hear the sound
+now they fear thee
 
 Dangling some legs off the back porch
 Cold wind hits the air for a quick torch
@@ -183,9 +181,7 @@ Can you blame me?
 
 ## BRIDGE 2
 
-
 ## CHORUS 2
-
 
 ## BRIDGE A
 
@@ -198,7 +194,7 @@ around so loud
 playing the wrong game
 
 oooo
-i didnt come through 
+i didnt come through
 to sell out
 but if you want
 i could
@@ -210,13 +206,10 @@ because ooo
 
 WE TARRY THROUGH THE NIGHT
 
-
-
-
 yearning for first place
 as i seek disgrace
 
-no no 
+no no
 this boy will go before - we think he will
 would i do it differently
 
@@ -250,8 +243,6 @@ This place is kind of nice
 But you know we march
 
 Oo
-
-
 
 Dm - G - Em - F
 Ooo
@@ -467,7 +458,7 @@ In my mind
 C D G
 
 So you want to go to hollywood
-You got the chops 
+You got the chops
 so you think you could?
 Make a dent in that evil weird pity place?
 
