@@ -1,0 +1,59 @@
+resume = {
+    "name": "Alex Gonzalez",
+    "title": "Creative Director | VR Developer | Filmmaker | Occasional Adjunct Professor | AV el Captain",
+    "contact": {
+        "phone": "(914) 391-9934",
+        "email": "alex@ahoy.ooo",
+        "portfolio": "alexgonzalez.ooo"
+    },
+    "professional_summary": "Professional with a passion for visual storytelling and a background in film production and education. Front-end developer by day, passionate filmmaker by night, entrepreneur by disease. Proven track record in leading creative teams, fostering innovation, and delivering impactful projects. Strong expertise in developing and implementing multimedia strategies, new technologies, and getting shit done. Excellent communication and interpersonal skills.",
+    "work_experience": [
+        {
+            "title": "Executive Digital Platform Director",
+            "company": "Mission Anabaino",
+            "year": "2023",
+            "description": "Created a system for new church plants to have a baselevel foundation of technology."
+        },
+     
+    ],
+    "education": [
+        {
+            "degree": "Bachelor of Arts and Science",
+            "major": "New Media Film, Journalism",
+            "school": "Fairfield University",
+            "graduation_date": "May 2012"
+        }
+    ],
+    "teaching_experience": [
+        {
+            "title": "Adjunct Professor",
+            "institution": "Choate Rosemary Hall",
+            "location": "Wallingford, CT",
+            "year": "2023",
+            "courses_taught": ["Digital Filmmaking II", "Digital Photography I", "Digital Photography II"]
+        },
+    
+    ],
+    "recent_vr_and_film_making_experience": [
+        {
+            "role": "Producer | Director | Editor",
+            "project": "The Rob Show",
+            "year": "2022-2023"
+        },
+    ],
+    "tangible_skills": [
+        "Unreal Engine 4 + 5", "Adobe Premiere Pro", "Adobe After Effects", "Video and Audio Production", "Virtual Reality Development", "Writing for Media/Screen", "Curriculum Development", "Web Development", "Film Editing/SFX Artist", "Public Relations", "Object-Oriented Programming", "HTML5 Canvas", "CSS Preprocessors (e.g., Sass, Less)", "Responsive Design", "JavaScript Frameworks (e.g., React, Angular, Vue)", "Version Control (e.g., Git)", "Web Accessibility (WCAG)", "Performance Optimization", "Testing and Debugging", "Web Performance", "Web Security"
+    ],
+    "selected_achievements": [
+        "Winner of 2022 - ETH DENVER HACKATHON - For reimagining “Etherscan’s UI”",
+        "Creative-in-Residence, New Haven Public Library, 2018",
+        "Maker-in-Residence, Ridgefield Library, 2018",
+        "Creative Culture Fellowship, Creative Culture Program - Jacob Burns, 2017",
+        "Middlebury Film Festival - Beyond the Mountain, 2017"
+    ],
+    "additional_information": {
+        "portfolio": "alexgonzalez.ooo",
+        "references": "available upon request"
+    }
+}
+

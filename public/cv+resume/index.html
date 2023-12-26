@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Alex Gonzalez's Resume</title>
+    <style>
+      body {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #ff9595;
+        color: #333333;
+        line-height: 1.6;
+      }
+      .container {
+        width: 75%;
+        margin: 20px auto;
+        background: #ffffff;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .resume-section {
+        margin-bottom: 20px;
+      }
+      .resume-section h2 {
+        border-bottom: 2px solid #333333;
+        color: #333333;
+        font-size: 24px;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+      }
+      .resume-section h3 {
+        color: #666666;
+        font-size: 18px;
+        margin-bottom: 5px;
+      }
+      .resume-section p {
+        font-size: 14px;
+        margin-bottom: 10px;
+      }
+      @media print {
+        body {
+          width: 100%;
+        }
+        .container {
+          width: 100%;
+          box-shadow: none;
+          padding: 10px;
+        }
+      }
+      .print-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        padding: 10px 20px;
+        font-size: 20px;
+        background-color: #333333;
+        color: #ffffff;
+        border: none;
+        cursor: pointer;
+      }
+    </style>
+    <style>
+      body {
+        background-color: rgba(97, 95, 95, 0.4);
+        font-family: "Arial", sans-serif;
+        letter-spacing: 2px;
+        padding-bottom: 60px;
+      }
+
+      .container {
+        background: #fff;
+        padding: 70px 75px;
+        margin: 50px auto;
+        border: 4px solid #7f9b7a;
+        width: auto;
+        height: auto;
+      }
+
+      .propic {
+        border-radius: 80px;
+        max-width: 10%;
+        float: right;
+        transition: all 2s ease-in-out;
+        margin-right: 20px;
+        margin-top: 10px;
+      }
+
+      .infophoto {
+        height: 250px;
+        border: 2px solid black;
+        box-shadow: 2px 4px 3px black;
+        border-radius: 10px;
+      }
+
+      .info {
+        float: left;
+        font-size: 17px;
+        margin: 10px;
+      }
+
+      .container {
+        background: rgba(255, 255, 255, 0.7); /* Semi-transparent white */
+        backdrop-filter: blur(10px); /* Apply blur to the background */
+        /* Other styles... */
+      }
+
+      .photo {
+        float: right;
+      }
+
+      .section {
+        margin-bottom: 200px;
+        border: 1px solid black;
+        text-align: justify;
+      }
+
+      .sec-gauche {
+        float: left;
+        font-weight: bold;
+        font-size: 16px;
+      }
+
+      .sec-droite {
+        margin-left: 200px;
+        margin-top: 20px;
+        float: right;
+      }
+
+      .strong {
+        font-size: 30px;
+      }
+
+      hr {
+        margin: 40px 0;
+      }
+
+      h1 {
+        font-size: 2em;
+        font-weight: bolder;
+        text-transform: uppercase;
+        color: #000;
+        margin: 0;
+      }
+
+      h2 {
+        font-size: 1.3em;
+        background: #7f9b7a;
+        padding: 10px;
+      }
+
+      h3 {
+        font-size: 1.4em;
+        text-transform: uppercase;
+        color: #000;
+        margin-top: 0;
+      }
+
+      h4 {
+        margin: 15px 0 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" id="resumeContainer">
+      <!-- Resume content will be inserted here by JavaScript -->
+    </div>
+    <!-- Add a print button -->
+    <button class="print-button" onclick="window.print()">Print as PDF</button>
+    <script>
+      // Resume content
+      const resumeContent = {
+        "Professional Summary":
+          "Professional with a passion for visual storytelling and a background in film production and education. Front-end developer by day, passionate filmmaker by night, entrepreneur by disease. Proven track record in leading creative teams, fostering innovation, and delivering impactful projects. Strong expertise in developing and implementing multimedia strategies, new technologies, and getting shit done. Excellent communication and interpersonal skills.",
+        "Recent Work Experience": {
+          "Executive Digital Platform Director - Mission Anabaino":
+            "2023 - Created a system for new church plants to have a baselevel foundation of technology.",
+          "Product Designer - Apeworx":
+            "2023 - Present - Collaborated with cross-functional teams to create innovative and user-centered design solutions.",
+          "Creative Director - Apeworx":
+            "2021 - 2023 - Led a team of designers, writers, and artists to create compelling visual content for clients.",
+          // Other experiences can be added similarly
+        },
+        Education:
+          "Bachelor of Arts and Science: New Media Film, Journalism\nFairfield University | May 2012",
+        "Teaching Experience":
+          "Adjunct Professor at Choate Rosemary Hall, SUNY New Paltz, Wilton Library - Maker Program, and others.",
+        "Recent VR & Filmmaking Experience":
+          "Producer | Director | Editor of The Rob Show (2022-2023), Smoking Theologians (2020-2022), and others.",
+        "Tangible Skills":
+          "Unreal Engine 4 + 5, Adobe Premiere Pro, Adobe After Effects, and others.",
+        "Selected Achievements":
+          "Winner of 2022 - ETH DENVER HACKATHON, Creative-in-Residence at New Haven Public Library (2018), and others.",
+        "Additional Information":
+          "Portfolio: alexgonzalez.ooo\nReferences available upon request",
+        "Cover Letter Summary":
+          "The cover letter for Alex Gonzalez is tailored for a creative industry role, emphasizing his diverse skill set in VR development, filmmaking, and teaching.",
+      };
+
+      // Function to populate resume content into HTML
+      function populateResume() {
+        const resumeContainer = document.getElementById("resumeContainer");
+        for (const [section, content] of Object.entries(resumeContent)) {
+          const sectionElement = document.createElement("div");
+          sectionElement.classList.add("resume-section");
+
+          const titleElement = document.createElement("h2");
+          titleElement.innerText = section;
+          sectionElement.appendChild(titleElement);
+
+          if (typeof content === "object") {
+            for (const [subSection, subContent] of Object.entries(content)) {
+              const subSectionElement = document.createElement("h3");
+              subSectionElement.innerText = subSection;
+              sectionElement.appendChild(subSectionElement);
+
+              const subContentElement = document.createElement("p");
+              subContentElement.innerText = subContent;
+              sectionElement.appendChild(subContentElement);
+            }
+          } else {
+            const contentElement = document.createElement("p");
+            contentElement.innerText = content;
+            sectionElement.appendChild(contentElement);
+          }
+
+          resumeContainer.appendChild(sectionElement);
+        }
+      }
+
+      // Call the function on window load
+      window.onload = populateResume;
+    </script>
+  </body>
+</html>
