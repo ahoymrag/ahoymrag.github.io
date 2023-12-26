@@ -31,3 +31,23 @@ I would dream to work in the community - person to person - and help
 For the last two years nearly 3 years - I have served as a creative director at a startup blockchain software development company - in short - I was everything - and anything - and eventually learned how to manage - delegate - grow teams - and build products. I was not on the mangement side of teams - but I led 2 -s ometimes 3 teams within the organization. Team 1 was chaosnet - team 2 - was all of the marketing - team 3 - was creative and promotional materials. As per the first one - I got a taste of . I worked extremely closely with the founder and CEO - he was a friend - and I met big names in the web3 industries - flew around the world - saw what it was like from an idea to formulate and then having investments - and then loose it all. All and All - I knew in the back of my head that I was in some sort of masters class for how to run and lead a silicion valley type startup. Now - I want to take that energy - learn from where I think things went wrong - and help others and essentially try again - but more wiser - stronger and capable baby - lets go.
 
 Hit me up - i'm the silver bullet you won't regret - Alex
+
+# STEAL FROM THE ROBOTS
+
+To Whom It May Concern,
+
+I am excited to share with you my personal website, ahoymrag.github.io, which embodies a lifelong journey of creativity, innovation, and a deep-seated passion for technology. This website is not just a digital portfolio; it's a testament to my belief in the transformative power of technology and a commitment to continually evolve and innovate.
+
+Growing up in Tarrytown - Sleepy Hollow, a quaint coastal town along the mighty Hudson River, my childhood was a tapestry of imagination and mischief. Nestled across from a private school with vast woodland and a community pool, my days were filled with adventures in the woods, creative explorations in my room, and endless hours in front of the computer. These experiences cultivated in me a fascination with the endless possibilities of technology.
+
+From a young age, I was captivated by the idea that the right combination of keystrokes could bring about infinite possibilities. This notion was firmly entrenched in my mind when, at six years old, I watched "Toy Story" and simultaneously convinced myself that our new computer could create similar animations. Although it took years to understand the complexities of such technology, my initial experiments began with HTML. By 1998, I had created my first Dragon Ball Z fan club website, which I proudly distributed on a CD-ROM.
+
+This early exposure to technology charted the course for my future endeavors. Today, I find myself in the Havens of Connecticut, where I oscillate between the possibilities of setting roots or venturing into new territories to spread my indie mischief. My days typically start with an immediate dive into coding, tackling significant challenges and breaking new ground before 10 am. Post-midday, I shift into a maintenance mode, focusing on refining and enhancing ongoing projects.
+
+Professionally, I have embraced a broad spectrum of opportunities, driven by a fascination with the very essence of work. Currently, I serve as the Creative Director and Product Designer at ApeWorx, LTD. In addition to this role, I am the Director of the AV Team at CPC New Haven and the Director of Digital Communications for Mission Anabaino. These positions allow me to meld my creative instincts with my technical skills, continually pushing the boundaries of what is possible in the digital realm.
+
+I am eager to bring my blend of creativity, technical expertise, and boundless enthusiasm to your team. Thank you for considering my application.
+
+Sincerely,
+
+[Your Name]
