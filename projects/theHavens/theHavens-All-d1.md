@@ -2,6 +2,8 @@ All together Now
 
 The Havens
 
+Chapter 2 : Laundramat Cafe
+
 Chapter 4 : The Underground Puppet Show
 Chapter 5: Views from the Havens
 Chapter 7: Randolph Curtis
@@ -18,10 +20,15 @@ Start of book:
 Chapter 17
 Chapter 18? (I don’t know the chapters anymore)
 
-Chapter 30
+Chapter 30 - Meeting the man with invention
 Chapter 31
 Chapter 32
-Chapter 33
+Chapter 33 - Finding out about my parents through the eys of another
+
+Chapter 34 - Forming the Master Plan
+Chapter 35 - Laundramat Cafe
+Chapter 36 - Life Today - Monthly Book Clubs and Such
+Chapter 37 - Going to church and other things
 
 Additional Content
 Characters:
