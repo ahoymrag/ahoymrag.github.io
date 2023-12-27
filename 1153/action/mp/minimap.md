@@ -117,7 +117,7 @@ Legal
 
 //
 
-Documents to Create
+### Documents to Create
 
 1. Trust
 2. Will
@@ -131,3 +131,13 @@ Documents to Create
 3. Make a cozy tent summer
 4. Get an established trust and monitor such land
 5. Rent and live wherever
+
+
+# Ideas and loose talk with Aldo
+
+- going to move in April - single bedroom 1.5k
+- only eating meat - taking a judo class
+- cast iron
+- stream of consciousness writing
+
+## Ideas on the Train
