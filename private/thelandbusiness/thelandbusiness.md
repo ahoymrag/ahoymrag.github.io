@@ -352,3 +352,92 @@ For land listings in Maine, you can explore the following websites:
 
 2. **47 Hudson Terrace, Sleepy Hollow, NY**
    - [Google Maps Link](https://www.google.com/maps/place/47+Hudson+Terrace,+Sleepy+Hollow,+NY)
+
+# Part 2.5 - The Structure
+
+### Converting a Shed into a Tiny House
+
+1. Prepare the Foundation and Drainage
+   Clear the site, lay 4-6 inches of ¾” gravel for the foundation.
+   Extend the gravel base 1-2 feet beyond the shed's footprint and ensure it's level.
+   Install French drains for water management, considering roof runoff and surrounding slopes.
+2. Utility Connections
+   Once the shed is in place and after any inspections, connect utilities (water, sewer, electricity) that were pre-buried.
+3. Moisture and Pest Prevention
+   Opt for plywood over OSB for the floor to resist moisture better. Treat with a protective coat.
+   Elevate the shed on blocks for airflow and easier access to utilities.
+4. Adjust Shed Framing
+   Request or modify the shed to use 2x4 framing, which is more suitable for insulation and installing standard building materials like electrical boxes.
+5. Install Utilities
+   Rough in electrical wiring, water pipes, internet connections, and HVAC.
+   Consider adding external outlets and lights.
+6. Air Sealing
+   Seal all cracks and gaps with silicone caulk and expanding foam to improve air-tightness and prevent bugs and water ingress.
+   Plan for ventilation and humidity control, such as installing an Energy Recovery Ventilation (ERV) unit.
+7. Insulate Walls and Ceiling
+   Choose between bat insulation and closed-cell spray foam. Spray foam offers better vapor and air barrier properties.
+8. Insulate the Floor
+   Insulate under the floor and/or on top with foam board and a new layer of plywood.
+   Consider in-floor radiant heating for extra comfort.
+9. Install Drywall, Floors, and Trim
+   Hang and seal drywall for air tightness.
+   Install flooring and baseboards, and then trim doors and windows.
+10. Final Finishing
+    Install cabinets, counters, appliances, and lighting fixtures.
+    Use off-the-shelf, affordable options from big box stores or IKEA for finishes.
+    Important Considerations
+    Legal Compliance: Ensure the conversion meets local zoning and building codes.
+    Inspections: Have the shed inspected at necessary stages to ensure compliance.
+    Quality Materials: Choose materials that will withstand the local climate and provide long-term durability.
+    This conversion process transforms a basic shed into a fully functional tiny house, complete with all the amenities and comforts of a traditional home, but on a smaller scale.
+
+### Material Option = Living in a Urt
+
+## What is a Yurt?
+
+A yurt is a round tent-like structure, traditionally used by nomadic groups in Mongolia and Turkey. It's a simple, portable home made of wood and wool covering, similar to a Native American tipi.
+
+### Modern Yurts
+
+Modern yurts are typically made from strong tent fabric instead of wool. They are used in various settings like national parks and campsites in the U.S. and Europe.
+
+### Types of Yurts
+
+- **Mongolian Yurt**: Traditional type, often used as historical reconstructions.
+- **Modern Fabric Yurt**: Common modern version, featuring lattice structure with fabric overlay.
+- **Wooden Yurts**: Fully wooden, includes variants like the hexayurt.
+
+### Living in a Yurt
+
+Living in a yurt is viewed as a cost-effective temporary housing option. It can be set up quickly on land as a shelter during tiny house or homestead construction. It costs less than $10,000 to set up, making it cheaper than many housing options.
+
+### Anatomy of a Yurt
+
+A yurt includes a base (usually a pre-made insulated base), lattice walls, rafters, and a compression ring at the top covered by a skylight. Modern yurts use vinyl or canvas for covering, often backed with insulation.
+
+### Building and Setting Up a Yurt
+
+Yurts can be built using kits, which include detailed instructions. Construction requires several people and takes a few days.
+
+### Challenges of Living in a Yurt
+
+Living in a yurt is subject to building codes and may face challenges with code enforcement. It has limited insulation capability and security concerns due to the fabric and wood structure. The fabric cover requires replacement every 5-10 years. There are also design challenges due to curved walls.
+
+### Yurt Kits and Costs
+
+Yurt kits range from $4,000 to $13,000, depending on size and materials. There are additional costs for foundation, utilities, and interior setup.
+
+### Yurt Design Ideas
+
+Yurts offer flexibility in layout for single individuals to small families. The interior can include partitions, bathrooms, and kitchens.
+
+### Yurt Home Kit Brands
+
+Several brands offer yurt kits, including Pacific Yurts, Freedom Yurt Cabins, Colorado Yurt Company, Rainier Outdoor, Smiling Woods Yurts, and Shelter Designs.
+
+The article positions yurts as an appealing option for those seeking an affordable, temporary tiny home, especially for homesteaders or while building a permanent tiny house. However, it also highlights the limitations and challenges of yurt living.
+
+# Links
+
+- https://thetinylife.com/living-in-a-shed/
+- https://thetinylife.com/living-in-a-yurt/
