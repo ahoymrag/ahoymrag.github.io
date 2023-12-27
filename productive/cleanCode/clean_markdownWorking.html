@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Land Business</title>
+  </head>
+  <body>
+    <div id="result"></div>
+    <script src="https://cdn.jsdelivr.net/npm/markdown-it/dist/markdown-it.min.js"></script>
+    <script>
+      // Initialize markdown-it
+      const md = new markdownit();
+
+      fetch("thelandbusiness.md")
+        .then((response) => response.text())
+        .then((text) => {
+          // Initialize markdown-it
+          const md = new markdownit();
+          // Convert to HTML
+          let htmlContent = md.render(text);
+          // Display HTML content
+          document.getElementById("result").innerHTML = htmlContent;
+        })
+        .catch((error) => console.error(error));
+
+      // Convert to HTML
+      let htmlContent = md.render(markdownText);
+
+      // Display HTML content
+      document.getElementById("result").innerHTML = htmlContent;
+    </script>
+  </body>
+</html>
