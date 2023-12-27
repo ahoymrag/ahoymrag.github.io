@@ -132,12 +132,26 @@ Legal
 4. Get an established trust and monitor such land
 5. Rent and live wherever
 
-
-# Ideas and loose talk with Aldo
+### Ideas and loose talk with Aldo
 
 - going to move in April - single bedroom 1.5k
 - only eating meat - taking a judo class
 - cast iron
 - stream of consciousness writing
 
-## Ideas on the Train
+### Ideas on the Train
+
+## Task Jobs Research
+
+| Website           | Pros                                     | Cons                                       | Potential Monthly Income |
+| ----------------- | ---------------------------------------- | ------------------------------------------ | ------------------------ |
+| Upwork            | Flexible jobs, diverse opportunities     | High competition, platform fees            | Varies widely            |
+| Poshmark          | High profits on in-demand items          | Need for inventory, slow sales periods     | Varies on sales          |
+| Instacart         | Flexible schedule, immediate start       | Vehicle wear, variable income              | Varies widely            |
+| Doordash          | Choose your hours, immediate cash flow   | Vehicle costs, competition                 | Varies widely            |
+| Fiverr            | Variety of services, set your own prices | High competition, platform takes a cut     | Varies widely            |
+| Amazon FBA        | Scalable, Amazon's vast customer base    | Upfront costs, inventory management        | Varies on sales          |
+| Freelance Writer  | Work from anywhere, flexible hours       | Irregular work flow, finding clients       | Varies widely            |
+| Rover             | Work with pets, flexible hours           | Income depends on client density           | Varies on client base    |
+| Transcribe Me     | Work from home, flexible hours           | Low pay per audio hour, competitive        | Varies on workload       |
+| Virtual Assistant | Diverse tasks, work from home            | Can require wide skill set, varying demand | Varies widely            |

@@ -24,14 +24,17 @@
     - [Properties](#properties)
     - [Reference Points](#reference-points)
 
-Top Location = Maine
-Max hours = 3.5
+# Official Use of Space
 
-Go to write - go to read - go to draw and edit and work on the longer term projects
+1. Go to write - go to read - go to draw and edit and work on the longer term projects
+2. Go to cook and cuddle
+3. Park Hard Assets in it
 
 ## EARLY DAYS
 
 Aquire Land Location =
+
+Potential Location
 
 3. **0 Farm to Market, Coxsackie, NY**
 

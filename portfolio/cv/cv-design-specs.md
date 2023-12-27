@@ -44,7 +44,7 @@ From a young age, I was captivated by the idea that the right combination of key
 
 This early exposure to technology charted the course for my future endeavors. Today, I find myself in the Havens of Connecticut, where I oscillate between the possibilities of setting roots or venturing into new territories to spread my indie mischief. My days typically start with an immediate dive into coding, tackling significant challenges and breaking new ground before 10 am. Post-midday, I shift into a maintenance mode, focusing on refining and enhancing ongoing projects.
 
-Professionally, I have embraced a broad spectrum of opportunities, driven by a fascination with the very essence of work. Currently, I serve as the Creative Director and Product Designer at ApeWorx, LTD. In addition to this role, I am the Director of the AV Team at CPC New Haven and the Director of Digital Communications for Mission Anabaino. These positions allow me to meld my creative instincts with my technical skills, continually pushing the boundaries of what is possible in the digital realm.
+Professionally, I have embraced a broad spectrum of opportunities, driven by a fascination with the very essence of work. Most Recently, I serve as the Creative Director and Product Designer at ApeWorx, LTD. In addition to this role, I am the Director of the AV Team at CPC New Haven and the Director of Digital Communications for Mission Anabaino. These positions allow me to meld my creative instincts with my technical skills, continually pushing the boundaries of what is possible in the digital realm.
 
 I am eager to bring my blend of creativity, technical expertise, and boundless enthusiasm to your team. Thank you for considering my application.
 

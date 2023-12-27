@@ -45,3 +45,41 @@ Trust will own
 
 - The Land
 - Generate AirBnBs in Such Land - 2 out of the 10 pieces to see
+
+/////
+
+# Short Term Liveliehood
+
+## Steady Job
+
+1. Creative Director
+2. Data Viz - VR at Yale Labs
+
+## Apprentice Job
+
+1. Artichtecture
+
+## Action Steps
+
+1. Get CV + Resume in Tip Top Order
+2. List of People to Call
+3. List of Potential Jobs
+4. Call
+5. Schedule Interviews
+6. Pray Throughout
+
+Call Every Monday - interview on Wednesdays
+
+Get this all together by 1.2.24
+
+## Entertain the Idea
+
+1. Working at Koffee? - 1.25k a month - do all the branding
+2. Working with Andrew - 2.75k a month
+
+## Terms
+
+## Options
+
+1. Go back to school and become a professor
+2. Get into a film making program
