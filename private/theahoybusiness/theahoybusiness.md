@@ -31,3 +31,24 @@ Or it could be an existing venue that's sponsored by ahoy?
 5. Original Sugar
 
 # List of People to have look at the investment before put it into the world
+
+
+# What would it look like to have this a non profit
+
+# expected funding every year
+
+
+# operations that can go on - in a volunteer basis
+
+# plan for self sufficiency 
+
+
+# how it would be structured
+
+# chief operators = salary
+
+# ag - chief executive director - 85k
+# part time - software executive - 24k a year
+# part time - editor - 24k
+# part time - studio mgmt - 12k
+# part time - 
