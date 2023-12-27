@@ -437,6 +437,70 @@ Several brands offer yurt kits, including Pacific Yurts, Freedom Yurt Cabins, Co
 
 The article positions yurts as an appealing option for those seeking an affordable, temporary tiny home, especially for homesteaders or while building a permanent tiny house. However, it also highlights the limitations and challenges of yurt living.
 
+### Option 3 = AFrame
+
+# A-Frame Tiny Houses: Comprehensive Guide
+
+## What is an A-Frame?
+
+A-Frame houses are known for their steeply angled sides that form the shape of the letter "A". Popular as cabins and vacation homes, they are now a part of the tiny house movement.
+
+## Modern A-Frame Tiny Houses
+
+Modern A-Frames are designed for both temporary retreats and full-time living, varying in size from small to moderate.
+
+## Pros and Cons of A-Frame Tiny Houses
+
+**Pros:**
+
+- Simple construction
+- Cost-effective
+- Durable under various weather conditions
+- Unique retro style
+- Minimalist design
+
+**Cons:**
+
+- Limited usable space due to sloping walls
+- Challenges in temperature control
+- Limited natural light
+- Difficult roof maintenance
+
+## A-Frame Tiny House Plans
+
+Availability of both free and purchasable A-Frame tiny house plans, catering to different preferences and needs.
+
+## Building an A-Frame Tiny House
+
+Relatively easy to construct, appealing for DIY builders. Basic tools and materials needed, with kits available for convenience.
+
+## Costs and Construction Tips
+
+Cost varies based on design and materials. Estimated cost for a basic 16' x 20' A-Frame tiny house is approximately $16,398.70.
+
+**Expert Tips:**
+
+- Ensure structural integrity
+- Select appropriate environment
+- Use durable materials for roofing and insulation
+- Plan for efficient electricity and HVAC
+
+## A-Frame on Foundation vs Trailer
+
+**On Foundation:**
+
+- More design flexibility
+- Generally less expensive
+
+**On Trailer:**
+
+- Offers mobility
+- Width restrictions due to transportation regulations
+
+## Design and Layouts
+
+Variety of layout ideas and design inspirations suitable for individuals, couples, or small families.
+
 # Links
 
 - https://thetinylife.com/living-in-a-shed/

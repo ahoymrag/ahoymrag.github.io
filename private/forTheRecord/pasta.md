@@ -24,3 +24,28 @@ As of 1.12.23
 
 0c0552
 attend.453.draw
+
+### MA PASTA
+
+#### MA bluehost
+
+website: bluehost.com
+username: anabaino.org
+pwd: 2015Mission!
+
+security pin = 135153
+
+### CPC Pasta
+
+CPC Pass
+
+podcast@cpcnewhaven.org
+2021trustdaL0RD!@#
+
+anchor.fm - cpc
+alex@cpcnewhaven.org
+trustdaL0RD!@#
+
+CMS Churchplant
+alex@cpcnewhaven.org
+2021trustdaL0RD!@#
