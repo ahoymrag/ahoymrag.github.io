@@ -1,236 +1,46 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <style>
-      body {
-        background-color: rgba(0, 0, 0, 0.843);
-        background-image: url("https://source.unsplash.com/random/800x600/?japanese,sunsets,autumn");
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
-      body::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        z-index: -1;
-        background: url("https://source.unsplash.com/random/800x600/?japanese,sunsets,autumn")
-          no-repeat center center fixed;
-        background-size: cover;
-        animation: kenburns 20s infinite;
-        transform: perspective(1000px) translateZ(0);
-      }
-
-      @keyframes kenburns {
-        0% {
-          transform: scale(1) translate(0);
-        }
-        50% {
-          transform: scale(1.1) translate(3%, 1%);
-        }
-        100% {
-          transform: scale(1) translate(0);
-        }
-      }
-
-      @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap");
-      html {
-        font-size: 50px;
-        font-family: "Barlow", sans-serif;
-        color: white;
-      }
-
-      header {
-        background-color: #33333375;
-        padding: 20px;
-        color: #fff;
-        font-family: "Old Standard TT", serif;
-      }
-
-      .header-main-wrap {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
-
-      .header-content-title-wrap h1 {
-        font-size: 36px;
-        margin: 0;
-      }
-
-      .header-content-menu-wrap {
-        display: flex;
-      }
-
-      .nav-ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-      }
-
-      .nav-ul li {
-        margin-right: 10px;
-      }
-
-      .nav-ul li a {
-        color: #fff;
-        text-decoration: none;
-        font-size: 18px;
-      }
-
-      .nav-ul li a:hover {
-        color: #ffd700;
-      }
-
-      nav a {
-        color: #fff;
-        text-decoration: none;
-        font-size: 20px;
-        margin-right: 10px;
-        text-align: center;
-      }
-
-      nav a:hover {
-        color: #ffd700;
-      }
-
-      nav div {
-        display: flex;
-        align-items: center;
-      }
-
-      nav div a {
-        color: #fff;
-        text-decoration: none;
-        font-size: 18px;
-        margin-right: 10px;
-      }
-
-      nav div a:hover {
-        color: #ffd700;
-      }
-    </style>
+    <link rel="stylesheet" href="../src/css/super-global.css" />
   </head>
   <body>
     <section>
       <h1>experiments</h1>
       <button
+        class="back-to-business-button"
         onclick="location.href='https://ahoy.ooo'"
-        style="
-          text-decoration: none;
-          color: #fff;
-          background: rgba(255, 0, 0, 0.1);
-          border: 1px solid rgba(255, 255, 255, 0.3);
-          padding: 10px;
-          margin-bottom: 10px;
-        "
       >
         ahoy.ooo - latest and greatest
       </button>
       <button
+        class="back-to-business-button"
         onclick="location.href='/1153/mainFrame/index.html'"
-        style="
-          text-decoration: none;
-          color: #fff;
-          background: rgba(0, 0, 0, 0.1);
-          border: 1px solid rgba(255, 255, 255, 0.3);
-          padding: 10px;
-          margin-bottom: 10px;
-        "
       >
         1153 mainFrame
       </button>
     </section>
 
-    <nav
-      style="
-        font-size: 2em;
-        color: #fff;
-        background-color: #333;
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-      "
-    >
-      <a
-        href="./index.html"
-        style="
-          text-decoration: none;
-          color: #fff;
-          background: rgba(255, 255, 255, 0.1);
-          border: 1px solid rgba(255, 255, 255, 0.3);
-          padding: 10px;
-          margin-bottom: 10px;
-        "
-        >Back to Experiments</a
-      >
-      <a
-        href="/coocoo/index.html"
-        style="
-          text-decoration: none;
-          color: #fff;
-          background: rgba(255, 255, 255, 0.1);
-          border: 1px solid rgba(255, 255, 255, 0.3);
-          padding: 10px;
-          margin-bottom: 10px;
-        "
+    <nav>
+      <a class="back-to-business-button" href="/coocoo/index.html"
         >COOCOO Cinema</a
       >
-      <a
-        href="../blog/index.html"
-        style="
-          text-decoration: none;
-          color: #fff;
-          background: rgba(255, 255, 255, 0.1);
-          border: 1px solid rgba(255, 255, 255, 0.3);
-          padding: 10px;
-          margin-bottom: 10px;
-        "
-        >Blog</a
-      >
-      <a
-        href="./graph_viz-whiz.html"
-        style="
-          text-decoration: none;
-          color: #fff;
-          background: rgba(255, 255, 255, 0.1);
-          border: 1px solid rgba(255, 255, 255, 0.3);
-          padding: 10px;
-          margin-bottom: 10px;
-        "
+      <a class="back-to-business-button" href="../blog/index.html">Blog</a>
+      <a class="back-to-business-button" href="./graph_viz-whiz.html"
         >Graph Viz</a
       >
-      <a
-        href="./colorRefinement.html"
-        style="
-          text-decoration: none;
-          color: #fff;
-          background: rgba(255, 255, 255, 0.1);
-          border: 1px solid rgba(255, 255, 255, 0.3);
-          padding: 10px;
-          margin-bottom: 10px;
-        "
+      <a class="back-to-business-button" href="./colorRefinement.html"
         >Color Refinement</a
       >
-      <a
-        href="../1153/writing/reader.html"
-        style="
-          text-decoration: none;
-          color: #fff;
-          background: rgba(255, 255, 255, 0.1);
-          border: 1px solid rgba(255, 255, 255, 0.3);
-          padding: 10px;
-          margin-bottom: 10px;
-        "
+      <a class="back-to-business-button" href="../1153/writing/reader.html"
         >Markdown Reader App</a
+      >
+      <a class="back-to-business-button" href="../1153/business.html"
+        >The Business</a
       >
     </nav>
 
     <nav class="home-button-wrap">
-      <a class="home-button-link" href="../index.html">Home</a>
+      <a class="home-button" href="../index.html">Home</a>
     </nav>
   </body>
 </html>
