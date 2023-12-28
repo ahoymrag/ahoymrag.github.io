@@ -1,81 +1,111 @@
-:root {
-  --primary-color: #3498db; /* Blue */
-  --secondary-color: #ff9595; /* Pink */
-  --tertiary-color: #ffff00; /* Yellow */
-  --quaternary-color: #000000; /* Black */
-  --quinary-color: #ffffff; /* White */
-  --black: #000000;
-  --white: #ffffff;
-  --grey: #7f8c8d;
+/* ag-cv.css */
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
 }
 
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: var(--secondary-color);
-  color: #333333;
-  line-height: 1.6;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  color: #333;
+  background-color: #fff;
+  padding: 24px;
 }
+
 .container {
-  width: 75%;
-  margin: 20px auto;
-  background: #ffffff;
-  padding: 20px;
+  border: 1px solid #ddd;
+  padding: 24px;
+  background: #fff;
+  max-width: 8.5in;
+  margin: auto;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.resume-section {
-  margin-bottom: 20px;
-}
-.resume-section h2 {
-  border-bottom: 2px solid #333333;
-  color: #333333;
-  font-size: 24px;
-  padding-bottom: 5px;
+
+h1 {
+  font-size: 36px;
+  font-weight: 700;
   margin-bottom: 10px;
 }
-.resume-section h3 {
-  color: #666666;
-  font-size: 18px;
+
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000000;
   margin-bottom: 5px;
 }
-.resume-section p {
-  font-size: 14px;
-  margin-bottom: 10px;
+
+.section {
+  margin-bottom: 20px;
 }
-@media print {
-  body {
-    width: 100%;
-  }
-  .container {
-    width: 100%;
-    box-shadow: none;
-    padding: 10px;
-  }
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
 }
-.print-button {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  padding: 10px 20px;
-  font-size: 20px;
-  background-color: #333333;
-  color: #ffffff;
-  border: none;
-  cursor: pointer;
+
+ul li {
+  margin-bottom: 5px;
+  padding-left: 20px;
+  position: relative;
+}
+
+ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #bbb;
+}
+
+.position,
+.company,
+.year,
+.degree,
+.major,
+.school,
+.graduation-date,
+.title,
+.institution,
+.role,
+.project {
+  font-weight: bold;
 }
 
 #download {
-  background-color: #333333;
+  background-color: #3498db;
   color: #ffffff;
-  border: none;
   padding: 10px 20px;
-  font-size: 20px;
+  font-size: 16px;
+  border: none;
   cursor: pointer;
   margin-top: 20px;
   transition: background-color 0.3s ease;
 }
 
 #download:hover {
-  background-color: #666666;
+  background-color: #2980b9;
+}
+
+@media print {
+  body,
+  .container {
+    box-shadow: none;
+  }
+
+  #download {
+    display: none;
+  }
 }

@@ -66,7 +66,7 @@
       ]
     },
     {
-      "title": "Instructor",
+      "title": "Adjunct Professor",
       "institution": "Suny New Paltz",
       "location": "New Paltz, NY",
       "year": "2019-2021",
@@ -77,7 +77,7 @@
       ]
     },
     {
-      "title": "Adjunct Professor",
+      "title": "Instructor",
       "institution": "Wilton Library - Maker Program",
       "location": "Wilton, CT",
       "year": "2019",
@@ -91,7 +91,7 @@
       "courses_taught": ["Immersive Storytelling", "VR Production"]
     },
     {
-      "title": "Adjunct Professor",
+      "title": "Creative Resident Instructor",
       "institution": "New Haven Ives Squared - Maker Program",
       "location": "New Haven, CT",
       "year": "2018",
@@ -110,8 +110,8 @@
       ]
     },
     {
-      "title": "Adjunct Professor",
-      "institution": "Maker-in-Residence | Ridgefield Library",
+      "title": "Maker-in-Residence",
+      "institution": "| Ridgefield Library",
       "location": "Ridgefield, CT",
       "year": "2018",
       "courses_taught": ["Making Magic from Scratch", "Immersive Storytelling"]
@@ -143,6 +143,46 @@
       "role": "Producer | Director | Editor",
       "project": "The Rob Show",
       "year": "2022-2023"
+    },
+    {
+      "role": "Director | Editor",
+      "project": "Silverback Trailer",
+      "year": "2023"
+    },
+    {
+      "role": "Director | Editor",
+      "project": "Pantalones Intro",
+      "year": "2023"
+    },
+    {
+      "role": "Director | Editor",
+      "project": "ChaosNet Trailer",
+      "year": "2023"
+    },
+    {
+      "role": "Music Video Director",
+      "project": "Color Fields - Pendulum",
+      "year": "2020"
+    },
+    {
+      "role": "Music Video Director",
+      "project": "Color Fields - Summertime",
+      "year": "2020"
+    },
+    {
+      "role": "Director | Editor",
+      "project": "Pal-Bot 2",
+      "year": "2020"
+    },
+    {
+      "role": "Director | Editor",
+      "project": "King Gustavo Loves Blueberry Pancakes",
+      "year": "2019"
+    },
+    {
+      "role": "Director | Editor",
+      "project": "Beyond the Mountain",
+      "year": "2017"
     }
   ],
   "tangible_skills": [

@@ -20,89 +20,92 @@
 
           // Contact
           resumeDiv.innerHTML += `<div class="section">
-                    <h2>Contact</h2>
-                    <ul>
-                        <li>Phone: ${resume.contact.phone}</li>
-                        <li>Email: ${resume.contact.email}</li>
-                        <li>Portfolio: ${resume.contact.portfolio}</li>
-                    </ul>
-                </div>`;
+                  <h2>Contact</h2>
+                  <ul>
+                      <li>Phone: ${resume.contact.phone}</li>
+                      <li>Email: ${resume.contact.email}</li>
+                      <li>Portfolio: ${resume.contact.portfolio}</li>
+                  </ul>
+              </div>`;
 
           // Professional Summary
           resumeDiv.innerHTML += `<div class="section">
-                    <h2>Professional Summary</h2>
-                    <p>${resume.professional_summary}</p>
-                </div>`;
+                  <h2>Professional Summary</h2>
+                  <p>${resume.professional_summary}</p>
+              </div>`;
 
           // Work Experience
           var workExperienceHTML = resume.work_experience
             .map(
               (job) =>
-                `<li>${job.title} at ${job.company} (${job.year}): ${job.description}</li>`
+                `<li><span class="position">${job.title}</span> at <span class="company">${job.company}</span> (<span class="year">${job.year}</span>): ${job.description}</li>`
             )
             .join("");
           resumeDiv.innerHTML += `<div class="section">
-                    <h2>Work Experience</h2>
-                    <ul>${workExperienceHTML}</ul>
-                </div>`;
+                  <h2>Work Experience</h2>
+                  <ul>${workExperienceHTML}</ul>
+              </div>`;
 
           // Education
           var educationHTML = resume.education
             .map(
               (edu) =>
-                `<li>${edu.degree} in ${edu.major} from ${edu.school} (Graduated: ${edu.graduation_date})</li>`
+                `<li><span class="degree">${edu.degree}</span> in <span class="major">${edu.major}</span> from <span class="school">${edu.school}</span> (Graduated: <span class="graduation-date">${edu.graduation_date}</span>)</li>`
             )
             .join("");
           resumeDiv.innerHTML += `<div class="section">
-            <h2>Education</h2>
-            <ul>${educationHTML}</ul>
-        </div>`;
+              <h2>Education</h2>
+              <ul>${educationHTML}</ul>
+          </div>`;
 
           // Teaching Experience
           var teachingExperienceHTML = resume.teaching_experience
             .map(
               (teach) =>
-                `<li>${teach.title} at ${teach.institution}, ${
-                  teach.location
-                } (${teach.year}). Courses Taught: ${teach.courses_taught.join(
-                  ", "
-                )}</li>`
+                `<li><span class="title">${
+                  teach.title
+                }</span> at <span class="institution">${
+                  teach.institution
+                }</span>, ${teach.location} (${
+                  teach.year
+                }). Courses Taught: ${teach.courses_taught.join(", ")}</li>`
             )
             .join("");
           resumeDiv.innerHTML += `<div class="section">
-            <h2>Teaching Experience</h2>
-            <ul>${teachingExperienceHTML}</ul>
-        </div>`;
+              <h2>Teaching Experience</h2>
+              <ul>${teachingExperienceHTML}</ul>
+          </div>`;
 
           // Recent VR and Filmmaking Experience
           var vrFilmMakingExperienceHTML =
             resume.recent_vr_and_film_making_experience
               .map(
-                (exp) => `<li>${exp.role} for ${exp.project} (${exp.year})</li>`
+                (exp) =>
+                  `<li><span class="role">${exp.role}</span> for <span class="project">${exp.project}</span> (${exp.year})</li>`
               )
               .join("");
           resumeDiv.innerHTML += `<div class="section">
-            <h2>Recent VR and Filmmaking Experience</h2>
-            <ul>${vrFilmMakingExperienceHTML}</ul>
-        </div>`;
+              <h2>Recent VR and Filmmaking Experience</h2>
+              <ul>${vrFilmMakingExperienceHTML}</ul>
+          </div>`;
 
           // Tangible Skills
           var tangibleSkillsHTML = resume.tangible_skills
             .map((skill) => `<li>${skill}</li>`)
             .join("");
           resumeDiv.innerHTML += `<div class="section">
-            <h2>Tangible Skills</h2>
-            <ul>${tangibleSkillsHTML}</ul>
-        </div>`;
+              <h2>Tangible Skills</h2>
+              <ul>${tangibleSkillsHTML}</ul>
+          </div>`;
 
           // Selected Achievements
           var selectedAchievementsHTML = resume.selected_achievements
             .map((achieve) => `<li>${achieve}</li>`)
             .join("");
           resumeDiv.innerHTML += `<div class="section">
-            <h2>Selected Achievements</h2>
-            <ul>${selectedAchievementsHTML}</ul>
-        </div>`;
+              <h2>Selected Achievements</h2>
+              <ul>${selectedAchievementsHTML}</ul>
+          </div>`;
 
           // Additional Information
           var additionalInformationHTML = Object.entries(
@@ -116,31 +119,26 @@
             )
             .join("");
           resumeDiv.innerHTML += `<div class="section">
-            <h2>Additional Information</h2>
-            <ul>${additionalInformationHTML}</ul>
-        </div>`;
+              <h2>Additional Information</h2>
+              <ul>${additionalInformationHTML}</ul>
+          </div>`;
 
           // Cover Letter
           var coverLetter = resume.cover_letter.letter.replace(/\n/g, "<br />");
           resumeDiv.innerHTML += `<div class="section">
-
-            <h2>Cover Letter</h2>
-            <p>${coverLetter}</p>
-        </div>`;
+              <h2>Cover Letter</h2>
+              <p>${coverLetter}</p>
+          </div>`;
         });
     </script>
     <script>
-      // Your existing code...
-
       document
         .getElementById("download")
         .addEventListener("click", function () {
-          console.log("Button clicked"); // This will log to the console when the button is clicked
           var doc = new jsPDF();
           doc.fromHTML(document.getElementById("resume").innerHTML, 15, 15, {
             width: 170,
           });
-          console.log("PDF generated"); // This will log to the console when the PDF is generated
           doc.save("Alex Gonzalez - 2023 resume.pdf");
         });
     </script>
