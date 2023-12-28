@@ -3,6 +3,7 @@
   <head>
     <title>Alex Gonzalez's Resume</title>
     <link rel="stylesheet" href="./ag-cv.css" />
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   </head>
   <body>
     <div class="container" id="resumeContainer">
@@ -11,37 +12,14 @@
     <!-- Add a print button -->
     <button class="print-button" onclick="window.print()">Print as PDF</button>
     <script>
-      // Resume content
-      const resumeContent = {
-        "Professional Summary":
-          "Professional with a passion for visual storytelling and a background in film production and education. Front-end developer by day, passionate filmmaker by night, entrepreneur by disease. Proven track record in leading creative teams, fostering innovation, and delivering impactful projects. Strong expertise in developing and implementing multimedia strategies, new technologies, and getting shit done. Excellent communication and interpersonal skills.",
-        "Recent Work Experience": {
-          "Executive Digital Platform Director - Mission Anabaino":
-            "2023 - Created a system for new church plants to have a baselevel foundation of technology.",
-          "Product Designer - Apeworx":
-            "2023 - Present - Collaborated with cross-functional teams to create innovative and user-centered design solutions.",
-          "Creative Director - Apeworx":
-            "2021 - 2023 - Led a team of designers, writers, and artists to create compelling visual content for clients.",
-          // Other experiences can be added similarly
-        },
-        Education:
-          "Bachelor of Arts and Science: New Media Film, Journalism\nFairfield University | May 2012",
-        "Teaching Experience":
-          "Adjunct Professor at Choate Rosemary Hall, SUNY New Paltz, Wilton Library - Maker Program, and others.",
-        "Recent VR & Filmmaking Experience":
-          "Producer | Director | Editor of The Rob Show (2022-2023), Smoking Theologians (2020-2022), and others.",
-        "Tangible Skills":
-          "Unreal Engine 4 + 5, Adobe Premiere Pro, Adobe After Effects, and others.",
-        "Selected Achievements":
-          "Winner of 2022 - ETH DENVER HACKATHON, Creative-in-Residence at New Haven Public Library (2018), and others.",
-        "Additional Information":
-          "Portfolio: alexgonzalez.ooo\nReferences available upon request",
-        "Cover Letter Summary":
-          "The cover letter for Alex Gonzalez is tailored for a creative industry role, emphasizing his diverse skill set in VR development, filmmaking, and teaching.",
-      };
+      // Fetch the JSON data from the file
+      fetch("./alexresume23.json")
+        .then((response) => response.json())
+        .then((data) => populateResume(data))
+        .catch((error) => console.error("Error:", error));
 
       // Function to populate resume content into HTML
-      function populateResume() {
+      function populateResume(resumeContent) {
         const resumeContainer = document.getElementById("resumeContainer");
         for (const [section, content] of Object.entries(resumeContent)) {
           const sectionElement = document.createElement("div");
@@ -70,9 +48,6 @@
           resumeContainer.appendChild(sectionElement);
         }
       }
-
-      // Call the function on window load
-      window.onload = populateResume;
     </script>
   </body>
 </html>
