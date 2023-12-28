@@ -75,6 +75,67 @@
         "Digital Photography I",
         "Digital Photography II"
       ]
+    },
+    {
+      "title": "Adjunct Professor",
+      "institution": "Wilton Library - Maker Program",
+      "location": "Wilton, CT",
+      "year": "2019",
+      "courses_taught": ["VR World Building"]
+    },
+    {
+      "title": "Adjunct Professor",
+      "institution": "Workspace Academy",
+      "location": "Bethel, CT",
+      "year": "2019",
+      "courses_taught": ["Immersive Storytelling", "VR Production"]
+    },
+    {
+      "title": "Adjunct Professor",
+      "institution": "New Haven Ives Squared - Maker Program",
+      "location": "New Haven, CT",
+      "year": "2018",
+      "courses_taught": ["Immersive Storytelling", "VR World Building"]
+    },
+    {
+      "title": "Adjunct Professor",
+      "institution": "Jacob Burns Film Center",
+      "location": "Pleasantville, NY",
+      "year": "2017-2019",
+      "courses_taught": [
+        "Adventures in Media",
+        "Immersive Storytelling",
+        "Podcast People",
+        "Camera Tricks"
+      ]
+    },
+    {
+      "title": "Adjunct Professor",
+      "institution": "Maker-in-Residence | Ridgefield Library",
+      "location": "Ridgefield, CT",
+      "year": "2018",
+      "courses_taught": ["Making Magic from Scratch", "Immersive Storytelling"]
+    },
+    {
+      "title": "Adjunct Professor",
+      "institution": "Yonkers Public Library",
+      "location": "Yonkers, NY",
+      "year": "2017-2018",
+      "courses_taught": ["Making Magic from Scratch"]
+    },
+    {
+      "title": "Adjunct Professor",
+      "institution": "Coding Kidz",
+      "location": "NY, NY",
+      "year": "2016-2017",
+      "courses_taught": ["Making Magic from Scratch"]
+    },
+    {
+      "title": "Adjunct Professor",
+      "institution": "Tarrytown Summer Challenge Camp",
+      "location": "Tarrytown, NY",
+      "year": "2015-2018",
+      "courses_taught": ["Making Magic from Scratch"]
     }
   ],
   "recent_vr_and_film_making_experience": [
@@ -86,22 +147,33 @@
   ],
   "tangible_skills": [
     "Unreal Engine 4 + 5",
+    "Development of APK for Oculus Quest 2",
+    "Development of APK for Android Devices",
     "Adobe Premiere Pro",
+    "DaVanici Resolve",
     "Adobe After Effects",
-    "Video and Audio Production",
+    "Cordova Mobile App Development",
+    "Basic Firebase + Supabase Backend Development",
+    "Stripe API intergrations",
     "Virtual Reality Development",
     "Writing for Media/Screen",
     "Curriculum Development",
     "Web Development",
+    "Davinci Resolve Color Grading",
     "Film Editing/SFX Artist",
     "Public Relations",
     "Object-Oriented Programming",
-    "HTML5 Canvas",
-    "CSS Preprocessors",
+    "Objective C",
+    "HTML5",
+    "CSS3",
     "Responsive Design",
-    "JavaScript Frameworks",
-    "Version Control",
-    "Web Accessibility",
+    "Basic React",
+    "Basic Python",
+    "D3 Javascript Libraries",
+    "Three.JS 3d Javascript Animation",
+    "Dragon Capture - Stop Motion",
+    "Git Version Control",
+    "Web Accessibility (WCAG)",
     "Performance Optimization",
     "Testing and Debugging",
     "Web Performance",
