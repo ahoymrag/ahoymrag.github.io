@@ -18,43 +18,31 @@
       "title": "Product Designer",
       "company": "Apeworx",
       "year": "2023 - Present",
-      "description": "Collaborated with cross-functional teams to create innovative and user-centered design solutions. Implemented designs using a combination of web2 and web3 front-end technologies. Gathered insights through user research and usability testing. Developed wireframes, prototypes, and visual designs to communicate the desired user experience. Collaborated with product managers and stakeholders to define product goals and requirements. Managed project timelines, budgets, and resources."
+      "description": "Collaborated with cross-functional teams to create innovative and user-centered design solutions."
     },
     {
       "title": "Creative Director",
       "company": "Apeworx",
       "year": "2021 - 2023",
-      "description": "Led a team of designers, writers, and artists to create compelling visual content for clients. Developed and implemented creative strategies for branding, marketing campaigns, and multimedia projects. Collaborated with clients to understand their vision and provide innovative solutions. Managed project timelines, budgets, and resources."
+      "description": "Led a team of designers, writers, and artists to create compelling visual content for clients."
     },
     {
       "title": "Founder - Chief",
       "company": "Ahoy Indie Media",
       "year": "2022 - Present",
-      "description": "Led the strategic vision and direction of Ahoy Indie Media. Developed and implemented strategies to establish the company as a leading alternative media provider. Coded - line by line - piece by piece - the original version of the platform - and learned a lot along the way. Oversaw all aspects of operations, including budgeting, resource allocation, and performance management. Fostered a creative and collaborative work environment. Identified and pursued new business opportunities. Developed and executed marketing and promotional campaigns."
+      "description": "Led the strategic vision and direction of Ahoy Indie Media."
     },
     {
       "title": "Adjunct Film Professor",
       "company": "Choate Rosemary",
       "year": "2023",
-      "description": "Taught undergraduate preparatory courses in Film Studies, including Introduction to Film, Screenwriting, and Film Production. Developed course syllabi and lesson plans. Mentored and guided students in their creative projects. Stayed updated with industry trends and integrated relevant techniques and technologies into the curriculum."
+      "description": "Taught undergraduate preparatory courses in Film Studies."
     },
     {
       "title": "AV Director",
       "company": "CPC New Haven",
       "year": "2020 - Present",
-      "description": "Oversaw the audiovisual department, managing equipment setup, troubleshooting, and maintenance. Provided technical support for live events. Collaborated with event organizers to ensure seamless execution of audiovisual requirements. Trained staff on equipment operation and best practices."
-    },
-    {
-      "title": "Executive Digital Platform Director",
-      "company": "Mission Anabaino",
-      "year": "2023a",
-      "description": "Created a system for new church plants to have a baselevel foundation of technology."
-    },
-    {
-      "title": "Creative Director - Product Designer",
-      "company": "ApeWorx,LTD",
-      "year": "2023",
-      "description": "Created a system for new church plants to have a baselevel foundation of technology."
+      "description": "Oversaw the audiovisual department."
     }
   ],
   "education": [
@@ -87,85 +75,6 @@
         "Digital Photography I",
         "Digital Photography II"
       ]
-    },
-    {
-      "title": "Adjunct Professor",
-      "institution": "Choate Rosemary Hall",
-      "location": "Wallingford, CT",
-      "year": "2023",
-      "courses_taught": [
-        "Digital Filmmaking II",
-        "Digital Photography I",
-        "Digital Photography II"
-      ]
-    },
-    {
-      "title": "Adjunct Professor",
-      "institution": "SUNY New Paltz",
-      "location": "New Paltz, NY",
-      "year": "2019 - 2021",
-      "courses_taught": ["Brand Development", "Web Design", "Entrepreneurship"]
-    },
-    {
-      "title": "Adjunct Professor",
-      "institution": "Wilton Library - Maker Program",
-      "location": "Wilton, CT",
-      "year": "2019",
-      "courses_taught": ["VR World Building"]
-    },
-    {
-      "title": "Adjunct Professor",
-      "institution": "Workspace Academy",
-      "location": "Bethel, CT",
-      "year": "2019",
-      "courses_taught": ["Immersive Storytelling", "VR Production"]
-    },
-    {
-      "title": "Adjunct Professor",
-      "institution": "New Haven Ives Squared - Maker Program",
-      "location": "New Haven, CT",
-      "year": "2018",
-      "courses_taught": ["Immersive Storytelling", "VR World Building"]
-    },
-    {
-      "title": "Adjunct Professor",
-      "institution": "Jacob Burns Film Center",
-      "location": "Pleasantville, NY",
-      "year": "2017-2019",
-      "courses_taught": [
-        "Adventures in Media",
-        "Immersive Storytelling",
-        "Podcast People",
-        "Camera Tricks"
-      ]
-    },
-    {
-      "title": "Adjunct Professor",
-      "institution": "Maker-in-Residence | Ridgefield Library",
-      "location": "Ridgefield, CT",
-      "year": "2018",
-      "courses_taught": ["Making Magic from Scratch", "Immersive Storytelling"]
-    },
-    {
-      "title": "Adjunct Professor",
-      "institution": "Yonkers Public Library",
-      "location": "Yonkers, NY",
-      "year": "2017-2018",
-      "courses_taught": ["Making Magic from Scratch"]
-    },
-    {
-      "title": "Adjunct Professor",
-      "institution": "Coding Kidz",
-      "location": "NY, NY",
-      "year": "2016-2017",
-      "courses_taught": ["Making Magic from Scratch"]
-    },
-    {
-      "title": "Adjunct Professor",
-      "institution": "Tarrytown Summer Challenge Camp",
-      "location": "Tarrytown, NY",
-      "year": "2015-2018",
-      "courses_taught": ["Making Magic from Scratch"]
     }
   ],
   "recent_vr_and_film_making_experience": [
@@ -178,11 +87,8 @@
   "tangible_skills": [
     "Unreal Engine 4 + 5",
     "Adobe Premiere Pro",
-    "DaVanici Resolve",
     "Adobe After Effects",
-    "Cordova Mobile App Development",
-    "Basic Firebase + Supabase Backend Development",
-    "Stripe API intergrations",
+    "Video and Audio Production",
     "Virtual Reality Development",
     "Writing for Media/Screen",
     "Curriculum Development",
@@ -191,18 +97,18 @@
     "Public Relations",
     "Object-Oriented Programming",
     "HTML5 Canvas",
-    "CSS Preprocessors (e.g., Sass, Less)",
+    "CSS Preprocessors",
     "Responsive Design",
-    "JavaScript Frameworks (e.g., React, Angular, Vue)",
-    "Version Control (e.g., Git)",
-    "Web Accessibility (WCAG)",
+    "JavaScript Frameworks",
+    "Version Control",
+    "Web Accessibility",
     "Performance Optimization",
     "Testing and Debugging",
     "Web Performance",
     "Web Security"
   ],
   "selected_achievements": [
-    "Winner of 2022 - ETH DENVER Vega HACKATHON - For reimagining 'Vega's Etherscan's Blockchain UI'",
+    "Winner of 2022 - ETH DENVER Vega HACKATHON",
     "Creative-in-Residence, New Haven Public Library, 2018",
     "Maker-in-Residence, Ridgefield Library, 2018",
     "Creative Culture Fellowship, Creative Culture Program - Jacob Burns, 2017",
@@ -212,8 +118,7 @@
     "portfolio": "alexgonzalez.ooo",
     "references": "available upon request"
   },
-
   "cover_letter": {
-    "letter": "The cover letter for Alex Gonzalez is tailored for a creative industry role, emphasizing his diverse skill set in VR development, filmmaking, and teaching. It highlights his recent work experiences and achievements, including his role as Executive Digital Platform Director at Mission Anabaino and Creative Director and Product Designer at Apeworx. His education and extensive teaching experience in various fields, including VR World Building and Immersive Storytelling, UI - Web 3 - Blockchain Software - are also detailed. The cv hopes to showcase tangible skills in areas like Unreal Engine, Adobe Suite, and web development. Alex's commitment to innovation and creative storytelling is evident throughout the letter, making him an ideal candidate for a position in the creative industry"
+    "letter": "My name is Alex Gonzalez. I am passionate about working with creative individuals and challenging myself alongside the best engineers and artists in the world. I thrive on projects that are wild, challenging, and can stress test my life's skillset.\n\nI enjoy teaching and enjoy working with students on creative projects, regardless of their familiarity with my field. I teach various programs a couple of times a year, ranging from renowned film centers to humble startup library after-school programs.\n\nCurrently, I reside in New Haven, CT, surrounded by a vibrant network of friends, fellow developers, and the arts and church community. I have an office above MakeHaven, a paradise for meeting like-minded individuals.\n\nI am seeking an organization that values creativity and innovation, where I can freely create ideas and prototypes. I believe I would thrive in an environment where the focus is not solely on financial gain but on exploratory and visionary work, bringing forth new technology and ideas.\n\nI have a proven track record, having won hackathons and served as the core principle idea man at my previous companies. For the last three years, I served as a creative director at a startup blockchain software development company. I led multiple teams, managed projects, and built products from scratch.\n\nI am eager to apply the lessons I've learned from my past experiences to help others and try again, this time wiser, stronger, and more capable. I am the silver bullet you won't regret. Please feel free to contact me.\n\nBest regards,\nAlex"
   }
 }

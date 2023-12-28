@@ -3,9 +3,11 @@
   <head>
     <title>Alex Gonzalez Resume</title>
     <link rel="stylesheet" href="./ag-cv.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"></script>
   </head>
   <body>
     <div id="resume" class="container"></div>
+    <button id="download">Print as PDF</button>
     <script>
       fetch("./alexresume23.json")
         .then((response) => response.json())
@@ -119,10 +121,25 @@
         </div>`;
 
           // Cover Letter
+          var coverLetter = resume.cover_letter.letter.replace(/\n/g, "<br />");
           resumeDiv.innerHTML += `<div class="section">
+
             <h2>Cover Letter</h2>
-            <p>${resume.cover_letter.letter}</p>
+            <p>${coverLetter}</p>
         </div>`;
+        });
+    </script>
+    <script>
+      // Your existing code...
+
+      document
+        .getElementById("download")
+        .addEventListener("click", function () {
+          var doc = new jsPDF();
+          doc.fromHTML(document.getElementById("resume").innerHTML, 15, 15, {
+            width: 170,
+          });
+          doc.save("Alex Gonzalez - 2023 resume.pdf");
         });
     </script>
   </body>

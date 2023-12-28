@@ -53,3 +53,18 @@ body {
   border: none;
   cursor: pointer;
 }
+
+#download {
+  background-color: #333333;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+#download:hover {
+  background-color: #666666;
+}

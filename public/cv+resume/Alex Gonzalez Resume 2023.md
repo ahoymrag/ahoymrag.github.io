@@ -105,3 +105,38 @@ The cover letter for Alex Gonzalez is tailored for a creative industry role, emp
 A review of a robot from my work:
 
 "The cover letter for Alex Gonzalez is tailored for a creative industry role, emphasizing his diverse skill set in VR development, filmmaking, and teaching. It highlights his recent work experiences and achievements, including his role as Executive Digital Platform Director at Mission Anabaino and Creative Director and Product Designer at Apeworx. His education and extensive teaching experience in various fields, including VR World Building and Immersive Storytelling, UI - Web 3 - Blockchain Software - are also detailed. The cv hopes to showcase tangible skills in areas like Unreal Engine, Adobe Suite, and web development. Alex's commitment to innovation and creative storytelling is evident throughout the letter, making him an ideal candidate for a position in the creative industry."
+
+"tangible_skills": [
+"Unreal Engine 4 + 5",
+"Development of APK for Oculus Quest 2",
+"Development of APK for Android Devices",
+"Adobe Premiere Pro",
+"DaVanici Resolve",
+"Adobe After Effects",
+"Cordova Mobile App Development",
+"Basic Firebase + Supabase Backend Development",
+"Stripe API intergrations",
+"Virtual Reality Development",
+"Writing for Media/Screen",
+"Curriculum Development",
+"Web Development",
+"Davinci Resolve Color Grading",
+"Film Editing/SFX Artist",
+"Public Relations",
+"Object-Oriented Programming",
+"Objective C",
+"HTML5",
+"CSS3",
+"Responsive Design",
+"Basic React",
+"Basic Python",
+"D3 Javascript Libraries",
+"Three.JS 3d Javascript Animation",
+"Dragon Capture - Stop Motion",
+"Git Version Control",
+"Web Accessibility (WCAG)",
+"Performance Optimization",
+"Testing and Debugging",
+"Web Performance",
+"Web Security"
+],
