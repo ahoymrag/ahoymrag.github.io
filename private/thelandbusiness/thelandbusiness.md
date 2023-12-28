@@ -503,5 +503,5 @@ Variety of layout ideas and design inspirations suitable for individuals, couple
 
 # Links
 
-- https://thetinylife.com/living-in-a-shed/
-- https://thetinylife.com/living-in-a-yurt/
+- [Living in a Shed](https://thetinylife.com/living-in-a-shed/)
+- [Living in a Yurt](https://thetinylife.com/living-in-a-yurt/)
