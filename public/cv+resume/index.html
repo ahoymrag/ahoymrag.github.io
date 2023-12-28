@@ -2,6 +2,16 @@
 <html>
   <head>
     <title>Alex Gonzalez Resume</title>
+    <meta
+      name="description"
+      content="This is the resume of Alex Gonzalez, a professional with diverse experience."
+    />
+    <meta
+      name="keywords"
+      content="Alex Gonzalez, Resume, Professional Experience, Education, Skills"
+    />
+    <meta name="author" content="Alex Gonzalez" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="icon"
       type="image/png"
@@ -12,7 +22,12 @@
   </head>
   <body>
     <div id="resume" class="container"></div>
-    <button id="download">Print as PDF</button>
+    <div class="home-button-wrap">
+      <button id="download">Print as PDF</button>
+
+      <a href="/" class="home-button-link">Home</a>
+    </div>
+
     <script>
       fetch("./alexresume23.json")
         .then((response) => response.json())
