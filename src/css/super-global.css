@@ -1,0 +1,121 @@
+:root {
+  --primary-color: #3498db; /* Blue */
+  --secondary-color: #ff0060; /* Pink */
+  --tertiary-color: #ffff00; /* Yellow */
+  --quaternary-color: #000000; /* Black */
+  --quinary-color: #ffffff; /* White */
+  --black: #000000;
+  --white: #ffffff;
+  --grey: #7f8c8d;
+}
+
+h1 {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 900;
+  font-size: clamp(1rem, -0.875rem + 10.333vw, 15.5rem);
+  line-height: 84.5%;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 900;
+  font-size: clamp(1rem, -0.875rem + 5.333vw, 7.5rem);
+  line-height: 84.5%;
+  /* or 75px */
+
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h3 {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 74.5%;
+  /* or 18px */
+
+  text-align: center;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 2vw;
+  line-height: 74.5%;
+  /* or 18px */
+
+  text-align: center;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+h5 {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 2vw;
+  line-height: 74.5%;
+  /* or 18px */
+
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+a {
+  color: var(--black);
+  font-family: "Barlow";
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--secondary-color);
+  text-decoration: underline;
+}
+
+p {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(1rem, -0.875rem + 2.333vw, 3.5rem);
+
+  /* or 75px */
+
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+
+.home-button {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 25px;
+  color: var(--black);
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "Barlow";
+  font-weight: 700;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.home-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+}

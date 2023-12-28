@@ -3,6 +3,17 @@
 /* FONTS H1, H3 = BARLOW */
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700;800;900&display=swap");
 
+:root {
+  --primary-color: #3498db; /* Blue */
+  --secondary-color: #ff0060; /* Pink */
+  --tertiary-color: #ffff00; /* Yellow */
+  --quaternary-color: #000000; /* Black */
+  --quinary-color: #ffffff; /* White */
+  --black: #000000;
+  --white: #ffffff;
+  --grey: #7f8c8d;
+}
+
 html {
   /* width:1280px; */
   height: 832px;
@@ -364,4 +375,20 @@ p {
   height: 50px;
   text-align: center;
   text-transform: uppercase;
+}
+
+.top-footer {
+  position: relative;
+  z-index: 30;
+}
+
+.top-footer a {
+  font-family: "Barlow";
+  text-decoration: none;
+  color: var(--black);
+}
+
+.top-footer a:hover {
+  text-decoration: underline;
+  color: var(--secondary-color);
 }
