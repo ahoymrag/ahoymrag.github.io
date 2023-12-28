@@ -2,7 +2,7 @@
 
 ## ALEX GONZALEZ
 
-Creative Director | VR Developer | Filmmaker | Occasional Adjunct Professor | AV el Captain  
+Creative Director | Digital Product Designer | Filmmaker | Occasional Adjunct Professor | AV Captain | VR Developer | Aspiring Professional
 Phone: (914) 391-9934 | Email: alex@ahoy.ooo  
 Portfolio: alexgonzalez.ooo
 

@@ -87,6 +87,85 @@
         "Digital Photography I",
         "Digital Photography II"
       ]
+    },
+    {
+      "title": "Adjunct Professor",
+      "institution": "Choate Rosemary Hall",
+      "location": "Wallingford, CT",
+      "year": "2023",
+      "courses_taught": [
+        "Digital Filmmaking II",
+        "Digital Photography I",
+        "Digital Photography II"
+      ]
+    },
+    {
+      "title": "Adjunct Professor",
+      "institution": "SUNY New Paltz",
+      "location": "New Paltz, NY",
+      "year": "2019 - 2021",
+      "courses_taught": ["Brand Development", "Web Design", "Entrepreneurship"]
+    },
+    {
+      "title": "Adjunct Professor",
+      "institution": "Wilton Library - Maker Program",
+      "location": "Wilton, CT",
+      "year": "2019",
+      "courses_taught": ["VR World Building"]
+    },
+    {
+      "title": "Adjunct Professor",
+      "institution": "Workspace Academy",
+      "location": "Bethel, CT",
+      "year": "2019",
+      "courses_taught": ["Immersive Storytelling", "VR Production"]
+    },
+    {
+      "title": "Adjunct Professor",
+      "institution": "New Haven Ives Squared - Maker Program",
+      "location": "New Haven, CT",
+      "year": "2018",
+      "courses_taught": ["Immersive Storytelling", "VR World Building"]
+    },
+    {
+      "title": "Adjunct Professor",
+      "institution": "Jacob Burns Film Center",
+      "location": "Pleasantville, NY",
+      "year": "2017-2019",
+      "courses_taught": [
+        "Adventures in Media",
+        "Immersive Storytelling",
+        "Podcast People",
+        "Camera Tricks"
+      ]
+    },
+    {
+      "title": "Adjunct Professor",
+      "institution": "Maker-in-Residence | Ridgefield Library",
+      "location": "Ridgefield, CT",
+      "year": "2018",
+      "courses_taught": ["Making Magic from Scratch", "Immersive Storytelling"]
+    },
+    {
+      "title": "Adjunct Professor",
+      "institution": "Yonkers Public Library",
+      "location": "Yonkers, NY",
+      "year": "2017-2018",
+      "courses_taught": ["Making Magic from Scratch"]
+    },
+    {
+      "title": "Adjunct Professor",
+      "institution": "Coding Kidz",
+      "location": "NY, NY",
+      "year": "2016-2017",
+      "courses_taught": ["Making Magic from Scratch"]
+    },
+    {
+      "title": "Adjunct Professor",
+      "institution": "Tarrytown Summer Challenge Camp",
+      "location": "Tarrytown, NY",
+      "year": "2015-2018",
+      "courses_taught": ["Making Magic from Scratch"]
     }
   ],
   "recent_vr_and_film_making_experience": [
@@ -123,14 +202,18 @@
     "Web Security"
   ],
   "selected_achievements": [
-    "Winner of 2022 - ETH DENVER HACKATHON - For reimagining 'Etherscan's UI'",
+    "Winner of 2022 - ETH DENVER Vega HACKATHON - For reimagining 'Vega's Etherscan's Blockchain UI'",
     "Creative-in-Residence, New Haven Public Library, 2018",
     "Maker-in-Residence, Ridgefield Library, 2018",
     "Creative Culture Fellowship, Creative Culture Program - Jacob Burns, 2017",
-    "Middlebury Film Festival - Beyond the Mountain, 2017"
+    "Middlebury Film Festival Acceptance- Beyond the Mountain (VR FILM), 2017"
   ],
   "additional_information": {
     "portfolio": "alexgonzalez.ooo",
     "references": "available upon request"
+  },
+
+  "cover_letter": {
+    "letter": "The cover letter for Alex Gonzalez is tailored for a creative industry role, emphasizing his diverse skill set in VR development, filmmaking, and teaching. It highlights his recent work experiences and achievements, including his role as Executive Digital Platform Director at Mission Anabaino and Creative Director and Product Designer at Apeworx. His education and extensive teaching experience in various fields, including VR World Building and Immersive Storytelling, UI - Web 3 - Blockchain Software - are also detailed. The cv hopes to showcase tangible skills in areas like Unreal Engine, Adobe Suite, and web development. Alex's commitment to innovation and creative storytelling is evident throughout the letter, making him an ideal candidate for a position in the creative industry"
   }
 }
