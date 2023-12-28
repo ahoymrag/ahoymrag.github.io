@@ -11,6 +11,42 @@
     {
       "title": "Executive Digital Platform Director",
       "company": "Mission Anabaino",
+      "year": "2023",
+      "description": "Created a system for new church plants to have a baselevel foundation of technology."
+    },
+    {
+      "title": "Product Designer",
+      "company": "Apeworx",
+      "year": "2023 - Present",
+      "description": "Collaborated with cross-functional teams to create innovative and user-centered design solutions. Implemented designs using a combination of web2 and web3 front-end technologies. Gathered insights through user research and usability testing. Developed wireframes, prototypes, and visual designs to communicate the desired user experience. Collaborated with product managers and stakeholders to define product goals and requirements. Managed project timelines, budgets, and resources."
+    },
+    {
+      "title": "Creative Director",
+      "company": "Apeworx",
+      "year": "2021 - 2023",
+      "description": "Led a team of designers, writers, and artists to create compelling visual content for clients. Developed and implemented creative strategies for branding, marketing campaigns, and multimedia projects. Collaborated with clients to understand their vision and provide innovative solutions. Managed project timelines, budgets, and resources."
+    },
+    {
+      "title": "Founder - Chief",
+      "company": "Ahoy Indie Media",
+      "year": "2022 - Present",
+      "description": "Led the strategic vision and direction of Ahoy Indie Media. Developed and implemented strategies to establish the company as a leading alternative media provider. Coded - line by line - piece by piece - the original version of the platform - and learned a lot along the way. Oversaw all aspects of operations, including budgeting, resource allocation, and performance management. Fostered a creative and collaborative work environment. Identified and pursued new business opportunities. Developed and executed marketing and promotional campaigns."
+    },
+    {
+      "title": "Adjunct Film Professor",
+      "company": "Choate Rosemary",
+      "year": "2023",
+      "description": "Taught undergraduate preparatory courses in Film Studies, including Introduction to Film, Screenwriting, and Film Production. Developed course syllabi and lesson plans. Mentored and guided students in their creative projects. Stayed updated with industry trends and integrated relevant techniques and technologies into the curriculum."
+    },
+    {
+      "title": "AV Director",
+      "company": "CPC New Haven",
+      "year": "2020 - Present",
+      "description": "Oversaw the audiovisual department, managing equipment setup, troubleshooting, and maintenance. Provided technical support for live events. Collaborated with event organizers to ensure seamless execution of audiovisual requirements. Trained staff on equipment operation and best practices."
+    },
+    {
+      "title": "Executive Digital Platform Director",
+      "company": "Mission Anabaino",
       "year": "2023a",
       "description": "Created a system for new church plants to have a baselevel foundation of technology."
     },
@@ -63,8 +99,11 @@
   "tangible_skills": [
     "Unreal Engine 4 + 5",
     "Adobe Premiere Pro",
+    "DaVanici Resolve",
     "Adobe After Effects",
-    "Video and Audio Production",
+    "Cordova Mobile App Development",
+    "Basic Firebase + Supabase Backend Development",
+    "Stripe API intergrations",
     "Virtual Reality Development",
     "Writing for Media/Screen",
     "Curriculum Development",

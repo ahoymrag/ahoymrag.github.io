@@ -1,53 +1,123 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Alex Gonzalez's Resume</title>
+    <title>Alex Gonzalez Resume</title>
     <link rel="stylesheet" href="./ag-cv.css" />
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   </head>
   <body>
-    <div class="container" id="resumeContainer">
-      <!-- Resume content will be inserted here by JavaScript -->
-    </div>
-    <!-- Add a print button -->
-    <button class="print-button" onclick="window.print()">Print as PDF</button>
+    <div id="resume" class="container"></div>
     <script>
-      // Fetch the JSON data from the file
       fetch("./alexresume23.json")
         .then((response) => response.json())
-        .then((data) => populateResume(data))
-        .catch((error) => console.error("Error:", error));
+        .then((resume) => {
+          var resumeDiv = document.getElementById("resume");
 
-      // Function to populate resume content into HTML
-      function populateResume(resumeContent) {
-        const resumeContainer = document.getElementById("resumeContainer");
-        for (const [section, content] of Object.entries(resumeContent)) {
-          const sectionElement = document.createElement("div");
-          sectionElement.classList.add("resume-section");
+          // Name and title
+          resumeDiv.innerHTML += `<h1>${resume.name}</h1>`;
+          resumeDiv.innerHTML += `<h2>${resume.title}</h2>`;
 
-          const titleElement = document.createElement("h2");
-          titleElement.innerText = section;
-          sectionElement.appendChild(titleElement);
+          // Contact
+          resumeDiv.innerHTML += `<div class="section">
+                    <h2>Contact</h2>
+                    <ul>
+                        <li>Phone: ${resume.contact.phone}</li>
+                        <li>Email: ${resume.contact.email}</li>
+                        <li>Portfolio: ${resume.contact.portfolio}</li>
+                    </ul>
+                </div>`;
 
-          if (typeof content === "object") {
-            for (const [subSection, subContent] of Object.entries(content)) {
-              const subSectionElement = document.createElement("h3");
-              subSectionElement.innerText = subSection;
-              sectionElement.appendChild(subSectionElement);
+          // Professional Summary
+          resumeDiv.innerHTML += `<div class="section">
+                    <h2>Professional Summary</h2>
+                    <p>${resume.professional_summary}</p>
+                </div>`;
 
-              const subContentElement = document.createElement("p");
-              subContentElement.innerText = subContent;
-              sectionElement.appendChild(subContentElement);
-            }
-          } else {
-            const contentElement = document.createElement("p");
-            contentElement.innerText = content;
-            sectionElement.appendChild(contentElement);
-          }
+          // Work Experience
+          var workExperienceHTML = resume.work_experience
+            .map(
+              (job) =>
+                `<li>${job.title} at ${job.company} (${job.year}): ${job.description}</li>`
+            )
+            .join("");
+          resumeDiv.innerHTML += `<div class="section">
+                    <h2>Work Experience</h2>
+                    <ul>${workExperienceHTML}</ul>
+                </div>`;
 
-          resumeContainer.appendChild(sectionElement);
-        }
-      }
+          // Education
+          var educationHTML = resume.education
+            .map(
+              (edu) =>
+                `<li>${edu.degree} in ${edu.major} from ${edu.school} (Graduated: ${edu.graduation_date})</li>`
+            )
+            .join("");
+          resumeDiv.innerHTML += `<div class="section">
+            <h2>Education</h2>
+            <ul>${educationHTML}</ul>
+        </div>`;
+
+          // Teaching Experience
+          var teachingExperienceHTML = resume.teaching_experience
+            .map(
+              (teach) =>
+                `<li>${teach.title} at ${teach.institution}, ${
+                  teach.location
+                } (${teach.year}). Courses Taught: ${teach.courses_taught.join(
+                  ", "
+                )}</li>`
+            )
+            .join("");
+          resumeDiv.innerHTML += `<div class="section">
+            <h2>Teaching Experience</h2>
+            <ul>${teachingExperienceHTML}</ul>
+        </div>`;
+
+          // Recent VR and Filmmaking Experience
+          var vrFilmMakingExperienceHTML =
+            resume.recent_vr_and_film_making_experience
+              .map(
+                (exp) => `<li>${exp.role} for ${exp.project} (${exp.year})</li>`
+              )
+              .join("");
+          resumeDiv.innerHTML += `<div class="section">
+            <h2>Recent VR and Filmmaking Experience</h2>
+            <ul>${vrFilmMakingExperienceHTML}</ul>
+        </div>`;
+
+          // Tangible Skills
+          var tangibleSkillsHTML = resume.tangible_skills
+            .map((skill) => `<li>${skill}</li>`)
+            .join("");
+          resumeDiv.innerHTML += `<div class="section">
+            <h2>Tangible Skills</h2>
+            <ul>${tangibleSkillsHTML}</ul>
+        </div>`;
+
+          // Selected Achievements
+          var selectedAchievementsHTML = resume.selected_achievements
+            .map((achieve) => `<li>${achieve}</li>`)
+            .join("");
+          resumeDiv.innerHTML += `<div class="section">
+            <h2>Selected Achievements</h2>
+            <ul>${selectedAchievementsHTML}</ul>
+        </div>`;
+
+          // Additional Information
+          var additionalInformationHTML = Object.entries(
+            resume.additional_information
+          )
+            .map(
+              ([key, value]) =>
+                `<li>${
+                  key.charAt(0).toUpperCase() + key.slice(1)
+                }: ${value}</li>`
+            )
+            .join("");
+          resumeDiv.innerHTML += `<div class="section">
+            <h2>Additional Information</h2>
+            <ul>${additionalInformationHTML}</ul>
+        </div>`;
+        });
     </script>
   </body>
 </html>
