@@ -135,10 +135,12 @@
       document
         .getElementById("download")
         .addEventListener("click", function () {
+          console.log("Button clicked"); // This will log to the console when the button is clicked
           var doc = new jsPDF();
           doc.fromHTML(document.getElementById("resume").innerHTML, 15, 15, {
             width: 170,
           });
+          console.log("PDF generated"); // This will log to the console when the PDF is generated
           doc.save("Alex Gonzalez - 2023 resume.pdf");
         });
     </script>

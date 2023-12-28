@@ -49,3 +49,12 @@ trustdaL0RD!@#
 CMS Churchplant
 alex@cpcnewhaven.org
 2021trustdaL0RD!@#
+
+## Ahoy Github
+
+@oooAHOYooo
+
+oooAHOYooo
+GODisGOOD_ALWAYS!@#
+new
+24trustdaL0RD!@#

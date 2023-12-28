@@ -140,3 +140,15 @@ A review of a robot from my work:
 "Web Performance",
 "Web Security"
 ],
+
+My recent tenure at Apeworx was a journey filled with collaborative innovation and technological exploration. I had the privilege of working with cross-functional teams, where I leveraged my technical and creative skills to develop user-centric design solutions. These experiences not only honed my ability to think critically and innovate but also deeply resonated with the ethos of the development communities I engaged with.
+
+One of the most impactful roles I undertook at Apeworx was leading the development of cHaOsNeT. This project was a testament to my expertise in front-end development and design, coupled with a keen engagement in blockchain technology. My goal was to create an intuitive virtual simulation platform, capable of replicating real-world blockchain environments for smart contract testing.
+
+As the lead designer and front-end lead, I navigated the complex challenge of designing a user interface that was both technically sophisticated and user-friendly. This project demanded a meticulous approach in designing a workflow that enabled users to seamlessly create and manage blockchain ecosystem simulations. My role involved detailed parameter setting for blockchain forks, integrating various protocols and bots, and ensuring a fluid payment process for launching simulations.
+
+The focus of cHaOsNeT on accurately simulating both historical and current blockchain events was critical. My role was crucial in transforming these complex requirements into a practical and accessible application, culminating in a pioneering tool within the blockchain simulation domain.
+
+The successful launch and widespread adoption of cHaOsNeT across diverse sectors underscore my commitment to developing cutting-edge technological solutions. This project significantly refined my skills in front-end development, design, and the practical application of blockchain technology.
+
+Having recently transitioned from Apeworx, I find myself as a free agent, eager to embrace new challenges and opportunities. I am excited to bring my wealth of experience from groundbreaking projects like cHaOsNeT to an esteemed organization like yours. I am enthusiastic about the prospect of contributing to a culture that values technological innovation, interdisciplinary collaboration, and problem-solving. I look forward to the opportunity to collaborate, contribute, and grow in an environment that is committed to pushing the boundaries of technology and applying it to solve complex, real-world challenges.
