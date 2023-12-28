@@ -152,3 +152,40 @@ The focus of cHaOsNeT on accurately simulating both historical and current block
 The successful launch and widespread adoption of cHaOsNeT across diverse sectors underscore my commitment to developing cutting-edge technological solutions. This project significantly refined my skills in front-end development, design, and the practical application of blockchain technology.
 
 Having recently transitioned from Apeworx, I find myself as a free agent, eager to embrace new challenges and opportunities. I am excited to bring my wealth of experience from groundbreaking projects like cHaOsNeT to an esteemed organization like yours. I am enthusiastic about the prospect of contributing to a culture that values technological innovation, interdisciplinary collaboration, and problem-solving. I look forward to the opportunity to collaborate, contribute, and grow in an environment that is committed to pushing the boundaries of technology and applying it to solve complex, real-world challenges.
+
+## Tangiable Skills Update
+
+"tangible_skills": [
+"Unreal Engine 4 + 5",
+"Development of APK for Oculus Quest 2",
+"Development of APK for Android Devices",
+"Adobe Premiere Pro",
+"DaVanici Resolve",
+"Adobe After Effects",
+"Cordova Mobile App Development",
+"Basic Firebase + Supabase Backend Development",
+"Stripe API intergrations",
+"Virtual Reality Development",
+"Writing for Media/Screen",
+"Curriculum Development",
+"Web Development",
+"Davinci Resolve Color Grading",
+"Film Editing/SFX Artist",
+"Public Relations",
+"Object-Oriented Programming",
+"Objective C",
+"HTML5",
+"CSS3",
+"Responsive Design",
+"Basic React",
+"Basic Python",
+"D3 Javascript Libraries",
+"Three.JS 3d Javascript Animation",
+"Dragon Capture - Stop Motion",
+"Git Version Control",
+"Web Accessibility (WCAG)",
+"Performance Optimization",
+"Testing and Debugging",
+"Web Performance",
+"Web Security"
+],
