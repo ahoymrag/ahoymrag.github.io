@@ -41,7 +41,7 @@ But still i want to look like a peaky cheeky lad<br>
 I want my girl to want me and I want her just as bad - KEMPS!<br>
 
 Today I got some latte and a bacon egg and cheese<br>
-I bought a gal of water - just to fight the allergies<br>
+I bought a gal of water - just to fight off allergies<br>
 Not sure if the combo makes any sense<br>
 But I got more stuff to do for a has brown and a gallon<br>
 
@@ -96,6 +96,12 @@ I guess I just wanted invited
 To your pretty little - pity party
 I must of got my invitation lost in the mail - the SNAIL MAIL!
 
+I was just
+minding my business
+every body got some business they ought to mind
+when i wanted a hit from my vape pen
+so i went to the bathroom where no one could see me
+
 ## Tarry Through The Night
 
 #### DM - G - Em F = = C Am F G
@@ -108,25 +114,25 @@ If you ask me,
 Em
 Now the world spins around,
 F
-So fastly
+So fastly---
 
 Dm
 Echoing some stars,
 G
 Off a cheap pint,
 Em
-BLUE MOON ,pbr
+BLUE MOON , PBR
 F
 For a cheap flight.
 
 Dm
 Ooo
 G
-We didn’t stand in to stand out
+We didn't set sail to get lost
 Em
 But I guess
 F
-We Should (o yes)
+We could
 
 Dm
 ooo
@@ -135,7 +141,7 @@ We didn’t show up to get down
 Em
 But if you want
 F
-We could (o no)
+We could
 
 ## Chorus <c am F G>
 
@@ -144,9 +150,12 @@ Ooo well taryy through the night
 And we will be alright
 ( Am )
 but these moments won't last forever
-and One day we'll grow old
+------------- F
+and One day we'll get old
+G
 But tonight we are
 Oooo
+
 You thought you knew what I was gonna say
 Its Just a little game that i like to play
 I'm just some silly boy
@@ -154,16 +163,18 @@ Whose here to bring you joy
 
 O
 So rise up with me now
-Stand and grab a toast
-hug someone you love
+Stand up and grab a toast
+Hug someone you love
 and leave it on the coast
+
+C let it ring
 
 ## VERSE 2 (Dm G Em F)
 
 Running right through this town
 Like a banshee
-Now the lights hear the sound
-now they fear thee
+off the saw mill express
+exit 23
 
 Dangling some legs off the back porch
 Cold wind hits the air for a quick torch
@@ -176,18 +187,11 @@ oooo
 we didn't die young to die wrong
 but i hope we would
 
-Irish exit on deck
-Can you blame me?
-
 ## BRIDGE 2
 
-## CHORUS 2
-
-## BRIDGE A
-
 counting years like ants
-wanting the first chance
-to know your name
+last chance for romance
+and to know your name
 
 buzzing round this crowd
 around so loud
@@ -199,8 +203,15 @@ to sell out
 but if you want
 i could
 
+ooo
 i didnt go broke to make jokes
-but the jester in me would
+but i guess you hoped i would
+
+## CHORUS 2
+
+## BRIDGE A
+
+##### END OF SONG
 
 because ooo
 
