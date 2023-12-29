@@ -100,10 +100,13 @@ Paradise
 
 
 
+## Cover Song
 
+1. Joel Plastka - Demons
+2. Sweet Baboo - Let's go Swimming Wild
+3. Coldplay - Green Eyes
 
-
-
+   
 
 
 
