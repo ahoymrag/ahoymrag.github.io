@@ -1,12 +1,17 @@
-# oh baby
+# Oh Baby Album
 
-1. Paint it on the streets
+## Track List
+
+1. Paint it on the Streets
 2. Hey Yo
 3. Keep on Breathing
-4. Momma, I'm moving out west
-5. Work things out
+4. Momma, I'm Moving Out West
+5. I Thought You Would Just Walk Away
+6. Watching her Fly
 
-## Lyrics for "Momma, I'm Moving Out West"
+## Lyrics
+
+### Momma, I'm Moving Out West
 
 I said now my momma - I'm moving out west  
 I got my eye on the Hollywood sign  
@@ -49,30 +54,186 @@ Momma I'm moving
 Momma I'm moving  
 Momma I'm moving out west
 
-## Lyrics for "I thought you would just walk away"
+### Paint it on the Streets
 
-Powerchords
-Amajor - G - C
+Chords: Em C G D
 
-5. I Thought you would just Walk away
-   I thought that you would walk away
-   Tell the rain not today
-   Cause I need
-   to work things out
+**Intro**
 
-Blue moon hits the sky
-Oh why oh why
-Do we even try
+**Verse #1**
+A nights drive
+Weave a path by the guided line
+But we’re lost ‘cause we still can't see
 
-CHorus
+Sea of green
+In the light
+Of the high-beams
+But not the signs in front of me
 
-Maybe we can work things out
-you don't have to leave
+Don’t have the eyes
+To see through the dark of night
+To the point where the destination lay (lives)
 
-Been
+**PreChorus**
+Yeah I need a helping hand
+Perhaps one inscribed by man
+To help show me
+Show me the way
 
-(Instrumental)
+**Chorus**
+Paint it on the streets (Yeah)
+For all to Know (Woah)
+For all to see (Yeah)
+For all to read (yeah)
 
-### OH BABY BANDLAB LINKS
+Paint it
+Why don’t you paint it
+On the Streets
 
-https://www.bandlab.com/track/91390938-509b-ec11-a507-0050f280e91e?revId=90390938-509b-ec11-a507-0050f280e91e
+**Verse #2**
+I ain’t no kin to no red feathered bird
+A man can only see so...
+Far away
+
+I like to think we’re always staring
+Straight ahead.
+Looking toward the future
+Towards the brighter days
+
+When they
+When they Say
+
+**Chorus #2**
+Paint it on the street (Yeah)
+For all to know (Woah)
+For all to see (Yeah)
+For all to read (Yeah)
+
+Yeah won’t you
+Paint it
+Paint It
+We’re gonna
+Paint it on the streets
+
+**Verse #3**
+What you think I got the eye of the hawk?
+That I can read some green rectangle in the dark
+If they want the people to know - where the path will be
+They gotta know that we can’t read these signs clearly
+They gotta - Paint it on the streets
+Baby
+Maybe use some reflective colors
+Maybe
+
+If you don’t mind
+What if you added some historical trivial facts
+If you had time
+
+All these signs are blind to me
+We need a new system - for the eyes to see
+
+I’m not talking radical shifts
+Just some guidance as the left lane shifts
+
+Oh paint it on the streets
+
+# Oh Baby - Watching Her Fly
+
+_Draft 1 - as of 8.6.21_
+
+**Guitar & Piano on top of it**  
+C G  
+C G  
+Am C
+
+## Intro / Chorus
+
+Watching her fly  
+By the riverside  
+Suzie with the numbers in her eyes  
+On the day she died  
+She looked at me said  
+Darling if your lucky i’ll be the voice inside your head
+
+## Verse 1 (IN PROGRESS - What she told you before she jumped)
+
+I said “you ain’t right”  
+She said “yeah you’re right”  
+That’s why i'm gonna grow some wings  
+And take This pain to flight
+
+I said don’t you go  
+There’s so much more to live  
+But She just smiled and grabbed my hand  
+Prayed that I would understand and asked me to forgive.
+
+## Chorus 1
+
+So Watching her fly  
+By the riverside  
+Suzie with those numbers in her eyes  
+On the day she died  
+She looked at me and said  
+“Darling if you’re lucky I’ll be the voice inside your head”
+
+## Verse 2 (IN PROGRESS - DESCRIBE WHAT YOU SAW)
+
+On the day I cried  
+That cold night in july  
+I whispered to my beating heart  
+And taught myself to lie
+
+That it was all a dream  
+Lest thats what I scream  
+But I remember how she fell  
+How she looked and how she yelled  
+She said darling let me go
+
+## Chorus 2
+
+And watching her fly  
+As best as I could ever tell  
+It wasn’t just a dream  
+Her eyes let out a screw
+
+On the day she kept  
+Then she sank into the water black than the night
+
+Putto  
+I tried to see her laughing but there was nothing left to hide  
+A wave rolled into shore and carried her to tide
+
+## Chorus
+
+But watching her fly  
+By the riverside  
+Suzie with the numbers in her eyes  
+On the day she died  
+She looked at me and said  
+Darling don’t you worry I’ll never leave your head.
+
+## Verse 3 (IN PROGRESS - THE YEARS AFTER)
+
+On the day I cried  
+That cold night in july  
+I whispered to my beating heart  
+And taught myself to lie
+
+It’s all going to be okay  
+Lest that’s what they say
+
+But there are moments that I see her  
+Drowning in the atmosphere  
+There’s nothing left to hide
+
+Oh watching her fly
+
+## Outro Chorus
+
+Suzie with the numbers in her eyes  
+Suzie with the numbers in her eyes  
+Watching her fly
+
+## BandLab Links
+
+[Track Link](https://www.bandlab.com/track/91390938-509b-ec11-a507-0050f280e91e?revId=90390938-509b-ec11-a507-0050f280e91e)
