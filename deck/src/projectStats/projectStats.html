@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Project Stats Dashboard</title>
+    <style>
+      .stat {
+        border: 1px solid #000;
+        margin: 10px;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Project Stats Dashboard</h1>
+    <div class="stat">
+      <h2>Ahoy</h2>
+      <p id="ahoy">Placeholder for Ahoy stat</p>
+    </div>
+    <div class="stat">
+      <h2>CPC</h2>
+      <p id="cpc">Placeholder for CPC stat</p>
+    </div>
+    <div class="stat">
+      <h2>MA</h2>
+      <p id="ma">Placeholder for MA stat</p>
+    </div>
+    <!-- Add more stats as needed -->
+    <script>
+      const ahoyDetails = {
+        version: "v.0.2.3",
+        progress: "80%",
+        tasks: [
+          "Add Logo",
+          "Add Learn More Button",
+          "Add a feedback button",
+          "Add a new bar for time above the bottom controls (fixed position)",
+          "Add Marco Worms to Artists",
+          "Make Artists Page Dynamic + Shareable",
+          "Fix Updates",
+          "Add Monthly Updates Piping from Json",
+          "Add Github Updates",
+          "Make Media Page work",
+          "Make it so when a user clicks one of the TD - it plays in the player above",
+          "Might have to install JWplayer",
+          "Bring back Now Player",
+          "More of a description on the get on ahoy",
+        ],
+      };
+    </script>
+    <script>
+      window.onload = function () {
+        const ahoyStat = document.getElementById("ahoy");
+        let content = `We are up to ${ahoyDetails.version} - and ${ahoyDetails.progress} there. Here are the tasks:<br><ul>`;
+        ahoyDetails.tasks.forEach((task) => {
+          content += `<li><input type="checkbox">${task}</li>`;
+        });
+        content += "</ul>";
+        ahoyStat.innerHTML = content;
+      };
+    </script>
+  </body>
+</html>

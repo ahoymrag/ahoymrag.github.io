@@ -1,54 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alex Gonzalez's Command Center</title>
-<link rel="stylesheet" href="./src/deck-global-styles.css">
-<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-</head>
-<body>
+    <link rel="stylesheet" href="./src/deck-global-styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  </head>
+  <body>
     <!-- Navigation Bar -->
     <nav>
-        <!-- Navigation links or buttons go here -->
+      <!-- Navigation links or buttons go here -->
     </nav>
-
+    <header>
+      <div class="deck-splash">
+        <img src="./src/assets/ag23.jpeg" />
+      </div>
+    </header>
     <!-- Main Content Area -->
     <div class="container">
-        <!-- Left Column: Work-Related Widgets -->
-        <div class="column left">
-            <div class="widget" id="mission-anabaino-tasks">Mission Anabaino Tasks</div>
-            <div class="widget" id="cpc-tasks">CPC Tasks</div>
-			<div class="widget" id="ahoy-tasks">Ahoy Tasks</div>
-			<div class="widget" id="weekly-tasks">Weekly Tasks</div>
+      <!-- Left Column: Work-Related Widgets -->
+      <div class="column left">
+        <div class="widget" id="mission-anabaino-tasks">
+          Mission Anabaino Tasks
         </div>
+        <div class="widget" id="cpc-tasks">CPC Tasks</div>
+        <div class="widget" id="ahoy-tasks">Ahoy Tasks</div>
+        <div class="widget" id="weekly-tasks">Weekly Tasks</div>
+        <div class="widget" id="scripture-reading">
+          <h2>Scripture Reading</h2>
+          <p id="daily-scripture"></p>
+        </div>
+      </div>
 
-        <!-- Middle Column: Stats -->
-        <div class="column middle">
-     
-            <div class="widget" id="github-commits">GitHub Commits</div>
-            <div class="widget" id="weekly-financials">Weekly Financials</div>
-            <div class="widget" id="project-status">Project Status</div>
-			<div class="widget" id="ahoy-visitor-count">Ahoy Visitor Count
-				<iframe plausible-embed src="https://plausible.io/ahoy.ooo?embed=true&theme=dark" scrolling="no" frameborder="0" loading="lazy" style="width: 1px; min-width: 100%; height: auto;"></iframe>
-<div style="font-size: 14px; padding-bottom: 14px;">Stats powered by <a target="_blank" style="color: #4F46E5; text-decoration: underline;" href="https://plausible.io">Plausible Analytics</a></div>
-<script async src="https://plausible.io/js/embed.host.js"></script>
-			</div>
+      <!-- Middle Column: Stats -->
+      <div class="column middle">
+        <div class="widget" id="github-commits">GitHub Commits</div>
+        <div class="widget" id="weekly-financials">Weekly Financials</div>
+        <div class="widget" id="project-status">
+          <iframe
+            src="./src/projectStats/projectStats.html"
+            style="width: 100%; height: 500px"
+          ></iframe>
         </div>
+        <div class="widget" id="ahoy-visitor-count">
+          Ahoy Visitor Count
+          <iframe
+            plausible-embed
+            src="https://plausible.io/ahoy.ooo?embed=true&theme=dark"
+            scrolling="no"
+            frameborder="0"
+            loading="lazy"
+            style="width: 1px; min-width: 100%; height: auto"
+          ></iframe>
+          <div style="font-size: 14px; padding-bottom: 14px">
+            Stats powered by
+            <a
+              target="_blank"
+              style="color: #4f46e5; text-decoration: underline"
+              href="https://plausible.io"
+              >Plausible Analytics</a
+            >
+          </div>
+          <script async src="https://plausible.io/js/embed.host.js"></script>
+        </div>
+      </div>
 
-        <!-- Right Column: Action Items -->
-        <div class="column right">
-            <div class="widget" id="contact-list">Contact List</div>
-            <div class="widget" id="research-list">Research List</div>
-        </div>
+      <!-- Right Column: Action Items -->
+      <div class="column right">
+        <div class="widget" id="contact-list">Contact List</div>
+        <div class="widget" id="research-list">Research List</div>
+      </div>
     </div>
 
     <!-- Bottom Toolbar -->
     <footer>
-        <!-- Toolbar content goes here -->
+      <!-- Toolbar content goes here -->
     </footer>
 
-	<script src="./src/fetch-ahoyTasks.js"></script>
-	<script src="./src/fetch-weeklyTasks.js"></script>
-</body>
+    <script src="./src/fetch-ahoyTasks.js"></script>
+    <script src="./src/fetch-weeklyTasks.js"></script>
+
+    <!-- SCRIPTURE READING CODE -->
+    <script>
+      async function loadScripture() {
+        try {
+          // Get today's date in the required format
+          const today = new Date();
+          const day = String(today.getDate()).padStart(2, "0");
+          const month = String(today.getMonth() + 1).padStart(2, "0"); // January is 0!
+          const dateString = `January ${day}`;
+
+          // Fetch the markdown file
+          const response = await fetch(
+            "private/reflections/scripture/jan24-readings.md"
+          );
+          const data = await response.text();
+
+          // Parse the markdown file
+          const lines = data.split("\n");
+          for (let line of lines) {
+            if (line.startsWith(`- [ ] ${dateString}`)) {
+              // Extract the scripture
+              const scripture = line.split(": ")[1];
+              // Display the scripture
+              document.getElementById("daily-scripture").textContent =
+                scripture;
+              break;
+            }
+          }
+        } catch (error) {
+          console.error("Error loading scripture:", error);
+        }
+      }
+
+      loadScripture();
+    </script>
+  </body>
 </html>
