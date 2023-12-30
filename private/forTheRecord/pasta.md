@@ -58,3 +58,10 @@ oooAHOYooo
 GODisGOOD_ALWAYS!@#
 new
 24trustdaL0RD!@#
+
+# Gmails
+
+## childlike.alex
+
+Childlike.alex@gmail.com
+wildchild2021!@#
