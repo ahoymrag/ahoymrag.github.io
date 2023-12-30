@@ -3,6 +3,28 @@
 List
 
 1. Tarry Through the Night
+2. Pretty Pity Pity Party
+3. Leave me on the Coast
+
+//
+
+As I sit
+And wonder why
+That to live
+you got to die
+Oh, I
+don't want to Go
+just want some heaven. 
+
+People say
+that the Lord is good
+God if your there
+Show me you could
+save me
+from my disgrace
+I need some heaven.
+
+
 
 ## “Pretty pity”
 
