@@ -505,3 +505,156 @@ Variety of layout ideas and design inspirations suitable for individuals, couple
 
 - [Living in a Shed](https://thetinylife.com/living-in-a-shed/)
 - [Living in a Yurt](https://thetinylife.com/living-in-a-yurt/)
+
+### FOUND FROM OLD DOCUMENTS
+
+# The Floating Docks
+
+## Dream Vision - Draft 1.5
+
+### As of 8.14.21
+
+_Dreaming comfortably in the woods since 2024._
+
+**Pending new title:** _The Bungalows_
+
+---
+
+### The Floating Docks houses
+
+- Ahoy HQ
+- Childlike Studios
+- Creative Innovation Center 1
+- Guesthouse and Retreat
+
+---
+
+### Features
+
+#### Ideas
+
+- Have the porch double as a storage container for lawn furniture.
+- Or, if with shed, make a deck on top.
+
+---
+
+### Indoor Features
+
+- Outdoor Theater
+- Indoor Screening Room
+- Kitchen
+
+### Outdoor Features
+
+- Outdoor Cafe with Patio
+- Outdoor place to cook a pig
+- Outdoor fireplace
+- Outdoor Sauna
+- Outdoor shower
+- Outdoor bathroom
+- Fenced in (for bugs) outdoor space
+
+### Outdoor Places to Sit
+
+- Picnic Tables
+- Benches
+- Swings
+
+### Summer Development
+
+Development will be happening each and every summer.
+
+**Summer 1:**
+
+- Outhouse + Cafe + Kitchen
+- Temporary Living Structure
+
+**Summer 2:**
+
+- Editing Treehouse
+- Outdoor Theater
+- Guesthouse 1
+
+### Fun Features to add
+
+- Library
+- A treehouse for reading
+- A deck for reading/bird photography
+- A place to record Podcasts
+- A place to record Live Concerts/Performances
+
+### Deco and decor
+
+- Homemade street signs
+- Art around all the trees - hanging frames of user-submitted artwork
+- Logo and website
+- Photobooth
+
+---
+
+### Fun things to think about
+
+- Prefab Homes
+  - [The Prefab List](https://www.theprefablist.com/) (AG might be able to contact the owner)
+- Food storage situation
+  - Can we salt the meat?
+- Annual summer anniversary party with fireworks, homemade pie, and a mountain session
+- The outdoor theater could be like a tiny desk situation - where we broadcast shows
+
+### Random considerations
+
+- Storage for bicycles
+- On-premise wheelbarrow/hitchable trailer/pickup truck
+- Swimming area
+- Bird feeders
+- Seasonal gardens and plants
+- Winter protection for sensitive computing tech
+- Refrigerator (solar panel)?
+- Summer 1 first aid kit contents
+
+### Housing
+
+- Bungalow canvas tent
+
+### Projects for Summer 1
+
+- Movie 1
+- Album 1
+- Outdoor Theater 1
+
+### Boost morale in Summer 1
+
+- Fire pit
+- Musical instruments and speakers
+
+### Summer 1 construction
+
+- Outhouse
+- Kitchen
+- Temporary editing and congregating spaces
+
+### Location
+
+- The Berkshire Mountains
+  - Why:
+    - 2 hours from Havens
+    - 3 hours from Sleepy
+    - 3.5 hours from NYC
+  - Has "shire" in the name
+  - Beautiful and tranquil
+
+### Land Requirements
+
+- 10 acres with a water source and road nearby
+- Nearby town with hospital
+
+### Location services
+
+- Connected to city electricity?
+- Water availability
+
+---
+
+## Logistics
+
+### Part
