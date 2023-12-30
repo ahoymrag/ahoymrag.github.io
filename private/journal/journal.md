@@ -143,9 +143,21 @@ I feel like
 I pray for my father - who seems to be stressed out - and has a lot on his plate - he's complaining now about some subscription he needs to cancel - and it's just a lot - my poor mother - Father, will you shine light on my home - and for the rest of the time my family has - may we be one with a high level of faith - for I feel like we don't talk about you often - and especially with my own father - he's - I am not sure - Father please save us - and help me with my rebellion and unbelief - help me stop thinking of ways to maximize my comfort level and all of the dreams and ideas I have - father will you curb them and only put forth in front of me what I have to accomplish? Would you allow me to use my time tonight wisely and not get caught up in the folly of the internet - even typing this I am growing tired - but feel like I need to get it out - for there are lots of projects that are unfinished and crap - please help me restore them to the projects which you would like them to be. Aye, I just closed my eyes for a bit - the screen was too much and I am a bit weary and tired of the screen. Shout out to the ability to touch type and not have to look at the screen - for I feel as if - i feel a certain liberation from not looking at the screen - but I digress. Father, will you help me pray to you more? To grow hungry after your owrd - to make it very relevant in my life?
 
 
+I reread some of this journal and am thankful and hope to stay commited to it - for I think it'll allow me to stay commited to other things and to track my progress - lest I ought to keep it private, lest while I am alive - so that I can freely articulate emotions and visions and dreams - I should also document all the happenings of the week. 
 
+Update - I hear my Dad in the other room saying "Lou - what is wrong with you - you're like in another world - it seems like you're always drunk or high" - that's hard to hear. Lord fix my Father's heart - so that he - the light and the leader of this family - can outpour a radiance of peace and forgiveness and grace - for it seems like he has been harboring unspoken tension - and all but neglects me these days - which is why I feel fine that I am in the next room while they are having dinner - I had pizza with Aldi is my excuse - but still - it is socially exhausting to sit next to my parents sometimes - as they are - not sure - I love them - but they do complain a lot - and always talk about chores and tasks - or talk smack about Aldo - and it just - there is no poetry or romance in there life anymore - they feel like they are just endlessly running and suffering without a big community behind them. 
 
+#### Christmas 23
+12.24.23 - Christmas Eve - picked up Carmita - Mari got sick - Sent to 
+12.25.23 - Christmas Day - opened presents - Bita over - picked up 
+12.26.23 - Tuesdsay - Went to Ctown + Warner Library - Walk with Kyle Theo and Dallas (the dog) - went to go see Royston's show in town - but felt intimidated in a weird way and backed out - it was a show for Toddlers and I was the only one who went alone - went back and painted while my mom played her game - might paint a little later tonight (after my haircut) - if I feel up for it
+12.27.23 - Wednesday - Went to visit Aldi in the AM - took a nap - took the 3:57 to 125th Street to meet up with Fig - hung out in his appt - played music, watched skate videos and played chess - got on the 10pm train - walked home in the rain
+12.28.23 - Thursday - didn't do much - worked on the resume - went to Aldi's that night
+12.29.23 - Friday - Watched THe sound of Freedom this morning - went to Aldi's again this afternoon and jammed - had pizza - parents eating - now I'm typing.
 
+Now my mom is talking about Aunt Linda and about the baby being sick - Kristie's baby - and reflecting upon what they have done.
+
+My mind is wandering towards a haircut - I've been talking about it a lot - but I need to put some action forward. Help me Lord. Keep me far from depression. 
 
 
 
