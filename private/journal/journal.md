@@ -126,3 +126,36 @@ With the bug - sitting on the couch - about to head to mysitic seaport for the d
 I was given an interesting request today from my Uncle Steve to essentially go down to bridgeport CT and go to a warehouse sale - apparently some estate agent conned him and is selling off his donated furniture. 
 
 Just made a toasty - now watching some spanish morning show "hoyDia" with Bita - whose anxiously awaiting my father to return from ctown - i'm about to get on google translate app on the chromebook and see if I can ammend any translation confusion. 
+
+
+# 12.29.23
+
+Sitting with my mom - it's 7:09pm - just came back from Aldi's - played music this afternoon - one of the last nights in Sleepy for a while - if not the last. Ellen is asleep, Bita is asleep and I think my father is in the next room cooling off - he's been under the pressure for a bit - taking care of my grandma and I am in a weird place - where I feel like I still need to accomplish much while I am supposed to be having this time off to rest. 
+
+Just went to the other room now to sit down and rest a bit - it's nice to do so - I was with Aldi today jamming - it was a lot of mental energy trying to get that guy to focus a bit - and though it's 7:16p now - it feels like it is much later and to be honest - I am not that sure what to do with my time - Ellen is in London and it is well past 1am there - she's asleep - tomorrow she's going to an Abba concert - that of which I feel uneasy about - but I know and know this feeling before - it's an old enemy - that of which when I pray over it it goes away. 
+
+Lord help me - help me focus and priortize in this next season of life - for there is a lot going on - Josh K texted me today and asked if there was anything I'd like prayer over - you betcha - but the truth is I've been succumbing to late night temptations and in my low moments I act out those temptations in the form of masterbation - which is sad - and then I vape constantly - drink too much coffee - and go immeditately on computer and plan and plan rather than focus and go better with the flow of life. 
+
+Lord help me in this next year - I know i need to take it day by day - but I feel as if I have been too much on my plate and not enough time seeking your will - as you know - I have lost my job - and have recently gotten my last paycheck with Ape. Father - help me sort it out - so I can clean up my fiances and live within my means. I think i'm spending 1k too much every month - and a big chunk goes to alchol and to michael and to vapes - Lord help me - those are crutches - I need freedom from them and to get my body back in order. Perhaps this journaling and this github is an outlet that I need. 
+
+I feel like 
+
+I pray for my father - who seems to be stressed out - and has a lot on his plate - he's complaining now about some subscription he needs to cancel - and it's just a lot - my poor mother - Father, will you shine light on my home - and for the rest of the time my family has - may we be one with a high level of faith - for I feel like we don't talk about you often - and especially with my own father - he's - I am not sure - Father please save us - and help me with my rebellion and unbelief - help me stop thinking of ways to maximize my comfort level and all of the dreams and ideas I have - father will you curb them and only put forth in front of me what I have to accomplish? Would you allow me to use my time tonight wisely and not get caught up in the folly of the internet - even typing this I am growing tired - but feel like I need to get it out - for there are lots of projects that are unfinished and crap - please help me restore them to the projects which you would like them to be. Aye, I just closed my eyes for a bit - the screen was too much and I am a bit weary and tired of the screen. Shout out to the ability to touch type and not have to look at the screen - for I feel as if - i feel a certain liberation from not looking at the screen - but I digress. Father, will you help me pray to you more? To grow hungry after your owrd - to make it very relevant in my life?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
