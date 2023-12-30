@@ -159,9 +159,9 @@ Now my mom is talking about Aunt Linda and about the baby being sick - Kristie's
 
 My mind is wandering towards a haircut - I've been talking about it a lot - but I need to put some action forward. Help me Lord. Keep me far from depression. 
 
+And I just read the news - that didn't help - nor thinking about Carmita and Tello - that latter of whom is stuck in a nursing home with bad dementia - I hope to visit him tomorrow.
 
-
-
+My mom just came in and asked if I wanted dessert - I do - be nice to spend some time with them. 
 
 
 
