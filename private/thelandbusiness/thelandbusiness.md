@@ -650,11 +650,19 @@ Development will be happening each and every summer.
 
 ### Location services
 
-- Connected to city electricity?
+- Connected to city electricity
 - Water availability
 
 ---
 
-## Logistics
+## Other Lands I found from previous documents
 
-### Part
+Beaver Creek NY 15A 40k
+
+1. https://www.landwatch.com/saint-lawrence-county-new-york-recreational-property-for-sale/pid/412631114
+
+2. CLEAR LAKE, NY: 5 Acres Lake Access: $39,900
+   https://www.landwatch.com/saint-lawrence-county-new-york-recreational-property-for-sale/pid/412638462
+
+3. HERON POND, NY: 5 acres, 500' waterfront on Heron Pond $49,900
+   https://www.landwatch.com/saint-lawrence-county-new-york-recreational-property-for-sale/pid/412630427

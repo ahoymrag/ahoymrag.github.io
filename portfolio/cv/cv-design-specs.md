@@ -51,3 +51,23 @@ I am eager to bring my blend of creativity, technical expertise, and boundless e
 Sincerely,
 
 [Your Name]
+
+# OLD FOUND CV
+
+Dear [Recipient's Name],
+
+I am writing to express my interest in the [Job Title] position at [Company/Organization Name]. As a highly skilled writer, filmmaker, and Virtual Reality Developer, I am excited to contribute my expertise and passion for storytelling and technology to your team.
+
+I have a strong background in teaching, having served as an Adjunct Professor at various institutions, including Wilton Library, Workspace Academy, and New Haven Ives Squared Maker Program. I have successfully taught courses on VR World Building, Immersive Storytelling, and VR Production, inspiring and mentoring students to pursue their creative ambitions.
+
+In addition to my teaching experience, I have an impressive track record in VR and film-making. I have written, directed, and edited the critically acclaimed short film, "King Gustavo Loves Blueberry Pancakes," and served as a producer, assistant director, and editor for the feature-length indie comedy, "Pal-bot 2." Furthermore, my role as a writer, creative director, and lead developer on "Beyond the Mountain," a VR short film, demonstrates my proficiency in immersive storytelling and cutting-edge technologies.
+
+Outside of academia and film-making, I have worked as a Lead Web Developer at Create and Associates, Inc., where I honed my skills in web development and design. My technical expertise includes Unreal Engine 4, Adobe Premiere Pro, Adobe After Effects, video and audio production, and more.
+
+I am confident that my diverse skill set, coupled with my passion for pushing the boundaries of storytelling, make me an excellent fit for the [Job Title] role at [Company/Organization Name]. I am eager to contribute my creativity, technical prowess, and teaching experience to foster innovation and produce exceptional work.
+
+Thank you for considering my application. I have attached my resume for your review, and I would be delighted to discuss my qualifications further. I look forward to the opportunity to contribute to [Company/Organization Name]'s success.
+
+Sincerely,
+
+[Your Name]

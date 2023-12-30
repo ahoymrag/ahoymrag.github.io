@@ -1,5 +1,15 @@
 # Week 1 = 2024
 
+## Monthly Goals
+
+1. Mission Anabaino - Website Done - Talk with PG
+2. CPC
+3. Ahoy
+4. Get Job
+5. Write + Make Films
+
+### Creative Goals
+
 ## People to Contact for Jobs
 
 Looking for additional 4k a month
@@ -27,3 +37,9 @@ get a good full time job for 125k
 
 1. Go visit Lake Wintergreen
 2.
+
+## Ahoy Goals
+
+v.0.2.3
+
+1.
