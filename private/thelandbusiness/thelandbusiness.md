@@ -226,7 +226,7 @@ For land listings in Maine, you can explore the following websites:
 
 5. **Redfin** - Offers listings for land and lots for sale in Maine. [Visit Redfin](www.redfin.com)
 
-### December 23 Research
+### December 23 Researchz
 
 #### Andironaks New York
 
@@ -666,3 +666,10 @@ Beaver Creek NY 15A 40k
 
 3. HERON POND, NY: 5 acres, 500' waterfront on Heron Pond $49,900
    https://www.landwatch.com/saint-lawrence-county-new-york-recreational-property-for-sale/pid/412630427
+
+## Things we know now:
+
+1. We don't mind wigwams
+2. Ellen wishes she had a device to analyze water
+3. Brooks
+4. Baby Pines
