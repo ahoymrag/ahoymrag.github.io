@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&display=swap");
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Barlow", sans-serif;
+  background-color: #f0f0f0;
+}
+
+h1,
+h2 {
+  color: black;
+  text-align: center;
+}
+
+h1 {
+  font-weight: 900;
+  font-stretch: expanded;
+  font-size: 10vw;
+}
+
+.header {
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 30px 60px;
+  text-align: center;
+  box-shadow: -10px -10px 20px #d1d1d1, 10px 10px 20px #ffffff;
+}
+
+.main {
+  padding: 60px;
+}
+
+.project {
+  border: 1px solid #ddd;
+  margin-bottom: 30px;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: -10px -10px 20px #d1d1d1, 10px 10px 20px #ffffff;
+}
+
+.project-title {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  color: #6a097d; /* Purple */
+}
+
+.project-info {
+  font-size: 1.1em;
+  color: #555;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+button {
+  width: 200px; /* Fixed width */
+  height: 60px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  background-color: #f0f0f0; /* Neumorphic */
+  color: #000000; /* Green */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  transition-duration: 0.14s;
+  cursor: pointer;
+  border-radius: 15px;
+  font-weight: 900;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+}
+
+button:hover {
+  background-color: #f0f0f0;
+  color: #000000; /* Yellow */
+  box-shadow: inset -5px -5px 10px #d1d1d1, inset 5px 5px 10px #ffffff;
+}
+
+button:active {
+  box-shadow: none;
+}
+
+.content {
+  margin-left: 210px; /* Leave space for the button */
+}

@@ -52,6 +52,10 @@ Potential Location
 
 - Every 100k made - 10k go into land - first land will have an acre - near a body of water - near a road - with the ability to build a tent - and keep on one's portflio
 
+# The Process and Journal
+
+1.2.24 - Went on a Nature Walk around Lake Wintergreen and got inspired by wigwams
+
 # from a previous found document
 
 To build a base
