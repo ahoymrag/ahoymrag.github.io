@@ -56,6 +56,13 @@ Potential Location
 
 1.2.24 - Went on a Nature Walk around Lake Wintergreen and got inspired by wigwams
 
+## Baby Action Steps
+
+1. Write out a new list of land - 1.5 hour away from New Haven
+2. Go Visit Land
+3. Set up appointments on 3 places -
+4. Get a nice tent
+
 # from a previous found document
 
 To build a base

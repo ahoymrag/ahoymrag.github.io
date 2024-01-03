@@ -8,16 +8,21 @@ html {
   background-color: #f0f0f0;
 }
 
-h1,
 h2 {
   color: black;
-  text-align: center;
+  margin: 0;
+  padding-left: 20px;
+  margin-bottom: 10px;
 }
 
-h1 {
+.h1-splash {
   font-weight: 900;
   font-stretch: expanded;
   font-size: 10vw;
+  margin: 0;
+  line-height: 90%;
+  text-align: center;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .header {
@@ -89,4 +94,42 @@ button:active {
 
 .content {
   margin-left: 210px; /* Leave space for the button */
+}
+
+.tab-nav {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.tab-button {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.tab-button.active {
+  background-color: #007bff;
+  color: white;
+  border: none;
+}
+
+.film-card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+}
+
+.film-card h2 {
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
 }

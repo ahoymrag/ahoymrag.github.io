@@ -13,27 +13,66 @@
   <body>
     <div class="app">
       <header>
-        <h1>the indieFilmMaker</h1>
+        <h1 class="h1-splash">the indieFilmMaker</h1>
         <h2>The Goal of this app is to make indie films</h2>
       </header>
       <main>
-        <button>Print Status</button>
-        <button>Make New Film</button>
-        <button>Manage Current Film</button>
-        <button>New Idea for Previous Film</button>
-        <button>Current Projects</button>
-        <button>Timeline and Release</button>
-        <button>Send to Festival</button>
-        <button>Send to Ahoy</button>
-        <button>Distrubute to the Masses</button>
-        <div class="content">
-          <!-- Your content goes here -->
-          This is where the content will go
+        <!-- Tab navigation -->
+        <nav class="tab-nav">
+          <button class="tab-button active" data-tab-target="#currentProjects">
+            Current Projects
+          </button>
+          <button class="tab-button" data-tab-target="#upcomingReleases">
+            Upcoming Releases
+          </button>
+          <button class="tab-button" data-tab-target="#filmIdeas">
+            Film Ideas
+          </button>
+        </nav>
+
+        <!-- Tab content for Current Projects -->
+        <div id="currentProjects" class="tab-content active">
+          <div class="project-card">
+            <h3>Project 1</h3>
+            <p>Description of Project 1...</p>
+          </div>
+          <div class="project-card">
+            <h3>Dom Doc</h3>
+            <img
+              class="moviePoster"
+              src="../www/projects/docs/dominicTheGypsy/imgs/domDoc - mood 1.gif"
+            />
+            <br />
+            <img
+              class="moviePoster"
+              src="../www/projects/docs/dominicTheGypsy/imgs/3.png"
+            />
+            <p>Description of Project 2...</p>
+          </div>
         </div>
-        <div id="projects"></div>
+
+        <!-- Tab content for Upcoming Releases -->
+        <div id="upcomingReleases" class="tab-content active">
+          <div class="project-card">
+            <h3>Upcoming Release 1</h3>
+            <p>Description of Upcoming Release 1...</p>
+          </div>
+          <div class="project-card">
+            <h3>Upcoming Release 1</h3>
+            <p>Description of Upcoming Release 1...</p>
+          </div>
+        </div>
+
+        <!-- Tab content for Film Ideas -->
+        <div id="filmIdeas" class="tab-content">
+          <div class="project-card">
+            <h3>Film Idea 1</h3>
+            <p>Description of Film Idea 1...</p>
+          </div>
+        </div>
       </main>
     </div>
     <script src="cordova.js"></script>
-    <script src="js/scripts.js"></script>
+    <script src="./js/scripts.js"></script>
   </body>
 </html>
