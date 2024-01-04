@@ -133,3 +133,11 @@ button:active {
 .tab-content.active {
   display: block;
 }
+
+.moviePoster {
+  width: auto; /* maintain aspect ratio */
+  height: 60vh; /* adjust this value to make the image smaller or larger */
+  object-fit: cover; /* cover to make sure the image covers the whole width and height */
+  aspect-ratio: 9 / 16; /* aspect ratio 9:16 */
+  filter: grayscale(100%); /* make it black and white */
+}
