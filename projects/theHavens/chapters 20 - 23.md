@@ -1,6 +1,8 @@
-The Havens : The Hunt
+#The Havens : The Hunt
 
-Chapter 20 : Pulling Triggers
+##Chapters 20 - 23
+
+###Chapter 20 : Pulling Triggers
 
 By and by, the days grew - and I thought about the gold.
 
