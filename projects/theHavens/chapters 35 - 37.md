@@ -33,14 +33,14 @@ And then Josh knocked again - and I knew, that I couldn’t pretend to have my h
 
 “Hey man - sorry I had my head phones on”
 
-“oh No worries - no worries…” 
+“oh No worries - no worries…” replied Josh
 
-“What’s up”
+“What’s up” replied I
 
 “yeah…. Our bikes got stolen”
 
 
-Chapter 36
+## Chapter 36
 
 Fuck New Haven. 
 
