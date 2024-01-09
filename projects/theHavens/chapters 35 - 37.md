@@ -44,7 +44,7 @@ And then Josh knocked again - and I knew, that I couldn’t pretend to have my h
 
 Fuck New Haven. 
 
-I couldn't take it - and neither could Kenny Lewis - we both were steaming - Lewis over justice - me over just the feeling of obstruction - and sick and tired all of the gangster nonsense - I wanted the gangster to change their ways - and just be cool and relax - and stop stealing - and just change their vibes - I didn’t like the idea of punishment - but I did want folks to feel sorry for what they have done. 
+I couldn't take it - and neither could Kenny Lewis - we both were steaming at thought of theievery - Lewis over justice of it all - me over, just the feeling of instrusion - and sick and tired all of the gangster nonsense - I wanted the gangster to change their ways - and just be cool and relax - and stop stealing - and just change their vibes - I didn’t like the idea of punishment - but I did want folks to feel sorry for what they have done. 
 
 Kenny Lewis believed strongly in the justice system and wanted them to face a jury and go through the process - and I was like dude - those bikes were like 400 total - probably more - probably less - who cares. 
 
