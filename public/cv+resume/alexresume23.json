@@ -6,7 +6,7 @@
     "email": "alex@ahoy.ooo",
     "portfolio": "alexgonzalez.ooo"
   },
-  "professional_summary": "Professional with a passion for visual storytelling and a background in film production and education. Front-end developer by day, passionate filmmaker by night, entrepreneur by disease. Proven track record in leading creative teams, fostering innovation, and delivering impactful projects. Strong expertise in developing and implementing multimedia strategies, new technologies, and getting shit done. Excellent communication and interpersonal skills.",
+  "professional_summary": "Professional with a passion for visual storytelling and a background in film production and education. Proven track record in leading creative teams, fostering innovation, and delivering impactful projects. Strong expertise in developing and implementing multimedia strategies, new technologies, and delievering long term projects. Excellent communication and interpersonal skills.",
   "work_experience": [
     {
       "title": "Executive Digital Platform Director",
@@ -17,17 +17,17 @@
     {
       "title": "Product Designer",
       "company": "Apeworx",
-      "year": "2023 - Present",
+      "year": "2022 - 2023",
       "description": "Collaborated with cross-functional teams to create innovative and user-centered design solutions."
     },
     {
       "title": "Creative Director",
       "company": "Apeworx",
-      "year": "2021 - 2023",
+      "year": "2021 - 2022",
       "description": "Led a team of designers, writers, and artists to create compelling visual content for clients."
     },
     {
-      "title": "Founder - Chief",
+      "title": "Founder and Chief",
       "company": "Ahoy Indie Media",
       "year": "2022 - Present",
       "description": "Led the strategic vision and direction of Ahoy Indie Media."
@@ -48,7 +48,7 @@
   "education": [
     {
       "degree": "Bachelor of Arts and Science",
-      "major": "New Media Film, Journalism",
+      "major": "New Media Film",
       "school": "Fairfield University",
       "graduation_date": "May 2012"
     }
