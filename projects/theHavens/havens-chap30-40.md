@@ -60,3 +60,14 @@ I wanted people - a team - more than just a rag tag group of treasure hunters - 
 So I threw my hat into the areana and decided to open up a half laundramat - half venue - and half television broadcast network - a place that would have different vending machines.
 
 ## Chapter 34
+
+
+
+## Things to talk about 
+
+1. Considering getting an amazon affilate link
+
+
+
+
+˜
