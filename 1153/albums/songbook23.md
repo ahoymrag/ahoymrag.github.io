@@ -759,3 +759,29 @@ Hope is the shore, my guiding light.
 
 - peaky as a blinder
 - sharp as a razor
+
+
+
+# OLD SONG - NOTHING AT ALL
+
+
+Am G C F
+
+I just know, one thing - nothing at all
+I act like a fool - but they're calling me wise
+do they not understand - or they got crud in their eyes
+
+For the enemy - doesn't want me to speak
+he wants to drown me shame - proving me that i'm weak
+
+but i won't go - into that firey lake
+i'd rather take it like peter 
+or be burnt at the stake
+
+for i just know - one thing - nothing at all
+yeah i just know - one thing - nothing at all 
+
+
+//
+
+I just have - one hope - just God to fear

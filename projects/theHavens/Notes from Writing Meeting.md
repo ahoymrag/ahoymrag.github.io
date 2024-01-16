@@ -50,3 +50,11 @@
 - Deeply involved in the community - New Haven
 - Our zip code
 - What would be the implications of that
+
+
+
+### aditional notes
+1. write aly as a character - a realestate agent who is the voting director - who also knows a lot of abandoned places that we could use for a popup laundrymat 
+2a. after the initial prototype is well proven - and the press has been informed
+
+
