@@ -4,11 +4,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700;800;900&display=swap");
 
 :root {
-  --primary-color: #3498db; /* Blue */
-  --secondary-color: #ff0060; /* Pink */
-  --tertiary-color: #ffff00; /* Yellow */
-  --quaternary-color: #000000; /* Black */
-  --quinary-color: #ffffff; /* White */
+  --primary-color: #3498db;
+  /* Blue */
+  --secondary-color: #ff0060;
+  /* Pink */
+  --tertiary-color: #ffff00;
+  /* Yellow */
+  --quaternary-color: #000000;
+  /* Black */
+  --quinary-color: #ffffff;
+  /* White */
   --black: #000000;
   --white: #ffffff;
   --grey: #7f8c8d;
@@ -140,7 +145,8 @@ p {
   text-transform: uppercase;
 }
 
-ul, li {
+ul,
+li {
   font-family: "Barlow";
   font-style: normal;
   font-weight: 400;
@@ -205,13 +211,15 @@ ul, li {
 .header-content-wrap {
   position: absolute;
   bottom: 100;
-  right: 0; /* set the right to 0 */
+  right: 0;
+  /* set the right to 0 */
 
   background-color: rgb(255, 255, 255);
   width: 100vw;
 
   min-height: 25vh;
 }
+
 /* This will apply when the screen width is 768px or less */
 @media (max-width: 768px) {
   .header-content-wrap {
@@ -220,6 +228,7 @@ ul, li {
     padding-bottom: 100px;
   }
 }
+
 .header-content-title-wrap {
   background-color: rgba(255, 255, 255, 0.932);
 
@@ -300,9 +309,11 @@ ul, li {
   0% {
     border-color: rgb(0, 0, 0);
   }
+
   50% {
     border-color: rgb(255, 255, 255);
   }
+
   100% {
     border-color: rgb(0, 0, 0);
   }
@@ -371,6 +382,7 @@ ul, li {
   text-align: center;
   background-color: rgba(127, 28, 28, 0);
 }
+
 /*Buttons */
 .home-button-link {
   font-family: "Barlow";
@@ -400,4 +412,27 @@ ul, li {
 .top-footer a:hover {
   text-decoration: underline;
   color: var(--secondary-color);
+}
+
+
+.custom-button {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(1rem, -0.875rem + 2.333vw, 3.5rem);
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--black);
+  background-color: var(--white);
+  border: 2px solid var(--black);
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.custom-button:hover {
+  color: var(--white);
+  background-color: var(--black);
+  border: 2px solid var(--white);
+  cursor: pointer;
 }
