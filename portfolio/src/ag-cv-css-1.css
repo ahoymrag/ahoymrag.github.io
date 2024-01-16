@@ -140,6 +140,15 @@ p {
   text-transform: uppercase;
 }
 
+ul, li {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(1rem, -0.875rem + 2.333vw, 3.5rem);
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+
 .centeredDiv {
   width: 100%;
   height: auto;
