@@ -329,7 +329,8 @@ li {
   text-align: center;
   padding-bottom: 100px;
   margin-bottom: 10px;
-  min-height: 75vh;
+  min-height: 95vh;
+
   animation: pulse 2s infinite;
 }
 
