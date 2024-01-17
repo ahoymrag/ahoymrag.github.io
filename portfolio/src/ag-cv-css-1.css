@@ -293,7 +293,7 @@ li {
 
 .portfolio-item {
   width: 100%;
-  min-height: 75vh;
+  min-height: 85vh;
   height: auto;
   max-height: 100vh;
   border-style: solid;
