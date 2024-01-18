@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cinema.fi - Indie Film Funding on Blockchain</title>
+        <style>
+        /* Basic Reset */
+        body, h1, h2, h3, p, figure, figcaption {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+            padding: 20px;
+            font-size: 18px;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+        }
+
+        /* Sections */
+        section {
+            padding: 20px;
+            margin-bottom: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            background: #333;
+            color: #fff;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #555;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .footer p {
+            color: #666;
+        }
+
+        .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    mix-blend-mode: multiply;
+    transition: transform 0.3s ease;
+}
+
+.image-container img:active {
+    transform: scale(1.2);
+}
+
+.full-width {
+    width: 100%;
+    height: auto;
+}
+#lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+    justify-content: center;
+    align-items: center;
+}
+
+#lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    margin: auto;
+    display: block;
+}
+    </style>
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="image-container">
+                <img id="logo" src="./assets/B_cinemaFI.png">
+            </div>
+            <p>A crypto solution for indie film funding</p>
+        </header>
+
+        <section id="problem">
+            <h2>The Problem</h2>
+            <p>Indie films represent over 7% of the $95.45 billion film industry
+                yet remain drastically underserved in funding.</p>
+        </section>
+
+        <section id="solution">
+            <h2>The Solution</h2>
+            <p>Cinema.fi incentivizes the funding of indie films by offering
+                blockchain-based ownership of film parts.</p>
+        </section>
+
+        <section id="how-it-works">
+            <h2>How It Works</h2>
+            <p>Filmmakers post their projects; investors fund them and receive
+                NFTs representing parts of the film.</p>
+        </section>
+
+        <section id="deep-dive">
+            <h2>The Deep Dive</h2>
+            <p>Investors receive tokens reflecting their contribution,
+                convertible into NFT frames upon film completion.</p>
+        </section>
+
+        <section id="marketplace">
+            <h2>Post Production & Secondary Market</h2>
+            <p>Trade film frame NFTs on the open market, supporting both
+                filmmakers and the platform through transaction fees.</p>
+        </section>
+
+        <section id="call-to-action">
+            <h2>Get Involved</h2>
+            <a href="#beta" class="btn">Check the Beta</a>
+            <a href="#investors" class="btn">Learn More</a>
+        </section>
+        <section>
+            <img class="full-width" id="fullscreenImg"
+                src="./assets/cinemafi.png" onclick="openFullscreen(this)">
+        </section>
+
+        <footer class="footer">
+            <p>Contact us at info@cinema.fi | Follow us on <a
+                    href="#">Twitter</a>, <a href="#">Instagram</a></p>
+        </footer>
+        <div id="lightbox" onclick="closeLightbox()">
+            <img id="lightbox-img" src>
+        </div>
+        <script>
+       function openFullscreen(element) {
+    var lightbox = document.getElementById('lightbox');
+    var lightboxImg = document.getElementById('lightbox-img');
+    lightboxImg.src = element.src;
+    lightbox.style.display = 'flex';
+}
+
+function closeLightbox() {
+    var lightbox = document.getElementById('lightbox');
+    lightbox.style.display = 'none';
+}
+    </script>
+    </body>
+
+</html>
