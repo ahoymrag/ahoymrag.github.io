@@ -179,3 +179,25 @@ p {
 .header-content-wrap h1 {
   text-align: center;
 }
+
+.custom-button {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(1rem, -0.875rem + 2.333vw, 3.5rem);
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--black);
+  background-color: var(--white);
+  border: 2px solid var(--black);
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.custom-button:hover {
+  color: var(--white);
+  background-color: var(--black);
+  border: 2px solid var(--white);
+  cursor: pointer;
+}
