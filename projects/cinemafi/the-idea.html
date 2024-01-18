@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The idea Cinema.fi - Indie Film Funding on Blockchain</title>
+        <style>
+            /* Existing CSS */
+    
+            /* Add margin to paragraphs */
+            p {
+                margin-bottom: 20px;
+            }
+    
+            /* Rest of your CSS */
+            </style>
+        <style>
+        /* Basic Reset */
+        body, h1, h2, h3, p, figure, figcaption {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+            padding: 20px;
+            font-size: 18px;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+        }
+
+        /* Sections */
+        section {
+            padding: 20px;
+            margin-bottom: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            background: #0f0f0f;
+            color: #fff;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #555;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .footer p {
+            color: #000000;
+        }
+
+        .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    mix-blend-mode: multiply;
+    transition: transform 0.3s ease;
+}
+
+.image-container img:active {
+    transform: scale(1.2);
+}
+
+.full-width {
+    width: 100%;
+    height: auto;
+}
+#lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+    justify-content: center;
+    align-items: center;
+}
+
+#lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    margin: auto;
+    display: block;
+}
+    </style>
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="image-container">
+                <a href="cinemafi-overview.html"><img class="logo"
+                        src="./assets/B_cinemaFI.png"></a>
+            </div>
+            <p>A crypto solution for indie film funding</p>
+        </header>
+
+        <section id="short-vision">
+            <h2>Short Vision</h2>
+            <p>Cinema.fi: A crypto solution for indie film funding. We turn
+                frames, sequences, and scenes from funded films into NFT’s as a
+                way to raise money for movie production, while giving the
+                benefactor the ability to own a part of the movie they
+                funded.</p>
+        </section>
+        <style>
+    #long-vision p {
+        margin-bottom: 20px;
+    }
+</style>
+        <section id="long-vision">
+            <h2>Long Vision</h2>
+            <p>When it comes to the motion picture market, funding for indie
+                films is incredibly underserved. The film industry is worth an
+                estimated $95.45 billion, with indie films accounting for just
+                over 7% of that total amount. There is a lack of funding for
+                these projects, and current solutions for indie film funding is
+                not optimal. Studio films rank at the top of investment charts
+                and sites like Indigo have a stigma that drives investors away.
+                There are very few incentives for people outside of the film
+                industry to fund dynamic projects.</p>
+            <p>Our solution is to incentivize the funding of indie films. We do
+                this by allowing the benefactor to own different parts of the
+                film and its success using the blockchain. Through Cinema.fi,
+                creators and investors will grow the indie film industry and
+                create fruitful, lasting partnerships.</p>
+            <p>So how does it work? An indie film maker will come to Cinema.fi
+                and post their idea and layout of their film. The post will be
+                publicly housed on the site with their fundraise goal listed.
+                Investors will be able to review each post and select which
+                movie they would like to fund. In exchange for funding,
+                investors will gain access to own frames, sequences, or scenes
+                from the movie.</p>
+            <p>As a deep dive, once invested one will gain a token based on the
+                amount given. The higher the investment, the higher the value of
+                the token. That token will be held until the film’s completion.
+                Once the film is complete, the fun begins. A token holder will
+                receive a frame of the film they funded as an NFT. Holding these
+                NFT’s will have value based on the ‘value’ of the scene.</p>
+            <p>Additionally, post production frames can still be purchased.
+                Enthusiasts can view films and if any frames are available, they
+                have the opportunity to invest post production. This also leads
+                into secondary market opportunities. Trading and selling of the
+                NFT’s can continue on the open market and will include a fee
+                that will be split between the filmmaker and Cinema.fi.</p>
+            <p>From the indie film drawing board to post production success,
+                Cinema.fi is here to help even the smallest creator find
+                success.</p>
+        </section>
+
+        <footer class="footer">
+            <p>&copy; 2024 Cinema.fi</p> </footer>
+        <div id="lightbox" onclick="closeLightbox()">
+            <img id="lightbox-img" src>
+        </div>
+        <script>
+       function openFullscreen(element) {
+    var lightbox = document.getElementById('lightbox');
+    var lightboxImg = document.getElementById('lightbox-img');
+    lightboxImg.src = element.src;
+    lightbox.style.display = 'flex';
+}
+
+function closeLightbox() {
+    var lightbox = document.getElementById('lightbox');
+    lightbox.style.display = 'none';
+}
+    </script>
+    </body>
+
+</html>

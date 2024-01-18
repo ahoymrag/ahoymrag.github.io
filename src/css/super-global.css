@@ -1,3 +1,7 @@
+/* FONTS H1, H3 = BARLOW */
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700;800;900&display=swap");
+
+
 :root {
   --primary-color: #3498db;
   /* Blue */
