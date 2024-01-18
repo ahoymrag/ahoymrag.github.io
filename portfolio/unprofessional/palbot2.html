@@ -3,6 +3,11 @@
 
         <link rel="stylesheet" href="../../src/css/super-global.css">
         <title>Pal-bot 2 - Alex Gonzalez | Film Portfolio </title>
+
+        <link
+            rel="icon"
+            type="image/png"
+            href="../../src/assets/AlexGonzalez-favicon.png" />
     </head>
 
     <body>
@@ -85,16 +90,47 @@
                         class="custom-button">Back</button></a>
             </section>
 
-            <!--section>
-                <h2>Acknowledgments</h2>
-                <p>
-                    A thank you to the entire cast and crew of
-                    "Pal-bot 2" for their dedication and hard work. Special
-                    thanks to [Co-Director's Name], [Producer's Name],
-                    [Cinematographer's Name], and all who contributed to making
-                    this project a success.
-                </p>
-            </section -->
+            <section id="gallery-grid">
+                <div class="grid-item">
+                    <a href="../../gallery/movie-stills/4.png"
+                        class="lightbox-link">
+                        <img src="../../gallery/movie-stills/4.png"
+                            alt="Graphic 1">
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <a href="../../gallery/movie-stills/PAL BOT 2 - NFT (2).png"
+                        class="lightbox-link">
+                        <img
+                            src="../../gallery/movie-stills/PAL BOT 2 - NFT (2).png"
+                            alt="Graphic 2">
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <a
+                        href="../../gallery/movie-stills/PAL BOT 2 - NFT (3) (1).png"
+                        class="lightbox-link">
+                        <img
+                            src="../../gallery/movie-stills/PAL BOT 2 - NFT (3) (1).png"
+                            alt="Graphic 3">
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <a href="../../gallery/movie-stills/PAL BOT 2 - NFT.png"
+                        class="lightbox-link">
+                        <img
+                            src="../../gallery/movie-stills/PAL BOT 2 - NFT.png"
+                            alt="Graphic 4">
+                    </a>
+                </div>
+                <!-- Add more divs for more graphics -->
+            </section>
+            <div id="lightbox" style="display: none;">
+                <img id="lightbox-img" src alt="Full size image">
+            </div>
+
         </main>
+        <script src="../../src/scripts/lightbox-magic.js"></script>
+
     </body>
 </html>
