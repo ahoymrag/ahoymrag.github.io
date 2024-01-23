@@ -172,19 +172,27 @@
     .hamburger-menu {
         cursor: pointer;
         font-size: 24px;
+        background-color: #00000046;
         /* Icon size */
-        color: #000000;
+        color: #ffffff;
         /* Icon color */
         z-index: 1001;
         position: fixed;
+        border-radius: 5px;
         left: 0;
         /* Position to the left */
         width: 50px;
         /* Specify a width */
         height: 50px;
         /* Specify a height */
-        border-radius: 50%;
-        /* Make it a circle */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .hamburger-menu:hover {
+        background-color: black;
     }
 
     /* Additional styles for the menu links */
