@@ -162,6 +162,7 @@
         background: #333;
         transition: left 0.3s;
         z-index: 1000;
+        overflow-y: auto;
     }
 
     .off-canvas-menu.active {
@@ -172,10 +173,18 @@
         cursor: pointer;
         font-size: 24px;
         /* Icon size */
-        color: #fff;
+        color: #000000;
         /* Icon color */
         z-index: 1001;
-        position: relative;
+        position: fixed;
+        left: 0;
+        /* Position to the left */
+        width: 50px;
+        /* Specify a width */
+        height: 50px;
+        /* Specify a height */
+        border-radius: 50%;
+        /* Make it a circle */
     }
 
     /* Additional styles for the menu links */
@@ -194,5 +203,5 @@
     }
 
     .off-canvas-menu ul li a:hover {
-        background-color: #555;
+        background-color: #000000;
     }
