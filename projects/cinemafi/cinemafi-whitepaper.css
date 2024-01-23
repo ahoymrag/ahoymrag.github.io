@@ -1,0 +1,116 @@
+    /* Basic Reset */
+    body,
+    h1,
+    h2,
+    h3,
+    p,
+    figure,
+    figcaption {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: 'Times New Roman', serif;
+        line-height: 1.6;
+        background-color: #fff;
+        color: #333;
+        padding: 20px;
+        font-size: 18px;
+        max-width: 960px;
+        /* Add this line */
+        margin: 0 auto;
+        /* Add this line to center the body */
+    }
+
+
+    /* Header */
+    .header {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .header h1 {
+        font-size: 2.5em;
+    }
+
+    /* Sections */
+    section {
+        padding: 20px;
+        margin-bottom: 20px;
+        background: #fff;
+        border: 1px solid #000;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    /* Buttons */
+    .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 10px;
+        background: #0f0f0f;
+        color: #fff;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+        background: #555;
+    }
+
+    /* Footer */
+    .footer {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .footer p {
+        color: #000000;
+    }
+
+    /* Images */
+    .image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image-container img {
+        max-width: 100%;
+        height: auto;
+        mix-blend-mode: multiply;
+        transition: transform 0.3s ease;
+    }
+
+    .image-container img:active {
+        transform: scale(1.2);
+    }
+
+    .full-width {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Lightbox */
+    #lightbox {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.9);
+        justify-content: center;
+        align-items: center;
+    }
+
+    #lightbox img {
+        max-width: 90%;
+        max-height: 90%;
+        margin: auto;
+        display: block;
+    }
