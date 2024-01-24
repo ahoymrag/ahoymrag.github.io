@@ -23,6 +23,10 @@
         /* Add this line to center the body */
     }
 
+    p {
+        margin-bottom: 20px;
+        /* Adjust this value as needed */
+    }
 
     /* Header */
     .header {
