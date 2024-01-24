@@ -1,0 +1,16 @@
+header {
+    text-align: center;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f965c3;
+    /* Change this to the desired background color */
+}
+
+.splash-image {
+    max-width: 25%;
+    height: auto;
+    object-fit: cover;
+}
