@@ -42,3 +42,32 @@ header img {
     height: auto;
     object-fit: cover;
 }
+
+.hamburger-menu {
+    z-index: 20;
+    /* Ensure it's above other elements */
+    cursor: pointer;
+    /* Change cursor to pointer when hovering over the menu */
+}
+
+.off-canvas-menu {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    /* Hide it off the screen */
+    width: 300px;
+    height: 100%;
+    background: #333;
+    color: #fff;
+    transition: right 0.3s ease;
+    /* Smooth transition */
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    z-index: 10;
+}
+
+.off-canvas-menu.active {
+    right: 0;
+    /* Slide it in */
+}
