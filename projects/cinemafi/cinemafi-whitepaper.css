@@ -217,3 +217,25 @@
     .off-canvas-menu ul li a:hover {
         background-color: #000000;
     }
+
+    .header h2 {
+        text-transform: uppercase;
+
+        color: #000000;
+        /* Yellow color for warning */
+        background-color: rgba(0, 0, 0, 0);
+        /* Semi-transparent black background */
+        padding: 10px;
+        border-radius: 5px;
+        font-size: .7em;
+        /* More subtle font size */
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        /* Soft shadow for depth */
+        border: 1px solid #ffcc00;
+        /* Solid border to make the warning stand out */
+        display: inline-block;
+        /* Only take up as much space as needed */
+        margin: 20px 0;
+        /* Spacing above and below the warning */
+    }

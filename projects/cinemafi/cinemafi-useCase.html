@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cinema.fi - Indie Film Funding on Blockchain</title>
+        <link rel="stylesheet" href="./cinemafi-whitepaper.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    </head>
+
+    <body>
+        <div class="hamburger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <!-- Off-Canvas Menu -->
+        <div class="off-canvas-menu">
+            <div class="toc-header">Table of Contents</div>
+            <ul>
+                <li><img src="assets/cinemaFi - Logo.png" width="200"
+                        height="200"></li>
+
+                <li><a href="#executive-summary">Executive Summary</a></li>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#problem-statement">Problem Statement</a></li>
+                <li><a href="#solution">Cinema.fi: The Solution</a></li>
+                <li><a href="#how-it-works">How Cinema.fi Works</a></li>
+                <li><a href="#blockchain-technology">Blockchain
+                        Technology</a></li>
+                <li><a href="#market-analysis">Market Analysis</a></li>
+                <li><a href="#business-model">Business Model</a></li>
+                <li><a href="#rev-streaming">Revenue</a></li>
+                <li><a href="#use-cases">Use Cases</a></li>
+                <li><a href="#implementation-roadmap">Implementation
+                        Roadmap</a></li>
+                <li><a href="#legal-and-regulatory">Legal and Regulatory
+                        Compliance</a></li>
+                <li><a href="#team-and-partnerships">Team and Strategic
+                        Partnerships</a></li>
+                <li><a href="#exit-stragety">Exit Strategy</a></li>
+                <li><a href="#conclusion">Conclusion</a></li>
+                <li><a href="#high-detail-overview">High Detail
+                        Overview</a></li>
+                <!-- ... rest of the links ... -->
+            </ul>
+        </div>
+
+        <!-- Rest of your HTML content ... -->
+
+        <header class="header">
+            <div class="image-container">
+                <img id="logo" src="./assets/cinemaFi - Logo 2.png">
+            </div>
+            <h2>This part of the website is actively under construction</h2>
+
+        </header>
+
+        <section id="the-white-paper-title">
+            <h1>The Use Cases</h1>
+        </section>
+        <section id="part1-toc">
+            <h2>Table of Contents</h2>
+            <ul>
+                <li><a href="#executive-summary">Executive Summary</a></li>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#problem-statement">Problem Statement</a></li>
+                <li><a href="#solution">Cinema.fi: The Solution</a></li>
+                <li><a href="#how-it-works">How Cinema.fi Works</a></li>
+                <li><a href="#blockchain-technology">Blockchain
+                        Technology</a></li>
+                <li><a href="#market-analysis">Market Analysis</a></li>
+                <li><a href="#business-model">Business Model</a></li>
+                <li><a href="#rev-streaming">Revenue</a></li>
+                <li><a href="#use-cases">Use Cases</a></li>
+                <li><a href="#implementation-roadmap">Implementation
+                        Roadmap</a></li>
+                <li><a href="#legal-and-regulatory">Legal and Regulatory
+                        Compliance</a></li>
+                <li><a href="#team-and-partnerships">Team and Strategic
+                        Partnerships</a></li>
+                <li><a href="#exit-stragety">Exit Strategy</a></li>
+                <li><a href="#conclusion">Conclusion</a></li>
+                <li><a href="#high-detail-overview">High Detail
+                        Overview</a></li>
+            </ul>
+
+        </section>
+
+        <section id="call-to-action">
+            <h2>Get Involved</h2>
+            <a
+                href="https://www.figma.com/proto/ZIELxbQPJI4YVEsc1jiSTx/cinema.fi?type=design&node-id=108-545&t=hl472FU89F7thxt8-1&scaling=min-zoom&page-id=3%3A3&starting-point-node-id=108%3A545&show-proto-sidebar=1&mode=design"
+                class="btn">View Figma Prototype</a>
+            <a href="the-idea.html" class="btn">Learn More</a>
+
+        </section>
+        <section>
+            <img class="full-width" id="fullscreenImg"
+                src="./assets/cinemafi.png" onclick="openFullscreen(this)">
+        </section>
+
+        <footer class="footer">
+            <p>&copy; 2024 Cinema.fi</p> </footer>
+        <div id="lightbox" onclick="closeLightbox()">
+            <img id="lightbox-img" src>
+        </div>
+        <script>
+            // JavaScript for Hamburger Menu Toggle
+            document.querySelector('.hamburger-menu').addEventListener('click', function() {
+                document.querySelector('.off-canvas-menu').classList.toggle('active');
+            });
+        
+            // Optional: JavaScript to close the menu when a link is clicked
+            document.querySelectorAll('.off-canvas-menu a').forEach(link => {
+                link.addEventListener('click', function() {
+                    document.querySelector('.off-canvas-menu').classList.remove('active');
+                });
+            });
+        
+            function openFullscreen(element) {
+                var lightbox = document.getElementById('lightbox');
+                var lightboxImg = document.getElementById('lightbox-img');
+                lightboxImg.src = element.src;
+                lightbox.style.display = 'flex';
+            }
+        
+            function closeLightbox() {
+                var lightbox = document.getElementById('lightbox');
+                lightbox.style.display = 'none';
+            }
+        </script>
+    </body>
+
+</html>
