@@ -16,11 +16,14 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #f965c3;
+    background-color: #ff0060;
     border-style: solid;
     /* Change this to the desired background color */
 }
 
+header img {
+    mix-blend-mode: multiply;
+}
 
 
 .content {
