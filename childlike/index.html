@@ -2,15 +2,48 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>childlike - Company Structure Mind Map</title>
         <link rel="stylesheet" href="./src/childlike-global.css">
     </head>
     <body>
-        <header>
-            <img class="splash-image"
-                src="./src/assets/childlike_concept_002_haley.png">
-        </header>
+        <div class="hamburger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
 
+        <!-- Off-Canvas Menu -->
+        <div class="off-canvas-menu">
+            <!-- Content for your menu -->
+            <a href="#" id="hello-button" class="btn">Hello there</a>
+        </div>
+        <div class="content">
+            <header>
+                <img class="splash-image"
+                    src="./src/assets/childlike_concept_002_haley.png">
+            </header>
+            <div>
+                <img src="./src/assets/childlike_Brainstorming.png">
+            </div>
+            <section id="overview">
+                <h2>Overview</h2>
+                <p>This is where the overview will be </p>
+            </section>
+        </div>
+        <script>
+            // JavaScript for Hamburger Menu Toggle
+            document.querySelector('.hamburger-menu').addEventListener('click', function() {
+                document.querySelector('.off-canvas-menu').classList.toggle('active');
+            });
+            
+            // Optional: JavaScript to close the menu when a link is clicked
+            document.querySelectorAll('.off-canvas-menu a').forEach(link => {
+                link.addEventListener('click', function() {
+                    document.querySelector('.off-canvas-menu').classList.remove('active');
+                });
+            });
+            </script>
     </body>
 </html>
