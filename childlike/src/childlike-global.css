@@ -80,3 +80,31 @@ header img {
     border-left: 4px solid #0077CC;
     padding: 10px;
 }
+
+.product-menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    position: relative;
+    z-index: 3000;
+    padding: 5px;
+}
+
+.product-menu h2 {
+    margin-bottom: 20px;
+}
+
+.product-link {
+    display: inline-block;
+    margin: 0 2.5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-link:hover {
+    transform: scale(1.015);
+}
+
+.product-image {
+    max-width: 120px !important;
+}
