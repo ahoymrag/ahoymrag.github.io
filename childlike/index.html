@@ -23,6 +23,10 @@
                 <img class="splash-image"
                     src="./src/assets/childlike_concept_002_haley.png">
             </header>
+            <div id="theMap">
+                <img src="./src/assets/childlike-2-Brainstorming.png" onclick="openLightbox()">
+
+            </div>
             <div class="product-menu">
 
                 <a href="./src/pages/medialabs-overview.html" class="product-link">
@@ -38,8 +42,9 @@
                     <img src="../childlike/src/assets/childlike-studios-logo-1.png" class="product-image">
                 </a>
             </div>
-            <div>
-                <img src="./src/assets/childlike-2-Brainstorming.png">
+      
+            <div id="lightbox" class="lightbox">
+                <img src="./src/assets/childlike-2-Brainstorming.png" onclick="openLightbox()">
             </div>
             <div id="tableOfContents">
                 <h2>Table of Contents</h2>
@@ -60,7 +65,7 @@
                     <li><a href="#investment-highlights">Investment
                             Highlights</a></li>
                     <li><a href="#corporate-responsibility">Corporate
-                            Responsibility and Sustainability</a></li>
+                           Sustainability</a></li>
                     <li><a href="#call-to-action">Call to Action for
                             Investors</a></li>
                     <li><a href="#appendix">Appendix</a></li>
@@ -589,5 +594,19 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
         </script>
+
+<!-- LIGHTBOX CODE -->
+<script>
+    function openLightbox() {
+        document.getElementById('lightbox').style.display = "block";
+    }
+    
+    window.onclick = function(event) {
+        var lightbox = document.getElementById('lightbox');
+        if (event.target == lightbox) {
+            lightbox.style.display = "none";
+        }
+    }
+</script>
     </body>
 </html>

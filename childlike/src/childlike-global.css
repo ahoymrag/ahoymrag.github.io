@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Barlow', sans-serif;
+    padding: 15px;
 }
 
 .off-canvas-menu {
@@ -106,5 +107,23 @@ header img {
 }
 
 .product-image {
-    max-width: 120px !important;
+    max-width: 240px !important;
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 4000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.lightbox img {
+    margin: 15% auto;
+    display: block;
+    width: 90%;
 }
