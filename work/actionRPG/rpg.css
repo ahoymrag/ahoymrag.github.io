@@ -1,20 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Barlow', sans-serif;
+    /* Use Barlow as the default font */
+
 }
+
+:root {
+    --primary-color: #000000;
+    --secondary-color: #f4f4f4;
+    --text-color: #000000;
+    --hover-color: #ddd;
+    --background-color: rgba(255, 255, 255, 0.8);
+    --footer-color: #ffffff;
+    --link-color: #0066cc;
+    --service-card-border-color: #ccc;
+    --team-member-bg-color: #f8f9fa;
+    --team-member-text-color: #212529;
+    --footer-bg-color: black;
+    --footer-text-color: white;
+}
+
+/* Now you can use these colors in your CSS like this: */
 
 body {
     font-family: Arial, sans-serif;
     font-size: 16px;
-    background-color: #f4f4f4;
+    background-color: var(--secondary-color);
     max-height: 100vh;
-
 }
 
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: var(--primary-color);
+    color: var(--footer-color);
     padding: 10px 0;
     text-align: center;
 }
@@ -58,17 +80,52 @@ section {
 
 h1,
 h2 {
-    color: #333;
+    color: #000000;
+}
+
+.pageTitle {
+    font-size: 120px;
+    line-height: 85%;
+    font-weight: 900;
+    letter-spacing: 0cap;
+    perspective: 1000px;
+    /* This gives a 3D effect */
+    transition: transform 0.5s;
+    /* This makes the change smooth */
+}
+
+.pageTitle:hover {
+    transform: rotateY(180deg) translateZ(50px);
+    /* This rotates the element when hovered and adds distortion on the Z axis */
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: var(--footer-bg-color);
+    color: var(--footer-text-color);
     text-align: center;
     padding: 10px 0;
     position: fixed;
     bottom: 0;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer a {
+    color: var(--footer-text-color);
+    padding: 10px;
+    text-decoration: none;
+
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
 }
 
 #logo,
@@ -148,4 +205,21 @@ footer {
 
 .team-member p {
     padding: 1em;
+}
+
+.responsive-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    filter: grayscale(100%);
+}
+
+.service-caption {
+    font-size: 20px;
+    /* Adjust as needed */
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
 }
