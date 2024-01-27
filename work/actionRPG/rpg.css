@@ -32,6 +32,7 @@ body {
     font-size: 16px;
     background-color: var(--secondary-color);
     max-height: 100vh;
+    padding: 50px;
 }
 
 header {
@@ -92,11 +93,16 @@ h2 {
     /* This gives a 3D effect */
     transition: transform 0.5s;
     /* This makes the change smooth */
+    overflow: hidden;
+    padding: 10px;
 }
 
-.pageTitle:hover {
-    transform: rotateY(180deg) translateZ(50px);
-    /* This rotates the element when hovered and adds distortion on the Z axis */
+@media screen and (max-width: 600px) {
+    .pageTitle {
+        font-size: 22px;
+    }
+
+
 }
 
 footer {
