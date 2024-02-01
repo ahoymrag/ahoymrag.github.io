@@ -77,3 +77,13 @@ as of 1.10.24
 
 
 
+## Apple Developer
+
+as of 2.1.24 (not checked)
+Email: professorgonzz@gmail.com
+Enrollment ID: 4TM7D7T5GJ
+
+## icloud
+new icloud - professorgonzz@gmail.com
+as of 3.17.23
+23trustdaL0RD!@#
