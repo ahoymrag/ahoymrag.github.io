@@ -239,3 +239,14 @@
         margin: 20px 0;
         /* Spacing above and below the warning */
     }
+
+    /* Sections */
+    section {
+        padding: 20px;
+        margin-bottom: 20px;
+        background: #f5fffa;
+        /* Mint accent color */
+        border: 1px solid #000;
+        border-radius: 0;
+        box-shadow: none;
+    }
