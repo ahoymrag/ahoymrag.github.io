@@ -1,13 +1,10 @@
 import React from 'react';
-import './App.css';
+import Dashboard from './components/dashboard';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Welcome to CinemaFi</h1>
-        <p>Indie Film Funding on Blockchain</p>
-      </header>
+      <Dashboard />
     </div>
   );
 }
