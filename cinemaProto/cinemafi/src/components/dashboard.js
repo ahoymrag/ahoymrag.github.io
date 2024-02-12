@@ -1,13 +1,12 @@
 import React from 'react';
-
-
+import Sidebar from './sidebar'; // Assuming Sidebar.js is in the same directory
 
 function Dashboard() {
   return (
     <div className="min-h-screen bg-white">
       <div className="flex">
-        {/* Sidebar Placeholder */}
-        <div className="w-64 h-screen bg-gray-800"></div>
+        {/* Sidebar Component */}
+        <Sidebar />
         
         {/* Main Content Area */}
         <div className="flex-1 p-10">
