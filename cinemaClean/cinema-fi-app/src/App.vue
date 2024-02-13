@@ -1,8 +1,9 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="content">
+    <img alt="Vue logo" src="./assets/A_cinemaFI.png" class="logo">
+    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  </div>
 </template>
-
 <script>
 import HelloWorld from './components/HelloWorld.vue'
 
@@ -22,5 +23,19 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.logo {
+  max-width: 50%; /* Adjust based on your needs */
+  height: auto;
+  margin-bottom: 20px; /* Space between logo and text */
 }
 </style>
