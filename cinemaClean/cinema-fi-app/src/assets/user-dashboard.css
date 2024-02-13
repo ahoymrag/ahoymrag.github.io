@@ -1,9 +1,10 @@
 .user-dashboard {
     padding: 20px;
-    background-color: #f4f7fc;
+    background-color: #f7faff;
     border-radius: 8px;
     margin: 20px auto;
-    max-width: 1200px;
+    width: 100%;
+    max-width: 1200px !important;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 

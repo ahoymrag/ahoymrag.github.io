@@ -78,6 +78,190 @@
                   </div>
                 </div>
               </div>
+              <div class="movie-box-wrapper">
+                <div class="movie-box" style="background-color: #fee4cb;">
+                  <div class="movie-box-header">
+                    <span>December 10, 2020</span>
+                  </div>
+                  <div class="movie-box-content-header">
+                    <p class="box-content-header">Movie Title</p>
+                    <p class="box-content-subheader">Genre</p>
+                  </div>
+                  <div class="box-progress-wrapper">
+                    <p class="box-progress-header">Popularity</p>
+                    <div class="box-progress-bar">
+                      <span class="box-progress" style="width: 60%; background-color: #ff942e"></span>
+                    </div>
+                    <p class="box-progress-percentage">60%</p>
+                  </div>
+                  <div class="movie-box-footer">
+                    <div class="days-left" style="color: #ff942e;">
+                      2 Days Left
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="movie-box-wrapper">
+                <div class="movie-box" style="background-color: #fee4cb;">
+                  <div class="movie-box-header">
+                    <span>December 10, 2020</span>
+                  </div>
+                  <div class="movie-box-content-header">
+                    <p class="box-content-header">Movie Title</p>
+                    <p class="box-content-subheader">Genre</p>
+                  </div>
+                  <div class="box-progress-wrapper">
+                    <p class="box-progress-header">Popularity</p>
+                    <div class="box-progress-bar">
+                      <span class="box-progress" style="width: 60%; background-color: #ff942e"></span>
+                    </div>
+                    <p class="box-progress-percentage">60%</p>
+                  </div>
+                  <div class="movie-box-footer">
+                    <div class="days-left" style="color: #ff942e;">
+                      2 Days Left
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="movie-box-wrapper">
+                <div class="movie-box" style="background-color: #fee4cb;">
+                  <div class="movie-box-header">
+                    <span>December 10, 2020</span>
+                  </div>
+                  <div class="movie-box-content-header">
+                    <p class="box-content-header">Movie Title</p>
+                    <p class="box-content-subheader">Genre</p>
+                  </div>
+                  <div class="box-progress-wrapper">
+                    <p class="box-progress-header">Popularity</p>
+                    <div class="box-progress-bar">
+                      <span class="box-progress" style="width: 60%; background-color: #ff942e"></span>
+                    </div>
+                    <p class="box-progress-percentage">60%</p>
+                  </div>
+                  <div class="movie-box-footer">
+                    <div class="days-left" style="color: #ff942e;">
+                      2 Days Left
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="movie-box-wrapper">
+                <div class="movie-box" style="background-color: #fee4cb;">
+                  <div class="movie-box-header">
+                    <span>December 10, 2020</span>
+                  </div>
+                  <div class="movie-box-content-header">
+                    <p class="box-content-header">Movie Title</p>
+                    <p class="box-content-subheader">Genre</p>
+                  </div>
+                  <div class="box-progress-wrapper">
+                    <p class="box-progress-header">Popularity</p>
+                    <div class="box-progress-bar">
+                      <span class="box-progress" style="width: 60%; background-color: #ff942e"></span>
+                    </div>
+                    <p class="box-progress-percentage">60%</p>
+                  </div>
+                  <div class="movie-box-footer">
+                    <div class="days-left" style="color: #ff942e;">
+                      2 Days Left
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="movie-box-wrapper">
+                <div class="movie-box" style="background-color: #fee4cb;">
+                  <div class="movie-box-header">
+                    <span>December 10, 2020</span>
+                  </div>
+                  <div class="movie-box-content-header">
+                    <p class="box-content-header">Movie Title</p>
+                    <p class="box-content-subheader">Genre</p>
+                  </div>
+                  <div class="box-progress-wrapper">
+                    <p class="box-progress-header">Popularity</p>
+                    <div class="box-progress-bar">
+                      <span class="box-progress" style="width: 60%; background-color: #ff942e"></span>
+                    </div>
+                    <p class="box-progress-percentage">60%</p>
+                  </div>
+                  <div class="movie-box-footer">
+                    <div class="days-left" style="color: #ff942e;">
+                      2 Days Left
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="movie-box-wrapper">
+                <div class="movie-box" style="background-color: #fee4cb;">
+                  <div class="movie-box-header">
+                    <span>December 10, 2020</span>
+                  </div>
+                  <div class="movie-box-content-header">
+                    <p class="box-content-header">Movie Title</p>
+                    <p class="box-content-subheader">Genre</p>
+                  </div>
+                  <div class="box-progress-wrapper">
+                    <p class="box-progress-header">Popularity</p>
+                    <div class="box-progress-bar">
+                      <span class="box-progress" style="width: 60%; background-color: #ff942e"></span>
+                    </div>
+                    <p class="box-progress-percentage">60%</p>
+                  </div>
+                  <div class="movie-box-footer">
+                    <div class="days-left" style="color: #ff942e;">
+                      2 Days Left
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="movie-box-wrapper">
+                <div class="movie-box" style="background-color: #fee4cb;">
+                  <div class="movie-box-header">
+                    <span>December 10, 2020</span>
+                  </div>
+                  <div class="movie-box-content-header">
+                    <p class="box-content-header">Movie Title</p>
+                    <p class="box-content-subheader">Genre</p>
+                  </div>
+                  <div class="box-progress-wrapper">
+                    <p class="box-progress-header">Popularity</p>
+                    <div class="box-progress-bar">
+                      <span class="box-progress" style="width: 60%; background-color: #ff942e"></span>
+                    </div>
+                    <p class="box-progress-percentage">60%</p>
+                  </div>
+                  <div class="movie-box-footer">
+                    <div class="days-left" style="color: #ff942e;">
+                      2 Days Left
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="movie-box-wrapper">
+                <div class="movie-box" style="background-color: #fee4cb;">
+                  <div class="movie-box-header">
+                    <span>December 10, 2020</span>
+                  </div>
+                  <div class="movie-box-content-header">
+                    <p class="box-content-header">Movie Title</p>
+                    <p class="box-content-subheader">Genre</p>
+                  </div>
+                  <div class="box-progress-wrapper">
+                    <p class="box-progress-header">Popularity</p>
+                    <div class="box-progress-bar">
+                      <span class="box-progress" style="width: 60%; background-color: #ff942e"></span>
+                    </div>
+                    <p class="box-progress-percentage">60%</p>
+                  </div>
+                  <div class="movie-box-footer">
+                    <div class="days-left" style="color: #ffdebe;">
+                      2 Days Left
+                    </div>
+                  </div>
+                </div>
+              </div>
               <!-- End of movie box wrapper -->
             </div>
           </div>
