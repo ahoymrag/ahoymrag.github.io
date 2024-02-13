@@ -13,6 +13,17 @@
         <a href="" class="app-sidebar-link">
           <i class="fas fa-cog"></i> Settings
         </a>
+        <a href="" class="app-sidebar-link">
+            <i class="fas fa-cog"></i> Movies
+          </a>
+       <a href="" class="app-sidebar-link">
+          <i class="fas fa-cog"></i> Market
+        </a>
+        <a href="" class="app-sidebar-link">
+            <i class="fas fa-cog"></i> Fund
+          </a>
+
+     
       </div>
     </div>
 </template>
