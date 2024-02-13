@@ -1,16 +1,24 @@
 <template>
-  <div class="content">
-    <img alt="Vue logo" src="./assets/A_cinemaFI.png" class="logo">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <div class="content">
+      <img alt="Vue logo" src="./assets/A_cinemaFI.png" class="logo">
+     
+      <UserDashboard /> <!-- Correctly referencing the updated component name -->
+      <HelloWorld msg="Welcome to Your Vue.js App"/>
+     
+    </div>
   </div>
 </template>
+
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import UserDashboard from './components/UserDashboard.vue' // Correctly importing the renamed component
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HelloWorld,
+    UserDashboard // Correctly registering the renamed component
   }
 }
 </script>

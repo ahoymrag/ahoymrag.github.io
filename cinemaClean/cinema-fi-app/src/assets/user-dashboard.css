@@ -1,0 +1,11 @@
+.user-dashboard {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#left-dashy {
+    background-color: red;
+}
