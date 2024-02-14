@@ -249,3 +249,9 @@ section {
     border-radius: 0;
     box-shadow: none;
 }
+
+/* Unique ID for section without border */
+#the-white-paper-title {
+    border: none;
+    /* Remove border */
+}
