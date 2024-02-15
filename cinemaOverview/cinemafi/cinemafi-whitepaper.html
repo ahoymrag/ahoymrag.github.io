@@ -183,14 +183,14 @@
         <section id="solution">
             <h2>CinemaFi : The Solution </h2>
             <h3>Reinventing Indie Film Funding</h3>
-            <p>Cinema.fi leverages blockchain technology and Non-Fungible
+            <p>CinemaFileverages blockchain technology and Non-Fungible
                 Tokens (NFTs) to bridge the gap between creative indie film
                 projects and investors. Our platform aims to disrupt
                 the traditional funding model by offering a transparent, secure,
                 and inclusive ecosystem for filmmakers and retail investors
                 alike.</p>
 
-            <h3>Key Components of the Cinema.fi Solution</h3>
+            <h3>Key Components of the CinemaFi Solution</h3>
             <h4>Decentralized Funding Platform</h4>
             <ul>
                 <li>Direct Filmmaker-to-Investor Connection: CinemaFi
@@ -785,7 +785,7 @@
                     open film funding as an alternative class asset. </p>
                 <h3>Nathan Van Hoozen - President</h3>
                 <p>Nathan Van Hoozen, serving as the President and Co-Founder of
-                    Cinema.fi, brings a unique blend of blockchain expertise and
+                    CinemaFi, brings a unique blend of blockchain expertise and
                     visionary leadership to the forefront of indie film funding
                     innovation. With a background that spans across blockchain
                     entrepreneurship, a role in claims analysis,
@@ -916,9 +916,7 @@
             <a
                 href="https://www.figma.com/proto/ZIELxbQPJI4YVEsc1jiSTx/cinema.fi?type=design&node-id=108-545&t=hl472FU89F7thxt8-1&scaling=min-zoom&page-id=3%3A3&starting-point-node-id=108%3A545&show-proto-sidebar=1&mode=design"
                 class="btn">View Figma Prototype</a>
-            <a href="the-idea.html" class="btn">Learn More</a>
-            <a href="cinemafi-useCase.html" class="btn">View Cinemafi Use Case
-                Scenarios</a>
+ 
             <a href="cinemafi-techPlan.html" class="btn">cinemaFi Tech Plan</a>
 
         </section>
@@ -928,10 +926,43 @@
         </section>
 
         <footer class="footer">
-            <p>&copy; 2024 Cinema.fi</p> </footer>
+            <p>&copy; 2024 CinemaFi</p>
+            <button id="saveToPdf" class="btn" title="Select 'Save as PDF' in the print dialog">Save to PDF</button>
+        </footer>
         <div id="lightbox" onclick="closeLightbox()">
             <img id="lightbox-img" src>
         </div>
+        <script>
+            // JavaScript for Hamburger Menu Toggle
+            document.querySelector('.hamburger-menu').addEventListener('click', function() {
+                document.querySelector('.off-canvas-menu').classList.toggle('active');
+            });
+        
+            // Optional: JavaScript to close the menu when a link is clicked
+            document.querySelectorAll('.off-canvas-menu a').forEach(link => {
+                link.addEventListener('click', function() {
+                    document.querySelector('.off-canvas-menu').classList.remove('active');
+                });
+            });
+        
+            function openFullscreen(element) {
+                var lightbox = document.getElementById('lightbox');
+                var lightboxImg = document.getElementById('lightbox-img');
+                lightboxImg.src = element.src;
+                lightbox.style.display = 'flex';
+            }
+        
+            function closeLightbox() {
+                var lightbox = document.getElementById('lightbox');
+                lightbox.style.display = 'none';
+            }
+        
+            // JavaScript for Save to PDF functionality
+            document.getElementById('saveToPdf').addEventListener('click', function() {
+                window.print();
+            });
+        </script>
+
         <script>
             // JavaScript for Hamburger Menu Toggle
             document.querySelector('.hamburger-menu').addEventListener('click', function() {
