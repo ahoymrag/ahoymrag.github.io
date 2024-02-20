@@ -257,6 +257,11 @@ h4 {
     line-height: 85%;
 }
 
+section h1,
+h2 {
+    margin-bottom: 10px;
+}
+
 /* Unique ID for section without border */
 #the-white-paper-title {
     border: none;
