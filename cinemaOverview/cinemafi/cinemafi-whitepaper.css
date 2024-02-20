@@ -246,8 +246,15 @@ section {
     margin-bottom: 20px;
     /* Mint accent color */
     border: 1px solid #000;
-    border-radius: 0;
+    border-radius: 5px;
     box-shadow: none;
+}
+
+section h1,
+h2,
+h3,
+h4 {
+    line-height: 85%;
 }
 
 /* Unique ID for section without border */
