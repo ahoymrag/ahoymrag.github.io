@@ -1,65 +1,152 @@
-/*portfolio CSS */
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700;800;900&display=swap");
 
-            /* CSS FOR LOGOS */
-            .companyLogo-portfolio {
-                width: 100%;
-                height: auto;
-            }
+/* CSS FOR LOGOS */
+.companyLogo-portfolio {
+    width: 100%;
+    height: auto;
+}
 
-            /* Flexbox styles */
-            main {
-                display: flex;
-                flex-wrap: wrap;
-            }
+html {
+    /* width:1280px; */
+    height: 832px;
+}
 
-            .portfolio-item {
-                flex: 1 1 900px; /* Each item will have a minimum width of 300px */
-                margin: 10px;
-                padding: 20px;
-                background-color: #e4e4e4;
-            }
+main {
+    width: 100%;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 100px;
+}
 
-            #port-silverBack {
-                background-attachment: fixed;
-                background-size:contain;
-                background-position: 0%;
-                background-image: url(/portfolio/assets/companyLogos/silverBack.png);
-            }
+body {
+    background-color: rgb(255, 255, 255);
+}
 
-            .littleBuddyLogo {
-                width:64px;
-                height:auto;
-                background-color:rgb(0, 0, 0);
-                border-style:solid;
-                border-radius:2px;
-                padding:20px;
-            }
+h1 {
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 900;
+    font-size: clamp(1rem, -0.875rem + 10.333vw, 15.5rem);
+    line-height: 84.5%;
+    /* or 75px */
+    padding-left: 20px;
+    /* Increased padding */
+    padding-right: 20px;
+    /* Increased padding */
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+}
 
-            #port-apePay {
-                background-image:url(/ahoymrag.github.io/portfolio/assets/companyLogos/apePay.png);
-                background-size:cover;
-                background-attachment: fixed;
-        
-            }
-        
-            #port-Chaos {
-                background-image:url(/ahoymrag.github.io/portfolio/assets/companyLogos/chaosNet.png);
-                background-size:cover;
-                background-attachment: fixed;
-            }
+h2 {
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 900;
+    font-size: clamp(1rem, -0.875rem + 5.333vw, 7.5rem);
+    line-height: 84.5%;
+    /* or 75px */
 
-            /* Media queries for mobile devices */
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h3 {
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 74.5%;
+    /* or 18px */
+
+    text-align: center;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 2vw;
+    line-height: 74.5%;
+    /* or 18px */
+
+    text-align: center;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+}
+
+h5 {
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 2vw;
+    line-height: 74.5%;
+    /* or 18px */
+
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+}
+
+.portfolio-item {
+    width: 100%;
+    min-height: 85vh;
+    height: auto;
+    max-height: 100vh;
+    border-style: solid;
+    border-color: var(--black);
+
+    display: flexbox;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
+
+#port-silverBack {
+    background-attachment: fixed;
+    background-size: contain;
+    background-position: 0%;
+    background-image: url(/portfolio/assets/companyLogos/silverBack.png);
+}
+
+.littleBuddyLogo {
+    width: 64px;
+    height: auto;
+    background-color: rgb(0, 0, 0);
+    border-style: solid;
+    border-radius: 2px;
+    padding: 20px;
+}
+
+#port-apePay {
+    background-image: url(/ahoymrag.github.io/portfolio/assets/companyLogos/apePay.png);
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+#port-Chaos {
+    background-image: url(/ahoymrag.github.io/portfolio/assets/companyLogos/chaosNet.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Media queries for mobile devices */
 @media screen and (max-width: 768px) {
     main {
         flex-direction: column;
     }
 
     .portfolio-item {
-        flex: 1 1 auto; /* Each item will take the full width */
+        flex: 1 1 auto;
+        /* Each item will take the full width */
     }
 
     .littleBuddyLogo {
-        width: 32px; /* Reduce the size of the logo */
-        padding: 10px; /* Reduce the padding */
+        width: 32px;
+        /* Reduce the size of the logo */
+        padding: 10px;
+        /* Reduce the padding */
     }
 }

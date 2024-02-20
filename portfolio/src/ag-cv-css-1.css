@@ -297,7 +297,7 @@ li {
   height: auto;
   max-height: 100vh;
   border-style: solid;
-  border-color: black;
+  border-color: var(--black);
 
   display: flexbox;
   align-items: center;
