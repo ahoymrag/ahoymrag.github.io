@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Implementing Local Split-Screen Multiplayer in Unreal Engine
+            5</title>
+        <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        p, ul {
+            margin-bottom: 20px;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Implementing Local Split-Screen Multiplayer in Unreal Engine
+                5</h1>
+            <p>Creating a local split-screen multiplayer game in Unreal Engine 5
+                (UE5) allows players to share a single screen while enjoying a
+                game together. Here's a step-by-step guide to implementing this
+                feature for the Nintendo Switch or PC platforms.</p>
+
+            <h2>Step 1: Project Setup</h2>
+            <p>Open Unreal Engine 5 and create or open your project. Ensure your
+                game mode supports multiplayer and set the default number of
+                players to more than 1 if needed.</p>
+
+            <h2>Step 2: Configure Input</h2>
+            <p>Configure input mappings for both players in <code>Edit &gt;
+                    Project Settings &gt; Input</code> to ensure separate
+                controls for Player 1 and Player 2.</p>
+
+            <h2>Step 3: Enable Split-Screen</h2>
+            <p>Check <code>Use Splitscreen</code> in <code>Edit &gt; Project
+                    Settings &gt; Engine - General Settings</code>, and
+                configure the Split-Screen Layout according to your game's
+                requirements.</p>
+
+            <h2>Step 4: Create a Blueprint for Split-Screen Logic</h2>
+            <p>Use the <code>Create Player</code> node in your Level Blueprint
+                to add a second player at game start, setting the Player Index
+                to 1 and Spawn Pawn to true.</p>
+
+            <h2>Step 5: Adjust Camera and Viewport</h2>
+            <p>Adjust camera settings for split-screen play and ensure UI
+                elements are displayed correctly for each player.</p>
+
+            <h2>Step 6: Test Your Game</h2>
+            <p>Test the game in the UE5 editor using Play in Editor (PIE) with
+                multiple players to ensure everything works as expected.</p>
+
+            <h2>Step 7: Deploy to Switch or PC</h2>
+            <p>Follow platform-specific steps for deploying your project to the
+                Nintendo Switch or PC.</p>
+
+            <h2>Additional Tips:</h2>
+            <ul>
+                <li>Optimize your game for performance to ensure smooth
+                    split-screen play.</li>
+                <li>Regular playtesting is crucial to fine-tune gameplay balance
+                    and UI/UX design for split-screen.</li>
+            </ul>
+
+            <p>This tutorial provides a foundational approach to implementing
+                local split-screen multiplayer in UE5. Adapt these steps to fit
+                your specific project needs.</p>
+        </div>
+    </body>
+</html>
