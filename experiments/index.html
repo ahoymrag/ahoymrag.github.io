@@ -71,6 +71,16 @@
     z-index: 1;
   }
 
+  .home-button {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10000; /* Increased z-index value */
+  }
+
   </style>
 </head>
 <body>
@@ -112,12 +122,12 @@
         href="../childlike/index.html">childlike</a></li>
     <li><a class="back-to-business-button" href="../experiments/gdd_parkor.html">Forest Race Game</a></li>
     <li><a class="back-to-business-button" href="./bad-gather.html">Requested Bad Gather Website</a></li>
+    <li><a class="back-to-business-button home-button" href="../index.html">HOME</a></li>
+
+
+
       </ul>
   </nav>
-
-  <footer>
-    <a class="back-to-business-button home-button" href="../index.html">Home</a>
-  </footer>
 
   <script>
     document.addEventListener('DOMContentLoaded', function() {
