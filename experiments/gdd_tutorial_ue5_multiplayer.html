@@ -82,5 +82,85 @@
                 local split-screen multiplayer in UE5. Adapt these steps to fit
                 your specific project needs.</p>
         </div>
+
+        <div class="container">
+            <h1>Extended Tutorial on Implementing Local Split-Screen Multiplayer
+                in Unreal Engine 5</h1>
+
+            <h2>Step 4: Detailed Blueprint Logic for Split-Screen Setup</h2>
+            <h3>4.1 Creating Player Characters</h3>
+            <p>To add a second player in split-screen mode, you'll need to open
+                your Level Blueprint and implement the following steps:</p>
+            <ol>
+                <li>Right-click in the graph area and search for the <code>Begin
+                        Play</code> event node. This will be the starting point
+                    for our logic.</li>
+                <li>Drag from the <code>Begin Play</code> node and search for
+                    the <code>Create Player</code> node. Place this node and set
+                    the Player Index to 1 to indicate the second player.</li>
+                <li>Ensure the <code>Spawn Pawn</code> option on the
+                    <code>Create Player</code> node is checked. This will
+                    automatically create and possess a pawn for the second
+                    player.</li>
+                <li>To customize pawn spawning, connect additional logic to the
+                    <code>Create Player</code> node that specifies which pawn
+                    class to spawn and where.</li>
+            </ol>
+
+            <h3>4.2 Handling Player Input</h3>
+            <p>Each player will need their own set of input controls. This is
+                managed in the Project Settings:</p>
+            <ol>
+                <li>Go to <code>Edit &gt; Project Settings &gt;
+                        Input</code>.</li>
+                <li>Create action and axis mappings for both players, ensuring
+                    they don't conflict and are appropriately mapped to
+                    different keys or controllers.</li>
+            </ol>
+
+            <h2>Step 5: Adjusting Cameras for Split-Screen</h2>
+            <h3>5.1 Camera Setup for Each Player</h3>
+            <p>For split-screen play, each player's camera view can be adjusted
+                individually:</p>
+            <ol>
+                <li>In your pawn Blueprint, add a Camera Component if one isn't
+                    already present.</li>
+                <li>Use the <code>Set View Target with Blend</code> node in the
+                    Level Blueprint or Player Controller Blueprint, specifying
+                    each player's camera component.</li>
+                <li>Adjust camera settings such as Field of View (FOV) to ensure
+                    a good split-screen experience.</li>
+            </ol>
+
+            <h3>5.2 Configuring Split-Screen Views</h3>
+            <p>Unreal Engine provides several settings to customize the
+                split-screen experience:</p>
+            <ol>
+                <li>Navigate to <code>Edit &gt; Project Settings &gt; Engine -
+                        General Settings &gt; Split Screen</code>.</li>
+                <li>Here, you can adjust the split-screen mode (Horizontal or
+                    Vertical) and margins between screens.</li>
+            </ol>
+
+            <h2>Index of Required Scripts and Blueprints</h2>
+            <ul>
+                <li><strong>Level Blueprint</strong>: Contains the logic to
+                    initialize split-screen and spawn player characters.</li>
+                <li><strong>Player Pawn Blueprints</strong>: For each character
+                    type, ensure there's a Blueprint with properly configured
+                    input mappings and camera components.</li>
+                <li><strong>Player Controller Blueprint</strong> (Optional): If
+                    you're customizing control schemes or camera behavior
+                    further than what's provided by default.</li>
+                <li><strong>UI/HUD Blueprints</strong>: To create and manage UI
+                    elements that are specific to each player in split-screen
+                    mode.</li>
+            </ul>
+
+            <p>This extended guide and index should help you implement local
+                split-screen multiplayer in your Unreal Engine 5 project more
+                effectively. Remember, the exact implementation details might
+                vary based on your project's specific needs and setup.</p>
+        </div>
     </body>
 </html>
