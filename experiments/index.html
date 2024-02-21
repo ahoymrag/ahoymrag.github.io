@@ -1,124 +1,146 @@
 <html>
-  <head>
-    <link
-      rel="icon"
-      type="image/png"
-      href="../src/assets/AlexGonzalez-favicon.png" />
+<head>
+  <link rel="icon" type="image/png" href="../src/assets/AlexGonzalez-favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="../src/css/super-global.css" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="../src/css/super-global.css" />
+  <style>
+  body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 500px;
+    background-color: black;
+  }
 
-    <style>
-    body {
-  background-image: url('../src/assets/paper-background.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-bottom:500px;
-}
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 3;
+    padding: 20%;
+  }
 
-h1 {
-  
-}
+  .back-to-business-button {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: rgb(0, 0, 0);
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    transition: all 0.3s ease;
+    position: relative;
+  }
 
-nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
+  .home-button {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000; /* Ensure it's above everything */
+  }
 
-.back-to-business-button {
-  margin: 10px;
-  padding: 10px;
-  border: 1px solid black;
-  background-color: rgb(0, 0, 0);
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-  font-size: 16px;
-  transition: all 0.3s ease;
-}
+  ul, li {
+    text-decoration: none;
+  }
 
-.back-to-business-button:hover {
-  background-color: lightgray;
-}
+  footer {
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    z-index: -1; /* Move it behind the home button */
+  }
 
-.home-button-wrap {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
+  .experiments-header {
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px 0;
+    font-size: 24px;
+    position: fixed;
+    z-index: 1;
+  }
 
-.home-button {
-  display: block;
-  width: 100%;
-  text-align: center;
-  padding: 20px 0;
-  background-color: white;
-  color: black;
-  text-decoration: none;
-  font-size: 20px;
-  border-top: 1px solid black;
-}
-
-ul,li {
-  text-decoration: none;
-}
   </style>
-  </head>
-  <body>
-    <section>
-      <h1>experiments</h1>
-      <button
-        class="back-to-business-button"
-        onclick="location.href='https://ahoy.ooo'">
-        ahoy.ooo - latest and greatest
-      </button>
-      <button
-        class="back-to-business-button"
-        onclick="location.href='/1153/mainFrame/index.html'">
-        1153 mainFrame
-      </button>
-    </section>
+</head>
+<body>
+  <div class="experiments-header"><h1>experiments</h1></div>
 
-    <nav>
-      <a class="back-to-business-button" href="/coocoo/index.html">COOCOO
-        Cinema</a>
-      <a class="back-to-business-button" href="../blog/index.html">Blog</a>
-      <a class="back-to-business-button" href="./graph_viz-whiz.html">Graph
-        Viz</a>
-      <a class="back-to-business-button" href="./colorRefinement.html">Color
-        Refinement</a>
-      <a class="back-to-business-button"
-        href="../1153/writing/reader.html">Markdown Reader App</a>
-      <a class="back-to-business-button" href="../1153/business.html">The
-        Business</a>
-      <a class="back-to-business-button"
-        href="../cinemaOverview/cinemafi/cinemafi-overview.html">CinemaFi</a>
-      <a class="back-to-business-button"
-        href="../indieFilmMaker/www/index.html">the indieFilmMaker</a>
-      <a class="back-to-business-button"
-        href="../projects/vending/index.html">Vending</a>
-      <li><a class="back-to-business-button"
-          href="../newHavenIndie/index.html">New Haven Indie</a></li>
-      <li><a class="back-to-business-button"
-          href="../projects/harmony/index.html">Harmony's Last Stand</a></li>
-      <li><a class="back-to-business-button"
-          href="../work/actionRPG/index.html">work - Action RPG</a></li>
-      <li><a class="back-to-business-button"
-          href="https://agbabbbycakes.github.io">agBabbbycakes (apeworx live
-          demo)</a></li>
-      <li><a class="back-to-business-button"
-          href="../projects/devLog/devLog.html">Dev Log</a></li>
-      <li><a class="back-to-business-button"
-          href="../coocoo/index.html">'Dallas'</a></li> <a
-        href="../projects/vending/index.html">Vending</a>
-      <li><a class="back-to-business-button"
-          href="../childlike/index.html">childlike</a></li>
-      <li><a class="back-to-business-button" href="../experiments/gdd_parkor.html">Forest Race Game</a></li>
-        </ul>
-    </nav>
+  <nav>
+    <a class="back-to-business-button" href="/coocoo/index.html">COOCOO
+      Cinema</a>
+    <a class="back-to-business-button" href="../blog/index.html">Blog</a>
+    <a class="back-to-business-button" href="./graph_viz-whiz.html">Graph
+      Viz</a>
+    <a class="back-to-business-button" href="./colorRefinement.html">Color
+      Refinement</a>
+    <a class="back-to-business-button"
+      href="../1153/writing/reader.html">Markdown Reader App</a>
+    <a class="back-to-business-button" href="../1153/business.html">The
+      Business</a>
+    <a class="back-to-business-button"
+      href="../cinemaOverview/cinemafi/cinemafi-overview.html">CinemaFi</a>
+    <a class="back-to-business-button"
+      href="../indieFilmMaker/www/index.html">the indieFilmMaker</a>
+    <a class="back-to-business-button"
+      href="../projects/vending/index.html">Vending</a>
+    <li><a class="back-to-business-button"
+        href="../newHavenIndie/index.html">New Haven Indie</a></li>
+    <li><a class="back-to-business-button"
+        href="../projects/harmony/index.html">Harmony's Last Stand</a></li>
+    <li><a class="back-to-business-button"
+        href="../work/actionRPG/index.html">work - Action RPG</a></li>
+    <li><a class="back-to-business-button"
+        href="https://agbabbbycakes.github.io">agBabbbycakes (apeworx live
+        demo)</a></li>
+    <li><a class="back-to-business-button"
+        href="../projects/devLog/devLog.html">Dev Log</a></li>
+    <li><a class="back-to-business-button"
+        href="../coocoo/index.html">'Dallas'</a></li> <a
+      href="../projects/vending/index.html">Vending</a>
+    <li><a class="back-to-business-button"
+        href="../childlike/index.html">childlike</a></li>
+    <li><a class="back-to-business-button" href="../experiments/gdd_parkor.html">Forest Race Game</a></li>
+    <li><a class="back-to-business-button" href="./bad-gather.html">Requested Bad Gather Website</a></li>
+      </ul>
+  </nav>
 
-    <nav class="home-button-wrap">
-      <a class="home-button" href="../index.html">Home</a>
-    </nav>
-  </body>
+  <footer>
+    <a class="back-to-business-button home-button" href="../index.html">Home</a>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const buttons = document.querySelectorAll('.back-to-business-button:not(.home-button)');
+
+      buttons.forEach(button => {
+        button.style.animation = `buzz ${Math.random() * 5 + 2}s ease-in-out infinite`;
+      });
+    });
+
+    const keyframes = `
+      @keyframes buzz {
+        0%, 100% { transform: translate(0, 0); }
+        25% { transform: translate(${Math.random() * 10 - 5}px, ${Math.random() * 10 - 5}px); }
+        50% { transform: translate(${Math.random() * 10 - 5}px, ${Math.random() * 10 - 5}px); }
+        75% { transform: translate(${Math.random() * 10 - 5}px, ${Math.random() * 10 - 5}px); }
+      }
+    `;
+
+    const styleSheet = document.createElement("style");
+    styleSheet.innerText = keyframes;
+    document.head.appendChild(styleSheet);
+  </script>
+</body>
 </html>
+
