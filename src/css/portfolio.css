@@ -220,3 +220,21 @@ h5 {
     color: black;
     /* Text color */
 }
+
+.visit-apeworx-btn {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 10;
+    text-transform: uppercase;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.visit-apeworx-btn:hover {
+    background-color: #ff0060;
+    /* Desired hover background color */
+    color: white;
+    /* Desired text color on hover */
+}
