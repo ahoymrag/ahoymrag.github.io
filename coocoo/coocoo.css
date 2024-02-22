@@ -1,0 +1,69 @@
+body {
+    background-color: #f0e4d7;
+    /* light pastel color */
+    font-family: 'Barlow', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    padding: 500px
+}
+
+h1,
+h2 {
+    text-transform: uppercase;
+    font-size: 1rem;
+    /* Sets a fixed, readable font size for the paragraph */
+    max-width: 80ch;
+    /* Limits line length to around 60 characters for readability */
+    margin-bottom: 1rem;
+    /* Spaces out paragraphs */
+    text-align: left;
+}
+
+.container {
+    text-align: center;
+    border: 10px solid #000;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    /* semi-transparent background */
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 20px;
+    }
+
+    section {
+        display: block;
+    }
+
+    .gallery-image {
+        width: 100%;
+    }
+}
+
+.gallery-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.enlarged {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    max-width: 90%;
+    max-height: 90%;
+}
+
+@media (min-width: 601px) {
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+        gap: 20px;
+    }
+}

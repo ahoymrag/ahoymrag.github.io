@@ -1,78 +1,99 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>COOCOO</title>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            background-color: #f0e4d7; /* light pastel color */
-            font-family: 'Barlow', sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100%;
-            margin: 0;
-            padding:500px
-        }
-        .container {
-            text-align: center;
-            border: 10px solid #000;
-            padding: 20px;
-            background-color: rgba(255, 255, 255, 0.7); /* semi-transparent background */
-        }
-        @media (max-width: 600px) {
-        body {
-            padding: 20px;
-        }
-        section {
-            display: block;
-        }
-        .gallery-image {
-            width: 100%;
-        }
-    }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <header>
-            <h1>Welcome to COOCOO Cinema</h1>
-            <p>We are two - tan and sexy - people. We make films. We make love.</p>
-        </header>
+        <title>COOCOO</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="./coocoo.css">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>COOCOO Cinema</h1>
+                <p>We will make films. We will make love.</p>
+            </header>
+            <section id="dallas-film">
+                <h2>Our Latest Film: Dallas</h2>
+                <div
+                    style="display: grid; grid-template-columns: repeat(auto-fill, minmax(50%, 1fr)); gap: 20px;">
+                    <img
+                        src="./images_dallas/coocoo_dallasScreenshot 2024-02-22 at 6.54.11 AM.png"
+                        alt="Dallas Scene 1">
+                    <img
+                        src="./images_dallas/coocoo_dallasScreenshot 2024-02-22 at 6.54.21 AM.png"
+                        alt="Dallas Scene 2">
+                    <img
+                        src="./images_dallas/coocoo_dallasScreenshot 2024-02-22 at 6.54.36 AM.png"
+                        alt="Dallas Scene 3">
+                    <img
+                        src="./images_dallas/coocoo_dallasScreenshot 2024-02-22 at 6.54.51 AM.png"
+                        alt="Dallas Scene 4">
+                </div>
+                <!-- div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <img src="images/dallas1.png" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="images/dallas2.png" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="images/dallas3.png" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="images/dallas4.png" style="width:100%">
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div -->
+                <br>
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                </div>
+            </section>
 
-        <section style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;">
+            <section
+                style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;">
+                <div>
+                    <h2>Our Films</h2>
+                    <p>Dallas</p>
+                </div>
+                <div>
+                    <h2>Where to Watch</h2>
+                    <a href="https://ahoy.ooo">Ahoy Indie Media</a>
+                    <p>Various Festivals</p>
+                </div>
+                <div>
+                    <h2>Say Hiiiiiii</h2>
+                    <form action="mailto:alex@ahoy.ooo,ellen@ahoy.ooo"
+                        method="post" enctype="text/plain">
+                        <input type="text" id="fname" name="fname"
+                            placeholder="your name"><br>
+                        <input type="text" id="email" name="email"
+                            placeholder="your message"><br>
+                        <input type="submit" value="Send">
+                    </form>
+                </div>
+            </section>
+
             <div>
-                <h2>Our Films</h2>
-                <p>Dallas</p>
+                <h2>Our Team</h2>
+                <div
+                    style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;">
+                    <img src="images/9.png" alt="Alex"
+                        style="width: 50vw; height: auto;">
+                    <img src="images/1.png" alt="Ellen"
+                        style="width: 50vw; height: auto;">
+                </div>
             </div>
-            <div>
-                <h2>Where to Watch</h2>
-                <a href="https://ahoy.ooo">Ahoy Indie Media</a>
-                <p>Various Festivals</p>
-            </div>
-            <div>
-                <h2>Say Hiiiiiii</h2>
-                <form action="mailto:alex@ahoy.ooo,ellen@ahoy.ooo" method="post" enctype="text/plain">
-                    <input type="text" id="fname" name="fname" placeholder="your name"><br>
-                    <input type="text" id="email" name="email" placeholder="your message"><br>
-                    <input type="submit" value="Send">
-                </form>
-            </div>
-        </section>
 
-<div>
-            <h2>Our Team</h2>
-            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;">
-                <img src="images/9.png" alt="Alex" style="width: 50vw; height: auto;">
-                <img src="images/1.png" alt="Ellen" style="width: 50vw; height: auto;">
-            </div>
-        </div>
+            <section>
 
-
-        <section>
-          
                 <style>
     .gallery-image {
         width: 100%;
@@ -80,26 +101,42 @@
         object-fit: cover;
     }
 </style>
-    <div class="gallery">
-            <h2>Gallery</h2>
-            <div style="display: grid; grid-template-columns: repeat(6, 1fr); gap: 20px;">
-                <img class="gallery-image" src="images/1.png" alt="Image 1">
-                <img class="gallery-image" src="images/2.png" alt="Image 2">
-                <img class="gallery-image" src="images/3.png" alt="Image 3">
-                <img class="gallery-image" src="images/4.png" alt="Image 4">
-                <img class="gallery-image" src="images/5.png" alt="Image 5">
-                <img class="gallery-image" src="images/6.png" alt="Image 6">
-                <img class="gallery-image" src="images/7.png" alt="Image 7">
-                <img class="gallery-image" src="images/8.png" alt="Image 8">
-                <img class="gallery-image" src="images/9.png" alt="Alex">
-                <img class="gallery-image" src="images/10.png" alt="Image 10">
-                <img class="gallery-image" src="images/11.png" alt="Image 11">
-                <img class="gallery-image" src="images/12.png" alt="Image 12">
-                <img class="gallery-image" src="images/13.png" alt="Image 13">
-                <img class="gallery-image" src="images/14.png" alt="Image 14">
-                <img class="gallery-image" src="images/15.png" alt="Image 15">
-            </div>
-            <style>
+                <div class="gallery">
+                    <h2>Gallery</h2>
+                    <div
+                        style="display: grid; grid-template-columns: repeat(6, 1fr); gap: 20px;">
+                        <img class="gallery-image" src="images/1.png"
+                            alt="Image 1">
+                        <img class="gallery-image" src="images/2.png"
+                            alt="Image 2">
+                        <img class="gallery-image" src="images/3.png"
+                            alt="Image 3">
+                        <img class="gallery-image" src="images/4.png"
+                            alt="Image 4">
+                        <img class="gallery-image" src="images/5.png"
+                            alt="Image 5">
+                        <img class="gallery-image" src="images/6.png"
+                            alt="Image 6">
+                        <img class="gallery-image" src="images/7.png"
+                            alt="Image 7">
+                        <img class="gallery-image" src="images/8.png"
+                            alt="Image 8">
+                        <img class="gallery-image" src="images/9.png"
+                            alt="Alex">
+                        <img class="gallery-image" src="images/10.png"
+                            alt="Image 10">
+                        <img class="gallery-image" src="images/11.png"
+                            alt="Image 11">
+                        <img class="gallery-image" src="images/12.png"
+                            alt="Image 12">
+                        <img class="gallery-image" src="images/13.png"
+                            alt="Image 13">
+                        <img class="gallery-image" src="images/14.png"
+                            alt="Image 14">
+                        <img class="gallery-image" src="images/15.png"
+                            alt="Image 15">
+                    </div>
+                    <style>
                 .enlarged {
     position: fixed;
     top: 50%;
@@ -110,7 +147,7 @@
     max-height: 90%;
 }
             </style>
-            <script>
+                    <script>
 document.querySelectorAll('.gallery-image').forEach(img => {
     img.addEventListener('click', function(event) {
         event.stopPropagation();
@@ -124,30 +161,31 @@ document.addEventListener('click', function() {
     });
 });
             </script>
+                </div>
+
+            </section>
+
+            <section>
+                <h2>We hope to show our stuff</h2>
+                <p>At Film Festivals, Coffee Shops, and maybe next to some
+                    cheeky soap at an indie record shop.</p>
+            </section>
+
+            <section>
+                <h2>Our Store</h2>
+                <!-- Add your merchandise here -->
+                <!-- Sample PNG -->
+                Coming Sooner than later
+            </section>
+
+            <!-- LATEST FILM - DALLAS -->
+            <!-- Latest Film Section -->
+
+            <footer>
+                <p>© 2024 COOCOO Cinema. All rights reserved, B.</p>
+            </footer>
         </div>
 
-
-
-
-        </section>
-
-        <section>
-            <h2>Where we hope to show our stuff:</h2>
-            <p>Film Festivals</p>
-            <p>Coffee Shops</p>
-            <p>Maybe next to some cheeky soap at an indie record shop</p>
-        </section>
-
-        <section>
-            <h2>Our Store</h2>
-            <!-- Add your merchandise here -->
-            <!-- Sample PNG -->
-            Coming Sooner than later
-        </section>
-
-        <footer>
-            <p>© 2023 COOCOO Cinema. All rights reserved, bitch.</p>
-        </footer>
-    </div>
-</body>
+        <script src="./coocoo_function-slide.js"></script>
+    </body>
 </html>
