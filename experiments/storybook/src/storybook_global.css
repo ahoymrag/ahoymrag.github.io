@@ -11,7 +11,8 @@ html {
 #storybook {
     width: 100vw;
     height: 100vh;
-    background-color: #000;
+    background-color: #000000;
+    color: rgb(20, 20, 20);
     position: relative;
 }
 
@@ -22,4 +23,27 @@ html {
     text-align: center;
     color: #fff;
     font-family: Arial, sans-serif;
+}
+
+.page img {
+    display: block;
+    /* Remove any default margin or padding */
+    width: 100%;
+    /* Make the image fill its container */
+    height: auto;
+    /* Scale the height automatically */
+    aspect-ratio: 16 / 9;
+    /* Maintain a 16:9 aspect ratio */
+}
+
+.page {
+    flex: 1;
+    /* Flex grow to fill the space */
+    min-width: 0;
+    /* Allow the page to shrink below its base size */
+}
+
+.storybook {
+    display: flex;
+    /* Align children (pages) in a row */
 }

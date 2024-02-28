@@ -1,0 +1,45 @@
+{
+  "title": "Blog",
+  "menu": ["Work", "Studio", "Blog", "Contact", "@MagazineDope", "Subscribe"],
+  "featuredArticles": [
+    {
+      "category": "Self",
+      "pinnedIssue": "NO. 01"
+    },
+    {
+      "title": "Trying to make sense of it all",
+      "date": "2.28.24",
+      "image": "https://images.unsplash.com/photo-1496629062893-b0f566065d44?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjV8fGJsYWNrJTIwYW5kJTIwd2hpdGV8ZW58MHwwfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+      "description": "Sharing The Widespread Acclaim About Motivation",
+      "author": "Alex Gonzalez",
+      "readTime": "5 Min Read",
+      "content": "This is the blog of Alex Mundane formally Alex Gonzalez - a dev who devs and devs and devs - lest that what it feels like.",
+      "seeMore": ""
+    },
+    {
+      "title": "Love",
+      "date": "12.06.2021",
+      "image": "https://images.unsplash.com/photo-1529255484355-cb73c33c04bb?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTh8fGJsYWNrJTIwYW5kJTIwd2hpdGV8ZW58MHwwfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+      "description": "Talking About Vulnerability During Quarantine",
+      "author": "Tom Hiddleston",
+      "readTime": "5 Min Read",
+      "content": "Having traveled to Turkey multiple times, with critics praising Ocean's introspective lyrics and the album's unconventional.",
+      "seeMore": ""
+    }
+
+  ],
+  "rightBlog": {
+    "items": [
+      "Now And Then You Miss It Sounds Make You Cry",
+      "Now In - MoMa Sharing Exhibition NOW",
+      "NYC Opens After Long Lockdown Check"
+    ],
+    "featuredArticles": [
+      {
+        "title": "Blonde - Widespread Acclaim",
+        "date": "12.06.2021",
+        "content": "Blonde received widespread acclaim, with critics praising Ocean's introspective lyrics and the album's."
+      }
+    ]
+  }
+}
