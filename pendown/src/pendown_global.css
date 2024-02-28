@@ -1,0 +1,54 @@
+:root {
+    --primary-color: var(--blue-700);
+    --text-color: var(--gray-2200);
+    --background-color: var(--gray-100);
+    --button-color: var(--cyan-700);
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 20px;
+}
+
+#app {
+    max-width: 600px;
+    margin: auto;
+}
+
+input,
+button {
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+input {
+    width: calc(100% - 22px);
+}
+
+button {
+    background-color: var(--button-color);
+    color: var(--background-color);
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.page-item {
+    background-color: var(--gray-300);
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.page-item:hover {
+    background-color: var(--gray-400);
+}
