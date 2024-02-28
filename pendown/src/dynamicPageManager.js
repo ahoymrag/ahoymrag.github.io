@@ -83,3 +83,64 @@ function removePageFromStorage(pageId) {
     delete pages[pageId];
     localStorage.setItem('pages', JSON.stringify(pages));
 }
+
+
+// Assuming previous functionalities are kept, add the following:
+
+/**
+ * Function to toggle the display of the text editor for a page.
+ * @param {string} pageId - The unique identifier for the page.
+ */
+function toggleTextEditor(pageId) {
+    const editorId = `editor-${pageId}`;
+    let editor = document.getElementById(editorId);
+    if (!editor) {
+        // Create a new editor if it doesn't exist
+        editor = document.createElement('div');
+        editor.id = editorId;
+        editor.contentEditable = true;
+        editor.className = 'text-editor';
+        document.body.appendChild(editor);
+        loadContentFromStorage(pageId, editor);
+    }
+    editor.style.display = editor.style.display === 'none' ? 'block' : 'none';
+}
+
+/**
+ * Load content from local storage into the editor.
+ * @param {string} pageId - The unique identifier for the page.
+ * @param {HTMLElement} editor - The editor element.
+ */
+function loadContentFromStorage(pageId, editor) {
+    const pagesContent = JSON.parse(localStorage.getItem('pagesContent')) || {};
+    editor.innerHTML = pagesContent[pageId] || '<p>Type here...</p>';
+    // Save content on blur
+    editor.onblur = function() {
+        saveContentToStorage(pageId, editor.innerHTML);
+    };
+}
+
+/**
+ * Save the editor content to local storage.
+ * @param {string} pageId - The unique identifier for the page.
+ * @param {string} content - The HTML content of the editor.
+ */
+function saveContentToStorage(pageId, content) {
+    const pagesContent = JSON.parse(localStorage.getItem('pagesContent')) || {};
+    pagesContent[pageId] = content;
+    localStorage.setItem('pagesContent', JSON.stringify(pagesContent));
+}
+
+// Modification to createPageItem to include an edit button
+function createPageItem(pageName, pageId = Date.now().toString()) {
+    // ...existing code
+    const editButton = document.createElement('button');
+    editButton.textContent = 'Edit';
+    editButton.className = 'edit-btn';
+    editButton.onclick = function() {
+        toggleTextEditor(pageId);
+    };
+    pageItem.appendChild(editButton);
+    // ...existing code to append the pageItem
+    return pageId;
+}
