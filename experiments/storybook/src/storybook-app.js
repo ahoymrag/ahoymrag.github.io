@@ -1,66 +1,52 @@
-// Initialize basic Three.js elements
-const scene = new THREE.Scene();
-const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-const renderer = new THREE.WebGLRenderer({antialias: true});
-renderer.setSize(window.innerWidth, window.innerHeight);
-document.getElementById('storybook').appendChild(renderer.domElement);
+document.addEventListener('DOMContentLoaded', () => {
+    const storybook = document.getElementById('storybook');
+    const totalPages = 8; // Since we want 16 pages but show 2 pages per view
+    let currentPage = 0;
 
-// Placeholder for your pages (geometry, material, mesh)
-let pages = [];
-let currentPage = 0;
+    function renderPages() {
+        storybook.innerHTML = ''; // Clear existing pages
+        
+        // Calculate which images to show based on currentPage
+        const imageIndexStart = currentPage * 2 + 1;
+        const imageIndexEnd = imageIndexStart + 1;
 
-// Load your pages, sounds, and set initial page
-function init() {
-    // Example: loading pages and setting camera
-    camera.position.z = 5;
-    
-    // Load forest sound
-    // Use THREE.AudioListener and THREE.AudioLoader for background sound
-    
-    // Create pages with textures or animations
-    // pages.push(createPage('path/to/your/texture.jpg'));
-    
-    updateCaption();
-}
-
-// Example function to create a page (you'll need to customize this)
-function createPage(texturePath) {
-    // Use THREE.TextureLoader to load texture
-    // Create mesh with PlaneGeometry and MeshBasicMaterial
-    // Return mesh
-}
-
-// Handle click to turn pages
-function turnPage(direction) {
-    currentPage += direction;
-    if (currentPage < 0) currentPage = 0;
-    if (currentPage >= pages.length) currentPage = pages.length - 1;
-    
-    // Update scene with the current page
-    updateCaption();
-}
-
-// Update caption based on the current page
-function updateCaption() {
-    // Set caption text based on currentPage
-    document.getElementById('caption').innerText = `Page ${currentPage + 1}`;
-}
-
-// Listen for click events to turn pages
-window.addEventListener('click', (e) => {
-    if (e.clientX > window.innerWidth / 2) {
-        turnPage(1); // Right side click
-    } else {
-        turnPage(-1); // Left side click
+        // Add two pages per view
+        for (let i = imageIndexStart; i <= imageIndexEnd; i++) {
+            const pageElement = document.createElement('div');
+            pageElement.className = 'page';
+            pageElement.innerHTML = `
+                <img src="images/page${i}.png" alt="Page ${i}" style="width: 100%; height: auto; aspect-ratio: 16 / 9;">
+                <div class="caption">Caption for Page ${i}</div>
+            `;
+            storybook.appendChild(pageElement);
+        }
     }
+
+    function turnPage(direction) {
+        if (direction === 'next' && currentPage < totalPages - 1) {
+            currentPage++;
+        } else if (direction === 'prev' && currentPage > 0) {
+            currentPage--;
+        }
+        renderPages();
+    }
+
+    // Initial render
+    renderPages();
+
+    // Navigation
+    document.addEventListener('click', (e) => {
+        const halfScreenWidth = window.innerWidth / 2;
+        if (e.clientX > halfScreenWidth) {
+            turnPage('next');
+        } else {
+            turnPage('prev');
+        }
+    });
 });
 
-// Animate your pages if needed
-function animate() {
-    requestAnimationFrame(animate);
-    // Update animations for the current page
-    renderer.render(scene, camera);
-}
-
-init();
-animate();
+document.addEventListener('DOMContentLoaded', () => {
+    const backgroundSound = document.getElementById('backgroundSound');
+    backgroundSound.play();
+    // Rest of the code...
+});
