@@ -1,22 +1,22 @@
 document.addEventListener('DOMContentLoaded', () => {
     const storybook = document.getElementById('storybook');
-    const totalPages = 8; // Since we want 16 pages but show 2 pages per view
+    const totalPages = 16 / 2; // Since you have 16 pages and show 2 pages per view
     let currentPage = 0;
 
     function renderPages() {
         storybook.innerHTML = ''; // Clear existing pages
         
         // Calculate which images to show based on currentPage
-        const imageIndexStart = currentPage * 2 + 1;
+        const imageIndexStart = currentPage * 2;
         const imageIndexEnd = imageIndexStart + 1;
 
-        // Add two pages per view
+        // Add two pages per view, adjusting for the new naming convention and file format
         for (let i = imageIndexStart; i <= imageIndexEnd; i++) {
             const pageElement = document.createElement('div');
             pageElement.className = 'page';
             pageElement.innerHTML = `
-                <img src="images/page${i}.png" alt="Page ${i}" style="width: 100%; height: auto; aspect-ratio: 16 / 9;">
-                <div class="caption">Caption for Page ${i}</div>
+                <img src="./src/assets/${i}_page.webp" alt="Page ${i + 1}" style="width: 100%; height: auto; aspect-ratio: 16 / 9;">
+                <div class="caption">Caption for Page ${i + 1}</div>
             `;
             storybook.appendChild(pageElement);
         }
