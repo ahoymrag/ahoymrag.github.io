@@ -1,0 +1,402 @@
+{
+    "fileName": "config_clinical_survey_LTE",
+    "fileDescription": "config_clinical_survey_LTE",
+    "rootName": "config_clinical_survey_LTE",
+    "date": "02-28-2024 18:30:24",
+    "eventOrder": [
+      "SurveyItem",
+      "SurveyItem",
+      "SurveyItem",
+      "SurveyItem",
+      "SurveyItem",
+      "SurveyItem",
+      "SurveyItem",
+      "SurveyItem",
+      "SurveyItem",
+      "SurveyItem",
+      "SurveyItem",
+      "SurveyEnd"
+    ],
+    "surveyGeneral": {
+        "progressColour": [
+          0.91,
+          0.6,
+          0.92
+        ],
+        "instructionNewDuration": 500,
+        "instructionDuration": 500,
+        "answerSelectedDuration": 500,
+        "transitionDuration": 500,
+        "confirmHomeText": [
+          "Are you sure you want to return to Home?",
+          "<color=#FF0000> YES </color>",
+          "<color=#00BFFF> NO </color>"
+        ]
+      },
+      "surveyItem": [
+        {
+          "instruction": "Think about <b>the past 12 months<b>. Please indicate if you have experienced these events and if you have, please rate how unpleasant it was.",
+          "instructionNew": 1,
+          "item": "You yourself suffered a serious illness, injury or an assault",
+          "answer": [
+            "Yes, extremely upsetting",
+            "Yes, moderately upsetting",
+            "Yes, mildy upsetting",
+            "Yes, not upsetting",
+            "No, not experienced"
+          ],
+          "informationScreen": 1,
+          "informationScreenText": "We would like to ask you some anonymous questions about yourself.\n\nYour answers will help scientists studying mental health including common conditions like anxiety and depression. Help scientists understand how differences between people relate to what we measure in the games.\n\nIt will only take a <b>couple of minutes</b> to complete.",
+          "informationScreenButton": "Continue"
+        },
+        {
+            "instruction": "",
+            "instructionNew": 0,
+            "item": "A serious illness, injury or assault happened to a close relative ",
+            "answer": [
+                "Yes, extremely upsetting",
+                "Yes, moderately upsetting",
+                "Yes, mildy upsetting",
+                "Yes, not upsetting",
+                "No, not experienced"
+              ],
+            "informationScreen": 0,
+            "informationScreenText": [],
+            "informationScreenButton": []
+          },
+          {
+            "instruction": "",
+            "instructionNew": 0,
+            "item": "Your parent, child or spouse died",
+            "answer": [
+                "Yes, extremely upsetting",
+                "Yes, moderately upsetting",
+                "Yes, mildy upsetting",
+                "Yes, not upsetting",
+                "No, not experienced"
+              ],
+            "informationScreen": 0,
+            "informationScreenText": [],
+            "informationScreenButton": []
+          },
+          {
+            "instruction": "",
+            "instructionNew": 0,
+            "item": "A close family friend or another relative (aunt, cousin, grandparent) died",
+            "answer": [
+                "Yes, extremely upsetting",
+                "Yes, moderately upsetting",
+                "Yes, mildy upsetting",
+                "Yes, not upsetting",
+                "No, not experienced"
+              ],
+            "informationScreen": 0,
+            "informationScreenText": [],
+            "informationScreenButton": []
+          },
+          {
+            "instruction": "",
+            "instructionNew": 0,
+            "item": "You had a separation due to marital difficulties",
+            "answer": [
+                "Yes, extremely upsetting",
+                "Yes, moderately upsetting",
+                "Yes, mildy upsetting",
+                "Yes, not upsetting",
+                "No, not experienced"
+              ],
+            "informationScreen": 0,
+            "informationScreenText": [],
+            "informationScreenButton": []
+          },
+          {
+            "instruction": "",
+            "instructionNew": 0,
+            "item": "You broke off a steady relationship",
+            "answer": [
+                "Yes, extremely upsetting",
+                "Yes, moderately upsetting",
+                "Yes, mildy upsetting",
+                "Yes, not upsetting",
+                "No, not experienced"
+              ],
+            "informationScreen": 0,
+            "informationScreenText": [],
+            "informationScreenButton": []
+          },
+          {
+            "instruction": "",
+            "instructionNew": 0,
+            "item": "You had a serious problem with a close friend, neighbor or relative",
+            "answer": [
+                "Yes, extremely upsetting",
+                "Yes, moderately upsetting",
+                "Yes, mildy upsetting",
+                "Yes, not upsetting",
+                "No, not experienced"
+              ],
+            "informationScreen": 0,
+            "informationScreenText": [],
+            "informationScreenButton": []
+          },
+          {
+            "instruction": "",
+            "instructionNew": 0,
+            "item": "You became unemployed or you were seeking work unsuccessfully for more than 1 month",
+            "answer": [
+                "Yes, extremely upsetting",
+                "Yes, moderately upsetting",
+                "Yes, mildy upsetting",
+                "Yes, not upsetting",
+                "No, not experienced"
+              ],
+            "informationScreen": 0,
+            "informationScreenText": [],
+            "informationScreenButton": []
+          },
+          {
+            "instruction": "",
+            "instructionNew": 0,
+            "item": "You were sacked from your job",
+            "answer": [
+                "Yes, extremely upsetting",
+                "Yes, moderately upsetting",
+                "Yes, mildy upsetting",
+                "Yes, not upsetting",
+                "No, not experienced"
+              ],
+            "informationScreen": 0,
+            "informationScreenText": [],
+            "informationScreenButton": []
+          },
+          {
+            "instruction": "",
+            "instructionNew": 0,
+            "item": " You had a major financial crisis",
+            "answer": [
+                "Yes, extremely upsetting",
+                "Yes, moderately upsetting",
+                "Yes, mildy upsetting",
+                "Yes, not upsetting",
+                "No, not experienced"
+              ],
+            "informationScreen": 0,
+            "informationScreenText": [],
+            "informationScreenButton": []
+          },
+          {
+            "instruction": "",
+            "instructionNew": 0,
+            "item": "You had problems with the police and a court appearance",
+            "answer": [
+                "Yes, extremely upsetting",
+                "Yes, moderately upsetting",
+                "Yes, mildy upsetting",
+                "Yes, not upsetting",
+                "No, not experienced"
+              ],
+            "informationScreen": 0,
+            "informationScreenText": [],
+            "informationScreenButton": []
+          },
+          {
+            "instruction": "",
+            "instructionNew": 0,
+            "item": "Something you valued was lost or stolen",
+            "answer": [
+                "Yes, extremely upsetting",
+                "Yes, moderately upsetting",
+                "Yes, mildy upsetting",
+                "Yes, not upsetting",
+                "No, not experienced"
+              ],
+            "informationScreen": 0,
+            "informationScreenText": [],
+            "informationScreenButton": []
+          },
+          {
+            "instruction": "Think about <b>your lifetime<b>. Please indicate if you have experienced these events and if you have, please rate how unpleasant it was.",
+            "instructionNew": 1,
+            "item": "You yourself suffered a serious illness, injury or an assault",
+            "answer": [
+              "Yes, extremely upsetting",
+              "Yes, moderately upsetting",
+              "Yes, mildy upsetting",
+              "Yes, not upsetting",
+              "No, not experienced"
+            ],
+            "informationScreen": 1,
+            "informationScreenText": "We would like to ask you some anonymous questions about yourself.\n\nYour answers will help scientists studying mental health including common conditions like anxiety and depression. Help scientists understand how differences between people relate to what we measure in the games.\n\nIt will only take a <b>couple of minutes</b> to complete.",
+            "informationScreenButton": "Continue"
+          },
+          {
+              "instruction": "",
+              "instructionNew": 0,
+              "item": "A serious illness, injury or assault happened to a close relative ",
+              "answer": [
+                  "Yes, extremely upsetting",
+                  "Yes, moderately upsetting",
+                  "Yes, mildy upsetting",
+                  "Yes, not upsetting",
+                  "No, not experienced"
+                ],
+              "informationScreen": 0,
+              "informationScreenText": [],
+              "informationScreenButton": []
+            },
+            {
+              "instruction": "",
+              "instructionNew": 0,
+              "item": "Your parent, child or spouse died",
+              "answer": [
+                  "Yes, extremely upsetting",
+                  "Yes, moderately upsetting",
+                  "Yes, mildy upsetting",
+                  "Yes, not upsetting",
+                  "No, not experienced"
+                ],
+              "informationScreen": 0,
+              "informationScreenText": [],
+              "informationScreenButton": []
+            },
+            {
+              "instruction": "",
+              "instructionNew": 0,
+              "item": "A close family friend or another relative (aunt, cousin, grandparent) died",
+              "answer": [
+                  "Yes, extremely upsetting",
+                  "Yes, moderately upsetting",
+                  "Yes, mildy upsetting",
+                  "Yes, not upsetting",
+                  "No, not experienced"
+                ],
+              "informationScreen": 0,
+              "informationScreenText": [],
+              "informationScreenButton": []
+            },
+            {
+              "instruction": "",
+              "instructionNew": 0,
+              "item": "You had a separation due to marital difficulties",
+              "answer": [
+                  "Yes, extremely upsetting",
+                  "Yes, moderately upsetting",
+                  "Yes, mildy upsetting",
+                  "Yes, not upsetting",
+                  "No, not experienced"
+                ],
+              "informationScreen": 0,
+              "informationScreenText": [],
+              "informationScreenButton": []
+            },
+            {
+              "instruction": "",
+              "instructionNew": 0,
+              "item": "You broke off a steady relationship",
+              "answer": [
+                  "Yes, extremely upsetting",
+                  "Yes, moderately upsetting",
+                  "Yes, mildy upsetting",
+                  "Yes, not upsetting",
+                  "No, not experienced"
+                ],
+              "informationScreen": 0,
+              "informationScreenText": [],
+              "informationScreenButton": []
+            },
+            {
+              "instruction": "",
+              "instructionNew": 0,
+              "item": "You had a serious problem with a close friend, neighbor or relative",
+              "answer": [
+                  "Yes, extremely upsetting",
+                  "Yes, moderately upsetting",
+                  "Yes, mildy upsetting",
+                  "Yes, not upsetting",
+                  "No, not experienced"
+                ],
+              "informationScreen": 0,
+              "informationScreenText": [],
+              "informationScreenButton": []
+            },
+            {
+              "instruction": "",
+              "instructionNew": 0,
+              "item": "You became unemployed or you were seeking work unsuccessfully for more than 1 month",
+              "answer": [
+                  "Yes, extremely upsetting",
+                  "Yes, moderately upsetting",
+                  "Yes, mildy upsetting",
+                  "Yes, not upsetting",
+                  "No, not experienced"
+                ],
+              "informationScreen": 0,
+              "informationScreenText": [],
+              "informationScreenButton": []
+            },
+            {
+              "instruction": "",
+              "instructionNew": 0,
+              "item": "You were sacked from your job",
+              "answer": [
+                  "Yes, extremely upsetting",
+                  "Yes, moderately upsetting",
+                  "Yes, mildy upsetting",
+                  "Yes, not upsetting",
+                  "No, not experienced"
+                ],
+              "informationScreen": 0,
+              "informationScreenText": [],
+              "informationScreenButton": []
+            },
+            {
+              "instruction": "",
+              "instructionNew": 0,
+              "item": " You had a major financial crisis",
+              "answer": [
+                  "Yes, extremely upsetting",
+                  "Yes, moderately upsetting",
+                  "Yes, mildy upsetting",
+                  "Yes, not upsetting",
+                  "No, not experienced"
+                ],
+              "informationScreen": 0,
+              "informationScreenText": [],
+              "informationScreenButton": []
+            },
+            {
+              "instruction": "",
+              "instructionNew": 0,
+              "item": "You had problems with the police and a court appearance",
+              "answer": [
+                  "Yes, extremely upsetting",
+                  "Yes, moderately upsetting",
+                  "Yes, mildy upsetting",
+                  "Yes, not upsetting",
+                  "No, not experienced"
+                ],
+              "informationScreen": 0,
+              "informationScreenText": [],
+              "informationScreenButton": []
+            },
+            {
+              "instruction": "",
+              "instructionNew": 0,
+              "item": "Something you valued was lost or stolen",
+              "answer": [
+                  "Yes, extremely upsetting",
+                  "Yes, moderately upsetting",
+                  "Yes, mildy upsetting",
+                  "Yes, not upsetting",
+                  "No, not experienced"
+                ],
+              "informationScreen": 0,
+              "informationScreenText": [],
+              "informationScreenButton": []
+            },
+        ],
+        "surveyEnd": {
+          "bodyText": "Thanks for helping science!\n\nClick submit to confirm your answers and return to Home.",
+          "button": "Submit"
+        }
+}

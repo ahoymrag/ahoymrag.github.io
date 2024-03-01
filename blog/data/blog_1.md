@@ -21,7 +21,7 @@ NO. 01
 
 **Sharing The Widespread Acclaim About Motivation**
 
-By Richard Carnation - 5 Min Read
+By Alex Gonzalez - 5 Min Read
 
 This is the blog of Alex Mundane formally Alex Gonzalez - a dev who devs and devs and devs - lest that what it feels like.
 
