@@ -24,6 +24,10 @@ body {
     background-color: rgb(255, 255, 255);
 }
 
+p {
+    max-width: 70ch;
+}
+
 h1 {
     font-family: "Barlow";
     font-style: normal;
@@ -237,4 +241,12 @@ h5 {
     /* Desired hover background color */
     color: white;
     /* Desired text color on hover */
+}
+
+#recent-projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
 }

@@ -1,12 +1,6 @@
 [
-  {"id": 1, "name": "Project 1", "url": "link-to-project-1.html"},
-  {"id": 2, "name": "d", "url": "link-to-project-2.html"},
-  {"id": 3, "name": "Project 3", "url": "link-to-project-3.html"},
-  {"id": 4, "name": "Project 4", "url": "link-to-project-4.html"},
-  {"id": 5, "name": "Project 5", "url": "link-to-project-5.html"},
-  {"id": 6, "name": "Project 6", "url": "link-to-project-6.html"},
-  {"id": 7, "name": "Project 7", "url": "link-to-project-7.html"},
-  {"id": 8, "name": "Project 8", "url": "link-to-project-8.html"},
-  {"id": 9, "name": "Project 9", "url": "link-to-project-9.html"},
-  {"id": 10, "name": "Project 10", "url": "link-to-project-10.html"}
+  {"id": 2, "name": "Ape Pay", "url": "link-to-project-2.html"},
+  {"id": 5, "name": "Mission Anabaino", "url": "link-to-project-5.html"},
+  {"id": 6, "name": "Beyond Podcast", "url": "link-to-project-6.html"},
+  {"id": 7, "name": "Bryan Perri Grammy Nomination Consideration Video", "url": "link-to-project-7.html"}
 ]
