@@ -59,17 +59,31 @@
             <!-- APEWORX.IO -->
             <div id="port-apeSuite-rebrand-unique" class="portfolio-item"
                 style="position: relative; overflow: hidden;">
+                <video autoplay loop muted playsinline
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
+                    <source
+                        src="../../gallery/apeCompletedGraphics/AlexGonzalez-ApeWorXLTD-2023.mp4"
+                        type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
                 <div
-                    style="background-image: url('../assets/apeworx_backdrop.jpeg'); background-attachment: fixed; background-size: cover; background-position: center; filter: blur(5px) brightness(90%); position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;"></div>
+                    style="background-color: rgba(0, 0, 0, 0.5); position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0;"></div>
                 <div
-                    style="color: white; position: relative; padding: 20px; z-index: 1;">
+                    style="color: white; position: relative; padding: 20px; z-index: 2;">
                     <img src="../assets/Apeworx_FullLogo_White.png"
                         style="max-width: 120px; width: 100%; height: auto; margin: 0;">
                     <h1 style="margin: 10;">apeworx.io</h1>
                     <h2 style="margin: 10; font-weight: 300;">Strategic
-                        direction for the
-                        ApeWorX main website, hoping to create a cohesive
-                        suite of products reminiscent of Adobe's ecosystem.</h2>
+                        direction for the ApeWorX, hoping to create
+                        a cohesive suite of products and
+                        ecosystem.</h2>
+                    <p>As the Creative Director at ApeWorX, AG has been
+                        instrumental in the brand's digital
+                        presence. Through design and strategic
+                        planning, work a cohesive identity across its suite of
+                        products, drawing
+                        inspiration from the seamless integration seen in
+                        Adobe's ecosystem.</p>
                     <div class="tools-used">
                         <i class="fab fa-js-square fa-2x" title="JavaScript"
                             style="color: white;"></i>
@@ -84,10 +98,12 @@
                     </div>
                     <a href="https://apeworx.io"
                         style="text-decoration: none;"><button
-                            class="visit-apeworx-btn" style>Visit
+                            class="visit-apeworx-btn">Visit
                             Apeworx.io</button></a>
                 </div>
             </div>
+            <!-- END OF APEWORX.io-->
+            <!-- BRYAN PERRY-->
             <div id="port-bryanPerri" class="portfolio-item">
                 <h1>Bryan Perri Grammy Nomination Consideration Video </h1>
                 <h2>Cinematography Work</h2>
@@ -111,9 +127,9 @@
             </div>
             <div id="port-beyond" class="portfolio-item">
                 <h1>Beyond Podcast</h1>
-                <h2>Development and Ongoing Maintenance of the Beyond The Sunday
+                <p>Development and Ongoing Maintenance of the Beyond The Sunday
                     Sermon Podcast
-                    for CPC New Haven</h2>
+                    for CPC New Haven</p>
                 <div class="tools-used">
 
                     <i class="fas fa-podcast fa-2x" title="Podcasting"></i>
@@ -196,12 +212,37 @@
             </div>
 
         </main>
+        <section id="other-professional-work">
+            <h1>Other Professional Work</h1>
 
+        </section>
+        <br><br>
         <div class="centeredDiv">
             <a href="../../portfolio/src/unProPortfolio.html">
                 <h3>unProfessional Portfolio</h3>
             </a>
         </div>
+        <br><br>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                fetch('data/otherProfessionalWork.json') // Adjusted path to target the correct file
+                    .then(response => response.json())
+                    .then(data => {
+                        const projectList = document.getElementById('other-professional-work'); // Corrected ID to match the section ID
+                        data.forEach(project => {
+                            const listItem = document.createElement('li');
+                            const link = document.createElement('a');
+                            link.href = project.url;
+                            link.textContent = project.name;
+                            listItem.appendChild(link);
+                            projectList.appendChild(listItem);
+                        });
+                    })
+                    .catch(error => console.error('Error loading project data:', error));
+            });
+        </script>
+
     </body>
 
 </html>
