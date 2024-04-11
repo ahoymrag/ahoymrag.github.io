@@ -1,65 +1,89 @@
 <html>
     <head>
         <link
-        rel="icon"
-        type="image/png"
-        href="../src/assets/AlexGonzalez-favicon.png"
-      />
-        <meta name="description" content="Portfolio website for Alex Gonzalez of Sleepy Hollow. Includes resume, CV, animation, VR experiments, and teacher work.">
-        <meta name="keywords" content="Alex Gonzalez, portfolio, resume, CV, animation, VR experiments, teacher work, Sleepy Hollow">
+            rel="icon"
+            type="image/png"
+            href="../src/assets/AlexGonzalez-favicon.png" />
+        <meta name="description"
+            content="Portfolio website for Alex Gonzalez of Sleepy Hollow. Includes resume, CV, animation, VR experiments, and teacher work.">
+        <meta name="keywords"
+            content="Alex Gonzalez, portfolio, resume, CV, animation, VR experiments, teacher work, Sleepy Hollow">
         <meta name="author" content="Alex Gonzalez">
         <meta name="robots" content="index, follow">
         <meta name="googlebot" content="index, follow">
         <link rel="stylesheet" href="../src/css/super-global.css">
-    <!-- Add any other relevant meta tags -->
+        <!-- Add any other relevant meta tags -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./portfolio/src/ag-cv-css-1.css">
         <title>Active Projects</title>
         <link rel="stylesheet" href="./activeProjects.css">
+        <script>
+            function toggleWolfboyDescription() {
+                var x = document.getElementById("wolfboyDescription");
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                } else {
+                    x.style.display = "none";
+                }
+            }
+        </script>
     </head>
     <body>
-<!-- ADDITIONAL CSS -->
-<style>
-
-
- 
+        <!-- ADDITIONAL CSS -->
+        <style>
+    #wolfboyDescription {
+        display: none;
+        transition: all 0.5s ease;
+    }
 </style>
-<style>
+        <style>
 
     </style>
-<nav class="home-button-wrap">
-    <a class="home-button-link" href="../index.html">Home</a>
-</nav>
-<header>
-    <div class="header-main-wrap">
-        <div class="header-content-wrap">
-            <div class="header-content-title-wrap">
-                <h1>Active Projects</h1></div>
-                <div class="header-content-subheader-wrap">
-                    <p>These are all active and actively developed projects. Feel free to view them and see the latest progress.</p>
+        <nav class="home-button-wrap">
+            <a class="home-button-link" href="../index.html">Home</a>
+        </nav>
+        <header>
+            <div class="header-main-wrap">
+                <div class="header-content-wrap">
+                    <div class="header-content-title-wrap">
+                        <h1>Active Projects</h1></div>
+                    <div class="header-content-subheader-wrap">
+                        <p>These are all active and actively developed projects.
+                            Feel free to view them and see the latest
+                            progress.</p>
+                    </div>
+
+                    <div class="header-content-menu-wrap">
+                        <ul class="nav-ul">
+                            <li><a href="./palbot3/index.html">Pal-bot
+                                    3</a></li>
+                            <li><a href="./theNibbler/index.html">The
+                                    Nibbler</a></li>
+                            <li><a
+                                    href="https://missionanabaino.github.io/">Mission
+                                    Anabaino (2024)</a></li>
+                            <li><a
+                                    href="../portfolio/src/theHavens-overview.html">The
+                                    Havens</a></li>
+                            <li><a href="#"
+                                    onclick="toggleWolfboyDescription()">Wolfboy</a></li>
+
+                        </ul></div>
                 </div>
-                
-            <div class="header-content-menu-wrap">
-                <ul class="nav-ul">
-                     <li><a href="./palbot3/index.html">Pal-bot 3</a></li>
-                <li><a href="./theNibbler/index.html">The Nibbler</a></li>
-               <li><a href="https://missionanabaino.github.io/">Mission Anabaino (2024)</a></li>
-               <li><a href="../portfolio/src/theHavens-overview.html">The Havens</a></li>
-            
-            
-            
-            
-            </ul></div>              
-     </div>
-     
-     <div>
-    
-</header>
 
+                <div id="wolfboyDescription"
+                    style="padding: 20px; background-color: #f0f0f0; margin-top: 20px;">
+                    <p>Wolfboy is an intriguing movie creature feature that
+                        explores the depths of friendship and fear. Join the
+                        adventure as our characters uncover mysteries in a
+                        thrilling narrative.</p>
+                </div>
 
-<footer>
-    <p class="footer-copy">MMXXIII</p>
-</footer>
+            </header>
 
-    </body>
-</html>
+            <footer>
+                <p class="footer-copy">MMXXIII</p>
+            </footer>
+
+        </body>
+    </html>

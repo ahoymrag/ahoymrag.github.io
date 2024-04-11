@@ -250,3 +250,57 @@ h5 {
     flex-direction: column;
     text-align: center;
 }
+
+/* Styling for "Other Professional Work" section in black and white */
+#other-professional-work {
+    background-color: #ffffff;
+    /* White background for a clean look */
+    color: #000000;
+    /* Black text for high contrast */
+    padding: 60px 20px;
+    /* Increased padding for more space */
+    text-align: center;
+    /* Center align the content */
+    border-top: 5px solid #000000;
+    /* Black top border for visual separation */
+}
+
+#other-professional-work h1 {
+    color: #000000;
+    /* Black color for the heading */
+    margin-bottom: 30px;
+    /* Increased space below the heading */
+    font-family: "Barlow", sans-serif;
+    /* Ensures font consistency */
+    font-weight: 800;
+    /* Bolder font weight for the heading */
+    font-size: 2.5rem;
+    /* Larger font size for the heading */
+}
+
+#other-professional-work li {
+    list-style: none;
+    /* Remove default list styling */
+    margin: 20px 0;
+    /* Increased margin for spacing between list items */
+    font-family: "Barlow", sans-serif;
+    /* Ensures font consistency */
+    font-size: 1.25rem;
+    /* Larger font size for list items */
+}
+
+#other-professional-work a {
+    color: #000000;
+    /* Black color for links for high contrast */
+    text-decoration: none;
+    /* Remove underline from links */
+    transition: color 0.3s ease-in-out;
+    /* Smooth transition for hover effect */
+    font-weight: 600;
+    /* Medium-bold font weight for readability */
+}
+
+#other-professional-work a:hover {
+    color: #555555;
+    /* Dark grey color on hover for interaction feedback */
+}
