@@ -5,80 +5,119 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Interactive Music Visualizer</title>
         <style>
-  body, select, audio {
-    margin: 10px;
-    padding: 0;
-    font-family: Arial, sans-serif;
-  }
-  canvas {
-    display: block;
-    width: 100%;
-    border: 1px solid black;
-  }
+body, select, audio {
+  margin: 10px;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+canvas {
+  display: block;
+  width: 100%;
+  height: 400px;
+  border: 1px solid black;
+}
 </style>
     </head>
     <body>
         <div id="app">
             <select id="trackSelect">
-                <option value="https://cdn.example.com/sample-audio.mp3">Sample
-                    Track 1</option>
-                <option value="https://cdn.example.com/sample-audio2.mp3">Sample
-                    Track 2</option>
-                <option value="https://cdn.example.com/sample-audio3.mp3">Sample
-                    Track 3</option>
+                <option
+                    value="https://ahoycollection.s3.us-east-2.amazonaws.com/01%20I%27ve%20Seen%20Better%20Days.mp3">Seen
+                    Better Days - Samuel Dylan Witch</option>
+                <option
+                    value="https://ahoycollection.s3.us-east-2.amazonaws.com/Beneath+the+Willow+Tree.mp3">Beneath
+                    the Willow Tree - Samuel Dylan Witch</option>
+                <option
+                    value="https://ahoycollection.s3.us-east-2.amazonaws.com/Put+Me+on+the+Run-+Draft+1mp3.mp3">Put
+                    Me on the Run - Samuel Dylan Witch</option>
             </select>
-            <audio id="audio-player" controls crossorigin="anonymous"></audio>
+            <audio id="audio-player" controls crossorigin="anonymous"
+                autoplay></audio>
             <canvas id="visualizer"></canvas>
         </div>
 
         <script>
+class Particle {
+  constructor(x, y) {
+    this.x = x;
+    this.y = y;
+    this.radius = Math.random() * 5 + 1;
+    this.alpha = 1;
+    this.color = `hsla(${Math.random() * 360}, 100%, 50%, ${this.alpha})`;
+    this.velocity = {
+      x: Math.random() * 2 - 1,
+      y: Math.random() * 2 - 1
+    };
+  }
+  draw(canvasCtx) {
+    canvasCtx.save();
+    canvasCtx.globalAlpha = this.alpha;
+    canvasCtx.beginPath();
+    canvasCtx.fillStyle = this.color;
+    canvasCtx.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
+    canvasCtx.fill();
+    canvasCtx.restore();
+  }
+  update() {
+    this.x += this.velocity.x;
+    this.y += this.velocity.y;
+    this.alpha -= 0.01;
+  }
+}
+let particles = [];
+function spawnParticles(x, y, count) {
+  for (let i = 0; i < count; i++) {
+    particles.push(new Particle(x, y));
+  }
+}
+function handleParticles(canvasCtx) {
+  particles.forEach((particle, index) => {
+    if (particle.alpha <= 0) {
+      particles.splice(index, 1);
+    } else {
+      particle.update();
+      particle.draw(canvasCtx);
+    }
+  });
+}
 document.addEventListener('DOMContentLoaded', function() {
   const audioElement = document.getElementById('audio-player');
   const canvas = document.getElementById('visualizer');
   const canvasCtx = canvas.getContext('2d');
   const trackSelect = document.getElementById('trackSelect');
-
   const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
   const analyzer = audioCtx.createAnalyser();
-
   trackSelect.addEventListener('change', function() {
     audioElement.src = this.value;
     audioElement.load();
     audioElement.play();
   });
-
   const source = audioCtx.createMediaElementSource(audioElement);
   source.connect(analyzer);
   analyzer.connect(audioCtx.destination);
-
   analyzer.fftSize = 2048;
   const bufferLength = analyzer.frequencyBinCount;
   const dataArray = new Uint8Array(bufferLength);
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
-
   function draw() {
     requestAnimationFrame(draw);
-    
     analyzer.getByteFrequencyData(dataArray);
-    
     canvasCtx.fillStyle = 'rgb(0, 0, 0)';
     canvasCtx.fillRect(0, 0, canvas.width, canvas.height);
-    
-    const barWidth = (canvas.width / bufferLength) * 2.5;
     let barHeight;
     let x = 0;
-    
     for(let i = 0; i < bufferLength; i++) {
       barHeight = dataArray[i];
-      
       canvasCtx.fillStyle = `rgb(${barHeight + 100}, 50, 50)`;
       canvasCtx.fillRect(x, canvas.height - barHeight / 2, barWidth, barHeight / 2);
-      
+      if (barHeight > 150) {
+        spawnParticles(x + barWidth / 2, canvas.height - barHeight / 2, 5);
+      }
       x += barWidth + 1;
     }
+    handleParticles(canvasCtx);
   }
-
   draw();
 });
 </script>
