@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Interactive Music Visualizer</title>
+        <style>
+  body, select, audio {
+    margin: 10px;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  canvas {
+    display: block;
+    width: 100%;
+    border: 1px solid black;
+  }
+</style>
+    </head>
+    <body>
+        <div id="app">
+            <select id="trackSelect">
+                <option value="https://cdn.example.com/sample-audio.mp3">Sample
+                    Track 1</option>
+                <option value="https://cdn.example.com/sample-audio2.mp3">Sample
+                    Track 2</option>
+                <option value="https://cdn.example.com/sample-audio3.mp3">Sample
+                    Track 3</option>
+            </select>
+            <audio id="audio-player" controls crossorigin="anonymous"></audio>
+            <canvas id="visualizer"></canvas>
+        </div>
+
+        <script>
+document.addEventListener('DOMContentLoaded', function() {
+  const audioElement = document.getElementById('audio-player');
+  const canvas = document.getElementById('visualizer');
+  const canvasCtx = canvas.getContext('2d');
+  const trackSelect = document.getElementById('trackSelect');
+
+  const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+  const analyzer = audioCtx.createAnalyser();
+
+  trackSelect.addEventListener('change', function() {
+    audioElement.src = this.value;
+    audioElement.load();
+    audioElement.play();
+  });
+
+  const source = audioCtx.createMediaElementSource(audioElement);
+  source.connect(analyzer);
+  analyzer.connect(audioCtx.destination);
+
+  analyzer.fftSize = 2048;
+  const bufferLength = analyzer.frequencyBinCount;
+  const dataArray = new Uint8Array(bufferLength);
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+
+  function draw() {
+    requestAnimationFrame(draw);
+    
+    analyzer.getByteFrequencyData(dataArray);
+    
+    canvasCtx.fillStyle = 'rgb(0, 0, 0)';
+    canvasCtx.fillRect(0, 0, canvas.width, canvas.height);
+    
+    const barWidth = (canvas.width / bufferLength) * 2.5;
+    let barHeight;
+    let x = 0;
+    
+    for(let i = 0; i < bufferLength; i++) {
+      barHeight = dataArray[i];
+      
+      canvasCtx.fillStyle = `rgb(${barHeight + 100}, 50, 50)`;
+      canvasCtx.fillRect(x, canvas.height - barHeight / 2, barWidth, barHeight / 2);
+      
+      x += barWidth + 1;
+    }
+  }
+
+  draw();
+});
+</script>
+    </body>
+</html>
