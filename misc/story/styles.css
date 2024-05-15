@@ -3,6 +3,8 @@ html {
     height: 100%;
     margin: 0;
     font-family: Arial, sans-serif;
+    background: #fff;
+    /* Optional: sets the background color of the entire page */
 }
 
 #storyboard {
@@ -15,46 +17,93 @@ html {
 
 .slide {
     position: relative;
-    width: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    overflow: hidden;
+    justify-content: center;
+    width: 100%;
     height: 500px;
     background-color: #f0f0f0;
 }
 
 #slideImage {
     width: 100%;
+    /* Full width of the container */
     height: auto;
+    aspect-ratio: 16 / 9;
+    /* Maintains a 16:9 aspect ratio */
+    background-color: #ccc;
+    /* Placeholder background color if no image is loaded */
+}
+
+#slideText {
+    padding: 20px;
+    /* Adds padding around the text for better readability */
+    font-size: 18px;
+    /* Sets a readable default font size */
+    color: #333;
+    /* Dark grey color for the text */
 }
 
 button {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    padding: 10px;
+    padding: 10px 20px;
+    /* Slightly larger buttons for easier clicking */
     font-size: 16px;
     cursor: pointer;
+    border: none;
+    /* Removes default button border */
+    background-color: #000000;
+    /* Bright blue background for buttons */
+    color: white;
+    /* White text color */
+    border-radius: 5px;
+    /* Rounded corners for the buttons */
 }
 
 #prev {
-    left: 10px;
+    left: 20px;
 }
 
 #next {
-    right: 10px;
+    right: 20px;
 }
 
 @media (max-width: 768px) {
-    .slide img {
+    .slide {
         height: auto;
+    }
+
+    #slideImage {
         max-height: 50vh;
         /* Limit image height on smaller screens */
     }
 
-    .slide p {
+    #slideText {
         font-size: 14px;
         /* Smaller text on smaller devices */
+    }
+}
+
+.slide {
+    transition: transform 0.5s ease-in-out;
+}
+
+#storyboard {
+    overflow: hidden;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+@media (max-width: 768px) {
+    button {
+        padding: 15px 25px; // Larger buttons for easier interaction on touch devices
+    }
+
+    .slide p {
+        padding: 10px;
+        font-size: 16px; // Larger text for better readability
     }
 }
