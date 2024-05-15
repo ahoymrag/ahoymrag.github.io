@@ -4,7 +4,15 @@ html {
     margin: 0;
     font-family: Arial, sans-serif;
     background: #fff;
+
     /* Optional: sets the background color of the entire page */
+}
+
+body {
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 20px;
+    max-width: 800px;
 }
 
 #storyboard {
@@ -42,6 +50,7 @@ html {
     font-size: 18px;
     /* Sets a readable default font size */
     color: #333;
+    max-width: 50ch;
     /* Dark grey color for the text */
 }
 

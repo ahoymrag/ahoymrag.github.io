@@ -7,6 +7,7 @@ function loadSlides() {
     .then(data => {
         slides = data;
         showSlide(currentSlide);
+        displayAllSlides();
     });
 }
 
@@ -21,6 +22,24 @@ function changeSlide(n) {
     if (currentSlide >= slides.length) currentSlide = 0;
     if (currentSlide < 0) currentSlide = slides.length - 1;
     showSlide(currentSlide);
+}
+
+function displayAllSlides() {
+    const allSlidesContainer = document.getElementById('allSlides');
+    slides.forEach(slide => {
+        const slideElement = document.createElement('div');
+        slideElement.className = 'slide';
+        
+        const imageElement = document.createElement('img');
+        imageElement.src = slide.image;
+        slideElement.appendChild(imageElement);
+        
+        const textElement = document.createElement('p');
+        textElement.textContent = slide.text;
+        slideElement.appendChild(textElement);
+        
+        allSlidesContainer.appendChild(slideElement);
+    });
 }
 
 document.addEventListener('DOMContentLoaded', loadSlides);
