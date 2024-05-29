@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tree Value NFTs</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+            rel="stylesheet">
+    </head>
+    <body class="bg-gray-100 text-gray-900">
+        <header class="bg-green-600 p-4 text-white text-center">
+            <h1 class="text-3xl font-bold">Tree Value NFTs</h1>
+            <p>Purchase NFTs based on the economic value of trees found in
+                Singapore</p>
+        </header>
+        <main class="container mx-auto mt-8">
+            <section class="mb-8">
+                <h2 class="text-2xl font-semibold mb-4">Market Information</h2>
+                <table class="min-w-full bg-white border border-gray-300">
+                    <thead>
+                        <tr class="bg-gray-200">
+                            <th class="py-2 px-4 border-b">Benchmark</th>
+                            <th class="py-2 px-4 border-b">Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="py-2 px-4 border-b">Nifty</td>
+                            <td class="py-2 px-4 border-b">22,783.20</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 px-4 border-b">Gold (MCX)
+                                (Rs/10g)</td>
+                            <td class="py-2 px-4 border-b">72,200.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section>
+                <h2 class="text-2xl font-semibold mb-4">Purchase Tree Value
+                    NFTs</h2>
+                <form id="purchaseForm" class="bg-white p-4 shadow-md rounded">
+                    <div class="mb-4">
+                        <label for="treeType" class="block text-gray-700">Select
+                            Tree Type</label>
+                        <select id="treeType"
+                            class="w-full p-2 border border-gray-300 rounded">
+                            <option value="tree1">Tree Type 1</option>
+                            <option value="tree2">Tree Type 2</option>
+                        </select>
+                    </div>
+                    <div class="mb-4">
+                        <label for="quantity"
+                            class="block text-gray-700">Quantity</label>
+                        <input type="number" id="quantity"
+                            class="w-full p-2 border border-gray-300 rounded"
+                            min="1" value="1">
+                    </div>
+                    <button type="submit"
+                        class="bg-green-600 text-white py-2 px-4 rounded">Purchase</button>
+                </form>
+            </section>
+        </main>
+        <footer class="bg-gray-800 text-white text-center p-4 mt-8">
+            <p>&copy; 2024 Tree Value NFTs. All rights reserved.</p>
+        </footer>
+        <script src="./src/scripts.js"></script>
+    </body>
+</html>

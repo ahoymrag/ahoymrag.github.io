@@ -1,0 +1,80 @@
+[
+  {
+    "name": "Rain Tree",
+    "scientific_name": "Samanea saman",
+    "description": "One of the most iconic trees in our city, the Rain Tree can be identified by its distinct umbrella-shaped and wide spreading crown, which creates a 'great tunnel' effect when planted in rows along our streets. Its compound leaves fold up at night or during rainy days when the sky is overcast.",
+    "image": "images/rain_tree.jpg"
+  },
+  {
+    "name": "Angsana",
+    "scientific_name": "Pterocarpus indicus",
+    "description": "The Angsana is one of the earliest native trees to be planted in our city. This species continued to be widely planted in the 1960s and 1970s; as such, many of them are now of mature size, easily reaching heights of 15-18m.",
+    "image": "images/angsana.jpg"
+  },
+  {
+    "name": "Sea Almond",
+    "scientific_name": "Terminalia catappa",
+    "description": "Another native tree that is commonly planted along our streets and in our parks, the Sea Almond is a coastal species that can be found naturally along the seashores and in the mangroves of Singapore.",
+    "image": "images/sea_almond.jpg"
+  },
+  {
+    "name": "Chengal Pasir",
+    "scientific_name": "Hopea odorata",
+    "description": "The Chengal Pasir is a tall canopy tree that is native to the primary dipterocarp forests of Southeast Asia. It is also a hardy species that is well-adapted to urban environments.",
+    "image": "images/chengal_pasir.jpg"
+  },
+  {
+    "name": "Batoko Plum",
+    "scientific_name": "Flacourtia inermis",
+    "description": "A small yet striking tree, the Batoko Plum is instantly recognisable due to its pink and reddish young leaves, and its bright red berries that are around 2-2.5cm in diameter.",
+    "image": "images/batoko_plum.jpg"
+  },
+  {
+    "name": "Handkerchief Tree",
+    "scientific_name": "Cynometra browneoides",
+    "description": "The Handkerchief Tree is named after its striking young new leaves, which resemble soft handkerchiefs hanging from all over the tree.",
+    "image": "images/handkerchief_tree.jpg"
+  },
+  {
+    "name": "Broad-leafed Mahogany",
+    "scientific_name": "Swietenia macrophylla",
+    "description": "One of the world's most outstanding timbers, the Broad-leafed Mahogany is native to South America, where it is becoming increasingly rare.",
+    "image": "images/broad_leafed_mahogany.jpg"
+  },
+  {
+    "name": "Gelam",
+    "scientific_name": "Melaleuca cajuputi",
+    "description": "Gelam is a widely-distributed species that can be found in Southeast Asia, New Guinea and even in Australia. Our Kampong Glam is named after this tree!",
+    "image": "images/gelam.jpg"
+  },
+  {
+    "name": "Leopard Tree",
+    "scientific_name": "Libidibia ferrea",
+    "description": "The Leopard Tree earns its name from its smooth distinctive bark, which is coloured in various shades of grey and yellow, mottled with brown splotches, and peels off in patches with age.",
+    "image": "images/leopard_tree.jpg"
+  },
+  {
+    "name": "Red Lip",
+    "scientific_name": "Syzygium myrtifolium",
+    "description": "The Red Lip is a beautiful native rainforest tree that is sometimes also cultivated as a shrub or hedge, due to its compact and dense foliage.",
+    "image": "images/red_lip.jpg"
+  },
+  {
+    "name": "Madagascar Almond",
+    "scientific_name": "Terminalia mantaly",
+    "description": "The Madagascar Almond is closely related to the Sea Almond, but is distinctly smaller in size, and also produces much smaller leaves.",
+    "image": "images/madagascar_almond.jpg"
+  },
+  {
+    "name": "Casuarina",
+    "scientific_name": "Casuarina equisetifolia",
+    "description": "Even though the Casuarina is frequently mistaken as a 'pine tree', it is actually completely unrelated to coniferous trees!",
+    "image": "images/casuarina.jpg"
+  },
+  {
+    "name": "Sea Gutta",
+    "scientific_name": "Planchonella obovata",
+    "description": "Naturally found along rocky and sandy coasts, the Sea Gutta is a native tree that also grows robustly in urban environments despite their harsh conditions.",
+    "image": "images/sea_gutta.jpg"
+  }
+]
