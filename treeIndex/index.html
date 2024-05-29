@@ -16,55 +16,59 @@
         </header>
         <main class="container mx-auto mt-8">
             <section class="mb-8">
-                <h2 class="text-2xl font-semibold mb-4">Market Information</h2>
-                <table class="min-w-full bg-white border border-gray-300">
-                    <thead>
-                        <tr class="bg-gray-200">
-                            <th class="py-2 px-4 border-b">Benchmark</th>
-                            <th class="py-2 px-4 border-b">Value</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="py-2 px-4 border-b">Nifty</td>
-                            <td class="py-2 px-4 border-b">22,783.20</td>
-                        </tr>
-                        <tr>
-                            <td class="py-2 px-4 border-b">Gold (MCX)
-                                (Rs/10g)</td>
-                            <td class="py-2 px-4 border-b">72,200.00</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <h2 class="text-2xl font-semibold mb-4">Tree Catalog</h2>
+                <div id="treeTableContainer"></div>
+                <button id="addToCart"
+                    class="mt-4 bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+                    Add to Cart
+                </button>
             </section>
-            <section>
-                <h2 class="text-2xl font-semibold mb-4">Purchase Tree Value
-                    NFTs</h2>
-                <form id="purchaseForm" class="bg-white p-4 shadow-md rounded">
-                    <div class="mb-4">
-                        <label for="treeType" class="block text-gray-700">Select
-                            Tree Type</label>
-                        <select id="treeType"
-                            class="w-full p-2 border border-gray-300 rounded">
-                            <option value="tree1">Tree Type 1</option>
-                            <option value="tree2">Tree Type 2</option>
-                        </select>
-                    </div>
-                    <div class="mb-4">
-                        <label for="quantity"
-                            class="block text-gray-700">Quantity</label>
-                        <input type="number" id="quantity"
-                            class="w-full p-2 border border-gray-300 rounded"
-                            min="1" value="1">
-                    </div>
-                    <button type="submit"
-                        class="bg-green-600 text-white py-2 px-4 rounded">Purchase</button>
-                </form>
-            </section>
+            <!-- Existing content -->
         </main>
         <footer class="bg-gray-800 text-white text-center p-4 mt-8">
             <p>&copy; 2024 Tree Value NFTs. All rights reserved.</p>
         </footer>
-        <script src="./src/scripts.js"></script>
+        <script>
+        fetch('src/trees.json')
+            .then(response => response.json())
+            .then(data => {
+                const table = document.createElement('table');
+                table.className = 'min-w-full leading-normal';
+                const thead = document.createElement('thead');
+                thead.innerHTML = `<tr>
+                        <th class="py-2 px-4 border-b">Select</th>
+                        <th class="py-2 px-4 border-b">Name</th>
+                        <th class="py-2 px-4 border-b">Scientific Name</th>
+                        <th class="py-2 px-4 border-b">Description</th>
+                        <th class="py-2 px-4 border-b">Image</th>
+                        <th class="py-2 px-4 border-b">Price (SGD)</th>
+                    </tr>`;
+                table.appendChild(thead);
+
+                const tbody = document.createElement('tbody');
+                data.forEach(tree => {
+                    const tr = document.createElement('tr');
+                    tr.innerHTML = `
+                        <td class="py-2 px-4 border-b"><input type="checkbox" class="tree-checkbox" data-id="${tree.id}"></td>
+                        <td class="py-2 px-4 border-b">${tree.name}</td>
+                        <td class="py-2 px-4 border-b">${tree.scientific_name}</td>
+                        <td class="py-2 px-4 border-b">${tree.description}</td>
+                        <td class="py-2 px-4 border-b"><img src="${tree.image}" alt="${tree.name}" style="width:100px;"></td>
+                        <td class="py-2 px-4 border-b">${tree.price}</td>`;
+                    tbody.appendChild(tr);
+                });
+                table.appendChild(tbody);
+
+                document.getElementById('treeTableContainer').appendChild(table);
+            })
+            .catch(error => console.error('Error loading the tree data:', error));
+
+        document.getElementById('addToCart').addEventListener('click', () => {
+            const selectedTrees = document.querySelectorAll('.tree-checkbox:checked');
+            const selectedIds = Array.from(selectedTrees).map(checkbox => checkbox.dataset.id);
+            console.log('Selected Trees:', selectedIds);
+            // Here you can handle adding to cart functionality
+        });
+    </script>
     </body>
 </html>
