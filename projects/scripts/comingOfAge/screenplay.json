@@ -89,13 +89,15 @@
 }  ,
   
 {
-  "sceneNumber": 6,
-  "location": "6. (1) INT. HOUSE - DAY",
-  "action": "Tyler reaches for a diet coke instead of a beer - cut to a downhill race of bikers with Tyler drinking coke - cut to walking up stairs at coffee shop",
-  "dialogues": [
+    "sceneNumber": 6,
+    "location": "6. (1) INT. HOUSE - DAY",
+    "action":
+    "Cut To : Tyler reaches for a diet coke instead of a beer.",
+    "action2": "Cut To : A downhill race of bikers, Tyler among them, drinking his coke as they speed down.",
+    "action3": "Cut To : Tyler walking up the stairs at the coffee shop, still holding the coke.",
+    "dialogues": []
+  }
 
-  ]
-}
   ]
 }
 

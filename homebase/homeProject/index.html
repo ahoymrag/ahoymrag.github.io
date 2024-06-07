@@ -5,11 +5,47 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>A-Frame House Construction Guide</title>
         <link rel="stylesheet" href="./homeProject.css">
+        <style>
+            .slideshow {
+                position: relative;
+                width: 100%;
+                max-height: 300px; /* Fixed height */
+                overflow: hidden;
+            }
+            .slideshow img {
+                width: 100%; /* Adjust width as needed, can set to auto if aspect ratio issues arise */
+                height: 300px;
+                position: absolute;
+                opacity: 0;
+                transition: opacity 0.5s linear;
+            }
+            .prev, .next {
+                cursor: pointer;
+                position: absolute;
+                top: 50%;
+                width: auto;
+                margin-top: -22px;
+                padding: 16px;
+                color: white;
+                font-weight: bold;
+                font-size: 18px;
+                transition: 0.6s ease;
+                user-select: none;
+                background-color: rgba(0,0,0,0.8);
+                z-index: 10;
+            }
+            .next {
+                right: 0;
+            }
+            .prev {
+                left: 0;
+            }
+        </style>
     </head>
     <body>
         <div class="dashboard">
             <aside class="sidebar">
-                <h2>Navigation</h2>
+                <h2>Alex and Ellen's Dream DIY home</h2>
                 <ul>
                     <li><a href="#introduction">Introduction</a></li>
                     <li><a href="#planning">Planning and Design</a></li>
@@ -17,6 +53,8 @@
                     <li><a href="#materials">Materials List</a></li>
                     <li><a href="#building">Building Steps</a></li>
                     <li><a href="#alternatives">Alternative Methods</a></li>
+                    <li><a href="#miscPics">Miscellaneous Pictures</a></li>
+                    <li><a href="#studioDreams">Studio Dreams</a></li>
                 </ul>
             </aside>
             <main class="content">
@@ -43,6 +81,145 @@
                 <section id="materials">
                     <h2>Materials List</h2>
                     <p>Foundation: Concrete (for a slab or footings)...</p>
+                    <p>Slideshow of Materials</p>
+                    <div class="slideshow">
+                        <img
+                            src="https://i.pinimg.com/736x/79/47/26/7947267a57bc0522fd9c13e2ca24e5ae.jpg"
+                            alt="A-Frame House Image 1">
+                        <img
+                            src="https://i.pinimg.com/564x/70/a6/ab/70a6ab012f03684c0cd60bdfdb70f81e.jpg"
+                            alt="A-Frame House Image 2">
+                        <img
+                            src="https://i.pinimg.com/736x/49/44/fd/4944fd7973b50e63829ec38efb1f756b.jpg"
+                            alt="A-Frame House Image 3">
+                        <img
+                            src="https://i.pinimg.com/736x/45/34/95/453495d29f7cc94c360fbc6ecedd4be4.jpg"
+                            alt="A-Frame House Image 4">
+                        <img
+                            src="https://i.pinimg.com/736x/7c/64/a0/7c64a03eb788c2711edd19cfbb690c3e.jpg"
+                            alt="A-Frame House Image 5">
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    <p>Table of Materials</p>
+                    <div>
+                        <table>
+                            <tr>
+                                <th>Material</th>
+                                <th>Description</th>
+                                <th>Quantity</th>
+                                <th>Dimensions</th>
+                            </tr>
+                            <tr>
+                                <td>Lumber</td>
+                                <td>2x4 for framing</td>
+                                <td>60</td>
+                                <td>8 ft</td>
+                            </tr>
+                            <tr>
+                                <td>Lumber</td>
+                                <td>2x6 for framing</td>
+                                <td>30</td>
+                                <td>8 ft</td>
+                            </tr>
+                            <tr>
+                                <td>Plywood</td>
+                                <td>For sheathing</td>
+                                <td>20</td>
+                                <td>4x8 ft sheets</td>
+                            </tr>
+                            <tr>
+                                <td>Pressure Treated Lumber</td>
+                                <td></td>
+                                <td>10</td>
+                                <td>8 ft</td>
+                            </tr>
+                            <tr>
+                                <td>Roofing</td>
+                                <td>Roof Panels</td>
+                                <td>15</td>
+                                <td>3x6 ft sheets</td>
+                            </tr>
+                            <tr>
+                                <td>Roofing</td>
+                                <td>Asphalt shingles</td>
+                                <td>10 bundles</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Windows</td>
+                                <td>Double-pane windows</td>
+                                <td>5</td>
+                                <td>Various sizes</td>
+                            </tr>
+                            <tr>
+                                <td>Doors</td>
+                                <td>Exterior door</td>
+                                <td>1</td>
+                                <td>Standard size</td>
+                            </tr>
+                            <tr>
+                                <td>Insulation</td>
+                                <td>Roll insulation</td>
+                                <td>10</td>
+                                <td>40 sq ft rolls</td>
+                            </tr>
+                            <tr>
+                                <td>Foundation and Flooring</td>
+                                <td>Concrete mix</td>
+                                <td>30</td>
+                                <td>60 lb bags</td>
+                            </tr>
+                            <tr>
+                                <td>Foundation and Flooring</td>
+                                <td>Rebar</td>
+                                <td>20</td>
+                                <td>10 ft lengths</td>
+                            </tr>
+                            <tr>
+                                <td>Joist hangers</td>
+                                <td></td>
+                                <td>50</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Fasteners</td>
+                                <td>Nails</td>
+                                <td>1 box</td>
+                                <td>3" nails</td>
+                            </tr>
+                            <tr>
+                                <td>Fasteners</td>
+                                <td>Screws</td>
+                                <td>1 box</td>
+                                <td>2.5" deck screws</td>
+                            </tr>
+                            <tr>
+                                <td>Finishes</td>
+                                <td>Exterior paint</td>
+                                <td>5 gallons</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Finishes</td>
+                                <td>Interior paint</td>
+                                <td>5 gallons</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Plumbing and Electrical</td>
+                                <td>Wiring and electrical boxes</td>
+                                <td>Varies</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Plumbing and Electrical</td>
+                                <td>Piping and fixtures</td>
+                                <td>Varies</td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
                 </section>
 
                 <section id="building">
@@ -55,8 +232,60 @@
                     <h2>Alternative Methods</h2>
                     <p>Consider purchasing a prefabricated A-frame kit...</p>
                 </section>
+                <section id="miscPics">
+                    <img
+                        src="https://i.pinimg.com/736x/79/47/26/7947267a57bc0522fd9c13e2ca24e5ae.jpg"
+                        alt="A-Frame House Image 1">
+                    <img
+                        src="https://i.pinimg.com/564x/70/a6/ab/70a6ab012f03684c0cd60bdfdb70f81e.jpg"
+                        alt="A-Frame House Image 2">
+                    <img
+                        src="https://i.pinimg.com/736x/49/44/fd/4944fd7973b50e63829ec38efb1f756b.jpg"
+                        alt="A-Frame House Image 3">
+                    <img
+                        src="https://i.pinimg.com/736x/45/34/95/453495d29f7cc94c360fbc6ecedd4be4.jpg"
+                        alt="A-Frame House Image 4">
+                    <img
+                        src="https://i.pinimg.com/736x/7c/64/a0/7c64a03eb788c2711edd19cfbb690c3e.jpg"
+                        alt="A-Frame House Image 5">
+                </section>
+                <section id="studioDreams">
+                    <h2>Studio Dreams</h2>
+                    <p>Treehouse Studio
+                        space...</p>
+                    <img
+                        src="https://i.pinimg.com/564x/6e/7c/e8/6e7ce879e28ad83b9a07bf2a176b82f9.jpg">
+                </section>
             </main>
         </div>
+        <script>
+            var slideIndex = 0; // Start showing the first slide
+            var slides = document.getElementsByClassName("slide");
+            var timer = null;
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("slide");
+                if (n >= slides.length) {slideIndex = 0}
+                if (n < 0) {slideIndex = slides.length - 1}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.opacity = "0";
+                }
+                slides[slideIndex].style.opacity = "1"; // Make the current slide visible
+                clearTimeout(timer);
+                timer = setTimeout(function() {
+                    plusSlides(1)
+                }, 4000); // Change image every 4 seconds
+            }
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            document.addEventListener("DOMContentLoaded", function() {
+                showSlides(slideIndex); // Initialize the slideshow when the document is ready
+            });
+        </script>
         <script src="./homeProject.js"></script>
     </body>
 </html>
