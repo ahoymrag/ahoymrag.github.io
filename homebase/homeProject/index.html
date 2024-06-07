@@ -42,7 +42,19 @@
             }
         </style>
     </head>
-    <body>
+    <body><nav class="navbar">
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
         <div class="dashboard">
             <aside class="sidebar">
                 <h2>Alex and Ellen's Dream DIY home</h2>
@@ -428,6 +440,11 @@
 
             document.addEventListener("DOMContentLoaded", function() {
                 showSlides(slideIndex); // Initialize the slideshow when the document is ready
+            });
+        </script>
+        <script src="./homeProject.js"></script>
+    </body>
+</html>
             });
         </script>
         <script src="./homeProject.js"></script>
