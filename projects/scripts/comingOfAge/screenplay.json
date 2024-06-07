@@ -1,9 +1,21 @@
 {
   "title": "Sample Screenplay",
+  "author": "Jane Doe",
+  "synopsis": "A story of unexpected friendship and life's serendipitous moments, set against the backdrop of a bustling city.",
+  "characters": [
+    {
+      "name": "JOHN",
+      "description": "A curious and adventurous young man in his late twenties."
+    },
+    {
+      "name": "MARTHA",
+      "description": "A thoughtful and observant woman in her early thirties."
+    }
+  ],
   "scenes": [
     {
       "sceneNumber": 1,
-      "location": "INT. HOUSE - DAY",
+      "location": "1. INT. HOUSE - DAY",
       "action": "John enters the kitchen, looking for something in the fridge.",
       "dialogues": [
         {
@@ -18,7 +30,7 @@
     },
     {
       "sceneNumber": 2,
-      "location": "EXT. PARK - EVENING",
+      "location": "2. EXT. PARK - EVENING",
       "action": "Martha walks slowly, enjoying the sunset.",
       "dialogues": [
         {
@@ -26,6 +38,65 @@
           "line": "It's a beautiful evening, isn't it?"
         }
       ]
+    },
+    {
+        "sceneNumber": 3,
+        "location": "3. INT. HIGH SCHOOL - HALLWAY - DAY",
+        "action": "Students bustling between classes, lockers slamming.",
+        "dialogues": [
+          {
+            "character": "TOM",
+            "line": "Hurry up, we're going to be late for Mr. Thompson's class!"
+          },
+          {
+            "character": "LUCY",
+            "line": "I'm almost done, just one more book."
+          },
+          {
+            "character": "TOM",
+            "line": "You always have one more book."
+          }
+        ]
+      },
+      {
+        "sceneNumber": 4,
+        "location": "4. EXT. BRIDGE - NIGHT",
+        "action": "The bridge is empty, lights reflect on the water below.",
+        "dialogues": []
+      },
+      {
+        "sceneNumber": 5,
+        "location": "5. INT. COMMUNITY CENTER - MULTIPURPOSE ROOM - DAY",
+        "action": "A local band sets up their equipment on stage. Volunteers decorate the room.",
+        "dialogues": [
+          {
+            "character": "SARAH",
+            "line": "Make sure the banners are even. We want this place looking great for tonight!"
+          },
+          {
+            "character": "MARK",
+            "line": "Don't worry, everything will be perfect. How's the sound check going?"
+          },
+          {
+            "character": "SARAH",
+            "line": "Almost done. Just need to tweak the bass levels a bit."
+          },
+          {
+            "character": "JENNY",
+            "line": "Hey, has anyone seen the extension cords?"
     }
+  ] 
+}  ,
+  
+{
+  "sceneNumber": 6,
+  "location": "6. (1) INT. HOUSE - DAY",
+  "action": "Tyler reaches for a diet coke instead of a beer - cut to a downhill race of bikers with Tyler drinking coke - cut to walking up stairs at coffee shop",
+  "dialogues": [
+
   ]
 }
+  ]
+}
+
+
