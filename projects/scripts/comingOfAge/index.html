@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Coming of Age</title>
+        <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            padding: 20px;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+        .scene {
+            margin-bottom: 40px;
+        }
+        .location {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .action {
+            margin-bottom: 10px;
+            white-space: pre-wrap;
+        }
+        .dialogue {
+            margin-left: 40px;
+            text-indent: -40px;
+        }
+        .character {
+            font-weight: bold;
+        }
+    </style>
+    </head>
+    <body>
+        <div id="screenplay"></div>
+        <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            fetch('screenplay.json')
+                .then(response => response.json())
+                .then(data => {
+                    const screenplay = document.getElementById("screenplay");
+                    screenplay.innerHTML = `<h1>${data.title}</h1>`;
+                    data.scenes.forEach(scene => {
+                        const sceneDiv = document.createElement("div");
+                        sceneDiv.className = "scene";
+                        sceneDiv.innerHTML = `
+                            <div class="location">${scene.location}</div>
+                            <div class="action">${scene.action}</div>
+                        `;
+                        scene.dialogues.forEach(dialogue => {
+                            const dialogueDiv = document.createElement("div");
+                            dialogueDiv.className = "dialogue";
+                            dialogueDiv.innerHTML = `<span class="character">${dialogue.character}:</span> ${dialogue.line}`;
+                            sceneDiv.appendChild(dialogueDiv);
+                        });
+                        screenplay.appendChild(sceneDiv);
+                    });
+                })
+                .catch(error => console.error("Error loading screenplay data:", error));
+        });
+    </script>
+    </body>
+</html>

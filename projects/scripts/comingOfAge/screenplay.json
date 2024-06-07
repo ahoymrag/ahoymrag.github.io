@@ -1,0 +1,31 @@
+{
+  "title": "Sample Screenplay",
+  "scenes": [
+    {
+      "sceneNumber": 1,
+      "location": "INT. HOUSE - DAY",
+      "action": "John enters the kitchen, looking for something in the fridge.",
+      "dialogues": [
+        {
+          "character": "JOHN",
+          "line": "What's left to eat?"
+        },
+        {
+          "character": "MARTHA",
+          "line": "Just some eggs and bread."
+        }
+      ]
+    },
+    {
+      "sceneNumber": 2,
+      "location": "EXT. PARK - EVENING",
+      "action": "Martha walks slowly, enjoying the sunset.",
+      "dialogues": [
+        {
+          "character": "MARTHA",
+          "line": "It's a beautiful evening, isn't it?"
+        }
+      ]
+    }
+  ]
+}
