@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Trading Bot</title>
+        <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .form-group button {
+            padding: 10px 15px;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .form-group button:hover {
+            background-color: #218838;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Trading Bot</h1>
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" name="amount" required>
+            </div>
+            <div class="form-group">
+                <button id="buyBtn">Buy</button>
+                <button id="sellBtn">Sell</button>
+            </div>
+            <div class="form-group">
+                <button id="transferBtn">Transfer Margins</button>
+            </div>
+            <div id="message"></div>
+        </div>
+
+        <script>
+        async function makeRequest(endpoint, method, data = {}) {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            const authHeader = 'Basic ' + btoa(username + ':' + password);
+
+            const response = await fetch(endpoint, {
+                method: method,
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': authHeader
+                },
+                body: JSON.stringify(data)
+            });
+
+            return response.json();
+        }
+
+        document.getElementById('buyBtn').addEventListener('click', async function() {
+            const amount = document.getElementById('amount').value;
+            const response = await makeRequest('/buy', 'POST', { amount });
+            document.getElementById('message').innerText = response.message;
+        });
+
+        document.getElementById('sellBtn').addEventListener('click', async function() {
+            const amount = document.getElementById('amount').value;
+            const response = await makeRequest('/sell', 'POST', { amount });
+            document.getElementById('message').innerText = response.message;
+        });
+
+        document.getElementById('transferBtn').addEventListener('click', async function() {
+            const response = await makeRequest('/transfer_margins', 'POST');
+            document.getElementById('message').innerText = response.message;
+        });
+    </script>
+    </body>
+</html>
