@@ -1,0 +1,72 @@
+<!-- THE DOWNLOAD PAGE -->
+<html>
+  <head>
+    <meta
+      name="description"
+      content="Download Ape - a powerful, flexible, and fun open-source tool for blockchain development."
+    />
+    <meta
+      name="keywords"
+      content="Ape, Blockchain, Development, Download, Open-Source"
+    />
+    <meta property="og:title" content="Download Ape" />
+    <meta
+      property="og:description"
+      content="Download Ape - a powerful, flexible, and fun open-source tool for blockchain development."
+    />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="stylesheet" href="download.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>
+      Download Ape Framework - Open Source Blockchain Development Tool
+    </title>
+  </head>
+
+  <body>
+    <div class="main-container">
+      <div>
+        <div>
+          <div class="logo-wrap">
+            <a href="/framework"
+              ><img src="./logo.png" class="menu-logo-graphic"
+            /></a>
+          </div>
+          <div>
+            <h2 class="header-2-text">Install Via Docker</h2>
+            <div class="code">
+              docker run \
+              <br />--volume $HOME/.ape:/home/harambe/.ape \ <br />--volume
+              $HOME/.vvm:/home/harambe/.vvm \ <br />--volume
+              $HOME/.solcx:/home/harambe/.solcx \ <br />--volume
+              $PWD:/home/harambe/project \ <br />apeworx/ape compile
+            </div>
+          </div>
+          <div>
+            <h2 class="header-2-text">Install Via PIP</h2>
+            <div class="code">pipx install eth-ape</div>
+            <div class="code">pip install eth-ape</div>
+          </div>
+          <div style="text-align: center; margin: 10px">
+            <div style="padding: 10px; margin: 1.5px">
+              <p style="font-size: 10px; text-align: center">
+                For more information, read our
+                <a
+                  href="https://docs.apeworx.io/ape/stable/userguides/quickstart.html"
+                  target="_blank"
+                  >Quickstart Guide</a
+                >.
+              </p>
+              <br />
+              <a href="/framework"
+                ><img src="./logo.png" class="footer-logo"
+              /></a>
+              <br /><br />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

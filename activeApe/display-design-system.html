@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .container {
+            width: 80%;
+            height: 90%;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: auto;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 14px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <pre id="cssContent">Loading...</pre>
+    </div>
+
+    <script>
+        async function fetchCSS() {
+            try {
+                const response = await fetch('ape-design-system.css');
+                const cssText = await response.text();
+                document.getElementById('cssContent').textContent = cssText;
+            } catch (error) {
+                document.getElementById('cssContent').textContent = 'Failed to load CSS file.';
+            }
+        }
+
+        fetchCSS();
+    </script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+.content-block {
+    width: 80%;
+    max-width: 800px;
+
+}
+
+.widget-vertical-button-menu {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+.widget-vertical-button-menu button {
+    width: 100%;
+}

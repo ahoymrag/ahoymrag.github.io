@@ -1,0 +1,598 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Press Start 2P";
+}
+
+body {
+  font-family: monospace;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: var(--color-primary);
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+:root {
+  --color-primary: #b7ff00;
+  --color-secondary: #b7ff00;
+  --color-tertiary: #000000;
+  --color-hover: #ff8dd1;
+  --border-color: #b7ff00;
+  --border-color-hover: lime;
+  --innerPadding: 55px;
+}
+
+/* Release */
+.release-name {
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  mix-blend-mode: normal;
+  z-index: 3;
+  position: relative;
+  z-index: 3;
+  filter: invert(1);
+  filter: brightness(100);
+  background-color: rgba(0, 0, 0, 0.852);
+  transition: transform 0.3s;
+}
+
+.asci-test {
+  background-color: yellow !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: var(--color-primary) !important;
+}
+
+button {
+  color: var(--color-primary) !important;
+}
+
+.subheader {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.llama-graphic {
+  max-width: 350px;
+  animation: saturation 5s infinite;
+}
+@keyframes saturation {
+  0% {
+    filter: saturate(100%);
+  }
+  50% {
+    filter: saturate(200%);
+  }
+  100% {
+    filter: saturate(100%);
+  }
+}
+
+.final-splash {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+}
+
+/* footer */
+.frame-footer {
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-logo {
+  width: 62px;
+}
+
+.footer-logo:hover {
+  filter: invert(0.71);
+  animation: horizontal-shaking 0.2s infinite; /* Adjust duration and other properties as needed */
+}
+
+@keyframes horizontal-shaking {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(5px);
+  }
+  50% {
+    transform: translateX(-5px);
+  }
+  75% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Plugins */
+
+.container-plugins {
+  padding: 20px;
+  background-color: #000;
+  overflow: auto;
+  border-style: solid;
+  border-color: var(--border-color);
+  border-width: 1px;
+}
+
+.container-plugins h1 {
+  color: #0f0;
+  margin-bottom: 20px;
+}
+
+.grid-plugins {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.grid-plugins li {
+  list-style-type: none;
+  border: 2px solid var(--border-color);
+  padding: 10px;
+  display: flex;
+}
+
+.grid-plugins li:hover {
+  list-style-type: none;
+  border: 2px solid var(--border-color);
+  cursor: pointer;
+  background-color: green;
+  padding: 10px;
+}
+
+.grid-plugins li a {
+  color: var(--color-primary);
+  text-decoration: none;
+  flex-grow: 1;
+}
+
+.grid-plugins li a:hover {
+  text-decoration: underline;
+}
+
+.grid-plugins li:before {
+  content: ">";
+  margin-right: 10px;
+}
+
+/* install section */
+.install-ape-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 700px;
+  color: rgba(0, 255, 0, 0.278);
+}
+
+.install-ape-fullwidth-wrap {
+  position: relative;
+}
+
+.install {
+  display: flex;
+  justify-content: center;
+}
+
+.install-button {
+  background-color: #000;
+  border-color: transparent;
+  color: var(--color-primary);
+  font-size: 16px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  font-family: monospace;
+  min-width: 85vw;
+  min-height: 30vh;
+}
+
+.install-button:hover {
+  background-color: var(--color-primary);
+  color: #000 !important;
+}
+
+.download-button {
+  width: 50%;
+  padding: 10px;
+  border-style: solid;
+  border-width: 1px;
+  background-color: black;
+  border-color: var(--color-secondary);
+  text-transform: uppercase;
+  cursor: pointer;
+  margin: 10px;
+  color: white;
+  font-family: "Press Start 2P";
+  font-size: 16px;
+  opacity: 100;
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+.download-button:hover {
+  background-color: green; /* Green background on hover */
+  border-color: var(--color-primary);
+  opacity: 0.71;
+}
+
+/* SECTION */
+
+.section p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.section:hover {
+  cursor: pointer;
+}
+.section {
+  border-style: solid;
+  margin: 10px; /* Adjust as needed for outer spacing */
+  border-color: var(--border-color);
+  padding: 20px;
+  background-color: #000;
+  overflow: auto;
+}
+
+.section h2 {
+  color: #0f0;
+  margin-bottom: 10px;
+  font-size: 30px;
+  line-height: 90%;
+}
+
+.section .codeWrap {
+  padding: 10px;
+  background-color: #333;
+  color: #0f0;
+}
+
+.card-image {
+  padding: 0px;
+  width: 100%;
+  background-color: #333;
+}
+.asci-container-xl {
+  max-width: 100%;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+}
+
+.asci-container-xl iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* SPLASH */
+.splash-text {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.splash-main {
+  width: 100%;
+  background-color: #000;
+  padding: 50px;
+  height: 300px;
+  padding: 50px;
+}
+
+.splash-screen {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.graphic-frame-top-logo {
+  filter: brightness(200);
+  mix-blend-mode: ligthen;
+  width: 300px;
+}
+
+/* Default styles for desktop */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns with equal width */
+  gap: 20px; /* Adjust this value for spacing between grid items */
+  padding: 20px;
+}
+
+.release-number {
+  color: rgb(0, 0, 0);
+  font-size: 10vw;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  mix-blend-mode: normal;
+  z-index: 3;
+  position: relative;
+  z-index: 3;
+  filter: brightness(100);
+  background-color: rgba(0, 0, 0, 0.851);
+}
+
+/* modals */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.modal-content {
+  background-color: var(--color-tertiary);
+  padding: 20px;
+  border: 1px solid #b7ff00;
+  width: 60%;
+  margin-left: 21%;
+  margin-top: 5%;
+}
+
+.close {
+  color: white;
+  float: left;
+  font-size: 28px;
+  font-weight: bold;
+  margin-right: 7px;
+  margin-top: -8px;
+}
+
+.close:hover,
+.close:focus {
+  color: #b7ff00;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  z-index: 10;
+}
+
+.splash-collaboration {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 50px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--border-color);
+}
+
+/*NEW FEATURES */
+
+.splash-collaboration p,
+h1 {
+  text-align: left;
+  padding-left: 20px;
+}
+.splash-col-2 {
+  min-height: 400px;
+  min-width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.splash-col-1 h2 {
+  font-size: 50px !important;
+  padding-left: 20px;
+  text-align: left !important;
+  line-height: 80%;
+  margin-bottom: 20px;
+}
+
+.download-button {
+  font-size: 12px !important;
+}
+
+.finalSplash {
+  margin: 50px;
+}
+
+.about-plugins-section {
+  padding: var(--innerPadding);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.retro-link {
+  text-decoration: none;
+  color: var(--color-primary);
+  background-color: #000000;
+  padding: 5px;
+  border: 1px solid var(--border-color);
+  border-radius: 2.5px;
+  margin-top: 15px;
+}
+.retro-link:hover {
+  color: #000000;
+  background-color: #00ff00;
+}
+
+.final-splash-logo {
+  width: 700px;
+  height: auto;
+  margin-top: 100px;
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 600px) {
+  .final-splash {
+    margin: 0px;
+    padding: 40px;
+    margin-top: 100px;
+  }
+  .final-splash h2 {
+    font-size: 22px !important;
+    text-align: left !important;
+    margin-top: 10px;
+  }
+
+  .container-plugins {
+    padding: 40px;
+  }
+  .final-splash-section {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  .final-splash-section h2 {
+    font-size: 22px !important;
+    padding-left: 20px;
+    text-align: left !important;
+    padding: 40px;
+  }
+
+  .final-splash {
+    margin-top: 200px;
+  }
+
+  .about-plugins-section {
+    margin-top: 150px;
+    max-height: 150px;
+  }
+
+  .about-plugins-section h1 {
+    font-size: 50px !important;
+    padding-left: 20px;
+    text-align: center !important;
+    padding: 40px;
+    line-height: 80%;
+  }
+
+  .about-plugins-section h2 {
+    font-size: 22px !important;
+    padding-left: 20px;
+    text-align: left !important;
+    padding: 40px;
+    margin-top: 0px;
+  }
+
+  .section-splash-featured-plugin {
+    margin-top: 300px;
+    margin-bottom: 100px;
+  }
+
+  .splash-col-1 h1 {
+    font-size: 50px !important;
+    padding-left: 20px;
+    text-align: center !important;
+    line-height: 80%;
+    margin-bottom: 20px;
+  }
+  .splash-col-1 h2 {
+    font-size: 22px !important;
+    text-align: left !important;
+    padding-left: 20px;
+    margin-bottom: 5px;
+  }
+
+  .splash-col-1 p {
+    font-size: 16px !important;
+    text-align: left !important;
+    margin-bottom: 5px;
+  }
+  .splash-collaboration {
+    flex-direction: column !important;
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--border-color);
+  }
+
+  .splash-col-2 {
+    width: 100%;
+    display: none;
+  }
+
+  .section-splash-featured-plugin {
+    padding: 20px;
+  }
+
+  .frame-footer {
+    padding-bottom: 100px; /* Adjust padding as per your requirements */
+  }
+
+  .splash-main {
+    padding-bottom: 20px; /* Adjust this value as needed */
+  }
+  .subheader {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .grid {
+    grid-template-columns: 1fr; /* One column on mobile */
+  }
+}
+
+/* Large screens */
+@media (max-width: 1200px) {
+  .final-splash-logo {
+    width: 200px;
+    height: auto;
+    margin-top: 100px;
+  }
+}

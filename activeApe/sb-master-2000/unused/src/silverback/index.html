@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Silverback is an open source Python development tool for creating bots for the Ethereum blockchain." />
+    <meta
+      name="keywords"
+      content="Silverback, Python, development, tool, bots, Ethereum, blockchain" />
+    <meta name="author" content="ApeWorx,LTD" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <!--link rel="stylesheet" href="silverback.css" /-->
+    <link rel="stylesheet" href="../../ape-design-system.css">
+    <title>Silverback - ApeWorx, LTD</title>
+  </head>
+  <body id="silverback-productpage-body-index">
+
+      <div class="container-content">
+        <div class="content-block center">      <a
+        href="https://github.com/ApeWorX/silverback"
+        class="github-link"
+        target="_blank">
+        <img src="./silverback-grey.png" alt="Logo" class="logo" /></a>
+      <h1 class="text-container">silverback</h1></div>
+      <div class="content-block">
+        <div class="panel--aB">
+      <p class="body-description">
+        Silverback lets you create and deploy your own Python bots that respond
+        to on-chain events. The Silverback library leverages the Ape development
+        framework as well as its ecosystem of plugins and packages to enable you
+        to develop simple-yet-sophisticated automated applications that can
+        listen and respond to live chain data.
+
+        Silverback applications are excellent for use cases that involve
+        continuously monitoring and responding to on-chain events, such as newly
+        confirmed blocks or contract event logs.
+      </p>
+    </div></div>
+      <a
+        class="link-text-title"
+        target="_blank"
+        href="https://github.com/ApeWorX/silverback">Install SDK</a>
+      <a class="link-text" onclick="mirrorArticlePopup()">Mirror Article</a>
+      <a class="link-text" onclick="trailerPopup()">Trailer</a>
+    </div>
+
+    <footer>
+      <a href="../../../"><img src="logo.png" class="footer-logo" /></a>
+    </footer>
+
+    <!-- Trailer Popup -->
+    <div id="trailerPopup" class="popup-background" style="display: none">
+      <div class="popup-content">
+        <iframe
+          id="youtube-iframe"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/cKdppwZrxqk"
+          frameborder="0"
+          allow="autoplay"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <!-- Mirror Article Popup HTML-->
+    <div
+      id="mirrorArticlePopup"
+      class="popup-background"
+      style="display: none"></div>
+
+    <!-- Mirror Article and Trailer JS -->
+    <script>
+      function mirrorArticlePopup() {
+        var popup = document.getElementById("mirrorArticlePopup");
+        popup.style.display = "flex";
+
+        var iframe = document.createElement("iframe");
+        iframe.src =
+          "https://mirror.xyz/apeworx.eth/WX2LApZC9qtDq4rop-sSwqARXNL0ZBzlCXXaAMJVjfc";
+        popup.appendChild(iframe);
+
+        popup.addEventListener("click", function (event) {
+          if (event.target === popup) {
+            popup.style.display = "none";
+            popup.innerHTML = "";
+          }
+        });
+      }
+
+      function trailerPopup() {
+        var popup = document.getElementById("trailerPopup");
+        var iframe = document.getElementById("youtube-iframe");
+        popup.style.display = "flex";
+        // change src so that the video autoplays
+        iframe.src = "https://www.youtube.com/embed/cKdppwZrxqk?autoplay=1";
+
+        // Close the popup when clicked outside
+        window.onclick = function (event) {
+          if (event.target == popup || event.target == iframe) {
+            popup.style.display = "none";
+            // edit src so that the sound stops (and stop autoplay)
+            iframe.src = "https://www.youtube.com/embed/cKdppwZrxqk";
+          }
+        };
+      }
+    </script>
+  </body>
+</html>

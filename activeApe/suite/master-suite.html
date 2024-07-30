@@ -1,0 +1,113 @@
+<html>
+    <head>
+        <title>ApeWorx Master Suite</title>
+        <link rel="stylesheet" href="../ape-design-system.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        
+        @keyframes waveAnimation {
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%;}
+        }
+
+        body {
+                color: white;
+                background: linear-gradient(135deg, #001f3f 0%, #003366 25%, #006666 50%, #003366 75%, #001f3f 100%);
+                background-size: 400% 400%;
+                animation: waveAnimation 15s ease infinite;
+                font-family: 'Barlow', sans-serif;
+                margin: 0;
+                padding: 0;
+                min-height: 100vh;
+                padding: 2rem;
+            }
+       
+ 
+
+        </style>
+    </head>
+    <body>
+        <style>
+            .card--center-card {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .logo--style-1 {
+                margin-top: 15px;
+                width: 400px;
+height: auto;                filter: brightness(100);
+                transition: transform 0.3s ease;
+            }
+            .logo--style-1:hover {
+                cursor: pointer;
+                transform: scale(1.051);
+            }
+           
+        </style>
+        <div class="screen">
+            <div id="topLogo" class="component c1">
+                <div class="card--center-card">
+                    <img src="Apeworx_Icon_Grey-S.png" alt="ApeWorx Icon"
+                        class="logo logo--style-1">
+                </div>
+            </div>
+
+            <div class="component c1">
+                <div class="item-grid--style-1">
+                    <a href="product-apeframework.html"
+                        class="item-block--style-1" id="apeFramework">
+                        <img src="path/to/apeframework-icon.png"
+                            alt="ApeFramework Icon">
+                        <h3>apeFramework</h3>
+                        <p>Build dApps with ease</p>
+                    </a>
+                    <a href="product-silverback.html"
+                        class="item-block--style-1" id="silverback">
+                        <img src="path/to/silverback-icon.png"
+                            alt="Silverback Icon">
+                        <h3>Silverback</h3>
+                        <p>Powerful dev environment</p>
+                    </a>
+                    <a href="product-apepay.html" class="item-block--style-1"
+                        id="apePay">
+                        <img src="path/to/apepay-icon.png" alt="ApePay Icon">
+                        <h3>ApePay</h3>
+                        <p>Fast crypto payments</p>
+                    </a>
+                    <a href="product-chaosnet.html" class="item-block--style-1"
+                        id="chaosnet">
+                        <img src="path/to/chaosnet-icon.png"
+                            alt="Chaosnet Icon">
+                        <h3>cHaOSneT</h3>
+                        <p>Decentralized network</p>
+                    </a>
+                    <a href="product-academy.html" class="item-block--style-1"
+                        id="academy">
+                        <img src="path/to/academy-icon.png"
+                            alt="Ape Academy Icon">
+                        <h3>Ape Academy</h3>
+                        <p>Learn blockchain dev</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="component c1" id="timeNtemp">
+                <div class="time-display" id="clock"></div>
+                <div class="temp-display" id="temp"></div>
+            </div>
+
+        </div>
+        <script>
+            function updateClock() {
+                const now = new Date();
+                const time = now.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
+                document.getElementById('clock').textContent = time;
+            }
+            setInterval(updateClock, 1000);
+            updateClock();
+        </script>
+    </body>
+</html>

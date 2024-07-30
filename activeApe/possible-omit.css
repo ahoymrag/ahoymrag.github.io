@@ -1,0 +1,76 @@
+/*EFFECTS AND REUSABLE SMALL MAGIC TRICKS */
+
+/* Gradient Border and Glass Effect */
+.glass-gradient-border {
+    position: relative;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border-width: thin;
+    margin: 5px;
+}
+
+.glass-gradient-border::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, #d3d3d32c, #a9a9a925, #80808027, #69696920, #50505014, #38383815);
+    z-index: -1;
+    border-radius: 12px;
+    padding: 2px;
+    background-clip: padding-box;
+}
+
+/* EASY LAYOUTS FOR USE */
+/*ADD THIS TO A PARENT DIV BLOCK AS THE FIRST THING YOU DO*/
+
+/*LAYOUT 1000 has a fixed height of 600*/
+.layout-1000 {
+    width: 100%;
+    min-height: 600px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    padding: 20px;
+    margin: 10px;
+    overflow: auto;
+}
+
+@media (max-width: 768px) {
+    .layout-1000 {
+        flex-direction: column;
+        padding: 10px;
+    }
+}
+
+
+
+/*BODY BLOCK THEME */
+
+.body-block-vibe-1 {
+    background-color: rgba(0, 128, 0, 0);
+    /* Semi-transparent green */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    /* Glassy effect */
+    -webkit-backdrop-filter: blur(10px);
+    /* For Safari */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0);
+    /* Subtle shadow */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    /* Light border */
+}

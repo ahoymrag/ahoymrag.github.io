@@ -1,0 +1,152 @@
+/*CSS SPECIFIC FOR THE GUIDE AND NOT TO BE CONSIDERED IN BROADER SB APPLICATION */
+
+.welcome {
+    /* The image used */
+    background-image: url('../assets/sb_proto_bg1.png');
+
+    /* Set a specific height */
+    min-height: 100vh;
+
+    /* Create the parallax scrolling effect */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+
+/* Start Menu Button Styles */
+.start-menu-button {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    cursor: pointer;
+}
+
+.start-menu-button img {
+    width: 48px;
+    /* Adjust size as needed */
+    height: auto;
+}
+
+/* Popup Menu Styles */
+.start-menu-popup {
+    position: fixed;
+    bottom: 60px;
+    /* Adjust based on the size of the button */
+    left: 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: none;
+    /* Hidden by default */
+    z-index: 1000;
+}
+
+.start-menu-popup ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.start-menu-popup ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid #ccc;
+}
+
+.start-menu-popup ul li a:hover {
+    background-color: #f0f0f0;
+}
+
+.start-menu-popup ul li:last-child a {
+    border-bottom: none;
+}
+
+
+
+
+/* NECESSARY HTML EVILS JUST FOR THE INFO PAGE */
+body {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    font-family: var(--font-face-barlow), sans-serif;
+    background-color: #0e0e0e;
+    color: var(--secondary-color);
+    padding: 20px;
+}
+
+section {
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+
+
+
+.toggle-container {
+    width: 300px;
+    padding: 10px;
+    border-radius: 8px;
+    background: #44475a;
+    /* Lighter background for the container */
+}
+
+.toggle-switch {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #6272a4;
+    /* Base color */
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.3s;
+}
+
+.toggle-switch.active {
+    background: #ff79c6;
+    /* Active state color */
+}
+
+.toggle-switch-circle {
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.toggle-switch.active .toggle-switch-circle {
+    transform: translateX(-110px);
+    background: #bd93f9;
+    /* Purple circle in active state */
+}
+
+.toggle-label {
+    flex: 1;
+    margin-left: 40px;
+    /* Give some space from the circle */
+}
+
+.toggle-price {
+    font-weight: bold;
+}
+
+
+p,
+ul {
+    max-width: 90%;
+}
+
+
+img {
+    filter: brightness(100);
+}

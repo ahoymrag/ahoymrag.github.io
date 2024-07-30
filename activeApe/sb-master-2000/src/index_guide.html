@@ -1,0 +1,1372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description"
+            content="ApeWorX Design System - A design system for the ApeWorX team">
+        <meta name="keywords" content="ApeWorX, Design System, CSS, HTML">
+        <meta name="author" content="ApeWorX Team">
+        <meta property="og:title" content="ApeWorX Design System">
+        <meta property="og:description"
+            content="A design system for the ApeWorX team">
+        <meta property="og:image" content="../assets/silverback-grey.png">
+        <meta property="og:url"
+            content="https://www.silverback.com/design-system">
+        <meta name="twitter:card" content="summary_large_image">
+        <link rel="stylesheet" href="../../ape-design-system.css">
+
+        <title>ApeWorX Design System</title>
+<style>
+    body {
+        background-color: black;
+        color: white;
+    }
+</style>
+    </head>
+
+    <body id="design-guide-body">
+
+        <div id="search-bar-container">
+            <input type="text" id="search-bar" placeholder="Search..."
+                oninput="performSearch()">
+        </div>
+        <div id="search-results"></div>
+
+        <section class="welcome-to-guide">
+            <img src="../assets/silverback-grey.png" alt="sb_proto_bg1"
+                style="width: 9%;">
+            <h1 class="headline center">Welcome to the ApeWorX Design
+                System</h1>
+            <p class="intro__text">A design system for the ApeWorX team</p>
+        </section>
+        <section id="examples-of-design-system">
+            <p class="body-text --body-large">Examples of the Design System in
+                Action</h1>
+            <p class="body-text">Below are all alive and working products that
+                presently use the "ape-design-system.css"</p>
+            <br>
+            <h2 class="heading-2 center">The Following Products Presently Use
+                this</h2>
+            <br>
+            <div class="widget-vertical-button-menu">
+                <button class="btn btn--default"
+                    onclick="window.location.href='../../src/academy/index.html'">Ape
+                    Academy</button>
+                <button class="btn btn--default"
+                    onclick="window.location.href='../../src/silverback/index.html'">Silverback
+                    Product Page</button>
+                <button class="btn btn--default"
+                    onclick="window.location.href='../../src/apepay/index.html'">Apepay
+                    Product Page</button>
+                <button class="btn btn--default"
+                    onclick="window.location.href='../../src/cHaOSneT/index.html'">cHaOSneT
+                    Product Page</button>
+                <button class="btn btn--default"
+                    onclick="window.location.href='../../src/framework/index.html'">Framework
+                    Product Page</button>
+            </div>
+            <h2 class="heading-2">Widgets and What Not</h2>
+            <div class="widget-vertical-button-menu">
+                <button class="btn btn--default"
+                    onclick="window.location.href='./widgets.html'">Modular
+                    Windows</button>
+            </div>
+            <div class="component">
+                <div class="block">
+                    <div class="panel --panel-style-4">
+                        <div class="item --item-style-2">
+                            <h2 class="heading-2">Silverback Examples</h2>
+                            <br>
+                            <div class="widget-vertical-button-menu">
+                                <button class="btn btn--default"
+                                    onclick="window.location.href='./cluster/overview.html'">Cluster
+                                    ABC</button>
+
+                                <button class="btn btn--default"
+                                    onclick="window.location.href='./userSignup/step0-noCluster-2.html'">User
+                                    Sign up</button>
+
+                                <button class="btn btn--default"
+                                    onclick="window.location.href='./index-cluster/index-cluster.html'">Index
+                                    Cluster
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br>
+        <section id="explaination-block-system">
+            <h1 class="headline">Explaination of the Block System</h1>
+            <p class="intro__text">The block system is a system of blocks that
+                are used to create a layout for the page.</p>
+            <pre><code>
+                    Block Hierarchy
+1. Component
+The highest level in the hierarchy, representing a self-contained unit of functionality or design.
+Example: <div class="component" id="compo1">
+2. Block
+A subdivision within a component, often representing a major section or container.
+Example: <div class="block">
+3. Panel
+A further subdivision within a block, often used to group related items or content.
+Example: <div class="panel">
+4. Item
+The smallest unit within a panel, representing individual pieces of content or UI elements.
+Example: <div class="item">
+                </code></pre>
+            <div class="component" id="info-block-system">
+                <div class="block">
+                    <div class="panel --panel-style-5">
+                        <div class="item --item-style-1">
+                            <h2 class="heading-2">Block System</h2>
+                            <p class="body-text">The block system is a system of
+                                blocks that are used to create</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="component --component-size-1" id="info-block-system">
+                <div class="block">
+                    <div class="panel --panel-style-5">
+                        <div class="item --item-style-1">
+                            <h2 class="heading-2">Screens</h2>
+                            <p class="body-text">Screens are used to house
+                                components</p>
+                            <p class="body-text">but not always necessary - i.e
+                                what you are reading right now
+                                does not have a screen as its parent element
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="screen center-screen">
+            <div class="component --component-size-1">
+                <div class="block">
+                    <div class="panel --panel-style-4">
+                        <div class="item-block">
+                            <div class="block-header">
+                                <h2 class="heading-2">Example using Screens</h2>
+                            </div>
+                            <div class="block-body">
+                                <p class="body-text">This does have a screen -
+                                    and the screen is putting the Component in
+                                    the center of the page</p>
+                                <pre><code>
+                                    &lt;div class="screen center-screen"&gt;
+                                        &lt;div class="component --component-size-1"&gt;
+                                            &lt;div class="block"&gt;
+                                                &lt;div class="panel --panel-style-5"&gt;
+                                                    &lt;div class="item-block --item-style-1"&gt;
+                                                       
+                                                  
+                                                    
+                                </code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="screen center-screen vertical-items">
+            <div id="screen-example-1" class="component --component-size-1">
+                <div class="block">
+                    <div class="panel --panel-style-4">
+                        <div class="item-block">
+                     Here is an example of a screen with 2 compontents - displayed vertically - one after another. 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="screen-example-2" class="component --component-size-1">
+                    <div class="block">
+                        <div class="panel --panel-style-4">
+                            <div class="item-block">
+                         Compontent 2
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <section id="using" class="welcome">
+            <h1 class="headline">Going about using the design system</h1>
+            <p class="intro__text">It all starts with a table of contents</p>
+        </section>
+        <section id="toc">
+            <div class="container-content" style="color: white;">
+                <h1 class="headline center">Table of Contents</h1>
+
+                <div class="content-block">
+                    <div class="panel --panel-style-4">
+                        <ul>
+                            <li><a href="#globally-used-components">Globally
+                                    Used Components</a></li>
+                            <li><a
+                                    href="#silverback-specific-components">Silverback
+                                    Specific Components</a></li>
+                            <li><a href="#apeworx-product-pages">Apeworx.io
+                                    (Product Pages)</a></li>
+                            <li>
+                                <a href="#introduction">I. Introduction</a>
+                                <ul>
+                                    <li><a href="#overview">1.1
+                                            Overview</a></li>
+                                    <li><a href="#getting-started">1.2 Getting
+                                            Started</a></li>
+                                    <li><a href="#browser-compatibility">1.3
+                                            Browser Compatibility</a></li>
+                                    <li><a href="#license">1.4 License</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#general-settings">II. General
+                                    Settings</a>
+                                <ul>
+                                    <li><a href="#import-statements">2.1 Import
+                                            Statements</a></li>
+                                    <li><a href="#css-resets">2.2 CSS
+                                            Resets</a></li>
+                                    <li><a href="#css-variables">2.3 CSS
+                                            Variables</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#base-styles">III. Base Styles</a>
+                                <ul>
+                                    <li><a href="#typography">3.1
+                                            Typography</a></li>
+                                    <li><a href="#headings">3.2
+                                            Headings</a></li>
+                                    <li><a href="#paragraphs">3.3
+                                            Paragraphs</a></li>
+                                    <li><a href="#links">3.4 Links</a></li>
+                                    <li><a href="#lists">3.5 Lists</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#layout">IV. Layout</a>
+                                <ul>
+                                    <li><a href="#containers">4.1
+                                            Containers</a></li>
+                                    <li><a href="#grid-system">4.2 Grid
+                                            System</a></li>
+                                    <li><a href="#flexbox-utilities">4.3 Flexbox
+                                            Utilities</a></li>
+                                    <li><a href="#alignment-utilities">4.4
+                                            Alignment Utilities</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#components">V. Components</a>
+                                <ul>
+                                    <li><a href="#buttons">5.1 Buttons</a>
+                                        <ul>
+                                            <li><a href="#default-button">5.1.1
+                                                    Default Button</a></li>
+                                            <li><a href="#outline-button">5.1.2
+                                                    Outline Button</a></li>
+                                            <li><a href="#primary-button">5.1.3
+                                                    Primary Button</a></li>
+                                            <li><a
+                                                    href="#secondary-button">5.1.4
+                                                    Secondary Button</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#forms">5.2 Forms</a>
+                                        <ul>
+                                            <li><a href="#input-fields">5.2.1
+                                                    Input Fields</a></li>
+                                            <li><a href="#textareas">5.2.2
+                                                    Textareas</a></li>
+                                            <li><a href="#selects">5.2.3
+                                                    Selects</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#modals">5.3 Modals</a></li>
+                                    <li><a href="#dropdowns">5.4
+                                            Dropdowns</a></li>
+                                    <li><a href="#tooltips">5.5
+                                            Tooltips</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#utilities">VI. Utilities</a>
+                                <ul>
+                                    <li><a href="#spacing">6.1 Spacing</a></li>
+                                    <li><a href="#colors">6.2 Colors</a></li>
+                                    <li><a href="#display">6.3 Display</a></li>
+                                    <li><a href="#sizing">6.4 Sizing</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#themes">VII. Themes</a>
+                                <ul>
+                                    <li><a href="#glassy-candy">7.1 Glassy
+                                            Candy</a></li>
+                                    <li><a href="#green-mint-baby">7.2 Green
+                                            Mint Baby</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#custom-components">VIII. Custom
+                                    Components</a>
+                                <ul>
+                                    <li><a href="#sidebar">8.1 Sidebar</a></li>
+                                    <li><a href="#app-layout">8.2 App
+                                            Layout</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#animations">IX. Animations</a>
+                                <ul>
+                                    <li><a href="#keyframes">9.1
+                                            Keyframes</a></li>
+                                    <li><a href="#transitions">9.2
+                                            Transitions</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#media-queries">X. Media Queries</a>
+                                <ul>
+                                    <li><a href="#breakpoint-1">10.1 Breakpoint
+                                            1 (max-width: 920px)</a></li>
+                                    <li><a href="#breakpoint-2">10.2 Breakpoint
+                                            2 (max-width: 720px)</a></li>
+                                    <li><a href="#breakpoint-3">10.3 Breakpoint
+                                            3 (max-width: 620px)</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#examples">XI. Examples</a>
+                                <ul>
+                                    <li><a href="#example-layouts">11.1 Example
+                                            Layouts</a></li>
+                                    <li><a href="#example-components">11.2
+                                            Example Components</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#conclusion">XII. Conclusion</a>
+                                <ul>
+                                    <li><a href="#further-reading">12.1 Further
+                                            Reading</a></li>
+                                    <li><a href="#contributions">12.2
+                                            Contributions</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTIONS FOLLOWING THE TABLE OF CONTENTS ABOVE-->
+
+        <section id="introduction">
+            <h2>I. Introduction</h2>
+            <section id="overview">
+                <h3>1.1 Overview</h3>
+                <!-- Content for Overview -->
+            </section>
+            <section id="getting-started">
+                <h3>1.2 Getting Started</h3>
+                <!-- Content for Getting Started -->
+            </section>
+            <section id="browser-compatibility">
+                <h3>1.3 Browser Compatibility</h3>
+                <!-- Content for Browser Compatibility -->
+            </section>
+            <section id="license">
+                <h3>1.4 License</h3>
+                <!-- Content for License -->
+            </section>
+        </section>
+
+        <section id="general-settings">
+            <h2>II. General Settings</h2>
+            <section id="import-statements">
+                <h3>2.1 Import Statements</h3>
+                <!-- Content for Import Statements -->
+            </section>
+            <section id="css-resets">
+                <h3>2.2 CSS Resets</h3>
+                <p>CSS resets are used to ensure a consistent baseline across
+                    different browsers by removing default styling. Here are the
+                    resets applied:</p>
+                <pre><code>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+    
+        html {
+            max-width: 100%;
+            max-width: 100vw;
+        }
+        </code></pre>
+            </section>
+            <section id="css-variables">
+                <div class="panel--aA">
+                    <h3>2.3 CSS Variables</h3>
+                    <pre><code>
+        :root {
+            /* COLOR FUNCTION LEGEND */
+            --alert-color: #E63946;
+            --pending-color: #FFD93D;
+            --success-color: #39e5ff;
+            --info-color: #007B83;
+            --error-color: #ff8b6b;
+            --link-color: #3700ff;
+            --background-dark: #263238;
+            --background-light: #CFD8DC;
+            --text-primary: #FFFFFF;
+            --text-secondary: #B0BEC5;
+            --border-color: #B0BEC5;
+    
+            --primary-color: #000;
+            --secondary-color: #fff;
+            --tertiary-color: #000000;
+    
+            /* Background Colors */
+            --bgstyle-glass-panel-fuzzyDuck: #2E3438;
+    
+            /* Font Sizes */
+            --font-size-headline: 5.5rem;
+            --font-size-heading-1: 2rem;
+            --font-size-heading-2: 1.75rem;
+            --font-size-heading-3: 1.5rem;
+            --font-size-heading-4: 1.25rem;
+            --font-size-heading-5: 1rem;
+            --font-size-heading-6: 0.875rem;
+            --font-size-body-large: 1.5rem;
+            --font-size-body-medium: 1rem;
+            --font-size-body-small: 0.875rem;
+            --font-size-body-tiny: 0.75rem;
+            --font-size-body-minuscule: 0.625rem;
+    
+            /* Font Weights */
+            --font-weight-regular: 400;
+            --font-weight-bold: 700;
+    
+            /* Font Face */
+            --font-face-barlow: barlow;
+    
+            /* Primary color palette */
+            --color-white: #FFFFFF;
+            --color-green-300: #64D2FF;
+            --color-green-400: #007B83;
+            --color-magenta-300: #FF6B6B;
+            --color-magenta-400: #A7333F;
+            --color-yellow-400: #FFD93D;
+            --color-pink-200: #FF8A5B;
+            --color-pink-400: #E63946;
+    
+            /* Border colors */
+            --border-color: #B0BEC5;
+        }
+    
+        /* Brand Colors from Existing Websites */
+        :root {
+            --colorApeFrame: #b7ff00;
+            --colorApeDocs: #00ff15;
+            --colorSilverBack: rgb(214, 214, 214);
+            --colorChaos: #ff0062dd;
+            --colorApePay: gold;
+            --colorAcademy: #0f00df;
+        }
+    
+        /* Themes and Styles Experiment */
+        :root {
+            /* Theme 1 = Glass Candy */
+            --glass-candy_background: #ff0060;
+    
+            /* Theme 2 = Green Mint Baby */
+            --green-mint_background: #e9fbff;
+            --green-mint_button_bg: #000;
+            --green-mint_text-color: #000000;
+        }
+        </code></pre></div>
+            </section>
+        </section>
+        <section id="base-styles">
+            <h2>III. Base Styles</h2>
+            <section id="typography">
+                <h3>3.1 Typography</h3>
+                <!-- Content for Typography -->
+            </section>
+            <section id="headings">
+                <h3>3.2 Headings</h3>
+                <!-- Content for Headings -->
+            </section>
+            <section id="paragraphs">
+                <h3>3.3 Paragraphs</h3>
+                <!-- Content for Paragraphs -->
+            </section>
+            <section id="links">
+                <h3>3.4 Links</h3>
+                <!-- Content for Links -->
+            </section>
+            <section id="lists">
+                <h3>3.5 Lists</h3>
+                <!-- Content for Lists -->
+            </section>
+        </section>
+
+        <section id="layout">
+            <h2>IV. Layout</h2>
+            <section id="containers">
+                <div class="panel --panel-style-5">
+                    <h3>4.1 Containers</h3>
+                    <p>In our example - Containers are called "components" and are to be thought of as widgets</p>
+                </div>
+                <!-- Content for Containers -->
+            </section>
+            <section id="grid-system">
+                <h3>4.2 Grid System</h3>
+                <!-- Content for Grid System -->
+            </section>
+            <section id="flexbox-utilities">
+                <h3>4.3 Flexbox Utilities</h3>
+                <!-- Content for Flexbox Utilities -->
+            </section>
+            <section id="alignment-utilities">
+                <h3>4.4 Alignment Utilities</h3>
+                <!-- Content for Alignment Utilities -->
+                <div class="block">
+                    <div class="panel --panel-style-4">
+                        <div class="item-block">
+                            <h3 class="heading-3">4.4 Alignment Utilities</h3>
+                            <p class="body-text">There are some magic tricks scattered across the dsign document - used to help bring unity to the otherwise madness</p>
+                        </div>
+                </div>
+                </div>
+            </section>
+        </section>
+
+        <section id="components">
+            <h2>V. Components</h2>
+            <section id="buttons">
+                <h3>5.1 Buttons</h3>
+                <section id="default-button">
+                    <h4>5.1.1 Default Button</h4>
+                    <!-- Content for Default Button -->
+                </section>
+                <section id="outline-button">
+                    <h4>5.1.2 Outline Button</h4>
+                    <!-- Content for Outline Button -->
+                </section>
+                <section id="primary-button">
+                    <h4>5.1.3 Primary Button</h4>
+                    <!-- Content for Primary Button -->
+                </section>
+                <section id="secondary-button">
+                    <h4>5.1.4 Secondary Button</h4>
+                    <!-- Content for Secondary Button -->
+                </section>
+            </section>
+            <section id="forms">
+                <h3>5.2 Forms</h3>
+                <section id="input-fields">
+                    <h4>5.2.1 Input Fields</h4>
+                    <!-- Content for Input Fields -->
+                </section>
+                <section id="textareas">
+                    <h4>5.2.2 Textareas</h4>
+                    <!-- Content for Textareas -->
+                </section>
+                <section id="selects">
+                    <h4>5.2.3 Selects</h4>
+                    <!-- Content for Selects -->
+                </section>
+            </section>
+            <section id="modals">
+                <h3>5.3 Modals</h3>
+                <!-- Content for Modals -->
+            </section>
+            <section id="dropdowns">
+                <h3>5.4 Dropdowns</h3>
+                <!-- Content for Dropdowns -->
+            </section>
+            <section id="tooltips">
+                <h3>5.5 Tooltips</h3>
+                <!-- Content for Tooltips -->
+            </section>
+        </section>
+
+        <section id="utilities">
+            <h2>VI. Utilities</h2>
+            <section id="spacing">
+                <h3>6.1 Spacing</h3>
+                <!-- Content for Spacing -->
+            </section>
+            <section id="colors">
+                <h3>6.2 Colors</h3>
+                <!-- Content for Colors -->
+            </section>
+            <section id="display">
+                <h3>6.3 Display</h3>
+                <!-- Content for Display -->
+            </section>
+            <section id="sizing">
+                <h3>6.4 Sizing</h3>
+                <!-- Content for Sizing -->
+            </section>
+        </section>
+
+        <section id="themes">
+            <h2>VII. Themes</h2>
+            <section id="glassy-candy">
+                <h3>7.1 Glassy Candy</h3>
+                <!-- Content for Glassy Candy -->
+            </section>
+            <section id="green-mint-baby">
+                <h3>7.2 Green Mint Baby</h3>
+                <!-- Content for Green Mint Baby -->
+            </section>
+        </section>
+
+        <section id="custom-components">
+            <h2>VIII. Custom Components</h2>
+            <section id="sidebar">
+                <h3>8.1 Sidebar</h3>
+                <!-- Content for Sidebar -->
+            </section>
+            <section id="app-layout">
+                <h3>8.2 App Layout</h3>
+                <!-- Content for App Layout -->
+            </section>
+        </section>
+
+        <section id="animations">
+            <h2>IX. Animations</h2>
+            <section id="keyframes">
+                <h3>9.1 Keyframes</h3>
+                <!-- Content for Keyframes -->
+            </section>
+            <section id="transitions">
+                <h3>9.2 Transitions</h3>
+                <!-- Content for Transitions -->
+            </section>
+        </section>
+
+        <section id="media-queries">
+            <h2>X. Media Queries</h2>
+            <section id="breakpoint-1">
+                <h3>10.1 Breakpoint 1 (max-width: 920px)</h3>
+                <!-- Content for Breakpoint 1 -->
+            </section>
+            <section id="breakpoint-2">
+                <h3>10.2 Breakpoint 2 (max-width: 720px)</h3>
+                <!-- Content for Breakpoint 2 -->
+            </section>
+            <section id="breakpoint-3">
+                <h3>10.3 Breakpoint 3 (max-width: 620px)</h3>
+                <!-- Content for Breakpoint 3 -->
+            </section>
+        </section>
+
+        <section id="examples">
+            <h2>XI. Examples</h2>
+            <section id="example-layouts">
+                <h3>11.1 Example Layouts</h3>
+                <!-- Content for Example Layouts -->
+            </section>
+            <section id="example-components">
+                <h3>11.2 Example Components</h3>
+                <!-- Content for Example Components -->
+            </section>
+        </section>
+
+        <section id="conclusion">
+            <h2>XII. Conclusion</h2>
+            <section id="further-reading">
+                <h3>12.1 Further Reading</h3>
+                <!-- Content for Further Reading -->
+            </section>
+            <section id="contributions">
+                <h3>12.2 Contributions</h3>
+                <!-- Content for Contributions -->
+            </section>
+        </section>
+
+        <!-- Sections corresponding to the table of contents -->
+        <section id="globally-used-components">
+            <h2>Globally Used Components</h2>
+            <!-- Content for Globally Used Components -->
+        </section>
+
+        <section id="silverback-specific-components">
+            <h2>Silverback Specific Components</h2>
+            <!-- Content for Silverback Specific Components -->
+        </section>
+
+        <section id="apeworx-product-pages">
+            <h2>Apeworx.io (Product Pages)</h2>
+            <!-- Content for Apeworx.io Product Pages -->
+
+            <section id="toc-snippets">
+                <div class="container-content">
+                    <h1 class="headline center">HTML + CSS Snippets</h1>
+                    <div class="content-block">
+                        <div class="panel--aA">
+                            <button class="btn btn--default"
+                                onclick="window.location.href='#header-snippet'">Header
+                                Snippet</button>
+                            <button class="btn btn--default"
+                                onclick="window.location.href='#footer-snippet'">Footer
+                                Snippet</button>
+                            <button class="btn btn--default"
+                                onclick="window.location.href='#card-snippet'">Card
+                                Snippet</button>
+                            <button class="btn btn--default"
+                                onclick="window.location.href='#demos-snippet'">Demos</button>
+                            <button class="btn btn--default"
+                                onclick="window.location.href='#cards-snippet'">Cards</button>
+                            <button class="btn btn--default"
+                                onclick="window.location.href='#dialog-snippet'">Dialog</button>
+                            <button class="btn btn--default"
+                                onclick="window.location.href='#grid-snippet'">Grid</button>
+                            <button class="btn btn--default"
+                                onclick="window.location.href='#html5-element-catalog-snippet'">HTML5
+                                Element Catalog</button>
+                            <button class="btn btn--default"
+                                onclick="window.location.href='#inputs-snippet'">Inputs</button>
+                            <button class="btn btn--default"
+                                onclick="window.location.href='#landing-page-snippet'">Landing
+                                Page</button>
+                            <button class="btn btn--default"
+                                onclick="window.location.href='#menu-snippet'">Menu</button>
+                            <button class="btn btn--default"
+                                onclick="window.location.href='#shell-snippet'">Shell</button>
+                            <button class="btn btn--default"
+                                onclick="window.location.href='#sidebar-snippet'">Sidebar</button>
+                            <button class="btn btn--default"
+                                onclick="window.location.href='#tabs-snippet'">Tabs</button>
+                            <button class="btn btn--default"
+                                onclick="window.location.href='#skip-to-main-content'">Skip
+                                to main content</button>
+                            <button class="btn btn--default"
+                                onclick="window.location.href='#newer-version-bootstrap'">There's
+                                a newer version of Bootstrap!</button>
+                            <button class="btn btn--default"
+                                onclick="window.location.href='#home'">Home</button>
+                            <button class="btn btn--default"
+                                onclick="window.location.href='#documentation'">Documentation</button>
+                            <button class="btn btn--default"
+                                onclick="window.location.href='#examples'">Examples</button>
+                            <button class="btn btn--default"
+                                onclick="window.location.href='#themes'">Themes</button>
+                            <button class="btn btn--default"
+                                onclick="window.location.href='#expo'">Expo</button>
+                            <button class="btn btn--default"
+                                onclick="window.location.href='#blog'">Blog</button>
+                            <button class="btn btn--default"
+                                onclick="window.location.href='#v4.0'">v4.0</button>
+                            <button class="btn btn--default"
+                                onclick="window.location.href='#custom-components'">Custom
+                                components</button>
+                            <button class="btn btn--default"
+                                onclick="window.location.href='#album'">Album</button>
+                            <button class="btn btn--default"
+                                onclick="window.location.href='#pricing'">Pricing</button>
+                            <button class="btn btn--default"
+                                onclick="window.location.href='#checkout'">Checkout</button>
+                            <button class="btn btn--default"
+                                onclick="window.location.href='#product'">Product</button>
+                            <button class="btn btn--default"
+                                onclick="window.location.href='#cover'">Cover</button>
+                            <button class="btn btn--default"
+                                onclick="window.location.href='#carousel'">Carousel</button>
+                            <button class="btn btn--default"
+                                onclick="window.location.href='#blog-template'">Blog</button>
+                            <button class="btn btn--default"
+                                onclick="window.location.href='#dashboard'">Dashboard</button>
+                            <button class="btn btn--default"
+                                onclick="window.location.href='#sign-in'">Sign-in</button>
+                            <button class="btn btn--default"
+                                onclick="window.location.href='#sticky-footer'">Sticky
+                                footer</button>
+                            <button class="btn btn--default"
+                                onclick="window.location.href='#sticky-footer-navbar'">Sticky
+                                footer navbar</button>
+                            <button class="btn btn--default"
+                                onclick="window.location.href='#framework'">Framework</button>
+                            <button class="btn btn--default"
+                                onclick="window.location.href='#starter-template'">Starter
+                                template</button>
+                            <button class="btn btn--default"
+                                onclick="window.location.href='#grid-examples'">Grid</button>
+                            <button class="btn btn--default"
+                                onclick="window.location.href='#jumbotron'">Jumbotron</button>
+                            <button class="btn btn--default"
+                                onclick="window.location.href='#navbars'">Navbars</button>
+                            <button class="btn btn--default"
+                                onclick="window.location.href='#navbar-static'">Navbar
+                                static</button>
+                            <button class="btn btn--default"
+                                onclick="window.location.href='#navbar-fixed'">Navbar
+                                fixed</button>
+                            <button class="btn btn--default"
+                                onclick="window.location.href='#navbar-bottom'">Navbar
+                                bottom</button>
+                            <button class="btn btn--default"
+                                onclick="window.location.href='#experiments'">Experiments</button>
+                            <button class="btn btn--default"
+                                onclick="window.location.href='#floating-labels'">Floating
+                                labels</button>
+                            <button class="btn btn--default"
+                                onclick="window.location.href='#offcanvas'">Offcanvas</button>
+                            <button class="btn btn--default"
+                                onclick="window.location.href='#github'">GitHub</button>
+                            <button class="btn btn--default"
+                                onclick="window.location.href='#twitter'">Twitter</button>
+                            <button class="btn btn--default"
+                                onclick="window.location.href='#about'">About</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="use-cases">
+                <div class="container-content">
+                    <h1 class="headline center">Solutions to Problems</h1>
+                    <p>Binding Half Dozen Solutions to get the result</p>
+                    <div class="content-block">
+                        <div class="panel--aA">
+                            <button class="btn btn--default"
+                                onclick="window.location.href='#next-button'">Next
+                                Button</button>
+                            <button class="btn btn--default"
+                                onclick="window.location.href='#process-payment'">Processing
+                                a Payment</button>
+                            <button class="btn btn--default"
+                                onclick="window.location.href='#connect-wallet'">Connecting
+                                a Wallet</button>
+                            <button class="btn btn--default"
+                                onclick="window.location.href='#connect-wallet'">Create
+                                a Full Page Form </button>
+                            <button class="btn btn--default"
+                                onclick="window.location.href='#connect-wallet'">List
+                                of Cards that Contain Properties (used on Bot
+                                Selection)</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-content">
+                    <h1 class="headline center">Philosphy</h1>
+                    <p>Process to Build Prototype</p>
+                    <p>Things that could be used - in another place - should be
+                        added to the design system</p>
+                </div>
+            </section>
+            <section id="problems-to-solve">
+                <div class="container-content">
+                    <h1 class="headline center">Problems to Solve</h1>
+                    <div class="content-block">
+                        <div class="panel--aA">
+                            <button class="btn btn--default"
+                                onclick="window.location.href='#fix-bug'">Fix a
+                                Bug</button>
+                            <button class="btn btn--default"
+                                onclick="window.location.href='#optimize-performance'">Optimize
+                                Performance</button>
+                            <button class="btn btn--default"
+                                onclick="window.location.href='#improve-accessibility'">Improve
+                                Accessibility</button>
+                            <button class="btn btn--default"
+                                onclick="window.location.href='#enhance-ux'">Enhance
+                                User Experience</button>
+                            <button class="btn btn--default"
+                                onclick="window.location.href='#responsive-design'">Responsive
+                                Design</button>
+                            <button class="btn btn--default"
+                                onclick="window.location.href='#visual-consistency'">Maintain
+                                Visual Consistency</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="globally-used-components">
+                <div class="container-content">
+                    <div class="content-block">
+                        <div class="panel--aA">
+                            <h2 class="heading-2 center">This is where we would
+                                show off easy to emplate globally used
+                                components that one can copy and paste and have
+                                a field day</h2>
+                        </div></div></div>
+            </section>
+            <div class="container-content">
+                <div class="content-block">
+                    <div class="panel--aA">
+                        <h1 class="headline">ApeWorX Design System</h1>
+                        <p class="intro__text">A design system for the
+                            Silverback team</p>
+                        <p class="intro__text">The real magic of this is the CSS
+                            that lives
+                            behind it. We wrote this guide to actually utilize
+                            the system
+                            and progressively build upon itself. The hope is
+                            this is
+                            organized in a logical way to make components,
+                            widgets, and
+                            display information in a way that makes sense and
+                            does all that
+                            magic that Bryant wants it to do with a master
+                            library.</p>
+                        <br>
+                    </div>
+                </div>
+                <div class="content-block">
+                    <div class="panel--aA">
+                        <span>A note on how the css is formatted</span>
+                        <p>What's up css nerds - </p>
+                        <p>I had the GPT write me a bit of design guide - here
+                            you go
+                            <br>
+                            As always - the real magic of this all is the code -
+                            <h3>feel
+                                free to right click and view the source for
+                                hopefully
+                                enjoyable </h3>
+                            - and readable ideas + code + dreams - and ulimately
+                            a modular
+                            system.
+                            <br>
+                            hope you enjoy - AG
+                            <br>
+                            ps this is draft <span>001.2</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-content">
+                <div class="content-block">
+                    <h2>Purpose</h2>
+                    <p>This guide is crafted to empower our developers to
+                        effectively utilize the Silverback Design System by
+                        providing
+                        clear instructions and examples on how to implement UI
+                        components and widgets. The system is built with
+                        flexibility in
+                        mind, allowing for easy adaptation and extension as our
+                        project
+                        requirements evolve.</p>
+                    <h2>Key Features</h2>
+                    <ul>
+                        <li>Modular CSS: Utilizing BEM practices, our CSS is
+                            organized
+                            into logical blocks, making it easy to reuse and
+                            maintain
+                            components across different parts of our
+                            applications
+                            without conflicts.</li>
+                        <li>Integration with HTMX: Designed to work seamlessly
+                            with
+                            HTMX, our system facilitates adding dynamic
+                            behaviors to our
+                            applications without writing much JavaScript</li>
+                        <li>Responsive and Accessible: Ensuring that our
+                            applications
+                            are usable on a variety of devices and accessible to
+                            all
+                            users, including those with disabilities.</li>
+                        <li>Extensive Documentation: Each component, from
+                            buttons to
+                            panels, is documented with code snippets and usage
+                            guidelines to provide a comprehensive understanding
+                            for all
+                            team members.</li>
+                    </ul>
+                </div>
+                <div class="content-block">
+                    <h2>Current Components</h2>
+                    <p>Typography settings (Headings, Paragraphs, Links)</p>
+                    <p>UI Elements (Buttons, Inputs, Toggles, Dropdowns)</p>
+                    <p>Layout principles (Spacing, Panels, Grid Systems)</p>
+                    <p>Color System (Functional colors like alerts, success,
+                        info)</p>
+                    <h2>Future Inclusions</h2>
+                    <p>Expanded Component Library: We aim to broaden our array
+                        of
+                        components to include more complex UI elements such as
+                        sliders,
+                        progress bars, and modals.</p>
+                    <p>Theming Capabilities: Plans to introduce theme support to
+                        allow
+                        easy switching between light and dark modes or
+                        customizing the
+                        application according to brand guidelines.</p>
+                    <p>Performance Optimization: Further enhancements to ensure
+                        that our
+                        design system does not adversely impact the load times
+                        and
+                        interactivity of our applications.</p>
+                    <p>Community Feedback Integration: Incorporating feedback
+                        from our
+                        users and developers to continuously improve the design
+                        system.</p>
+                </div>
+                <div class="content-block">
+                    <h2>Conclusion</h2>
+                    <p>The Silverback Design System is more than just a style
+                        guide—it's
+                        a comprehensive toolset that empowers our team to create
+                        cohesive, robust, and scalable applications. As we
+                        continue to
+                        develop and refine this system, we remain committed to
+                        providing
+                        our team with the resources they need to deliver
+                        exceptional
+                        digital experiences.</p>
+                </div>
+            </section>
+            <section
+                style="height: 100vh; display: flex; flex-direction:column; align-items: center; justify-content: center; background-color: #2a2a2a; text-align: center;">
+                <h1 class="headline">BELOW IS THE GUIDE</h1>
+                <br>
+                <button class="btn btn--default"
+                    onclick="window.location.href='https://www.figma.com/design/OqPmygT8YOL6LLNMAWBnPR/%5B%F0%9F%9A%A7WIP%5D-ApeworX-Design-System?node-id=983-19501&t=hTbMRjQJoiqxm6Qy-1';"
+                    class="button">Based on this Figma</button>
+            </section>
+            <section id="typography" class="typography-section">
+                <h1 class="headline">This is a global typography - Using the
+                    Font
+                    Face BARLOW</h1>
+                <h1 class="heading-1">H1 TAG aka class="heading-1"</h1>
+                <h2 class="heading-2">H2 Tag aka class="heading-2"</h2>
+                <h3 class="heading-3">H3 Tag aka class="heading-3"</h3>
+                <h4 class="heading-4">H4 Tag aka class="heading-4"</h4>
+                <h5 class="heading-5">H5 Tag aka class="heading-5"</h5>
+                <h6 class="heading-6">H6 Tag aka class="heading-6"</h6>
+                <p class="body-text body--medium">p tag aka
+                    class="body-text body--medium"</p>
+                <a href="#" class="link">a href basic</a>
+            </section>
+
+        </style>
+        <section id="panels">
+            <h1 class="headline">Panels</h1>
+            <h2 class="heading-2">Info About Panels</h2>
+            <p class="body-text body--medium">Here are some info about the
+                Panels - the "windows of Silverback". One could think of these
+                panels as windows. At the moment, there are two to choose from.
+                On second thought, there are more. Panels belong...</p>
+            <div class="panel-container">
+                <div class="panel panel--a">
+                    <h2 class="heading-2">This is Panel A</h2>
+                    <p class="body-text body--medium">Basic typography
+                        System</p>
+                </div>
+                <div class="panel panel--b">
+                    <h2 class="heading-2">This is Panel B</h2>
+                    <p class="body-text body--medium">Basic typography
+                        System</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="intro">
+
+            <div class="container-content">
+                <div class="content-block">
+                    <h1 class="headline">Content Block Example</h1>
+                    <p class="intro__text">This section explains the CSS tags
+                        used to style the content blocks.</p>
+                    <p class="intro__text">The <code>.container-content</code>
+                        class is used to center the content both
+                        horizontally and vertically. It ensures that the content
+                        takes up the full viewport height.</p>
+                    <ul class="intro__text">
+                        <li><code>width: 100%;</code> - Ensures the container
+                            takes the full width of the viewport.</li>
+                        <li><code>display: flex;</code> - Uses flexbox for
+                            layout.</li>
+                        <li><code>flex-direction: column;</code> - Arranges
+                            children in a column.</li>
+                        <li><code>align-items: center;</code> - Centers children
+                            horizontally.</li>
+                        <li><code>justify-content: center;</code> - Centers
+                            children vertically.</li>
+                        <li><code>min-height: 100vh;</code> - Ensures the
+                            container takes the full viewport height.</li>
+                    </ul>
+                </div>
+                <div class="content-block">
+                    <h1 class="headline">Content Block Example 2</h1>
+                    <p class="intro__text">The <code>.content-block</code> class
+                        is used to create a glass-like effect for
+                        the content blocks.</p>
+                    <ul class="intro__text">
+                        <li><code>width: 80%;</code> - Sets the width of the
+                            content block to 80% of its parent.</li>
+                        <li><code>max-width: 800px;</code> - Sets a maximum
+                            width for the content block.</li>
+                        <li><code>background: rgba(255, 255, 255, 0.1);</code> -
+                            Sets a semi-transparent background.</li>
+                        <li><code>border-radius: 10px;</code> - Rounds the
+                            corners of the content block.</li>
+                        <li><code>padding: 20px;</code> - Adds padding inside
+                            the content block.</li>
+                        <li><code>box-shadow: 0 4px 6px rgba(0, 0, 0,
+                                0.1);</code> - Adds a subtle shadow.</li>
+                        <li><code>backdrop-filter: blur(10px);</code> - Applies
+                            a blur effect to the background.</li>
+                        <li><code>-webkit-backdrop-filter: blur(10px);</code> -
+                            Applies the blur effect for Safari.</li>
+                        <li><code>margin: 20px 0;</code> - Adds margin between
+                            content blocks.</li>
+                        <li><code>color: var(--text-primary);</code> - Sets the
+                            text color to ensure readability.</li>
+                    </ul>
+                </div>
+                <div class="content-block">
+                    <h1 class="headline">Content Block Example 3</h1>
+                    <p class="intro__text">This example demonstrates a content
+                        block with a minimum height of 50vh.</p>
+                    <ul class="intro__text">
+                        <li><code>width: 90%;</code> - Sets the width of the
+                            content block to 90% of its parent.</li>
+                        <li><code>min-height: 50vh;</code> - Ensures the content
+                            block takes at least half the viewport
+                            height.</li>
+                        <li><code>background: rgba(0, 0, 0, 0.1);</code> - Sets
+                            a semi-transparent background.</li>
+                        <li><code>border-radius: 15px;</code> - Rounds the
+                            corners of the content block.</li>
+                        <li><code>padding: 30px;</code> - Adds padding inside
+                            the content block.</li>
+                        <li><code>box-shadow: 0 4px 8px rgba(0, 0, 0,
+                                0.2);</code> - Adds a more pronounced
+                            shadow.</li>
+                        <li><code>backdrop-filter: blur(5px);</code> - Applies a
+                            blur effect to the background.</li>
+                        <li><code>-webkit-backdrop-filter: blur(5px);</code> -
+                            Applies the blur effect for Safari.</li>
+                        <li><code>margin: 30px 0;</code> - Adds margin between
+                            content blocks.</li>
+                        <li><code>color: var(--text-secondary);</code> - Sets
+                            the text color to a secondary color.</li>
+                    </ul>
+                </div>
+                <div class="content-block">
+                    <h1 class="headline">Content Block Example 4</h1>
+                    <p class="intro__text">This example demonstrates a content
+                        block with a minimum height of 75vh.</p>
+                    <ul class="intro__text">
+                        <li><code>width: 70%;</code> - Sets the width of the
+                            content block to 70% of its parent.</li>
+                        <li><code>min-height: 75vh;</code> - Ensures the content
+                            block takes at least three-quarters of the
+                            viewport height.</li>
+                        <li><code>background: rgba(255, 255, 255, 0.2);</code> -
+                            Sets a semi-transparent background.</li>
+                        <li><code>border-radius: 20px;</code> - Rounds the
+                            corners of the content block.</li>
+                        <li><code>padding: 40px;</code> - Adds padding inside
+                            the content block.</li>
+                        <li><code>box-shadow: 0 6px 10px rgba(0, 0, 0,
+                                0.3);</code> - Adds a more pronounced
+                            shadow.</li>
+                        <li><code>backdrop-filter: blur(15px);</code> - Applies
+                            a stronger blur effect to the background.
+                        </li>
+                        <li><code>-webkit-backdrop-filter: blur(15px);</code> -
+                            Applies the blur effect for Safari.</li>
+                        <li><code>margin: 40px 0;</code> - Adds margin between
+                            content blocks.</li>
+                        <li><code>color: var(--text-tertiary);</code> - Sets the
+                            text color to a tertiary color.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <br><br><br>
+        <section id="color-grid-info">
+            <h2>Color Grid</h2>
+            <div class="color-grid">
+                <div class="color-swatch"
+                    style="background-color: var(--alert-color);"></div>
+                <div class="color-swatch"
+                    style="background-color: var(--pending-color);"></div>
+                <div class="color-swatch"
+                    style="background-color: var(--success-color);"></div>
+                <div class="color-swatch"
+                    style="background-color: var(--info-color);"></div>
+                <div class="color-swatch"
+                    style="background-color: var(--error-color);"></div>
+                <div class="color-swatch"
+                    style="background-color: var(--link-color);"></div>
+            </div>
+        </section>
+
+        <br>
+        <section id="surfaces-and-panels" class="surfaces-section">
+            <h1 class="headline">Surfaces and Panels</h1>
+            <p class="body-text body--medium">Styles for panels or other
+                surfaces. Panels may have a background color, a border color,
+                and a set of effects like blur and drop shadow.</p>
+            <p class="body-text body--medium">This may not cover every possible
+                panel in the app but should have a solid set of defaults for the
+                majority of panels.</p>
+
+            <div class="panel-container">
+                <div class="panel panel--glass-dark">
+                    <p class="body-text body--medium">Background: Glass
+                        background dark 35</p>
+                    <p class="body-text body--medium">Border: Glass border light
+                        12</p>
+                    <p class="body-text body--medium">Effects: Glass panel</p>
+                </div>
+                <div class="panel panel--glass-overlay">
+                    <p class="body-text body--medium">Background: Glass
+                        Overlay</p>
+                    <p class="body-text body--medium">Border: Glass border light
+                        12</p>
+                    <p class="body-text body--medium">Effects: Glass panel
+                        overlay</p>
+                </div>
+                <div class="panel panel--alpha">
+                    <p class="body-text body--medium">Background: sb_alpha</p>
+                    <p class="body-text body--medium">Border: Glass border
+                        white</p>
+                    <p class="body-text body--medium">Effects: none</p>
+                </div>
+                <div class="panel panel--glass-white">
+                    <p class="body-text body--medium">Background: Glass
+                        background white 3</p>
+                    <p class="body-text body--medium">Border: Glass border
+                        white</p>
+                    <p class="body-text body--medium">Effects: none</p>
+                </div>
+            </div>
+        </section>
+        <br>
+        <section id="spacing" class="spacing-section">
+            <h1 class="headline">Spacing</h1>
+            <p class="body-text body--medium">Guidelines for numbers to use for
+                padding and spacing. Josh's suggestion is 8px multipliers:</p>
+            <ul class="spacing-list">
+                <li class="body-text body--medium">xxxs: 2px</li>
+                <li class="body-text body--medium">xxs: 4px</li>
+                <li class="body-text body--medium">xs: 8px</li>
+                <li class="body-text body--medium">s: 12px</li>
+                <li class="body-text body--medium">md: 16px</li>
+                <li class="body-text body--medium">lg: 24px</li>
+                <li class="body-text body--medium">xl: 32px</li>
+                <li class="body-text body--medium">xxl: 40px</li>
+                <li class="body-text body--medium">xxxl: 48px</li>
+                <li class="body-text body--medium">xxxxl: 64px</li>
+            </ul>
+            <p class="body-text body--medium">This doesn't mean literally
+                everything uses these values, but it gives a solid set of
+                spacers to use in the majority of cases.</p>
+        </section>
+
+        <section id="text-inputs" class="text-inputs-section">
+            <div class="input-container">
+                <label class="input-label" for="input-normal">LABEL</label>
+                <input type="text" id="input-normal"
+                    class="text-input text-input--normal" value="example text">
+            </div>
+            <div class="input-container">
+                <label class="input-label" for="input-error">LABEL</label>
+                <input type="text" id="input-error"
+                    class="text-input text-input--error" value="example text">
+                <span class="error-message">ⓘ Error text</span>
+            </div>
+            <div class="input-container">
+                <label class="input-label" for="textarea-normal">LABEL</label>
+                <textarea id="textarea-normal"
+                    class="textarea text-input--normal">example text</textarea>
+            </div>
+            <div class="input-container">
+                <label class="input-label" for="search-input">LABEL</label>
+                <div class="search-container">
+                    <input type="text" id="search-input" class="search-input"
+                        value="example text">
+                    <span class="search-icon">🔍</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="buttons" class="buttons-section">
+            <h2>Buttons</h2>
+            <button class="btn btn--default">BUTTON</button>
+            <button class="btn btn--outline">BUTTON</button>
+            <button class="btn btn--primary">BUTTON</button>
+            <button class="btn btn--secondary">BUTTON</button>
+            <button class="btn btn--success">BUTTON</button>
+            <button class="btn btn--error">BUTTON</button>
+            <button class="btn btn--info">BUTTON</button>
+            <button class="btn btn--warning">BUTTON</button>
+        </section>
+
+        <section>
+            <h2>Tables</h2>
+            <table class="table">
+                <tr>
+                    <th>Header 1</th>
+                    <th>Header 2</th>
+                </tr>
+            </table>
+        </section>
+
+        <script>
+        // Function to index the content
+        function indexContent() {
+            const elements = document.querySelectorAll('body *');
+            const index = [];
+    
+            elements.forEach(element => {
+                if (element.textContent.trim() !== '') {
+                    index.push({
+                        id: element.id || null,
+                        content: element.textContent.toLowerCase(),
+                        element: element
+                    });
+                }
+            });
+    
+            return index;
+        }
+    
+        // Function to perform the search
+        function performSearch() {
+            const query = document.getElementById('search-bar').value.toLowerCase();
+            const index = indexContent();
+            const results = index.filter(item => item.content.includes(query));
+    
+            const resultsContainer = document.getElementById('search-results');
+            resultsContainer.innerHTML = '';
+    
+            if (results.length > 0) {
+                resultsContainer.style.display = 'block';
+                results.forEach(result => {
+                    const resultItem = document.createElement('div');
+                    resultItem.className = 'search-result-item';
+                    resultItem.textContent = result.element.textContent.trim().substring(0, 100) + '...';
+                    resultItem.onclick = () => {
+                        result.element.scrollIntoView({ behavior: 'smooth' });
+                    };
+                    resultsContainer.appendChild(resultItem);
+                });
+            } else {
+                resultsContainer.style.display = 'none';
+            }
+        }
+    
+        // Initial indexing
+        document.addEventListener('DOMContentLoaded', () => {
+            indexContent();
+        });
+    </script>
+
+    </body>
+
+</html>

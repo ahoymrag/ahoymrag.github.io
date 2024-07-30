@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Workspace Management</title>
+        <link rel="stylesheet" href="../../../ape-design-system.css">
+        <style>
+
+        body {
+                    background-image: url(../../assets/sb-bg-2.png);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-attachment: fixed;
+                    color: white;
+                }
+
+        
+
+        .screen {
+            margin-left: 276px!important; /* Adjust this value to match the width of the sidebar */
+            padding: 20px;
+        }
+
+
+        .default-sidebar {
+            
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+
+            color: white;
+            padding: 20px;
+        }
+    </style>
+    </head>
+
+    <body>
+        <!-- SIDEBAR-->
+        <div class="default-sidebar" id="sidebar">
+            <!-- Sidebar content will be generated here -->
+        </div>
+        <!-- SIDEBAR -->
+
+        <div class="screen" id="workspace-management-screen">
+            <div class="component" id="page-title-workspace">
+                <div class="card">
+                    <div class="panel --panel-style-2">
+                        <div class="item-block">
+                            <div class="block-header">
+                                <h1>Workspace Management</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       <div class="component" id="bot-cluster-list">
+        <div class="block-header">
+            <h2>Block Clusters</h2>
+        </div>
+            <div class="card">
+                <div class="panel ">
+                    <div class="item-block-container">
+                        <div class="item-block" id="cluster=YieldEnhancement">
+                            <div class="block-header">
+                                <h2>YieldEnhancement</h2>
+                            </div>
+                            <div class="block-body --block-split-cols">
+                                <div class="col-1-9">
+                                    <p>Funded through 
+                                        <p id="$$dateCreated">July 22,2024</strong>
+                                        at
+                                        <p id="$timeCreated">
+                                            10:01am EST
+                                        </strong>
+                                    </p>
+                                </div>
+                                <div class="col-2-1">
+                                    <button class="btn--default" onclick="location.href='clustersManagement.html'">Manage Cluster</button></div>
+                                </div>
+                        </div>
+                  
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="component" id="user-list">
+            <div class="block-header">
+                <h2>Users</h2>
+        </div>
+            <div class="card">
+                <div class="panel --panel-style-2">
+                    <div class="item-block" id="compo-title-USERS">
+                      
+                    </div>
+                        <div class="item-block" id="user-XYZ">
+                            <div class="block-body --block-split-cols">
+                                <div class="col-1-9">
+                                    <p id="userID">agBabbbyCakes</p>
+                                </div>
+                                <div class="col-2-1">
+                                    <button>Manage User</button>
+                                </div>
+                            </div>
+                      
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </div>
+        </div>
+       
+
+                <script>
+        function toggleSidebar() {
+            document.getElementById('sidebar').classList.toggle('collapsed');
+        }
+    </script>
+
+    <script>
+        async function loadSidebar() {
+            const response = await fetch('sidebarContent.json');
+            const data = await response.json();
+
+            const sidebar = document.getElementById('sidebar');
+            let sidebarHTML = `
+                <div class="component">
+                    <div class="card">
+                        <div class="panel">
+                            <div class="item-block">
+                                <div class="block-header">
+                                    <button class="btn--default" onclick="location.href='index.html'">
+                                        ${data.organization}
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>`;
+
+            data.menuItems.forEach(item => {
+                sidebarHTML += `
+                    <a href="${item.href}" class="menu-item">
+                        <div class="icon">${item.icon}</div>
+                        <span>${item.text}</span>
+                    </a>`;
+            });
+
+            sidebarHTML += `<div class="bottom-section">`;
+            data.bottomSection.forEach(item => {
+                sidebarHTML += `
+                    <a href="${item.href}" class="menu-item">
+                        <div class="icon">${item.icon}</div>
+                        <span>${item.text}</span>
+                    </a>`;
+            });
+            sidebarHTML += `</div>`;
+
+            sidebar.innerHTML = sidebarHTML;
+        }
+
+        loadSidebar();
+    </script>
+            </body>
+
+        </html>

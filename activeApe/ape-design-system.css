@@ -1,0 +1,2993 @@
+/* ApeWoRX Design System 001 */
+
+/* This code presently can be found on
+1. block-structure-demo.html
+2. applied-blockstructure-demo.html
+3. cluster-index.html
+4. applied-blockstructure-demo2.html
+5. manage-clusters.html
+6. step0-noCluster.html
+7. step1-select-plan.html
+8. step4-apePay.html
+9. step6-nameAfterPay.html
+10. allTogether.html
+11. index_guide.html
+12. widgets.html
+13. dashboardMgmt.html
+/cluster
+14. workspaceMgmt.html
+15. overview.html
+16. index.html
+17. settings.html
+18. dashboardMgmt.html
+
+*/
+
+/* After a long time thinking about this - 
+and actually going about it - 
+think it would be best to have it like this - -
+
+- Screen *** (new and experimental)
+  -- COMPONENT
+    - - Card** 
+      - - - PANEL (S)
+      - - - - - < item-block-container > 
+        - - - - - - - - ITEM-BLOCK (S) 
+                - - - - - Item Content (Could be just code or)
+                - - - - - Item Content (Full Body)
+                - - - - - - - block-header
+                - - - - - - - block-body
+                - - - - - - - block-footer
+*/
+
+/* Each one of these primary structures can
+have additional style and size attributes
+attached to them
+
+i.e of scenarios
+
+<div class="component">
+  <div class="panel --panel-style-4">
+    <div class="item-block --item-container-grid-style-1">
+*/
+
+/* Full Code 
+<div class="screen">
+  <div class="component" id="compo1">
+    <div class="block">
+      <div class="panel --panel-style-1">
+        <div class="item-container horizontal">
+          <div class="item --item-style-1 --item-size-1">
+            <div class="item-block">Items can be thought of
+              in terms of html like -
+              <div class="block-header">Header</div>
+              <div class="block-body">Body</div>
+              <div class="block-footer">Footer</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+*/
+
+
+/* LAWS AND RULES */
+
+/*
+
+RULE 1 = 
+
+1. Styles go together i.e = 
+item-grid--style-1 -
+goes with 
+item-block--style-2 
+
+*/
+
+
+
+
+
+
+/* ITEM LOGIC
+
+As you can see above - an item is the lowest in the hierachy
+but it certainly can have a life of its own!
+
+Inside each item - are more blocks
+
+Think of an item as a "HTML" file - i.e it starts over again 
+
+block-header
+block-body
+block-footer
+
+i.e
+<div class="item-block">
+  <div class="block-header --block-header-style-2">Team</div>
+  <div class="block-body --block-body-style-2">
+    <p>3.3 USDC / day</p>
+    <ul>
+      <li>Up to 20 bots</li>
+      <li>Up to 20 members</li>
+      <li>64 virtual cores</li>
+      <li>12-month error log history</li>
+      <li>Access to ApeCloud Simulation Plugin</li>
+    </ul>
+  </div>
+  <div class="block-footer --block-footer-style-2">
+    <button class="btn btn--default" onclick="location.href='step4-apePay.html'">Select This Plan</button>
+  </div>
+</div>
+*/
+
+/*Item Blocks are particularly useful when generating multple instances
+i.e 
+a component - can have 20 "Items" - i.e bots - clusters - users etc
+
+panels are usually what control the items - i.e if they
+are displayed in a grid vs a list
+
+
+BLOCKS CAN HAVE MULTIPLE PANELS 
+
+
+/* Note about Items - the Smallest Denominator 
+items can have
+1. Cluster Cards
+2. Bots Inside of them
+
+Items are like backpacks - that mini Components can go into - or instances
+
+^^^ more on this later
+*/
+
+/* Table of Contents of this document */
+
+/* TOC TOC TOC
+
+Table of Contents
+=================
+
+1. Introduction
+  1.1 Overview
+
+2. General Settings
+  2.1 Import Statements
+  2.2 CSS Resets
+  2.3 CSS Variables
+
+3. Base Styles
+  3.1 Typography
+  3.2 Headings
+  3.3 Paragraphs
+  3.4 Links
+  3.5 Lists
+
+4. Layout
+  4.1 Containers
+  4.2 Grid System
+  4.3 Flexbox Utilities
+  4.4 Alignment Utilities
+
+5. Components
+  5.1 Buttons
+    5.1.1 Default Button
+    5.1.2 Outline Button
+    5.1.3 Primary Button
+    5.1.4 Secondary Button
+  5.2 Forms
+    5.2.1 Input Fields
+    5.2.2 Textareas
+// ...
+*/
+
+Note about Items - the Smallest Denominator items can have 1. Cluster Cards 2. Bots Inside of them Items are like backpacks - that mini Components can go into - or instances ^^^ more on this later
+/*Table of Contents of this document */
+
+
+/* TOC TOC TOC
+
+Table of Contents
+=================
+
+1. Introduction
+    1.1 Overview
+
+2. General Settings
+    2.1 Import Statements
+    2.2 CSS Resets
+    2.3 CSS Variables
+
+3. Base Styles
+    3.1 Typography
+    3.2 Headings
+    3.3 Paragraphs
+    3.4 Links
+    3.5 Lists
+
+4. Layout
+    4.1 Containers
+    4.2 Grid System
+    4.3 Flexbox Utilities
+    4.4 Alignment Utilities
+
+5. Components
+    5.1 Buttons
+        5.1.1 Default Button
+        5.1.2 Outline Button
+        5.1.3 Primary Button
+        5.1.4 Secondary Button
+    5.2 Forms
+        5.2.1 Input Fields
+        5.2.2 Textareas
+        5.2.3 Selects
+    5.3 Modals
+        5.3.1 - TOGGLES
+        5.3.2 - SLIDER 
+        5.3.3 - SPLASH PAGE 
+        5.3.4 - CORE Modals
+    5.4 Dropdowns
+    5.5 Tooltips
+    5.6 CORE Modals
+
+6. Utilities
+    6.1 Spacing
+    6.2 Colors
+    6.3 Display
+    6.4 Sizing
+
+7. Themes
+    7.1 Glassy Candy
+    7.2 Green Mint Baby
+
+8. Custom Components
+    8.1 Sidebar
+    8.2 App Layout
+    8.3 SPLASH PAGES
+    8.4 Menus
+    8.5 Footers
+    8.6 Search Bars
+    8.7 LOGOS
+
+
+9. Animations
+    9.1 Keyframes
+    9.2 Transitions
+
+10. Media Queries
+    10.1 Breakpoint 1 (max-width: 920px)
+    10.2 Breakpoint 2 (max-width: 720px)
+    10.3 Breakpoint 3 (max-width: 620px)
+
+11. Examples
+    11.1 Example Layouts
+    11.2 Example Components
+
+12. Conclusion
+    12.1 Further Reading
+    12.2 Contributions
+
+13. MAGIC TRICKS 
+
+
+
+
+
+
+
+
+
+/* START OF CODE */
+
+
+/* RESETS */
+
+/*Part 1 - making the thing */
+
+
+/* PART 2 = GENERAL SETTINGS */
+/*
+2. General Settings
+    2.1 Import Statements
+    2.2 CSS Resets
+    2.3 CSS Variables
+*/
+
+
+
+/* CSS STARTS HERE!!!!!!!!!!!!!! */
+
+
+
+/* 0.1 = IMPORT STATEMENTS */
+
+/*fonts used = Barlow + Press 2Player */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+
+/* 2.2= CSS Resets */
+
+body {
+    margin: 0;
+    padding-right: 20px;
+    background-color: black;
+}
+
+
+html {
+    max-width: 100%;
+    max-width: 100vw;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+button:overlay {
+    cursor: pointer;
+}
+
+/* Font Face (BARLOW) OVER EVERYTHING */
+h1,
+h2,
+h3,
+a,
+p,
+li,
+ul {
+    font-family: var(--font-face-barlow);
+    margin: 0;
+}
+
+/* 2.3 = COLOR LOGIC  */
+
+/*COMMON ULTILITY COLORS */
+
+.white {
+    color: var(--color-white);
+    border-color: white;
+}
+
+.white-link {
+    color: var(--color-white);
+}
+
+
+
+/* ROOT Table */
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+tr:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+/*THEMES*/
+
+
+/* VA VA VA VARIABLES */
+
+
+/*ROOT COLORS */
+
+:root {
+    /* COLOR FUNCTION LEGEND */
+    --alert-color: #E63946;
+    --pending-color: #FFD93D;
+    --success-color: #39ffc0b9;
+    --info-color: #007B83;
+    --error-color: #ff4470;
+    --link-color: #3700ff;
+
+    --background-dark: #263238;
+    --background-light: #CFD8DC;
+    --text-primary: #FFFFFF;
+    --text-secondary: #B0BEC5;
+    --border-color: #B0BEC5;
+    --primary-color: #000;
+    --secondary-color: #fff;
+    --tertiary-color: #000000;
+
+    /* Background Colors */
+    --bgstyle-glass-panel-fuzzyDuck: #2E3438;
+
+    /*COLOR STATES */
+
+    /*INVITATION COLOR STATES*/
+    --invitation-accept-active: #00ffb3;
+    --invitation-accept-inactive: rgba(0, 255, 179, 0.2);
+    --invitation-decline-active: #ff0066;
+    --invitation-decline-inactive: #ff00666e;
+
+    /* Font Sizes */
+    --font-size-headline: 5.5rem;
+    --font-size-heading-1: 2rem;
+    --font-size-heading-2: 1.75rem;
+    --font-size-heading-3: 1.5rem;
+    --font-size-heading-4: 1.25rem;
+    --font-size-heading-5: 1rem;
+    --font-size-heading-6: 0.875rem;
+    --font-size-body-large: 1.5rem;
+    --font-size-body-medium: 1rem;
+    --font-size-body-small: 0.875rem;
+    --font-size-body-tiny: 0.75rem;
+    --font-size-body-minuscule: 0.625rem;
+
+    /* Font Weights */
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+
+    /* Font Face */
+    --font-face-barlow: barlow;
+
+    /* Primary color palette */
+    --color-white: #FFFFFF;
+    --color-green-300: #64D2FF;
+    --color-green-400: #007B83;
+    --color-magenta-300: #FF6B6B;
+    --color-magenta-400: #A7333F;
+    --color-yellow-400: #FFD93D;
+    --color-pink-200: #FF8A5B;
+    --color-pink-400: #fa2670;
+
+    /* Border colors */
+    --border-color: #B0BEC5;
+    --border-color-light: white;
+    --border-color-dark: black;
+
+}
+
+/* Define CSS variables for the dark glass theme */
+:root {
+    --dropdown-bg: rgba(0, 0, 0, 0.8);
+    --dropdown-hover-bg: rgba(255, 255, 255, 0.1);
+    --dropdown-text-color: white;
+    --dropdown-hover-text-color: white;
+    --dropdown-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    --dropdown-padding: 16px;
+    --dropdown-font-size: 16px;
+    --dropdown-border-radius: 10px;
+}
+
+
+
+/* - - - - - 3 TYPOGRAPHY - - - - - */
+/* Typography */
+
+
+.headline {
+    font-size: var(--font-size-headline);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: 0.5rem;
+    line-height: 95%;
+    overflow: auto;
+    margin: 0;
+}
+
+.heading-1 {
+    font-size: var(--font-size-heading-1);
+    font-weight: var(--font-weight-bold);
+}
+
+.heading-2 {
+    font-size: var(--font-size-heading-2);
+    font-weight: var(--font-weight-bold);
+    margin: 7.5px;
+
+}
+
+.heading-3 {
+    font-size: var(--font-size-heading-3);
+    font-weight: var(--font-weight-bold);
+}
+
+.heading-4 {
+    font-size: var(--font-size-heading-4);
+    font-weight: var(--font-weight-bold);
+}
+
+.heading-5 {
+    font-size: var(--font-size-heading-5);
+    font-weight: var(--font-weight-bold);
+}
+
+.heading-6 {
+    font-size: var(--font-size-heading-6);
+    font-weight: var(--font-weight-bold);
+}
+
+.body-text {
+    font-weight: var(--font-weight-regular);
+    margin: 0.5rem 0;
+    color: var(--color-white);
+}
+
+.--body-large {
+    font-size: var(--font-size-body-large);
+}
+
+.--body-medium {
+    font-weight: 500;
+    font-size: var(--font-size-body-medium);
+}
+
+.--body-small {
+    font-size: var(--font-size-body-small);
+    font-weight: 300;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 150%;
+}
+
+.--body-tiny {
+    font-size: var(--font-size-body-tiny);
+}
+
+.--body-minuscule {
+    font-size: var(--font-size-body-minuscule);
+}
+
+.link {
+    color: var(--secondary-color);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.--span-style-small-text {
+    font-family: var(--font-face-barlow);
+    margin: 10px;
+}
+
+/* - - - - - - 4. LAYOUT AND PAGE STRUCTURE 4. - - -  */
+
+/* BLOCK SYSTEM*/
+/* A BLOCK is a BOX - to be thought of a mini website - 
+you can notice - we got a block header, a block body, and a block footer*/
+
+
+/*ALIGN UTILTY CLASSES*/
+
+/*THESE ARE TO BE USED IN A QUICK PINCH */
+
+.center {
+    text-align: center !important;
+}
+
+.block-vert {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*Screen SUPER */
+
+.super-screen {
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* For Centering components */
+.center-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    flex-direction: column;
+}
+
+.-center-screen--top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    z-index: 0;
+    padding-top: 0;
+    /* Ensure no padding at the top */
+}
+
+.--screen-sidebar-active {
+    margin-left: 278px !important;
+    margin-right: 100px !important;
+}
+
+/*For Centering and one row at a time */
+
+.--screen-row {
+    flex-direction: column;
+}
+
+/*Ulitity Classes FOR USE */
+
+.padding-10 {
+    padding: 10px;
+}
+
+.vertical {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    min-width: 100%;
+}
+
+.horizontal {
+    display: flex;
+    flex-direction: row;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+
+/*BLOCK HEIGHTS - for the sake of equal heights */
+
+.--block-height-05 {
+    height: 100px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.--block-height-1 {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.--block-height-2 {
+    height: 600px;
+}
+
+/*QUICK MAX WIDTH ON ANY KIND OF PARAGRAPH DESCRIPTION */
+.max-width-50 {
+    max-width: 50ch;
+}
+
+.center-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.center-container {
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+
+/* 4.3 - Flexbox Ultitiles */
+
+.btn--container-1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+/*4.2 - - - - - PANELS - - - - - - 4.2*/
+/*Panels go ONTOP of blocks */
+/*
+Reminder of Structure
+screen
+- component
+- - block
+- - - PANEL
+- - - - item-block
+/**
+###### 4. LAYOUT AND STRUCTURE ############
+2. Panels
+
+
+
+/*VIBES*/
+
+.header-block-vibe-1 {
+    background-color: rgba(255, 0, 0, 0) !important;
+    display: flex !important;
+    color: white !important;
+    align-items: center !important;
+    justify-content: center !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    color: #FFF !important;
+    font-family: Barlow !important;
+    font-size: 32px !important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    line-height: 120% !important;
+    margin-bottom: 10px;
+}
+
+.header-block-vibe-2 {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    display: flex !important;
+    color: white !important;
+    align-items: center !important;
+    justify-content: center !important;
+    backdrop-filter: blur(15px) !important;
+    -webkit-backdrop-filter: blur(15px) !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2) !important;
+    font-family: Barlow !important;
+    font-size: 32px !important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    line-height: 120% !important;
+    width: 100%;
+}
+
+
+
+
+/* Widget for block bodies = description block */
+
+.description-block {
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    text-align: left;
+    padding: 20px;
+}
+
+/* Text Inputs Section */
+.text-inputs-section {
+    padding: 20px;
+    min-width: 400px;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: var(--color-white);
+    border-radius: var(--12, 12px);
+    border: 1px solid var(--Border-Input-Border, #e0e0e076);
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-label {
+    font-size: var(--font-size-body-small);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: 5px;
+    color: var(--text-secondary);
+}
+
+.text-input,
+.textarea,
+.search-input {
+    font-size: var(--font-size-body-medium);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--border-color-light);
+    background-color: transparent;
+    color: var(--text-primary);
+}
+
+.text-input--normal,
+.textarea,
+.search-input {
+    border-color: var(--border-color-light);
+}
+
+.text-input--error {
+    border-color: var(--border-color-error);
+}
+
+.error-message {
+    font-size: var(--font-size-body-small);
+    color: var(--error-color);
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.error-message::before {
+    content: 'ⓘ';
+    margin-right: 5px;
+}
+
+.textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--border-color-light);
+    border-radius: 5px;
+    padding-right: 10px;
+}
+
+.search-input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: var(--text-primary);
+    flex-grow: 1;
+    padding: 10px;
+}
+
+.search-icon {
+    color: var(--text-secondary);
+}
+
+
+
+
+/* - - - - - 5 COMPONENTS - - - - */
+
+
+/* - - - 5.1 BUTTONS - - - */
+
+
+
+/* 5.1.0 - - - SUPER GLOBAL BUTTON CORE */
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    color: var(--text-primary);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover effects for all buttons */
+.btn:hover {
+    background-color: var(--background-dark);
+    color: var(--color-white);
+    cursor: pointer;
+}
+
+/* 5.1.0a - - - - BUTTON SIZES */
+.btn--container-1 {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.--btn-size-1 {
+    padding: 8px 8px;
+    min-width: 75px;
+    max-width: 75px;
+    font-size: 14px;
+}
+
+.--btn-size-2 {
+    padding: 8px 12px;
+    min-width: 100px;
+    max-width: 100px;
+    font-size: 16px;
+}
+
+.--btn-size-3 {
+    padding: 16px 24px;
+    min-width: 200px;
+    max-width: 200px;
+    font-size: 18px;
+}
+
+.plus-button {
+    background-color: #1a1a1a;
+    /* Dark background color */
+    color: #ffffff;
+    /* White text color */
+    border: none;
+    /* Remove default border */
+    border-radius: 50%;
+    /* Make the button round */
+    width: 40px;
+    /* Width of the button */
+    height: 40px;
+    /* Height of the button */
+    font-size: 24px;
+    /* Font size for the plus sign */
+    display: flex;
+    /* Use flexbox for centering */
+    align-items: center;
+    /* Center vertically */
+    justify-content: center;
+    /* Center horizontally */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Add shadow */
+    transition: background-color 0.3s;
+    /* Smooth transition for hover effect */
+}
+
+.plus-button:hover {
+    background-color: #333333;
+    /* Slightly lighter background on hover */
+}
+
+/* 5.1.1 - - - Default  Button */
+
+.btn--default::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.925);
+    mix-blend-mode: multiply;
+    transform: translateY(100%);
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: -1;
+}
+
+.btn--default:hover::before {
+    transform: translateX(0);
+}
+
+.btn--default:hover {
+    color: rgba(255, 255, 255, 0.943);
+    transform: scale(1.015);
+    transition: all 0.3s ease;
+}
+
+.btn--default {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    text-transform: uppercase;
+    font-weight: 300;
+    border-style: solid;
+    color: rgb(255, 255, 255);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    font-family: 'Barlow', sans-serif;
+    font-size: .8rem;
+    letter-spacing: 0.05em;
+    line-height: 1.2;
+    border-radius: 4px;
+    border: 1px solid var(--Brand-White, #FFF);
+    background: rgba(222, 222, 222, 0.09);
+    display: flex;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    text-align: center;
+    width: 100%;
+}
+
+.btn--default:hover {
+    border-color: rgba(0, 0, 0, 0.925);
+    background-color: rgba(0, 0, 0, 0.925);
+    color: rgba(255, 255, 255, 0.943);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transform: scale(1.015);
+    transition: all 0.3s ease;
+}
+
+.--action-button {
+    display: flex;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.--action-buton .arrow {
+
+    margin-left: 10px;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+    transform: rotate(-45deg);
+}
+
+
+/* 5.1.2 - - - - - Outline Button */
+.btn--outline {
+    background-color: transparent;
+    border: 2px solid var(--border-color);
+    color: var(--text-secondary);
+}
+
+/* 5.1.3 - - - - PRIMARY BUTTON */
+.btn--primary {
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(0, 0, 0, 0.5);
+    padding: 8px 16px;
+    min-width: 200px;
+    max-width: 400px;
+    margin: 5px;
+    font-weight: 400;
+    backdrop-filter: blur(10px) brightness(0.8);
+    -webkit-backdrop-filter: blur(10px) brightness(0.8);
+    color: rgba(255, 255, 255, 0.85);
+}
+
+/* 5.1.4 - - - - - Secondary Button */
+.btn--secondary {
+    background-color: var(--pending-color);
+}
+
+/* 5.1.4 - - - Secondary - - Success Button */
+.btn--success {
+    background-color: var(--success-color);
+}
+
+/* 5.1.4 - - - Secondary - - Error Button */
+.btn--error {
+    background-color: var(--error-color);
+}
+
+/* 5.1.4 - - - Secondary - - Info Button */
+.btn--info {
+    background-color: var(--info-color);
+}
+
+/* 5.1.4 - - - Secondary - - Warning Button */
+.btn--warning {
+    background-color: var(--pending-color);
+}
+
+
+/* 5.1.4 - - - Invitation Accept Button - - - */
+
+.--btn-style-invitation-accept {
+    background-color: var(--invitation-accept-inactive);
+}
+
+.--btn-style-invitation-accept:hover {
+    background-color: var(--invitation-accept-active);
+}
+
+.--btn-style-invitation-decline {
+    background-color: var(--invitation-decline-inactive);
+}
+
+.--btn-style-invitation-decline:hover {
+    background-color: var(--invitation-decline-active);
+}
+
+
+
+/* BUTTON LAYOUT STRUCTURES */
+
+
+.button-horizontal-menu {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.bot-management-header {
+    background-color: var(--primary-color);
+    color: var(--color-white);
+    padding: 10px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.bot-management-body {
+    background-color: var(--background-transparent);
+    padding: 15px;
+}
+
+.bot-management-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: var(--background-dark);
+    color: var(--text-primary);
+    border-radius: 5px;
+}
+
+.actions-button,
+.add-bot-button {
+    padding: 8px 16px;
+    background-color: var(--primary-color);
+    color: var(--text-secondary);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.actions-button:hover,
+.add-bot-button:hover {
+    background-color: var(--color-pink-200);
+}
+
+.bot-management-footer {
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: var(--color-white);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+
+
+/* CORE COMPONENT STRUCTURE -------
+------
+--------
+------
+--------
+------
+--------------
+--------------
+--------------
+--------
+Component
+Block
+Panel
+Item
+- Item Head
+
+each of these have styles - see below
+*/
+
+.screen {
+    width: 100%;
+}
+
+.component {
+    width: auto;
+}
+
+.block {
+    width: 100%;
+}
+
+.panel {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+    @media (max-width: 600px) {
+        flex-direction: column;
+    }
+}
+
+.item-container {
+    width: 100%;
+}
+
+.item-block {
+    width: 100%;
+    padding: 10px;
+}
+
+.block-header {
+    width: 100%;
+}
+
+.block-body {
+    width: 100%;
+}
+
+.block-footer {
+    width: 100%;
+}
+
+
+/*Specific Screen Scenarios */
+/*Screens are what kind of arrangement I could have with components 
+if one were to think of compos as self contained
+widgets 
+the screens are what display the widgets
+and tell them where on the screen to display
+Screen Rules::
+1. Screens should not be affect the size of 
+the compo itself - simply the layout on the
+screen itself
+*/
+
+/*Types of Screens*/
+
+
+.vertical-items {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*SCREEN THEMES */
+
+.dark-screen {
+    background-color: black;
+}
+
+
+/*Specific Configurations of Core Layout */
+
+.--component-size-1 {
+    width: 100%;
+    max-width: 768px;
+    margin: 20px;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.--component-size-2 {
+    width: 100%;
+    max-width: 1440px;
+    margin: 15px;
+    margin-bottom: 100px !important;
+}
+
+.--component-size-full {
+
+    height: 100vh;
+    width: 100vh;
+    min-width: 100% !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-block pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow: auto;
+    background-color: #33333322;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    line-height: 95%;
+    font-weight: 400;
+}
+
+
+
+/*item container layout options */
+
+.--item-container-horizontal {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+}
+
+/* Grid layout for item container */
+.--item-container-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.--item-container-grid-style-1 {
+    background-color: var(--background-light);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+
+/*POPULATE GRIDS AND GRID ITEMS
+
+DIFFERENT STYLES INCLUDE
+1. PRODUCT PROMO
+2. CLUSTER TYPE
+3. XYZ Type
+
+*/
+
+/*item-grid--style + item-block-style 1 - should go together 
+*/
+
+/*item grid style 1 */
+
+.item-grid--style-1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    width: 100%;
+    padding: 2rem;
+
+}
+
+
+/*item block style 1 */
+
+.item-block--style-1 {
+    aspect-ratio: 1 / 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 1.5rem;
+    transition: transform 0.3s ease, background 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.item-block--style-1:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.item-block--style-1 img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 1rem;
+}
+
+.item-block--style-1 h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.item-block--style-1 p {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    margin: 0;
+}
+
+
+/* Default Product Grid Item */
+.item-block.--product {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bgstyle-glass-panel-fuzzyDuck);
+    border-radius: 7.5px;
+    padding: 20px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+
+}
+
+.item-block.--product:hover {
+    background-color: var(--color-hover);
+}
+
+.item-block.--product .block-header {
+    font-size: var(--font-size-heading-3);
+    color: var(--text-primary);
+    margin-bottom: 10px;
+}
+
+.item-block.--product .block-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-block.--product img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.item-block.--product .block-footer {
+    margin-top: 15px;
+}
+
+.item-block.--product .btn {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: var(--text-primary);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.item-block.--product .btn:hover {
+    background-color: var(--color-hover);
+}
+
+
+
+
+/* INTRODUCNG = CARD */
+
+.card {
+    width: auto
+}
+
+.--card-size-1 {
+    width: 600px;
+    height: auto;
+    margin: 10px;
+}
+
+
+/*TYPES AND VARIENTS OF CARDS */
+
+.--card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.--dashboard-card {
+    background: #33333389;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    border-color: var(--border-color-light);
+    border-style: solid;
+    border-width: .81px;
+}
+
+
+
+/*BLOCK AND PANEL AND ITEM STYLES */
+
+
+
+.--panel-style-1 {
+    background-color: #ff6a6a41;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 0px #00000053;
+    border: 1px solid #ff6a6a8d;
+}
+
+.--panel-style-2 {
+    border-radius: 10px;
+    border: 1px solid var(--Border-Glass-Border-Light-12, rgba(255, 255, 255, 0.12));
+    background: var(--surface-white-opacity-05-placeholder, rgba(255, 255, 255, 0.05));
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(12px);
+    padding: 20px;
+
+}
+
+.--panel-style-3 {
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+}
+
+.--panel-style-4 {
+    background-color: #00808052;
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0px 0px 10px 0px #00000053;
+    border: 1px solid #20B2AA;
+
+}
+
+
+.--panel-style-4 a {
+    color: white;
+}
+
+.--panel-style-4 a:hover {
+    color: #00ffb3;
+}
+
+.--panel-style-5 {
+    background-color: #a6ff0052;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px #a6ff0052;
+    border: 1px solid#a6ff00b0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+.--panel-style-6 {
+    background-color: rgba(0, 0, 139, 0.5);
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 139, 0.5);
+    border: 1px solid rgba(0, 0, 139, 0.7);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+}
+
+.--panel-style-7 {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    -webkit-backdrop-filter: blur(10px);
+
+}
+
+
+
+.--panel-size-1 {
+    width: 300px;
+    height: 100%;
+}
+
+.--panel-size-2 {
+    width: 600px;
+    height: 100%;
+}
+
+.--panel-size-3 {
+    width: 900px;
+    height: 100%;
+}
+
+.--panel-size-full {
+    width: 100%;
+    height: auto;
+}
+
+/*Glass Panel Being Used */
+.panel--aA {
+    background: rgba(255, 255, 255, 0.057);
+    border-radius: 10px;
+    padding: 22px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    margin: 20px 0;
+    color: var(--text-primary);
+}
+
+.pnael--aB {
+    background: rgba(255, 255, 255, 0.83);
+    border-radius: 10px;
+    padding: 22px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    margin: 20px 0;
+    color: var(--text-primary);
+}
+
+
+
+
+.panel--a {
+    min-width: 380px;
+    min-height: 255px;
+    color: var(--secondary-color);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+
+/*In the style of the silverback app*/
+.panel-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+
+
+.panel--b {
+    max-width: 300px;
+    background-color: var(--bgstyle-glass-panel-fuzzyDuck);
+    color: var(--secondary-color);
+}
+
+.--item-style-1 {
+    background-color: #4242428d;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 0px #00000053;
+    border: 1px solid #ff6a6a8d;
+    color: white;
+    font-size: 24px;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 700;
+    line-height: 28.80px;
+    word-wrap: break-word;
+}
+
+.--item-style-2 {
+    background-color: #00f2ff5a;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 0px #00000053;
+    border: 1px solid #0808ff8d;
+    color: white;
+    font-size: 24px;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 700;
+    line-height: 28.80px;
+    word-wrap: break-word;
+}
+
+.--item-size-1 {
+    width: 150px;
+    height: 100%;
+}
+
+.--item-size-2 {
+    width: 300px;
+    height: 100%;
+}
+
+.--item-size-3 {
+    width: 450px;
+    height: 100%;
+}
+
+.--item-size-4 {
+    width: 500px;
+    height: 100%;
+}
+
+.--item-header-style-2 {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--item-header-text-color);
+    padding: 5px 10px;
+    font-size: 16px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.--item-body-style-2 {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--item-body-text-color);
+    padding: 5px 10px;
+    font-size: 16px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+}
+
+.--item-footer-style-2 {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--item-footer-text-color);
+    padding: 5px 10px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+/*BLOCK LAYOUTS*/
+
+/*CENTER LAYOUT = layout 1*/
+
+.center .--block-layout-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+/*Block HEADER STYLES */
+
+.--block-header-style-2 {
+    background-color: transparent !important;
+    /* Make background fully transparent */
+    display: flex !important;
+    color: white !important;
+    align-items: flex-start !important;
+    /* Align items to the left */
+    justify-content: flex-start !important;
+    /* Align items to the left */
+    box-shadow: none !important;
+    /* Remove shadow */
+    border: none !important;
+    /* Remove border */
+    font-family: Barlow !important;
+    font-size: 16px !important;
+    /* Make text smaller */
+    font-style: normal !important;
+    font-weight: 700 !important;
+    line-height: 120% !important;
+}
+
+.--block-header-style-3 {
+    display: flex !important;
+    color: white !important;
+    align-items: center !important;
+    justify-content: center !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+    color: #FFF !important;
+    font-family: Barlow !important;
+    font-size: 32px !important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    line-height: 120% !important;
+}
+
+.--block-header-style-4 {
+    display: flex !important;
+    color: rgb(255, 255, 255) !important;
+    align-items: center !important;
+    justify-content: center !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3) !important;
+    border: 1px solid rgba(197, 197, 197, 0.251) !important;
+    font-family: Barlow !important;
+    font-size: 32px !important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    line-height: 120% !important;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    mix-blend-mode: soft-light;
+    margin: 5px;
+    mix-blend-mode: color;
+    border-radius: 10px;
+    height: 140px;
+    flex-direction: column;
+    padding: 20px;
+
+}
+
+.--card-cluster-style-1 {
+    display: flex !important;
+    color: rgb(255, 255, 255) !important;
+    align-items: center !important;
+    justify-content: center !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3) !important;
+    border: 1px solid rgba(197, 197, 197, 0.251) !important;
+    font-family: Barlow !important;
+
+    padding-top: 5px;
+    padding-bottom: 10px;
+    mix-blend-mode: soft-light;
+    margin: 5px;
+    mix-blend-mode: color;
+    border-radius: 10px;
+    min-height: 140px;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.--block-body-style-1 {
+    background-color: orange;
+}
+
+.--block-body-style-2 {
+    background: rgba(255, 255, 255, 0.057);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    margin: 20px 0;
+    color: var(--text-primary);
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.--block-footer-style-1 {
+    background-color: yellow;
+}
+
+.--block-footer-style-2 {
+    background: rgba(255, 255, 255, 0.057);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    margin: 20px 0;
+    color: var(--text-primary);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+
+
+/*BLOCK SPLITS
+Block Splits are when you need to split up
+a block in columns */
+
+.--block-split-cols {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.col-1-9,
+.col-2-1 {
+    display: flex;
+    align-items: center;
+}
+
+.col-1-9 {
+    flex: 9;
+    display: flex;
+    width: 100%;
+    align-items: right;
+}
+
+.col-2-1 {
+    flex: 1;
+    justify-content: flex-end;
+}
+
+
+
+
+
+/*CLUSTER CARDS */
+/* Cluster Cards are a special of Item block - spezilaized for this specific purpose*/
+
+.cluster-card {
+
+    width: 220px;
+    height: 200px;
+    padding: 0px;
+
+}
+
+.--cluster-card-style-1 {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    width: 220px;
+    height: 200px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    backdrop-filter: blur(15px) brightness(1.2);
+    -webkit-backdrop-filter: blur(15px) brightness(1.2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+
+}
+
+/*5.3 - - - - - - MODALS - - - - - */
+
+
+/*5.3.1 - - - TOGGLES - - - - */
+/*TOGGLE SWITCH */
+
+/* Custom Toggle Switch Styling */
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/*5.3.2 - - - SLIDER - - - - */
+
+/* Slider */
+.toggle-switch .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--background-light);
+    /* Off state color */
+    transition: .4s;
+    border-radius: 34px;
+    /* Circular borders for the slider */
+}
+
+.toggle-switch .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: var(--primary-color);
+    transition: .4s;
+    border-radius: 50%;
+    /* Round shape */
+}
+
+input:checked+.slider {
+    background-color: var(--success-color);
+    /* On state color */
+}
+
+input:checked+.slider:before {
+    transform: translateX(26px);
+    /* Move circle to the right on toggle */
+}
+
+/* Optional: adding focus to input for keyboard accessibility */
+input:focus+.slider {
+    box-shadow: 0 0 1px var(--success-color);
+}
+
+/* Hover effects for enhanced user interaction */
+.slider:hover {
+    background-color: var(--color-green-300);
+    /* Lighter shade when hovered */
+}
+
+.slider {
+    /* Default styles for the slider */
+    background-color: #ccc;
+    /* Default off state in grey */
+    transition: 0.4s;
+}
+
+/* When the checkbox is checked, turn the slider red */
+input:checked+.slider {
+    background-color: red;
+}
+
+
+
+/* 5.3.4 - CORE MODALS -- - - - -- - - - -*/
+/*ORGANIZE LATER - SILVERBACK MODALS */
+/*SOON THIS WILL SUNSETED TO BETTER FIT THE BLOCK MODEL FOUND ABOVE */
+
+/* Modal styles */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+}
+
+.modal-content {
+    margin: 15% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+    display: flex;
+    /* Use flexbox to layout children side by side */
+    justify-content: space-between;
+    /* Distribute space between columns */
+    flex-wrap: wrap;
+    /* Allow wrapping if needed */
+}
+
+.plan {
+    flex: 1 1 30%;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+
+
+
+
+/* 5.4 - - - - DROPDOWNS - - - - */
+
+/* DROP DOWN MENUS */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+}
+
+.dropbtn {
+    background-color: var(--dropdown-bg);
+    color: white;
+    padding: var(--dropdown-padding);
+    font-size: var(--dropdown-font-size);
+    border: none;
+    cursor: pointer;
+    border-radius: var(--dropdown-border-radius);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #313131;
+}
+
+
+
+.app-body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/*WORK IN PROGRESS */
+
+.plan-card {
+    display: flex;
+    min-width: 210px;
+    min-height: 200px;
+    max-height: 403px;
+    padding: 32px;
+    flex-direction: column;
+    align-items: center;
+    background: var(--background-dark);
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+
+.widget-container-column {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+/*layoutStructure */
+/*Fix this up - omit it*/
+.container-1 {
+    display: flex;
+    min-width: 250px;
+    max-width: 450px;
+    min-height: 400px;
+    max-height: 400px;
+    padding: 48px;
+    flex-direction: column;
+    gap: 48px;
+    border-radius: 10px;
+    border: 1px solid var(--Border-Glass-Border-Light-12, rgba(255, 255, 255, 0.12));
+    background: var(--Surface-Glass-Background-Dark-35, rgba(0, 0, 0, 0.35));
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+}
+
+.container-2 {
+    display: flex;
+    min-width: 650px;
+    max-width: 550px;
+    min-height: 400px;
+    max-height: 400px;
+    padding: 48px;
+    flex-direction: column;
+    gap: 48px;
+    border-radius: 10px;
+    border: 1px solid var(--Border-Glass-Border-Light-12, rgba(255, 255, 255, 0.12));
+    background: var(--Surface-Glass-Background-Dark-35, rgba(0, 0, 0, 0.35));
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+}
+
+/*ULTITY CLASSES */
+
+.center-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.row-2-items {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.text-button {
+    color: #FFF;
+    background-color: transparent;
+    border-style: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: Barlow;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    position: fixed;
+    bottom: 0;
+}
+
+.text-button:hover {
+    color: rgba(255, 255, 255, 0.54);
+    cursor: pointer;
+}
+
+
+/* CORE AND DEFAULT SIDEBAR */
+
+/*SIDEBAR*/
+/* THE SIDEBAR - is really the side dock in silverback - but can be used 
+as a traditional sidebar for websites */
+
+
+/* - - - - 8. Custom Components - - - - - */
+
+
+
+/* COMPONENT VARIATIONS */
+
+.c1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ^^^ UPDATE THIS PERHAPS IT COULD BE APPLIED BETTER */
+
+/* 8.1 - - - - SIDEBAR - - - - */
+
+
+.sidebar {
+    width: 240px;
+
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    transition: width 0.19s;
+
+}
+
+.--sidebar-style-1 {
+    font-family: var(--sidebar-font-family-theme1);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+    background-color: #67ccff00;
+    color: white;
+
+}
+
+
+
+.menu-item-img {
+    width: 62px;
+    height: 62px;
+}
+
+.top-section {
+    padding: 20px 10px;
+}
+
+.bottom-section {
+    padding: 10px;
+}
+
+.sidebar.collapsed .top-section,
+.sidebar.collapsed .bottom-section {
+    align-items: center;
+}
+
+.sidebar .menu-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    transition: padding 0.3s;
+    cursor: pointer;
+}
+
+.sidebar.collapsed .menu-item {
+    justify-content: center;
+}
+
+.sidebar .menu-item:hover {
+    background-color: #37474F;
+}
+
+.sidebar.collapsed .menu-item img {
+    margin-right: 0;
+}
+
+.sidebar .menu-item span {
+    transition: opacity 0.3s;
+}
+
+.sidebar.collapsed .menu-item span {
+    opacity: 0;
+}
+
+
+
+.sidebar.collapsed .menu-item .tag {
+    display: none;
+}
+
+.sidebar .menu-item.bot {
+    display: flex;
+    justify-content: space-between;
+}
+
+.toggle-btn {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 52px;
+    height: 52px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.toggle-btn:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar .toggle-btn {
+    margin-top: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.sidebar .menu-item .bot-icon {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #FF6B6B;
+    margin-right: 20px;
+}
+
+.sidebar.collapsed .menu-item .bot-icon {
+    margin-right: 0;
+}
+
+.sidebar .menu-item.bot .name {
+    flex-grow: 1;
+}
+
+.sidebar.collapsed .menu-item.bot .name {
+    display: none;
+}
+
+
+/*DEFAULT SIDEBAR */
+.default-sidebar {
+    width: 220px;
+    height: 100vh;
+    background-color: #002a8b37;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    z-index: 30;
+}
+
+.default-sidebar .top-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.default-sidebar .logo img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.default-sidebar .menu-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    color: #818181;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    font-size: 16px;
+    font-family: Barlow;
+    font-weight: 400;
+    line-height: 24px;
+    word-wrap: break-word;
+}
+
+.default-sidebar .menu-item:hover {
+    color: #f1f1f1;
+    background-color: rgba(255, 255, 255, 0.1);
+    /* Light transparent background */
+    backdrop-filter: blur(10px);
+    /* Frosted glass effect */
+    -webkit-backdrop-filter: blur(10px);
+    /* Frosted glass effect for Safari */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+    border-radius: 5px;
+    /* Rounded corners */
+}
+
+.default-sidebar .menu-item .icon {
+    margin-right: 10px;
+    filter: saturate(0);
+    margin-left: 5px;
+}
+
+
+.default-sidebar .bottom-section {
+    margin-top: auto;
+}
+
+.default-sidebar .bottom-section .menu-item {
+    color: white;
+    font-size: 16px;
+    font-family: Barlow;
+    font-weight: 400;
+    line-height: 24px;
+    word-wrap: break-word
+}
+
+.default-sidebar .bottom-section .menu-item:hover {
+    color: #f1f1f1;
+}
+
+.default-sidebar .bottom-section .menu-item .icon {
+    margin-right: 10px;
+}
+
+
+/*DEFAULT SIDEBAR */
+/* 8.2 - - - - - - APP LAYOUT - - - - - */
+/*APP LAYOUT STRUCTURE */
+
+.app-window {
+    margin-left: 240px;
+    padding: 20px;
+    margin: 50px;
+    width: calc(100% - 240px);
+    box-sizing: border-box;
+    height: 100vh;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.091);
+
+}
+
+.app-top {
+    background-color: #1c1c1c;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    position: relative;
+}
+
+.app-top h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.app-top p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.app-top .bot-actions {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/*8.3 - - - SPLASH PAGES - - - */
+
+/*SPLASH*/
+
+
+.splash {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: black !important;
+    margin-top: 30px;
+}
+
+.splash-logo {
+    width: auto;
+    height: 100px;
+}
+
+.splash-logo:hover {
+    opacity: .5;
+}
+
+.splash-subHeader-text {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/*ICONS AND SUCH */
+
+.menu-item-img {
+    width: 62px;
+    height: 62px;
+}
+
+
+
+/*PAGNIATIONS */
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    color: white;
+}
+
+/* 8.4 - - - - - MENUs */
+
+.container-product {
+    background-color: rgba(193, 42, 42, 0);
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container-product {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding: 20px;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    max-width: 960px;
+    width: 100%;
+}
+
+@media only screen and (max-width: 720px) {
+    .menu {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.menu-item-product-page {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+    max-height: 200px;
+    padding: 20px;
+    border-radius: 7.5px;
+    margin: 10px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.menu-item-product-page:hover {
+    background-color: var(--color-hover);
+}
+
+
+.menu-item-product-page a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+.menu-item-product-page-silverback {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    border-radius: 7.5px;
+    margin: 10px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.menu-item-product-page-silverback img {
+    width: 100px;
+}
+
+/* 8.5 - - - - FOOTERS - - - - - */
+
+
+#footer-productpage {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.footer-link {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+.footer-link a {
+    color: #ffffff84;
+    text-decoration: none;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-link a:hover {
+    color: #ffffff;
+}
+
+
+
+
+.footer-logo {
+    width: 64px;
+    height: 64px;
+}
+
+.footer-logo:hover {
+    filter: invert(1);
+    animation: horizontal-shaking 0.2s infinite;
+}
+
+
+/* 8.6 - - - - 8.6 - Search Bars - - - */
+/* Add this CSS to make the search bar fixed, centered, and sticky */
+#search-bar-container {
+    position: -webkit-sticky;
+    /* For Safari */
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.201);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+#search-bar {
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#search-results {
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.search-result-item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.search-result-item:last-child {
+    border-bottom: none;
+}
+
+
+/* 8.7 - - - - - LOGOs - - - - - - */
+
+.logo {
+    max-width: 33%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+
+/* popup */
+.popup-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Responsiveness */
+@media screen and (max-width: 600px) {
+    .text-container h1 {
+        font-size: 32px;
+        /* Adjust this value to what looks best on mobile */
+    }
+}
+
+.description {
+    text-align: justify;
+    font-family: 'Barlow', sans-serif;
+    max-width: 600px;
+}
+
+@media screen and (max-width: 600px) {
+    .description {
+        max-width: 315px;
+    }
+}
+
+
+/*ANIMATIONS*/
+/*Used for Logo Shaking*/
+
+@keyframes horizontal-shaking {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(5px);
+    }
+
+    50% {
+        transform: translateX(-5px);
+    }
+
+    75% {
+        transform: translateX(5px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/*Gradient Background Animations */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/*BACKGROUND ANIMATION = RIPPLE EFFECT */
+
+@keyframes rippleEffect {
+    0% {
+        background-size: 64px 64px;
+    }
+
+    50% {
+        background-size: 128px 128px;
+    }
+
+    100% {
+        background-size: 64px 64px;
+    }
+}
+
+
+/* DISPLAYING CODE */
+
+.glass-code-container {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    margin: 20px 0;
+    color: var(--text-primary);
+    overflow: auto;
+}
+
+.glass-code-container pre {
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    color: var(--text-primary);
+}
+
+.glass-code-container code {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/* 13 - - -  MAGIC TRICKS */
+
+
+
+/* CHANGING STATES OF MIX-BLEND-MODE */
+
+@keyframes wildBlend {
+    0% {
+        mix-blend-mode: normal;
+    }
+
+    25% {
+        mix-blend-mode: multiply;
+    }
+
+    50% {
+        mix-blend-mode: screen;
+    }
+
+    75% {
+        mix-blend-mode: overlay;
+    }
+
+    100% {
+        mix-blend-mode: difference;
+    }
+}
+
+.mixBlend {
+    animation: wildBlend 5s infinite;
+}
+
+
+
+/* SPECIAL USE CASE */
+
+.top-login-bar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    color: rgba(255, 255, 255, 0.8);
+    z-index: 1000;
+    font-family: 'Barlow', sans-serif;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.top-login-bar:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.login-info {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.login-info img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.login-info span {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.login-options {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+.top-login-bar:hover .login-options {
+    display: block;
+}
+
+.login-options a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.2s ease;
+}
+
+.login-options a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}

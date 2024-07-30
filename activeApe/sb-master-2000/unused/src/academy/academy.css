@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+body {
+  font-family: "Press Start 2P";
+  margin: 0;
+  padding: 0;
+  min-width: 100%;
+  background-color: #0051ff73;
+  font-family: "Press Start 2P";
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  mix-blend-mode: color-burn;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-image: url("/assets/Gorrilla 4-03.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  filter: invert(1);
+}
+
+.logo:hover {
+  filter: invert(0);
+}
+
+.sub-paragraph {
+  color: black;
+  text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+/* Footer */
+footer {
+  position: absolute;
+  bottom: 0;
+  min-width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-logo {
+  width: 64px;
+  height: 64px;
+  filter: invert(1);
+}
+
+.footer-logo:hover {
+  filter: invert(0);
+  animation: horizontal-shaking 0.2s infinite; /* Adjust duration and other properties as needed */
+}
+
+@keyframes horizontal-shaking {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(5px);
+  }
+  50% {
+    transform: translateX(-5px);
+  }
+  75% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Responsiveness */
+@media (min-width: 1024px) {
+  body::before {
+    background-size: contain;
+    background-position: center;
+  }
+}

@@ -1,0 +1,721 @@
+/*BRAND COLORS FROM EXISTING WEBSITES */
+
+:root {
+    /*BrandCOLORS*/
+
+    --colorApeFrame: #b7ff00;
+    --colorApeDocs: #00ff15;
+    --colorSilverBack: rgb(214, 214, 214);
+    --colorChaos: #ff0062dd;
+    --colorApePay: gold;
+    --colorAcademy: #0f00df;
+}
+
+
+.glass-candy {
+    background-color: red;
+}
+
+
+
+/*DO NOT USE GLOBALLY - JUST FOR THE INFO PAGE */
+
+.welcome {
+    width: 100;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.silverback-logo-text {
+    margin: 0;
+    color: white;
+    text-decoration: none;
+    font-family: 'Press Start 2P', cursive;
+    margin-top: 5px;
+}
+
+
+
+/*Ape Apy Product Page Specific CSS */
+
+.apepay-color h1,
+h2,
+h3,
+p,
+a {
+    color: white;
+}
+
+/* INVITATION WIDGET */
+
+.invitation-widget {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    color: var(--color-white);
+}
+
+.invitation-widget {
+    display: flex;
+    gap: 10px;
+}
+
+
+.invitation-widget .btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+
+/*Link Texts*/
+.link-text-title {
+    color: black;
+    text-decoration: none;
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+.link-text {
+    color: black;
+    text-decoration: none;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.link-text:hover {
+    color: white;
+    cursor: pointer;
+}
+
+
+/* 3.4 - - - LINKS - - - - 3.4 */
+.github-link {
+    font-size: 18px;
+    text-decoration: none;
+    width: 500px;
+    height: auto;
+}
+
+
+/*SILVERBACK DASHBOARDS CARDS */
+
+.silverback_bot {
+    position: absolute;
+    transition: all 0.3s ease;
+}
+
+.silverback_bot.fullscreen {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.silverback_dashboard-management {
+    padding: 20px;
+}
+
+.silverback_dashboard-header {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.silverback_dashboard-header h1 {
+    margin-bottom: 10px;
+}
+
+.silverback_dashboard-header p {
+    margin-bottom: 20px;
+}
+
+.silverback_saved-dashboards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.silverback_dashboard-card {
+    flex: 1 1 calc(50% - 20px);
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    overflow: hidden;
+    color: #fff;
+}
+
+.silverback_dashboard-card img {
+    width: 100%;
+    height: auto;
+}
+
+.silverback_dashboard-card .silverback_details {
+    padding: 10px;
+}
+
+.silverback_dashboard-card .silverback_details strong {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.silverback_dashboard-card .silverback_details p {
+    margin: 0;
+}
+
+
+
+/* -------
+ADDITIONAL CSS FOR SPECIFIC PAGE BACKGROUND OF SPECIFIC WEBSITES
+
+----
+
+
+*/
+
+/* BODY VARIABLES */
+/* PUT THIS ANYWHERE you want a specific background vibe i.e
+<body id="apeworx-index-body"></body> */
+
+#apeworx-index-body {
+    background-color: rgb(0, 0, 0) !important;
+}
+
+#silverbackApp-index-body::before {
+    content: "";
+    background-image: url(../assets/sb_proto_bg1.png);
+    background-color: black !important;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#silverback-productpage-body-index {
+    font-family: "Press Start 2P";
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #d2d2d2;
+    box-shadow: inset 0 0 10px #c9c9c9;
+    animation: gradientAnimation 10s linear infinite ease-in-out;
+    background-size: cover;
+    position: relative;
+}
+
+#chaosnet-productpage-body-index {
+    font-family: "Press Start 2P";
+    background-color: #ff0062dd;
+    background-image: url("chaosBG.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    font-family: "Press Start 2P";
+    margin: 0;
+    padding: 0;
+    min-width: 100%;
+}
+
+#academy-productpage-body-index {
+    font-family: "Press Start 2P";
+    margin: 0;
+    padding: 0;
+    min-width: 100%;
+    background-color: #0051ff73;
+    font-family: "Press Start 2P";
+}
+
+#apepay-productpage-body-index {
+    font-family: "Press Start 2P";
+    margin: 0;
+    padding: 0;
+    min-width: 100%;
+    font-size: 20px;
+    min-height: 100vh;
+    user-select: none;
+    overflow: auto;
+    background-color: #cccccc75;
+    background-image:
+        linear-gradient(rgba(255, 217, 0, 0.566), rgba(255, 217, 0, 0.937));
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#silverback-productpage-body-index {
+    background-color: var(--colorSilverBack);
+}
+
+
+
+/*STYLE FOR ALL APE*/
+
+
+
+
+/* RESPONSIVE SUGAR */
+
+
+
+
+
+
+/* * * * SILVERBACK DESIGN SYSTEM HYBRID - 
+
+*/
+
+.silverback-sidebar {
+    width: 250px;
+    background-color: #1a1a1a;
+    color: #fff;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.silverback-top-section,
+.silverback-bottom-section {
+    padding: 20px;
+}
+
+.silverback-menu-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    cursor: pointer;
+    border-right: 1px solid var(--Border-Glass-Border-Light-12, rgba(255, 255, 255, 0.12));
+    /* Glass Panel */
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(12px);
+}
+
+.silverback-menu-item.active {
+    background-color: #e0e0e04c;
+    /* Example highlight color */
+    font-weight: bold;
+}
+
+.silverback-menu-item img {
+    margin-right: 10px;
+}
+
+.silverback-menu-item span {
+    font-size: 16px;
+}
+
+.silverback-tag {
+    background-color: #ff6b6b;
+    color: #fff;
+    padding: 2px 5px;
+    border-radius: 3px;
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+.silverback-bot {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.silverback-bot-icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.silverback-name {
+    font-size: 16px;
+}
+
+.silverback-app-window {
+    margin-left: 250px;
+    padding: 20px;
+    background-color: #2a2a2a;
+    color: #fff;
+    height: 100vh;
+}
+
+.silverback-app-top {
+    margin-bottom: 20px;
+}
+
+.silverback-bot-actions {
+    background-color: #ff6b6b;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+/*SILVER BACK BOTS */
+
+.silverback-app-window {
+    position: relative;
+    padding: 20px;
+    background-color: #f0f0f0;
+    overflow: hidden;
+}
+
+.bot {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: black;
+}
+
+.bot-header {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.bot-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+.bot-actions {
+    margin-top: 10px;
+}
+
+#toggle-drag {
+    margin-bottom: 20px;
+}
+
+
+/*SILVERBACK LOGO STYLES */
+
+/* ----------------
+S----I_-------L-----V----E----R
+-------------
+-----BACK
+-----SPECIFIC CODE
+----------TO BE ORGANIZED INTO THE GREATER SYSTEM LATER ----
+----- PIECE BY PIECE ----
+---little by little 
+--xoxox
+*/
+
+
+.silverbackLogo {
+    width: 200;
+    height: 100%;
+}
+
+
+/* -- -- -- --- --- AAPP SPECIFIC - - - - - */
+
+/*APP SPECIFIC - APEWORX.io */
+
+/*BRAND HOVER FEATURE */
+
+#itemApeFrame:hover {
+    background-color: var(--colorApeFrame);
+}
+
+#itemApeFrame:hover img {
+    filter: invert(1);
+}
+
+#itemApeDocs:hover {
+    background-color: var(--colorApeDocs);
+}
+
+#itemApeDocs:hover img {
+    filter: invert(1);
+}
+
+#itemSilverBack:hover {
+    background-color: var(--colorSilverBack);
+}
+
+#itemSilverBack:hover img {
+    filter: invert(1);
+}
+
+#itemChaos:hover {
+    background-color: var(--colorChaos);
+}
+
+#itemApePay:hover {
+    background-color: var(--colorApePay);
+}
+
+#itemApePay:hover img {
+    filter: invert(1);
+}
+
+#itemAcademy:hover {
+    background-color: var(--colorAcademy);
+}
+
+
+/* - - - - - - - - SPECIFIC PAGE - - - - */
+/*full width body specific pages*/
+
+/*chaosnet product page container */
+
+.chaosnet-productpage-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.academy-productpage-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.apepay-productpage-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 90vh;
+    margin: 0px;
+}
+
+
+/*Imported from Chaosnet product page styles */
+
+.chaos-menu {
+    display: flex;
+    flex-direction: column;
+    min-width: 500px !important;
+    justify-content: space-between;
+}
+
+.chaos-menu a {
+    flex: 1;
+    text-align: center;
+}
+
+#mirrorArticlePopup {
+    background-color: rgba(42, 42, 42, 0.392);
+}
+
+#mirrorArticlePopup .popup-content {
+    width: 800px;
+    max-height: 500px;
+    overflow-y: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mirrorArticlePopup iframe {
+    position: absolute;
+
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-color: grey;
+    border-width: 30px;
+}
+
+/**** NOT SURE WHERE THIS GOES */
+/ / .product-logo {
+    width: 300px;
+    height: auto;
+    max-height: 300px;
+    overflow: hidden;
+}
+
+
+/* LAYOUT STRUCTURES FOR HTML WEBSITES
+- USED ON APEWORX.io and SUB PAGES
+*/
+
+
+@media screen and (max-width: 600px) {
+    .splash-logo {
+        margin-top: 20xpx;
+        padding-top: 10px;
+    }
+}
+
+.product-logo {
+    width: 300px;
+    height: auto;
+    max-height: 300px;
+    overflow: hidden;
+}
+
+
+
+/*HEADER CONSIDERATIONS */
+
+.header {
+    color: white;
+    padding: 30px;
+    background-color: rgba(255, 0, 0, 0);
+    height: 40px;
+    text-transform: uppercase;
+    line-height: 140%;
+    text-align: justify;
+    font-family: 'Press Start 2P', cursive;
+}
+
+
+
+
+
+/*THEMES AND STYLES Experiment */
+/*The following are themes - first one being "Glassy Candy" - second being "Green Mint Baby" - just to show how this might work
+*/
+
+:root {
+    /*theme 1 = Glass Candy */
+    --glass-candy_background: #ff0060;
+
+    /*theme 2 = Green Mint Baby */
+    --green-mint_background: #e9fbff;
+    --green-mint_button_bg: #000;
+    --green-mint_text-color: #000000;
+
+}
+
+/* silverback logo is not the same size as the others */
+#itemSilverBack {
+    width: inherit;
+}
+
+/*Mobile Considerations */
+
+@media only screen and (max-width: 767px) {
+    #mainFooter {
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    /* Footer links as one row on mobile */
+    .footer-links {
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+
+
+    .footer-link {
+        margin-top: 7%;
+        border-style: solid;
+        border-color: white;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        padding: 5%;
+    }
+
+    .footer-link a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+        color: white;
+    }
+
+    .footer-link:hover {
+        background-color: rgba(255, 255, 255, 0.529);
+        color: black;
+        opacity: 1;
+        cursor: pointer;
+    }
+
+    .footer-link a {
+        padding: 0px;
+    }
+
+    /*Header on Mobile height increase */
+    .header {
+        text-align: center;
+        color: white;
+        padding: 25px;
+        background-color: rgba(255, 0, 0, 0);
+        height: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        animation: change-typography 9s infinite ease-in-out;
+    }
+}
+
+
+/*15 - - - - - SPECIFIC PAGE BODIES - - - - - - */
+
+/* 15.1 = Ape Design Guide Body - - - - -- */
+
+#design-guide-body {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-family: 'Barlow', sans-serif;
+}
+
+/*15.2 = Block Structure Demo Body */
+
+#block-structure-demo-body {
+    background: linear-gradient(270deg, #ff6a6a, #ffcc6a, #6aff6a, #6affcc, #6a6aff, #cc6aff);
+    background-size: 1200% 1200%;
+    animation: gradientAnimation 15s ease infinite;
+}

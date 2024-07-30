@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dashboard Management</title>
+        <link rel="stylesheet" href="../../../ape-design-system.css">
+
+        <style>
+
+body {
+            background-image: url(../../assets/sb-bg-2.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: white;
+        }
+                 .screen {
+            margin-left: 276px!important; /* Adjust this value to match the width of the sidebar */
+            padding: 20px;
+        }
+        </style>
+    </head>
+
+    <body>
+        <!-- SIDEBAR-->
+        <div id="sidebar" class="default-sidebar"></div>
+        <!-- SIDEBAR -->
+        <div class="screen --screen-sidebar-active">
+            <div id="title-card-Jungle" class="component"
+                id="title-Dashboards">
+                <div class="--panel-style-2">
+                    <h1>Enter the Jungle</h1>
+                    <p>Plot any data, discover new insights, and save analytics
+                        dashboards with our powerful suite of construction
+                        tools.</p>
+                </div>
+            </div>
+            <div id="SavedDashboards" class="component">
+
+                <h2>Saved Dashboards</h2>
+                <div class="panel --panel-style-2">
+                    <div class="card --card-grid" id="dashboard-grid">
+                        <a href="dashy-1.html"
+                            class="item-block --card-cluster-style-1">
+                            <img src="https://via.placeholder.com/256x144"
+                                alt="Example Dash">
+
+                            <h2 class="heading-2">Example Dash</h2>
+                            <p class="body-text">Created by yearn-alice</p>
+
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <script src="./loadSidebar.js"></script>
+        <script>
+        function toggleSidebar() {
+            document.getElementById('sidebar').classList.toggle('collapsed');
+        }
+    </script>
+    </body>
+
+</html>

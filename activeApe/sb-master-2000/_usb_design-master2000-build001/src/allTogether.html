@@ -1,0 +1,147 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./index.css">
+        <link rel="stylesheet" href="./guide.css">
+        <title>
+            Everything All Together</title>
+    </head>
+    <body>
+        <section id="frame-system" class="frame-section">
+            <h2 class="heading-2">Explanation of Frame System</h2>
+            <p class="body-text body--medium">Inside frame containers live
+                "Panels" - little square elements that float above them.</p>
+
+            <div class="master-frame-container">
+                <div class="frame frame--a">
+                    <h2 class="heading-2">This is Frame Container A</h2>
+                    <p class="body-text body--medium">This frame will have a
+                        fixed height of 121px</p>
+                    <div class="panel-container">
+                        <div class="panel panel--a" id="panel001">
+                            <h2 class="heading-2">Panel Container A with the
+                                ID#001</h2>
+                        </div>
+                        <div class="panel panel--a" id="panel002">
+                            <h2 class="heading-2">Panel Container A with the
+                                ID#002</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="frame frame--b">
+                    <h2 class="heading-2">Frame Container B</h2>
+                    <p class="body-text body--medium">This frame will have a
+                        fixed height of 634px</p>
+                        <div class="frame frame--bot-management">
+                            <div class="bot-management-header">
+                                <h2 class="heading-2">Bots in this Cluster</h2>
+                            </div>
+                            <div class="bot-management-body">
+                                <div class="bot-management-row">
+                                    <span class="body-text body--medium">Arbitrage Bot</span>
+                                    <span class="body-text body--medium">SINCE MAY 10, 2024 AT 5:32 GMT</span>
+                                    <button class="dropdown-button">ACTIONS</button>
+                                    <div class="dropdown-content">
+                                        <a href="#">Edit Settings</a>
+                                        <a href="#">View Logs</a>
+                                        <a href="#">Deactivate</a>
+                                    </div>
+                                </div>
+                                <div class="bot-management-row">
+                                    <span class="body-text body--medium">Chain Monitor Bot</span>
+                                    <span class="body-text body--medium">ON MAY 9, 2024 AT 5:32 GMT</span>
+                                    <button class="dropdown-button">ACTIONS</button>
+                                    <div class="dropdown-content">
+                                        <a href="#">Edit Settings</a>
+                                        <a href="#">View Logs</a>
+                                        <a href="#">Deactivate</a>
+                                    </div>
+                                </div>
+                                <div class="bot-management-row">
+                                    <span class="body-text body--medium">Agressive Trader Bot</span>
+                                    <span class="body-text body--medium">SINCE MAY 12, 2024 AT 10:48 GMT</span>
+                                    <button class="dropdown-button">ACTIONS</button>
+                                    <div class="dropdown-content">
+                                        <a href="#">Edit Settings</a>
+                                        <a href="#">View Logs</a>
+                                        <a href="#">Deactivate</a>
+                                    </div>
+                                </div>
+                                <div class="bot-management-row">
+                                    <span class="body-text body--medium">Imitator Bot</span>
+                                    <span class="body-text body--medium">ON MAY 11, 2024 AT 16:41 GMT</span>
+                                    <button class="dropdown-button">ACTIONS</button>
+                                    <div class="dropdown-content">
+                                        <a href="#">Edit Settings</a>
+                                        <a href="#">View Logs</a>
+                                        <a href="#">Deactivate</a>
+                                    </div>
+                                </div>
+                                <div class="bot-management-row">
+                                    <span class="body-text body--medium">Lazy Arbitrage Bot</span>
+                                    <span class="body-text body--medium">ON MAY 11, 2024 AT 18:11 GMT</span>
+                                    <button class="dropdown-button">ACTIONS</button>
+                                    <div class="dropdown-content">
+                                        <a href="#">Edit Settings</a>
+                                        <a href="#">View Logs</a>
+                                        <a href="#">Deactivate</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bot-management-footer">
+                                <p class="body-text body--medium">This cluster's robot army can recruit an additional 5 bots. All bots must be developed using the Silverback SDK. For Silverback Alpha, you'll need to provide a link to a built Docker image.</p>
+                                <button class="add-bot-button">ADD BOT...</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                </div>
+                <div class="frame frame--c">
+                    <h2 class="heading-2">Frame Container C</h2>
+                    <p class="body-text body--medium">This frame will have a
+                        fixed height of 245px</p>
+                </div>
+                <div class="frame frame--d">
+                    <h2 class="heading-2">Frame Container D</h2>
+                    <p class="body-text body--medium">This frame will have a fixed height of 87px</p>
+                    <!-- Start Menu Button -->
+                    <div class="start-menu-button">
+                        <img src="../assets/Vector_START_48.png" alt="Start Menu">
+                    </div>
+                    <!-- Popup Menu -->
+                    <div class="start-menu-popup">
+                        <ul>
+                            <li><a href="#">Option 1</a></li>
+                            <li><a href="#">Option 2</a></li>
+                            <li><a href="#">Option 3</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- JAVASCRIPT FOR POPUP MENU -->
+        <script>
+            document.querySelector('.start-menu-button').addEventListener('click', function() {
+                var popup = document.querySelector('.start-menu-popup');
+                popup.style.display = popup.style.display === 'block' ? 'none' : 'block';
+            });
+            </script>
+        <footer>
+            <a href="./index.html">Back to Guide</a>
+        </footer>
+        <script>
+            // Get all the dropdown buttons
+            var dropdowns = document.querySelectorAll('.dropdown-button');
+            dropdowns.forEach(function(btn) {
+                btn.onclick = function() {
+                    var content = this.nextElementSibling;
+                    // Toggle display
+                    if (content.style.display === 'block') {
+                        content.style.display = 'none';
+                    } else {
+                        content.style.display = 'block';
+                    }
+                }
+            });
+        </script>
+    </body>
+</html>

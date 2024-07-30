@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta
+      name="description"
+      content="Chaosnet is a testnet with chaotic behavior. Forget traditional testnets, build a robot army with Chaosnet." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <!--link rel="stylesheet" href="chaos.css" type="text/css" /-->
+    <link rel="stylesheet" href="../index.css">
+    <title>cHaOSneT | ApeWorx, LTD</title>
+  </head>
+
+  <body id="chaosnet-productpage-body-index">
+    <div class="chaosnet-productpage-container">
+      <a href="https://chaos.apeworx.io" target="_blank" class="github-link">
+        <img src="./logo.png" alt="Logo" class="logo" />
+      </a>
+      <div class="chaos-menu">
+        <a
+          class="link-text-launch"
+          target="_blank"
+          href="https://chaos.apeworx.io">Launch cHaOSneT</a>
+        <a class="link-text" href="#" onclick="whitepaperPopup()">Chaos White
+          Paper</a>
+        <a class="link-text" href="#" onclick="showPopup()">Teaser Trailer</a>
+      </div>
+    </div>
+
+    <footer>
+      <a href="../../../"><img src="apeFull.png" class="footer-logo" /></a>
+    </footer>
+
+    <!-- YT trailer popup HTML -->
+    <div id="popup" class="popup-background" style="display: none">
+      <div class="popup-content">
+        <iframe
+          id="youtube-iframe"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/gGs20VPra6o"
+          frameborder="0"
+          allow="autoplay; encrypted-media"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <!-- Whitepaper popup HTML -->
+    <div
+      id="whitepaperPopup"
+      class="popup-background"
+      style="display: none"></div>
+
+    <!-- YT trailer popup JS -->
+    <script>
+      function showPopup() {
+        var popup = document.getElementById("popup");
+        var iframe = document.getElementById("youtube-iframe");
+        popup.style.display = "flex";
+        // change src so that the video autoplays
+        iframe.src = "https://www.youtube.com/embed/gGs20VPra6o?autoplay=1";
+
+        // Close the popup when clicked outside
+        window.onclick = function (event) {
+          if (event.target == popup || event.target == iframe) {
+            popup.style.display = "none";
+            iframe.src = "https://www.youtube.com/embed/gGs20VPra6o";
+          }
+        };
+      }
+    </script>
+
+    <!-- Whitepaper popup JS -->
+    <script>
+      function whitepaperPopup() {
+        var popup = document.getElementById("whitepaperPopup");
+        popup.style.display = "flex";
+
+        var iframe = document.createElement("iframe");
+        iframe.src = "https://online.fliphtml5.com/skeed/ipfd/";
+        popup.appendChild(iframe);
+
+        popup.addEventListener("click", function (event) {
+          if (event.target === popup) {
+            popup.style.display = "none";
+            popup.innerHTML = "";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
+:root {
+    --color-primary: #ff8dd1;
+    --color-secondary: #17171788;
+    --color-tertiary: #fff;
+    --color-hover: #ff00aac8;
+
+    /*BrandCOLORS*/
+
+    --colorApeFrame: #b7ff00;
+    --colorApeDocs: #00ff15;
+    --colorSilverBack: rgb(214, 214, 214);
+    --colorChaos: #ff0062dd;
+    --colorApePay: gold;
+    --colorAcademy: #0f00df;
+
+
+    /*Layout Colors */
+    --footer-color: #17171788;
+
+
+}
+
+html {
+    max-width: 100%;
+    max-width: 100vw;
+
+}
+
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black !;
+    font-family: 'Press Start 2P', cursive;
+
+}
+
+
+
+/*HEADER CONSIDERATIONS */
+
+.header {
+    color: white;
+    padding: 30px;
+    background-color: rgba(255, 0, 0, 0);
+    height: 40px;
+    text-transform: uppercase;
+    line-height: 140%;
+    text-align: justify;
+    font-family: 'Press Start 2P', cursive;
+}
+
+
+
+
+
+
+/*BRAND HOVER FEATURE */
+
+#itemApeFrame:hover {
+    background-color: var(--colorApeFrame);
+}
+
+#itemApeFrame:hover img {
+    filter: invert(1);
+}
+
+#itemApeDocs:hover {
+    background-color: var(--colorApeDocs);
+}
+
+#itemApeDocs:hover img {
+    filter: invert(1);
+}
+
+#itemSilverBack:hover {
+    background-color: var(--colorSilverBack);
+}
+
+#itemSilverBack:hover img {
+    filter: invert(1);
+}
+
+#itemChaos:hover {
+    background-color: var(--colorChaos);
+}
+
+#itemApePay:hover {
+    background-color: var(--colorApePay);
+}
+
+#itemApePay:hover img {
+    filter: invert(1);
+}
+
+#itemAcademy:hover {
+    background-color: var(--colorAcademy);
+}
+
+
+
+/*SILVERBACK LOGO STYLES */
+
+
+
+.silverbackLogo {
+    width: 200;
+    height: 100%;
+}
+
+
+
+
+
+/*STYLE FOR ALL APE*/
+
+
+
+
+/*SPLASH*/
+
+.splash {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.splash-logo {
+    width: auto;
+    height: 100px;
+
+}
+
+.splash-logo:hover {
+    opacity: .5;
+}
+
+.splash-subHeader-text {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.product-logo {
+    width: 300px;
+    height: auto;
+    max-height: 300px;
+    overflow: hidden;
+}
+
+/* RESPONSIVE SUGAR */
+
+/* BREAKPOINT 1 AT 920 */
+@media only screen and (max-width: 920px) {
+    .container-product {
+        background-color: rgba(128, 0, 128, 0);
+    }
+
+    .product-logo {
+        min-width: 280px;
+        max-width: 280px;
+        height: auto;
+        overflow: hidden;
+    }
+
+}
+
+/*BREAKPOINT 2 AT 720 */
+@media only screen and (max-width: 720px) {
+    .container-product {
+        background-color: rgba(241, 0, 241, 0);
+    }
+
+    .product-logo {
+        min-width: 300px;
+        max-width: 300px;
+        height: auto;
+        max-height: 50vh;
+        overflow: hidden;
+    }
+
+}
+
+/* BREAK POINT 3 AT 620 */
+@media only screen and (max-width: 620px) {
+
+    .container-product {
+        background-color: rgba(255, 255, 0, 0);
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .product-logo {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+
+}
+
+
+.container-bottom {
+    background-color: rgba(0, 128, 0, 0);
+    width: 100%;
+    min-height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+
+
+
+
+
+
+/*Container PRODUCTS*/
+
+.container-product {
+    background-color: rgba(193, 42, 42, 0);
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container-product {
+    display: flex;
+    /* Use flexbox for centering */
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+    min-height: 80vh;
+    /* Minimum height to take up the full viewport height */
+    padding: 20px;
+    /* Optional spacing around the edges */
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 columns */
+    grid-gap: 20px;
+    /* Gap between grid items */
+    max-width: 960px;
+    /* Max width of the grid */
+    width: 100%;
+    /* Make sure it takes up full width up to the max-width */
+}
+
+@media only screen and (max-width: 720px) {
+    .menu {
+        grid-template-columns: 1fr;
+        /* 1 column for smaller screens */
+    }
+}
+
+
+.menu-item {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    min-height: 300px;
+    max-height: 200px;
+    padding: 20px;
+    border-radius: 7.5px;
+    margin: 10px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.menu-item:hover {
+    background-color: var(--color-hover);
+}
+
+
+
+
+.menu-item a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+
+
+.menu-item-silverback {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    border-radius: 7.5px;
+    margin: 10px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+
+
+.menu-item-silverback img {
+    width: 100px;
+}
+
+
+
+
+#mainFooter {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Updated background color */
+    backdrop-filter: blur(10px);
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.footer-link {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+.footer-link a {
+    color: #ffffff84;
+    text-decoration: none;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-link a:hover {
+    color: #ffffff;
+}
+
+
+
+
+/*Mobile Considerations */
+
+@media only screen and (max-width: 767px) {
+    #mainFooter {
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    /* Footer links as one row on mobile */
+    .footer-links {
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    /* silverback logo is not the same size as the others */
+    #itemSilverBack {
+        width: inherit;
+    }
+
+    .footer-link {
+        margin-top: 7%;
+        border-style: solid;
+        border-color: white;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        padding: 5%;
+    }
+
+    .footer-link a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+        color: white;
+    }
+
+    .footer-link:hover {
+        background-color: rgba(255, 255, 255, 0.529);
+        color: black;
+        opacity: 1;
+        cursor: pointer;
+    }
+
+    .footer-link a {
+        padding: 0px;
+    }
+
+    /*Header on Mobile height increase */
+    .header {
+        text-align: center;
+        color: white;
+        padding: 25px;
+        background-color: rgba(255, 0, 0, 0);
+        height: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        animation: change-typography 9s infinite ease-in-out;
+    }
+}
+
+.silverback-logo-text {
+    margin: 0;
+    color: white;
+    text-decoration: none;
+    font-family: 'Press Start 2P', cursive;
+    margin-top: 5px;
+}

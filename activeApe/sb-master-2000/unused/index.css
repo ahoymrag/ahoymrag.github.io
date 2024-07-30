@@ -1,0 +1,1019 @@
+/* Silverback Design System 001 */
+/* As of 6.20.24 */
+/*update 6.21 
+tried to make it cleaner - more logical - i began to think of things as themes - and the code needed for this guides html (a ncessaeary evil) - into its own guide.css"
+*/
+/*preJosh Review June 25 2024*/
+
+
+/*Fonts used (web font ) BARLOW BABY */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap');
+
+
+body {
+
+    margin: 0;
+    padding: 0;
+
+}
+
+body::before {
+    content: "";
+    background-image: url(../assets/sb_proto_bg1.png);
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* VA VA VA VARIABLES */
+:root {
+    /* COLOR FUNCTION LEGEND */
+    --alert-color: #E63946;
+    --pending-color: #FFD93D;
+    --success-color: #39e5ff;
+    --info-color: #007B83;
+    --error-color: #ff8b6b;
+    --link-color: #3700ff;
+    --background-dark: #263238;
+    --background-light: #CFD8DC;
+    --text-primary: #FFFFFF;
+    --text-secondary: #B0BEC5;
+    --border-color: #B0BEC5;
+
+    --primary-color: #000;
+    --secondary-color: #fff;
+    --tertiary-color: #000000;
+
+    /* Background Colors */
+    --bgstyle-glass-panel-fuzzyDuck: #2E3438;
+
+    /* Font Sizes */
+    --font-size-headline: 2.5rem;
+    --font-size-heading-1: 2rem;
+    --font-size-heading-2: 1.75rem;
+    --font-size-heading-3: 1.5rem;
+    --font-size-heading-4: 1.25rem;
+    --font-size-heading-5: 1rem;
+    --font-size-heading-6: 0.875rem;
+    --font-size-body-large: 1.5rem;
+    --font-size-body-medium: 1rem;
+    --font-size-body-small: 0.875rem;
+    --font-size-body-tiny: 0.75rem;
+    --font-size-body-minuscule: 0.625rem;
+
+    /* Font Weights */
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+
+    /* Font Face */
+    --font-face-barlow: barlow;
+
+
+    /* Primary color palette */
+    --color-white: #FFFFFF;
+    --color-green-300: #64D2FF;
+    --color-green-400: #007B83;
+    --color-magenta-300: #FF6B6B;
+    --color-magenta-400: #A7333F;
+    --color-yellow-400: #FFD93D;
+    --color-pink-200: #FF8A5B;
+    --color-pink-400: #E63946;
+
+
+    /* Border colors */
+    --border-color: #B0BEC5;
+}
+
+
+/*THEMES AND STYLES Experiment */
+/*The following are themes - first one being "Glassy Candy" - second being "Green Mint Baby" - just to show how this might work
+*/
+
+:root {
+    /*theme 1 = Glass Candy */
+    --glass-candy_background: #ff0060;
+
+    /*theme 2 = Green Mint Baby */
+    --green-mint_background: #e9fbff;
+    --green-mint_button_bg: #000;
+    --green-mint_text-color: #000000;
+
+}
+
+/*END OF CSS VARIABLES - Hope you enjoyed */
+
+
+
+
+/* Panels */
+.panel-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.panel {
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 600px;
+}
+
+
+
+.panel--b {
+    max-width: 300px;
+    background-color: var(--bgstyle-glass-panel-fuzzyDuck);
+    color: var(--secondary-color);
+}
+
+/* Typography */
+
+
+/*GLOBAL FONT FACE = BARLOW */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+a {
+    font-family: 'Barlow', sans-serif;
+    line-height: 95%;
+    margin: 0;
+    color: var(--color-white);
+}
+
+.headline {
+    font-size: var(--font-size-headline);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: 0.5rem;
+    line-height: 95%;
+    overflow: auto;
+}
+
+.heading-1 {
+    font-size: var(--font-size-heading-1);
+    font-weight: var(--font-weight-bold);
+}
+
+.heading-2 {
+    font-size: var(--font-size-heading-2);
+    font-weight: var(--font-weight-bold);
+
+}
+
+.heading-3 {
+    font-size: var(--font-size-heading-3);
+    font-weight: var(--font-weight-bold);
+}
+
+.heading-4 {
+    font-size: var(--font-size-heading-4);
+    font-weight: var(--font-weight-bold);
+}
+
+.heading-5 {
+    font-size: var(--font-size-heading-5);
+    font-weight: var(--font-weight-bold);
+}
+
+.heading-6 {
+    font-size: var(--font-size-heading-6);
+    font-weight: var(--font-weight-bold);
+}
+
+.body-text {
+    font-weight: var(--font-weight-regular);
+    margin: 0.5rem 0;
+}
+
+.body--large {
+    font-size: var(--font-size-body-large);
+}
+
+.body--medium {
+    font-weight: 500;
+    font-size: var(--font-size-body-medium);
+}
+
+.body--small {
+    font-size: var(--font-size-body-small);
+    font-weight: 300;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 150%;
+}
+
+.body--tiny {
+    font-size: var(--font-size-body-tiny);
+}
+
+.body--minuscule {
+    font-size: var(--font-size-body-minuscule);
+}
+
+.link {
+    color: var(--secondary-color);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+
+/**
+
+###### LAYOUT AND STRUCTURE ############
+1. Frames
+2. Panels
+
+*/
+
+/* Frames */
+.master-frame-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.frame {
+    width: 100%;
+    padding: 20px;
+}
+
+.frame--a {
+    height: 121px;
+    background-color: var(--bgstyle-glass-panel-fuzzyDuck);
+}
+
+.frame--b {
+    height: 634px;
+    background-color: var(--background-light);
+    padding: 20px;
+    border-radius: 8px;
+
+}
+
+.frame--c {
+    height: 245px;
+    background-color: rgb(252, 96, 96);
+}
+
+.frame--d {
+    height: 87px;
+    background-color: rgb(255, 187, 187);
+}
+
+
+.color-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 10px;
+    padding: 20px;
+}
+
+.color-swatch {
+    height: 100px;
+    border-radius: 5px;
+}
+
+/* Text Inputs Section */
+.text-inputs-section {
+    padding: 20px;
+    min-width: 400px;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: var(--color-white);
+    border-radius: var(--12, 12px);
+    border: 1px solid var(--Border-Input-Border, #e0e0e076);
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-label {
+    font-size: var(--font-size-body-small);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: 5px;
+    color: var(--text-secondary);
+}
+
+.text-input,
+.textarea,
+.search-input {
+    font-size: var(--font-size-body-medium);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--border-color-light);
+    background-color: transparent;
+    color: var(--text-primary);
+}
+
+.text-input--normal,
+.textarea,
+.search-input {
+    border-color: var(--border-color-light);
+}
+
+.text-input--error {
+    border-color: var(--border-color-error);
+}
+
+.error-message {
+    font-size: var(--font-size-body-small);
+    color: var(--error-color);
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.error-message::before {
+    content: 'ⓘ';
+    margin-right: 5px;
+}
+
+.textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--border-color-light);
+    border-radius: 5px;
+    padding-right: 10px;
+}
+
+.search-input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: var(--text-primary);
+    flex-grow: 1;
+    padding: 10px;
+}
+
+.search-icon {
+    color: var(--text-secondary);
+}
+
+/* Button Base Style */
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    color: var(--text-primary);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+/* Outline Button */
+.btn--outline {
+    background-color: transparent;
+    border: 2px solid var(--border-color);
+    color: var(--text-secondary);
+}
+
+/* Primary Button */
+
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    color: var(--text-primary);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Default Button */
+.btn--default {
+    border-color: var(--green-mint_button_bg);
+    background-color: var(--green-mint_background);
+    color: var(--green-mint_text-color);
+}
+
+/* Outline Button */
+.btn--outline {
+    background-color: transparent;
+    border: 2px solid var(--border-color);
+    color: var(--text-secondary);
+}
+
+/* Primary Button */
+.btn--primary {
+    border-radius: 4px;
+    border: 1px solid var(--Brand-White, #FFF);
+    background: rgba(0, 0, 0, 0.35);
+    padding: 8px 16px;
+    min-width: 200px;
+    max-width: 400px;
+    margin: 5px;
+    font-weight: 400;
+    backdrop-filter: blur(10px);
+}
+
+/* Secondary Button */
+.btn--secondary {
+    background-color: var(--pending-color);
+}
+
+/* Success Button */
+.btn--success {
+    background-color: var(--success-color);
+}
+
+/* Error Button */
+.btn--error {
+    background-color: var(--error-color);
+}
+
+/* Info Button */
+.btn--info {
+    background-color: var(--info-color);
+}
+
+/* Warning Button */
+.btn--warning {
+    background-color: var(--pending-color);
+}
+
+/* Hover effects for all buttons */
+.btn:hover {
+    background-color: var(--background-dark);
+    color: var(--color-white);
+}
+
+
+/* Secondary Button */
+.btn--secondary {
+    background-color: var(--pending-color);
+}
+
+/* Success Button */
+.btn--success {
+    background-color: var(--success-color);
+}
+
+/* Error Button */
+.btn--error {
+    background-color: var(--error-color);
+}
+
+/* Info Button */
+.btn--info {
+    background-color: var(--info-color);
+}
+
+/* Warning Button */
+.btn--warning {
+    background-color: var(--pending-color);
+}
+
+/* Hover effects for all buttons */
+.btn:hover {
+    background-color: var(--background-dark);
+    color: var(--color-white);
+}
+
+/*DO NOT USE GLOBALLY - JUST FOR THE INFO PAGE */
+
+.welcome {
+    width: 100;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.bot-management-header {
+    background-color: var(--primary-color);
+    color: var(--color-white);
+    padding: 10px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.bot-management-body {
+    background-color: var(--background-transparent);
+    padding: 15px;
+}
+
+.bot-management-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: var(--background-dark);
+    color: var(--text-primary);
+    border-radius: 5px;
+}
+
+.actions-button,
+.add-bot-button {
+    padding: 8px 16px;
+    background-color: var(--primary-color);
+    color: var(--text-secondary);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.actions-button:hover,
+.add-bot-button:hover {
+    background-color: var(--color-pink-200);
+}
+
+.bot-management-footer {
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: var(--color-white);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+/*TOGGLE SWITCH */
+
+/* Custom Toggle Switch Styling */
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    /* Width of the switch */
+    height: 34px;
+    /* Height of the switch */
+}
+
+.toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* Slider */
+.toggle-switch .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--background-light);
+    /* Off state color */
+    transition: .4s;
+    border-radius: 34px;
+    /* Circular borders for the slider */
+}
+
+.toggle-switch .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: var(--primary-color);
+    transition: .4s;
+    border-radius: 50%;
+    /* Round shape */
+}
+
+input:checked+.slider {
+    background-color: var(--success-color);
+    /* On state color */
+}
+
+input:checked+.slider:before {
+    transform: translateX(26px);
+    /* Move circle to the right on toggle */
+}
+
+/* Optional: adding focus to input for keyboard accessibility */
+input:focus+.slider {
+    box-shadow: 0 0 1px var(--success-color);
+}
+
+/* Hover effects for enhanced user interaction */
+.slider:hover {
+    background-color: var(--color-green-300);
+    /* Lighter shade when hovered */
+}
+
+.slider {
+    /* Default styles for the slider */
+    background-color: #ccc;
+    /* Default off state in grey */
+    transition: 0.4s;
+}
+
+/* When the checkbox is checked, turn the slider red */
+input:checked+.slider {
+    background-color: red;
+}
+
+
+/* Dropdown Styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-button {
+    background-color: var(--primary-color);
+    color: var(--text-primary);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: var(--font-face-barlow), sans-serif;
+    font-size: var(--font-size-body-medium);
+    transition: background-color 0.3s;
+}
+
+.dropdown-button:hover {
+    background-color: var(--color-pink-200);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--background-light);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.dropdown-content a {
+    color: var(--text-secondary);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.dropdown-content a:hover {
+    background-color: var(--color-green-300);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.app-body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.layout-1000 {
+    width: 1000px;
+    height: 600px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    flex-shrink: 0;
+
+}
+
+
+}
+
+.panel--a {
+    width: 380px;
+    height: 255px;
+    color: var(--secondary-color);
+}
+
+
+/*WORK IN PROGRESS */
+
+.plan-card {
+    display: flex;
+    min-width: 210px;
+    min-height: 200px;
+    max-height: 403px;
+    padding: 32px;
+    flex-direction: column;
+    align-items: center;
+    background: var(--background-dark);
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+
+.widget-container-column {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+/*layoutStructure */
+.container-1 {
+    display: flex;
+    min-width: 250px;
+    max-width: 450px;
+    min-height: 400px;
+    max-height: 400px;
+    padding: 48px;
+    flex-direction: column;
+    gap: 48px;
+    border-radius: 10px;
+    border: 1px solid var(--Border-Glass-Border-Light-12, rgba(255, 255, 255, 0.12));
+    background: var(--Surface-Glass-Background-Dark-35, rgba(0, 0, 0, 0.35));
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+}
+
+.container-2 {
+    display: flex;
+    min-width: 650px;
+    max-width: 550px;
+    min-height: 400px;
+    max-height: 400px;
+    padding: 48px;
+    flex-direction: column;
+    gap: 48px;
+    border-radius: 10px;
+    border: 1px solid var(--Border-Glass-Border-Light-12, rgba(255, 255, 255, 0.12));
+    background: var(--Surface-Glass-Background-Dark-35, rgba(0, 0, 0, 0.35));
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+}
+
+/*ULTITY CLASSES */
+
+.center-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.row-2-items {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+.text-button {
+    color: #FFF;
+    background-color: transparent;
+    border-style: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: Barlow;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    position: fixed;
+    bottom: 0;
+}
+
+.text-button:hover {
+    color: rgba(255, 255, 255, 0.54);
+    cursor: pointer;
+}
+
+.cluster-card {
+    border-style: solid;
+    border-color: white;
+    width: 220px;
+    height: 200px;
+    padding: 0px;
+}
+
+.cluster-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+
+
+
+/* CORE LAYOUT */
+
+/* The idea is that this will be around a lot - can be used for silverback or any other stuff - it is where the windows live
+I think the best would be to start with the dock
+
+*/
+
+/*SIDEBAR*/
+/* THE SIDEBAR - is really the side dock in silverback - but can be used 
+as a traditional sidebar for websites */
+
+:root {
+    --sidebar-font-family-theme1: 'Barlow', sans-serif;
+}
+
+
+
+.sidebar {
+    width: 240px;
+    background-color: #263238;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    transition: width 0.29s;
+    font-family: var(--sidebar-font-family-theme1);
+    /* Glass Panel */
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+}
+
+.sidebar.collapsed {
+    width: 60px;
+}
+
+.sidebar .top-section,
+.sidebar .bottom-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar .top-section {
+    padding: 20px 10px;
+}
+
+.sidebar .bottom-section {
+    padding: 10px;
+}
+
+.sidebar.collapsed .top-section,
+.sidebar.collapsed .bottom-section {
+    align-items: center;
+}
+
+.sidebar .menu-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    transition: padding 0.3s;
+    cursor: pointer;
+}
+
+.sidebar.collapsed .menu-item {
+    justify-content: center;
+}
+
+.sidebar .menu-item:hover {
+    background-color: #37474F;
+}
+
+.sidebar.collapsed .menu-item img {
+    margin-right: 0;
+}
+
+.sidebar .menu-item span {
+    transition: opacity 0.3s;
+}
+
+.sidebar.collapsed .menu-item span {
+    opacity: 0;
+}
+
+.sidebar .menu-item .tag {
+    background-color: #007B83;
+    color: white;
+    font-size: 0.75rem;
+    padding: 2px 5px;
+    border-radius: 3px;
+    margin-left: auto;
+}
+
+.sidebar.collapsed .menu-item .tag {
+    display: none;
+}
+
+.sidebar .menu-item.bot {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidebar .toggle-btn {
+    margin-top: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.sidebar .menu-item .bot-icon {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #FF6B6B;
+    margin-right: 20px;
+}
+
+.sidebar.collapsed .menu-item .bot-icon {
+    margin-right: 0;
+}
+
+.sidebar .menu-item.bot .name {
+    flex-grow: 1;
+}
+
+.sidebar.collapsed .menu-item.bot .name {
+    display: none;
+}
+
+/*APP LAYOUT STRUCTURE */
+
+.app-window {
+    margin-left: 240px;
+    padding: 20px;
+    margin: 50px;
+    width: calc(100% - 240px);
+    box-sizing: border-box;
+    height: 100vh;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.091);
+
+}
+
+.app-top {
+    background-color: #1c1c1c;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    position: relative;
+}
+
+.app-top h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.app-top p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.app-top .bot-actions {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/*ICONS AND SUCH */
+
+.menu-item-img {
+    width: 62px;
+    height: 62px;
+}

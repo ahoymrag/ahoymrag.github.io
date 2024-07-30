@@ -1,0 +1,102 @@
+<html>
+    <head>
+        <title>ApeWorx - apeFramework</title>
+        <link rel="stylesheet" href="../ape-design-system.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        @keyframes waveAnimation {
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%;}
+        }
+
+        body {
+            color: white;
+            background: linear-gradient(135deg, #001f3f 0%, #003366 25%, #006666 50%, #003366 75%, #001f3f 100%);
+            background-size: 400% 400%;
+            animation: waveAnimation 15s ease infinite;
+            font-family: 'Barlow', sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            padding: 2rem;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #006666;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #004444;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="screen">
+            <div id="topLogo" class="component c1">
+                <div class="card--center-card">
+                    <img src="Apeworx_Icon_Grey-S.png" alt="ApeWorx Icon"
+                        class="logo logo--style-1">
+                </div>
+            </div>
+
+            <div class="content">
+                <h1>apeFramework</h1>
+                <h2>Build dApps with ease</h2>
+
+                <p>Ape Framework is an easy-to-use Web3 development tool. Users
+                    can compile, test, and interact with smart contracts all in
+                    one command line session. With our modular plugin system,
+                    Ape supports multiple contract languages and chains.</p>
+
+                <p>Ape is built by ApeWorX LTD.</p>
+
+                <h3>Key Features:</h3>
+                <ul>
+                    <li>Compile, test, and interact with smart contracts</li>
+                    <li>All-in-one command line session</li>
+                    <li>Modular plugin system</li>
+                    <li>Support for multiple contract languages and chains</li>
+                </ul>
+
+                <p>Join our ApeWorX Discord server to stay up to date on new
+                    releases, plugins, and tutorials.</p>
+
+                <div style="text-align: center; margin-top: 2rem;">
+                    <a href="#" class="cta-button">Get Started with
+                        Quickstart</a>
+                </div>
+            </div>
+
+            <div class="component c1" id="timeNtemp">
+                <div class="time-display" id="clock"></div>
+                <div class="temp-display" id="temp"></div>
+            </div>
+        </div>
+        <script>
+            function updateClock() {
+                const now = new Date();
+                const time = now.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
+                document.getElementById('clock').textContent = time;
+            }
+            setInterval(updateClock, 1000);
+            updateClock();
+        </script>
+    </body>
+</html>

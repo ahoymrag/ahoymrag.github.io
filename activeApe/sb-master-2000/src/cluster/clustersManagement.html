@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cluster ABC</title>
+        <link rel="stylesheet" href="../../../ape-design-system.css">
+        <style>
+    
+    body {
+            background-image: url(../../assets/sb-bg-2.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: white;
+        }
+
+
+        </style>
+    </head>
+
+    <body>
+        <!-- SIDEBAR-->
+        <div id="sidebar" class="default-sidebar"></div>
+        <!-- SIDEBAR -->
+        <style>
+            .--item-style-5 {
+                width: 100%; height: 100%; padding-top: 32px; padding-bottom: 32px; padding-left: 32px; padding-right: 24px; background: rgba(255, 255, 255, 0.05); box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); border-radius: 10px; border: 1px rgba(255, 255, 255, 0.12) solid; backdrop-filter: blur(24px); justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex
+            }
+
+            .screen {
+                margin-left: 300px;
+            }
+        </style>
+
+        <div class="screen center-screen--top">
+
+            <div class="component" id="bot-cluster-management">
+                <div class="block-header">
+                    <h1>YieldEnhancement Bot Cluster</h1>
+                </div>
+                <div id="edit-cluster-card" class="card --card-size-1">
+                    <div class="panel --panel-style-2">
+                        <div class="item-block --block-split-cols">
+                            <div class="col-1-9">
+                                <div class="block-body">
+                                    <h2>Edit Cluster</h2>
+                                    <p>Give the cluster a new name or slug.</p>
+                                </div>
+                            </div>
+                            <div class="col-2-1">
+                                <button class="btn--default">EDIT
+                                    CLUSTER</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="fund-cluster-card" class="card --card-size-1">
+                    <div class="panel --panel-style-2">
+                        <div class="item-block --block-split-cols">
+                            <div class="col-1-9">
+                                <div class="block-body">
+                                    <h2>Fund Bot Cluster</h2>
+                                    <p>This bot cluster will run out of funds in
+                                        26 days, at <strong>July 13, 2024 at
+                                            10:01 am EDT</strong>.</p>
+                                    <p>If you take no action, at that time this
+                                        bot cluster will cease functioning and
+                                        <strong>you will lose access to all of
+                                            your data</strong>.</p>
+                                </div>
+                            </div>
+                            <div class="col-2-1">
+                                <button class="btn--default">ADD FUNDS</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="shutdown-cluster-card" class="card --card-size-1">
+                    <div class="panel --panel-style-2">
+                        <div class="item-block --block-split-cols">
+                            <div class="col-1-9">
+                                <div class="block-body">
+                                    <h2>Shut Down Bot Cluster</h2>
+                                    <p>This will completely delete all bots and
+                                        data associated with this bot cluster.
+                                        Any funds not used will be returned to
+                                        the wallet you used to pay.</p>
+                                </div>
+                            </div>
+                            <div class="col-2-1">
+                                <button class="btn--default">SHUT DOWN BOT
+                                    CLUSTER</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="component" id="variable-groups">
+                <div class="block-header">
+                    <h2>Variable Groups</h2>
+                </div>
+                <div class="card --card-size-1">
+                    <div class="panel --panel-style-2">
+                        <div class="item-block">
+
+                            <div class="block-body">
+                                <p>Variable groups allow you to save a set of
+                                    related environment variables. These groups
+                                    can then be used to compose the environment
+                                    for multiple bots.</p>
+                                <button class="btn--default plus-button">+
+                                    CREATE VARIABLE GROUP</button>
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Variable Group</th>
+                                            <th>Variables</th>
+                                            <th>Last Updated</th>
+                                            <th>Revision</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Group 1</td>
+                                            <td>5</td>
+                                            <td>2023-09-01</td>
+                                            <td>1</td>
+                                            <td><button
+                                                    class="btn--default">EDIT</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Group 2</td>
+                                            <td>3</td>
+                                            <td>2023-08-15</td>
+                                            <td>2</td>
+                                            <td><button
+                                                    class="btn--default">EDIT</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Group 3</td>
+                                            <td>8</td>
+                                            <td>2023-07-20</td>
+                                            <td>3</td>
+                                            <td><button
+                                                    class="btn--default">EDIT</button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./loadSidebar.js"></script>
+
+        <script>
+        function toggleSidebar() {
+            document.getElementById('sidebar').classList.toggle('collapsed');
+        }
+    </script>
+    </body>
+
+</html>

@@ -1,0 +1,16 @@
+{
+    "organization": "Molly's Organization",
+    "menuItems": [
+        { "href": "overview.html", "icon": "📄", "text": "Overview" },
+        { "href": "dashboardMgmt.html", "icon": "📊", "text": "Dashboards" },
+        { "href": "workspaceMgmt.html", "icon": "🏠", "text": "Workspace Management" },
+        { "href": "settings.html", "icon": "🛠️", "text": "Settingzs" },
+        { "href": "clustersManagement.html", "icon": "🤖", "text": "DeFiGuardian" },
+        { "href": "clustersManagement.html", "icon": "🤖", "text": "YieldEnhancement" }
+    ],
+    "bottomSection": [
+        { "href": "#", "icon": "📁", "text": "Workspaces" },
+        { "href": "#", "icon": "📄", "text": "CLI Documentation" },
+        { "href": "#", "icon": "➖", "text": "Collapse Sidebar" }
+    ]
+}

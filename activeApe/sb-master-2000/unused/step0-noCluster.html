@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <title>User Signup</title>
+        <link rel="stylesheet" href="../../../ape-design-system.css">
+        <style>
+body {
+    background: linear-gradient(135deg, rgba(255, 0, 150, 0.3), rgba(0, 204, 255, 0.3));
+    animation: gradientBackground 15s ease infinite;
+    background-size: 400% 400%;
+}
+
+@keyframes gradientBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.glass-candy {
+    background-color: rgba(0, 0, 0, 0.951);
+}
+        </style>
+
+    </head>
+    <body>
+        <div class="app-body">
+            <!-- User Sign Up Section -->
+            <div class="container-content" id="create-new-cluster">
+                <div class="content-block-a">
+
+                    <div class="block-header header-block-vibe-1">
+                        <h1 class="heading-1 center">No bot clusters available
+                        </h1>
+                    </div>
+                    <div class="block-body body-block-vibe-1">
+                        <div class="description-block max-width-50">
+                            <p class="body-text">You'll need a bot
+                                cluster
+                                before
+                                you
+                                can deploy your robot army.
+                                <br><br>
+                                Create a cluster
+                                with
+                                the
+                                button below, or ask a colleague to invite you
+                                to
+                                an</p>
+                        </div>
+                    </div>
+                    <div class="block-footer center">
+                        <button type="button" class="btn btn--default"
+                            onclick="window.location.href='step1-select-plan.html'">Create
+                            Cluster</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <button class="text-button"
+            onclick="location.href='../index.html'">Back</button>
+
+    </body>
+</html>

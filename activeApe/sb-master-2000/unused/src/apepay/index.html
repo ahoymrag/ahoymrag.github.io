@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Ape Pay, the greatest payment streaming tool on earth." />
+    <meta name="keywords" content="Ape Pay, Payment, Streaming, Tool" />
+    <meta name="author" content="ApeWorX" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <!--link rel="stylesheet" href="../apepay/bubbles.css" /-->
+    <!--link rel="stylesheet" href="../apepay/apepay.css" /-->
+    <link rel="stylesheet" href="../index.css">
+    <title>Ape Pay</title>
+  </head>
+
+  <body id="apepay-productpage-body-index" class="apepay-color">
+    <div class="apepay-productpage-container">
+      <a
+        href="https://github.com/ApeWorX/ape"
+        class="github-link"
+        target="_blank"
+        rel="nofollow"
+        ><img src="./logo.png" alt="Logo" class="logo" />
+      </a>
+      <div class="full-width-wrap">
+        <a id="infoBtn" class="info-btn">
+          Learn More
+        </a>
+      </div>
+      <a href="https://github.com/ApeWorX/ApePay" rel="nofollow" target="_blank">OPEN SDK</a>
+
+      <div class="panel--a">
+<div class="block-container">
+  <div class="block-common-description">
+    <h1>APEPAY</h1>
+    <p class="body-text">
+      Born from chaos
+      <a
+        href="https://twitter.com/ApeFramework/status/1666214856478052352"
+        target="_blank"
+        >here</a
+      >
+      and engineered to be the greatest payment streaming tool on earth,
+      we're proud to present ApePay
+    </p>
+
+
+    <h2 class="headline-2">Here's everything you need to know about ApePay:</h2>
+    <h3 class="headline-3">Censorship-Resistant:</h3>
+    <p class="body-text">
+      Stream payments to anyone around the world, at any time, for
+      whatever you desire.
+    </p>
+    <h3 class="headline-3">Easy to Deploy:</h3>
+    <p class="body-text">
+      If you can set up XXXXX, then you can set up ApePay. Think of it
+      like a Patreon-in-a-box!
+    </p>
+    <h3 class="headline-3">Extremely Scalable:</h3>
+    <p class="body-text">
+      Scales from 1 person to 8 billion. Just set it up and start
+      receiving cash.
+    </p>
+    <h3 class="headline-3">Full User Control:</h3>
+    <p class="body-text">
+      Start, Pause, and Stop payments whenever you like, no cancellation
+      fee or predatory pricing allowed.
+    </p>
+    <h3 class="headline-3">Zero Downtime:</h3>
+    <p class="body-text">
+      Ethereum's uptime is
+      <a href="https://etherscan.io/chart/blocks">100%</a>
+      thus so is ApePay. <br />
+      Beat that
+      <a
+        href="https://fortune.com/2019/07/11/stripe-outage-technology-payment-processing/"
+        target="_blank"
+        >Stripe</a
+      >.
+    </p>
+    <h3 class="headline-3">Fully Accessible:</h3>
+    <p class="body-text">
+      4,343,879,274 people can't use Stripe* 0 people can't use ApePay.
+      <br />*probably not an accurate figure since we made it up.
+    </p>
+    <h2 class="headline-2">
+      Wanna know more? Read our full post about it here:
+      <a
+        href="https://mirror.xyz/apeworx.eth/XPAko-Ez-BqHJF5zaB9sG8kfuDutNn1TqPg4827C7fw"
+        target="_blank"
+        >https://mirror.xyz/apeworx.eth/XPAko-Ez-BqHJF5zaB9sG8kfuDutNn1TqPg4827C7fw</a
+      >
+    </h2>
+    <h2>Try out ApePay today and feel the magic (apepay gh)</h2>
+    <h2 class="headline-2">Support:</h2>
+    <p class="body-text">
+      Need help? Don't sweat it. We'd be glad to help you through
+      everything:
+      <a href="https://discord.com/invite/apeworx" target="_blank"
+        >https://discord.com/invite/apeworx</a
+      >
+    </p>
+  </div>
+</div>
+</div>
+         
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <a href="../index.html"><img src="./apeFull.png" class="footer-logo" /></a>
+    </footer>
+
+    <div id="bubbles"></div>
+    <div id="bubbles2"></div>
+    <div id="bubbles3"></div>
+
+    <!-- JS-->
+    <script>
+      var modal = document.getElementById("myModal");
+      var btn = document.getElementById("infoBtn");
+      var span = document.getElementsByClassName("close")[0];
+      btn.onclick = function () {
+        modal.style.display = "block";
+      };
+
+      span.onclick = function () {
+        modal.style.display = "none";
+      };
+
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
+
+    <!-- Bubble effect JS -->
+    <script>
+      let bubleArr = [];
+      document.addEventListener("mousemove", (e) => {
+        let bubles = document.createElement("bubles");
+        let x = e.pageX;
+        let y = e.pageY;
+        let size = Math.random() * 60;
+        bubles.style.width = 1 + size + "px";
+        bubles.style.height = 1 + size + "px";
+        bubles.style.left = x - size / 2 + "px";
+        bubles.style.top = y - size / 2 + "px";
+        document.body.appendChild(bubles);
+        setTimeout(function () {
+          bubles.remove();
+        }, 5000);
+      });
+    </script>
+  </body>
+</html>

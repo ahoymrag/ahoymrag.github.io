@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cluster ABC Total Overview</title>
+        <link rel="stylesheet" href="../../../ape-design-system.css">
+        <style>
+        body {
+            background-image: url(../../assets/sb-bg-2.png);
+            background-size: cover;
+            color: white;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header h1 {
+            font-size: 24px;
+        }
+
+        .sidebar {
+            width: 300px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            border-radius: 10px;
+            backdrop-filter: blur(24px);
+        }
+
+        .main-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .chart-container {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            border-radius: 10px;
+            backdrop-filter: blur(24px);
+        }
+
+        .bot-activity {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            border-radius: 10px;
+            backdrop-filter: blur(24px);
+        }
+
+        .event-log {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            border-radius: 10px;
+            backdrop-filter: blur(24px);
+        }
+
+        .calendar {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            border-radius: 10px;
+            backdrop-filter: blur(24px);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        tr:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+    </style>
+    </head>
+
+    <body>
+
+        <!-- SIDEBAR-->
+        <div id="sidebar" class="default-sidebar"></div>
+        <!-- SIDEBAR -->
+
+        <div class="container" style="margin-left: 300px;">
+            <div class="header">
+                <h1>CLUSTER ABC Total Overview</h1>
+                <div>
+                    <button class="btn--default">Clusters</button>
+                    <button class="btn--default">Account</button>
+                    <button class="btn--default">Sign Out</button>
+                </div>
+            </div>
+            <div class="main-content">
+                <div class="chart-container">
+                    <h2>Displaying CLUSTER B Balance Overtime + Gas Over
+                        Time</h2>
+                    <div id="chart"></div>
+                    <div>
+                        <button class="btn--default"
+                            onclick="showScatterPlot()">Scatter Plot</button>
+                        <button class="btn--default"
+                            onclick="showCirclePacking()">Circle
+                            Packing</button>
+                        <button class="btn--default"
+                            onclick="showForceDirectGraph()">Force Direct
+                            Graph</button>
+                    </div>
+                </div>
+                <div class="bot-activity">
+                    <h2>Bot Activity in Cluster ABC</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>BOT NAMES</th>
+                                <th>Running Status</th>
+                                <th>Date 1</th>
+                                <th>Date 2</th>
+                                <th>Balance</th>
+                                <th>Notifications</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Bryant Bot A</td>
+                                <td>ACTIVE</td>
+                                <td>11.24.45</td>
+                                <td>11.24.45</td>
+                                <td>500ETH</td>
+                                <td>Detail Link</td>
+                            </tr>
+                            <tr>
+                                <td>The Other Bot B</td>
+                                <td>ACTIVE</td>
+                                <td>11.32.23</td>
+                                <td>1.31.24</td>
+                                <td>500ETH</td>
+                                <td>Detail Link</td>
+                            </tr>
+                            <tr>
+                                <td>The Still Other Bot C</td>
+                                <td>ACTIVE</td>
+                                <td>11.24.45</td>
+                                <td>1.31.24</td>
+                                <td>430ETH</td>
+                                <td>Detail Link</td>
+                            </tr>
+                            <tr>
+                                <td>The Still Other Bot D</td>
+                                <td>ACTIVE</td>
+                                <td>11.24.45</td>
+                                <td>1.31.24</td>
+                                <td>500ETH</td>
+                                <td>Detail Link</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="event-log">
+                    <h2>Event Log</h2>
+                    <div id="event-log-content">
+                        <!-- Event log content here -->
+                    </div>
+                    <button class="btn--default">VIEW FULL EVENT LOG</button>
+                </div>
+                <div class="calendar">
+                    <h2>February 2035</h2>
+                    <div id="calendar-content">
+                        <!-- Calendar content here -->
+                    </div>
+                    <button class="btn--default">VIEW HISTORY LOG</button>
+                </div>
+            </div>
+        </div>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+        <script src="https://d3js.org/d3.v6.min.js"></script>
+        <script src="./loadSidebar.js"></script>
+        <script>
+        function toggleSidebar() {
+            document.getElementById('sidebar').classList.toggle('collapsed');
+        }
+
+        // Data for the graphs
+        const data = [
+            { name: "Bryant Bot A", status: "ACTIVE", date1: "11.24.45", date2: "11.24.45", balance: 500, notifications: "Detail Link" },
+            { name: "The Other Bot B", status: "ACTIVE", date1: "11.32.23", date2: "1.31.24", balance: 500, notifications: "Detail Link" },
+            { name: "The Still Other Bot C", status: "ACTIVE", date1: "11.24.45", date2: "1.31.24", balance: 430, notifications: "Detail Link" },
+            { name: "The Still Other Bot D", status: "ACTIVE", date1: "11.24.45", date2: "1.31.24", balance: 500, notifications: "Detail Link" }
+        ];
+
+        function showScatterPlot() {
+            // Clear existing chart
+            d3.select("#chart").html("");
+
+            const svg = d3.select("#chart").append("svg")
+                .attr("width", 600)
+                .attr("height", 400);
+
+            const margin = { top: 20, right: 30, bottom: 40, left: 40 },
+                width = +svg.attr("width") - margin.left - margin.right,
+                height = +svg.attr("height") - margin.top - margin.bottom;
+
+            const g = svg.append("g").attr("transform", `translate(${margin.left},${margin.top})`);
+
+            const x = d3.scaleLinear().rangeRound([0, width]);
+            const y = d3.scaleLinear().rangeRound([height, 0]);
+
+            x.domain(d3.extent(data, d => d.balance));
+            y.domain(d3.extent(data, d => new Date(d.date2) - new Date(d.date1)));
+
+            g.append("g")
+                .attr("transform", `translate(0,${height})`)
+                .call(d3.axisBottom(x))
+                .append("text")
+                .attr("fill", "#000")
+                .attr("x", width)
+                .attr("dy", "2.5em")
+                .attr("text-anchor", "end")
+                .text("Balance");
+
+            g.append("g")
+                .call(d3.axisLeft(y))
+                .append("text")
+                .attr("fill", "#000")
+                .attr("dy", "-1.5em")
+                .attr("text-anchor", "end")
+                .text("Time Difference");
+
+            g.selectAll("circle")
+                .data(data)
+                .enter().append("circle")
+                .attr("cx", d => x(d.balance))
+                .attr("cy", d => y(new Date(d.date2) - new Date(d.date1)))
+                .attr("r", 5)
+                .attr("fill", "blue")
+                .call(d3.drag()
+                    .on("start", dragstarted)
+                    .on("drag", dragged)
+                    .on("end", dragended));
+        }
+
+        function showCirclePacking() {
+            // Clear existing chart
+            d3.select("#chart").html("");
+
+            const svg = d3.select("#chart").append("svg")
+                .attr("width", 600)
+                .attr("height", 400);
+
+            const width = +svg.attr("width"),
+                height = +svg.attr("height");
+
+            const pack = d3.pack()
+                .size([width, height])
+                .padding(1.5);
+
+            const root = d3.hierarchy({ children: data })
+                .sum(d => d.balance);
+
+            const node = svg.selectAll(".node")
+                .data(pack(root).leaves())
+                .enter().append("g")
+                .attr("class", "node")
+                .attr("transform", d => `translate(${d.x},${d.y})`);
+
+            node.append("circle")
+                .attr("r", d => d.r)
+                .attr("fill", "lightblue")
+                .call(d3.drag()
+                    .on("start", dragstarted)
+                    .on("drag", dragged)
+                    .on("end", dragended));
+
+            node.append("text")
+                .attr("dy", 3)
+                .attr("text-anchor", "middle")
+                .text(d => d.data.name);
+        }
+
+        function showForceDirectGraph() {
+            // Clear existing chart
+            d3.select("#chart").html("");
+
+            const svg = d3.select("#chart").append("svg")
+                .attr("width", 600)
+                .attr("height", 400);
+
+            const width = +svg.attr("width"),
+                height = +svg.attr("height");
+
+            const simulation = d3.forceSimulation(data)
+                .force("charge", d3.forceManyBody().strength(-200))
+                .force("center", d3.forceCenter(width / 2, height / 2))
+                .force("link", d3.forceLink().id(d => d.name))
+                .force("collide", d3.forceCollide().radius(d => d.balance / 10 + 5));
+
+            const link = svg.append("g")
+                .attr("class", "links")
+                .selectAll("line")
+                .data(data)
+                .enter().append("line")
+                .attr("stroke-width", 1.5)
+                .attr("stroke", "#999");
+
+            const node = svg.append("g")
+                .attr("class", "nodes")
+                .selectAll("circle")
+                .data(data)
+                .enter().append("circle")
+                .attr("r", d => d.balance / 10)
+                .attr("fill", "orange")
+                .call(d3.drag()
+                    .on("start", dragstarted)
+                    .on("drag", dragged)
+                    .on("end", dragended));
+
+            node.append("title")
+                .text(d => d.name);
+
+            simulation
+                .nodes(data)
+                .on("tick", ticked);
+
+            function ticked() {
+                link
+                    .attr("x1", d => d.x)
+                    .attr("y1", d => d.y)
+                    .attr("x2", d => d.x)
+                    .attr("y2", d => d.y);
+
+                node
+                    .attr("cx", d => d.x)
+                    .attr("cy", d => d.y);
+            }
+        }
+
+        function dragstarted(event, d) {
+            if (!event.active) simulation.alphaTarget(0.3).restart();
+            d.fx = d.x;
+            d.fy = d.y;
+        }
+
+        function dragged(event, d) {
+            d.fx = event.x;
+            d.fy = event.y;
+        }
+
+        function dragended(event, d) {
+            if (!event.active) simulation.alphaTarget(0);
+            d.fx = null;
+            d.fy = null;
+        }
+    </script>
+    </body>
+
+</html>

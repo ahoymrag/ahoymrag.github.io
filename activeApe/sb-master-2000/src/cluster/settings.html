@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Workspace Settings - Silverback</title>
+        <link rel="stylesheet" href="../../../ape-design-system.css">
+        <style>
+        body {
+            background-image: url(../../assets/sb-bg-2.png);
+            background-position: cover;
+            color: white;
+        }
+
+        .item-block {
+            flex: 1 1 0;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 16px;
+            display: inline-flex;
+        }
+
+        .item-block .title {
+            align-self: stretch;
+            color: white;
+            font-size: 20px;
+            font-family: Barlow;
+            font-weight: 600;
+            line-height: 24px;
+            word-wrap: break-word;
+        }
+
+        .item-block .description {
+            align-self: stretch;
+            color: white;
+            font-size: 16px;
+            font-family: Barlow;
+            font-weight: 400;
+            line-height: 24px;
+            word-wrap: break-word;
+        }
+
+        .item-block .icon-container {
+            width: 32px;
+            align-self: stretch;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            display: flex;
+        }
+
+        .item-block .icon {
+            width: 32px;
+            height: 32px;
+            position: relative;
+        }
+
+        .item-block .icon .inner-icon {
+            width: 16px;
+            height: 16px;
+            left: 8px;
+            top: 8px;
+            position: absolute;
+            border: 2px white solid;
+        }
+        </style>
+    </head>
+
+    <body>
+        <!-- SIDEBAR-->
+        <div id="sidebar" class="default-sidebar"></div>
+        <!-- SIDEBAR -->
+
+        <style>
+            .--item-style-5 {
+                width: 100%; height: 100%; padding-top: 32px; padding-bottom: 32px; padding-left: 32px; padding-right: 24px; background: rgba(255, 255, 255, 0.05); box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); border-radius: 10px; border: 1px rgba(255, 255, 255, 0.12) solid; backdrop-filter: blur(24px); justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex
+            }
+        </style>
+
+        <div class="screen center-screen--top --screen-sidebar-active">
+
+            <div class="component">
+                <div class="card --card-size-1">
+                    <div class="panel --panel-style-2">
+                        <div class="item-block">
+                            <div class="block-header">
+                                <h2>Workspace Management</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="component --component-size-2" id="workspace-settings">
+                <div class="card" style="max-width: 65%">
+
+                    <div class="panel --panel-style-2">
+                        <div class="item-block --block-split-cols">
+                            <div class="col-1-9">
+                                <div class="block-header">
+                                    <h2>Manage Your Workspace</h2>
+                                    <p class="body-text">
+                                        Configure your workspace settings here.
+                                    </p>
+                                </div>
+                                <div class="col-2-1">
+                                    <div class="block-body">
+                                        <button
+                                            class="btn--default plus-button">Save
+                                            Settings</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script src="./loadSidebar.js"></script>
+            <script>
+        function toggleSidebar() {
+            document.getElementById('sidebar').classList.toggle('collapsed');
+        }
+    </script>
+        </body>
+
+    </html>

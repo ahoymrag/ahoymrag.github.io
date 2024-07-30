@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+body {
+  font-family: "Press Start 2P";
+  background-color: #ff0062dd;
+  background-image: url("chaosBG.gif");
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  font-family: "Press Start 2P";
+  margin: 0;
+  padding: 0;
+  min-width: 100%;
+}
+
+.container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  filter: invert(1);
+}
+
+.logo:hover {
+  filter: invert(0);
+}
+
+.github-link {
+  font-size: 18px;
+  text-decoration: none;
+  width: 500px;
+  height: auto;
+}
+
+.chaos-menu {
+  display: flex;
+  flex-direction: column;
+  min-width: 500px !important;
+  justify-content: space-between;
+}
+
+.chaos-menu a {
+  flex: 1;
+  text-align: center;
+}
+
+/* FOOTER */
+footer {
+  position: absolute;
+  bottom: 0;
+  min-width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 40px;
+}
+
+.footer-logo {
+  width: 64px;
+  height: 64px;
+}
+
+.footer-logo:hover {
+  filter: invert(1);
+  animation: horizontal-shaking 0.2s infinite;
+}
+
+/* Shake effect when hovering on logo */
+@keyframes horizontal-shaking {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(5px);
+  }
+  50% {
+    transform: translateX(-5px);
+  }
+  75% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/*Links*/
+.link-text,
+.link-text-launch {
+  color: black;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.link-text {
+  font-size: 12px;
+}
+
+.link-text-launch {
+  font-size: 16px;
+  padding: 10px;
+}
+
+.link-text:hover,
+.link-text-launch:hover {
+  color: white;
+}
+
+/* YT Popup */
+.popup-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.popup-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Mirror popup */
+#whitepaperPopup {
+  background-color: rgba(42, 42, 42, 0.392);
+}
+
+#whitepaperPopup .popup-content {
+  width: 800px;
+  max-height: 500px;
+  overflow-y: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#whitepaperPopup iframe {
+  position: absolute;
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+  border-color: grey;
+  border-width: 30px;
+}
+
+/* RESPONSIVENESS */
+@media only screen and (max-width: 600px) {
+  .logo {
+    max-width: 250px;
+  }
+}
