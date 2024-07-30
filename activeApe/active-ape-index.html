@@ -20,10 +20,11 @@
             body {
                 background-color: #000;
                 color: #00ff00;
-                font-family: 'Courier New', monospace;
+                font-family: 'VT323', 'Courier New', monospace;
                 margin: 0;
                 padding: 20px;
                 line-height: 1.6;
+                cursor: none;
             }
 
             .header-main-wrap, main, section {
@@ -124,39 +125,117 @@
                 pointer-events: none;
                 animation: flicker 0.15s infinite;
             }
+
+            /* Custom cursor */
+            #cursor {
+                position: fixed;
+                width: 10px;
+                height: 20px;
+                background-color: #00ff00;
+                pointer-events: none;
+                z-index: 9999;
+            }
+
+            /* Typewriter effect */
+            .typewriter {
+                overflow: hidden;
+                border-right: .15em solid #00ff00;
+                white-space: nowrap;
+                margin: 0 auto;
+                letter-spacing: .15em;
+                animation: 
+                    typing 3.5s steps(40, end),
+                    blink-caret .75s step-end infinite;
+            }
+
+            @keyframes typing {
+                from { width: 0 }
+                to { width: 100% }
+            }
+
+            @keyframes blink-caret {
+                from, to { border-color: transparent }
+                50% { border-color: #00ff00; }
+            }
+
+            /* Glitch effect */
+            .glitch {
+                position: relative;
+            }
+
+            .glitch::before,
+            .glitch::after {
+                content: attr(data-text);
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+
+            .glitch::before {
+                left: 2px;
+                text-shadow: -2px 0 #ff00ff;
+                clip: rect(44px, 450px, 56px, 0);
+                animation: glitch-anim 1.5s infinite linear alternate-reverse;
+            }
+
+            .glitch::after {
+                left: -2px;
+                text-shadow: -2px 0 #00ffff;
+                clip: rect(44px, 450px, 56px, 0);
+                animation: glitch-anim 5s infinite linear alternate-reverse;
+            }
+
+            @keyframes glitch-anim {
+                0% { clip: rect(31px, 9999px, 94px, 0); }
+                5% { clip: rect(70px, 9999px, 71px, 0); }
+                10% { clip: rect(29px, 9999px, 83px, 0); }
+                /* ... (add more keyframes as desired) ... */
+                100% { clip: rect(67px, 9999px, 62px, 0); }
+            }
         </style>
     </head>
 
     <body>
+        <div id="cursor"></div>
         <header>
             <div class="header-main-wrap">
                 <div class="header-content-wrap">
                     <div class="header-content-title-wrap">
-                        <h1>Active Ape Projects</h1>
+                        <h1 class="glitch"
+                            data-text="Active Ape Projects">Active Ape
+                            Projects</h1>
                     </div>
                     <div class="header-content-menu-wrap">
                         <ul class="nav-ul">
                             <li><a href="./index.html"><div
-                                        class="header-button"><h3>Home</h3></div></a></li>
+                                        class="header-button"><h3
+                                            class="typewriter">Home</h3></div></a></li>
 
                             <li><a href="./suite/master-suite.html"><div
-                                        class="header-button"><h3>Master
+                                        class="header-button"><h3
+                                            class="typewriter">Master
                                             Suite</h3></div></a></li>
                             <li><a
                                     href="./sb-master-2000/src/cluster/dashboardMgmt.html"><div
-                                        class="header-button"><h3>Dashboard
+                                        class="header-button"><h3
+                                            class="typewriter">Dashboard
                                             Management</h3></div></a></li>
                             <li><a
                                     href="./sb-master-2000/src/index_guide.html"><div
-                                        class="header-button"><h3>Design
+                                        class="header-button"><h3
+                                            class="typewriter">Design
                                             Guide</h3></div></a></li>
                             <li><a
                                     href="./sb-master-2000/src/cluster/clustersOverview.html"><div
-                                        class="header-button"><h3>Clusters
+                                        class="header-button"><h3
+                                            class="typewriter">Clusters
                                             Overview</h3></div></a></li>
                             <li><a
                                     href="./sb-master-2000/src/create-cluster/create-1.html"><div
-                                        class="header-button"><h3>Create
+                                        class="header-button"><h3
+                                            class="typewriter">Create
                                             Cluster</h3></div></a></li>
 
                         </ul>
@@ -165,8 +244,39 @@
             </div>
         </header>
 
+        <main>
+            <p class="typewriter">Welcome to the Active Ape Projects terminal.
+                Select your mission:</p>
+            <!-- Add more content here -->
+        </main>
+
         <footer>
-            <p class="footer-copy">MMXXIV</p>
+            <p class="footer-copy typewriter">MMXXIV</p>
         </footer>
+
+        <script>
+            // Custom cursor movement
+            document.addEventListener('mousemove', (e) => {
+                const cursor = document.getElementById('cursor');
+                cursor.style.left = e.clientX + 'px';
+                cursor.style.top = e.clientY + 'px';
+            });
+
+            // Typewriter effect for dynamic content
+            function typeWriter(element, text, i = 0) {
+                if (i < text.length) {
+                    element.innerHTML += text.charAt(i);
+                    i++;
+                    setTimeout(() => typeWriter(element, text, i), 50);
+                }
+            }
+
+            // Apply typewriter effect to elements with 'typewriter' class
+            document.querySelectorAll('.typewriter').forEach(el => {
+                const text = el.textContent;
+                el.textContent = '';
+                typeWriter(el, text);
+            });
+        </script>
     </body>
 </html>
