@@ -1,4 +1,4 @@
-/* ApeWoRX Design System 001 */
+/* ApeWoRX Design System 001.5 */
 
 /* This code presently can be found on
 1. block-structure-demo.html
@@ -476,6 +476,17 @@ tr:hover {
 /* Typography */
 
 
+.body-text {
+    color: white;
+    font-size: 16px;
+    font-family: Barlow;
+    font-weight: 400;
+    line-height: 24px;
+    word-wrap: break-word
+}
+
+
+
 .headline {
     font-size: var(--font-size-headline);
     font-weight: var(--font-weight-bold);
@@ -558,6 +569,19 @@ tr:hover {
     font-family: var(--font-face-barlow);
     margin: 10px;
 }
+
+
+/*STYLING THE BODY OF WHATEVER */
+
+.body-background-matteDark {
+    background-color: darkslategrey;
+}
+
+
+
+
+
+
 
 /* - - - - - - 4. LAYOUT AND PAGE STRUCTURE 4. - - -  */
 
@@ -1095,7 +1119,9 @@ screen
 }
 
 
-/* 5.1.4 - - - Invitation Accept Button - - - */
+/* 5.1.4 - - - BUTTON STYLES FOR DIFFERENT 
+THINGS
+Invitation Accept Button - - - */
 
 .--btn-style-invitation-accept {
     background-color: var(--invitation-accept-inactive);
@@ -1180,11 +1206,6 @@ screen
 /* CORE COMPONENT STRUCTURE -------
 ------
 --------
-------
---------
-------
---------------
---------------
 --------------
 --------
 Component
@@ -1466,11 +1487,53 @@ DIFFERENT STYLES INCLUDE
 }
 
 .--card-size-1 {
-    width: 600px;
-    height: auto;
-    margin: 10px;
+    max-width: 467px;
+    width: 90%;
+    /* Use percentage for responsiveness */
+    min-height: 400px;
+
+    /* Center the card */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /* Make it responsive */
+    @media (max-width: 900px) {
+        width: 95%;
+        min-height: 300px;
+    }
+
+    @media (max-width: 600px) {
+        width: 100%;
+        min-height: 200px;
+    }
 }
 
+.splash-card {
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.splash-card h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 92px;
+    font-family: Barlow, sans-serif;
+    font-weight: 900;
+    line-height: 101.20px;
+    word-wrap: break-word;
+}
+
+.splash-card p {
+    color: white;
+    color: white;
+    font-size: 16px;
+    font-family: Barlow;
+    font-weight: 400;
+    line-height: 24px;
+    word-wrap: break-word;
+}
 
 /*TYPES AND VARIENTS OF CARDS */
 
@@ -1511,7 +1574,18 @@ DIFFERENT STYLES INCLUDE
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     backdrop-filter: blur(12px);
     padding: 20px;
+}
 
+
+.--panel-style-2-hiJosh {
+    border-radius: 10px;
+    border: 1px solid var(--Border-Glass-Border-Light-12, rgba(255, 255, 255, 0.12));
+    background: var(--surface-white-opacity-05-placeholder, rgba(255, 255, 255, 0.05));
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(12px);
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .--panel-style-3 {
