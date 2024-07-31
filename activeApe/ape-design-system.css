@@ -274,6 +274,10 @@ Table of Contents
 
 
 
+/* AUTHOR NOTES 
+
+1. Added - Max Container - with the hopes of replacing "screen" - justmakes more sense
+i was getting confused"
 
 
 
@@ -575,6 +579,26 @@ tr:hover {
 
 .body-background-matteDark {
     background-color: darkslategrey;
+}
+
+.body-background-matteGlass {
+    background: linear-gradient(45deg, rgba(47, 79, 79, 0.7), rgba(25, 25, 25, 0.7));
+    backdrop-filter: blur(10px);
+    animation: gradientShift 15s ease infinite;
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 
@@ -1047,16 +1071,45 @@ screen
     justify-content: center;
     align-items: center;
     gap: 8px;
-    background-color: black;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2));
     color: white;
-    border: 1px solid white;
-    padding: 10px 20px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.3);
     text-transform: uppercase;
     font-weight: bold;
     cursor: pointer;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.--action-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.3));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.--action-button:hover {
+    transform: translateY(2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.--action-button:hover::before {
+    opacity: 1;
+}
+
+.--action-button:active {
+    transform: translateY(4px);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .--action-buton .arrow {
@@ -1237,6 +1290,14 @@ each of these have styles - see below
     @media (max-width: 600px) {
         flex-direction: column;
     }
+}
+
+.max-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
 }
 
 .item-container {
@@ -1577,7 +1638,7 @@ DIFFERENT STYLES INCLUDE
 }
 
 
-.--panel-style-2-hiJosh {
+.--panel-style-2b {
     border-radius: 10px;
     border: 1px solid var(--Border-Glass-Border-Light-12, rgba(255, 255, 255, 0.12));
     background: var(--surface-white-opacity-05-placeholder, rgba(255, 255, 255, 0.05));
@@ -1586,6 +1647,13 @@ DIFFERENT STYLES INCLUDE
     padding: 20px;
     max-width: 800px;
     margin: 0 auto;
+}
+
+.--panel-style-2b h1,
+h2,
+h3,
+p {
+    color: white;
 }
 
 .--panel-style-3 {
