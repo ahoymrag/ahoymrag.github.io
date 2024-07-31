@@ -184,7 +184,6 @@ Table of Contents
 // ...
 */
 
-Note about Items - the Smallest Denominator items can have 1. Cluster Cards 2. Bots Inside of them Items are like backpacks - that mini Components can go into - or instances ^^^ more on this later
 /*Table of Contents of this document */
 
 
@@ -1360,16 +1359,16 @@ screen itself
 .--component-size-1 {
     width: 100%;
     max-width: 768px;
-    margin: 20px;
+    margin: 1.25rem;
     overflow: hidden;
-    padding: 20px;
+    padding: 1.25rem;
 }
 
 .--component-size-2 {
     width: 100%;
     max-width: 1440px;
-    margin: 15px;
-    margin-bottom: 100px !important;
+    margin: 0.9375rem;
+    margin-bottom: 6.25rem !important;
 }
 
 .--component-size-full {
