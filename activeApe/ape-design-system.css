@@ -1619,6 +1619,27 @@ DIFFERENT STYLES INCLUDE
 }
 
 
+.card--center-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.logo--style-1 {
+    margin-top: 15px;
+    width: 400px;
+    height: auto;
+    filter: brightness(100);
+    transition: transform 0.3s ease;
+}
+
+.logo--style-1:hover {
+    cursor: pointer;
+    transform: scale(1.051);
+}
+
+
 
 /*BLOCK AND PANEL AND ITEM STYLES */
 
