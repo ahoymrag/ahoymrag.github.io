@@ -346,6 +346,7 @@ li,
 ul {
     font-family: var(--font-face-barlow);
     margin: 0;
+    font-weight: 400;
 }
 
 /* 2.3 = COLOR LOGIC  */
@@ -479,6 +480,10 @@ tr:hover {
 /* - - - - - 3 TYPOGRAPHY - - - - - */
 /* Typography */
 
+.header-text {
+    color: white;
+    font-weight: 500;
+}
 
 .body-text {
     color: white;
