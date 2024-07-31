@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>User Signup - Step 6 - NAME A CLUSTER</title>
+        <link rel="stylesheet" href="../../../ape-design-system.css">
+        <style>
+            body {
+                background: url('../../assets/sb-bg-2.png') no-repeat center center fixed;
+                background-size: cover;
+            }
+
+             /* Center the component on the screen */
+.center-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* Dark theme background */
+body {
+    background: url('../../assets/sb-bg-2.png') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    font-family: 'Barlow', sans-serif;
+}
+
+/* Glass effect for the panel */
+.glass-panel {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    margin: 20px;
+}
+
+
+
+.text-button {
+    background: none;
+    border: none;
+    color: #ffffff;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+        </style>
+    </head>
+    <body>
+        <div class="screen center-screen">
+            <div class="component glass-panel" id="step6-container">
+                <div class="block ">
+                    <div id="panel-container-manage-cluster"
+                        class="panel --panel-style-Clear">
+                        <div class="item-block">
+                            <div class="block-header --block-header-style-2">
+                                Manage Cluster
+                            </div>
+                            <div class="block-body --block-body-style-2">
+                                <p class="body--small">Your payment for this
+                                    cluster has been processed. Now it’s time to
+                                    give your bot cluster a memorable name.</p>
+                                <br>
+                                <input class="text-inputs-section" type="text"
+                                    placeholder="Enter cluster name">
+                                <br>
+                                <p class="body--small">Next, you’ll be able to
+                                    invite other users to this cluster and set
+                                    up bots.</p>
+                            </div>
+                            <div class="block-footer">
+                                <div class="panel --panel-style-4">
+                                    <div class="item-block">
+                                        <button class="btn btn--default"
+                                            onclick="location.href='../../src/index-cluster/index-cluster.html'">Next</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="text-button"
+            onclick="location.href='step4-apePay-2.html'">Back</button>
+    </body>
+</html>
