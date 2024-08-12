@@ -4,33 +4,41 @@
         <link rel="stylesheet" href="../ape-design-system.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
-        
-        @keyframes waveAnimation {
-            0% {background-position: 0% 50%;}
-            50% {background-position: 100% 50%;}
-            100% {background-position: 0% 50%;}
-        }
-
-        body {
+            :root {
+                --mastersuite-gradient-color-1: #001f3f;
+                --mastersuite-gradient-color-2: #250000;
+                --mastersuite-gradient-color-3: #002e66;
+                --mastersuite-gradient-color-4: #003366;
+                --mastersuite-gradient-color-5: #001f3f;
+                --mastersuite-ripple-duration: 15s;
+            }
+            
+            .body-masterSuite {
                 color: white;
-                background: linear-gradient(135deg, #001f3f 0%, #003366 25%, #006666 50%, #003366 75%, #001f3f 100%);
-                background-size: 400% 400%;
-                animation: waveAnimation 15s ease infinite;
+                background: radial-gradient(
+                    circle at center,
+                    var(--mastersuite-gradient-color-1) 0%,
+                    var(--mastersuite-gradient-color-2) 25%,
+                    var(--mastersuite-gradient-color-3) 50%,
+                    var(--mastersuite-gradient-color-4) 75%,
+                    var(--mastersuite-gradient-color-5) 100%
+                );
+                background-size: 200% 200%;
+                animation: rippleAnimation var(--mastersuite-ripple-duration) ease-in-out infinite;
                 font-family: 'Barlow', sans-serif;
                 margin: 0;
-                padding: 0;
-                min-height: 100vh;
                 padding: 2rem;
+                min-height: 100vh;
             }
-       
- 
-
-        </style>
+            
+          
+            
+            .body-masterSuite h1,h2,h3,h4,h5,p {
+                color: rgb(255, 255, 255);
+            }
+            </style>
     </head>
-    <body>
-        <style>
-   
-        </style>
+    <body class="body-masterSuite">
         <div class="screen">
             <div id="topLogo" class="component c1">
                 <div class="card--center-card">
@@ -38,7 +46,6 @@
                         class="logo logo--style-1">
                 </div>
             </div>
-
             <div class="component c1">
                 <div class="item-grid--style-1">
                     <a href="product-apeframework.html"

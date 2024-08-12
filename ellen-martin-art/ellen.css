@@ -1,0 +1,111 @@
+:root {
+    --primary-color: #003983;
+    --secondary-color: #fff;
+    --background-color: #0d1722;
+    --text-color: #456;
+    --link-color: #ffd905;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --border-radius: 5px;
+    --spacing-small: 0.5rem;
+    --spacing-medium: 1rem;
+    --spacing-large: 2rem;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    padding: 2rem;
+}
+
+.art-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.art-item {
+    background-color: var(--secondary-color);
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 5px var(--shadow-color);
+    padding: var(--spacing-medium);
+    text-align: center;
+}
+
+.art-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.bid-form {
+    margin-top: 1rem;
+}
+
+.bid-form input {
+    width: 100%;
+    padding: var(--spacing-small);
+    margin-bottom: var(--spacing-small);
+}
+
+.bid-form button {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    padding: var(--spacing-small) var(--spacing-medium);
+    cursor: pointer;
+    border-radius: var(--border-radius);
+    transition: background-color 0.3s ease;
+}
+
+.bid-form button:hover {
+    background-color: lighten(var(--primary-color), 10%);
+}
+
+.about-artist {
+    background-color: var(--secondary-color);
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 5px var(--shadow-color);
+    padding: var(--spacing-large);
+    margin-top: var(--spacing-large);
+}
+
+.about-artist h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.about-artist h3 {
+    color: var(--text-color);
+    margin-top: 1.5rem;
+}
+
+.about-artist ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.about-artist li {
+    margin-bottom: 0.5rem;
+}
+
+.about-artist a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+.about-artist a:hover {
+    text-decoration: underline;
+}
