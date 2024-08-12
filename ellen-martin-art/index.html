@@ -11,51 +11,35 @@
     </head>
     <body>
         <style>
-            #artwork1 {
-                width: 100vw;
-                height: 100vh;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                background-color: white;
-                position: relative;
-            }
-            #artwork1 img {
+            .MagicZoom {
                 max-width: 100%;
-                max-height: 100%;
-                object-fit: contain;
-            }
-            .zoom-controls {
-                position: absolute;
-                top: 1rem;
-                right: 1rem;
-            }
-            .zoom-btn {
-                font-size: 2rem;
-                background-color: #fff;
-                border: none;
-                padding: 0.5rem 1rem;
-                cursor: pointer;
-                margin-left: 1rem;
+                height: auto;
             }
         </style>
-        <header>
+        <header class="ellie-header">
             <h1>Ellen Martin Art</h1>
             <p>Inked and Watercolor Portraits of New Haven Buildings & also
                 fish</p>
         </header>
-        <section id="artwork1">
-            <div class="zoom-controls">
-                <button id="zoomIn" class="zoom-btn">+</button>
-                <button id="zoomOut" class="zoom-btn">-</button>
-            </div>
-            <a href="large-artwork.jpg" class="MagicZoom"
-                data-options="zoomWidth:400; zoomHeight:400; expandZoomMode:fullscreen;">
-                <img src="small-artwork.jpg" alt="Artwork 1">
+        <section class="artwork-section artwork1">
+            <a href="large-artwork1.jpg" class="MagicZoom"
+                data-options="zoomWidth:400; zoomHeight:400; expandZoomMode:fullscreen; zoomPosition: inner;">
+                <img src="small-artwork1.jpg" alt="Artwork 1">
+            </a>
+        </section>
+        <section id="artwork1" class="artwork-section artwork1">
+            <a href="large-artwork2.jpg" class="MagicZoom"
+                data-options="zoomWidth:400; zoomHeight:400; expandZoomMode:fullscreen; zoomPosition: inner;">
+                <img src="small-artwork2.jpg" alt="Artwork 2">
+            </a>
+        </section>
+        <section id="artwork3" class="artwork-section artwork1">
+            <a href="large-artwork3.jpg" class="MagicZoom"
+                data-options="zoomWidth:400; zoomHeight:400; expandZoomMode:fullscreen; zoomPosition: inner;">
+                <img src="small-artwork3.jpg" alt="Artwork 3">
             </a>
         </section>
         <main>
-
             <div class="art-grid" id="artGrid">
                 <!-- Artwork items will be dynamically inserted here -->
             </div>

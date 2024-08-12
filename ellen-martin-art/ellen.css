@@ -4,6 +4,7 @@
     --background-color: #0d1722;
     --text-color: #456;
     --link-color: #ffd905;
+    --header-color: rgb(171, 36, 36);
     --shadow-color: rgba(0, 0, 0, 0.1);
     --border-radius: 5px;
     --spacing-small: 0.5rem;
@@ -62,8 +63,11 @@ body {
     z-index: 10;
 }
 
+.header-background {
+    background-color: var(--header-color);
+}
+
 header {
-    background-color: var(--primary-color);
     color: var(--secondary-color);
     text-align: center;
     padding: 1rem;
@@ -150,4 +154,51 @@ main {
 
 .about-artist a:hover {
     text-decoration: underline;
+}
+
+
+/*ellie header */
+
+.ellie-header {
+    background-color: rgb(167, 255, 195);
+    color: rgb(0, 171, 140);
+}
+
+.ellie-header h1 {
+    font-size: 64px !important;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 900;
+
+}
+
+.artwork1 {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    position: relative;
+}
+
+.artwork1 img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.zoom-controls {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.zoom-btn {
+    font-size: 2rem;
+    background-color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    margin-left: 1rem;
 }
