@@ -20,6 +20,48 @@ body {
     color: var(--text-color);
 }
 
+
+.gallery {
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.artwork {
+    height: 100vh;
+    scroll-snap-align: start;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.artwork-image {
+    max-height: 80vh;
+    max-width: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.artwork-info {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    text-align: center;
+}
+
+.zoom-controls {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+}
+
 header {
     background-color: var(--primary-color);
     color: var(--secondary-color);

@@ -5,61 +5,61 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Ellen Martin Art</title>
         <link rel="stylesheet" href="./ellen.css">
-        <style>
-       
-    </style>
+        <!-- Add Magic Zoom CSS and JS -->
+        <link rel="stylesheet" href="magiczoom/magiczoom.css">
+        <script src="magiczoom/magiczoom.js"></script>
     </head>
     <body>
+        <style>
+            #artwork1 {
+                width: 100vw;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: white;
+                position: relative;
+            }
+            #artwork1 img {
+                max-width: 100%;
+                max-height: 100%;
+                object-fit: contain;
+            }
+            .zoom-controls {
+                position: absolute;
+                top: 1rem;
+                right: 1rem;
+            }
+            .zoom-btn {
+                font-size: 2rem;
+                background-color: #fff;
+                border: none;
+                padding: 0.5rem 1rem;
+                cursor: pointer;
+                margin-left: 1rem;
+            }
+        </style>
         <header>
-            <h1>Ellen Martin Art </h1>
+            <h1>Ellen Martin Art</h1>
             <p>Inked and Watercolor Portraits of New Haven Buildings & also
                 fish</p>
         </header>
+        <section id="artwork1">
+            <div class="zoom-controls">
+                <button id="zoomIn" class="zoom-btn">+</button>
+                <button id="zoomOut" class="zoom-btn">-</button>
+            </div>
+            <a href="large-artwork.jpg" class="MagicZoom"
+                data-options="zoomWidth:400; zoomHeight:400; expandZoomMode:fullscreen;">
+                <img src="small-artwork.jpg" alt="Artwork 1">
+            </a>
+        </section>
         <main>
-            <div class="art-grid">
-                <div class="art-item">
-                    <img src="new-haven-building-1.jpg"
-                        alt="New Haven Building 1">
-                    <h2>New Haven Town Hall</h2>
-                    <p>Current Bid: $<span class="current-bid">150</span></p>
-                    <form class="bid-form">
-                        <input type="number" placeholder="Enter your bid"
-                            min="151" step="1">
-                        <button type="submit">Place Bid</button>
-                    </form>
-                </div>
-                <div class="art-item">
-                    <img src="fish-painting-1.jpg" alt="Fish Painting 1">
-                    <h2>Colorful Koi</h2>
-                    <p>Current Bid: $<span class="current-bid">200</span></p>
-                    <form class="bid-form">
-                        <input type="number" placeholder="Enter your bid"
-                            min="201" step="1">
-                        <button type="submit">Place Bid</button>
-                    </form>
-                </div>
-                <!-- Add more art items here -->
+
+            <div class="art-grid" id="artGrid">
+                <!-- Artwork items will be dynamically inserted here -->
             </div>
         </main>
-        <script>
-        document.querySelectorAll('.bid-form').forEach(form => {
-            form.addEventListener('submit', function(e) {
-                e.preventDefault();
-                const bidInput = this.querySelector('input');
-                const currentBidSpan = this.parentElement.querySelector('.current-bid');
-                const newBid = parseInt(bidInput.value);
-                const currentBid = parseInt(currentBidSpan.textContent);
-
-                if (newBid > currentBid) {
-                    currentBidSpan.textContent = newBid;
-                    bidInput.min = newBid + 1;
-                    bidInput.value = '';
-                    alert('Your bid has been placed successfully!');
-                } else {
-                    alert('Your bid must be higher than the current bid.');
-                }
-            });
-        });
-    </script>
+        <script src="./artworks.js"></script>
     </body>
 </html>

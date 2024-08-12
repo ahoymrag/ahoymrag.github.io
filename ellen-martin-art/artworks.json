@@ -1,0 +1,40 @@
+{
+  "artworks": [
+    {
+      "id": 1,
+      "title": "New Haven Town Hall",
+      "image": "new-haven-building-1.jpg",
+      "currentBid": 150
+    },
+    {
+      "id": 2,
+      "title": "Colorful Koi",
+      "image": "fish-painting-1.jpg",
+      "currentBid": 200
+    },
+    {
+      "id": 3,
+      "title": "Yale University Library",
+      "image": "yale-library.jpg",
+      "currentBid": 180
+    },
+    {
+      "id": 4,
+      "title": "East Rock Park",
+      "image": "east-rock-park.jpg",
+      "currentBid": 160
+    },
+    {
+      "id": 5,
+      "title": "Tropical Fish School",
+      "image": "tropical-fish.jpg",
+      "currentBid": 220
+    },
+    {
+      "id": 6,
+      "title": "New Haven Green",
+      "image": "new-haven-green.jpg",
+      "currentBid": 190
+    }
+  ]
+}
