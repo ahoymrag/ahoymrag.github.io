@@ -79,18 +79,21 @@ i.e of scenarios
 
 
 /*
-    <div class="component c1" id="product-apeFrameWork-desc">
+  <div class="component c1 --component-size-2" id="product-apeFrameWork-desc">
                 <div class="card--center-card"
                     id="product-apeFramework-description">
-                    <div class="panel --panel-style-2">
+                    <div class="panel panel--aA">
                         <div class="item-container vertical">
-                            <p>Access Multiple Chains at the Same Time</p>
-                            <p>Customize your stack with Ape Plugins</p>
-
-                            <p>Extensive contract lifecycle management
-                                features:</p>
-
-                            <p>Access Multiple Chains at the Same Time</p>
+                            <h2 class="header-text">Access Multiple Chains at the Same Time</h2>
+                            <p class="body-text">
+                                Access local (forked), testnet, and live networks while testing and scripting, all from the same command line session. Configuration is quick and easy, and ad hoc connections are supported.
+                            </p>
+                            <h2 class="header-text">Customize your stack with Ape Plugins</h2>
+                            <p class="body-text">
+                                Plugin creation and support from simple integrations to a more complex ecosystem. Non-EVM chains are already being supported.
+                            </p>
+                            <h2 class="header-text">Extensive contract lifecycle management features</h2>
+                            <p class="body-text">Seamlessly manage your smart contracts from development to deployment.</p>
                         </div>
                     </div>
                 </div>
@@ -3199,4 +3202,48 @@ as a traditional sidebar for websites */
 
 .login-options a:hover {
     background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+/*PRODUCT PAGE CSS - that needs to be more for later */
+
+/* Product container styles */
+.product-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/*EXAMPLE */
+
+
+
+/* Feature list styles */
+.--feature-list {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.--feature-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    border-radius: 5px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.048);
+    transition: all 0.3s ease;
+}
+
+.--feature-item:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 6px 8px rgba(255, 255, 255, 0.2);
+}
+
+.--feature-item h2 {
+    margin-top: 0;
 }

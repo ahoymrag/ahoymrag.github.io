@@ -1,49 +1,111 @@
 <html>
     <head>
-        <title>
-            product-apeFramework
-        </title>
+        <title>ApeFramework - Advanced Smart Contract Development</title>
         <link rel="stylesheet" href="../ape-design-system.css">
+
     </head>
-    <body class="body-productPage-ape">
-        <div class="screen">
-            <div id="topLogo" class="component c1">
-                <div class="card--center-card">
-                    <img src="https://apeworx.io/framework/frame.png"
-                        alt="ApeWorx Icon"
-                        class="logo logo--style-1">
-
+    <body class="body-productPage-ape dark-screen">
+        <div class="screen center-screen">
+            <div class="product-container">
+                <div id="topLogo" class="component c1 --component-size-2">
+                    <div class="card--center-card">
+                        <img src="https://apeworx.io/framework/frame.png"
+                            alt="ApeWorx Icon"
+                            class="logo logo--style-1">
+                    </div>
+                    <div id="subheader-product" class="card--center-card">
+                        <h1 class="header-text">The most advanced smart contract
+                            framework on earth</h1>
+                        <p class="body-text">Trusted by Yearn, Lido, CURVE,
+                            Element and more</p>
+                    </div>
                 </div>
-                <div id="subheader-product" class="card--center-card">
-                    <p>The most advanced smart contract framework on earth
-                        Trusted by Yearn, Lido, CURVE, Element and more
-                    </p>
+                <div class="component c1 --component-size-2"
+                    id="product-apeFrameWork-desc">
+                    <div class="card --feature-list">
+                        <div class="item --feature-item">
+                            <h2 class="header-text">Access Multiple Chains at
+                                the Same Time</h2>
+                            <p class="body-text">
+                                Access local (forked), testnet, and live
+                                networks while testing and scripting, all from
+                                the same command line session. Configuration is
+                                quick and easy, and ad hoc connections are
+                                supported.
+                            </p>
+                        </div>
+                        <div class="item --feature-item">
+                            <h2 class="header-text">Customize your stack with
+                                Ape Plugins</h2>
+                            <p class="body-text">
+                                Plugin creation and support from simple
+                                integrations to a more complex ecosystem.
+                                Non-EVM chains are already being supported.
+                            </p>
+                        </div>
+                        <div class="item --feature-item">
+                            <h2 class="header-text">Extensive contract lifecycle
+                                management features</h2>
+                            <p class="body-text">Contracts can be compiled,
+                                tested, deployed, and analyzed using scripts and
+                                the built-in Ape console. Verification is
+                                supported as well as package manifest
+                                creation.</p>
+                        </div>
+                        <div class="item --feature-item">
+                            <h2 class="header-text">Advanced account
+                                security:</h2>
+                            <p class="body-text">Protected access to your
+                                accounts with encrypted keyfiles. Integration
+                                with hardware wallets for added security.</p>
+                        </div>
+                        <div class="item --feature-item">
+                            <h2 class="header-text">Debugging for both
+                                development and production:</h2>
+                            <p class="body-text">Development is aided by
+                                transaction tracing and gas reporting integrated
+                                into the command line.</p>
+                        </div>
+                        <div class="item --feature-item">
+                            <h2 class="header-text">
+                                Use the power of Python's data science tooling:
+                            </h2>
+                            <p class="body-text">
+                                Use Ape in Jupyter notebooks along with your
+                                favorite Python libraries like Pandas, Numpy,
+                                and others.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="component c1" id="product-apeFrameWork-desc">
-                <div class="card--center-card"
-                    id="product-apeFramework-description">
-                    <div class="panel --panel-style-2">
-                        <div class="item-container vertical">
-                            <p>Access Multiple Chains at the Same Time</p>
-                            <p>Customize your stack with Ape Plugins</p>
-
-                            <p>Extensive contract lifecycle management
-                                features:</p>
-
-                            <p>Access Multiple Chains at the Same Time</p>
+                <div class="component c1 --component-size-2"
+                    id="call-to-action">
+                    <div class="card--center-card">
+                        <div class="panel panel--aA">
+                            <div class="item-container vertical">
+                                <h2 class="header-text">Get Started with
+                                    Ape</h2>
+                                <div class="cta-buttons">
+                                    <button class="btn--default"
+                                        onclick="window.location.href='https://apeworx.io/install'">Install
+                                        Ape</button>
+                                    <button class="btn--default"
+                                        onclick="window.location.href='https://apeworx.io/docs'">Read
+                                        the Docs</button>
+                                    <button class="btn--default"
+                                        onclick="window.location.href='https://github.com/ApeWorX/ape'">Contribute</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
             <div class="component c1" id="timeNtemp">
                 <div class="time-display" id="clock"></div>
                 <div class="temp-display" id="temp"></div>
             </div>
-
         </div>
-        <button class="btn--default"
+        <button class="btn--default text-button"
             onclick="location.href='master-suite.html';">Back</button>
         <script>
             function updateClock() {

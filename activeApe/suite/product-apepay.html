@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <title>ApePay - Fast Crypto Payments</title>
+        <link rel="stylesheet" href="../ape-design-system.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body class="body-productPage-ape dark-screen">
+        <div class="screen center-screen">
+            <div class="product-container">
+                <div id="topLogo" class="component c1 --component-size-2">
+                    <div class="card--center-card">
+                        <img src="https://apeworx.io/apepay/logo.png"
+                            alt="ApePay Icon"
+                            class="logo logo--style-1">
+                    </div>
+                    <div id="subheader-product" class="card--center-card">
+                        <h1 class="header-text">ApePay</h1>
+                        <p class="body-text">Fast crypto payments</p>
+                    </div>
+                </div>
+                <div class="component c1 --component-size-2"
+                    id="product-apepay-desc">
+                    <div class="card --feature-list">
+                        <div class="item --feature-item">
+                            <h2 class="header-text">Extremely Scalable</h2>
+                            <p class="body-text">
+                                Scales from 1 person to 8 billion. Just set it
+                                up and
+                                start receiving cash.
+                            </p>
+                        </div>
+                        <div class="item --feature-item">
+                            <h2 class="header-text">Full User Control</h2>
+                            <p class="body-text">
+                                Start, Pause, and Stop payments whenever you
+                                like, no
+                                cancellation fee or predatory pricing allowed.
+                            </p>
+                        </div>
+                        <div class="item --feature-item">
+                            <h2 class="header-text">Zero Downtime</h2>
+                            <p class="body-text">
+                                Ethereum's uptime is 100% thus so is ApePay.
+                                Beat that Stripe.
+                            </p>
+                        </div>
+                        <div class="item --feature-item">
+                            <h2 class="header-text">Fully Accessible</h2>
+                            <p class="body-text">
+                                4,343,879,274 people can't use Stripe* 0 people
+                                can't use ApePay.
+                            </p>
+                            <p class="body-text">*probably not an accurate
+                                figure since we made it up.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="component c1 --component-size-2"
+                    id="call-to-action">
+                    <div class="card--center-card">
+                        <div class="panel panel--aA">
+                            <div class="item-container vertical">
+                                <h2 class="header-text">Get Started with
+                                    ApePay</h2>
+                                <div class="cta-buttons">
+                                    <button class="btn--default"
+                                        onclick="window.location.href='https://mirror.xyz/apeworkx.eth/XPAko-Ez-BqHJF5zaB9sG8kfuDutNn1TqPg4827C7fw'">
+                                        Read Full Post
+                                    </button>
+                                    <button class="btn--default"
+                                        onclick="window.location.href='https://discord.com/invite/apeworkx'">
+                                        Join Discord
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="component c1" id="timeNtemp">
+                <div class="time-display" id="clock"></div>
+                <div class="temp-display" id="temp"></div>
+            </div>
+        </div>
+        <button class="btn--default text-button"
+            onclick="location.href='master-suite.html';">Back</button>
+        <script>
+            function updateClock() {
+                const now = new Date();
+                const time = now.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
+                document.getElementById('clock').textContent = time;
+            }
+            setInterval(updateClock, 1000);
+            updateClock();
+        </script>
+    </body>
+</html>
