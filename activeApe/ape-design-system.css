@@ -79,13 +79,21 @@ i.e of scenarios
 
 RULE 1 = 
 
-1. Styles go together i.e = 
+1. For most cases - numbers after styles go together i.e = 
 item-grid--style-1 -
 goes with 
 item-block--style-2 
 
 */
 
+
+/* Moreover on individual style examples*/
+
+/* <div class="compontent c1">
+Whereas the c1 is the substyle class of the foundational class "component"
+
+- this is a quick way to update everything globally - and to make sure
+things do not conflict */
 
 
 
@@ -408,7 +416,6 @@ tr:hover {
     --background-light: #CFD8DC;
     --text-primary: #FFFFFF;
     --text-secondary: #B0BEC5;
-    --border-color: #B0BEC5;
     --primary-color: #000;
     --secondary-color: #fff;
     --tertiary-color: #000000;
@@ -455,11 +462,6 @@ tr:hover {
     --color-pink-200: #FF8A5B;
     --color-pink-400: #fa2670;
 
-    /* Border colors */
-    --border-color: #B0BEC5;
-    --border-color-light: white;
-    --border-color-dark: black;
-
 }
 
 /* Define CSS variables for the dark glass theme */
@@ -474,6 +476,15 @@ tr:hover {
     --dropdown-border-radius: 10px;
 }
 
+
+
+/*DEFAULT BORDER COLORS */
+
+:root {
+    --border-color: #B0BEC5;
+    --border-color-light: white;
+    --border-color-dark: black;
+}
 
 
 /* - - - - - 3 TYPOGRAPHY - - - - - */
@@ -618,6 +629,15 @@ tr:hover {
 you can notice - we got a block header, a block body, and a block footer*/
 
 
+
+/*header classes*/
+/*different than block headers - used for the product pages 
+and basic website - block headers are to be used for the app app
+- - actually idk about this - check later lolz*/
+
+
+
+
 /*ALIGN UTILTY CLASSES*/
 
 /*THESE ARE TO BE USED IN A QUICK PINCH */
@@ -634,6 +654,8 @@ you can notice - we got a block header, a block body, and a block footer*/
 }
 
 /*Screen SUPER */
+/*Screens are a way to maniuplate the layout 
+of certain compontents - cards and what not*/
 
 .super-screen {
     width: 100%;
@@ -916,8 +938,6 @@ screen
 }
 
 
-
-
 /* - - - - - 5 COMPONENTS - - - - */
 
 
@@ -973,31 +993,18 @@ screen
 
 .plus-button {
     background-color: #1a1a1a;
-    /* Dark background color */
     color: #ffffff;
-    /* White text color */
     border: none;
-    /* Remove default border */
     border-radius: 50%;
-    /* Make the button round */
     width: 40px;
-    /* Width of the button */
     height: 40px;
-    /* Height of the button */
     font-size: 24px;
-    /* Font size for the plus sign */
     display: flex;
-    /* Use flexbox for centering */
     align-items: center;
-    /* Center vertically */
     justify-content: center;
-    /* Center horizontally */
     cursor: pointer;
-    /* Pointer cursor on hover */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    /* Add shadow */
     transition: background-color 0.3s;
-    /* Smooth transition for hover effect */
 }
 
 .plus-button:hover {
@@ -1006,6 +1013,9 @@ screen
 }
 
 /* 5.1.1 - - - Default  Button */
+
+
+/*DEFAULT BUTTON */
 
 .btn--default::before {
     content: '';
@@ -1029,7 +1039,9 @@ screen
 .btn--default:hover {
     color: rgba(255, 255, 255, 0.943);
     transform: scale(1.015);
-    transition: all 0.3s ease;
+    transition: all 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+    cursor: pointer;
+    border-color: var(--default-border-color);
 }
 
 .btn--default {
