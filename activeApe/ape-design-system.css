@@ -73,6 +73,34 @@ i.e of scenarios
 */
 
 
+/*EXAMPLE #2*/
+/*not using the block here*/
+/*This is how the product descriptions are handled*/
+
+
+/*
+    <div class="component c1" id="product-apeFrameWork-desc">
+                <div class="card--center-card"
+                    id="product-apeFramework-description">
+                    <div class="panel --panel-style-2">
+                        <div class="item-container vertical">
+                            <p>Access Multiple Chains at the Same Time</p>
+                            <p>Customize your stack with Ape Plugins</p>
+
+                            <p>Extensive contract lifecycle management
+                                features:</p>
+
+                            <p>Access Multiple Chains at the Same Time</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+*/
+
+
+
 /* LAWS AND RULES */
 
 /*
@@ -635,7 +663,9 @@ you can notice - we got a block header, a block body, and a block footer*/
 and basic website - block headers are to be used for the app app
 - - actually idk about this - check later lolz*/
 
-
+#subheader-product {
+    max-width: 50ch;
+}
 
 
 /*ALIGN UTILTY CLASSES*/
