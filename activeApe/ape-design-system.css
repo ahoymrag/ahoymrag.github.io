@@ -16,31 +16,36 @@
    ███████████████████████████████████████████████████████████████████████████████
 /*
 // ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
-// EXPLAINATIONS
-// ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 
 // ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
-// TRACK 2: RECORD NEW LIST ON TAPE
+
 // ▀▀▀▀▀▀▀▀▀
 
 */
 
-*/
+
 /* After a long time thinking about this - 
 and actually going about it - 
 think it would be best to have it like this - -
 
-- Screen *** (new and experimental)
-  -- COMPONENT
-    - - Card** 
-      - - - PANEL (S)
-      - - - - - < item-block-container > 
-        - - - - - - - - ITEM-BLOCK (S) 
-                - - - - - Item Content (Could be just code or)
-                - - - - - Item Content (Full Body)
-                - - - - - - - block-header
-                - - - - - - - block-body
-                - - - - - - - block-footer
+
+
+/*
++---------------------------------------------------------------+
+|                                                               |
+| - Screen *** (new and experimental)                           |
+|   -- COMPONENT                                                |
+|     - - Card**                                                |
+|       - - - PANEL (S)                                         |
+|         - - - - - < item-block-container >                    |
+|           - - - - - - - - ITEM-BLOCK (S)                      |
+|                   - - - - - Item Content (Could be just code) |
+|                   - - - - - Item Content (Full Body)          |
+|                     - - - - - - - block-header                |
+|                     - - - - - - - block-body                  |
+|                     - - - - - - - block-footer                |
+|                                                               |
++---------------------------------------------------------------+
 */
 
 /* Each one of these primary structures can
@@ -54,27 +59,38 @@ i.e of scenarios
     <div class="item-block --item-container-grid-style-1">
 */
 
-/* Full Code 
-<div class="screen">
-  <div class="component" id="compo1">
-    <div class="block">
-      <div class="panel --panel-style-1">
-        <div class="item-container horizontal">
-          <div class="item --item-style-1 --item-size-1">
-            <div class="item-block">Items can be thought of
-              in terms of html like -
-              <div class="block-header">Header</div>
-              <div class="block-body">Body</div>
-              <div class="block-footer">Footer</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+/*
++--------------------------------------------------+
+|                                                  |
+|  Full Code                                       |
+|  .screen {                                       |
+|    .component#compo1 {                           |
+|      .block {                                    |
+|        .panel.--panel-style-1 {                  |
+|          .item-container.horizontal {            |
+|            .item.--item-style-1.--item-size-1 {  |
+|              .item-block {                       |
+|                Items can be thought of           |
+|                in terms of html like:            |
+|                .block-header {                   |
+|                  Header                          |
+|                }                                 |
+|                .block-body {                     |
+|                  Body                            |
+|                }                                 |
+|                .block-footer {                   |
+|                  Footer                          |
+|                }                                 |
+|              }                                   |
+|            }                                     |
+|          }                                       |
+|        }                                         |
+|      }                                           |
+|    }                                             |
+|  }                                               |
+|                                                  |
++--------------------------------------------------+
 */
-
 
 /*EXAMPLE #2*/
 /*not using the block here*/
@@ -124,7 +140,7 @@ RULE 1 =
 1. For most cases - numbers after styles go together i.e = 
 item-grid--style-1 -
 goes with 
-item-block--style-2 
+item-block--style-1
 
 */
 
@@ -163,7 +179,16 @@ Think of an item as a "HTML" file - i.e it starts over again
 block-header
 block-body
 block-footer
+/*
+ _____  ______ __  __  ____  
+|  __ \|  ____|  \/  |/ __ \ 
+| |  | | |__  | \  / | |  | |
+| |  | |  __| | |\/| | |  | |
+| |__| | |____| |  | | |__| |
+|_____/|______|_|  |_|\____/ s
 
+*/
+/*
 i.e
 <div class="item-block">
   <div class="block-header --block-header-style-2">Team</div>
@@ -246,7 +271,15 @@ Table of Contents
 
 /*Table of Contents of this document */
 
-
+/*
+ _____ ___   _____ 
+|_   _/ _ \ / ____|
+  | || | | | |     
+  | || | | | |     
+  | || |_| | |____ 
+  |_| \___/ \_____|
+                   
+*/
 /* TOC TOC TOC
 
 Table of Contents
@@ -290,6 +323,7 @@ Table of Contents
         5.3.4 - CORE Modals
     5.4 Dropdowns
     5.5 Tooltips
+    5.6 - Tables
     5.6 CORE Modals
 
 6. Utilities
@@ -450,6 +484,33 @@ tr:hover {
 /*THEMES*/
 
 
+
+
+/*
+   ____            _        _                     
+  / ___|___  _ __ | |_ __ _(_)_ __   ___ _ __ ___ 
+ | |   / _ \| '_ \| __/ _` | | '_ \ / _ \ '__/ __|
+ | |__| (_) | | | | || (_| | | | | |  __/ |  \__ \
+  \____\___/|_| |_|\__\__,_|_|_| |_|\___|_|  |___/
+                                                  
+*/
+
+.container {
+    width: 100%;
+}
+
+.--horizontal-container-50-50 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-content,
+.right-content {
+    display: flex;
+    align-items: center;
+}
+
 /* VA VA VA VARIABLES */
 /*
 //█████████████████████████████████████████████████████████████████████████████
@@ -493,9 +554,9 @@ tr:hover {
     --font-size-headline: 5.5rem;
     --font-size-heading-1: 2rem;
     --font-size-heading-2: 1.75rem;
-    --font-size-heading-3: 1.5rem;
-    --font-size-heading-4: 1.25rem;
-    --font-size-heading-5: 1rem;
+    --font-size-heading-3: 1.25rem;
+    --font-size-heading-4: 1rem;
+    --font-size-heading-5: .95rem;
     --font-size-heading-6: 0.875rem;
     --font-size-body-large: 1.5rem;
     --font-size-body-medium: 1rem;
@@ -505,6 +566,7 @@ tr:hover {
 
     /* Font Weights */
     --font-weight-regular: 400;
+    --font-weight-medium: 500;
     --font-weight-bold: 700;
 
     /* Font Face */
@@ -600,13 +662,12 @@ i.e
 .heading-2 {
     font-size: var(--font-size-heading-2);
     font-weight: var(--font-weight-bold);
-    margin: 7.5px;
 
 }
 
 .heading-3 {
     font-size: var(--font-size-heading-3);
-    font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-medium);
 }
 
 .heading-4 {
@@ -692,6 +753,14 @@ i.e
     animation: gradientShift 15s ease infinite;
 }
 
+
+/*
+// ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+// ANIMATION <<<<WIP>>>>>
+// ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+*/
+
+
 @keyframes gradientShift {
     0% {
         background-position: 0% 50%;
@@ -703,6 +772,26 @@ i.e
 
     100% {
         background-position: 0% 50%;
+    }
+}
+
+.spinner-container {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.spinner {
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255, 255, 255, .3);
+    border-radius: 50%;
+    border-top-color: #fff;
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
     }
 }
 
@@ -798,6 +887,7 @@ of certain compontents - cards and what not*/
 .vertical {
     display: flex;
     flex-direction: column;
+    align-items: baseline;
 }
 
 .flex-center {
@@ -1068,7 +1158,7 @@ screen
   ____        _   _                  
  | __ ) _   _| |_| |_ ___  _ __  ___ 
  |  _ \| | | | __| __/ _ \| '_ \/ __|
- | |_) | |_| | |_| || (_) | | | \__ \
+ | |_) | |_| | |_| || (_) | | | \__ \buttons
  |____/ \__,_|\__|\__\___/|_| |_|___/
                                      
 */
@@ -1091,33 +1181,7 @@ screen
     cursor: pointer;
 }
 
-/* 5.1.0a - - - - BUTTON SIZES */
-.btn--container-1 {
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-}
 
-.--btn-size-1 {
-    padding: 8px 8px;
-    min-width: 75px;
-    max-width: 75px;
-    font-size: 14px;
-}
-
-.--btn-size-2 {
-    padding: 8px 12px;
-    min-width: 100px;
-    max-width: 100px;
-    font-size: 16px;
-}
-
-.--btn-size-3 {
-    padding: 16px 24px;
-    min-width: 200px;
-    max-width: 200px;
-    font-size: 18px;
-}
 
 .plus-button {
     background-color: #1a1a1a;
@@ -1793,6 +1857,15 @@ DIFFERENT STYLES INCLUDE
     border: 1px solid #ff6a6a8d;
 }
 
+/* --panel-style-2
+    _    ____ 
+   / \  / ___|
+  / _ \| |  _ 
+ / ___ \ |_| |
+/_/   \_\____|approved
+
+*/
+
 .--panel-style-2 {
     border-radius: 10px;
     border: 1px solid var(--Border-Glass-Border-Light-12, rgba(255, 255, 255, 0.12));
@@ -1820,6 +1893,15 @@ h3,
 p {
     color: white;
 }
+
+/* --panel-style-2
+    _    ____ 
+   / \  / ___|
+  / _ \| |  _ 
+ / ___ \ |_| |
+/_/   \_\____|approved
+
+*/
 
 .--panel-style-3 {
     border-radius: 10px;
@@ -2048,7 +2130,15 @@ p {
     height: 100%;
 }
 
-/*BLOCK LAYOUTS*/
+/*
+ ____  _     ___   ____ _  __   _        _  __   ___  _   _ _____ ____  
+| __ )| |   / _ \ / ___| |/ /  | |      / \  \ \ / / \| | | |_   _/ ___| 
+|  _ \| |  | | | | |   | ' /   | |     / _ \  \ V /| .` | | | | | \___ \ 
+| |_) | |__| |_| | |___| . \   | |___ / ___ \  | | | |\  | |_| | |  __) |
+|____/|_____\___/ \____|_|\_\  |_____/_/   \_\ |_| |_| \_|\___/|_| |____/ 
+                                                                         
+BLOCK LAYOUTS
+*/
 
 /*CENTER LAYOUT = layout 1*/
 
@@ -2060,6 +2150,22 @@ p {
 }
 
 /*Block HEADER STYLES */
+/*
+ ____  _     ___   ____ _  __ ____  
+| __ )| |   / _ \ / ___| |/ // ___| 
+|  _ \| |  | | | | |   | ' / \___ \ 
+| |_) | |__| |_| | |___| . \  ___) |
+|____/|_____\___/ \____|_|\_\|____/ 
+*/
+
+/*
+  ____  _         _           
+ / ___|| |_ _   _| | ___  ___ 
+ \___ \| __| | | | |/ _ \/ __|
+  ___) | |_| |_| | |  __/\__ \
+ |____/ \__|\__, |_|\___||___/
+            |___/             
+*/
 
 
 .--block-header-style-2 {
@@ -2182,6 +2288,20 @@ p {
 }
 
 
+/*
+ _______  _______  _______  _        _______  _______ 
+|       ||   _   ||  _    || |      |       ||       |
+|_     _||  |_|  || |_|   || |      |    ___||  _____|
+  |   |  |       ||       || |      |   |___ | |_____ 
+  |   |  |       ||  _   | | |      |    ___||_____  |
+  |   |  |   _   || |_|   || |      |   |___  _____| |
+  |___|  |__| |__||_______||________|_______||_______|
+                        
+*/
+
+table {
+    text-decoration: none;
+}
 
 
 /*BLOCK SPLITS
@@ -2269,9 +2389,78 @@ a block in columns */
     height: 0;
 }
 
-/*5.3.2 - - - SLIDER - - - - */
 
-/* Slider */
+
+
+
+
+/*
++----------------------------------+
+|                                  |
+|  ___                   _         |
+| |_ _|_ __  _ __  _   _| |_       |
+|  | || '_ \| '_ \| | | | __|      |
+|  | || | | | |_) | |_| | |_       |
+| |___|_| |_| .__/ \__,_|\__|      |
+|           |_|              CONTROLS |
+|                                  |
++----------------------------------+
+*/
+
+
+
+input:checked+.slider {
+    background-color: var(--success-color);
+    /* On state color */
+}
+
+input:checked+.slider:before {
+    transform: translateX(26px);
+}
+
+/* Optional: adding focus to input for keyboard accessibility */
+input:focus+.slider {
+    box-shadow: 0 0 1px var(--success-color);
+}
+
+/*
+ _INPUT___  _     ___ ____  _____ ____  
+/ ___|| |   |_ _|  _ \| ____|  _ \ 
+\___ \| |    | || | | |  _| | |_) |
+ ___) | |___ | || |_| | |___|  _ < 
+|____/|_____|___|____/|_____|_| \_\
+*/
+
+/* Hover effects for enhanced user interaction */
+.slider:hover {
+    background-color: var(--color-green-300);
+    /* Lighter shade when hovered */
+}
+
+.slider {
+    /* Default styles for the slider */
+    background-color: #fffcf1;
+    /* Default off state in grey */
+    transition: 0.4s;
+}
+
+/*
+  _____          _ _       _     
+ / ____|        (_) |     | |    
+| (_____      ___| |_ ___| |__  
+ \___ \ \ /\ / / | __/ __| '_ \ 
+ ____) \ V  V /| | || (__| | | |
+|_____/ \_/\_/ |_|\__\___|_| |_|input
+                                
+*/
+
+
+/* When the checkbox is checked, turn the slider red */
+input:checked+.slider {
+    background-color: #FF0060;
+}
+
+
 .toggle-switch .slider {
     position: absolute;
     cursor: pointer;
@@ -2298,40 +2487,6 @@ a block in columns */
     border-radius: 50%;
     /* Round shape */
 }
-
-input:checked+.slider {
-    background-color: var(--success-color);
-    /* On state color */
-}
-
-input:checked+.slider:before {
-    transform: translateX(26px);
-    /* Move circle to the right on toggle */
-}
-
-/* Optional: adding focus to input for keyboard accessibility */
-input:focus+.slider {
-    box-shadow: 0 0 1px var(--success-color);
-}
-
-/* Hover effects for enhanced user interaction */
-.slider:hover {
-    background-color: var(--color-green-300);
-    /* Lighter shade when hovered */
-}
-
-.slider {
-    /* Default styles for the slider */
-    background-color: #ccc;
-    /* Default off state in grey */
-    transition: 0.4s;
-}
-
-/* When the checkbox is checked, turn the slider red */
-input:checked+.slider {
-    background-color: red;
-}
-
 
 
 /* 5.3.4 - CORE MODALS -- - - - -- - - - -*/
@@ -3343,7 +3498,7 @@ as a traditional sidebar for websites */
 
 /*
 // ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
-// PLACES THIS SYSTEM IS USED 
+// PLACES THIS SYSTEM IS USED <<<WIP>>>
 // ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 */
 
@@ -3367,3 +3522,45 @@ as a traditional sidebar for websites */
 16. index.html
 17. settings.html
 18. dashboardMgmt.html
+
+
+
+/*
+  ___  __  __ ___ _____ 
+ / _ \|  \/  |_ _|_   _|
+| | | | |\/| || |  | |  
+| |_| | |  | || |  | |  
+ \___/|_|  |_|___| |_|  
+                        
+*/
+
+
+/* THE POSSIBLY OMIT LIST */
+
+/* 5.1.0a - - - - BUTTON SIZES */
+.btn--container-1 {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.--btn-size-1 {
+    padding: 8px 8px;
+    min-width: 75px;
+    max-width: 75px;
+    font-size: 14px;
+}
+
+.--btn-size-2 {
+    padding: 8px 12px;
+    min-width: 100px;
+    max-width: 100px;
+    font-size: 16px;
+}
+
+.--btn-size-3 {
+    padding: 16px 24px;
+    min-width: 200px;
+    max-width: 200px;
+    font-size: 18px;
+}
