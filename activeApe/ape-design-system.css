@@ -1,28 +1,27 @@
 /* ApeWoRX Design System 001.5 */
 
-/* This code presently can be found on
-1. block-structure-demo.html
-2. applied-blockstructure-demo.html
-3. cluster-index.html
-4. applied-blockstructure-demo2.html
-5. manage-clusters.html
-6. step0-noCluster.html
-7. step1-select-plan.html
-8. step4-apePay.html
-9. step6-nameAfterPay.html
-10. allTogether.html
-11. index_guide.html
-12. widgets.html
-13. dashboardMgmt.html
-/cluster
-14. workspaceMgmt.html
-15. overview.html
-16. index.html
-17. settings.html
-18. dashboardMgmt.html
+/*
+//█████████████████████████████████████████████████████████████████████████████
+//██                                                                         ██
+//██  APEWORX DESIGN SYSTEM                                        ██
+//██  Model: AG-2024                                                         ██
+//██  Serial: 0000000001                                                     ██
+//██                                                                         ██
+//█████████████████████████████████████████████████████████████████████████████
+
+/*
+// ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+// EXPLAINATIONS
+// ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+
+
+// ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+// TRACK 2: RECORD NEW LIST ON TAPE
+// ▀▀▀▀▀▀▀▀▀
 
 */
 
+*/
 /* After a long time thinking about this - 
 and actually going about it - 
 think it would be best to have it like this - -
@@ -430,6 +429,14 @@ tr:hover {
 
 
 /* VA VA VA VARIABLES */
+/*
+//█████████████████████████████████████████████████████████████████████████████
+//██                                                                         ██
+//██  CSS VARIABLE ROOTS DESIGN SYSTEM                                        ██
+//██  Model: AG-2024                                                         ██
+//██  Serial: 0000000001                                                     ██
+//██                                                                         ██
+//█████████████████████████████████████████████████████████████████████████████
 
 
 /*ROOT COLORS */
@@ -520,11 +527,13 @@ tr:hover {
 
 /* - - - - - 3 TYPOGRAPHY - - - - - */
 /* Typography */
+/*
+// ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+// CORE BODY TYPOGRAPHY
+// ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+*/
 
-.header-text {
-    color: white;
-    font-weight: 500;
-}
+
 
 .body-text {
     color: white;
@@ -536,7 +545,24 @@ tr:hover {
 }
 
 
+/*
+// ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+// HEADER BODY TYPOGRAPHY
 
+use logically - but also could be overridden
+i.e
+
+<h1 class="headline">THIS IS A BIG HEADLINE</h1>
+<h1 class="heading-1">Just a Normal H1 Tag</h1>
+<h2 class="heading-2">See how it works?</h2>
+<h3 class="heading-3">If you do not put this class - it will result in</h3>
+<h4 class="heading-4">Well, actually not exactly sure what to add/not add for h4 to make </h4>
+<h4 class="heading-5">A </h5>
+
+
+
+// ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+*/
 .headline {
     font-size: var(--font-size-headline);
     font-weight: var(--font-weight-bold);
@@ -577,6 +603,13 @@ tr:hover {
     font-size: var(--font-size-heading-6);
     font-weight: var(--font-weight-bold);
 }
+
+/*
+// ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+// BODY BODY TYPOGRAPHY <<<WIP>>>>>
+// ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+*/
+
 
 .body-text {
     font-weight: var(--font-weight-regular);
@@ -619,6 +652,12 @@ tr:hover {
     font-family: var(--font-face-barlow);
     margin: 10px;
 }
+
+/*
+// ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+// BODY BACKGROUND WORK <<<<WIP>>>>>
+// ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+*/
 
 
 /*STYLING THE BODY OF WHATEVER */
@@ -825,7 +864,11 @@ screen
 ###### 4. LAYOUT AND STRUCTURE ############
 2. Panels
 
-
+/*
+// ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+// VARIATIONS AND STYLES OF "BLOCK HEADERS"
+// ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+*/
 
 /*VIBES*/
 
@@ -1966,6 +2009,7 @@ p {
 
 /*Block HEADER STYLES */
 
+
 .--block-header-style-2 {
     background-color: transparent !important;
     /* Make background fully transparent */
@@ -2335,8 +2379,6 @@ input:checked+.slider {
     background-color: #313131;
 }
 
-
-
 .app-body {
     width: 100%;
     height: 100vh;
@@ -2344,8 +2386,6 @@ input:checked+.slider {
     align-items: center;
     justify-content: center;
 }
-
-
 
 /*WORK IN PROGRESS */
 
@@ -3247,3 +3287,31 @@ as a traditional sidebar for websites */
 .--feature-item h2 {
     margin-top: 0;
 }
+
+
+/*
+// ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+// PLACES THIS SYSTEM IS USED 
+// ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+*/
+
+/* This code presently can be found on
+1. block-structure-demo.html
+2. applied-blockstructure-demo.html
+3. cluster-index.html
+4. applied-blockstructure-demo2.html
+5. manage-clusters.html
+6. step0-noCluster.html
+7. step1-select-plan.html
+8. step4-apePay.html
+9. step6-nameAfterPay.html
+10. allTogether.html
+11. index_guide.html
+12. widgets.html
+13. dashboardMgmt.html
+/cluster
+14. workspaceMgmt.html
+15. overview.html
+16. index.html
+17. settings.html
+18. dashboardMgmt.html
