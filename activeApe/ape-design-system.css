@@ -1,19 +1,23 @@
-/* ApeWoRX Design System 001.5 */
-
+/* ApeWorX Design System 001.5 */
 /*
-//█████████████████████████████████████████████████████████████████████████████
-//██                                                                         ██
-//██  APEWORX DESIGN SYSTEM                                        ██
-//██  Model: AG-2024                                                         ██
-//██  Serial: 0000000001                                                     ██
-//██                                                                         ██
-//█████████████████████████████████████████████████████████████████████████████
-
+███████████████████████████████████████████████████████████████████████████████
+   ██                                                                         ██
+   ██   █████╗ ██████╗ ███████╗██╗    ██╗ ██████╗ ██████╗ ██╗  ██╗            ██
+   ██  ██╔══██╗██╔══██╗██╔════╝██║    ██║██╔═══██╗██╔══██╗╚██╗██╔╝            ██
+   ██  ███████║██████╔╝█████╗  ██║ █╗ ██║██║   ██║██████╔╝ ╚███╔╝             ██
+   ██  ██╔══██║██╔═══╝ ██╔══╝  ██║███╗██║██║   ██║██╔══██╗ ██╔██╗             ██
+   ██  ██║  ██║██║     ███████╗╚███╔███╔╝╚██████╔╝██║  ██║██╔╝ ██╗            ██
+   ██  ╚═╝  ╚═╝╚═╝     ╚══════╝ ╚══╝╚══╝  ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝            ██
+   ██                                                                         ██
+   ██  APEWORX DESIGN SYSTEM                                                  ██
+   ██  Model: AG-2024                                                         ██
+   ██  Serial: 0000000001                                                     ██
+   ██                                                                         ██
+   ███████████████████████████████████████████████████████████████████████████████
 /*
 // ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 // EXPLAINATIONS
 // ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
-
 
 // ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 // TRACK 2: RECORD NEW LIST ON TAPE
@@ -85,14 +89,14 @@ i.e of scenarios
                         <div class="item-container vertical">
                             <h2 class="header-text">Access Multiple Chains at the Same Time</h2>
                             <p class="body-text">
-                                Access local (forked), testnet, and live networks while testing and scripting, all from the same command line session. Configuration is quick and easy, and ad hoc connections are supported.
+                                Access local (forked), testnet.
                             </p>
                             <h2 class="header-text">Customize your stack with Ape Plugins</h2>
                             <p class="body-text">
-                                Plugin creation and support from simple integrations to a more complex ecosystem. Non-EVM chains are already being supported.
+                                Plugin creation and support from simple integrations.
                             </p>
                             <h2 class="header-text">Extensive contract lifecycle management features</h2>
-                            <p class="body-text">Seamlessly manage your smart contracts from development to deployment.</p>
+                            <p class="body-text">Seamlessly manage to deployment.</p>
                         </div>
                     </div>
                 </div>
@@ -102,7 +106,15 @@ i.e of scenarios
 */
 
 
-
+/*
+  _____   _    _  _      ______  _____ 
+ |  __ \ | |  | || |    |  ____|/ ____|
+ | |__) || |  | || |    | |__  | (___  
+ |  _  / | |  | || |    |  __|  \___ \ 
+ | | \ \ | |__| || |____| |____ ____) |
+ |_|  \_\ \____/ |______|______|_____/ 
+*/
+/* RULES AND LAWS */
 /* LAWS AND RULES */
 
 /*
@@ -128,7 +140,17 @@ things do not conflict */
 
 
 
+/*
+ _____  ______ __  __  ____  
+|  __ \|  ____|  \/  |/ __ \ 
+| |  | | |__  | \  / | |  | |
+| |  | |  __| | |\/| | |  | |
+| |__| | |____| |  | | |__| |
+|_____/|______|_|  |_|\____/ s
 
+*/
+
+/* STRUCTURE DEMO */
 /* ITEM LOGIC
 
 As you can see above - an item is the lowest in the hierachy
@@ -432,9 +454,7 @@ tr:hover {
 /*
 //█████████████████████████████████████████████████████████████████████████████
 //██                                                                         ██
-//██  CSS VARIABLE ROOTS DESIGN SYSTEM                                        ██
-//██  Model: AG-2024                                                         ██
-//██  Serial: 0000000001                                                     ██
+//██  CSS VARIABLE ROOTS DESIGN SYSTEM                                       ██                
 //██                                                                         ██
 //█████████████████████████████████████████████████████████████████████████████
 
@@ -687,9 +707,11 @@ i.e
 }
 
 
-
-
-
+/*
+// ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+// 4. LAYOUT AND PAGE STRUCTURE 4. <<<<WIP>>>>>
+// ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+*/
 
 
 /* - - - - - - 4. LAYOUT AND PAGE STRUCTURE 4. - - -  */
@@ -909,6 +931,11 @@ screen
 }
 
 
+/*
+// ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+// 5. BLOCK BODY STYLES 4. <<<<WIP>>>>>
+// ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+*/
 
 
 /* Widget for block bodies = description block */
@@ -1015,11 +1042,36 @@ screen
 
 
 /* - - - - - 5 COMPONENTS - - - - */
+/* Components Section */
+/*
+  ____                                             _       
+ / ___|___  _ __ ___  _ __   ___  _ __   ___ _ __ | |_ ___ 
+| |   / _ \| '_ ` _ \| '_ \ / _ \| '_ \ / _ \ '_ \| __/ __|
+| |__| (_) | | | | | | |_) | (_) | | | |  __/ | | | |_\__ \
+ \____\___/|_| |_| |_| .__/ \___/|_| |_|\___|_| |_|\__|___/
+                     |_|                                   
+*/
 
+/* Decorative border */
+.component-section-border {
+    height: 10px;
+    background: repeating-linear-gradient(45deg,
+            var(--primary-color),
+            var(--primary-color) 10px,
+            var(--secondary-color) 10px,
+            var(--secondary-color) 20px);
+}
 
 /* - - - 5.1 BUTTONS - - - */
 
-
+/*
+  ____        _   _                  
+ | __ ) _   _| |_| |_ ___  _ __  ___ 
+ |  _ \| | | | __| __/ _ \| '_ \/ __|
+ | |_) | |_| | |_| || (_) | | | \__ \
+ |____/ \__,_|\__|\__\___/|_| |_|___/
+                                     
+*/
 
 /* 5.1.0 - - - SUPER GLOBAL BUTTON CORE */
 .btn {
