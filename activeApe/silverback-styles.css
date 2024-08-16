@@ -1,0 +1,64 @@
+:root {
+    /* Silver-inspired colors */
+    --silver-light: #E8E8E8;
+    --silver-medium: #C0C0C0;
+    --silver-dark: #A9A9A9;
+    --charcoal: #36454F;
+
+    /* Glass effect colors */
+    --glass-white: rgba(255, 255, 255, 0.1);
+    --glass-light: rgba(200, 200, 200, 0.2);
+    --glass-medium: rgba(150, 150, 150, 0.3);
+
+    /* Updated color scheme */
+    --background-color: var(--charcoal);
+    --text-primary: var(--silver-light);
+    --card-background: var(--glass-light);
+    --card-hover-background: var(--glass-medium);
+    --button-background: var(--glass-white);
+    --button-border-color: var(--silver-medium);
+    --button-hover-border-color: var(--silver-light);
+
+    /* Accent colors */
+    --accent-color: #4682B4;
+    /* Steel Blue */
+    --secondary-color: #708090;
+    /* Slate Gray */
+    --tertiary-color: #B0C4DE;
+    /* Light Steel Blue */
+
+    /* Shadows */
+    --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --card-hover-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+
+    /* Blur */
+    --blur-amount: 10px;
+
+    /* Gradients */
+    --silver-gradient: linear-gradient(135deg, var(--silver-light), var(--silver-dark));
+    --glass-gradient: linear-gradient(135deg, var(--glass-white), var(--glass-medium));
+}
+
+/* Optional: Update specific elements for the new theme */
+
+.card {
+    background: var(--glass-gradient);
+    backdrop-filter: blur(var(--blur-amount));
+    border: 1px solid var(--silver-medium);
+}
+
+.panel {
+    background: var(--silver-gradient);
+    border-color: var(--silver-dark);
+}
+
+.button {
+    background: var(--button-background);
+    backdrop-filter: blur(calc(var(--blur-amount) / 2));
+    border: 1px solid var(--button-border-color);
+}
+
+.button:hover {
+    background: var(--card-hover-background);
+    border-color: var(--button-hover-border-color);
+}
