@@ -1,0 +1,46 @@
+:root {
+    /* CMYK-inspired colors */
+    --cyan: #00FFFF;
+    --magenta: #FF00FF;
+    --yellow: #FFFF00;
+    --key: #000000;
+
+    /* Teal variations */
+    --teal-green: #002621;
+    --light-teal: #03ffff;
+    --dark-teal: #006D5B;
+
+    /* Updated color scheme */
+    --background-color: var(--teal-green);
+    --text-primary: white;
+    --card-background: rgba(18, 18, 18, 0.2);
+    --card-hover-background: rgba(255, 255, 255, 0.3);
+    --button-background: rgba(255, 255, 255, 0.15);
+    --button-border-color: #FFF;
+    --button-hover-border-color: rgba(255, 255, 255, 0.8);
+
+    /* Accent colors */
+    --accent-color: var(--yellow);
+    --secondary-color: var(--cyan);
+    --tertiary-color: var(--magenta);
+
+    /* Shadows */
+    --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    --card-hover-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+
+    /* Blur */
+    --blur-amount: 5px;
+}
+
+/* Optional: Update specific elements for the new theme */
+
+
+
+
+.card {
+    border: 1px solid var(--light-teal);
+}
+
+.panel {
+    border-color: var(--dark-teal);
+}
