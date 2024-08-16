@@ -1,11 +1,12 @@
 <html>
     <head>
         <title>Clean Demo</title>
-        <link rel="stylesheet" href="../../../ape-design-system.css">
+        <link rel="stylesheet" href="../../../ape-design-lite.css">
     </head>
     <style>
         body {
             background-color: rgb(0, 56, 81);
+            color: white;
         }
     </style>
 
@@ -13,7 +14,7 @@
     .screen-example {
         display:flex;
         align-items: center;
-        flex-direction: column;
+        flex-direction: column ;
     }
 </style>
     <body class="screen-example">
@@ -43,11 +44,15 @@
   \____|_|  \___|\__,_|\__\___| \____|_|\__,_|___/\__\___|_|   
                                                                
 -->
+        <h1 class="heading-1">Card Example 1</h1>
 
+        <h2>COMPONENT CENTER</h2>
+        <p>with card Size = Half</p>
+        <p>Panel Style 2</p>
         <div class="component --component-center"
             id="compo-create-new-cluster">
-            <div class="card --card-size-full ">
-                <div class="panel --panel-style-4">
+            <div class="card --card-size-half ">
+                <div class="panel --panel-style-2">
                     <div class="container --horizontal-container">
                         <div class="item">
                             <div class="block-header header-block-vibe-1">
@@ -82,11 +87,110 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <br>
+        <br>
 
-            <br>
-            <br>
+        <!--
+   ____                                  _     __     __         _       _   _             
+  / ___|___  _ __ ___  _ __   ___  _ __ | |_   \ \   / /_ _ _ __(_) __ _| |_(_) ___  _ __  
+ | |   / _ \| '_ ` _ \| '_ \ / _ \| '_ \| __|   \ \ / / _` | '__| |/ _` | __| |/ _ \| '_ \ 
+ | |__| (_) | | | | | | |_) | (_) | | | | |_     \ V / (_| | |  | | (_| | |_| | (_) | | | |
+  \____\___/|_| |_| |_| .__/ \___/|_| |_|\__|     \_/ \__,_|_|  |_|\__,_|\__|_|\___/|_| |_|
+                      |_|                                                                  
+-->
+        <h1 class="heading-1">Card Example 2</h1>
+        <h2>COMPONTENT LEFT</h2>
+        <p>with card Size = Quarter</p>
+        <p>Panel Style 2</p>
 
-            <!--
+        <div class="component --component-left"
+            id="compo-create-new-cluster">
+            <div class="card --card-size-quarter ">
+                <div class="panel --panel-style-2">
+                    <div class="container --horizontal-container">
+                        <div class="item">
+                            <div class="block-header header-block-vibe-1">
+                                <h1 class="heading-1">No bot clusters
+                                    available
+                                </h1>
+                            </div>
+                            <!-- BODY -->
+                            <div class="block-body">
+                                <p
+                                    class="body-text ">You'll
+                                    need a bot
+                                    cluster
+                                    before
+                                    you
+                                    can deploy your robot army.
+                                    Create a cluster
+                                    with
+                                    the
+                                    button below</p>
+                            </div>
+
+                            <!-- FOOTER (ACTION BAR)-->
+                            <div class="block-footer ">
+                                <div class>
+                                    <button type="button"
+                                        class="btn btn--default --btn-size-4"
+                                        onclick="window.location.href='create-2.html'">Create
+                                        Cluster</button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h1 class="heading-1">Card Example 3</h1>
+
+        <h2>Component Right</h2>
+        <p>with card Size = Quarter</p>
+        <p>Panel Style 2</p>
+
+        <div class="component --component-right"
+            id="compo-create-new-cluster">
+            <div class="card --card-size-quarter ">
+                <div class="panel --panel-style-2">
+                    <div class="container --horizontal-container">
+                        <div class="item">
+                            <div class="block-header header-block-vibe-1">
+                                <h1 class="heading-1">No bot clusters
+                                    available
+                                </h1>
+                            </div>
+                            <!-- BODY -->
+                            <div class="block-body">
+                                <p
+                                    class="body-text ">You'll
+                                    need a bot
+                                    cluster
+                                    before
+                                    you
+                                    can deploy your robot army.
+                                    Create a cluster
+                                    with
+                                    the
+                                    button below</p>
+                            </div>
+
+                            <!-- FOOTER (ACTION BAR)-->
+                            <div class="block-footer ">
+                                <div class>
+                                    <button type="button"
+                                        class="btn btn--default --btn-size-4"
+                                        onclick="window.location.href='create-2.html'">Create
+                                        Cluster</button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--
    _____ _   _ ______ ____     _    _ _____ _____   _____ ______ _______ 
   |_   _| \ | |  ____/ __ \   | |  | |_   _|  __ \ / ____|  ____|__   __|
     | | |  \| | |__ | |  | |  | |  | | | | | |  | | |  __| |__     | |   
@@ -96,57 +200,113 @@
                                                                          
 -->
 
-            <div class="component" id="Info Header">
-                <div class="card">
-                    <div class="panel --panel-style-3">
-                        <div class="item">
+        <br><br>
+        <h1 class="heading-1">INFO WIDGET EXAMPLE 1</h1>
+        <br><br>
 
-                            <div class="block-header">
-                                <div
-                                    class="container --horizontal-container-50-50">
-                                    <div class="left-content vertical">
-                                        <h2 class="heading-2">Bot Title</h2>
-                                        <div class="spinner"></div>
-                                        <h3 class="heading-3">Dynamic Status of
-                                            Bot</h3>
-                                    </div>
-                                    <div class="right-content">
-                                        <button
-                                            class="--action-button">Action</button>
-                                    </div>
+        <div class="component --component-center" id="Info Header">
+            <div class="card --card-size-quarter">
+                <div class="panel --panel-style-3">
+                    <div class="item">
+
+                        <div class="block-header">
+                            <div
+                                class="container --horizontal-container-50-50">
+                                <div class="left-content vertical">
+                                    <h2 class="heading-2">Bot Title</h2>
+                                    <div class="spinner"></div>
+                                    <h3 class="heading-3">Dynamic Status of
+                                        Bot</h3>
+                                </div>
+                                <div class="right-content">
+                                    <button
+                                        class="--action-button">Action</button>
                                 </div>
                             </div>
+                        </div>
 
-                            <div class="block-body">
-                                <p class="body-text">
-                                    Identifyies overbought and oversold
-                                    conditions
-                                    using the Bollinger Bands and RSI
-                                    indicators.
-                                    Trades when the price touches the outer
-                                    bands of
-                                    the Bollinger Bands and the RSI indicates an
-                                    overbought or oversold condition, signaling
-                                    a
-                                    potential reversal.
-                                </p>
-                            </div>
+                        <div class="block-body">
 
-                            <div class="block-footer">
-                                <hr>
-                                <p>This is where the footer will have </p>
-                            </div>
+                            <p class="body-text">
+                                Identifyies overbought and oversold
+                                conditions
+                                using the Bollinger Bands and RSI
+                                indicators.
+                                Trades when the price touches the outer
+                                bands of
+                                the Bollinger Bands and the RSI indicates an
+                                overbought or oversold condition, signaling
+                                a
+                                potential reversal.
+                            </p>
+                        </div>
 
+                        <div class="block-footer">
+                            <hr>
+                            <p>This is where the footer will have </p>
                         </div>
 
                     </div>
+
                 </div>
             </div>
+        </div>
 
-            <br>
-            <br>
+        <br><br>
+        <h1 class="heading-1">INFO WIDGET EXAMPLE 2</h1>
+        <br><br>
 
-            <!--
+        <div class="component --component-center" id="Info Header">
+            <div class="card --card-size-quarter">
+                <div class="panel --panel-style-3">
+                    <div class="item">
+
+                        <div class="block-header">
+                            <div
+                                class="container --horizontal-container-50-50">
+                                <div class="left-content vertical">
+                                    <h2 class="heading-2">Bot Title</h2>
+                                    <div class="spinner"></div>
+                                    <h3 class="heading-3">Dynamic Status of
+                                        Bot</h3>
+                                </div>
+                                <div class="right-content">
+                                    <button
+                                        class="--action-button">Action</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="block-body">
+                            <p class="body-text">
+                                Identifyies overbought and oversold
+                                conditions
+                                using the Bollinger Bands and RSI
+                                indicators.
+                                Trades when the price touches the outer
+                                bands of
+                                the Bollinger Bands and the RSI indicates an
+                                overbought or oversold condition, signaling
+                                a
+                                potential reversal.
+                            </p>
+                        </div>
+
+                        <div class="block-footer">
+                            <hr>
+                            <p>This is where the footer will have </p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+
+        <!--
         <div class="component" id="#">
             <table>
                 <thead>
@@ -177,5 +337,5 @@
         </div>
         -->
 
-        </body>
-    </html>
+    </body>
+</html>

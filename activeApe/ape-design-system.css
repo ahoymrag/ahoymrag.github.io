@@ -534,9 +534,6 @@ tr:hover {
     --secondary-color: #fff;
     --tertiary-color: #000000;
 
-    /* Background Colors */
-    --bgstyle-glass-panel-fuzzyDuck: #2E3438;
-
     /*COLOR STATES */
 
     /*INVITATION COLOR STATES*/
@@ -1879,7 +1876,7 @@ DIFFERENT STYLES INCLUDE
 
 .--panel-style-1 {
     background-color: #ff6a6a41;
-    border-radius: 20px;
+    border-radius: var(--style-radius);
     padding: 20px;
     box-shadow: 0px 0px 10px 0px #00000053;
     border: 1px solid #ff6a6a8d;
@@ -1893,6 +1890,16 @@ DIFFERENT STYLES INCLUDE
 /_/   \_\____|approved
 
 */
+
+.--panel-glass {
+    border-radius: 10px;
+    border: 1px solid var(--Border-Glass-Border-Light-12, rgba(255, 255, 255, 0.12));
+    background: var(--surface-white-opacity-05-placeholder, rgba(255, 255, 255, 0.05));
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(12px);
+    padding: 20px;
+}
+}
 
 .--panel-style-2 {
     border-radius: 10px;
