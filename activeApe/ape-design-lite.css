@@ -93,6 +93,8 @@ body {
 /* || CARDS */
 
 .card {
+    margin-left: 5px;
+    margin-right: 5px;
     background: var(--card-background);
     border-radius: var(--border-radius);
     box-shadow: var(--card-shadow);

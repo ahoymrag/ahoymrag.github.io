@@ -1,10 +1,10 @@
 {
-  "title": "Blog",
-  "menu": ["Work", "Studio", "Blog", "Contact", "@MagazineDope", "Subscribe"],
+  "title": "thingsilike",
+  "menu": ["Home", "Featured Thoughts", "Movie Reviews", "Links", "Subscribe"],
   "featuredArticles": [
     {
-      "category": "Self",
-      "pinnedIssue": "NO. 01"
+      "category": "things i like",
+      "pinnedIssue": "NO. 01a"
     },
     {
       "title": "Trying to make sense of it all",
@@ -14,32 +14,97 @@
       "author": "Alex Gonzalez",
       "readTime": "5 Min Read",
       "content": "This is the blog of Alex Mundane formally Alex Gonzalez - a dev who devs and devs and devs - lest that what it feels like.",
-      "seeMore": ""
+      "seeMore": "Read more"
     },
     {
-      "title": "Love",
+      "title": "Like",
       "date": "12.06.2021",
       "image": "https://images.unsplash.com/photo-1529255484355-cb73c33c04bb?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTh8fGJsYWNrJTIwYW5kJTIwd2hpdGV8ZW58MHwwfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
       "description": "Talking About Vulnerability During Quarantine",
       "author": "Tom Hiddleston",
       "readTime": "5 Min Read",
       "content": "Having traveled to Turkey multiple times, with critics praising Ocean's introspective lyrics and the album's unconventional.",
-      "seeMore": ""
+      "seeMore": "Continue reading"
+    },
+    {
+      "title": "The Art of Coding",
+      "date": "3.15.24",
+      "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Y29kaW5nfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+      "description": "Exploring the Creative Side of Programming",
+      "author": "Emma Watson",
+      "readTime": "7 Min Read",
+      "content": "Coding is not just about logic and algorithms; it's an art form that allows developers to express their creativity in unique ways.",
+      "seeMore": "Discover more"
     }
-
   ],
   "rightBlog": {
     "items": [
       "Now And Then You Miss It Sounds Make You Cry",
       "Now In - MoMa Sharing Exhibition NOW",
-      "NYC Opens After Long Lockdown Check"
+      "NYC Opens After Long Lockdown Check",
+      "The Future of AI in Web Development",
+      "Top 10 Travel Destinations for Digital Nomads"
     ],
     "featuredArticles": [
       {
         "title": "Blonde - Widespread Acclaim",
         "date": "12.06.2021",
         "content": "Blonde received widespread acclaim, with critics praising Ocean's introspective lyrics and the album's."
+      },
+      {
+        "title": "The Rise of No-Code Platforms",
+        "date": "3.20.24",
+        "content": "No-code platforms are revolutionizing the tech industry, allowing non-developers to create sophisticated applications."
+      },
+      {
+        "title": "Sustainable Living in the Digital Age",
+        "date": "4.02.24",
+        "content": "Exploring ways to reduce our carbon footprint while embracing modern technology and digital lifestyles."
       }
     ]
+  },
+  "movieReviews": [
+    {
+      "title": "Inception",
+      "link": "https://www.imdb.com/title/tt1375666/",
+      "review": "A mind-bending thriller that keeps you guessing until the end."
+    },
+    {
+      "title": "The Shawshank Redemption",
+      "link": "https://www.imdb.com/title/tt0111161/",
+      "review": "A powerful story of hope and friendship that stands the test of time."
+    },
+    {
+      "title": "Parasite",
+      "link": "https://www.imdb.com/title/tt6751668/",
+      "review": "A masterful blend of dark comedy and social commentary that deservedly won the Oscar for Best Picture."
+    },
+    {
+      "title": "The Matrix",
+      "link": "https://www.imdb.com/title/tt0133093/",
+      "review": "A groundbreaking sci-fi film that revolutionized special effects and explored deep philosophical themes."
+    }
+  ],
+  "links": [
+    {
+      "title": "GitHub",
+      "url": "https://github.com",
+      "description": "Where developers collaborate and build software"
+    },
+    {
+      "title": "Stack Overflow",
+      "url": "https://stackoverflow.com",
+      "description": "The go-to resource for programming questions and answers"
+    },
+    {
+      "title": "Codecademy",
+      "url": "https://www.codecademy.com",
+      "description": "Learn to code interactively, for free"
+    }
+  ],
+  "subscribe": {
+    "title": "Stay Updated",
+    "description": "Subscribe to our newsletter for the latest tech insights and blog updates.",
+    "buttonText": "Subscribe Now"
   }
 }
