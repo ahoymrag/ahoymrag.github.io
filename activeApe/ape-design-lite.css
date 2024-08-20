@@ -16,7 +16,7 @@
    ███████████████████████████████████████████████████████████████████████████████
 /*
 // ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
-// ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+// ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀���▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 // ▀▀▀▀▀▀▀▀▀
 */
 
@@ -88,6 +88,7 @@ body {
 /* || CARDS */
 
 .card {
+    max-width: 100%;
     margin-left: 5px;
     margin-right: 5px;
     background: var(--card-background);
@@ -106,6 +107,7 @@ body {
 
 .card-size-full {
     width: 100%;
+    margin: 0;
 }
 
 .card-size-half {
@@ -136,9 +138,6 @@ body {
         width: calc(50% - 10px);
         margin-bottom: 0;
     }
-}
-
-
 }
 
 /*CARD ANIMATIONS */
@@ -176,20 +175,51 @@ body {
 
 .item-container {
     width: 100%;
+    max-width: 100%;
 }
 
 .horizontal-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    width: 100%;
 }
 
-.item {}
+.left-content,
+.right-content {
+    flex: 1;
+    display: flex;
+}
 
-.item-header {}
+.vertical {
+    flex-direction: column;
+}
+
+.left-content {
+    justify-content: flex-start;
+}
+
+.right-content {
+    justify-content: flex-end;
+}
+
+.item-body p {
+    width: 100%;
+    margin: 5px 0;
+
+}
+
+.item-header {
+    max-width: fit-content;
+}
 
 .item-body {
     gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    overflow: hidden;
 }
 
 .item-footer {}
@@ -199,8 +229,8 @@ body {
 /*
  ||  _   _ _____ ___ _     ___ _____ ___ _____ ____
  || | | | |_   _|_ _| |   |_ _|_   _|_ _| ____/ ___|
- || | | | | | |  | || |    | |  | |  | ||  _| \___ \
- || | |_| | | |  | || |___ | |  | |  | || |___ ___) |
+ || | | | | |  | || |    | |  | |  | ||  _| \___ \
+ || | |_| | |  | || |___ | |  | |  | || |___ ___) |
  ||  \___/  |_| |___|_____|___| |_| |___|_____|____/
  */
 .spinner {
@@ -243,6 +273,10 @@ body {
 
 .right {
     justify-content: flex-end;
+}
+
+.top {
+    justify-content: top;
 }
 
 
@@ -317,4 +351,82 @@ button:hover::before {
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+
+.max-w-600 {
+    max-width: 600px;
+}
+
+.max-w-800 {
+    max-width: 800px;
+}
+
+.max-w-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Headings */
+
+.heading-1 {
+    font-weight: 600;
+    margin: 0;
+}
+
+.heading-2 {
+    font-weight: 500;
+    margin: 0;
+}
+
+.body-text {
+    line-height: 95%;
+    margin: 10px 0;
+}
+
+
+/*
+ ___                   _       
+|_ _|_ __  _ __  _   _| |_ ___ 
+ | || '_ \| '_ \| | | | __/ __|
+ | || | | | |_) | |_| | |_\__ \
+|___|_| |_| .__/ \__,_|\__|___/
+          |_|                  
+*/
+
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 0.5rem 0.75rem;
+    background-color: var(--card-background);
+    color: var(--text-primary);
+    border: 1px solid var(--button-border-color);
+    border-radius: var(--button-border-radius);
+    font-family: var(--font-family);
+    font-size: 1.25rem;
+    line-height: 1.5;
+    transition: all var(--transition-duration) ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--button-hover-border-color);
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1);
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+textarea::placeholder {
+    opacity: 1;
+    /* Firefox */
+    color: rgba(255, 255, 255, 0.5);
+}
+
+textarea {
+    min-height: 10rem;
+    resize: vertical;
 }
