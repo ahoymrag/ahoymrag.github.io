@@ -1,0 +1,466 @@
+<html>
+    <head>
+        <title>Clean Demo</title>
+        <link rel="stylesheet" href="../../../ape-design-lite.css">
+        <!--
+        link rel="stylesheet" href="../../../ape-style.css">
+        -->
+    </head>
+
+    <body class="screen-example">
+
+        <!--
+        +---------------------------------------------------------------+
+        |                                                               |
+        | - Screen ***                       |
+        |   -- COMPONENT                                                |
+        |     - - Card**                                                |
+        |       - - - PANEL (S)                                         |
+        |         - - - - - item-container >                    |
+        |           - - - - - - - - Item (S)                      |
+        |                   - - - - - Item Content (Could be just code) |
+        |                   - - - - - Item Content (Full Body)          |
+        |                     - - - - - - - block-header                |
+        |                     - - - - - - - block-body                  |
+        |                     - - - - - - - block-footer                |
+        |                                                               |
+        +---------------------------------------------------------------+
+        -->
+        <!--
+   ____                _         ____ _           _            
+  / ___|_ __ ___  __ _| |_ ___  / ___| |_   _ ___| |_ ___ _ __ 
+ | |   | '__/ _ \/ _` | __/ _ \| |   | | | | / __| __/ _ \ '__|
+ | |___| | |  __/ (_| | ||  __/| |___| | |_| \__ \ ||  __/ |   
+  \____|_|  \___|\__,_|\__\___| \____|_|\__,_|___/\__\___|_|   
+                                                               
+-->
+        <h1 class="heading-1">Card Example 1</h1>
+        <p>"Create Cluster"</p>
+
+        <div class="component center"
+            id="create-new-cluster-card">
+            <div class="card card-size-half">
+                <div class="panel">
+                    <div class="item-container horizontal-container">
+                        <div class="item">
+                            <div class="item-header">
+                                <h1 class="heading-1">No bot clusters
+                                    available</h1>
+                            </div>
+                            <!-- BODY -->
+                            <div class="item-body">
+                                <p class="body-text">You'll need a bot cluster
+                                    before you can deploy your robot army.
+                                    Create a cluster with the button below</p>
+                            </div>
+
+                            <!-- FOOTER (ACTION BAR)-->
+                            <div class="item-footer center ">
+
+                                <button type="button"
+                                    onclick="window.location.href='create-2.html'">Create
+                                    Cluster</button></div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+
+        <!--
+   ____                                  _     __     __         _       _   _             
+  / ___|___  _ __ ___  _ __   ___  _ __ | |_   \ \   / /_ _ _ __(_) __ _| |_(_) ___  _ __  
+ | |   / _ \| '_ ` _ \| '_ \ / _ \| '_ \| __|   \ \ / / _` | '__| |/ _` | __| |/ _ \| '_ \ 
+ | |__| (_) | | | | | | |_) | (_) | | | | |_     \ V / (_| | |  | | (_| | |_| | (_) | | | |
+  \____\___/|_| |_| |_| .__/ \___/|_| |_|\__|     \_/ \__,_|_|  |_|\__,_|\__|_|\___/|_| |_|
+                      |_|                                                                  
+-->
+        <h1 class="heading-1">Card Example 2</h1>
+        <p>"Quarter Card - aligned to the left of parent"</p>
+
+        <div class="component center left"
+            id="create-new-cluster-card">
+            <div class="card card-size-quarter">
+                <div class="panel">
+                    <div class="item-container horizontal-container">
+                        <div class="item">
+                            <div class="item-header">
+                                <h1 class="heading-1">No bot clusters
+                                    available</h1>
+                            </div>
+                            <!-- BODY -->
+                            <div class="item-body">
+                                <p class="body-text">You'll need a bot cluster
+                                    before you can deploy your robot army.
+                                    Create a cluster with the button below</p>
+                            </div>
+
+                            <!-- FOOTER (ACTION BAR)-->
+                            <div class="item-footer center ">
+
+                                <button type="button"
+                                    onclick="window.location.href='create-2.html'">Create
+                                    Cluster</button></div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h1 class="heading-1">Card Example 3</h1>
+        <p>"Quarter Card - aligned to the right of parent"</p>
+
+        <div class="component center right"
+            id="create-new-cluster-card">
+            <div class="card card-size-quarter">
+                <div class="panel">
+                    <div class="item-container horizontal-container">
+                        <div class="item">
+                            <div class="item-header">
+                                <h1 class="heading-1">No bot clusters
+                                    available</h1>
+                            </div>
+                            <!-- BODY -->
+                            <div class="item-body">
+                                <p class="body-text">You'll need a bot cluster
+                                    before you can deploy your robot army.
+                                    Create a cluster with the button below</p>
+                            </div>
+
+                            <!-- FOOTER (ACTION BAR)-->
+                            <div class="item-footer center ">
+
+                                <button type="button"
+                                    onclick="window.location.href='create-2.html'">Create
+                                    Cluster</button></div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--
+   _____ _   _ ______ ____     _    _ _____ _____   _____ ______ _______ 
+  |_   _| \ | |  ____/ __ \   | |  | |_   _|  __ \ / ____|  ____|__   __|
+    | | |  \| | |__ | |  | |  | |  | | | | | |  | | |  __| |__     | |   
+    | | | . ` |  __|| |  | |  | |  | | | | | |  | | | |_ |  __|    | |   
+   _| |_| |\  | |   | |__| |  | |__| |_| |_| |__| | |__| | |____   | |   
+  |_____|_| \_|_|    \____/    \____/|_____|_____/ \_____|______|  |_|   
+                                                                         
+-->
+
+        <br><br>
+        <h1 class="heading-1">INFO WIDGET EXAMPLE 1</h1>
+        <p>"Half Card - aligned to the center of parent"</p>
+
+        <br><br>
+
+        <div class="component center" id="Info Header">
+            <div class="card card-size-half">
+                <div class="panel --panel-style-3">
+                    <div class="item">
+
+                        <div class="item-header">
+                            <div
+                                class="container horizontal-container">
+                                <div class="left-content vertical">
+                                    <h2 class="heading-2">Bot Title</h2>
+                                    <div class="spinner"></div>
+                                    <h3 class="heading-3">Dynamic Status of
+                                        Bot</h3>
+                                </div>
+                                <div class="right-content">
+                                    <button>Action</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item-body">
+
+                            <p class="body-text">
+                                Identifyies overbought and oversold
+                                conditions
+                                using the Bollinger Bands and RSI
+                                indicators.
+                                Trades when the price touches the outer
+                                bands of
+                                the Bollinger Bands and the RSI indicates an
+                                overbought or oversold condition, signaling
+                                a
+                                potential reversal.
+                            </p>
+                        </div>
+
+                        <div class="item-footer">
+                            <hr>
+                            <p>This is where the footer will have </p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <!--
+  _____                  ____              _   _                        _   
+ |_   _|_      _____    / ___|__ _ _ __ __| | | |    __ _ _   _  ___  _| |_ 
+   | | \ \ /\ / / _ \  | |   / _` | '__/ _` | | |   / _` | | | |/ _ \| | __|
+   | |  \ V  V / (_) | | |__| (_| | | | (_| | | |__| (_| | |_| | (_) | | |_ 
+   |_|   \_/\_/ \___/   \____\__,_|_|  \__,_| |____\__,_|\__, |\___/|_|\__|
+                                                         |___/             
+    -->
+        <h1 class="heading-1">Two Card Layout</h1>
+        <p>"Two Cards side by side"</p>
+
+        <div class="component center" id="#">
+            <div class="card">
+                <div class="panel">
+                    <div class="item">
+                        <div class="item-header">
+                            <h1 class="heading-1">Card Left</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="panel">
+                    <div class="item">
+                        <div class="item-header">
+                            <h1 class="heading-1">Card Right</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+
+        <!--CARD LIST-->
+        <!-- NEEDS TWO COL 
+ with the Bots on left
+ and in right col - have the bot status - and an action bar - think icons 
+ -->
+        <h1 class="heading-1">Card List Layout</h1>
+        <p>A type of card content that has a list of items - in various
+            layouts</p>
+        <div class="component" id="#">
+            <div class="card">
+                <div class="panel">
+                    <div class="item">
+                        <div class="item-header">
+                            <h1>Card List Conent</h1>
+                        </div>
+                        <div class="item-body center">
+                            <div class="left-content">
+                                <p>Card Left Content</p>
+                            </div>
+                            <div class="right-content">
+                                <p>Card Right Content</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+    <h1 class="heading-1">Example #3</h1>
+    <p>Two Card Layout + Card List Content Example</p>
+
+    <br><br>
+    <br><br>
+    <div class="component center" id="#">
+        <div class="card">
+            <div class="panel">
+                <div class="item">
+                    <div class="item-header">
+                        <p class="body-text">Funds Remaining</p>
+                        <h1 class="heading-1">6 Months</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="panel">
+                <div class="item">
+                    <div class="item-header">
+                        <p class="body-text">Total Bots</p>
+                        <h1 class="heading-1">7 bots</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <div class="component center" id="#">
+        <div class="card">
+            <div class="panel">
+                <div class="item">
+                    <div class="item-header">
+                        <h1>Card List Content</h1>
+                    </div>
+                    <div class="item-body center">
+                        <div class="left-content vertical">
+                            <h2 class="heading-2">Bot Name</h2>
+                            <div class="instance" id="#">
+                                <p>FeeGuardian</p>
+                                <p>ComplianceWatcher</p>
+                                <p>GovernanceCustodian</p>
+                                <p>ArbitrageDefender</p>
+                                <p>LoanOptimizer</p>
+                                <p>StakingSeninel</p>
+                                <p>ComplianceMonitor</p>
+                            </div>
+                        </div>
+                        <div class="right-content vertical">
+                            <h2 class="heading-2">Status</h2>
+                            <div class="instance" id="#">
+                                <p>Running since May 10, 2024 at 5:32 GMT
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <!--
+   ____        _   _                  
+  | __ ) _   _| |_| |_ ___  _ __  ___ 
+  |  _ \| | | | __| __/ _ \| '_ \/ __|
+  | |_) | |_| | |_| || (_) | | | \__ \
+  |____/ \__,_|\__|\__\___/|_| |_|___/
+                                      
+-->
+    <h1 class="heading-1">Buttons</h1>
+    <div class="component center" id="#">
+        <div class="card card-size-half">
+            <div class="panel">
+                <div class="item">
+                    <div class="item-header">
+                        <h1 class="heading-1">List of Buttons</h1>
+                    </div>
+                    <div class="item-body vertical-container">
+                        <button>Button 1</button>
+                        <button>Button 2</button>
+                        <button>Button 3</button>
+                        <button>Button 4</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br>
+
+    <!--
+   ____                                       _                    _       
+  |  _ \ ___  _ __  _   _ _ __  ___    __ _ _ __  __| |   _____   _____ _ __ | |_   _ 
+  | |_) / _ \| '_ \| | | | '_ \/ __|  / _` | '_ \/ _` |  / _ \ \ / / _ \ '__|| | | | |
+  |  __/ (_) | |_) | |_| | |_) \__ \ | (_| | | | \__,_| | (_) \ V /  __/ |   | | |_| |
+  |_|   \___/| .__/ \__,_| .__/|___/  \__,_|_| |_|___/   \___/ \_/ \___|_|   |_|\__, |
+             |_|         |_|                                                    |___/ 
+-->
+
+    <h1 class="heading-1">Popups and Overlay </h1>
+    <p>Examples of how Overlay and Popup Content Works</p>
+
+    <br><br><br>
+
+    <div class="component" id="#">
+        <div class="card card-size-full">
+            <div class="panel">
+                <div class="item">
+                    <div class="item-header">
+                        <h1 class="heading-1">Overlay Via Button</h1>
+                    </div>
+                    <div class="item-body">
+                        <button>Overlay</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+
+    <div class="component" id="#">
+        <div class="card card-size-full">
+            <div class="panel">
+                <div class="item">
+                    <div class="item-header">
+                        <h1 class="heading-1">Parital Overlay</h1>
+                    </div>
+                    <div class="item-body">
+                        <button>Open Parital Overlay</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+
+    <h1>As is Simple</h1>
+    <p>Turns into the home button for future use ;)</p>
+    <div class="component">
+        <div class="card">
+            <div class="panel">
+            </div>
+        </div>
+
+        <!--
+        <div class="component" id="#">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Header 1</th>
+                        <th>Header 2</th>
+                        <th>Header 3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Row 1, Cell 1</td>
+                        <td>Row 1, Cell 2</td>
+                        <td>Row 1, Cell 3</td>
+                    </tr>
+                    <tr>
+                        <td>Row 2, Cell 1</td>
+                        <td>Row 2, Cell 2</td>
+                        <td>Row 2, Cell 3</td>
+                    </tr>
+                    <tr>
+                        <td>Row 3, Cell 1</td>
+                        <td>Row 3, Cell 2</td>
+                        <td>Row 3, Cell 3</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        -->
+
+    </body>
+</html>
