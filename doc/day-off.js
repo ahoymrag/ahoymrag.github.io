@@ -35,6 +35,11 @@ document.addEventListener('DOMContentLoaded', () => {
                         ${step.image ? `<img src="${step.image}" alt="Step ${step.step}">` : ''}
                     </div>
                 `).join('')}
+
+                <h3>Notes for Next Time:</h3>
+                <ul>
+                    ${data.notesForNextTime.map(note => `<li>${note}</li>`).join('')}
+                </ul>
             `;
         })
         .catch(error => {

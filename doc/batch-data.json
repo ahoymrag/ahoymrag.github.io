@@ -19,7 +19,7 @@
       "amount": "1 tablespoon",
       "name": "One Step No Rinse Cleansers",
       "brand": "Red Star",
-      "price": 1.99
+      "price": 3.99
     },
     {
       "amount": "2 Ounce Jar",
@@ -80,6 +80,22 @@
     {
       "step": 8,
       "description": "Measured temperature of the jug of juice - 24 degrees C"
+    },
+    {
+      "step": 9,
+      "description": "Measured the Gravity of the liquid - with it hitting the bottom it is 1.058"
+    },
+    {
+      "step": 10,
+      "description": "Added the pectic enzyme to the jug - half of teaspon per gallon - 1/2 teaspoon per gallon - which in our case is 2 teaspoons - and we dissolved it in 1/4 cup of water"
+    },
+    {
+      "step": 11,
+      "description": "Wait 24 hours before adding the yeast"
     }
+  ],
+  "notesForNextTime": [
+    "* Next time - we need to get a large cylander to measure the gravity",
+    "* Record the ambient temperature throughout the fermentation process"
   ]
 }
