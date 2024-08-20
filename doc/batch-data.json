@@ -52,8 +52,8 @@
   "process": [
     {
       "step": 1,
-      "description": "put 16 cups of warm water and a tablespoon of one step into a measure right 5 gallon jug that we used last time",
-      "image": "#"
+      "description": "put 16 cups of warm water and a tablespoon of one step into a measure right 5 gallon jug that we used last time"
+    
     },
     {
       "step": 2,
@@ -77,11 +77,13 @@
     },
     {
       "step": 6,
-      "description": "Heat up Sugar and add to the jug - 3 cups of sugar one for each gallon - heat up small 1 to 2 in a pot and add the sugar and water and stir until the sugar is dissolve - we decided to dissolve it into two cups of water"
+      "description": "Heat up Sugar and add to the jug - 3 cups of sugar one for each gallon - heat up small 1 to 2 in a pot and add the sugar and water and stir until the sugar is dissolve - we decided to dissolve it into two cups of water",
+        "image": "./2.jpg"
     },
     {
       "step": 7,
-      "description": "Add Juice to the jug"
+      "description": "Add Juice to the jug",
+        "image": "./1.jpg"
     },
     {
       "step": 8,
@@ -103,5 +105,12 @@
   "notesForNextTime": [
     " Use a large cylander to measure the gravity",
     "Record the ambient temperature throughout the fermentation process"
+  ],
+  "mediaGallery": [
+    "1.jpg",
+    "2.jpg",
+    "3.jpg",
+    "4.jpg",
+    "5.jpg"
   ]
 }
