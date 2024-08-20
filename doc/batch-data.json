@@ -16,10 +16,11 @@
       "used": "4 gallons"
     },
     {
-      "amount": "1 tablespoon",
+      "amount": "8 oz",
       "name": "One Step No Rinse Cleansers",
       "brand": "Red Star",
-      "price": 3.99
+      "price": 3.99,
+      "used": "1 tablespoon"
     },
     {
       "amount": "2 Ounce Jar",
@@ -51,7 +52,7 @@
     },
     {
       "step": 2,
-      "description": "Add one step no rinse cleansers to the jug",
+      "description": "Add one step no rinse cleansers to the jug - 1 tablespoon into 1 gallon of water",
       "image": "https://unsplash.it/600/400?image=602"
     },
     {
@@ -95,7 +96,7 @@
     }
   ],
   "notesForNextTime": [
-    "* Next time - we need to get a large cylander to measure the gravity",
-    "* Record the ambient temperature throughout the fermentation process"
+    " Use a large cylander to measure the gravity",
+    "Record the ambient temperature throughout the fermentation process"
   ]
 }
