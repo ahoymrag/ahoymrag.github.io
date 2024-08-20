@@ -13,35 +13,40 @@
       "ingredients": ["Apple cider", "Ascorbic acid"],
       "price": 7.18,
       "quantity": 4,
-      "used": "4 gallons"
+      "used": "4 gallons",
+      "restocked": true
     },
     {
       "amount": "8 oz",
       "name": "One Step No Rinse Cleansers",
       "brand": "Red Star",
-      "price": 3.99,
-      "used": "1 tablespoon"
+      "price": 23.99,
+      "used": "1 tablespoon",
+      "restocked": false
     },
     {
       "amount": "2 Ounce Jar",
       "name": "Pectic Enzyme",
       "brand": "North Mountain Supply",
       "price": 6.99,
-      "used": 1
+      "used": 1,
+      "restocked": true
     },
     {
       "amount": "44oz",
       "name": "Turbinando Cane Sugar",
       "brand": "Flordia Crystals",
       "price": 0.00,
-      "used": "4 cups"
+      "used": "4 cups",
+      "restocked": false
     },
     {
       "amount": "9G or .31oz",
       "name": "Cider Yeast",
       "brand": "Mangrove Jack's",
       "price": 0.00,
-      "used": "1 packet"
+      "used": "1 packet",
+      "restocked": true
     }
   ],
   "process": [

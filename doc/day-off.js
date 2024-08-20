@@ -23,6 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             ${ingredient.ingredients ? `<br>Ingredients: ${ingredient.ingredients.join(', ')}` : ''}
                             ${ingredient.quantity ? `<br>Quantity: ${ingredient.quantity}` : ''}
                             ${ingredient.used ? `<br>Used: ${ingredient.used}` : ''}
+                            <br>Restocked: ${ingredient.restocked ? 'Yes' : 'No'}
                         </li>
                     `).join('')}
                 </ul>
