@@ -100,7 +100,6 @@ body {
 }
 
 .card:hover {
-    transform: translateY(-5px) scale(1.05);
     box-shadow: var(--card-hover-shadow);
     background: var(--card-hover-background);
 }
