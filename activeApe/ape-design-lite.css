@@ -104,12 +104,47 @@ body {
     background: var(--card-hover-background);
 }
 
+.card-size-full {
+    width: 100%;
+}
+
 .card-size-half {
     width: 50%;
 }
 
 .card-size-quarter {
     width: 25%;
+}
+
+.card-size-symm {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+
+@media screen and (max-width: 767px) {
+    .card-size-symm {
+        width: 100%;
+        margin-bottom: 20px;
+        display: block;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .card-size-symm {
+        width: calc(50% - 10px);
+        margin-bottom: 0;
+    }
+}
+
+
+}
+
+/*CARD ANIMATIONS */
+
+.card-hover:hover {
+    transform: translateY(-5px) scale(1.05);
 }
 
 /*
