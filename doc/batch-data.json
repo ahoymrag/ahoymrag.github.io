@@ -25,7 +25,7 @@
       "amount": "2 Ounce Jar",
       "name": "Pectic Enzyme",
       "brand": "North Mountain Supply",
-      "price": 2.49,
+      "price": 6.99,
       "used": 1
     },
     {
@@ -72,6 +72,14 @@
     {
       "step": 6,
       "description": "Heat up Sugar and add to the jug - 3 cups of sugar one for each gallon - heat up small 1 to 2 in a pot and add the sugar and water and stir until the sugar is dissolve - we decided to dissolve it into two cups of water"
+    },
+    {
+      "step": 7,
+      "description": "Add Juice to the jug"
+    },
+    {
+      "step": 8,
+      "description": "Measured temperature of the jug of juice - 24 degrees C"
     }
   ]
 }
