@@ -1,0 +1,77 @@
+{
+  "date": "2024-08-19",
+  "batchName": "Batch #002",
+  "batchNumber": 2,
+  "brewTime": "14 days",
+  "amountDesired": "4 gallons",
+  "ingredients": [
+    {
+      "amount": "1 gallon",
+      "name": "Apple Cider",
+      "brand": "Musselman's Fresh Pressed",
+      "description": "Pasteurized, not from concentrate",
+      "ingredients": ["Apple cider", "Ascorbic acid"],
+      "price": 7.18,
+      "quantity": 4,
+      "used": "4 gallons"
+    },
+    {
+      "amount": "1 tablespoon",
+      "name": "One Step No Rinse Cleansers",
+      "brand": "Red Star",
+      "price": 1.99
+    },
+    {
+      "amount": "2 Ounce Jar",
+      "name": "Pectic Enzyme",
+      "brand": "North Mountain Supply",
+      "price": 2.49,
+      "used": 1
+    },
+    {
+      "amount": "44oz",
+      "name": "Turbinando Cane Sugar",
+      "brand": "Flordia Crystals",
+      "price": 0.00,
+      "used": "4 cups"
+    },
+    {
+      "amount": "9G or .31oz",
+      "name": "Cider Yeast",
+      "brand": "Mangrove Jack's",
+      "price": 0.00,
+      "used": "1 packet"
+    }
+  ],
+  "process": [
+    {
+      "step": 1,
+      "description": "put 16 cups of warm water and a tablespoon of one step into a measure right 5 gallon jug that we used last time",
+      "image": "https://unsplash.it/600/400?image=431"
+    },
+    {
+      "step": 2,
+      "description": "Add one step no rinse cleansers to the jug",
+      "image": "https://unsplash.it/600/400?image=602"
+    },
+    {
+      "step": 3,
+      "description": "Added all the tools into the solution",
+      "image": "https://unsplash.it/600/400?image=823"
+    },
+    {
+      "step": 4,
+      "description": "Steralizing the 5 gallon tub with one step no rinse cleansers - start with rinsing and then add the cleanser and let sit for 10 minutes",
+      "image": "https://unsplash.it/600/400?image=674"
+    },
+    {
+      "step": 5,
+      "description": "Ferment for 14 days",
+      "image": "https://unsplash.it/600/400?image=488"
+    },
+    {
+      "step": 6,
+      "description": "Heat up Sugar and add to the jug - 3 cups of sugar one for each gallon - heat up small 1 to 2 in a pot and add the sugar and water and stir until the sugar is dissolve - we decided to dissolve it into two cups of water"
+    }
+  ]
+}
