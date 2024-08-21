@@ -1,4 +1,4 @@
-/* ApeWorX Silverback Design System 001.6 */
+/* ApeWorX Lite Design System 001.6 */
 /*
 ███████████████████████████████████████████████████████████████████████████████
    ██                                                                         ██
@@ -9,8 +9,8 @@
    ██   ███████║██║███████╗╚████╔╝ ███████╗██║  ██║██████╔╝██║  ██║╚██████╗██║  ██╗
    ██   ╚══════╝╚═╝╚══════╝ ╚═══╝  ╚══════╝╚═╝  ╚═╝╚═════╝ ╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝
    ██                                                                         ██
-   ██  APEWORX SILVERBACK DESIGN SYSTEM                                       ██
-   ██  Model: SB-2024                                                         ██
+   ██  APEWORX LITE DESIGN SYSTEM                                                  ██
+   ██  Model: AG-2024                                                         ██
    ██  Serial: 0000000001                                                     ██
    ██                                                                         ██
    ███████████████████████████████████████████████████████████████████████████████
@@ -97,12 +97,33 @@
 
 .btn-inactive {
     background-color: var(--btn-inactive-bg);
+    border-color: var(--silver-dark);
+    color: var(--silver-light);
+}
+
+.btn-inactive:hover {
+    background-color: var(--silver-medium);
+    border-color: var(--silver-light);
 }
 
 .btn-on {
     background-color: var(--btn-on-bg);
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+}
+
+.btn-on:hover {
+    background-color: var(--accent-color);
+    color: var(--silver-light);
 }
 
 .btn-off {
     background-color: var(--btn-off-bg);
+    border-color: var(--tertiary-color);
+    color: var(--tertiary-color);
+}
+
+.btn-off:hover {
+    background-color: var(--tertiary-color);
+    color: var(--silver-light);
 }

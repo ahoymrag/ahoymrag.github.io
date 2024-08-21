@@ -6,7 +6,7 @@
    ██  ██╔══██╗██╔══██╗██╔════╝██║    ██║██╔═══██╗██╔══██╗╚██╗██╔╝            ██
    ██  ███████║██████╔╝█████╗  ██║ █╗ ██║██║   ██║██████╔╝ ╚███╔╝             ██
    ██  ██╔══██║██╔═══╝ ██╔══╝  ██║███╗██║██║   ██║██╔══██╗ ██╔██╗             ██
-   ██  ██║  ██║██║     ███���███╗╚███╔███╔╝╚██████╔╝██║  ██║██╔╝ ██╗            ██
+   ██  ██║  ██║██║     █��█████╗╚███╔███╔╝╚██████╔╝██║  ██║██╔╝ ██╗            ██
    ██  ╚═╝  ╚═╝╚═╝     ╚══════╝ ╚══╝╚══╝  ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝            ██
    ██                                                                         ██
    ██  APEWORX LITE DESIGN SYSTEM                                                  ██
@@ -28,6 +28,7 @@
     --button-background: rgba(222, 222, 222, 0.09);
     --button-border-color: #FFF;
     --button-hover-border-color: rgba(0, 0, 0, 0.925);
+    --button-hover-text-color: white;
 
     /* Fonts */
     --font-family: 'Barlow', sans-serif;
@@ -54,10 +55,25 @@
 
     /* Button Variations */
     --btn-inactive-bg: grey;
+    --btn-inactive-bor: #808080;
+    --btn-inactive-text: #D3D3D3;
+    --btn-inactive-hover-bg: #A9A9A9;
+    --btn-inactive-hover-bor: #696969;
+    --btn-inactive-hover-text: #FFFFFF;
+
     --btn-on-bg: rgba(127, 255, 212, 0.439);
+    --btn-on-bor: #7fffd4;
+    --btn-on-text: #7fffd4;
+    --btn-on-hover-bg: #7fffd4;
+    --btn-on-hover-bor: #7fffd4;
+    --btn-on-hover-text: #FFFFFF;
+
     --btn-off-bg: #ff006221;
     --btn-off-bor: #ff0060;
     --btn-off-text: #ff0060;
+    --btn-off-hover-bg: #ff0060;
+    --btn-off-hover-bor: #ff0060;
+    --btn-off-hover-text: #FFFFFF;
 }
 
 /* || GENERAL STYLES */
@@ -317,6 +333,8 @@ body {
  */
 /*BUTTONS */
 
+
+
 button {
     position: relative;
     z-index: 1;
@@ -327,12 +345,10 @@ button {
     font-size: var(--font-size-small);
     letter-spacing: 0.05em;
     line-height: 1.2;
+    background: transparent;
     color: var(--text-primary);
     border: 1px solid var(--button-border-color);
     border-radius: var(--button-border-radius);
-    background: var(--button-background);
-    backdrop-filter: blur(var(--blur-amount));
-    -webkit-backdrop-filter: blur(var(--blur-amount));
     display: flex;
     padding: var(--button-padding);
     justify-content: center;
@@ -341,46 +357,57 @@ button {
     align-self: stretch;
     text-align: center;
     width: 100%;
-    transition: all var(--transition-duration) ease;
 }
 
-button::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 0;
-    height: 0;
-    background: radial-gradient(circle, rgba(0, 0, 0, 0.925) 0%, rgba(0, 0, 0, 0.5) 70%, transparent 100%);
-    mix-blend-mode: multiply;
-    transform: translate(-50%, -50%);
-    transition: width var(--transition-duration) ease, height var(--transition-duration) ease;
-    z-index: -1;
-    opacity: 0;
-}
 
 button:hover {
-    color: rgba(255, 255, 255, 0.943);
-    transform: scale(1.015);
     cursor: pointer;
-    border-color: var(--button-hover-border-color);
+    border-style: solid;
+    border-width: 1px;
+
+
 }
 
-button:hover::before {
-    width: 300%;
-    height: 300%;
-    opacity: 1;
+
+/*PRM BTNs*/
+
+.btn-primary {
+    background: var(--button-background);
+    backdrop-filter: blur(var(--blur-amount));
+    -webkit-backdrop-filter: blur(var(--blur-amount));
+}
+
+.btn-primary {
+    border-color: var(--button-hover-border-color);
+    color: var(--button-hover-text-color);
 }
 
 
 /*BTN VARIATIONS */
 
+
+
 .btn-inactive {
     background-color: var(--btn-inactive-bg);
+    border-color: var(--btn-inactive-bor);
+    color: var(--btn-inactive-text);
+}
+
+.btn-inactive:hover {
+    background-color: var(--btn-inactive-hover-bg);
+    border-color: var(--btn-inactive-hover-bor);
+    color: var(--btn-inactive-hover-text);
 }
 
 .btn-on {
     background-color: var(--btn-on-bg);
+    border-color: var(--btn-on-bor);
+    color: var(--btn-on-text);
+}
+
+.btn-on:hover {
+    background-color: var(--btn-on-hover-bg) !important;
+    color: var(--btn-on-hover-text);
 }
 
 .btn-off {

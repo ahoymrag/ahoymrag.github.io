@@ -49,3 +49,50 @@
 .panel {
     border-color: var(--dark-teal);
 }
+
+/* Button styles */
+button {
+    background: var(--button-background);
+    color: var(--text-primary);
+    border: 1px solid var(--button-border-color);
+    backdrop-filter: blur(calc(var(--blur-amount) / 2));
+}
+
+button:hover {
+    background: var(--card-hover-background);
+    border-color: var(--button-hover-border-color);
+}
+
+/* Button variations */
+.btn-inactive {
+    background-color: var(--btn-inactive-bg);
+    border-color: var(--dark-teal);
+    color: var(--light-teal);
+}
+
+.btn-inactive:hover {
+    background-color: var(--teal-green);
+    border-color: var(--light-teal);
+}
+
+.btn-on {
+    background-color: var(--btn-on-bg);
+    border-color: var(--cyan);
+    color: var(--cyan);
+}
+
+.btn-on:hover {
+    background-color: var(--cyan);
+    color: var(--teal-green);
+}
+
+.btn-off {
+    background-color: var(--btn-off-bg);
+    border-color: var(--yellow);
+    color: var(--yellow);
+}
+
+.btn-off:hover {
+    background-color: var(--yellow);
+    color: var(--teal-green);
+}
