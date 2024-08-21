@@ -30,6 +30,11 @@
 
     /* Blur */
     --blur-amount: 5px;
+
+    /* Button variations */
+    --btn-inactive-bg: var(--dark-teal);
+    --btn-on-bg: rgba(0, 255, 255, 0.439);
+    --btn-off-bg: rgba(255, 255, 0, 0.444);
 }
 
 /* Optional: Update specific elements for the new theme */

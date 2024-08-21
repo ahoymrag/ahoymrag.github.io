@@ -1,3 +1,26 @@
+/* ApeWorX Silverback Design System 001.6 */
+/*
+███████████████████████████████████████████████████████████████████████████████
+   ██                                                                         ██
+   ██   ███████╗██╗██╗    ██╗   ██╗███████╗██████╗ ██████╗  █████╗  ██████╗██╗  ██╗
+   ██   ██╔════╝██║██║    ██║   ██║██╔════╝██╔══██╗██╔══██╗██╔══██╗██╔════╝██║ ██╔╝
+   ██   ███████╗██║██║    ██║   ██║█████╗  ██████╔╝██████╔╝███████║██║     █████╔╝ 
+   ██   ╚════██║██║██║    ╚██╗ ██╔╝██╔══╝  ██╔══██╗██╔══██╗██╔══██║██║     ██╔═██╗ 
+   ██   ███████║██║███████╗╚████╔╝ ███████╗██║  ██║██████╔╝██║  ██║╚██████╗██║  ██╗
+   ██   ╚══════╝╚═╝╚══════╝ ╚═══╝  ╚══════╝╚═╝  ╚═╝╚═════╝ ╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝
+   ██                                                                         ██
+   ██  APEWORX SILVERBACK DESIGN SYSTEM                                       ██
+   ██  Model: SB-2024                                                         ██
+   ██  Serial: 0000000001                                                     ██
+   ██                                                                         ██
+   ███████████████████████████████████████████████████████████████████████████████
+/*
+// ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+// ▀▀▀▀▀▀▀▀▀
+*/
+
+
+
 :root {
     /* Silver-inspired colors */
     --silver-light: #E8E8E8;
@@ -37,6 +60,13 @@
     /* Gradients */
     --silver-gradient: linear-gradient(135deg, var(--silver-light), var(--silver-dark));
     --glass-gradient: linear-gradient(135deg, var(--glass-white), var(--glass-medium));
+
+    /* Button variations */
+    --btn-inactive-bg: var(--silver-dark);
+    --btn-on-bg: rgba(70, 130, 180, 0.439);
+    /* Using steel blue */
+    --btn-off-bg: rgba(176, 196, 222, 0.444);
+    /* Using light steel blue */
 }
 
 /* Optional: Update specific elements for the new theme */
@@ -61,4 +91,18 @@
 .button:hover {
     background: var(--card-hover-background);
     border-color: var(--button-hover-border-color);
+}
+
+/*BTN VARIATIONS */
+
+.btn-inactive {
+    background-color: var(--btn-inactive-bg);
+}
+
+.btn-on {
+    background-color: var(--btn-on-bg);
+}
+
+.btn-off {
+    background-color: var(--btn-off-bg);
 }
