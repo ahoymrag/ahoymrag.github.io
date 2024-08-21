@@ -55,7 +55,9 @@
     /* Button Variations */
     --btn-inactive-bg: grey;
     --btn-on-bg: rgba(127, 255, 212, 0.439);
-    --btn-off-bg: #ff0060;
+    --btn-off-bg: #ff006221;
+    --btn-off-bor: #ff0060;
+    --btn-off-text: #ff0060;
 }
 
 /* || GENERAL STYLES */
@@ -383,11 +385,14 @@ button:hover::before {
 
 .btn-off {
     background-color: var(--btn-off-bg);
-    border-color: var(--btn-inactive-bg);
+    border-color: var(--btn-off-bor);
+    color: var(--btn-off-text);
 }
 
-
-
+.btn-off:hover {
+    background-color: var(--btn-off-bor);
+    color: white;
+}
 
 /*MISC*/
 
@@ -431,6 +436,11 @@ button:hover::before {
     margin: 10px 0;
 }
 
+/*TYPOGRAPHY ULT */
+
+.center-text {
+    text-align: center;
+}
 
 /*
  ___                   _       
