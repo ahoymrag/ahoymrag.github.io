@@ -1,0 +1,106 @@
+{
+  "websites": [
+    {
+      "id": 1,
+      "title": "E-commerce Platform",
+      "thumbnail": "https://via.placeholder.com/300x200?text=E-commerce+Thumbnail",
+      "description": "A fully responsive e-commerce website with product catalog, shopping cart, and secure checkout.",
+      "link": "https://example-ecommerce.com",
+      "gallery": [
+        "https://via.placeholder.com/800x600?text=E-commerce+1",
+        "https://via.placeholder.com/800x600?text=E-commerce+2",
+        "https://via.placeholder.com/800x600?text=E-commerce+3"
+      ],
+      "yearMade": 2024,
+      "monthMade": "January",
+      "isProfessional": true,
+      "isForClient": true,
+      "clientName": "TechMart Inc."
+    },
+    {
+      "id": 2,
+      "title": "Portfolio Site",
+      "thumbnail": "https://via.placeholder.com/300x200?text=Portfolio+Thumbnail",
+      "description": "A sleek and modern portfolio website showcasing creative works and projects.",
+      "link": "https://example-portfolio.com",
+      "gallery": [
+        "https://via.placeholder.com/800x600?text=Portfolio+1",
+        "https://via.placeholder.com/800x600?text=Portfolio+2",
+        "https://via.placeholder.com/800x600?text=Portfolio+3"
+      ],
+      "yearMade": 2024,
+      "monthMade": "February",
+      "isProfessional": true,
+      "isForClient": false,
+      "clientName": null
+    },
+    {
+      "id": 3,
+      "title": "Blog Platform",
+      "thumbnail": "https://via.placeholder.com/300x200?text=Blog+Thumbnail",
+      "description": "A feature-rich blog platform with customizable themes and user management.",
+      "link": "https://example-blog.com",
+      "gallery": [
+        "https://via.placeholder.com/800x600?text=Blog+1",
+        "https://via.placeholder.com/800x600?text=Blog+2",
+        "https://via.placeholder.com/800x600?text=Blog+3"
+      ],
+      "yearMade": 2024,
+      "monthMade": "March",
+      "isProfessional": true,
+      "isForClient": false,
+      "clientName": null
+    },
+    {
+      "id": 4,
+      "title": "Restaurant Website",
+      "thumbnail": "https://via.placeholder.com/300x200?text=Restaurant+Thumbnail",
+      "description": "An elegant website for a restaurant, featuring menu, reservations, and location information.",
+      "link": "https://example-restaurant.com",
+      "gallery": [
+        "https://via.placeholder.com/800x600?text=Restaurant+1",
+        "https://via.placeholder.com/800x600?text=Restaurant+2",
+        "https://via.placeholder.com/800x600?text=Restaurant+3"
+      ],
+      "yearMade": 2024,
+      "monthMade": "April",
+      "isProfessional": true,
+      "isForClient": true,
+      "clientName": "Bistro Delight"
+    },
+    {
+      "id": 5,
+      "title": "Fitness App",
+      "thumbnail": "https://via.placeholder.com/300x200?text=Fitness+Thumbnail",
+      "description": "A web application for tracking workouts, nutrition, and personal fitness goals.",
+      "link": "https://example-fitness.com",
+      "gallery": [
+        "https://via.placeholder.com/800x600?text=Fitness+1",
+        "https://via.placeholder.com/800x600?text=Fitness+2",
+        "https://via.placeholder.com/800x600?text=Fitness+3"
+      ],
+      "yearMade": 2024,
+      "monthMade": "May",
+      "isProfessional": true,
+      "isForClient": false,
+      "clientName": null
+    },
+    {
+      "id": 6,
+      "title": "Travel Blog",
+      "thumbnail": "https://via.placeholder.com/300x200?text=Travel+Thumbnail",
+      "description": "A travel blog showcasing destinations, tips, and personal experiences from around the world.",
+      "link": "https://example-travel.com",
+      "gallery": [
+        "https://via.placeholder.com/800x600?text=Travel+1",
+        "https://via.placeholder.com/800x600?text=Travel+2",
+        "https://via.placeholder.com/800x600?text=Travel+3"
+      ],
+      "yearMade": 2024,
+      "monthMade": "June",
+      "isProfessional": true,
+      "isForClient": false,
+      "clientName": null
+    }
+  ]
+}
