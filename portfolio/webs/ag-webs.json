@@ -2,9 +2,9 @@
   "websites": [
     {
       "id": 1,
-      "title": "E-commerce Platform",
+      "title": "Day Off Cider - Brewing Company",
       "thumbnail": "https://via.placeholder.com/300x200?text=E-commerce+Thumbnail",
-      "description": "A fully responsive e-commerce website with product catalog, shopping cart, and secure checkout.",
+      "description": "A journaled journey into the world of craft cider.",
       "link": "https://example-ecommerce.com",
       "gallery": [
         "https://via.placeholder.com/800x600?text=E-commerce+1",
