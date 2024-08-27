@@ -1,0 +1,78 @@
+
+:root {
+    /* ---------------------------- Raw Colors ---------------------------- 
+       This would be a list of raw colors used in this theme. You'd assign 
+       roles to these colors in the "Descriptive Colors" section
+    */
+    
+    /* Silver-inspired colors */
+    --silver-light: #E8E8E8;
+    --silver-medium: #C0C0C0;
+    --silver-dark: #A9A9A9;
+    --charcoal: #36454F;
+
+    /* Glass effect colors */
+    --glass-white: rgba(255, 255, 255, 0.1);
+    --glass-light: rgba(200, 200, 200, 0.2);
+    --glass-medium: rgba(150, 150, 150, 0.3);
+    /* Accent colors */
+    --accent-color: #4682B4;
+    --secondary-color: #708090;
+    --tertiary-color: #B0C4DE;
+
+    /* Gradients */
+    --silver-gradient: linear-gradient(135deg, var(--silver-light), var(--silver-dark));
+    --glass-gradient: linear-gradient(135deg, var(--glass-white), var(--glass-medium));
+
+
+    /* ------------------------- Descriptive Colors ------------------------- 
+
+                                AKA the control panel
+
+       This is where you assign theme colors to each color role in the system
+
+    ------------------------------------------------------------------------*/
+
+    --background-color: var(--charcoal);
+    --text-primary: var(--silver-light);
+
+    --card-background: var(--glass-light);
+    --card-hover-background: var(--glass-medium);
+
+    /* Separate color role for panel, because this could be different than card in some other themes */
+    --panel-background: var(--silver-gradient); 
+    --panel-border: var(--silver-dark);
+
+    --button-background: var(--glass-white);
+    --button-border-color: var(--silver-medium);
+    --button-hover-border-color: var(--silver-light);
+
+    /* Button variations */
+    --btn-inactive-bg: var(--silver-dark);;
+    --btn-inactive-bor: var(--silver-dark);
+    --btn-inactive-text: var(--silver-light);
+    --btn-inactive-hover-bg: var(--silver-medium);
+    --btn-inactive-hover-bor: var(--silver-light);
+    --btn-inactive-hover-text: var(--white);
+
+    --btn-on-bg: rgba(70, 130, 180, 0.439);
+    --btn-on-bor: var(--accent-color);
+    --btn-on-text: var(--accent-color);
+    --btn-on-hover-bg: var(--accent-color);
+    --btn-on-hover-bor: var(--accent-color);
+    --btn-on-hover-text: var(--silver-light);
+
+    --btn-off-bg: rgba(176, 196, 222, 0.444);
+    --btn-off-bor: var(--tertiary-color);
+    --btn-off-text: var(--tertiary-color);
+    --btn-off-hover-bg: var(--tertiary-color);
+    --btn-off-hover-bor: var(--tertiary-color);
+    --btn-off-hover-text: var(--silver-light);
+}
+
+
+/* 
+    No CSS needed here since all the 
+    color vars are defined in the control panel!  
+ */
+

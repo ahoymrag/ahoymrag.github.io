@@ -1,0 +1,128 @@
+
+:root {
+    /* ---------------------------- Raw Colors ---------------------------- 
+       This would be a list of raw colors used in the system. You'd assign 
+       roles to these colors in the "Descriptive Colors" section
+    */
+    --white: white;
+    --white-opacity-10: rgba(255, 255, 255, 0.1);
+    --white-opacity-12: rgba(255, 255, 255, 0.12);
+    --white-opacity-20: rgba(255, 255, 255, 0.2);
+
+    --teal-dark: rgb(0, 56, 81);
+
+    --green-neon: #7fffd4;
+    --red-light: #f08080;
+
+
+
+    /* ------------------------- Descriptive Colors ------------------------- 
+
+                                AKA the control panel
+
+       All color roles go here. Theme files can override these
+    
+    ---------------------------------------------------------------------- */
+
+    --background-color: var(--teal-dark);
+    --text-primary: var(--white);
+    
+    --card-background: var(--white-opacity-10);
+    --card-border: var(--white-opacity-12);
+    --card-hover-background: var(--white-opacity-20);
+    /* Separate color role for panel, because this could be different than card in some other themes */
+    --panel-background: var(--white-opacity-10); 
+    --panel-border: var(--white-opacity-12);
+    
+
+    --button-background: rgba(222, 222, 222, 0.09);
+    --button-border-color: var(--white);
+    --button-hover-border-color: rgba(0, 0, 0, 0.925);
+    --button-hover-text-color: var(--white);
+
+    /* Button Variations */
+    --btn-inactive-bg: grey;
+    --btn-inactive-bor: #808080;
+    --btn-inactive-text: #D3D3D3;
+    --btn-inactive-hover-bg: #A9A9A9;
+    --btn-inactive-hover-bor: #696969;
+    --btn-inactive-hover-text: var(--white);
+
+    --btn-on-bg: rgba(127, 255, 212, 0.439);
+    --btn-on-bor: var(--green-neon);
+    --btn-on-text: var(--green-neon);
+    --btn-on-hover-bg: var(--green-neon);
+    --btn-on-hover-bor: var(--green-neon);
+    --btn-on-hover-text: var(--white);
+
+    --btn-off-bg: #ff006221;
+    --btn-off-bor: var(--red-light);
+    --btn-off-text: var(--red-light);
+    --btn-off-hover-bg: var(--red-light);
+    --btn-off-hover-bor: var(--red-light);
+    --btn-off-hover-text: var(--white);
+}
+
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-primary);
+}
+
+.card {
+    background: var(--card-background);
+    border: 1px solid var(--card-border);
+}
+
+.panel {
+    background: var(--panel-background);
+    border: 1px solid var(--panel-border);
+}
+
+
+
+.btn-primary {
+    background: var(--button-background);
+}
+
+.btn-primary {
+    border-color: var(--button-hover-border-color);
+    color: var(--button-hover-text-color);
+}
+
+
+
+/*BTN VARIATIONS */
+.btn-inactive {
+    background-color: var(--btn-inactive-bg);
+    border-color: var(--btn-inactive-bor);
+    color: var(--btn-inactive-text);
+}
+
+.btn-inactive:hover {
+    background-color: var(--btn-inactive-hover-bg);
+    border-color: var(--btn-inactive-hover-bor);
+    color: var(--btn-inactive-hover-text);
+}
+
+.btn-on {
+    background-color: var(--btn-on-bg);
+    border-color: var(--btn-on-bor);
+    color: var(--btn-on-text);
+}
+
+.btn-on:hover {
+    background-color: var(--btn-on-hover-bg) !important;
+    color: var(--btn-on-hover-text);
+}
+
+.btn-off {
+    background-color: var(--btn-off-bg);
+    border-color: var(--btn-off-bor);
+    color: var(--btn-off-text);
+}
+
+.btn-off:hover {
+    background-color: var(--btn-off-bor);
+    color: var(--btn-off-hover-text);
+}
