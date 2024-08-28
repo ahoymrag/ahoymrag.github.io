@@ -2,8 +2,10 @@
     <head>
         <title>Clean Demo</title>
         <link rel="stylesheet" href="ape-design-lite.css">
+        <link rel="stylesheet" href="silverback-styles.css">
+
     </head>
-    <body class="screen-example">
+    <body>
 
         <!--
         +---------------------------------------------------------------+
@@ -22,6 +24,99 @@
         |                                                               |
         +---------------------------------------------------------------+
         -->
+
+
+
+<!-- 
+
+This page is structured as follows:
+
+     --BODY
+     ---header
+     ---nav
+     ---main
+     ---footer
+
+
+       --BODY
+     ---header
+     ---nav
+     ---main 
+     ----section
+     -----article
+     -----aside
+     ---footer
+
+vs
+
+
+     --body
+     ---panel
+     ----card
+     -----header
+     -----main
+     -----footer
+
+notes:
+     use more element names than classes
+
+
+     only classes are
+     - card + panel
+
+
+
+     think about it in relation between objects
+     i.e this proto has this set of relationships - grid panel - all i need
+     is a simple way to "this is a queencese of items in a grid item"
+
+
+
+
+10 to 12 
+idomatic
+instead of div class
+header - not guess - based on class
+
+
+        --pane   
+-panel
+--card
+--section [single col - double col - grid layout]
+----header
+----main
+----footer
+
+-->
+
+
+<!--
+
+Diffrent page types 
+
+influences the inner content of that page
+
+
+elements to check out::: 
+summary element
+grid element
+detail element
+
+
+
+main.grid 
+
+
+.grid {
+display:grid;
+grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+-->
+
+
+
         <!--
    ____                _         ____ _           _            
   / ___|_ __ ___  __ _| |_ ___  / ___| |_   _ ___| |_ ___ _ __ 
@@ -30,6 +125,22 @@
   \____|_|  \___|\__,_|\__\___| \____|_|\__,_|___/\__\___|_|   
                                                                
 -->
+
+
+<br>    <br>
+<div class="panel">
+    <div class="card"></div>
+</div>
+<br>    <br>
+
+<br>    <br>
+
+<br>    <br>
+
+<br>    <br>
+
+
+
         <h1 class="heading-1">Card Example 1</h1>
         <p>"Create Cluster"</p>
 
@@ -39,7 +150,7 @@
                 <div class="panel">
                     <div class="item-container horizontal-container">
                         <div class="item">
-                            <div class="item-header">
+                            <div class="item-header header-style-glass">
                                 <h1 class="heading-1">No bot clusters
                                     available</h1>
                             </div>
@@ -382,6 +493,92 @@
     <br><br>
     <br><br>
     <br><br>
+
+
+
+
+
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+<style>
+
+</style>
+
+    <div class="card">
+        <div class="panel">
+            <div class="item-container container">
+            <div class="item">
+                <div class="item-header ">
+                    <h1 class="heading-1">Card List22 Content</h1>
+                </div>
+                <div class="item-body">
+                    <p class="body-text">Item Instance</p>                              
+                </div>
+                <div class="item-footer">
+                    <button class="btn-on">BUTTON BY DEFAULT</button>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-header ">
+                    <h1 class="heading-1">Card List22 Content</h1>
+                </div>
+                <div class="item-body">
+                    <p class="body-text">Item Instance</p>                              
+                </div>
+                <div class="item-footer">
+                    <button class="btn-on">BUTTON BY DEFAULT</button>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-header ">
+                    <h1 class="heading-1">Card List22 Content</h1>
+                </div>
+                <div class="item-body">
+                    <p class="body-text">Item Instance</p>                              
+                </div>
+                <div class="item-footer">
+                    <button class="btn-on">BUTTON BY DEFAULT</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <br><br>
+    <br><br>
+    <div class="item">
+        <div class="nav">
+            <h1 class="heading-1">Card List Content</h1>
+        </div>
+        <div class="item-body">
+            <p class="body-text">Item Instance</p>                              
+        </div>
+        <div class="item-footer">
+            <button class="btn-on">BUTTON BY DEFAULT</button>
+        </div>
+    </div>
+    <br><br>
+    <br><br>
+
+
+
+
+    
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>   <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+
+
+
+
+    
     <br><br>
     <br><br>
     <br><br>
@@ -579,6 +776,123 @@
     </div>
 </div>
 	<br><br><br>
+	<br><br><br>
+
+	<br><br><br>
+
+	<br><br><br>
+
+<div class="panel horizontal-container">
+    <div class="card card-size-quarter">
+        <div class="item" id="content-1">
+            <p class="body-text">this is Content 1</p>
+            </div>
+    </div>
+    <div class="card card-size-quarter">
+        <h1>I guess it works</h1>
+    </div>
+</div>
+
+
+	<br><br><br>
+
+	<br><br><br>
+
+
+
+<div class="component" id="sidebarexample">
+    <div id="top-sidebar" class="card card-size-quarter">
+        <div class="panel">
+            <div class="item" id="nameOfSidebar">
+                <div clas="item-header">
+                    <h2>Top Sidebar</h2>
+                </div>
+                <div class="item-body">
+                    <p class="body-text">Hiiii</p>
+                </div>
+                <h2 class="heading-2">Hiiiiii</h2>
+            </div>
+            <div class="item" id="activeProjects">
+
+            </div>
+            <div class="item">
+                <h2 class="heading-2">Hiiiiii</h2>
+            </div>
+            <div class="item">
+                <h2 class="heading-2">Hiiiiii</h2>
+            </div>     <div class="item">
+                <h2 class="heading-2">Hiiiiii</h2>
+            </div>
+            <div class="item">
+                <h2 class="heading-2">Hiiiiii</h2>
+            </div>
+        </div>
+    </div>
+    <div id="middle-sidebar" class="card">
+        <div class="panel">
+            <div class="item">
+                <div clas="item-header">
+                    <h2>Bot Name</h2>
+                </div>
+                <div class="item-body">
+                    <p class="body-text">Hiiii</p>
+                </div>
+                <h2 class="heading-2">Hiiiiii</h2>
+            </div>
+            <div class="item">
+                <h2 class="heading-2">Hiiiiii</h2>
+            </div>
+            <div class="item">
+                <h2 class="heading-2">Hiiiiii</h2>
+            </div>
+            <div class="item">
+                <h2 class="heading-2">Hiiiiii</h2>
+            </div>     <div class="item">
+                <h2 class="heading-2">Hiiiiii</h2>
+            </div>
+            <div class="item">
+                <h2 class="heading-2">Hiiiiii</h2>
+            </div>
+        </div>
+    </div>
+    <div id="bottom-sidebar" class="card">
+        <div class="item-container horizontal-container">
+        <div class="item">
+            <h2 class="heading-2">Link 1</h2>
+        </div>
+        <div class="item">
+            <h2 class="heading-2">Link 1</h2>
+        </div>
+        <div class="item">
+            <h2 class="heading-2">Link 1</h2>
+        </div>
+        <div class="item">
+            <h2 class="heading-2">Link 1</h2>
+        </div>
+        <div class="item">
+            <h2 class="heading-2">Link 1</h2>
+        </div>
+        <div class="item">
+            <h2 class="heading-2">Link 1</h2>
+        </div>
+        <div class="item">
+            <h2 class="heading-2">Link 1</h2>
+        </div>
+        </div> 
+    </div>
+</div>
+
+<br><br><br>
+
+<br><br><br>
+
+<br><br><br>
+
+<br><br><br>
+
+
+
+
     <br><br><br>    <br><br><br>
     <br><br><br>
     <br><br><br>
@@ -587,30 +901,11 @@
  <h1>DROP DOWN MENU Bot Actions Example</h1>
 <!-- DROP DOWN MENU -->
 <div class="component">
-    <div class="card">
-        <div class="panel">
-            <div class="item">
-          
-                <div class="dropdown">
-                    <button class="dropbtn">BOT ACTIONS ▼</button>
-                    <div class="dropdown-content">
-                        <a href="#"><span class="icon">↻</span> Restart Bot</a>
-                        <p class="description">Stops the bot and immediately starts it, causing any changed environment variables to take effect.</p>
-                        
-                        <a href="#"><span class="icon">□</span> Stop Bot</a>
-                        <p class="description">Immediately stops the bot.</p>
-                        
-                        <a href="#"><span class="icon">✎</span> Edit Bot</a>
-                        <p class="description">Edit the bot name, description, or container info.</p>
-                        
-                        <a href="#"><span class="icon">🗑</span> Delete Bot</a>
-                        <p class="description">Delete the bot from the cluster, along with all associated data it has generated.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+   
 </div>
+
+
+
 
 
 
@@ -618,6 +913,42 @@
     <br><br><br>    <br><br><br>
     <br><br><br>
     <br><br><br>
+
+
+<div class="panel horizontal-container">
+    <div class="card card-size-half">
+        <section id="bot-name-a">
+            <header>Header</header>
+            <main>Main</main>
+            <footer>Footer</footer>
+        </section>  
+        <section id="bot-name-a">
+            <header>Header</header>
+            <main>Main</main>
+            <footer>Footer</footer>
+        </section>  
+        <section id="bot-name-a">
+            <header>Header</header>
+            <main>Main</main>
+            <footer>Footer</footer>
+        </section>  
+    </div>
+    <div class="card card-size-quarter">
+        <section id="list-example">
+            <ul>
+              <li>Item 1</li>
+              <li>Item 2</li>
+              <li>Item 3</li>
+            </ul>
+          </section> 
+    </div>
+</div>
+
+
+
+
+
+
     <br><br><br>    <br><br><br>
     <br><br><br>
     <br><br><br>

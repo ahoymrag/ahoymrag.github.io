@@ -101,6 +101,10 @@ body {
 +---------------------------------------------------------------+
 */
 /*
+
+
+
+
  ||   ____    _    ____  ____  ____
  ||  / ___|  / \  |  _ \|  _ \/ ___|
  || | |     / _ \ | |_) | | | \___ \
@@ -108,6 +112,15 @@ body {
  ||  \____/_/   \_\_| \_\____/|____/
  */
 /* || CARDS */
+
+
+
+a {}
+
+nav {}
+
+
+
 
 .card {
     max-width: 100%;
@@ -268,6 +281,7 @@ body {
 
 .left-content {
     justify-content: flex-start;
+    text-align: left;
 }
 
 .right-content {
@@ -594,7 +608,7 @@ textarea {
     position: absolute;
     background-color: #34495e;
     min-width: 300px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
