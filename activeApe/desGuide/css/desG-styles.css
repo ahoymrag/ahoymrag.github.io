@@ -10,11 +10,15 @@ p {
 
 /* Color Palette */
 :root {
-    --primary-color: #006d77;
-    --secondary-color: #83c5be;
-    --background-color: #edf6f9;
-    --text-color: #011627;
-    --highlight-color: #ffddd2;
+    --primary-color: #ff6b6b;
+    --secondary-color: #4ecdc4;
+    --background-color: #f7fff7;
+    --text-color: #2d3436;
+    --highlight-color: #ffd166;
+    --accent-color: #6c5ce7;
+    --neutral-color: #a2a2a2;
+    --gradient-start: #ff9a9e;
+    --gradient-end: #fad0c4;
 }
 
 /* Navbar styling */
@@ -25,13 +29,24 @@ header {
     /* Subtle shadow for depth */
 }
 
-header .navbar-brand {
+header a {
     color: var(--background-color);
     font-weight: bold;
     font-size: 1.5rem;
 }
 
-header .navbar-nav .nav-link {
+header ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header li {
+    margin-right: 1rem;
+}
+
+header a {
     color: var(--background-color);
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
@@ -39,13 +54,13 @@ header .navbar-nav .nav-link {
     transition: background-color 0.3s ease;
 }
 
-header .navbar-nav .nav-link:hover {
+header a:hover {
     background-color: var(--highlight-color);
     color: var(--text-color);
 }
 
 /* Sidebar styling */
-nav#sidebar {
+aside {
     height: 100vh;
     position: fixed;
     top: 0;
@@ -58,7 +73,8 @@ nav#sidebar {
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
 
-nav#sidebar .nav-link {
+aside a {
+    display: block;
     font-weight: 600;
     color: var(--text-color);
     padding: 0.75rem 1.25rem;
@@ -67,12 +83,12 @@ nav#sidebar .nav-link {
     transition: background-color 0.3s ease;
 }
 
-nav#sidebar .nav-link.active {
+aside a.active {
     background-color: var(--highlight-color);
     color: var(--text-color);
 }
 
-nav#sidebar .nav-link:hover {
+aside a:hover {
     background-color: var(--primary-color);
     color: var(--background-color);
 }
@@ -90,7 +106,7 @@ main {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-    nav#sidebar {
+    aside {
         height: auto;
         position: relative;
         border-right: none;
@@ -102,7 +118,7 @@ main {
 }
 
 /* Search bar styling */
-#search-input {
+input[type="search"] {
     border-radius: 20px;
     border: 1px solid var(--highlight-color);
     padding: 0.5rem 1rem;
@@ -110,7 +126,7 @@ main {
     transition: width 0.3s ease;
 }
 
-#search-input:focus {
+input[type="search"]:focus {
     width: 300px;
     outline: none;
     border-color: var(--primary-color);
