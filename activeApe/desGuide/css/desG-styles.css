@@ -1,0 +1,117 @@
+/* Reset some default styles */
+body,
+h1,
+p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    /* Modern, clean, and readable font */
+}
+
+/* Color Palette */
+:root {
+    --primary-color: #006d77;
+    --secondary-color: #83c5be;
+    --background-color: #edf6f9;
+    --text-color: #011627;
+    --highlight-color: #ffddd2;
+}
+
+/* Navbar styling */
+header {
+    margin-bottom: 1rem;
+    background-color: var(--primary-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+}
+
+header .navbar-brand {
+    color: var(--background-color);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+header .navbar-nav .nav-link {
+    color: var(--background-color);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    /* Rounded edges */
+    transition: background-color 0.3s ease;
+}
+
+header .navbar-nav .nav-link:hover {
+    background-color: var(--highlight-color);
+    color: var(--text-color);
+}
+
+/* Sidebar styling */
+nav#sidebar {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding-top: 1rem;
+    background-color: var(--secondary-color);
+    border-right: 2px solid var(--highlight-color);
+    overflow-y: auto;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+nav#sidebar .nav-link {
+    font-weight: 600;
+    color: var(--text-color);
+    padding: 0.75rem 1.25rem;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+nav#sidebar .nav-link.active {
+    background-color: var(--highlight-color);
+    color: var(--text-color);
+}
+
+nav#sidebar .nav-link:hover {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+}
+
+/* Main content area */
+main {
+    margin-left: 240px;
+    /* Adjust based on sidebar width */
+    padding: 2rem;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border-radius: 1rem;
+    /* Soft edges for a modern look */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    nav#sidebar {
+        height: auto;
+        position: relative;
+        border-right: none;
+    }
+
+    main {
+        margin-left: 0;
+    }
+}
+
+/* Search bar styling */
+#search-input {
+    border-radius: 20px;
+    border: 1px solid var(--highlight-color);
+    padding: 0.5rem 1rem;
+    width: 200px;
+    transition: width 0.3s ease;
+}
+
+#search-input:focus {
+    width: 300px;
+    outline: none;
+    border-color: var(--primary-color);
+}
