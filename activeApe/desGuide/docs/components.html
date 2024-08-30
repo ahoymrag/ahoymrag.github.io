@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Components - My Design System</title>
+        <link rel="stylesheet" href="../css/desG-styles.css">
+    </head>
+    <body>
+        <header class="navbar navbar-expand-md navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">My Design
+                    System</a>
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link"
+                                href="getting-started.html">Getting
+                                Started</a></li>
+                        <li class="nav-item"><a class="nav-link active"
+                                href="components.html">Components</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div class="container-fluid">
+            <div class="row">
+                <aside id="sidebar"
+                    class="col-md-3 col-lg-2 d-md-block bg-light sidebar">
+                    <div class="position-sticky">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link"
+                                    href="getting-started.html">Getting
+                                    Started</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active"
+                                    href="components.html">Components</a>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+
+                <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+                    <header
+                        class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                        <h1 class="h2">Components</h1>
+                    </header>
+                    <section>
+                        <p>This section covers the different components
+                            available in My Design System.</p>
+                        <p>Components are reusable UI elements that can be used
+                            to build complex user interfaces. They are built
+                            using the basic building blocks, or elementals, of
+                            the design system.</p>
+
+                        <h2>Elementals</h2>
+                        <p>Elementals are the smallest units of a design system.
+                            They are the basic building blocks used to create
+                            more complex components.</p>
+                        <p>Here is an example of an elemental component from
+                            <code>elementals.html</code>:</p>
+
+                        <pre><code>&lt;div class="panel"&gt;
+    &lt;div class="card"&gt;
+        &lt;header&gt;Create Cluster&lt;/header&gt;
+        &lt;main&gt;
+            &lt;p&gt;You'll need a bot cluster before you can deploy your robot army. Create a cluster with the button below&lt;/p&gt;
+        &lt;/main&gt;
+        &lt;footer&gt;
+            &lt;button&gt;Create Cluster&lt;/button&gt;
+        &lt;/footer&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                        </code></pre>
+
+                        <p>This example shows a simple card component with a
+                            header, main content, and a footer. The card is
+                            wrapped in a panel for additional styling.</p>
+
+                        <h2>Using Elementals</h2>
+                        <p>To use elementals in your own components, you can
+                            follow the structure and styling provided in
+                            <code>elementals.html</code>. Here is how you can
+                            create a similar component:</p>
+
+                        <pre><code>&lt;div class="panel"&gt;
+    &lt;div class="card"&gt;
+        &lt;header&gt;Component Header&lt;/header&gt;
+        &lt;main&gt;
+            &lt;p&gt;This is the main content of the component.&lt;/p&gt;
+        &lt;/main&gt;
+        &lt;footer&gt;
+            &lt;button&gt;Action&lt;/button&gt;
+        &lt;/footer&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                        </code></pre>
+
+                        <p>By following this structure, you can create
+                            consistent and reusable components for your design
+                            system.</p>
+                    </section>
+                </main>
+            </div>
+        </div>
+
+        <script src="../js/scripts.js"></script>
+    </body>
+</html>
