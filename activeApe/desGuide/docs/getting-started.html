@@ -17,7 +17,7 @@
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
+                <nav class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item"><a class="nav-link"
                                 href="getting-started.html">Getting
@@ -25,13 +25,13 @@
                         <li class="nav-item"><a class="nav-link"
                                 href="components.html">Components</a></li>
                     </ul>
-                </div>
+                </nav>
             </div>
         </header>
 
         <div class="container-fluid">
             <div class="row">
-                <nav id="sidebar"
+                <aside id="sidebar"
                     class="col-md-3 col-lg-2 d-md-block bg-light sidebar">
                     <div class="position-sticky">
                         <ul class="nav flex-column">
@@ -46,19 +46,53 @@
                             </li>
                         </ul>
                     </div>
-                </nav>
+                </aside>
 
                 <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-                    <div
+                    <header
                         class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
                         <h1 class="h2">Getting Started</h1>
-                    </div>
-                    <div>
+                    </header>
+                    <section>
                         <!-- Getting started content -->
                         <p>This is the getting started guide for My Design
                             System.</p>
+                        <p>In this section, we will cover the basic HTML
+                            elements that are used in this design system. This
+                            includes headings, paragraphs, lists, links, and
+                            other common HTML elements.</p>
+                        <p>We emphasize using semantic HTML elements over
+                            generic <code>&lt;div&gt;</code> classes. This
+                            approach improves accessibility, SEO, and
+                            maintainability of the code. Semantic elements like
+                            <code>&lt;header&gt;</code>,
+                            <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>,
+                            and <code>&lt;footer&gt;</code> provide meaningful
+                            structure to the document.</p>
+                        <p>Additionally, this design system is built with Python
+                            development and agile methodologies in mind. Using
+                            semantic HTML elements aligns well with frameworks
+                            like HTMX, which allows for dynamic content updates
+                            without relying heavily on JavaScript. This results
+                            in cleaner, more maintainable code that is easier to
+                            debug and extend.</p>
+                        <p>Below are some examples of these elements:</p>
+                        <ul>
+                            <li><strong>Headings:</strong> Use
+                                <code>&lt;h1&gt;</code> to
+                                <code>&lt;h6&gt;</code> tags for different
+                                levels of headings.</li>
+                            <li><strong>Paragraphs:</strong> Use the
+                                <code>&lt;p&gt;</code> tag for paragraphs.</li>
+                            <li><strong>Lists:</strong> Use
+                                <code>&lt;ul&gt;</code> for unordered lists and
+                                <code>&lt;ol&gt;</code> for ordered lists.</li>
+                            <li><strong>Links:</strong> Use the
+                                <code>&lt;a&gt;</code> tag to create
+                                hyperlinks.</li>
+                        </ul>
                         <!-- Add more detailed documentation content here -->
-                    </div>
+                    </section>
                 </main>
             </div>
         </div>
