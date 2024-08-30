@@ -6,6 +6,15 @@
     --h1-font-size: 2rem;
     --h2-font-size: 1.375rem;
     --p-font-size: 1rem;
+    --color-base: #ff0060;
+    --color-primary: var(--color-base);
+    --color-secondary: hsl(from var(--color-base) h s 80%);
+    --color-accent: hsl(from var(--color-base) h s 60%);
+    --color-background: hsl(from var(--color-base) h s 90%);
+}
+
+body {
+    background-color: var(--color-background);
 }
 
 @media (min-width: 768px) {
@@ -282,10 +291,21 @@ hr {
     text-align: center;
 }
 
+.small {
+    height: 52px;
+}
+
+.medium {
+    height: 104px;
+}
+
+.large {
+    height: 208px;
+}
+
 .spacer {
     height: 200px;
 }
-
 
 /*Layout Classes*/
 
@@ -336,16 +356,4 @@ hr {
     100% {
         transform: rotate(360deg);
     }
-}
-
-.small {
-    height: 52px;
-}
-
-.medium {
-    height: 104px;
-}
-
-.large {
-    height: 208px;
 }
