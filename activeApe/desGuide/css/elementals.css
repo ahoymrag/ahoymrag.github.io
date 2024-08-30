@@ -185,3 +185,59 @@ p {
 .center {
     text-align: center;
 }
+
+.spacer {
+    height: 200px;
+}
+
+
+/*Layout Classes*/
+
+.layout-horizontal {
+    display: flex;
+    flex-direction: row;
+    /* Ensures items are side by side */
+    justify-content: space-between;
+    /* Adjusts spacing between items */
+    align-items: center;
+    /* Aligns items vertically */
+}
+
+.layout-vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* Aligns items to the start of the container */
+}
+
+.layout-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    /* Adjusts columns based on container width */
+    gap: 10px;
+    /* Adjusts spacing between grid items */
+}
+
+/*Special Misc Classes */
+
+.spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid rgba(255, 255, 255, 0.2);
+    border-top: 4px solid rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
