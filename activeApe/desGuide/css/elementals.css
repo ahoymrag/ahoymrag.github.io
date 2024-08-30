@@ -15,6 +15,7 @@
 
 body {
     background-color: var(--color-background);
+    font-family: barlow;
 }
 
 @media (min-width: 768px) {
@@ -99,7 +100,7 @@ footer {}
     margin: 0;
 }
 
-.card-size-half {
+.size-half {
     width: 50%;
 }
 
@@ -252,8 +253,8 @@ button:hover {
 h1 {
     font-size: var(--h1-font-size);
     line-height: 95%;
-    font-weight: 700;
-    font-family: var(--font-family);
+    font-weight: 500;
+    font-family: 'Barlow', sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -309,6 +310,23 @@ hr {
 
 /*Layout Classes*/
 
+/* Update to make section the same as card */
+section {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+section:hover {
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
 .layout-horizontal {
     display: flex;
     flex-direction: row;
@@ -356,4 +374,22 @@ hr {
     100% {
         transform: rotate(360deg);
     }
+}
+
+/* Update article to match card styling */
+article {
+    max-width: 100%;
+    margin: 5px;
+    background: transparent;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 20px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+article:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.2);
 }

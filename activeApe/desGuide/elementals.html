@@ -5,21 +5,51 @@
     </head>
     <body>
         <header class="center">
-            <h1>My Design System</h1>
             <h2>Elementals</h2>
+            <p>A Poem by Alex Gonzalez</p>
+            <p>Not really -but it feels like it</p>
+            <br>
             <p>Elementals are the basic building blocks of a design system. They
-                are
-                the smallest units of a design system.</p>
-
-            <br><br>
-            <header class="center">
-                <h1>Example - Create Cluster Card</h1>
-            </header>
+                are the smallest units that form the foundation of our design.
+                To see how everything is set up, you can view this source code
+                directly or check out our comprehensive documentation (link
+                provided separately).</p>
+            <br>
+            <p>Below, you'll find examples of how to use this design system to
+                create elements. Our approach relies primarily on standard HTML
+                elements, with minimal use of custom classes. The only div
+                classes we aim to use are 'card' and 'panel', which provide
+                structure and styling to our components.</p>
 
             <br><br><br>
 
-            <div class="panel">
-                <div class="card">
+            <h1>below is a p.o.c regareding a pure html lifestyle</h1>
+            <br><br><br>
+            <section>
+                <article>
+                    <header>
+                        Hello World
+                    </header>
+                    <main>
+                        <h2>This is a header without any classes on the tag</h2>
+                        <p>So far this is working well</p>
+                        <ul>
+                            <li>without any divs</li>
+                            <li>without any div classes</li>
+                            <li>without any div ids</li>
+                            <li><span>Just pure html elemental</span></li>
+                            <li><span>Total HTML elements that can be styled
+                                    directly in CSS: 142</span></li>
+                            <li>If that is the case, then we can use these
+                                elements to build our design system</li>
+                        </ul>
+                    </main>
+                </article>
+            </section>
+
+            <!-- Replace divs with section and article for panels and cards -->
+            <section>
+                <article>
                     <header>
                         <h2>Create Cluster</h2>
                     </header>
@@ -31,13 +61,82 @@
                     <footer>
                         <button>Create Cluster</button>
                     </footer>
-                </div>
-            </div>
+                </article>
+            </section>
 
-            <div class="spacer"></div>
+            <section class="layout-horizontal">
+                <article class="size-half">
+                    <header>
+                        <h2>Create Cluster</h2>
+                    </header>
+                    <main>
+                        <p>You'll need a bot cluster before you can deploy your
+                            robot army. Create a cluster with the button
+                            below</p>
+                    </main>
+                    <footer>
+                        <button>Create Cluster</button>
+                    </footer>
+                </article>
+                <article class="size-half">
+                    <header>
+                        <h2>Create Cluster</h2>
+                    </header>
+                    <main>
+                        <p>You'll need a bot cluster before you can deploy your
+                            robot army. Create a cluster with the button
+                            below</p>
+                    </main>
+                    <footer>
+                        <button>Create Cluster</button>
+                    </footer>
+                </article>
+            </section>
 
-            <div class="panel">
-                <div class="card">
+            <section class="layout-horizontal">
+                <article class="size-half">
+                    <header>
+                        <h2>Create Cluster</h2>
+                    </header>
+                    <main>
+                        <p>You'll need a bot cluster before you can deploy your
+                            robot army. Create a cluster with the button
+                            below</p>
+                    </main>
+                    <footer>
+                        <button>Create Cluster</button>
+                    </footer>
+                </article>
+                <article class="size-half">
+                    <header>
+                        <h2>Create Cluster</h2>
+                    </header>
+                    <main>
+                        <p>You'll need a bot cluster before you can deploy your
+                            robot army. Create a cluster with the button
+                            below</p>
+                    </main>
+                    <footer>
+                        <button>Create Cluster</button>
+                    </footer>
+                </article>
+                <article class="size-half">
+                    <header>
+                        <h2>Create Cluster</h2>
+                    </header>
+                    <main>
+                        <p>You'll need a bot cluster before you can deploy your
+                            robot army. Create a cluster with the button
+                            below</p>
+                    </main>
+                    <footer>
+                        <button>Create Cluster</button>
+                    </footer>
+                </article>
+            </section>
+
+            <section>
+                <article>
                     <section>
                         <header>
                             <h2>Bot Title</h2>
@@ -60,18 +159,12 @@
                             <button>Action</button>
                         </footer>
                     </section>
-                </div>
-            </div>
-
-            <div class="spacer"></div>
-            <div class="spacer"></div>
-            <div class="spacer"></div>
-            <div class="spacer"></div>
-            <div class="spacer"></div>
+                </article>
+            </section>
 
             <!-- LIST EXAMPLE-->
-            <div class="panel">
-                <div class="card">
+            <section>
+                <article>
                     <main>
                         <ul>
                             <li>Item 1</li>
@@ -79,18 +172,15 @@
                             <li>Item 3</li>
                         </ul>
                     </main>
-                </div>
-            </div>
+                </article>
+            </section>
 
-            <div class="spacer"></div>
-            <div class="spacer"></div>
-            <div class="spacer"></div>
-            <div class="spacer"></div>
-            <div class="spacer"></div>
+            <!-- Replace div spacers with hr elements -->
+            <hr class="spacer">
 
             <!-- LIST LIVE EXAMPLE -->
-            <div class="panel">
-                <div class="card">
+            <section>
+                <article>
                     <header>
                         <h2>Your Plan</h2>
                     </header>
@@ -114,10 +204,10 @@
                         <h2>Addons</h2>
                         <p>Supercharge your plan with the addons below.</p>
                     </main>
-                </div>
+                </article>
 
                 <hr class="small">
-                <div class="card">
+                <article class="card">
                     <header>
                         <h2>Plan Duration</h2>
                     </header>
@@ -126,20 +216,8 @@
                             you'd like to pay for.</p>
                         <button>1 month</button>
                     </main>
-                </div>
-            </div>
-
-            <div class="spacer"></div>
-            <div class="spacer"></div>
-            <div class="spacer"></div>
-            <div class="spacer"></div>
-            <div class="spacer"></div>
-
-            <div class="spacer"></div>
-            <div class="spacer"></div>
-            <div class="spacer"></div>
-            <div class="spacer"></div>
-            <div class="spacer"></div>
+                </article>
+            </section>
 
         </body>
     </html>
