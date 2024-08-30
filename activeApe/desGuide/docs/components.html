@@ -107,6 +107,195 @@
                         <p>By following this structure, you can create
                             consistent and reusable components for your design
                             system.</p>
+
+                        <h2>HTML Elements and Styling</h2>
+                        <p>HTML elements are the building blocks of web pages.
+                            They include structural elements like
+                            <code>&lt;div&gt;</code>,
+                            <code>&lt;header&gt;</code>, and
+                            <code>&lt;footer&gt;</code>, as well as inline
+                            elements like <code>&lt;span&gt;</code> and
+                            <code>&lt;a&gt;</code>. Over time, HTML has evolved
+                            to include semantic elements like
+                            <code>&lt;article&gt;</code>,
+                            <code>&lt;section&gt;</code>, and
+                            <code>&lt;nav&gt;</code>, which provide more
+                            meaningful structure to web content.</p>
+                        <p>Styling these elements has also evolved
+                            significantly. Initially, styling was done using
+                            inline styles and the <code>&lt;font&gt;</code> tag.
+                            With the advent of CSS, styling became more powerful
+                            and flexible, allowing for separation of content and
+                            presentation. Modern CSS includes features like
+                            Flexbox and Grid for layout, as well as advanced
+                            selectors and pseudo-classes for more precise
+                            styling.</p>
+                        <p>For more detailed information, you can refer to
+                            resources like <a
+                                href="https://www.w3schools.com/html/">W3Schools</a>
+                            and <a
+                                href="https://developer.mozilla.org/en-US/docs/Web/HTML">MDN
+                                Web Docs</a>.</p>
+
+                        <h2>Shortcuts for Common HTML Elements</h2>
+                        <ul>
+                            <li><code>&lt;div&gt;</code>: A generic container
+                                for flow content.</li>
+                            <li><code>&lt;span&gt;</code>: A generic container
+                                for inline content.</li>
+                            <li><code>&lt;header&gt;</code>: Represents
+                                introductory content.</li>
+                            <li><code>&lt;footer&gt;</code>: Represents footer
+                                content.</li>
+                            <li><code>&lt;nav&gt;</code>: Represents a section
+                                with navigation links.</li>
+                            <li><code>&lt;section&gt;</code>: Represents a
+                                standalone section.</li>
+                            <li><code>&lt;article&gt;</code>: Represents a
+                                self-contained composition.</li>
+                            <li><code>&lt;a&gt;</code>: Defines a
+                                hyperlink.</li>
+                            <li><code>&lt;button&gt;</code>: Represents a
+                                clickable button.</li>
+                            <li><code>&lt;ul&gt;</code>: Defines an unordered
+                                list.</li>
+                            <li><code>&lt;li&gt;</code>: Defines a list
+                                item.</li>
+                            <li><code>&lt;h1&gt; - &lt;h6&gt;</code>: Define
+                                HTML headings.</li>
+                            <li><code>&lt;p&gt;</code>: Defines a
+                                paragraph.</li>
+                            <li><code>&lt;img&gt;</code>: Embeds an image.</li>
+                            <li><code>&lt;form&gt;</code>: Represents a document
+                                section containing interactive controls.</li>
+                            <li><code>&lt;input&gt;</code>: Defines an input
+                                control.</li>
+                        </ul>
+
+                        <h2>Explanation of the "Create Cluster" Card</h2>
+                        <p>The "Create Cluster" card is a reusable component
+                            built using the basic building blocks, or
+                            elementals, of the design system. It is defined in
+                            the <code>elementals.html</code> file and styled
+                            using the <code>elementals.css</code> file.</p>
+                        <p>Here is how the <code>elementals.html</code> and
+                            <code>elementals.css</code> files work together to
+                            create the "Create Cluster" card:</p>
+
+                        <h3>HTML Structure</h3>
+                        <p>The <code>elementals.html</code> file provides the
+                            structure of the card using HTML elements like
+                            <code>&lt;div&gt;</code>,
+                            <code>&lt;header&gt;</code>,
+                            <code>&lt;main&gt;</code>, and
+                            <code>&lt;footer&gt;</code>. The card is wrapped in
+                            a <code>&lt;div class="panel"&gt;</code> for
+                            additional styling.</p>
+
+                        <pre><code>&lt;div class="panel"&gt;
+    &lt;div class="card"&gt;
+        &lt;header&gt;
+            &lt;h2&gt;Create Cluster&lt;/h2&gt;
+        &lt;/header&gt;
+        &lt;main&gt;
+            &lt;p&gt;You'll need a bot cluster before you can deploy your robot army. Create a cluster with the button below&lt;/p&gt;
+        &lt;/main&gt;
+        &lt;footer&gt;
+            &lt;button&gt;Create Cluster&lt;/button&gt;
+        &lt;/footer&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                        </code></pre>
+
+                        <h3>CSS Styling</h3>
+                        <p>The <code>elementals.css</code> file provides the
+                            styles for the <code>.panel</code> and
+                            <code>.card</code> classes. The <code>.panel</code>
+                            class adds a background, border-radius, box-shadow,
+                            and padding to the panel. The <code>.card</code>
+                            class adds similar styles to the card, with
+                            additional hover effects for interactivity. The
+                            <code>button</code> class styles the button inside
+                            the card, making it visually appealing and
+                            interactive.</p>
+
+                        <pre><code>/* Panel styling */
+.panel {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.panel:hover {
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Card styling */
+.card {
+    max-width: 100%;
+    margin: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 20px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Button styling */
+button {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+    letter-spacing: 0.05em;
+    line-height: 1.2;
+    background: rgba(255, 255, 255, 0.1);
+    color: black;
+    border: 1px solid black;
+    border-radius: 8px;
+    display: flex;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    text-align: center;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+                        </code></pre>
+
+                        <p>By combining the structure defined in
+                            <code>elementals.html</code> with the styles
+                            provided in <code>elementals.css</code>, the
+                            "Create Cluster" card is created with a consistent
+                            and reusable design.</p>
                     </section>
                 </main>
             </div>
