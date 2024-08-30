@@ -71,7 +71,7 @@ footer {}
 .card {
     max-width: 100%;
     margin: 5px;
-    background: rgba(255, 255, 255, 0.1);
+    background: transparent;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
@@ -242,8 +242,8 @@ button:hover {
 
 h1 {
     font-size: var(--h1-font-size);
-    line-height: 1.2;
-    font-weight: 900;
+    line-height: 95%;
+    font-weight: 700;
     font-family: var(--font-family);
     margin: 0;
     padding: 0;
@@ -251,11 +251,12 @@ h1 {
 
 h2 {
     font-size: var(--h2-font-size);
-    line-height: 1.2;
-    font-weight: 600;
+    line-height: 95%;
+    font-weight: 500;
     font-family: var(--font-family);
     margin: 0;
     padding: 0;
+
 }
 
 p {
@@ -267,6 +268,15 @@ p {
 }
 
 /*ULTILITY CLASSES*/
+
+/*hr at core is used to space things*/
+hr {
+    height: 0;
+    border: none;
+    margin: 0;
+    padding: 0;
+    visibility: hidden;
+}
 
 .center {
     text-align: center;
@@ -326,4 +336,16 @@ p {
     100% {
         transform: rotate(360deg);
     }
+}
+
+.small {
+    height: 52px;
+}
+
+.medium {
+    height: 104px;
+}
+
+.large {
+    height: 208px;
 }
