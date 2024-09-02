@@ -10,39 +10,41 @@
         <script src="magiczoom/magiczoom.js"></script>
     </head>
     <body>
-        <style>
-            .MagicZoom {
-                max-width: 100%;
-                height: auto;
-            }
-        </style>
-        <header class="ellie-header">
+        <header>
             <h1>Ellen Martin Art</h1>
             <p>Inked and Watercolor Portraits of New Haven Buildings & also
                 fish</p>
         </header>
-        <section class="artwork-section artwork1">
-            <a href="large-artwork1.jpg" class="MagicZoom"
-                data-options="zoomWidth:400; zoomHeight:400; expandZoomMode:fullscreen; zoomPosition: inner;">
-                <img src="small-artwork1.jpg" alt="Artwork 1">
-            </a>
-        </section>
-        <section id="artwork1" class="artwork-section artwork1">
-            <a href="large-artwork2.jpg" class="MagicZoom"
-                data-options="zoomWidth:400; zoomHeight:400; expandZoomMode:fullscreen; zoomPosition: inner;">
-                <img src="small-artwork2.jpg" alt="Artwork 2">
-            </a>
-        </section>
-        <section id="artwork3" class="artwork-section artwork1">
-            <a href="large-artwork3.jpg" class="MagicZoom"
-                data-options="zoomWidth:400; zoomHeight:400; expandZoomMode:fullscreen; zoomPosition: inner;">
-                <img src="small-artwork3.jpg" alt="Artwork 3">
-            </a>
-        </section>
         <main>
-            <div class="art-grid" id="artGrid">
-                <!-- Artwork items will be dynamically inserted here -->
-            </div>
+            <section>
+                <article>
+                    <a href="large-artwork1.jpg" class="MagicZoom"
+                        data-options="zoomWidth:400; zoomHeight:400; expandZoomMode:fullscreen; zoomPosition: inner;">
+                        <figure>
+                            <img src="small-artwork1.jpg" alt="Artwork 1">
+                            <figcaption>Artwork 1 Description</figcaption>
+                        </figure>
+                    </a>
+                </article>
+                <article>
+                    <a href="large-artwork2.jpg" class="MagicZoom"
+                        data-options="zoomWidth:400; zoomHeight:400; expandZoomMode:fullscreen; zoomPosition: inner;">
+                        <figure>
+                            <img src="small-artwork2.jpg" alt="Artwork 2">
+                            <figcaption>Artwork 2 Description</figcaption>
+                        </figure>
+                    </a>
+                </article>
+                <article>
+                    <a href="large-artwork3.jpg" class="MagicZoom"
+                        data-options="zoomWidth:400; zoomHeight:400; expandZoomMode:fullscreen; zoomPosition: inner;">
+                        <figure>
+                            <img src="small-artwork3.jpg" alt="Artwork 3">
+                            <figcaption>Artwork 3 Description</figcaption>
+                        </figure>
+                    </a>
+                </article>
+            </section>
         </main>
         <script src="./artworks.js"></script>
     </body>
