@@ -46,56 +46,8 @@ main {
 
 footer {}
 
-/* ONLY TWO CLASSES TO CONSIDER STRUCTURE */
 
-.panel {
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    padding: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    transition: all 0.3s ease;
-}
-
-@media (max-width: 768px) {
-    .panel {
-        padding: 15px;
-        border-radius: 8px;
-    }
-}
-
-@media (max-width: 480px) {
-    .panel {
-        padding: 10px;
-        border-radius: 6px;
-    }
-}
-
-.panel:hover {
-    background: rgba(255, 255, 255, 0.15);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
-}
-
-.card {
-    max-width: 100%;
-    margin: 5px;
-    background: transparent;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    padding: 20px;
-    transition: transform 0.3s ease, background 0.3s ease;
-}
-
-.card:hover {
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-    background: rgba(255, 255, 255, 0.2);
-}
-
-.card-size-full {
+.size-full {
     width: 100%;
     margin: 0;
 }
@@ -104,28 +56,13 @@ footer {}
     width: 50%;
 }
 
-.card-size-quarter {
+.size-quarter {
     width: 25%;
 }
 
-.card-size-symm {
+.size-symm {
     width: 100%;
     margin-bottom: 20px;
-}
-
-@media screen and (max-width: 767px) {
-    .card-size-symm {
-        width: 100%;
-        margin-bottom: 20px;
-        display: block;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .card-size-symm {
-        width: calc(50% - 10px);
-        margin-bottom: 0;
-    }
 }
 
 /*ELEMENTAL TYPOGRAPHY*/
@@ -176,23 +113,6 @@ li {
     padding: 0;
     margin: 0;
 }
-
-
-
-
-
-
-
-
-
-
-/* END OF TOTAL ELEMENTS */
-
-
-
-
-
-
 
 /*BUTTON*/
 
@@ -262,7 +182,6 @@ p {
 
 /*ULTILITY CLASSES*/
 
-/*hr at core is used to space things*/
 hr {
     height: 0;
     border: none;
@@ -293,7 +212,6 @@ hr {
 
 /*Layout Classes*/
 
-/* Update to make section the same as card */
 section {
     background: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
@@ -359,7 +277,6 @@ section:hover {
     }
 }
 
-/* Update article to match card styling */
 article {
     max-width: 100%;
     margin: 5px;
@@ -412,10 +329,6 @@ input[type="text"]:focus {
     color: #E0E0E0;
     border-color: rgba(255, 255, 255, 0.8);
 }
-
-textarea {}
-
-
 
 /* Sidebar Styles */
 aside {
@@ -482,9 +395,7 @@ aside nav ul li p:hover {
     /* Lighter color on hover for text */
 }
 
-
 /*DROPDOWN*/
-/*USING DETAILS */
 
 details>summary {
     cursor: pointer;
