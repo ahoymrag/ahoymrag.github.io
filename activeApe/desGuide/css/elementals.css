@@ -96,6 +96,9 @@ p {
     }
 }
 
+h3 {
+    font-weight: 400;
+}
 
 
 /* ELEMENTAL LISTS */
@@ -246,26 +249,59 @@ section:hover {
 .layout-horizontal {
     display: flex;
     flex-direction: row;
-    /* Ensures items are side by side */
     justify-content: space-between;
-    /* Adjusts spacing between items */
-    align-items: center;
-    /* Aligns items vertically */
+    align-items: stretch;
+    /* Ensures all children stretch to the same height */
 }
 
 .layout-vertical {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    /* Aligns items to the start of the container */
 }
 
 .layout-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    /* Adjusts columns based on container width */
     gap: 10px;
-    /* Adjusts spacing between grid items */
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+table td,
+table th {
+    padding: 12px 20px;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+table tr:last-child td {
+    border-bottom: none;
+}
+
+table hr {
+    margin: 10px 0;
+    border: none;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+}
+
+table td:first-child {
+    text-align: left;
+}
+
+table td:last-child {
+    text-align: right;
 }
 
 /*Special Misc Classes */
@@ -348,75 +384,49 @@ input[type="text"]:focus {
 /* Universal style for all textareas */
 textarea {
     background: rgba(45, 45, 45, 0.5);
-    /* Semi-transparent dark background */
     border: 1px solid rgba(255, 255, 255, 0.5);
-    /* Light border for contrast */
     padding: 12px 18px;
-    /* Padding for text inside textarea */
     border-radius: 8px;
-    /* Rounded corners */
     backdrop-filter: blur(15px);
-    /* Blur effect for glass look */
     color: #FFF;
-    /* White text color */
     font-size: 12px;
-    /* Font size */
     transition: background-color 0.3s, color 0.3s, border-color 0.3s;
-    /* Smooth transition for focus */
 }
 
 textarea::placeholder {
     color: rgba(255, 255, 255, 0.8);
-    /* Light grey placeholder text */
     font-style: italic;
-    /* Italic style for placeholder */
 }
 
 textarea:focus {
     background: rgba(55, 55, 55, 0.7);
-    /* Darker background on focus */
     color: #E0E0E0;
-    /* Light grey text on focus */
     border-color: rgba(255, 255, 255, 0.8);
-    /* Lighter border on focus */
 }
 
 /* Universal style for all select dropdowns */
 select {
     background: rgba(45, 45, 45, 0.5);
-    /* Semi-transparent dark background */
     border: 1px solid rgba(255, 255, 255, 0.5);
-    /* Light border for contrast */
     padding: 12px 18px;
-    /* Padding inside the dropdown */
     border-radius: 8px;
-    /* Rounded corners */
     backdrop-filter: blur(15px);
-    /* Blur effect for glass look */
     color: #FFF;
-    /* White text color */
     font-size: 12px;
-    /* Font size */
     transition: background-color 0.3s, color 0.3s, border-color 0.3s;
-    /* Smooth transition for focus */
 }
 
 select:focus {
     background: rgba(55, 55, 55, 0.7);
-    /* Darker background on focus */
     color: #E0E0E0;
-    /* Light grey text on focus */
     border-color: rgba(255, 255, 255, 0.8);
-    /* Lighter border on focus */
 }
 
 /* Sidebar Styles */
 aside {
     width: 250px;
-    /* Adjusted width to match the image */
     height: 100vh;
     color: white;
-    /* Light text color for contrast */
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -428,7 +438,6 @@ aside header h1 {
     margin-bottom: 20px;
     font-weight: 600;
     color: white;
-    /* Ensuring text is visible on dark background */
 }
 
 aside nav ul {
@@ -450,12 +459,10 @@ aside nav ul li {
 aside nav ul li i {
     margin-right: 10px;
     color: #ff0060;
-    /* Primary color for icons */
 }
 
 aside nav ul li:hover {
     background-color: #444;
-    /* Slightly lighter background on hover */
     cursor: pointer;
 }
 
@@ -466,13 +473,11 @@ aside nav ul li p {
     letter-spacing: 0.05em;
     line-height: 1.5;
     margin: 0;
-    /* Remove default paragraph margins */
     transition: color 0.3s ease;
 }
 
 aside nav ul li p:hover {
     color: #ccc;
-    /* Lighter color on hover for text */
 }
 
 /*DROPDOWN*/
