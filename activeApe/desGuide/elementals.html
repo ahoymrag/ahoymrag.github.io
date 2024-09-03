@@ -2,6 +2,8 @@
     <head>
         <title>My Design System</title>
         <link rel="stylesheet" href="css/elementals.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     </head>
     <body>
         <header class="center">
@@ -248,13 +250,12 @@
                             <input type="text" id="workspaceName"
                                 name="workspaceName"
                                 placeholder="momomentum's Workspace" required>
-
                             <label for="slugName">Slug Name</label>
                             <input type="text" id="slugName" name="slugName"
                                 placeholder="momomentum-workspace" required>
-                            <aside>The identifier used for this workspace's URL
+                            <figure>The identifier used for this workspace's URL
                                 and in the CLI. Must be unique and contain no
-                                spaces.</aside>
+                                spaces.</figure>
                         </form>
                     </main>
                     <footer>
@@ -262,6 +263,52 @@
                     </footer>
                 </article>
             </section>
+            <hr class="spacer">
+            <br><br><br><br>
+            <h1>Sidebar</h1>
+            <br><br><br><br>
+            <aside>
+                <header>
+                    <details>
+                        <summary>
+                            <h1>momomentum's Workspace</h1>
+                            <i class="fa fa-caret-down" aria-hidden="true"></i>
+                        </summary>
+                        <nav>
+                            <a href="#"><i class="fa fa-sign-out"
+                                    aria-hidden="true"></i> Sign Out</a>
+                            <a href="#"><i class="fa fa-plus"
+                                    aria-hidden="true"></i> Add Another
+                                Workspace</a>
+                            <a href="#"><i class="fa fa-cog"
+                                    aria-hidden="true"></i> Manage Workspace</a>
+                        </nav>
+                    </details>
+                </header>
+                <nav>
+                    <ul>
+                        <li>
+                            <i class="fa fa-chart-line" aria-hidden="true"></i>
+                            <p>Dashboards</p>
 
+                        </li>
+                        <li>
+                            <i class="fa fa-folder-open" aria-hidden="true"></i>
+                            <p>Workspace Management</p>
+                        </li>
+                        <li>
+                            <i class="fa fa-briefcase" aria-hidden="true"></i>
+                            <p>Workspaces</p>
+                        </li>
+                        <li>
+                            <i class="fa fa-terminal" aria-hidden="true"></i>
+                            <p>CLI Documentation</p>
+                        </li>
+                    </ul>
+                </nav>
+                <footer>
+                    <button>Collapse Sidebar</button>
+                </footer>
+            </aside>
         </body>
     </html>

@@ -157,22 +157,7 @@ p {
     }
 }
 
-span {
-    font-weight: 600;
-    font-family: var(--font-family);
-    color: #333;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-    letter-spacing: 0.05em;
-    line-height: 1.5;
-    transition: color 0.3s ease
-}
 
-span:hover {
-    color: #000;
-    /* Darker color on hover */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-    /* More pronounced shadow on hover */
-}
 
 /* ELEMENTAL LISTS */
 
@@ -273,15 +258,6 @@ p {
     font-family: var(--font-family);
     margin: 0;
     padding: 0;
-}
-
-aside {
-    font-size: 0.8em;
-    font-style: italic;
-    margin-top: 5px;
-    padding: 5px;
-    border-left: 2px solid var(--color-base);
-    background-color: rgba(255, 107, 107, 0.1);
 }
 
 /*ULTILITY CLASSES*/
@@ -403,53 +379,138 @@ article:hover {
 
 
 
-/*INPUTS*/
+/*INPUTS and FORMS*/
 
-label {}
+form {
+    display: flex;
+    flex-direction: column;
+}
 
 input[type="text"] {
     background: rgba(45, 45, 45, 0.5);
-    /* Darker background for a glass effect */
     border: 1px solid rgba(255, 255, 255, 0.5);
-    /* Brighter border for contrast */
     padding: 12px 18px;
-    /* Slightly larger padding for a better typing experience */
     border-radius: 8px;
-    /* More pronounced rounded corners */
     backdrop-filter: blur(15px);
-    /* Stronger blur for a more pronounced frosted glass effect */
     color: #FFF;
-    /* White text color for better readability on dark background */
     font-size: 12px;
-    /* Larger font size for a more engaging interaction */
     transition: background-color 0.3s, color 0.3s, border-color 0.3s;
-    /* Smooth transitions for interactive feedback */
 }
 
 input[type="text"]::placeholder {
     color: rgba(255, 255, 255, 0.8);
-    /* Slightly brighter placeholder text for better visibility */
     font-style: italic;
-    /* Italic style for a more stylish placeholder */
     overflow: hidden;
-    /* Hide overflow */
     text-overflow: ellipsis;
-    /* Add ellipsis if text overflows */
     white-space: nowrap;
-    /* Keep the placeholder in a single line */
     width: 100%;
-    /* Ensure the placeholder uses the full width of the input */
     display: block;
-    /* Block display to fill the container */
 }
 
 input[type="text"]:focus {
     background: rgba(55, 55, 55, 0.7);
-    /* Slightly lighter background on focus for visual feedback */
     color: #E0E0E0;
-    /* Lighter text color when focused */
     border-color: rgba(255, 255, 255, 0.8);
-    /* Brighter border on focus to draw attention */
 }
 
 textarea {}
+
+
+
+/* Sidebar Styles */
+aside {
+    width: 250px;
+    /* Adjusted width to match the image */
+    height: 100vh;
+    color: white;
+    /* Light text color for contrast */
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    font-family: var(--font-family);
+}
+
+aside header h1 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: white;
+    /* Ensuring text is visible on dark background */
+}
+
+aside nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+aside nav ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+aside nav ul li i {
+    margin-right: 10px;
+    color: #ff0060;
+    /* Primary color for icons */
+}
+
+aside nav ul li:hover {
+    background-color: #444;
+    /* Slightly lighter background on hover */
+    cursor: pointer;
+}
+
+aside nav ul li p {
+    font-weight: 600;
+    font-family: var(--font-family);
+    color: white;
+    letter-spacing: 0.05em;
+    line-height: 1.5;
+    margin: 0;
+    /* Remove default paragraph margins */
+    transition: color 0.3s ease;
+}
+
+aside nav ul li p:hover {
+    color: #ccc;
+    /* Lighter color on hover for text */
+}
+
+
+/*DROPDOWN*/
+/*USING DETAILS */
+
+details>summary {
+    cursor: pointer;
+    list-style: none;
+}
+
+details>summary::-webkit-details-marker {
+    display: none;
+}
+
+details>nav {
+    display: none;
+    padding-left: 20px;
+}
+
+details[open]>nav {
+    display: block;
+}
+
+details>nav>a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    padding: 5px 0;
+}
+
+details>nav>a:hover {
+    background-color: var(--color-accent);
+}
