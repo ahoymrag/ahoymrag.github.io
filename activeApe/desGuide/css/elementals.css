@@ -161,15 +161,10 @@ span {
     font-weight: 600;
     font-family: var(--font-family);
     color: #333;
-    /* Ensures good contrast */
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-    /* Adds subtle depth */
     letter-spacing: 0.05em;
-    /* Improves readability */
     line-height: 1.5;
-    /* Matches paragraph line height for consistency */
-    transition: color 0.3s ease, text-shadow 0.3s ease;
-    /* Smooth transitions */
+    transition: color 0.3s ease
 }
 
 span:hover {
@@ -196,6 +191,10 @@ li {
     padding: 0;
     margin: 0;
 }
+
+
+
+
 
 
 
@@ -247,7 +246,6 @@ button:hover {
     transform: translateY(-2px);
 }
 
-
 /*Typography*/
 
 h1 {
@@ -275,6 +273,15 @@ p {
     font-family: var(--font-family);
     margin: 0;
     padding: 0;
+}
+
+aside {
+    font-size: 0.8em;
+    font-style: italic;
+    margin-top: 5px;
+    padding: 5px;
+    border-left: 2px solid var(--color-base);
+    background-color: rgba(255, 107, 107, 0.1);
 }
 
 /*ULTILITY CLASSES*/
@@ -393,3 +400,56 @@ article:hover {
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
     background: rgba(255, 255, 255, 0.2);
 }
+
+
+
+/*INPUTS*/
+
+label {}
+
+input[type="text"] {
+    background: rgba(45, 45, 45, 0.5);
+    /* Darker background for a glass effect */
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    /* Brighter border for contrast */
+    padding: 12px 18px;
+    /* Slightly larger padding for a better typing experience */
+    border-radius: 8px;
+    /* More pronounced rounded corners */
+    backdrop-filter: blur(15px);
+    /* Stronger blur for a more pronounced frosted glass effect */
+    color: #FFF;
+    /* White text color for better readability on dark background */
+    font-size: 12px;
+    /* Larger font size for a more engaging interaction */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    /* Smooth transitions for interactive feedback */
+}
+
+input[type="text"]::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+    /* Slightly brighter placeholder text for better visibility */
+    font-style: italic;
+    /* Italic style for a more stylish placeholder */
+    overflow: hidden;
+    /* Hide overflow */
+    text-overflow: ellipsis;
+    /* Add ellipsis if text overflows */
+    white-space: nowrap;
+    /* Keep the placeholder in a single line */
+    width: 100%;
+    /* Ensure the placeholder uses the full width of the input */
+    display: block;
+    /* Block display to fill the container */
+}
+
+input[type="text"]:focus {
+    background: rgba(55, 55, 55, 0.7);
+    /* Slightly lighter background on focus for visual feedback */
+    color: #E0E0E0;
+    /* Lighter text color when focused */
+    border-color: rgba(255, 255, 255, 0.8);
+    /* Brighter border on focus to draw attention */
+}
+
+textarea {}
