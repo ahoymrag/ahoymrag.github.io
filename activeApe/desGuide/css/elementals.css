@@ -5,6 +5,7 @@
     --font-family: 'Barlow', sans-serif;
     --h1-font-size: 2rem;
     --h2-font-size: 1.375rem;
+    --h3-font-size: 1rem;
     --p-font-size: 1rem;
     --color-base: #ff0060;
     --color-primary: var(--color-base);
@@ -216,7 +217,7 @@ hr {
     height: 52px;
 }
 
-.medium {
+.medium-height {
     height: 104px;
 }
 
@@ -264,6 +265,12 @@ section:hover {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 10px;
+}
+
+@media (max-width: 768px) {
+    .layout-horizontal {
+        flex-direction: column;
+    }
 }
 
 /* Table Styles */
@@ -396,6 +403,7 @@ textarea {
     color: #FFF;
     font-size: 12px;
     transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    min-width: 100%;
 }
 
 textarea::placeholder {
@@ -436,6 +444,8 @@ aside {
     flex-direction: column;
     padding: 20px;
     font-family: var(--font-family);
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
 }
 
 aside header h1 {
@@ -514,4 +524,21 @@ details>nav>a {
 
 details>nav>a:hover {
     background-color: var(--color-accent);
+}
+
+/* Hide the actual checkbox */
+.toggle-checkbox {
+    display: none;
+}
+
+/* Style the label as a button */
+.toggle-label {
+    display: inline-block;
+    cursor: pointer;
+    /* Add button styling here */
+}
+
+/* Control the sidebar visibility */
+.toggle-checkbox:checked~aside {
+    transform: translateX(0);
 }

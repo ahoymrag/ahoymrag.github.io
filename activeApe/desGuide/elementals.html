@@ -24,7 +24,30 @@
                 structure and styling to our components.</p>
         </header>
         <br><br><br>
-
+        <br><br><br>
+        <br><br><br>
+        <br><br><br>
+        <section>
+            <article>
+                <header>
+                    <h1>Hello</h1>
+                    <p class="medium">Notice how it is still a "P" but now to
+                        the left
+                    </p>
+                </header>
+                <main>
+                    <p>Now the P is in the center - why? because Main has
+                        rules</p>
+                </main>
+                <footer>
+                    <button>Click me</button>
+                </footer>
+            </article>
+        </section>
+        <br><br><br>
+        <br><br><br>
+        <br><br><br>
+        <br><br><br>
         <h1>below is a p.o.c regareding a pure html lifestyle</h1>
         <br><br><br>
         <section>
@@ -266,6 +289,10 @@
         <hr class="spacer">
         <br><br><br><br>
         <h1>Sidebar</h1>
+        <input type="checkbox" id="toggleSidebar" class="toggle-checkbox">
+        <button class="size-quarter"><label for="toggleSidebar"
+                class="toggle-label"><i class="fas fa-bars"></i>Toggle Sidebar
+            </label></button>
         <br><br><br><br>
         <aside>
             <header>
@@ -348,147 +375,321 @@
                 </main>
             </article>
         </section>
-        <br><br><br><br>
-        <br><br><br><br>
 
+        <br><br><br><br>
+        <br><br><br><br>
         <section class="layout-horizontal">
             <article>
                 <header>
-                    <h1>Add Funds</h1>
+                    <h2>Bot Configuration</h2>
                 </header>
                 <main>
-                    <p>If no new funds are added, this bot cluster will cease to
-                        function until <span>July 13, 2024 at 10:01 am
-                            EDT</span>.</p>
-                    <p>If you'd like to upgrade your plan or change the plan
-                        addons, please contact support.</p>
-                </main>
-                <hr>
-                <header>
-                    <h2>Extend Plan</h2>
-                    <p>Select the amount of additional time to fund your bot
-                        cluster.</p>
-                </header>
-                <main>
-                    <label for="planDuration">Plan Duration</label>
-                    <ul id="planDuration" class="horizontal-options">
-                        <li><button>1 month</button></li>
-                        <li><button>3 months</button></li>
-                        <li><button>6 months</button></li>
-                        <li><button>1 year</button></li>
-                    </ul>
-                </main>
-            </article>
-            <article>
-                <header>
-                    <h1>Purchase Summary</h1>
-                </header>
-                <main>
-                    <table>
-                        <tr>
-                            <td>Individual Plan</td>
-                            <td>10 USDC / mo</td>
-                        </tr>
-                        <tr>
-                            <td>Upgrade: 64 virtual cores</td>
-                            <td>10 USDC / mo</td>
-                        </tr>
-                        <tr>
-                            <td>Cost per month</td>
-                            <td>20 USDC / mo</td>
-                        </tr>
+                    <form>
+                        <label
+                            for="registryUri">Registry
+                            URI</label>
+                        <input type="text"
+                            id="registryUri"
+                            name="registryUri"
+                            placeholder="registry.domain/repo/path:<tag>">
+                        <p
+                            class="error">Silverback
+                            can’t parse this
+                            URI. Please use the
+                            following format:
+                            <code>registry.domain/repo/path:<tag></code></p>
 
-                        <tr>
-                            <td>x 1 mo</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <h2>Due Today</h2>
-                            </td>
-                            <td>
-                                <h3>20 USDC</h3>
-                            </td>
-                        </tr>
-                    </table>
+                            <label
+                                for="configPath">Configuration
+                                Path</label>
+                            <input type="text"
+                                id="configPath"
+                                name="configPath"
+                                placeholder="Enter configuration path">
+
+                            <label
+                                for="variableGroup">Variable
+                                Group</label>
+                            <input type="text"
+                                id="variableGroup"
+                                name="variableGroup"
+                                placeholder="Enter variable group name">
+
+                            <button
+                                type="button">Create
+                                Variable
+                                Group</button>
+
+                            <footer>
+                                <button
+                                    type="button">Back</button>
+                                <button
+                                    type="submit">Save
+                                    Configuration
+                                    & Restart
+                                    Bot</button>
+                            </footer>
+                        </form>
+                    </main>
+                </article>
+            </section>
+
+            <br><br><br><br>
+            <br><br><br><br>
+            <section>
+                <article>
+                    <header>
+                        <h2>Bot Status Overview</h2>
+                    </header>
+                    <main>
+                        <table>
+
+                        </table>
+                    </main>
+                </article>
+            </section>
+            <br><br><br><br>
+            <br><br><br><br>
+
+            <section class="layout-horizontal">
+                <article>
+                    <header>
+                        <h1>Add Funds</h1>
+                    </header>
+                    <main>
+                        <p>If no new funds are added, this bot cluster will
+                            cease to
+                            function until <span>July 13, 2024 at 10:01 am
+                                EDT</span>.</p>
+                        <p>If you'd like to upgrade your plan or change the plan
+                            addons, please contact support.</p>
+                    </main>
                     <hr>
-                    <p>This bot cluster will cease functioning on August 13,
-                        2024 at 10:01 am EDT. You will have 30 days from that
-                        date to download associated data.</p>
-                    <p>While the cluster is active, you will be able to add more
-                        funds at any time to extend the plan and retain access
-                        to your data. </p>
-                </main>
-                <footer>
+                    <header>
+                        <h2>Extend Plan</h2>
+                        <p>Select the amount of additional time to fund your bot
+                            cluster.</p>
+                    </header>
+                    <main>
+                        <label for="planDuration">Plan Duration</label>
+                        <ul id="planDuration" class="horizontal-options">
+                            <li><button>1 month</button></li>
+                            <li><button>3 months</button></li>
+                            <li><button>6 months</button></li>
+                            <li><button>1 year</button></li>
+                        </ul>
+                    </main>
+                </article>
+                <article>
+                    <header>
+                        <h1>Purchase Summary</h1>
+                    </header>
+                    <main>
+                        <table>
+                            <tr>
+                                <td>Individual Plan</td>
+                                <td>10 USDC / mo</td>
+                            </tr>
+                            <tr>
+                                <td>Upgrade: 64 virtual cores</td>
+                                <td>10 USDC / mo</td>
+                            </tr>
+                            <tr>
+                                <td>Cost per month</td>
+                                <td>20 USDC / mo</td>
+                            </tr>
 
-                    <button>Add Funds</button>
-                </footer>
-            </article>
-        </section>
+                            <tr>
+                                <td>x 1 mo</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h2>Due Today</h2>
+                                </td>
+                                <td>
+                                    <h3>20 USDC</h3>
+                                </td>
+                            </tr>
+                        </table>
+                        <hr>
+                        <p>This bot cluster will cease functioning on August 13,
+                            2024 at 10:01 am EDT. You will have 30 days from
+                            that
+                            date to download associated data.</p>
+                        <p>While the cluster is active, you will be able to add
+                            more
+                            funds at any time to extend the plan and retain
+                            access
+                            to your data. </p>
+                    </main>
+                    <footer>
 
-        <section>
-            <article>
-                <header>
-                    <h2>Bot Status Overview</h2>
-                </header>
-                <main>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Bot Name</th>
-                                <th>Status</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>YieldOptimizer</td>
-                                <td><span class="spinner"></span> Running with
-                                    errors since May 10, 2024 at 5:32 GMT</td>
-                            </tr>
-                            <tr>
-                                <td>LiquidityBalancer</td>
-                                <td><span class="spinner"></span> Running with
-                                    errors since May 10, 2024 at 5:32 GMT</td>
-                            </tr>
-                            <tr>
-                                <td>FeeOptimizer</td>
-                                <td><span class="spinner"></span> Running with
-                                    errors since May 10, 2024 at 5:32 GMT</td>
-                            </tr>
-                            <tr>
-                                <td>ArbitrageSeeker</td>
-                                <td><span class="spinner"></span> Running with
-                                    errors since May 10, 2024 at 5:32 GMT</td>
-                            </tr>
-                            <tr>
-                                <td>GovernanceAdvisor</td>
-                                <td><i class="fa fa-check-circle"
-                                        aria-hidden="true"></i> Running since
-                                    May 10, 2024 at 5:32 GMT</td>
-                            </tr>
-                            <tr>
-                                <td>StakingManager</td>
-                                <td><i class="fa fa-check-circle"
-                                        aria-hidden="true"></i> Running since
-                                    May 10, 2024 at 5:32 GMT</td>
-                            </tr>
-                            <tr>
-                                <td>LoanOptimizer</td>
-                                <td><i class="fa fa-stop-circle"
-                                        aria-hidden="true"></i> Stopped on May
-                                    10, 2024 at 5:32 GMT</td>
-                            </tr>
-                            <tr>
-                                <td>VaultManager</td>
-                                <td><i class="fa fa-stop-circle"
-                                        aria-hidden="true"></i> Stopped on May
-                                    9, 2024 at 5:32 GMT</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </main>
-            </article>
-        </section>
+                        <button>Add Funds</button>
+                    </footer>
+                </article>
+            </section>
 
-    </body>
-</html>
+            <section>
+                <article>
+                    <header>
+                        <h2>Bot Status Overview</h2>
+                    </header>
+                    <main>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Bot Name</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>YieldOptimizer</td>
+                                    <td><span class="spinner"></span> Running
+                                        with
+                                        errors since May 10, 2024 at 5:32
+                                        GMT</td>
+                                </tr>
+                                <tr>
+                                    <td>LiquidityBalancer</td>
+                                    <td><span class="spinner"></span> Running
+                                        with
+                                        errors since May 10, 2024 at 5:32
+                                        GMT</td>
+                                </tr>
+                                <tr>
+                                    <td>FeeOptimizer</td>
+                                    <td><span class="spinner"></span> Running
+                                        with
+                                        errors since May 10, 2024 at 5:32
+                                        GMT</td>
+                                </tr>
+                                <tr>
+                                    <td>ArbitrageSeeker</td>
+                                    <td><span class="spinner"></span> Running
+                                        with
+                                        errors since May 10, 2024 at 5:32
+                                        GMT</td>
+                                </tr>
+                                <tr>
+                                    <td>GovernanceAdvisor</td>
+                                    <td><i class="fa fa-check-circle"
+                                            aria-hidden="true"></i> Running
+                                        since
+                                        May 10, 2024 at 5:32 GMT</td>
+                                </tr>
+                                <tr>
+                                    <td>StakingManager</td>
+                                    <td><i class="fa fa-check-circle"
+                                            aria-hidden="true"></i> Running
+                                        since
+                                        May 10, 2024 at 5:32 GMT</td>
+                                </tr>
+                                <tr>
+                                    <td>LoanOptimizer</td>
+                                    <td><i class="fa fa-stop-circle"
+                                            aria-hidden="true"></i> Stopped on
+                                        May
+                                        10, 2024 at 5:32 GMT</td>
+                                </tr>
+                                <tr>
+                                    <td>VaultManager</td>
+                                    <td><i class="fa fa-stop-circle"
+                                            aria-hidden="true"></i> Stopped on
+                                        May
+                                        9, 2024 at 5:32 GMT</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </main>
+                </article>
+            </section>
+
+            <br><br><br>
+
+            <section>
+                <article>
+                    <header>
+                        <h2>Username</h2>
+                    </header>
+                    <main>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Username</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>david@example.com <span>[Invite
+                                            sent]</span></td>
+                                    <td>
+                                        <details>
+                                            <summary>Actions</summary>
+                                            <nav>
+                                                <a href="#">Option 1</a>
+                                                <a href="#">Option 2</a>
+                                                <a href="#">Option 3</a>
+                                            </nav>
+                                        </details>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>errrrica <span>[Invite sent]</span></td>
+                                    <td>
+                                        <details>
+                                            <summary>Actions</summary>
+                                            <nav>
+                                                <a href="#">Option 1</a>
+                                                <a href="#">Option 2</a>
+                                                <a href="#">Option 3</a>
+                                            </nav>
+                                        </details>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>yearn-alice</td>
+                                    <td>
+                                        <details>
+                                            <summary>Actions</summary>
+                                            <nav>
+                                                <a href="#">Option 1</a>
+                                                <a href="#">Option 2</a>
+                                                <a href="#">Option 3</a>
+                                            </nav>
+                                        </details>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>yearn-bob</td>
+                                    <td>
+                                        <details>
+                                            <summary>Actions</summary>
+                                            <nav>
+                                                <a href="#">Option 1</a>
+                                                <a href="#">Option 2</a>
+                                                <a href="#">Option 3</a>
+                                            </nav>
+                                        </details>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>yearn-cathy</td>
+                                    <td>
+                                        <details>
+                                            <summary>Actions</summary>
+                                        </details>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </main>
+                </article>
+            </section>
+
+            <br><br><br>
+
+        </body>
+    </html>
