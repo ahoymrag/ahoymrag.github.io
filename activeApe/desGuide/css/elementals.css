@@ -304,6 +304,11 @@ table td:last-child {
     text-align: right;
 }
 
+th {
+    font-weight: 400;
+    font-size: var(--h3-font-size);
+}
+
 /*Special Misc Classes */
 
 .spinner {
