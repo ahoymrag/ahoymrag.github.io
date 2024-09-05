@@ -164,3 +164,11 @@ footer {
     align-items: center;
     justify-content: center;
 }
+
+
+footer p {
+    max-width: 600px;
+    /* Adjust the value as needed */
+    margin: 0 auto;
+    /* Center the paragraph */
+}
