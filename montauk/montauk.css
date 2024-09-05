@@ -3,6 +3,10 @@
 body {
     font-family: 'Barlow', sans-serif;
     letter-spacing: 0.5px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* Ensure the body takes full height */
 }
 
 a {
@@ -123,6 +127,18 @@ button:hover {
     transform: translateY(-2px);
 }
 
+main {
+    flex: 1;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    (0, 0, 0, 0.8);
+    color: black;
+    border-top: .4px solid;
+}
 
 /*ULT CLASS */
 
