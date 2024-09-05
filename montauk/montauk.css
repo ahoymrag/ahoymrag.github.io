@@ -64,6 +64,10 @@ nav a:hover {
 }
 
 section {
+    max-width: 500px;
+    /* Set a max width for the section */
+    margin: 0 auto;
+    /* Center the section */
     background: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -135,7 +139,6 @@ footer {
     text-align: center;
     padding: 20px;
     background-color: white;
-    (0, 0, 0, 0.8);
     color: black;
     border-top: .4px solid;
 }
