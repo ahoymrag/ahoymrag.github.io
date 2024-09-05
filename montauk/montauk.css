@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;900&display=swap');
+
+body {
+    font-family: 'Barlow', sans-serif;
+    /* Added fallback font */
+    letter-spacing: 0.5px;
+    /* Improved readability */
+}
+
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 400;
+}
+
+nav {
+    background-color: #f8d1d1;
+    /* Light pink background */
+    padding: 10px 20px;
+    /* Padding for spacing */
+}
+
+nav ul {
+    list-style: none;
+    /* Remove bullet points */
+    display: flex;
+    /* Flexbox for horizontal layout */
+    justify-content: space-between;
+    /* Space between items */
+    align-items: center;
+    /* Center items vertically */
+    margin: 0;
+    /* Remove default margin */
+    padding: 0;
+    /* Remove default padding */
+}
+
+nav li {
+    margin: 0 15px;
+    /* Space between items */
+}
+
+nav a {
+    text-decoration: none;
+    /* Remove underline */
+    color: black;
+    /* Text color */
+    /* Bold text */
+    font-size: 16px;
+    /* Font size */
+}
+
+nav a:hover {
+    color: #d50000;
+    /* Change color on hover */
+}
