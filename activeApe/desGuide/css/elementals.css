@@ -282,13 +282,47 @@ table {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    table-layout: fixed;
 }
 
-table td,
 table th {
+    width: 50%;
+    text-align: center;
+    padding: 12px 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+table th:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+table th:active {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #ff0060;
+}
+
+table th:focus {
+    outline: 2px solid #ff0060;
+}
+
+table td {
     padding: 12px 20px;
     text-align: left;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+table td:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+table td:active {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ff0060;
+}
+
+table td:focus {
+    outline: 2px solid #ff0060;
 }
 
 table tr:last-child td {
