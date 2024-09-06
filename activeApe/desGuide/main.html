@@ -669,6 +669,92 @@
             </section>
 
             <br><br><br>
+            <section>
+                <header><h2>Configure Momentum Analyzer</h2></header>
+                <article>
+                    <form>
+                        <label for="botImage">Bot Image</label>
+                        <input type="text" id="botImage" name="botImage"
+                            placeholder="Paste the URI of the bot image here">
 
+                        <label for="containerImageLocation">Container Image
+                            Location</label>
+                        <input type="text" id="containerImageLocation"
+                            name="containerImageLocation"
+                            placeholder="Enter container image URI">
+
+                        <p class="error">Silverback can't parse this URI. Please
+                            use the following format:
+                            <code>&lt;registry.domain&gt;/&lt;repo&gt;/path:&lt;tag&gt;</code></p>
+
+                        <label for="accountAlias">Account Alias
+                            (Optional)</label>
+                        <input type="text" id="accountAlias" name="accountAlias"
+                            placeholder="Enter account alias">
+
+                        <p>Leave this field empty to prevent the bot from
+                            signing transactions and messages.</p>
+
+                        <h3>Environment Variables</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Variable</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>INFURA_PROJECT_ID</td>
+                                    <td>Enabled</td>
+                                    <!-- Change to "Disabled" if unchecked -->
+                                </tr>
+                                <tr>
+                                    <td>INFURA_PROJECT_SECRET</td>
+                                    <td>Enabled</td>
+                                    <!-- Change to "Disabled" if unchecked -->
+                                </tr>
+                                <tr>
+                                    <td>INFURA_ENDPOINT</td>
+                                    <td>Enabled</td>
+                                    <!-- Change to "Disabled" if unchecked -->
+                                </tr>
+                                <tr>
+                                    <td>ALCHEMY_API_KEY</td>
+                                    <td>Disabled</td>
+                                    <!-- Change to "Enabled" if checked -->
+                                </tr>
+                                <tr>
+                                    <td>ALCHEMY_API_URL</td>
+                                    <td>Disabled</td>
+                                    <!-- Change to "Enabled" if checked -->
+                                </tr>
+                                <tr>
+                                    <td>WALLET_PRIVATE_KEY</td>
+                                    <td>Disabled</td>
+                                    <!-- Change to "Enabled" if checked -->
+                                </tr>
+                                <tr>
+                                    <td>MONITORING_API_KEY</td>
+                                    <td>Disabled</td>
+                                    <!-- Change to "Enabled" if checked -->
+                                </tr>
+                                <tr>
+                                    <td>AUTH_TOKEN</td>
+                                    <td>Disabled</td>
+                                    <!-- Change to "Enabled" if checked -->
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <button type="button">CREATE VARIABLE GROUP</button>
+                        <footer>
+                            <button type="button">BACK</button>
+                            <button type="submit">SAVE CONFIGURATION & RESTART
+                                BOT</button>
+                        </footer>
+                    </form>
+                </article>
+            </section>
         </body>
     </html>

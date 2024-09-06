@@ -469,6 +469,56 @@ select:focus {
     border-color: rgba(255, 255, 255, 0.8);
 }
 
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    /* Remove default styling */
+    appearance: none;
+    width: 20px;
+    /* Size of the checkbox */
+    height: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    /* Border color */
+    border-radius: 4px;
+    /* Rounded corners */
+    background-color: rgba(255, 255, 255, 0.1);
+    /* Background color */
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.3s, border-color 0.3s;
+    /* Smooth transition */
+}
+
+input[type="checkbox"]:checked {
+    background-color: rgba(255, 255, 255, 0.3);
+    /* Checked background */
+    border-color: rgba(255, 255, 255, 0.8);
+    /* Checked border color */
+}
+
+input[type="checkbox"]:checked::after {
+    content: '';
+    /* Create a checkmark */
+    position: absolute;
+    top: 2px;
+    left: 5px;
+    width: 8px;
+    height: 12px;
+    border: solid white;
+    /* Checkmark color */
+    border-width: 0 1px 1px 0;
+    /* Checkmark shape */
+    transform: rotate(45deg);
+    /* Rotate to form a checkmark */
+}
+
+input[type="checkbox"]:hover {
+    border-color: rgba(255, 255, 255, 0.8);
+    /* Change border on hover */
+}
+
+
+
+
 /* Sidebar Styles */
 aside {
     width: 250px;
@@ -575,4 +625,62 @@ details>nav>a:hover {
 /* Control the sidebar visibility */
 .toggle-checkbox:checked~aside {
     transform: translateX(0);
+}
+
+
+
+
+/* Toggle switch styles */
+.toggle {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.toggle input {
+    display: none;
+    /* Hide the default checkbox */
+}
+
+.toggle span {
+    position: relative;
+    width: 40px;
+    /* Width of the toggle */
+    height: 20px;
+    /* Height of the toggle */
+    background-color: rgba(255, 255, 255, 0.3);
+    /* Background color */
+    border-radius: 34px;
+    /* Rounded corners */
+    transition: background-color 0.3s;
+    /* Smooth transition */
+    margin-right: 10px;
+    /* Space between toggle and label */
+}
+
+.toggle span:before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    /* Size of the toggle knob */
+    height: 16px;
+    border-radius: 50%;
+    /* Round knob */
+    background-color: white;
+    /* Knob color */
+    transition: transform 0.3s;
+    /* Smooth transition */
+    left: 2px;
+    /* Initial position */
+}
+
+.toggle input:checked+span {
+    background-color: rgba(255, 255, 255, 0.6);
+    /* Background when checked */
+}
+
+.toggle input:checked+span:before {
+    transform: translateX(20px);
+    /* Move knob to the right */
 }
