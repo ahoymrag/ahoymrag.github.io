@@ -17,6 +17,8 @@
 body {
     background-color: var(--color-background);
     font-family: barlow;
+    accent-color: #ff0060;
+    overflow: auto;
 }
 
 @media (min-width: 768px) {
@@ -101,6 +103,10 @@ h3 {
     font-weight: 400;
 }
 
+h4 {
+    font-weight: 400;
+}
+
 
 /* ELEMENTAL LISTS */
 
@@ -127,6 +133,7 @@ li {
     display: flex;
     padding: 0;
     margin: 0;
+    overflow: auto;
 }
 
 .horizontal-options li {
@@ -267,6 +274,30 @@ section:hover {
     gap: 10px;
 }
 
+.layout-full-page {
+    height: 100vh;
+    display: flex;
+    /* Added to ensure children are flex items */
+    flex-direction: column;
+    /* Stack children vertically */
+    overflow: hidden;
+    /* Prevent overflow on mobile */
+}
+
+.center-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Ensure children do not overlap on mobile */
+@media (max-width: 768px) {
+    .layout-full-page {
+        flex-direction: column;
+        /* Maintain vertical stacking */
+    }
+}
+
 @media (max-width: 768px) {
     .layout-horizontal {
         flex-direction: column;
@@ -349,6 +380,27 @@ th {
     font-weight: 400;
     font-size: var(--h3-font-size);
 }
+
+
+/*Special Use Tables */
+
+/* 1. TABLE GRID */
+
+.table-grid {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-grid td {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    vertical-align: top;
+    /* Aligns content to the top */
+}
+
 
 /*Special Misc Classes */
 
@@ -521,7 +573,7 @@ input[type="checkbox"]:hover {
 
 /* Sidebar Styles */
 aside {
-    width: 250px;
+    width: 245px;
     height: 100vh;
     color: white;
     display: flex;
@@ -625,62 +677,4 @@ details>nav>a:hover {
 /* Control the sidebar visibility */
 .toggle-checkbox:checked~aside {
     transform: translateX(0);
-}
-
-
-
-
-/* Toggle switch styles */
-.toggle {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    margin: 10px 0;
-}
-
-.toggle input {
-    display: none;
-    /* Hide the default checkbox */
-}
-
-.toggle span {
-    position: relative;
-    width: 40px;
-    /* Width of the toggle */
-    height: 20px;
-    /* Height of the toggle */
-    background-color: rgba(255, 255, 255, 0.3);
-    /* Background color */
-    border-radius: 34px;
-    /* Rounded corners */
-    transition: background-color 0.3s;
-    /* Smooth transition */
-    margin-right: 10px;
-    /* Space between toggle and label */
-}
-
-.toggle span:before {
-    content: "";
-    position: absolute;
-    width: 16px;
-    /* Size of the toggle knob */
-    height: 16px;
-    border-radius: 50%;
-    /* Round knob */
-    background-color: white;
-    /* Knob color */
-    transition: transform 0.3s;
-    /* Smooth transition */
-    left: 2px;
-    /* Initial position */
-}
-
-.toggle input:checked+span {
-    background-color: rgba(255, 255, 255, 0.6);
-    /* Background when checked */
-}
-
-.toggle input:checked+span:before {
-    transform: translateX(20px);
-    /* Move knob to the right */
 }
