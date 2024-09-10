@@ -681,13 +681,14 @@ details>nav>a:hover {
 
 /*Currently being used as a user float */
 
-output {
+dialog {
     position: fixed;
     top: 10px;
     border-top-right-radius: 10px;
     right: 10px;
 }
-output a {
+
+dialog a {
     text-decoration: none;
     color: black;
 }
