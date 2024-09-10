@@ -737,3 +737,54 @@ a,
 p {
     color: white;
 }
+
+/*IMG CLASSES*/
+
+.small-logo {
+    width: 100px;
+    height: auto;
+    filter: brightness(100);
+    transition: all 0.3s ease;
+}
+
+.small-logo:hover {
+    transform: scale(1.1) rotate(5deg);
+    filter: brightness(100) drop-shadow(0 0 10px rgba(255, 255, 255, 0.7));
+    cursor: pointer;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.small-logo {
+    animation: pulse 2s infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-2.5px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.small-logo {
+    animation: float 5s ease-in-out infinite;
+}
