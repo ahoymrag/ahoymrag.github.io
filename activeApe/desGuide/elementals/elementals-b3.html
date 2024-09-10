@@ -864,14 +864,50 @@
                 <button>NEW CLUSTER</button>
             </section>
             <hr>
-            <dialog open>
-                <article class="size-half">
-                    <a href="#">
-                        <img src="#" alt="userProfile">
-                    </a>
-                    <a href="#"><p>User Profile Name</p></a>
-                </article>
-            </dialog>
+            <style>
+                .user-profile {
+                    position: fixed; /* Fixed position to stay in place */
+                    right: 10px; /* Align to the right of the screen */
+                    top: 10px; /* Position from the top */
+                    width: 200px; /* Width of the dialog */
+                    transition: transform 0.3s ease; /* Smooth transform transition */
+                }
+                .user-profile.minimized {
+                    transform: translateY(-90%); /* Minimize to show only a small part */
+                }
+                .user-profile img {
+                    width: 100px;
+                    height: auto;
+                }
+                .user-profile a {
+                    display: block;
+                    margin: 5px 0;
+                }
+                .status-popup {
+                    display: none; /* Initially hidden */
+                    position: fixed;
+                    right: 20px;
+                    top: 50px;
+                    background: white;
+                    border: 1px solid #ccc;
+                    padding: 10px;
+                    border-radius: 5px;
+                    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+                }
+            </style>
+
+            <object>
+                <a href="#" onclick="toggleMinimize()">
+                    <img src="#" alt="Profile Picture">
+                </a>
+                <details>
+                    <summary>User Profile Name</summary>
+                    <a href="#">Manage Account</a>
+                    <a href="#">Settings</a>
+                    <a href="#">Sign Out</a>
+                    <a href="#">Switch Profile</a>
+                </details>
+            </object>
 
         </body>
     </html>

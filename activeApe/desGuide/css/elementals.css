@@ -681,7 +681,7 @@ details>nav>a:hover {
 
 /*Currently being used as a user float */
 
-dialog {
+object {
     width: 100%;
     position: fixed;
     top: 10px;
@@ -691,13 +691,31 @@ dialog {
     border: 1px solid rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
-    padding: 20px;
+    padding: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 300px;
     max-width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    transition: transform 0.3s ease;
 }
 
-dialog a {
+object a {
     text-decoration: none;
     color: black;
+    line-height: 95%;
+
+}
+
+object a:hover {
+    background-color: #ff0060;
+}
+
+object summary:hover {
+    background-color: #ff0060;
+}
+
+object details {
+    display: flex;
+    flex-direction: column;
 }
