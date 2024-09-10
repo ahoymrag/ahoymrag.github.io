@@ -1,7 +1,7 @@
 <html>
     <head>
         <title>ApeWorx Master Suite</title>
-        <link rel="stylesheet" href="../ape-design-system.css">
+        <link rel="stylesheet" href="../desGuide/css/elementals.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
             :root {
@@ -26,72 +26,72 @@
                 background-size: 200% 200%;
                 animation: rippleAnimation var(--mastersuite-ripple-duration) ease-in-out infinite;
                 font-family: 'Barlow', sans-serif;
-                margin: 0;
-                padding: 2rem;
-                min-height: 100vh;
             }
+
+
             
-          
-            
-            .body-masterSuite h1,h2,h3,h4,h5,p {
-                color: rgb(255, 255, 255);
-            }
-            </style>
+        </style>
     </head>
     <body class="body-masterSuite">
-        <div class="screen">
-            <div id="topLogo" class="component c1">
-                <div class="card--center-card">
-                    <img src="Apeworx_Icon_Grey-S.png" alt="ApeWorx Icon"
-                        class="logo logo--style-1">
-                </div>
-            </div>
-            <div class="component c1">
-                <div class="item-grid--style-1">
-                    <a href="product-apeframework.html"
-                        class="item-block--style-1" id="apeFramework">
-                        <img src="path/to/apeframework-icon.png"
-                            alt="ApeFramework Icon">
-                        <h3>apeFramework</h3>
-                        <p>Build dApps with ease</p>
+        <header class="center">
+            <img src="Apeworx_Icon_Grey-S.png"
+                alt="ApeWorx Icon"
+                class="logo">
+        </header>
 
-                    </a>
-                    <a href="product-silverback.html"
-                        class="item-block--style-1" id="silverback">
-                        <img src="path/to/silverback-icon.png"
-                            alt="Silverback Icon">
-                        <h3>Silverback</h3>
-                        <p>Powerful dev environment</p>
-                    </a>
-                    <a href="product-apepay.html" class="item-block--style-1"
-                        id="apePay">
-                        <img src="path/to/apepay-icon.png" alt="ApePay Icon">
-                        <h3>ApePay</h3>
-                        <p>Fast crypto payments</p>
-                    </a>
-                    <a href="product-chaosnet.html" class="item-block--style-1"
-                        id="chaosnet">
-                        <img src="path/to/chaosnet-icon.png"
-                            alt="Chaosnet Icon">
-                        <h3>cHaOSneT</h3>
-                        <p>Decentralized network</p>
-                    </a>
-                    <a href="product-academy.html" class="item-block--style-1"
-                        id="academy">
-                        <img src="path/to/academy-icon.png"
-                            alt="Ape Academy Icon">
-                        <h3>Ape Academy</h3>
-                        <p>Learn blockchain dev</p>
-                    </a>
-                </div>
-            </div>
+        <section>
+            <article>
+                <h1 class="center">ApeWorx Master Suite</h1>
+                <p>The ApeWorx Master Suite is a comprehensive suite of tools
+                    and resources designed to empower developers and businesses
+                    to build, deploy, and manage blockchain applications with
+                    ease.</p>
+            </article>
+        </section>
+        <section>
+            <article>
+                <a href="product-apeframework.html" class="product-card">
+                    <img src="path/to/apeframework-icon.png"
+                        alt="ApeFramework Icon">
+                    <h3>apeFramework</h3>
+                    <p>Build dApps with ease</p>
+                </a>
+            </article>
+            <article>
+                <a href="product-silverback.html" class="product-card">
+                    <img src="path/to/silverback-icon.png"
+                        alt="Silverback Icon">
+                    <h3>Silverback</h3>
+                    <p>Powerful dev environment</p>
+                </a>
+            </article>
+            <article>
+                <a href="product-apepay.html" class="product-card">
+                    <img src="path/to/apepay-icon.png" alt="ApePay Icon">
+                    <h3>ApePay</h3>
+                    <p>Fast crypto payments</p>
+                </a>
+            </article>
+            <article>
+                <a href="product-chaosnet.html" class="product-card">
+                    <img src="path/to/chaosnet-icon.png" alt="Chaosnet Icon">
+                    <h3>cHaOSneT</h3>
+                    <p>Decentralized network</p>
+                </a>
+            </article>
+            <article>
+                <a href="product-academy.html" class="product-card">
+                    <img src="path/to/academy-icon.png" alt="Ape Academy Icon">
+                    <h3>Ape Academy</h3>
+                    <p>Learn blockchain dev</p>
+                </a>
+            </article>
+        </section>
 
-            <div class="component c1" id="timeNtemp">
-                <div class="time-display" id="clock"></div>
-                <div class="temp-display" id="temp"></div>
-            </div>
-
-        </div>
+        <footer class="center-flex">
+            <div class="time-display" id="clock"></div>
+            <div class="temp-display" id="temp"></div>
+        </footer>
         <script>
             function updateClock() {
                 const now = new Date();

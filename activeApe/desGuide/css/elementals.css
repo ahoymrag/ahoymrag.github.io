@@ -679,7 +679,7 @@ details>nav>a:hover {
     transform: translateX(0);
 }
 
-/*Currently being used as a user float */
+/* OJBECT Currently acts as a user float */
 
 object {
     width: 100%;
@@ -718,4 +718,22 @@ object summary:hover {
 object details {
     display: flex;
     flex-direction: column;
+}
+
+
+/*SPECIAL CLASSES to be rethought of ELEMENTS LATER */
+
+/*LINK CLASSES*/
+
+.product-card {
+    min-width: 100px;
+    text-decoration: none;
+}
+
+.product-card h1,
+h2,
+h3,
+a,
+p {
+    color: white;
 }
