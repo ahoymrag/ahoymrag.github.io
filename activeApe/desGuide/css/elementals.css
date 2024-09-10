@@ -274,6 +274,60 @@ section:hover {
     gap: 10px;
 }
 
+.layout-grid[class*="columns-"] {
+    grid-template-columns: repeat(var(--num-columns), 1fr);
+}
+
+.layout-grid.columns-3 {
+    --num-columns: 3;
+}
+
+.layout-grid.columns-4 {
+    --num-columns: 4;
+}
+
+.layout-grid.columns-5 {
+    --num-columns: 5;
+}
+
+/* Responsive adjustments for screens less than 750px */
+@media (max-width: 750px) {
+    .layout-grid {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+
+    .layout-grid[class*="columns-"] {
+        grid-template-columns: repeat(2, 1fr);
+        /* Default to 2 columns on small screens */
+    }
+
+    .layout-grid.columns-1 {
+        --num-columns: 1;
+        /* For explicitly one column layouts */
+    }
+}
+
+/* Further responsive adjustments for the smallest screens */
+@media (max-width: 480px) {
+    .layout-grid {
+        grid-template-columns: 1fr;
+        /* Default to 1 column on the smallest screens */
+    }
+
+    .layout-grid>article {
+        height: auto;
+        /* Adjust height dynamically */
+    }
+}
+
+.layout-grid>article {
+    height: 400px;
+    /* Default height, adjust as needed */
+}
+
+
+
+
 .layout-full-page {
     height: 100vh;
     display: flex;
@@ -693,18 +747,22 @@ object {
     -webkit-backdrop-filter: blur(4px);
     padding: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    width: calc(min(150px, 100% - 20px));
     max-width: 90%;
     display: flex;
-    flex-wrap: wrap;
     transition: transform 0.3s ease;
 }
 
 object a {
     text-decoration: none;
-    color: black;
+    color: var(--color-text-primary, black);
     line-height: 95%;
+}
 
+object summary {
+    text-decoration: none;
+    color: var(--color-text-primary, black);
+    line-height: 95%;
 }
 
 object a:hover {
@@ -718,6 +776,8 @@ object summary:hover {
 object details {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
 }
 
 
@@ -726,12 +786,61 @@ object details {
 /*LINK CLASSES*/
 
 .product-card {
-    min-width: 100px;
+    min-width: 200px;
+    height: 250px;
     text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 15px;
+    padding: 20px;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.02);
+    background: rgba(255, 255, 255, 0.002);
+}
+
+.product-card img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover img {
+    transform: scale(1.1);
+}
+
+.product-card h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.product-card p {
+    font-size: 0.9rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
 }
 
 .product-card h1 h2 h3 a p {
     color: white;
+}
+
+.product-card img {
+    filter: brightness(100);
+    align-items: center;
+    float: center;
+    justify-content: center;
+    width: 50%;
+    height: auto;
 }
 
 /*IMG CLASSES*/

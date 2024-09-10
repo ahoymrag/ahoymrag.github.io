@@ -27,33 +27,23 @@
                 animation: rippleAnimation var(--mastersuite-ripple-duration) ease-in-out infinite;
                 font-family: 'Barlow', sans-serif;
             }
-
-
-            
         </style>
     </head>
     <body class="body-masterSuite">
         <header class="center">
-            <a href="#">
+            <a href="../desGuide/elementals/elementals-b3.html">
                 <img src="Apeworx_Icon_Grey-S.png"
                     alt="ApeWorx Icon"
                     class="small-logo">
             </a>
+            <div class="time-display" id="clock"></div>
+            <div class="temp-display" id="temp"></div>
         </header>
 
-        <section>
-            <article>
-                <h1 class="center">ApeWorx Master Suite</h1>
-                <p>The ApeWorx Master Suite is a comprehensive suite of tools
-                    and resources designed to empower developers and businesses
-                    to build, deploy, and manage blockchain applications with
-                    ease.</p>
-            </article>
-        </section>
-        <section>
+        <section class="layout-grid columns-3">
             <article>
                 <a href="product-apeframework.html" class="product-card">
-                    <img src="path/to/apeframework-icon.png"
+                    <img src="https://apeworx.io/framework/frame.png"
                         alt="ApeFramework Icon">
                     <h3>apeFramework</h3>
                     <p>Build dApps with ease</p>
@@ -61,10 +51,11 @@
             </article>
             <article>
                 <a href="product-silverback.html" class="product-card">
-                    <img src="path/to/silverback-icon.png"
+                    <img src="https://apeworx.io/silverback/silverback-grey.png"
                         alt="Silverback Icon">
                     <h3>Silverback</h3>
-                    <p>Powerful dev environment</p>
+                    <p>Develop bots that listen and respond to live chain
+                        data</p>
                 </a>
             </article>
             <article>
@@ -88,12 +79,27 @@
                     <p>Learn blockchain dev</p>
                 </a>
             </article>
+            <article>
+                <a href="https://docs.apeworx.io" class="product-card">
+                    <img src="path/to/apedocs-icon.png" alt="ApeDocs Icon">
+                    <h3>ApeDocs</h3>
+                    <p>Comprehensive documentation</p>
+                </a>
+            </article>
         </section>
+        <object>
 
-        <footer class="center-flex">
-            <div class="time-display" id="clock"></div>
-            <div class="temp-display" id="temp"></div>
-        </footer>
+            <details>
+                <summary>User Profile Name</summary>
+                <a href="#">Manage Account</a>
+                <a href="#">Settings</a>
+                <a href="#">Sign Out</a>
+                <a href="#">Switch Profile</a>
+            </details>
+            <a href="#" onclick="toggleMinimize()">
+                <img src="#" alt="Profile Picture">
+            </a>
+        </object>
         <script>
             function updateClock() {
                 const now = new Date();
