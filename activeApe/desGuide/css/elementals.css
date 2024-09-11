@@ -227,7 +227,7 @@ p {
 /*ULTILITY CLASSES*/
 
 hr {
-    height: 0;
+    height: 2px;
     border: none;
     margin: 0;
     padding: 0;
@@ -642,9 +642,20 @@ input[type="checkbox"]:hover {
 
 
 
+/*CONDITIONAL LOGIC WITH SIDEBAR */
+
+main.sidebar-active {
+    margin-left: 300px;
+}
+
 
 /* Sidebar Styles */
 aside {
+    display: none;
+}
+
+aside.active {
+    transform: translateX(0);
     width: 245px;
     display: flex;
     flex-direction: column;
@@ -659,10 +670,6 @@ aside {
     overflow-y: auto;
     z-index: 1000;
     transition: transform 0.3s ease;
-}
-
-aside.active {
-    transform: translateX(0);
 }
 
 aside header h1 {
