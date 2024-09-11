@@ -62,14 +62,11 @@ footer {
     width: 100%;
     align-items: center;
     justify-content: center;
-    padding: 5px;
+    padding-top: 5px;
 
 }
 
-footer>button {
-    width: 100%;
-    text-align: center;
-}
+
 
 /*SIZE CLASSES */
 
