@@ -738,7 +738,6 @@ aside nav ul li p:hover {
     color: #0645ad;
 }
 
-/* Adjust main content when sidebar is active */
 .sidebar-active main {
     margin-left: 245px;
 }
