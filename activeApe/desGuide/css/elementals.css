@@ -646,21 +646,30 @@ input[type="checkbox"]:hover {
 /* Sidebar Styles */
 aside {
     width: 245px;
-    height: 100vh;
-    color: white;
     display: flex;
     flex-direction: column;
     padding: 20px;
     font-family: var(--font-family);
-    transform: translateX(-100%);
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: var(--color-background);
+    border-right: 1px solid #e9ecef;
+    overflow-y: auto;
+    z-index: 1000;
     transition: transform 0.3s ease;
+}
+
+aside.active {
+    transform: translateX(0);
 }
 
 aside header h1 {
     font-size: 1.3rem;
     margin-bottom: 20px;
     font-weight: 600;
-    color: white;
+    color: #333;
 }
 
 aside nav ul {
@@ -681,26 +690,31 @@ aside nav ul li {
 
 aside nav ul li i {
     margin-right: 10px;
-    color: #ff0060;
+    color: #0645ad;
 }
 
 aside nav ul li:hover {
-    background-color: #444;
+    background-color: #eaecf0;
     cursor: pointer;
 }
 
 aside nav ul li p {
-    font-weight: 600;
+    font-weight: 400;
     font-family: var(--font-family);
-    color: white;
-    letter-spacing: 0.05em;
-    line-height: 1.5;
+    color: #202122;
+    letter-spacing: 0.02em;
+    line-height: 1.6;
     margin: 0;
     transition: color 0.3s ease;
 }
 
 aside nav ul li p:hover {
-    color: #ccc;
+    color: #0645ad;
+}
+
+/* Adjust main content when sidebar is active */
+.sidebar-active main {
+    margin-left: 245px;
 }
 
 /*DROPDOWN*/
