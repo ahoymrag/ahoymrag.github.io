@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Getting Started - My Design System</title>
         <link rel="stylesheet" href="../css/desG-styles.css">
+        <link rel="stylesheet" href="../css/elementals.css">
     </head>
     <body>
         <header class="navbar navbar-expand-md navbar-dark bg-dark">
@@ -53,6 +54,43 @@
                         class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
                         <h1 class="h2">Getting Started</h1>
                     </header>
+                    <section>
+                        <section>
+                            <article>
+                                <header>
+                                    <h2>Create a Workspace</h2>
+                                    <p>Workspaces are where you provision bot
+                                        clusters and
+                                        analyze data. You can keep workspaces
+                                        private, or
+                                        invite others.</p>
+                                </header>
+                                <article>
+                                    <form>
+                                        <label for="workspaceName">Workspace
+                                            Name</label>
+                                        <input type="text" id="workspaceName"
+                                            name="workspaceName"
+                                            placeholder="momomentum's Workspace"
+                                            required>
+                                        <label for="slugName">Slug Name</label>
+                                        <input type="text" id="slugName"
+                                            name="slugName"
+                                            placeholder="momomentum-workspace"
+                                            required>
+                                        <figure>The identifier used for this
+                                            workspace's URL
+                                            and in the CLI. Must be unique and
+                                            contain no
+                                            spaces.</figure>
+                                    </form>
+                                </article>
+                                <footer>
+                                    <button>Create Workspace</button>
+                                </footer>
+                            </article>
+                        </section>
+                    </section>
                     <section>
                         <!-- Getting started content -->
                         <p>This is the getting started guide for My Design

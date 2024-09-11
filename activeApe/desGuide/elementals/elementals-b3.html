@@ -7,9 +7,8 @@
     </head>
     <body>
         <header class="center">
-            <h2>apeworx Elementals</h2>
-            <p class="center">vb3 by Alex Gonzalez</p>
-
+            <h1>apeworx Elementals</h1>
+            <p class="center">version - b3 - by Alex Gonzalez</p>
             <article>
                 <p>"Elementals" commonly known around the internet as
                     "HTML ELEMENTS" or "HTML TAGS" are the basic building blocks
@@ -27,7 +26,7 @@
         <section>
             <article>
                 <header>
-                    <h1 class="center">Hiiiii</h1>
+                    <h1 class="center">Getting Started</h1>
                     <article>
                         <p class="medium">What you will find below are examples
                             of how to use the basic building blocks of our
@@ -64,7 +63,27 @@
                 </article>
             </section>
             <hr>
-
+            <hr>
+            <section>
+                <article>
+                    <header>
+                        <h1>
+                            Below are examples of how to use the basic building
+                            blocks of our design system based on the silverback
+                            figma prototype design.
+                        </h1>
+                    </header>
+                </article>
+            </section>
+            <section>
+                <article>
+                    <header>
+                        <h1>
+                            1. Create Cluster Feature
+                        </h1>
+                    </header>
+                </article>
+            </section>
             <section>
                 <article>
                     <header>
@@ -151,7 +170,16 @@
                     </footer>
                 </article>
             </section>
-
+            <hr>
+            <section>
+                <article>
+                    <header>
+                        <h1>
+                            2. Create Bot Widget
+                        </h1>
+                    </header>
+                </article>
+            </section>
             <section>
                 <article>
                     <section>
@@ -178,70 +206,6 @@
                     </section>
                 </article>
             </section>
-
-            <!-- LIST EXAMPLE-->
-            <section>
-                <article>
-                    <article>
-                        <ul>
-                            <li>Item 1</li>
-                            <li>Item 2</li>
-                            <li>Item 3</li>
-                        </ul>
-                    </article>
-                </article>
-            </section>
-
-            <!-- Replace div spacers with hr elements -->
-            <hr class="spacer">
-
-            <!-- LIST LIVE EXAMPLE -->
-            <section>
-                <article>
-                    <header>
-                        <h2>Your Plan</h2>
-                    </header>
-                    <article>
-                        <p>The Individual plan includes...</p>
-                        <ul>
-                            <li>1000 credits</li>
-                            <li>1000 credits</li>
-                            <li>1000 credits</li>
-                        </ul>
-                        <ul>
-                            <li>1000 credits</li>
-                            <li>1000 credits</li>
-                            <li>1000 credits</li>
-                        </ul>
-                        <ul>
-                            <li>1000 credits</li>
-                            <li>1000 credits</li>
-                            <li>1000 credits</li>
-                        </ul>
-                        <h2>Addons</h2>
-                        <p>Supercharge your plan with the addons below.</p>
-                    </article>
-                </article>
-
-                <hr class="small">
-                <article class="card">
-                    <header>
-                        <h2>Plan Duration</h2>
-                    </header>
-                    <article>
-                        <p>Customize your plan by selecting the amount of time
-                            you'd like to pay for.</p>
-                        <button>1 month</button>
-                    </article>
-                </article>
-            </section>
-
-            <br><br><br><br>
-            <hr>
-            <h2>Create Workspace</h2>
-            <hr>
-            <br><br><br><br>
-
             <section>
                 <article>
                     <header>
@@ -270,8 +234,9 @@
                 </article>
             </section>
             <hr class="spacer">
-            <br><br><br><br>
+
             <h1>Sidebar</h1>
+            <em>Warning this is BETA</em>
             <input type="checkbox" id="toggleSidebar" class="toggle-checkbox">
             <button class="size-quarter"><label for="toggleSidebar"
                     class="toggle-label"><i class="fas fa-bars"></i>Toggle
@@ -318,12 +283,18 @@
                     </ul>
                 </nav>
                 <footer>
-                    <button>Collapse Sidebar</button>
+                    <button>View Full Status</button>
                 </footer>
             </aside>
             <hr>
-
-            <h1>Dropdown</h1>
+            <section>
+                <article>
+                    <header>
+                        <h1>Example of a Dropdown Feature</h1>
+                    </header>
+                </article>
+            </section>
+            <hr>
 
             <section>
                 <article>
@@ -873,37 +844,18 @@
                     <button>NEW CLUSTER</button>
                 </section>
                 <hr>
-                <style>
-                .user-profile {
-                    position: fixed; /* Fixed position to stay in place */
-                    right: 10px; /* Align to the right of the screen */
-                    top: 10px; /* Position from the top */
-                    width: 200px; /* Width of the dialog */
-                    transition: transform 0.3s ease; /* Smooth transform transition */
-                }
-                .user-profile.minimized {
-                    transform: translateY(-90%); /* Minimize to show only a small part */
-                }
-                .user-profile img {
-                    width: 100px;
-                    height: auto;
-                }
-                .user-profile a {
-                    display: block;
-                    margin: 5px 0;
-                }
-                .status-popup {
-                    display: none; /* Initially hidden */
-                    position: fixed;
-                    right: 20px;
-                    top: 50px;
-                    background: white;
-                    border: 1px solid #ccc;
-                    padding: 10px;
-                    border-radius: 5px;
-                    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-                }
-            </style>
+
+                <section>
+                    <article>
+                        <header>
+                            <button
+                                onclick="window.location.href='../docs/getting-started.html'">Read
+                                the Getting Started Guide on how to step by step
+                                - set up your own custom HTMX app using this
+                                system - </button>
+                        </header>
+                    </article>
+                </section>
 
                 <object>
                     <a href="#" onclick="toggleMinimize()">

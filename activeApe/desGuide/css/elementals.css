@@ -31,10 +31,19 @@ body {
 
 /*ELEMENTAL BUILDING BLOCKS */
 
+/*HEADER WORK*/
 
 header {
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+header h1 {
+    text-align: center;
+}
+
+header p {
+    text-align: center;
 }
 
 main {
@@ -47,10 +56,22 @@ main {
     overflow: hidden;
 }
 
+/*FOOTER */
 footer {
     display: flex;
-    gap: 10px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+
 }
+
+footer>button {
+    width: 100%;
+    text-align: center;
+}
+
+/*SIZE CLASSES */
 
 .size-full {
     width: 100%;
