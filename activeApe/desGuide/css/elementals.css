@@ -66,6 +66,21 @@ footer {
 
 }
 
+/*portal - usedfor Apps*/
+
+portal {
+    position: fixed;
+    /* Make the position fixed */
+    top: 0;
+    /* Align to the top of the viewport */
+    left: 0;
+    /* Align to the left of the viewport */
+    margin: 5px;
+}
+
+portal i {
+    color: white;
+}
 
 
 /*SIZE CLASSES */
@@ -238,9 +253,13 @@ hr {
     text-align: center;
 }
 
-.small {
-    height: 52px;
+.vertical-menu {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
 }
+
+
 
 .medium-height {
     height: 104px;

@@ -2,6 +2,25 @@
     <head>
         <title>ApeWorx Master Suite</title>
         <link rel="stylesheet" href="../desGuide/css/elementals.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <style>
+            .product-card {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-decoration: none;
+                color: white;
+                transition: transform 0.3s ease;
+            }
+            .product-card:hover {
+                transform: scale(1.05);
+            }
+            .product-card i {
+                font-size: 3rem;
+                margin-bottom: 10px;
+            }
+        </style>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
             :root {
@@ -91,9 +110,19 @@
             <p>ApeWorx Master Suite</p>
             <em>v0.2.0</em>
         </footer>
-        <object class="left">
-            <button>Apps</button>
-        </object>
+        <portal>
+            <button>
+
+                <details class="vertical-menu">
+                    <summary><i class="fas fa-th"></i></summary>
+                    <a href="#">apeworx.io</a>
+                    <a href="#">docs.apeworx.io</a>
+                    <a href="#">academy.apeworx.io</a>
+                    <a href="#">Switch Profile</a>
+                </details>
+            </button>
+        </portal>
+
         <object>
 
             <details>
@@ -106,7 +135,6 @@
             <a href="#" onclick="toggleMinimize()">
                 <img src="#" alt="Profile Picture">
             </a>
-            <button>Apps</button>
         </object>
         <script>
             function updateClock() {
