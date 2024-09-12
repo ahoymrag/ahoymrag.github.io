@@ -924,12 +924,34 @@
                     </a>
                     <details>
                         <summary>User Profile Name</summary>
-                        <a href="#">Manage Account</a>
-                        <a href="#">Settings</a>
-                        <a href="#">Sign Out</a>
-                        <a href="#">Switch Profile</a>
+                        <a href="#manageAccount">Manage Account</a>
+                        <a href="#settings">Settings</a>
+                        <a href="#signOut">Sign Out</a>
+                        <a href="#switchProfile">Switch Profile</a>
                     </details>
                 </object>
+
+                <!-- Popup overlays using details -->
+                <details id="manageAccount" class="overlay">
+                    <summary></summary>
+                    <div class="popup">Manage Account <a href="#"
+                            onclick="this.parentNode.parentNode.removeAttribute('open')">Close</a></div>
+                </details>
+                <details id="settings" class="overlay">
+                    <summary></summary>
+                    <div class="popup">Settings <a href="#"
+                            onclick="this.parentNode.parentNode.removeAttribute('open')">Close</a></div>
+                </details>
+                <details id="signOut" class="overlay">
+                    <summary></summary>
+                    <div class="popup">Sign Out <a href="#"
+                            onclick="this.parentNode.parentNode.removeAttribute('open')">Close</a></div>
+                </details>
+                <details id="switchProfile" class="overlay">
+                    <summary></summary>
+                    <div class="popup">Switch Profile <a href="#"
+                            onclick="this.parentNode.parentNode.removeAttribute('open')">Close</a></div>
+                </details>
 
                 <hr>
                 <section>
