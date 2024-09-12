@@ -960,39 +960,48 @@ object details {
 
 
 
-/* Overlay and Popup Styles */
-.overlay {
+.popup-section {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    display: none;
+    right: 0;
+    bottom: 0;
+    display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
     z-index: 1000;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0.3s;
 }
 
-.overlay[open] {
-    display: flex;
-}
-
-.overlay summary {
-    position: absolute;
-    width: 0;
-    height: 0;
-    margin: -1px;
-    overflow: hidden;
-}
-
-.popup {
-    position: relative;
+.popup-section article {
+    background: rgba(255, 255, 255, 0.2);
     padding: 20px;
-    background: white;
-    border-radius: 5px;
+    border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: auto;
-    max-width: 600px;
+    width: 90%;
+    max-width: 500px;
     text-align: center;
+    color: #fff;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.popup-section button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: rgba(255, 69, 0, 0.7);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    backdrop-filter: blur(5px);
+}
+
+.popup-section.show {
+    visibility: visible;
+    opacity: 1;
 }

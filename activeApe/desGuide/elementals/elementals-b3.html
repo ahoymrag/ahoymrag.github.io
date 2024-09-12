@@ -924,45 +924,51 @@
                     </a>
                     <details>
                         <summary>User Profile Name</summary>
-                        <a href="#manageAccount">Manage Account</a>
-                        <a href="#settings">Settings</a>
-                        <a href="#signOut">Sign Out</a>
-                        <a href="#switchProfile">Switch Profile</a>
+                        <button onclick="togglePopup('manageAccount')">Manage
+                            Account</button>
+                        <button
+                            onclick="togglePopup('settings')">Settings</button>
+                        <button onclick="togglePopup('signOut')">Sign
+                            Out</button>
+                        <button onclick="togglePopup('switchProfile')">Switch
+                            Profile</button>
                     </details>
                 </object>
 
-                <!-- Popup overlays using details -->
-                <details id="manageAccount" class="overlay">
-                    <summary></summary>
-                    <div class="popup">Manage Account <a href="#"
-                            onclick="this.parentNode.parentNode.removeAttribute('open')">Close</a></div>
-                </details>
-                <details id="settings" class="overlay">
-                    <summary></summary>
-                    <div class="popup">Settings <a href="#"
-                            onclick="this.parentNode.parentNode.removeAttribute('open')">Close</a></div>
-                </details>
-                <details id="signOut" class="overlay">
-                    <summary></summary>
-                    <div class="popup">Sign Out <a href="#"
-                            onclick="this.parentNode.parentNode.removeAttribute('open')">Close</a></div>
-                </details>
-                <details id="switchProfile" class="overlay">
-                    <summary></summary>
-                    <div class="popup">Switch Profile <a href="#"
-                            onclick="this.parentNode.parentNode.removeAttribute('open')">Close</a></div>
-                </details>
-
-                <hr>
-                <section>
+                <!-- Popup overlays using sections and articles -->
+                <section id="manageAccount" class="popup-section">
                     <article>
-                        <header>
-                            <h1>center</h1>
-                        </header>
-                        <p>Thank you for watching</p>
-                        <button>Here's a button</button>
+                        <h1>Manage Account</h1>
+                        <button
+                            onclick="this.parentNode.parentNode.style.display='none'">Close</button>
+                    </article>
+
+                </section>
+                <section id="settings" class="popup-section">
+                    <article>
+                        <h1>Settings</h1>
+                        <button
+                            onclick="this.parentNode.parentNode.style.display='none'">Close</button>
                     </article>
                 </section>
+                <section id="signOut" class="popup-section">
+                    <article>
+                        <h1>Sign Out</h1>
+                        <button
+                            onclick="this.parentNode.parentNode.style.display='none'">Close</button>
+                    </article>
+                </section>
+                <section id="switchProfile" class="popup-section">
+                    <article>
+                        <h1>Switch Profile</h1>
+                        <button
+                            onclick="this.parentNode.parentNode.style.display='none'">Close</button>
+                    </article>
+                    <div class="popup">Switch Profile <a href="#"
+                            onclick="this.parentNode.parentNode.style.display='none'">Close</a></div>
+                </section>
+
+                <hr>
 
                 <!-- TEMP JS TO MAKE IT HAPPEN -->
                 <script>
@@ -973,5 +979,18 @@
                         mainContent.classList.toggle('sidebar-active');
                     }
                     </script>
+
+                <script>
+    function togglePopup(popupId) {
+        var popup = document.getElementById(popupId);
+        if (popup.style.visibility === 'visible') {
+            popup.style.visibility = 'hidden';
+            popup.style.opacity = 0;
+        } else {
+            popup.style.visibility = 'visible';
+            popup.style.opacity = 1;
+        }
+    }
+    </script>
             </body>
         </html>
