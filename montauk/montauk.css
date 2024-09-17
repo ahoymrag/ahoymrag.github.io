@@ -1,12 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;900&display=swap');
 
+
+/* Root color definitions */
+:root {
+    /* CSS HEX */
+    --chocolate-cosmos: #590d22ff;
+    --claret: #800f2fff;
+    --amaranth-purple: #a4133cff;
+    --rose-red: #c9184aff;
+    --bright-pink-crayola: #ff4d6dff;
+    --bright-pink-crayola-2: #ff758fff;
+    --salmon-pink: #ff8fa3ff;
+    --cherry-blossom-pink: #ffb3c1ff;
+    --pink: #ffccd5ff;
+    --lavender-blush: #fff0f3ff;
+
+    /* CSS HSL */
+    --chocolate-cosmos-hsl: hsla(343, 75%, 20%, 1);
+    --claret-hsl: hsla(343, 79%, 28%, 1);
+    --amaranth-purple-hsl: hsla(343, 79%, 36%, 1);
+    --rose-red-hsl: hsla(343, 79%, 44%, 1);
+    --bright-pink-crayola-hsl: hsla(349, 100%, 65%, 1);
+    --bright-pink-crayola-2-hsl: hsla(349, 100%, 73%, 1);
+    --salmon-pink-hsl: hsla(349, 100%, 78%, 1);
+    --cherry-blossom-pink-hsl: hsla(349, 100%, 85%, 1);
+    --pink-hsl: hsla(349, 100%, 90%, 1);
+    --lavender-blush-hsl: hsla(348, 100%, 97%, 1);
+}
+
+/* Existing CSS code */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;900&display=swap');
+
 body {
     font-family: 'Barlow', sans-serif;
     letter-spacing: 0.5px;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    /* Ensure the body takes full height */
+    background-color: var(--lavender-blush);
 }
 
 a {
@@ -106,7 +137,7 @@ button {
     font-size: 0.9rem;
     letter-spacing: 0.05em;
     line-height: 1.2;
-    background: rgba(255, 255, 255, 0.1);
+    background: var(--salmon-pink);
     color: black;
     border: 1px solid black;
     border-radius: 8px;
