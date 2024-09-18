@@ -9,12 +9,23 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: #d2d2d2;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.25) 0%, rgba(249, 249, 249, 0.25) 50%, rgba(240, 240, 240, 0.25) 100%);
   box-shadow: inset 0 0 10px #c9c9c9;
-  animation: gradientAnimation 10s linear infinite ease-in-out;
-  background-size: cover;
+  animation: gradientAnimation 1s linear infinite ease-in-out;
+  background-size: 200% 200%;
   position: relative;
-  /* Add this line to make the silver layer relative to the body */
+}
+
+@keyframes gradientAnimation {
+
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
 }
 
 .container {

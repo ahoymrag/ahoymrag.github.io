@@ -6,32 +6,126 @@
     --h1-font-size: 2rem;
     --h2-font-size: 1.375rem;
     --h3-font-size: 1rem;
+    --h4-font-size: 0.875rem;
+    --h5-font-size: calc(1.5rem + 0.5vw);
+    --h6-font-size: 0.625rem;
     --p-font-size: 1rem;
-    --color-base: #ff0060;
-    --color-primary: var(--color-base);
-    --color-secondary: hsl(from var(--color-base) h s 80%);
-    --color-accent: hsl(from var(--color-base) h s 60%);
-    --color-background: hsl(from var(--color-base) h s 90%);
+    --h1-font-weight: 400;
+    --h2-font-weight: 600;
+    --h3-font-weight: 400;
+    --h4-font-weight: 400;
+    --h5-font-weight: 400;
+    --h6-font-weight: 400;
+    --color-primary: var(--color-base-color);
+    --color-secondary: hsl(from var(--color-base-color) h s 80%);
+    --color-accent: hsl(from var(--color-base-color) h s 60%);
+    --color-background: hsl(from var(--color-base-color) h s 90%);
+    --text-color: #333333;
+    --border-color: #cccccc;
+
+    --color-base-color: #ff0060;
+
+
+
+
+    /*STATES OF COLORS */
+    --success-color: #28a745;
+    --error-color: #dc3545;
+    --warning-color: #ffc107;
+
 }
 
 body {
     background-color: var(--color-background);
-    font-family: barlow;
-    accent-color: #ff0060;
+    font-family: var(--font-family);
     overflow: auto;
 }
 
-@media (min-width: 768px) {
-    :root {
-        --h1-font-size: 2.5rem;
-        --h2-font-size: 1.75rem;
-        --p-font-size: 1.125rem;
-    }
+
+/*Chapter 1 - the H1 Tags */
+
+h1 {
+    font-size: var(--h1-font-size);
+    font-family: var(--font-family);
+    font-weight: var(--h1-font-weight);
+    color: var(--color-primary);
+    margin: 0;
+    padding: 0;
+    line-height: 95%;
 }
 
-/*ELEMENTAL BUILDING BLOCKS */
+h2 {
+    font-size: var(--h2-font-size);
+    font-family: var(--font-family);
+    font-weight: var(--h2-font-weight);
+    color: var(--color-primary);
+    margin: 0;
+    padding: 0;
+    line-height: 95%;
 
-/*HEADER WORK*/
+}
+
+h3 {
+    font-size: var(--h3-font-size);
+    font-family: var(--font-family);
+    font-weight: var(--h3-font-weight);
+    color: var(--color-primary);
+    margin: 0;
+    padding: 0;
+    line-height: 95%;
+}
+
+h4 {
+    font-size: var(--h4-font-size);
+    font-family: var(--font-family);
+    font-weight: var(--h4-font-weight);
+    color: var(--color-primary);
+    margin: 0;
+    padding: 0;
+    line-height: 95%;
+}
+
+h5 {
+    font-size: var(--h5-font-size);
+    font-family: var(--font-family);
+    font-weight: var(--h5-font-weight);
+    color: var(--color-primary);
+    margin: 0;
+    padding: 0;
+    line-height: 95%;
+}
+
+h6 {
+    font-size: var(--h6-font-size);
+    font-family: var(--font-family);
+    font-weight: var(--h6-font-weight);
+    color: var(--color-primary);
+    margin: 0;
+    padding: 0;
+    line-height: 95%;
+}
+
+/* CHapter 2- the P Tags */
+p {
+    font-size: var(--p-font-size);
+    line-height: 1.5;
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    color: #333;
+    text-align: justify;
+    hyphens: auto;
+    word-wrap: break-word;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    margin-bottom: 1rem;
+}
+
+/*Chapter 3 - The BUILDING BLOCKS */
+
+
+
+
 
 header {
     margin-top: 10px;
@@ -70,11 +164,8 @@ footer {
 
 portal {
     position: fixed;
-    /* Make the position fixed */
     top: 0;
-    /* Align to the top of the viewport */
     left: 0;
-    /* Align to the left of the viewport */
     margin: 5px;
 }
 
@@ -105,40 +196,6 @@ portal i {
 
 /*ELEMENTAL TYPOGRAPHY*/
 
-p {
-    font-size: var(--p-font-size);
-    line-height: 1.5;
-    font-family: var(--font-family);
-    margin: 0;
-    padding: 0;
-    color: #333;
-    text-align: justify;
-    hyphens: auto;
-    word-wrap: break-word;
-    max-width: 100%;
-    overflow-wrap: break-word;
-    margin-bottom: 1rem;
-}
-
-@media (max-width: 768px) {
-    p {
-        font-size: 0.9rem;
-    }
-}
-
-@media (max-width: 480px) {
-    p {
-        font-size: 0.8rem;
-    }
-}
-
-h3 {
-    font-weight: 400;
-}
-
-h4 {
-    font-weight: 400;
-}
 
 
 /* ELEMENTAL LISTS */
@@ -210,34 +267,7 @@ button:hover {
     transform: translateY(-2px);
 }
 
-/*Typography*/
 
-h1 {
-    font-size: var(--h1-font-size);
-    line-height: 95%;
-    font-weight: 500;
-    font-family: 'Barlow', sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-h2 {
-    font-size: var(--h2-font-size);
-    line-height: 95%;
-    font-weight: 500;
-    font-family: var(--font-family);
-    margin: 0;
-    padding: 0;
-
-}
-
-p {
-    font-size: var(--p-font-size);
-    line-height: 1.5;
-    font-family: var(--font-family);
-    margin: 0;
-    padding: 0;
-}
 
 /*ULTILITY CLASSES*/
 
@@ -823,11 +853,11 @@ object summary {
 }
 
 object a:hover {
-    background-color: #ff0060;
+    background-color: var(--color-accent);
 }
 
 object summary:hover {
-    background-color: #ff0060;
+    background-color: var(--color-accent);
 }
 
 object details {
