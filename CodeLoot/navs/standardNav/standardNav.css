@@ -1,0 +1,144 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    /* Align items to the left and right */
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-family: 'Barlow', sans-serif;
+
+}
+
+.brand {
+    flex-grow: 1;
+    /* Allows the brand to take necessary space */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li a {
+    color: #333;
+    /* Dark grey text */
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #1a73e8;
+    /* Subtle blue for hover */
+}
+
+/* Logo Section */
+.brand a {
+    font-size: 24px;
+    font-weight: 400;
+    /* Slightly bolder */
+    color: #333;
+    text-decoration: none;
+    padding-left: 20px;
+
+}
+
+.menu {
+    display: flex;
+
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    font-size: 30px;
+    color: #333;
+}
+
+/* Close button style */
+.close-btn {
+    display: none;
+    /* Initially hidden */
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 1001;
+    /* Higher than the menu */
+}
+
+/* Adjust close button to replace hamburger */
+.close-btn {
+    display: none;
+    /* Initially hidden */
+    cursor: pointer;
+    font-size: 30px;
+    color: #333;
+}
+
+/* Show close button when menu is active */
+.menu.active+.close-btn {
+    display: block;
+}
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hamburger {
+        display: block;
+        order: 2;
+        /* Moves the hamburger to the right */
+    }
+
+    .brand {
+        order: 1;
+        /* Keeps the logo on the left */
+    }
+
+    .menu {
+        position: fixed;
+        /* Fixed position to stay in view */
+        top: 0;
+        left: -100%;
+        /* Start off-screen */
+        width: 100%;
+        height: 100vh;
+        /* Full screen height */
+        background-color: white;
+        /* Background color for the menu */
+        transition: left 0.3s ease;
+        /* Smooth transition for sliding in */
+        flex-direction: column;
+        justify-content: center;
+        /* Center items vertically */
+        align-items: center;
+        /* Center items horizontally */
+        z-index: 1000;
+        /* High z-index but lower than the close button */
+    }
+
+    .menu.active {
+        left: 0;
+        /* Slide in */
+    }
+
+    .menu li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu li a {
+        width: 100%;
+        display: block;
+        padding: 15px 0;
+    }
+}
