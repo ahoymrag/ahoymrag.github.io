@@ -1,107 +1,132 @@
 <html>
     <head>
         <title>Final Colors</title>
-        <link rel="stylesheet" href="./css/elementals.css">
+        <link rel="stylesheet" href="../css/elementals.css">
     </head>
     <body>
-        <h1>Final Colors</h1>
-        <p>This is the final colors page, detailing the use cases for each
-            defined color in the design.</p>
-        <table>
-            <thead>
-                <tr>
-                    <th>Color Use</th>
-                    <th>Color Name</th>
-                    <th>Description</th>
-                    <th>Hex Code</th>
-                    <th>HTML Elements</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Base Color</td>
-                    <td>Base</td>
-                    <td>Primary branding color used as the base for generating
-                        other color variations. It appears in various elements
-                        like buttons, links, and highlights to maintain brand
-                        consistency.</td>
-                    <td style="background-color: #ff0060;">#ff0060</td>
-                    <td>Used in various elements for primary color</td>
-                </tr>
-                <tr>
-                    <td>Primary Color</td>
-                    <td>Primary</td>
-                    <td>Directly uses the base color. Employed in primary
-                        interface elements such as buttons, links, and
-                        highlights, ensuring that these elements are visually
-                        prominent.</td>
-                    <td
-                        style="background-color: var(--color-base);">var(--color-base)</td>
-                    <td>Buttons, links, highlights</td>
-                </tr>
-                <tr>
-                    <td>Secondary Color</td>
-                    <td>Secondary</td>
-                    <td>This color is a lighter shade of the base color, used
-                        for secondary interface elements like secondary buttons
-                        and background sections. It helps in differentiating
-                        between primary and secondary actions while maintaining
-                        visual harmony.</td>
-                    <td
-                        style="background-color: hsl(from var(--color-base) h s 80%);">hsl(from
-                        var(--color-base) h s 80%)</td>
-                    <td>Secondary buttons, background sections</td>
-                </tr>
-                <tr>
-                    <td>Accent Color</td>
-                    <td>Accent</td>
-                    <td>An accent color derived from the base, used for drawing
-                        attention to elements like alerts, warnings, and active
-                        states. It's typically brighter or more saturated to
-                        stand out against other elements.</td>
-                    <td
-                        style="background-color: hsl(from var(--color-base) h s 60%);">hsl(from
-                        var(--color-base) h s 60%)</td>
-                    <td>Alerts, warnings, active states</td>
-                </tr>
-                <tr>
-                    <td>Background Color</td>
-                    <td>Background</td>
-                    <td>A very light shade of the base color, used primarily for
-                        background areas. It provides a subtle contrast against
-                        primary content, making the interface easier on the eyes
-                        and more readable.</td>
-                    <td
-                        style="background-color: hsl(from var(--color-base) h s 90%);">hsl(from
-                        var(--color-base) h s 90%)</td>
-                    <td>Used for background areas to offset against primary
-                        content</td>
-                </tr>
-                <tr>
-                    <td>Success Color</td>
-                    <td>Success</td>
-                    <td>Used to indicate successful operations, typically in
-                        notifications or status icons.</td>
-                    <td style="background-color: #39ffc0b9;">#39ffc0b9</td>
-                    <td>Notifications, Status Icons</td>
-                </tr>
-                <tr>
-                    <td>Error Color</td>
-                    <td>Error</td>
-                    <td>Used to highlight errors or critical issues, often in
-                        alerts or form validations.</td>
-                    <td style="background-color: #ff4470;">#ff4470</td>
-                    <td>Alerts, Form Validations</td>
-                </tr>
-                <tr>
-                    <td>Info Color</td>
-                    <td>Info</td>
-                    <td>Used for informational messages and tooltips, providing
-                        additional context to users.</td>
-                    <td style="background-color: #007B83;">#007B83</td>
-                    <td>Tooltips, Info Messages</td>
-                </tr>
-            </tbody>
-        </table>
+        <aside class="active">
+            <header><h2>
+                    Colors
+                </h2></header>
+            <article>
+                <!-- THIS IS POPULATED BY JAVASCRIPT -->
+            </article>
+        </aside>
+        <main class="sidebar-active">
+            <h1>Final Colors</h1>
+            <p>This is the final colors page, detailing the use cases for each
+                defined color in the design.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Color Use</th>
+                        <th>Color Name</th>
+                        <th>Description</th>
+                        <th>Hex Code</th>
+                        <th>HTML Elements</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Base Color</td>
+                        <td>Base</td>
+                        <td>Primary branding color used as the base for
+                            generating
+                            other color variations. It appears in various
+                            elements
+                            like buttons, links, and highlights to maintain
+                            brand
+                            consistency.</td>
+                        <td style="background-color: #ff0060;">#ff0060</td>
+                        <td>Used in various elements for primary color</td>
+                    </tr>
+                    <tr>
+                        <td>Primary Color</td>
+                        <td>Primary</td>
+                        <td>Directly uses the base color. Employed in primary
+                            interface elements such as buttons, links, and
+                            highlights, ensuring that these elements are
+                            visually
+                            prominent.</td>
+                        <td
+                            style="background-color: var(--color-base);">var(--color-base)</td>
+                        <td>Buttons, links, highlights</td>
+                    </tr>
+                    <tr>
+                        <td>Secondary Color</td>
+                        <td>Secondary</td>
+                        <td>This color is a lighter shade of the base color,
+                            used
+                            for secondary interface elements like secondary
+                            buttons
+                            and background sections. It helps in differentiating
+                            between primary and secondary actions while
+                            maintaining
+                            visual harmony.</td>
+                        <td
+                            style="background-color: hsl(from var(--color-base) h s 80%);">hsl(from
+                            var(--color-base) h s 80%)</td>
+                        <td>Secondary buttons, background sections</td>
+                    </tr>
+                    <tr>
+                        <td>Accent Color</td>
+                        <td>Accent</td>
+                        <td>An accent color derived from the base, used for
+                            drawing
+                            attention to elements like alerts, warnings, and
+                            active
+                            states. It's typically brighter or more saturated to
+                            stand out against other elements.</td>
+                        <td
+                            style="background-color: hsl(from var(--color-base) h s 60%);">hsl(from
+                            var(--color-base) h s 60%)</td>
+                        <td>Alerts, warnings, active states</td>
+                    </tr>
+                    <tr>
+                        <td>Background Color</td>
+                        <td>Background</td>
+                        <td>A very light shade of the base color, used primarily
+                            for
+                            background areas. It provides a subtle contrast
+                            against
+                            primary content, making the interface easier on the
+                            eyes
+                            and more readable.</td>
+                        <td
+                            style="background-color: hsl(from var(--color-base) h s 90%);">hsl(from
+                            var(--color-base) h s 90%)</td>
+                        <td>Used for background areas to offset against primary
+                            content</td>
+                    </tr>
+                    <tr>
+                        <td>Success Color</td>
+                        <td>Success</td>
+                        <td>Used to indicate successful operations, typically in
+                            notifications or status icons.</td>
+                        <td style="background-color: #39ffc0b9;">#39ffc0b9</td>
+                        <td>Notifications, Status Icons</td>
+                    </tr>
+                    <tr>
+                        <td>Error Color</td>
+                        <td>Error</td>
+                        <td>Used to highlight errors or critical issues, often
+                            in
+                            alerts or form validations.</td>
+                        <td style="background-color: #ff4470;">#ff4470</td>
+                        <td>Alerts, Form Validations</td>
+                    </tr>
+                    <tr>
+                        <td>Info Color</td>
+                        <td>Info</td>
+                        <td>Used for informational messages and tooltips,
+                            providing
+                            additional context to users.</td>
+                        <td style="background-color: #007B83;">#007B83</td>
+                        <td>Tooltips, Info Messages</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+        <script src="../sidebar-populate.js"></script>
     </body>
 </html>

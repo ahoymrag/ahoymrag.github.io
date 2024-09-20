@@ -167,6 +167,8 @@ table th {
     padding: 12px 20px;
     transition: background-color 0.3s, color 0.3s;
     text-align: left;
+    font-weight: 600;
+    font-size: var(--h3-font-size);
 }
 
 table th:hover {

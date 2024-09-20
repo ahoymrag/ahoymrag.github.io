@@ -5,9 +5,11 @@
         {"href": "../docs/structure.html", "text": "Structure"},
         {"href": "../docs/components.html", "text": "Components"},
         {"href": "../docs/sizes.html", "text": "Sizing Guide"},
+        {"href": "../docs/lists.html", "text": "Lists"},
       
-        {"href": "../docs/finalcolors.html", "text": "Colors"},
+        {"href": "../docs/final-colors.html", "text": "Colors"},
         {"href": "../docs/navigation.html", "text": "Sidebar Navigation"},
+        {"href": "../docs/css-structure.html", "text": "CSS Structure"},
         {"href": "../elementals/elementals-b3.html", "text": "DEMOS"}
     ]
 }

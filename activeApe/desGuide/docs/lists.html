@@ -4,235 +4,80 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Lists - My Design System</title>
-        <link rel="stylesheet" href="../css/desG-styles.css">
+        <link rel="stylesheet" href="../css/elementals.css">
     </head>
     <body>
-        <header class="navbar navbar-expand-md navbar-dark bg-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html">My Design
-                    System</a>
-                <button class="navbar-toggler" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <nav class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link"
-                                href="getting-started.html">Getting
-                                Started</a></li>
-                        <li class="nav-item"><a class="nav-link"
-                                href="components.html">Components</a></li>
-                        <li class="nav-item"><a class="nav-link active"
-                                href="lists.html">Lists</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        <!-- LIST EXAMPLE-->
-        <section>
+        <aside class="active">
+            <header>
+                <h2>Lists</h2>
+            </header>
             <article>
-                <article>
-                    <ul>
-                        <li>Item 1</li>
-                        <li>Item 2</li>
-                        <li>Item 3</li>
-                    </ul>
-                </article>
+                <!-- Content about lists can be added here -->
             </article>
-        </section>
-
-        <div class="container-fluid">
-            <div class="row">
-                <aside id="sidebar"
-                    class="col-md-3 col-lg-2 d-md-block bg-light sidebar">
-                    <div class="position-sticky">
-                        <ul class="nav flex-column">
-                            <li class="nav-item">
-                                <a class="nav-link"
-                                    href="getting-started.html">Getting
-                                    Started</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link"
-                                    href="components.html">Components</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active"
-                                    href="lists.html">Lists</a>
-                            </li>
-                        </ul>
-                    </div>
-                </aside>
-
-                <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-                    <header
-                        class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                        <h1 class="h2">Lists</h1>
+        </aside>
+        <main class="sidebar-active">
+            <section>
+                <article>
+                    <header>
+                        <h1>Lists</h1>
                     </header>
-                    <section>
-                        <p>This section covers the list components available in
-                            My Design System.</p>
-                        <p>Lists are used to display a series of related content
-                            items in a structured manner. They can be styled and
-                            customized to fit various design needs.</p>
-
-                        <h2>Example of a List Component</h2>
-                        <p>Here is an example of a list component from
-                            <code>elementals.html</code>:</p>
-
-                        <pre><code>&lt;div class="panel"&gt;
-    &lt;div class="card"&gt;
-        &lt;main&gt;
+                    <p>This section covers the list components available in My
+                        Design System.</p>
+                    <p>Lists are used to display a series of related content
+                        items in a structured manner. They can be styled and
+                        customized to fit various design needs.</p>
+                </article>
+            </section>
+            <section class="size-full">
+                <article>
+                    <header>
+                        <h1>Example of a List Component</h1>
+                    </header>
+                    <p>Here is an example of a list component from
+                        <code>elementals.html</code>:</p>
+                    <pre><code>
             &lt;ul&gt;
                 &lt;li&gt;Item 1&lt;/li&gt;
                 &lt;li&gt;Item 2&lt;/li&gt;
                 &lt;li&gt;Item 3&lt;/li&gt;
             &lt;/ul&gt;
-        &lt;/main&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-                        </code></pre>
+                    </code></pre>
+                    <p>This example shows a simple list component with three
+                        items. The list is wrapped in a card and panel for
+                        additional styling.</p>
+                </article>
+            </section>
+            <section>
+                <article>
+                    <header>
+                        <h1>Lists CSS</h1>
+                    </header>
+                    <code>
+                        <pre>
+                        <code>
+                            /*Chapter 3 - THE LISTS THE LIST  */
 
-                        <p>This example shows a simple list component with three
-                            items. The list is wrapped in a card and panel for
-                            additional styling.</p>
-
-                        <h2>Using Lists</h2>
-                        <p>To use lists in your own components, you can follow
-                            the structure and styling provided in
-                            <code>elementals.html</code>. Here is how you can
-                            create a similar list component:</p>
-
-                        <pre><code>&lt;div class="panel"&gt;
-    &lt;div class="card"&gt;
-        &lt;main&gt;
-            &lt;ul&gt;
-                &lt;li&gt;List Item 1&lt;/li&gt;
-                &lt;li&gt;List Item 2&lt;/li&gt;
-                &lt;li&gt;List Item 3&lt;/li&gt;
-            &lt;/ul&gt;
-        &lt;/main&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-                        </code></pre>
-
-                        <p>By following this structure, you can create
-                            consistent and reusable list components for your
-                            design system.</p>
-
-                        <h2>HTML Elements and Styling</h2>
-                        <p>HTML elements like <code>&lt;ul&gt;</code> and
-                            <code>&lt;li&gt;</code> are used to create lists.
-                            These elements can be styled using CSS to match the
-                            design requirements of your system.</p>
-                        <p>For more detailed information, you can refer to
-                            resources like <a
-                                href="https://www.w3schools.com/html/">W3Schools</a>
-                            and <a
-                                href="https://developer.mozilla.org/en-US/docs/Web/HTML">MDN
-                                Web Docs</a>.</p>
-
-                        <h2>Explanation of the List Component</h2>
-                        <p>The list component is a reusable element built using
-                            the basic building blocks, or elementals, of the
-                            design system. It is defined in the
-                            <code>elementals.html</code> file and styled using
-                            the <code>elementals.css</code> file.</p>
-                        <p>Here is how the <code>elementals.html</code> and
-                            <code>elementals.css</code> files work together to
-                            create the list component:</p>
-
-                        <h3>HTML Structure</h3>
-                        <p>The <code>elementals.html</code> file provides the
-                            structure of the list using HTML elements like
-                            <code>&lt;ul&gt;</code> and <code>&lt;li&gt;</code>.
-                            The list is wrapped in a <code>&lt;div
-                                class="panel"&gt;</code> and <code>&lt;div
-                                class="card"&gt;</code> for additional
-                            styling.</p>
-
-                        <pre><code>&lt;div class="panel"&gt;
-    &lt;div class="card"&gt;
-        &lt;main&gt;
-            &lt;ul&gt;
-                &lt;li&gt;Item 1&lt;/li&gt;
-                &lt;li&gt;Item 2&lt;/li&gt;
-                &lt;li&gt;Item 3&lt;/li&gt;
-            &lt;/ul&gt;
-        &lt;/main&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-                        </code></pre>
-
-                        <h3>CSS Styling</h3>
-                        <p>The <code>elementals.css</code> file provides the
-                            styles for the <code>.panel</code> and
-                            <code>.card</code> classes. The <code>.panel</code>
-                            class adds a background, border-radius, box-shadow,
-                            and padding to the panel. The <code>.card</code>
-                            class adds similar styles to the card, with
-                            additional hover effects for interactivity. The
-                            <code>ul</code> and <code>li</code> elements can be
-                            styled to match the design requirements.</p>
-
-                        <pre><code>/* Panel styling */
-.panel {
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    padding: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    transition: all 0.3s ease;
-}
-
-.panel:hover {
-    background: rgba(255, 255, 255, 0.15);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
-}
-
-/* Card styling */
-.card {
-    max-width: 100%;
-    margin: 5px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    padding: 20px;
-    transition: transform 0.3s ease, background 0.3s ease;
-}
-
-.card:hover {
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-    background: rgba(255, 255, 255, 0.2);
-}
-
-/* List styling */
-ul {
-    list-style-type: disc;
-    padding-left: 20px;
-}
-
-li {
-    margin-bottom: 10px;
-}
-                        </code></pre>
-
-                        <p>By combining the structure defined in
-                            <code>elementals.html</code> with the styles
-                            provided in <code>elementals.css</code>, the list
-                            component is created with a consistent and reusable
-                            design.</p>
-                    </section>
-                </main>
-            </div>
-        </div>
-
-        <script src="../js/scripts.js"></script>
+                            ul {
+                                list-style-type: none; /* Removes the default list-style */
+                                padding: 0; /* Removes padding */
+                                margin: 0; /* Removes margin */
+                                font-family: var(--font-family); /* Uses the custom font family defined in :root */
+                                color: #333; /* Sets the text color */
+                            }
+                            
+                            li {
+                                text-decoration: none; /* Ensures no text decoration */
+                                list-style-type: none; /* Removes list style */
+                                padding-left: 0; /* Removes left padding */
+                                padding: 0; /* Removes all padding */
+                                margin: 0; /* Removes all margins */
+                            }
+                        </code>
+                    </pre>
+                    </code>
+                </article>
+            </section>
+        </main>
+        <script src="../sidebar-populate.js"></script>
     </body>
 </html>
