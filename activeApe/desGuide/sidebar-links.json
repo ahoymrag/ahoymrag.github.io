@@ -2,14 +2,12 @@
     "links": [
        
         {"href": "../docs/getting-started.html", "text": "Getting Started"},
-        {"href": "../docs/structure.html", "text": "Structure"},
-        {"href": "../docs/components.html", "text": "Components"},
+
         {"href": "../docs/sizes.html", "text": "Sizing Guide"},
         {"href": "../docs/lists.html", "text": "Lists"},
       
         {"href": "../docs/final-colors.html", "text": "Colors"},
-        {"href": "../docs/navigation.html", "text": "Sidebar Navigation"},
-        {"href": "../docs/css-structure.html", "text": "CSS Structure"},
+        {"href": "../docs/sidebar.html", "text": "Sidebar Navigation"},
         {"href": "../elementals/elementals-b3.html", "text": "DEMOS"}
     ]
 }

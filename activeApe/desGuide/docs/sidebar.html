@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sidebar Guide - My Design System</title>
+        <link rel="stylesheet" href="../css/elementals.css">
+    </head>
+    <body>
+        <aside class="active">
+            <header>
+                <h2>Sidebar Nav</h2>
+            </header>
+            <article>
+
+            </article>
+        </aside>
+        <main class="sidebar-active">
+            <section id="introduction">
+                <article>
+                    <header>
+                        <h1>Introduction to Sidebar</h1>
+                    </header>
+                    <p>The sidebar, typically used in web applications for
+                        navigation, is a vertical menu aligned alongside the
+                        main content area. In our design system, the sidebar is
+                        styled using the <code>.active</code> class to make it
+                        visible by default.</p>
+                </article>
+            </section>
+            <section id="example">
+                <article>
+                    <header>
+                        <h1>Example of a Sidebar</h1>
+                    </header>
+                    <p>This section provides a basic example of a sidebar
+                        defined using the <code>&lt;aside&gt;</code> element.
+                        The sidebar is made interactive and styled to fit
+                        seamlessly into the layout of a web application.</p>
+                </article>
+            </section>
+            <section id="usage">
+                <article>
+                    <header>
+                        <h1>Usage of Sidebar</h1>
+                    </header>
+                    <p>The sidebar is used for housing navigation links, contact
+                        information, or additional content that is not part of
+                        the main content flow. It's a crucial element for
+                        enhancing usability in complex web applications.</p>
+                </article>
+            </section>
+            <br>
+            <section>
+                <article>
+                    <pre><code>
+                        /* Sidebar Styles */
+aside {
+    display: none;
+}
+
+aside.active {
+    transform: translateX(0);
+    width: 245px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    font-family: var(--font-family);
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: var(--color-background);
+    border-right: 1px solid #e9ecef;
+    overflow-y: auto;
+    z-index: 1000;
+    transition: transform 0.3s ease;
+}
+
+aside header h1 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #333;
+}
+
+aside nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+aside nav ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+aside nav ul li i {
+    margin-right: 10px;
+    color: #0645ad;
+}
+
+aside nav ul li:hover {
+    background-color: #eaecf0;
+    cursor: pointer;
+}
+
+aside nav ul li p {
+    font-weight: 400;
+    font-family: var(--font-family);
+    color: #202122;
+    letter-spacing: 0.02em;
+    line-height: 1.6;
+    margin: 0;
+    transition: color 0.3s ease;
+}
+
+aside nav ul li p:hover {
+    color: #0645ad;
+}
+                    </code></pre>
+                </article>
+            </section>
+            <section>
+                <article>
+                    <header>
+                        <h2>Sidebar HTML Breakdown</h2>
+                    </header>
+                    <pre>
+                        <code>
+&lt;aside&gt;
+    &lt;header&gt;
+        &lt;details&gt;
+            &lt;summary&gt;
+                &lt;h1&gt;momomentum's Workspace&lt;/h1&gt;
+                &lt;i class="fa fa-caret-down" aria-hidden="true"&gt;&lt;/i&gt;
+            &lt;/summary&gt;
+            &lt;nav&gt;
+                &lt;a href="#"&gt;&lt;i class="fa fa-sign-out" aria-hidden="true"&gt;&lt;/i&gt; Sign Out&lt;/a&gt;
+                &lt;a href="#"&gt;&lt;i class="fa fa-plus" aria-hidden="true"&gt;&lt;/i&gt; Add Another Workspace&lt;/a&gt;
+                &lt;a href="#"&gt;&lt;i class="fa fa-cog" aria-hidden="true"&gt;&lt;/i&gt; Manage Workspace&lt;/a&gt;
+            &lt;/nav&gt;
+        &lt;/details&gt;
+    &lt;/header&gt;
+    &lt;nav&gt;
+        &lt;ul&gt;
+            &lt;li&gt;
+                &lt;i class="fa fa-chart-line" aria-hidden="true"&gt;&lt;/i&gt;
+                &lt;p&gt;Dashboards&lt;/p&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;i class="fa fa-folder-open" aria-hidden="true"&gt;&lt;/i&gt;
+                &lt;p&gt;Workspace Management&lt;/p&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;i class="fa fa-briefcase" aria-hidden="true"&gt;&lt;/i&gt;
+                &lt;p&gt;Workspaces&lt;/p&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;i class="fa fa-terminal" aria-hidden="true"&gt;&lt;/i&gt;
+                &lt;p&gt;CLI Documentation&lt;/p&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/nav&gt;
+    &lt;footer&gt;
+        &lt;button&gt;View Full Status&lt;/button&gt;
+        &lt;button class="size-quarter" onclick="toggleSidebar()"&gt;
+            &lt;label class="toggle-label"&gt;&lt;i class="fas fa-bars"&gt;&lt;/i&gt;&lt;/label&gt;
+        &lt;/button&gt;
+    &lt;/footer&gt;
+&lt;/aside&gt;
+                        </code>
+                    </pre>
+                </article>
+            </section>
+        </main>
+        <script src="../sidebar-populate.js"></script>
+    </body>
+</html>
