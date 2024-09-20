@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;900&display=swap');
 
 
+
 :root {
     --font-family: 'Barlow', sans-serif;
     --h1-font-size: 2rem;
@@ -16,22 +17,30 @@
     --h4-font-weight: 400;
     --h5-font-weight: 400;
     --h6-font-weight: 400;
+
+    /*COLOR ROOTS*/
+
+
+    /*VARIATIONS BASED ON THE PRIMARY COLOR */
+
     --color-primary: var(--color-base-color);
     --color-secondary: hsl(from var(--color-base-color) h s 80%);
     --color-accent: hsl(from var(--color-base-color) h s 60%);
     --color-background: hsl(from var(--color-base-color) h s 90%);
     --text-color: #333333;
-    --border-color: #cccccc;
-
     --color-base-color: #ff0060;
 
 
 
 
-    /*STATES OF COLORS */
+    /*STATES OF SUCCESS AND ERROR */
     --success-color: #28a745;
     --error-color: #dc3545;
     --warning-color: #ffc107;
+
+    /*STATES OF ACTIVE AND INACTIVE */
+    --active-color: #7fffd4;
+    --inactive-color: #dc3545;
 
 }
 
@@ -48,7 +57,7 @@ h1 {
     font-size: var(--h1-font-size);
     font-family: var(--font-family);
     font-weight: var(--h1-font-weight);
-    color: var(--color-primary);
+    color: var(--text-color);
     margin: 0;
     padding: 0;
     line-height: 95%;
@@ -58,7 +67,7 @@ h2 {
     font-size: var(--h2-font-size);
     font-family: var(--font-family);
     font-weight: var(--h2-font-weight);
-    color: var(--color-primary);
+    color: var(--text-color);
     margin: 0;
     padding: 0;
     line-height: 95%;
@@ -69,7 +78,7 @@ h3 {
     font-size: var(--h3-font-size);
     font-family: var(--font-family);
     font-weight: var(--h3-font-weight);
-    color: var(--color-primary);
+    color: var(--text-color);
     margin: 0;
     padding: 0;
     line-height: 95%;
@@ -79,7 +88,7 @@ h4 {
     font-size: var(--h4-font-size);
     font-family: var(--font-family);
     font-weight: var(--h4-font-weight);
-    color: var(--color-primary);
+    color: var(--text-color);
     margin: 0;
     padding: 0;
     line-height: 95%;
@@ -121,10 +130,131 @@ p {
     margin-bottom: 1rem;
 }
 
-/*Chapter 3 - The BUILDING BLOCKS */
+/*Chapter 3 - THE LISTS THE LIST  */
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-family: var(--font-family);
+    color: #333;
+}
+
+li {
+    text-decoration: none;
+    list-style-type: none;
+    padding-left: 0;
+    padding: 0;
+    margin: 0;
+}
 
 
+/*CHAPTER 4 - TABLES */
 
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+table th {
+    width: 50%;
+    padding: 12px 20px;
+    transition: background-color 0.3s, color 0.3s;
+    text-align: left;
+}
+
+table th:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+table th:active {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #ff0060;
+}
+
+table th:focus {
+    outline: 2px solid #ff0060;
+}
+
+table td {
+    padding: 12px 20px;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+table td:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+table td:active {
+    color: #ff0060;
+}
+
+table td:focus {
+    outline: 2px solid #ff0060;
+}
+
+table tr:last-child td {
+    border-bottom: none;
+}
+
+table hr {
+    margin: 10px 0;
+    border: none;
+    height: 1px;
+    width: 100%;
+}
+
+table td:first-child {
+    text-align: left;
+}
+
+table td:last-child {
+    text-align: right;
+}
+
+th {
+    font-weight: 400;
+    font-size: var(--h3-font-size);
+}
+
+
+/*Special Use Tables */
+
+/* 1. TABLE GRID */
+
+.table-grid {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-grid td {
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    vertical-align: top;
+}
+
+/*CHAPTER 5 - BUTTONS */
+
+/*ACTIVE VS INACTIVE STATES OF BUTTON */
+
+.active {
+    background-color: var(--active-color);
+}
+
+.inactive {
+    background-color: var(--inactive-color);
+}
+
+/*CHAPTER 6 - HEADER + MAIN + FOOTER */
 
 
 header {
@@ -162,14 +292,14 @@ footer {
 
 /*portal - usedfor Apps*/
 
-portal {
+.portal {
     position: fixed;
     top: 0;
     left: 0;
     margin: 5px;
 }
 
-portal i {
+.portal i {
     color: white;
 }
 
@@ -197,24 +327,16 @@ portal i {
 /*ELEMENTAL TYPOGRAPHY*/
 
 
+/*CHAPTER 7 - NAVIGATION */
+
+
+
+
+
 
 /* ELEMENTAL LISTS */
 
-ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    font-family: var(--font-family);
-    color: #333;
-}
 
-li {
-    text-decoration: none;
-    list-style-type: none;
-    padding-left: 0;
-    padding: 0;
-    margin: 0;
-}
 
 /*UL STRUCTURES */
 /*HORIZONTAL OPTIONS */
@@ -425,102 +547,6 @@ section:hover {
     }
 }
 
-/* Table Styles */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    table-layout: fixed;
-}
-
-table th {
-    width: 50%;
-    text-align: center;
-    padding: 12px 20px;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-table th:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-}
-
-table th:active {
-    background-color: rgba(255, 255, 255, 0.3);
-    color: #ff0060;
-}
-
-table th:focus {
-    outline: 2px solid #ff0060;
-}
-
-table td {
-    padding: 12px 20px;
-    text-align: left;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    transition: background-color 0.3s, color 0.3s;
-}
-
-table td:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-table td:active {
-    background-color: rgba(255, 255, 255, 0.2);
-    color: #ff0060;
-}
-
-table td:focus {
-    outline: 2px solid #ff0060;
-}
-
-table tr:last-child td {
-    border-bottom: none;
-}
-
-table hr {
-    margin: 10px 0;
-    border: none;
-    height: 1px;
-    background-color: rgba(255, 255, 255, 0.5);
-    width: 100%;
-}
-
-table td:first-child {
-    text-align: left;
-}
-
-table td:last-child {
-    text-align: right;
-}
-
-th {
-    font-weight: 400;
-    font-size: var(--h3-font-size);
-}
-
-
-/*Special Use Tables */
-
-/* 1. TABLE GRID */
-
-.table-grid {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-.table-grid td {
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 10px;
-    text-align: center;
-    vertical-align: top;
-    /* Aligns content to the top */
-}
 
 
 /*Special Misc Classes */

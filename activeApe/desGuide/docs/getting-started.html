@@ -9,25 +9,12 @@
     </head>
     <body>
         <aside class="active">
-            <header>
-                <h2>Getting Started</h2>
-            </header>
+            <header><h2>
+                    Getting Started
+                </h2></header>
             <article>
-                <button
-                    onclick="window.location.href='../docs/getting-started.html'">Getting
-                    Started</button>
-                <button
-                    onclick="window.location.href='../docs/getting-started.html'">Structure</button>
-                <button
-                    onclick="window.location.href='../docs/getting-started.html'">Components</button>
 
-                <hr><hr>
-                <h3 class="center">Demos of System</h3>
-                <button
-                    onclick="window.location.href='../elementals/elementals-b3.html'">ELEMENTAL
-                    Demo</button>
             </article>
-
         </aside>
         <main class="sidebar-active">
 
@@ -74,7 +61,49 @@
                         Demo</button>
                 </article>
             </section>
-            <script src="../js/scripts.js"></script>
+            <section>
+                <article>
+                    <header>
+                        <h1>Basic Example</h1>
+                    </header>
+                    <p>The design system provides a set of basic use cases for
+                        each component. These use cases are demonstrated in the
+                        HTML structure below and styled using
+                        @elementals.css:</p>
+
+                    <pre><code>
+&lt;section&gt;
+    &lt;article&gt;
+        &lt;header&gt;
+            &lt;h1&gt;Component Title&lt;/h1&gt;
+        &lt;/header&gt;
+        &lt;p&gt;Component description or content goes here.&lt;/p&gt;
+        &lt;button&gt;Action Button&lt;/button&gt;
+    &lt;/article&gt;
+&lt;/section&gt;
+                    </code></pre>
+
+                    <p>This structure utilizes semantic HTML elements like
+                        &lt;section&gt;, &lt;article&gt;, and &lt;header&gt;.
+                        The @elementals.css file provides default styles for
+                        these elements, including:</p>
+                    <ul>
+                        <li>Responsive layout with flexbox for &lt;section&gt;
+                            and &lt;article&gt;</li>
+                        <li>Typography styles for &lt;h1&gt; and &lt;p&gt;
+                            tags</li>
+                        <li>Button styling with hover and active states</li>
+                        <li>Consistent spacing and margins</li>
+                    </ul>
+                    <p>By using these basic components as building blocks, you
+                        can create more complex layouts while maintaining a
+                        consistent design language across your project.</p>
+                </article>
+
+            </section>
+            <br>
+
+            <script src="../sidebar-populate.js"></script>
         </main>
 
     </body>
