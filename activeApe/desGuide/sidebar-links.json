@@ -2,7 +2,7 @@
     "links": [
        
         {"href": "../docs/getting-started.html", "text": "Getting Started"},
-
+        {"href": "../docs/structure.html", "text": "Structure"},
         {"href": "../docs/sizes.html", "text": "Sizing Guide"},
         {
             "href": "../docs/typography.html", 

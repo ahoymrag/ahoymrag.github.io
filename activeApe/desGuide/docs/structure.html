@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Structure - My Design System</title>
+        <link rel="stylesheet" href="../css/elementals.css">
+    </head>
+    <body>
+        <aside class="active">
+            <header>
+                <h2>Structure</h2>
+            </header>
+            <article>
+                <!-- Content about structure can be added here -->
+            </article>
+        </aside>
+        <main class="sidebar-active">
+            <section>
+                <article>
+                    <header>
+                        <h1>Structure</h1>
+                    </header>
+                    <p>This section covers the structural components available
+                        in My Design System.</p>
+                    <p>Understanding the structure is crucial for effectively
+                        using
+                        the design system. Here we define the layout and
+                        framework
+                        used to build consistent interfaces.</p>
+                    <h2>HTML Structure and CSS Styling</h2>
+                    <p>The HTML structure of this page and its styling defined
+                        in elementals.css work together to present a
+                        well-organized and visually consistent design. Here's an
+                        overview of how the structure is set up and the
+                        relationship between the elements:</p>
+
+                    <h3>HTML Structure</h3>
+                    <ul>
+                        <li><strong>&lt;aside&gt;:</strong> Contains
+                            supplementary content, used here for a sidebar that
+                            can be shown or hidden.</li>
+                        <li><strong>&lt;main&gt;:</strong> The primary container
+                            for the main content of the page, including
+                            logically grouped sections.</li>
+                        <li><strong>&lt;section&gt;:</strong> Represents
+                            standalone sections of content within the
+                            document.</li>
+                        <li><strong>&lt;article&gt;:</strong> Encapsulates
+                            individual pieces of content that could stand alone
+                            if needed.</li>
+                    </ul>
+
+                    <h3>CSS Styling (elementals.css)</h3>
+                    <h4>General Layout:</h4>
+                    <ul>
+                        <li><strong>main:</strong> Styled with a left margin
+                            when the sidebar is active.</li>
+                        <li><strong>aside:</strong> Initially hidden, becomes
+                            visible and slides into view when active.</li>
+                        <li><strong>section:</strong> Styled with background,
+                            border-radius, and box-shadow for visual
+                            separation.</li>
+                        <li><strong>article:</strong> Similar to section, with
+                            additional hover effects for interactivity.</li>
+                    </ul>
+
+                    <h4>Responsive Adjustments:</h4>
+                    <p>Media queries adjust the layout for different screen
+                        sizes, ensuring content accessibility across
+                        devices.</p>
+
+                    <h4>Typography and Colors:</h4>
+                    <p>CSS variables define a consistent color scheme and
+                        typography settings throughout the document.</p>
+
+                    <h4>Interactive Elements:</h4>
+                    <p>Buttons and links have hover and focus states defined for
+                        improved accessibility and user experience.</p>
+
+                    <h3>Relationship Between Elements</h3>
+                    <p>The section and article elements structure the content
+                        logically and semantically. The CSS ensures these
+                        elements are visually distinct and aligned with the
+                        design system's aesthetics, creating a cohesive and
+                        scalable design system that is easy to navigate and
+                        understand.</p>
+
+                    <p>This modular design allows components to be added or
+                        modified independently while adhering to the overall
+                        design system's guidelines.</p>
+                    <!-- Structure examples -->
+                    <div>Example of a basic structure component here.</div>
+                </article>
+            </section>
+        </main>
+        <script src="../sidebar-populate.js"></script>
+    </body>
+</html>
