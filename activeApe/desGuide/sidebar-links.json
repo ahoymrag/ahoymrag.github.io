@@ -4,10 +4,18 @@
         {"href": "../docs/getting-started.html", "text": "Getting Started"},
 
         {"href": "../docs/sizes.html", "text": "Sizing Guide"},
+        {
+            "href": "../docs/typography.html", 
+            "text": "Typography"
+        },
         {"href": "../docs/lists.html", "text": "Lists"},
       
         {"href": "../docs/final-colors.html", "text": "Colors"},
         {"href": "../docs/sidebar.html", "text": "Sidebar Navigation"},
         {"href": "../elementals/elementals-b3.html", "text": "DEMOS"}
+        ,
+        {"href": "#", "text": "EXAMPLES BELOW"},
+        {"href": "../examples/bot-create-config.html", "text": "Bot Creation & Configuration"}
+       
     ]
 }

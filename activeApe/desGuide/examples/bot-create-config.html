@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <title>Bot Features - apeworx Design System</title>
+        <link rel="stylesheet" href="../css/elementals.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    </head>
+    <body>
+        <aside class="active">
+            <header>
+                <h2>Sidebar Nav</h2>
+            </header>
+            <article>
+
+            </article>
+        </aside>
+        <main>
+            <header class="center">
+                <h1>Bot Features</h1>
+                <p class="center">Explore the bot-specific features of our
+                    design system.</p>
+            </header>
+            <section>
+                <article>
+                    <header>
+                        <h2>Create Bot</h2>
+                    </header>
+                    <article>
+                        <p>Set up your bot with the following form:</p>
+                        <form>
+                            <label for="botName">Bot Name:</label>
+                            <input type="text" id="botName" name="botName"
+                                placeholder="Enter bot name" required>
+                            <label for="description">Description:</label>
+                            <textarea id="description" name="description"
+                                placeholder="Describe the bot"></textarea>
+                            <footer>
+                                <button type="submit">Create Bot</button>
+                            </footer>
+                        </form>
+                    </article>
+                </article>
+            </section>
+            <section>
+                <article>
+                    <header>
+                        <h2>Bot Configuration</h2>
+                    </header>
+                    <article>
+                        <form>
+                            <label for="configPath">Configuration Path:</label>
+                            <input type="text" id="configPath" name="configPath"
+                                placeholder="Enter configuration path">
+                            <footer>
+                                <button type="submit">Save
+                                    Configuration</button>
+                            </footer>
+                        </form>
+                    </article>
+                </article>
+            </section>
+            <section>
+                <article>
+                    <header>
+                        <h2>Bot Status Overview</h2>
+                    </header>
+                    <article>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Bot Name</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>ExampleBot</td>
+                                    <td>Running</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </article>
+                </article>
+            </section>
+        </main>
+        <script src="../sidebar-populate.js"></script>
+    </body>
+</html>
