@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Screenplay Viewer</title>
+        <style>
+        body {
+            font-family: Courier, 'Courier New', monospace;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        #screenplay {
+            width: 90%;
+            max-width: 8.5in;
+            margin: 1in auto;
+            padding: 1in;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            white-space: pre-wrap;
+            font-size: 12pt;
+            line-height: 1.5;
+        }
+
+        h2 {
+            text-align: center;
+            text-transform: uppercase;
+            margin: 0;
+            padding: 0;
+        }
+
+        em {
+            font-style: italic;
+        }
+
+        /* Scene Heading (e.g., INT. HOUSE - DAY) */
+        .scene-heading {
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-top: 1em;
+            margin-bottom: 0.5em;
+        }
+
+        /* Action lines (descriptive paragraphs) */
+        .action {
+            margin-left: 1.5in;
+            margin-right: 1.5in;
+            text-align: left;
+        }
+
+        /* Character Name (Centered) */
+        .character {
+            margin-left: 3.5in;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        /* Dialogue (Indented) */
+        .dialogue {
+            margin-left: 2.0in;
+            margin-right: 2.0in;
+            text-align: left;
+        }
+
+        /* Parentheticals (Italic and indented further than dialogue) */
+        .parenthetical {
+            margin-left: 2.5in;
+            margin-right: 2.0in;
+            font-style: italic;
+        }
+
+        /* Scene break (---) */
+        hr {
+            border: none;
+            border-top: 1px solid #000;
+            margin: 1em 0;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 800px) {
+            .character, .dialogue, .parenthetical {
+                margin-left: 1in;
+                margin-right: 1in;
+            }
+            .action {
+                margin-left: 0.5in;
+                margin-right: 0.5in;
+            }
+        }
+
+        #controls {
+            text-align: center;
+            margin: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    </head>
+    <body>
+        <div id="controls">
+            <button onclick="downloadPDF()">Download PDF</button>
+        </div>
+        <div id="screenplay"></div>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+        <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch('main.md')
+                .then(response => response.text())
+                .then(text => {
+                    const screenplayElement = document.getElementById('screenplay');
+                    screenplayElement.innerHTML = convertMarkdownToHTML(text);
+                });
+        });
+
+        function convertMarkdownToHTML(markdown) {
+            return markdown
+                .replace(/^## (.*)$/gm, '<div class="scene-heading">$1</div>') // Convert headers to scene headings
+                .replace(/_(.*?)_/g, '<em>$1</em>') // Convert italics
+                .replace(/---/g, '<hr>') // Convert scene breaks
+                .replace(/^(\*\*(.*?)\*\*)/gm, '<div class="character">$2</div>') // Convert character names
+                .replace(/^\((.*?)\)$/gm, '<div class="parenthetical">($1)</div>') // Convert parentheticals
+                .replace(/^([^<].*)$/gm, '<div class="action">$1</div>'); // Convert action lines
+        }
+
+        function downloadPDF() {
+            const element = document.getElementById('screenplay');
+            const opt = {
+                margin:       [0.5, 0.5, 0.5, 0.5], // Top, right, bottom, left
+                filename:     'screenplay.pdf',
+                image:        { type: 'jpeg', quality: 0.98 },
+                html2canvas:  { scale: 2 },
+                jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' },
+                pagebreak:    { mode: ['avoid-all', 'css', 'legacy'] }
+            };
+
+            // Generate the PDF
+            html2pdf().set(opt).from(element).toPdf().get('pdf').then(function (pdf) {
+                // Add page numbers
+                const totalPages = pdf.internal.getNumberOfPages();
+                for (let i = 1; i <= totalPages; i++) {
+                    pdf.setPage(i);
+                    pdf.setFontSize(10);
+                    pdf.text('Page ' + i + ' of ' + totalPages, pdf.internal.pageSize.getWidth() - 1, pdf.internal.pageSize.getHeight() - 0.5);
+                }
+            }).save();
+        }
+        </script>
+    </body>
+</html>
