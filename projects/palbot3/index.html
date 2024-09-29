@@ -1,32 +1,102 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>PAL-BOT 3: Downfall</title>
-    <style>
+    <head>
+        <title>PAL-BOT 3: Downfall</title>
+        <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
         }
         .container {
             max-width: 800px;
             margin: 0 auto;
+            text-align: center;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.5em;
+            color: #007BFF;
+        }
+        h2 {
+            font-size: 2em;
+            margin-top: 1em;
+            color: #007BFF;
+        }
+        p {
+            font-size: 1.2em;
+            color: #555;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: #fff;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        .toc {
+            text-align: left;
+            margin-top: 20px;
+        }
+        .toc h3 {
+            font-size: 1.5em;
+            color: #007BFF;
+        }
+        .toc ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .toc li {
+            margin: 5px 0;
+        }
+        .toc a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        .toc a:hover {
+            text-decoration: underline;
         }
     </style>
-</head>
-<body>
-    <div class="container">
-        <h1>PAL-BOT 3: Downfall</h1>
-        <p>Release Date: <span id="releaseDate">Christmas 2024</span></p>
-        <h2>Synopsis</h2>
-        <p id="synopsis"></p>
-    </div>
-	<footer>
-		<a href="../index.html">Back to Projects</a>
-	</footer>
+    </head>
+    <body>
+        <div class="container">
+            <h1>PAL-BOT 3: Downfall</h1>
+            <p>Release Date: <span id="releaseDate">Christmas 2026</span></p>
+            <h2>Synopsis</h2>
+            <p id="synopsis"></p>
+            <div class="toc">
+                <h3>Table of Contents</h3>
+                <ul>
+                    <li><a href="#section1">Introduction</a></li>
+                    <li><a href="#section2">Plot Summary</a></li>
+                    <li><a href="#section3">Cast & Crew</a></li>
+                    <li><a href="#section4">Production Notes</a></li>
+                    <li><a href="#section5">Release Information</a></li>
+                </ul>
+            </div>
+            <a href="../index.html" class="button">Back to Projects</a>
+        </div>
 
-<script>
-	document.getElementById('releaseDate').textContent = 'Christmas 2024';
-
-	document.getElementById('synopsis').textContent = 'It’s 2027 foggy night and we hear the radio crackle over the title card about Special Forces on a Manhunt mission in Nevada for unknown life...';
+        <script>
+        document.getElementById('releaseDate').textContent = 'Christmas 2024';
+        document.getElementById('synopsis').textContent = 'It’s 2027 foggy night and we hear the radio crackle over the title card about Special Forces on a Manhunt mission in Nevada for unknown life...';
     </script>
-</body>
+    </body>
 </html>
