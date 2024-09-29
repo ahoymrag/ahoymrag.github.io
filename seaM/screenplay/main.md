@@ -59,9 +59,9 @@ _Mac's eyes drift back to the window, where the wind has picked up, rustling the
 
 ## Scene 6: EXT. NEW HOUSE - NIGHT
 
-Thunder rumbles in the distance, adding to the tension as the storm approaches.
+*Thunder rumbles* in the distance, adding to the tension as the storm approaches.
 
-FADE OUT.
+**FADE OUT.**
 
 # SUNDAY
 
@@ -357,7 +357,7 @@ _Dallas_ and _Mac_ sit down on their couch for dinner. Tension still lingers in 
 
 On the TV is the _WEATHERMAN_ - the same weatherman that was out the day before. He's talking about a hurricane that is quickly making its case, and how it is hurricane season. He urges viewers to be on the lookout.
 
-FADE OUT.
+**FADE OUT.**
 
 ## Scene 14: EXT. DRIVEWAY - EVENING
 
