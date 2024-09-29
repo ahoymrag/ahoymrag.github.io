@@ -174,13 +174,13 @@ The _TEACHER_, a man in his early 30s, stands at the front of the room, beginnin
 > 
 **TEACHER**
 (enthusiastically)
-Good morning, everyone. Welcome to a new school year - a fresh start is what we have in front of us.
+> Good morning, everyone. Welcome to a new school year - a fresh start is what we have in front of us.
 
 (noticing a distracted student)
 Hey, you paying attention?
 
 (continuing)
-This semester, we'll be exploring some exciting topics--weather patterns, the phases of the moon, and how the tides work.
+> This semester, we'll be exploring the wonders world of-weather patterns, the phases of the moon, and count all of the ripples of the tides... We'll then move on and examine different ways in which the phases of the moon rile together. In a chasm of solar gravity - moon beams.  the tides work.
 
 _Mac listens intently, but his attention is soon drawn to the window. Outside, the sky is overcast, and a field of wetlands with tall grass stretches out beyond the schoolyard._
 
@@ -194,9 +194,9 @@ _Dallas_ picks up _Mac_ after school. As they drive home, they realize that _Ash
 
 **DOMINIC TALKATIVE NEIGHBOR**
 
-Hey, Indiana! Guess what? These kids are neighbors! Small world, huh?
+> My Lord Indiana! Check you out big guy! Hey, Indiana! Look at us - we're neighbors! These kids are neighbors! Small world, huh?
 
-_As a group of neighborhood kids approaches Mac, one of them, a GIRL (10), speaks up._
+_Makayla walks behind her father into frame and walks right up to Mac.  a group of neighborhood kids approaches Mac, one of them, a GIRL (10), speaks up._
 
 **MAKAYLA**
 
@@ -205,6 +205,12 @@ _As a group of neighborhood kids approaches Mac, one of them, a GIRL (10), speak
 **MAC**
 
 > Yeah.
+
+**MAKAYLA**
+> You Did?
+
+**MAC**
+> Yeah. 
 
 _Asher, looking sheepish, quickly walks away back to the house. Molly approaches Mac, looking him up and down._
 
