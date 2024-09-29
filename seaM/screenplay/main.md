@@ -200,11 +200,11 @@ _As a group of neighborhood kids approaches Mac, one of them, a GIRL (10), speak
 
 **MAKAYLA**
 
-Hey, did you see me give Asher that bag?
+> Did you see me give Asher that bag?
 
 **MAC**
 
-Yeah.
+> Yeah.
 
 _Asher, looking sheepish, quickly walks away back to the house. Molly approaches Mac, looking him up and down._
 
@@ -291,7 +291,7 @@ School has just let out, and students are pouring out of the building. _Mac_ spo
 _Makayla looks around cautiously before speaking._
 
 **MAKAYLA**
-> Do you know about history - secret professors - tales of promises of the old? A long time ago, there was a group of professors who started a secret society - they were from Yale but they lived in Branford - okay - anyway - They would search these exact coasts - for specific crustaceans that they would find on specific rocks, during a certain time of the season, which is now.
+> Do you know about history - secret professors - tales of promises of the old? A long time ago, there was a group of professors who started absecret society - they were from Yale but they lived in Branford - okay - anyway - They would search these exact coasts - for specific crustaceans that they would find on specific rocks, during a certain time of the season, which is now.
 
 **MAC**
 > Why are you telling me this?
