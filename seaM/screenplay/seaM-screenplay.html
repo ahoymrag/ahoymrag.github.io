@@ -282,7 +282,9 @@
         function updateStickyHeader() {
             const stickyHeader = document.getElementById('sticky-header');
             const dayHeadings = document.querySelectorAll('.day-heading');
+            const sceneHeadings = document.querySelectorAll('.scene-heading');
             let currentDay = '';
+            let currentScene = '';
 
             dayHeadings.forEach(heading => {
                 const rect = heading.getBoundingClientRect();
@@ -291,7 +293,14 @@
                 }
             });
 
-            stickyHeader.textContent = currentDay;
+            sceneHeadings.forEach(heading => {
+                const rect = heading.getBoundingClientRect();
+                if (rect.top <= 0) {
+                    currentScene = heading.textContent;
+                }
+            });
+
+            stickyHeader.textContent = `${currentDay} - ${currentScene}`;
         }
 
         function updatePageNumbers() {
