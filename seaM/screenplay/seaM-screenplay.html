@@ -6,88 +6,68 @@
         <title>Screenplay Viewer</title>
         <style>
         body {
-            font-family: Courier, 'Courier New', monospace;
+            font-family: 'Georgia', serif;
             margin: 0;
             padding: 0;
-            background-color: #f5f5f5;
+            background-color: #f3e8d2;
+            color: #333;
         }
 
         #screenplay {
             width: 90%;
-            max-width: 8.5in;
-            margin: 1in auto;
-            padding: 1in;
-            background-color: white;
+            max-width: 40em;
+            margin: 2em auto;
+            padding: 1em;
+            background-color: #fffaf0;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            white-space: pre-wrap;
-            font-size: 12pt;
-            line-height: 1.5;
+            line-height: 1.6;
+            font-size: 16px;
+            position: relative;
         }
 
         h2 {
             text-align: center;
             text-transform: uppercase;
-            margin: 0;
-            padding: 0;
+            margin: 1em 0;
+            font-family: 'Arial', sans-serif;
         }
 
         em {
             font-style: italic;
         }
 
-        /* Scene Heading (e.g., INT. HOUSE - DAY) */
         .scene-heading {
             text-transform: uppercase;
             font-weight: bold;
-            margin-top: 1em;
-            margin-bottom: 0.5em;
+            margin-top: 1.5em;
+            margin-bottom: 1em;
+            font-size: 1.5em; /* Larger text for scene headings */
         }
 
-        /* Action lines (descriptive paragraphs) */
-        .action {
-            margin-left: 1.5in;
-            margin-right: 1.5in;
-            text-align: left;
+        .action, .character, .dialogue, .parenthetical {
+            margin-bottom: 1em;
         }
 
-        /* Character Name (Centered) */
         .character {
-            margin-left: 3.5in;
-            text-transform: uppercase;
             font-weight: bold;
+            text-align: center; /* Centered text for character names */
+            margin-left: 2em; /* Indentation for character names */
         }
 
-        /* Dialogue (Indented) */
         .dialogue {
-            margin-left: 2.0in;
-            margin-right: 2.0in;
+            margin-left: 4em; /* Indentation for dialogue */
             text-align: left;
         }
 
-        /* Parentheticals (Italic and indented further than dialogue) */
         .parenthetical {
-            margin-left: 2.5in;
-            margin-right: 2.0in;
             font-style: italic;
+            margin-left: 3em; /* Indentation for parentheticals */
         }
 
-        /* Scene break (---) */
         hr {
             border: none;
-            border-top: 1px solid #000;
-            margin: 1em 0;
-        }
-
-        /* Responsive adjustments */
-        @media (max-width: 800px) {
-            .character, .dialogue, .parenthetical {
-                margin-left: 1in;
-                margin-right: 1in;
-            }
-            .action {
-                margin-left: 0.5in;
-                margin-right: 0.5in;
-            }
+            border-top: 1px solid #ccc;
+            margin: 1.5em 0;
         }
 
         #controls {
@@ -99,22 +79,160 @@
             padding: 10px 20px;
             font-size: 16px;
             cursor: pointer;
-            background-color: #007bff;
+            background-color: #4a4a4a;
             color: white;
             border: none;
             border-radius: 5px;
         }
 
         button:hover {
-            background-color: #0056b3;
+            background-color: #333;
+        }
+
+        #nav {
+            text-align: center;
+            margin: 20px;
+        }
+
+        #nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #nav li {
+            display: block;
+            margin: 10px 0;
+        }
+
+        #nav a {
+            text-decoration: none;
+            color: #4a4a4a;
+        }
+
+        #nav a:hover {
+            text-decoration: underline;
+        }
+
+        #version-info {
+            text-align: center;
+            margin: 20px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #fffaf0;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: #333;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1e5d1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #333;
+        }
+
+        .sticky-header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #fffaf0;
+            padding: 10px;
+            font-size: 1.2em;
+            font-weight: bold;
+            border-bottom: 1px solid #ccc;
+            z-index: 1000;
+        }
+
+        .page-number {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            font-size: 0.8em;
+            color: #666;
+            z-index: 1000;
+        }
+
+        @media print {
+            body {
+                background-color: white;
+                color: black;
+            }
+
+            #screenplay {
+                width: 100%;
+                max-width: none;
+                margin: 0;
+                padding: 0;
+                box-shadow: none;
+                background-color: white;
+            }
+
+            .scene-heading {
+                font-size: 1.5em;
+            }
+
+            .character {
+                font-size: 1.2em;
+                margin-left: 2em;
+            }
+
+            .dialogue {
+                font-size: 1.1em;
+                margin-left: 4em;
+            }
+
+            .parenthetical {
+                font-size: 1em;
+                margin-left: 3em;
+            }
+
+            #controls, #nav, #version-info {
+                display: none;
+            }
         }
     </style>
     </head>
     <body>
+        <div id="version-info">
+            <p>Version: 1.0.1</p>
+            <p>Last Updated: 2024-09-30</p>
+            <p>Notes: Kindle-like experience update</p>
+        </div>
+        <div id="nav">
+            <div class="dropdown">
+                <button class="dropbtn">Contents</button>
+                <div class="dropdown-content" id="scene-list"></div>
+            </div>
+        </div>
+        <div id="screenplay"></div>
         <div id="controls">
             <button onclick="downloadPDF()">Download PDF</button>
         </div>
-        <div id="screenplay"></div>
+        <div class="sticky-header" id="sticky-header"></div>
+        <div class="page-number" id="page-number"></div>
 
         <script
             src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
@@ -127,33 +245,80 @@
                 .then(text => {
                     const screenplayElement = document.getElementById('screenplay');
                     screenplayElement.innerHTML = convertMarkdownToHTML(text);
+                    generateNav(text);
+                    updateStickyHeader();
+                    updatePageNumbers();
                 });
+
+            window.addEventListener('scroll', updateStickyHeader);
         });
 
         function convertMarkdownToHTML(markdown) {
             return markdown
-                .replace(/^## (.*)$/gm, '<div class="scene-heading">$1</div>') // Convert headers to scene headings
-                .replace(/_(.*?)_/g, '<em>$1</em>') // Convert italics
-                .replace(/---/g, '<hr>') // Convert scene breaks
-                .replace(/^(\*\*(.*?)\*\*)/gm, '<div class="character">$2</div>') // Convert character names
-                .replace(/^\((.*?)\)$/gm, '<div class="parenthetical">($1)</div>') // Convert parentheticals
-                .replace(/^([^<].*)$/gm, '<div class="action">$1</div>'); // Convert action lines
+                .replace(/^# (.*)$/gm, '<h1 class="day-heading">$1</h1>')
+                .replace(/^## (.*)$/gm, '<h2 class="scene-heading">$1</h2>')
+                .replace(/_(.*?)_/g, '<em>$1</em>')
+                .replace(/---/g, '<hr>')
+                .replace(/^(\*\*(.*?)\*\*)/gm, '<div class="character">$2</div>')
+                .replace(/^\((.*?)\)$/gm, '<div class="parenthetical">($1)</div>')
+                .replace(/^> (.*)$/gm, '<div class="dialogue">$1</div>') // Added line for dialog
+                .replace(/^([^<].*)$/gm, '<div class="action">$1</div>');
+        }
+
+        function generateNav(markdown) {
+            const navElement = document.getElementById('scene-list');
+            const sceneHeadings = markdown.match(/^## (.*)$/gm);
+            if (sceneHeadings) {
+                sceneHeadings.forEach((heading, index) => {
+                    const sceneName = heading.replace(/^## /, '');
+                    const link = document.createElement('a');
+                    link.href = `#scene-${index + 1}`;
+                    link.textContent = sceneName;
+                    navElement.appendChild(link);
+                });
+            }
+        }
+
+        function updateStickyHeader() {
+            const stickyHeader = document.getElementById('sticky-header');
+            const dayHeadings = document.querySelectorAll('.day-heading');
+            let currentDay = '';
+
+            dayHeadings.forEach(heading => {
+                const rect = heading.getBoundingClientRect();
+                if (rect.top <= 0) {
+                    currentDay = heading.textContent;
+                }
+            });
+
+            stickyHeader.textContent = currentDay;
+        }
+
+        function updatePageNumbers() {
+            const pageNumberElement = document.getElementById('page-number');
+            const totalPages = Math.ceil(document.body.scrollHeight / window.innerHeight);
+            let currentPage = Math.ceil(window.scrollY / window.innerHeight) + 1;
+
+            pageNumberElement.textContent = `Page ${currentPage} of ${totalPages}`;
+
+            window.addEventListener('scroll', () => {
+                currentPage = Math.ceil(window.scrollY / window.innerHeight) + 1;
+                pageNumberElement.textContent = `Page ${currentPage} of ${totalPages}`;
+            });
         }
 
         function downloadPDF() {
             const element = document.getElementById('screenplay');
             const opt = {
-                margin:       [0.5, 0.5, 0.5, 0.5], // Top, right, bottom, left
-                filename:     'screenplay.pdf',
-                image:        { type: 'jpeg', quality: 0.98 },
-                html2canvas:  { scale: 2 },
-                jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' },
-                pagebreak:    { mode: ['avoid-all', 'css', 'legacy'] }
+                margin: [0.5, 0.5, 0.5, 0.5],
+                filename: 'screenplay.pdf',
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { scale: 2 },
+                jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' },
+                pagebreak: { mode: ['avoid-all', 'css', 'legacy'] }
             };
 
-            // Generate the PDF
             html2pdf().set(opt).from(element).toPdf().get('pdf').then(function (pdf) {
-                // Add page numbers
                 const totalPages = pdf.internal.getNumberOfPages();
                 for (let i = 1; i <= totalPages; i++) {
                     pdf.setPage(i);
