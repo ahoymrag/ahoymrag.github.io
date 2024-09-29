@@ -244,7 +244,7 @@ _Mac_ looks over at his dad - who is still talking to Dominic - and then back to
 
 ## Scene 6: EXT. MOLLY'S HOUSE - NIGHT
 
-_Molly_ opens up the bag, revealing crab meat and bits of chicken. She hands some to _Mac_, along with sticks and string. The kids spend the night trying to lure something out in the wetlands, but nothing happens. A thunderstorm begins to brew, and the wind howls around them.
+_Molly_ opens up the bag, revealing crab meat and bits of chicken in some tiny zip locks. She hands some to _Mac_, along with sticks and string. The kids spend the night trying to lure something out in the wetlands, but nothing happens. A thunderstorm begins to brew, and the wind howls around them.
 
 _Suddenly, Molly's MOTHER calls her home, and the kids quickly pack up._
 
@@ -260,7 +260,7 @@ FADE OUT.
 
 ## Scene 1: EXT. HOUSE - TUESDAY MORNING
 
-The morning sun casts long shadows as _DALLAS_ steps outside, carrying a trash bag. He walks towards the bins, inspecting them for any sign of raccoons.
+The morning sun casts long shadows as _DALLAS_ steps outside, carrying a trash bag. He walks towards the bins, inspecting them for any sign of raccoons - he looks a bit puzzled at the far distance of the grasslands that surround their home.
 
 In the distance, _MAC_ (10) sprints towards the mailbox, eager to grab the mail. As he opens the mailbox, he notices something unusual: a small burn mark on the ground. It's not large or round, but scattered and irregular.
 
@@ -275,8 +275,7 @@ _Mac_ looks down - next to the lightning mark there is a single gemstone laying 
 The classroom buzzes with chatter as the _TEACHER_ begins the day's lesson.
 
 **TEACHER**
-> For those who were up last night, some of you may have heard a distant rolling thunder - Charlie - are you paying attention - Derek - hey!
-
+> For those who were up last night, some of you may have the faint clap of a heard a distant rolling thunder - but what causes that? What causes these phonemeonms that allow us to get wild throughout the night?
 _The teacher throws a book on the ground_
 
 **TEACHER**
@@ -364,146 +363,3 @@ _Dallas_ and _Mac_ sit down on their couch for dinner. Tension still lingers in 
 On the TV is the _WEATHERMAN_ - the same weatherman that was out the day before. He's talking about a hurricane that is quickly making its case, and how it is hurricane season. He urges viewers to be on the lookout.
 
 **FADE OUT.**
-
-## Scene 14: EXT. DRIVEWAY - EVENING
-
-_Dallas_ and _Mac_ drive to a neighbor's house for dinner. The radio plays in the background.
-
-**RADIO ANNOUNCER**
-And now for the evening weather forecast. We're expecting clear skies tonight, folks. Don't forget about the big Branford Sea Harvest Festival coming up next week!
-
-## Scene 15: EXT. MOLLY'S BACKYARD DECK PARTY - EVENING
-
-The warm glow of the setting sun casts a golden light over the backyard. Laughter and the sounds of a BBQ sizzle in the background as neighbors mingle on the deck. _Dallas_ stands with _Dominic_, a talkative neighbor, who is enthusiastically chatting away.
-
-**DOMINIC**
-_(excitedly gesturing with his fork of ziti)_
-Yeah, yeah, Hugo--my cousin--throws an annual charity event every summer. You'd really like him--his daughter's into all that sea stuff too. You and your son should join us. The kids can play, and we can all hang out.
-
-_Dallas_ smiles politely, but it's clear Dominic's energy is a bit overwhelming. _Mac_ stands nearby, quietly listening to the conversation but not engaging, his eyes occasionally drifting to the edge of the backyard.
-
-In the background, _MAKAYLA_ (12), carrying her backpack, approaches Dominic, and hugs him quickly. Makayla then steps back, looking over at Mac as she pulls the straps of her backpack tighter.
-
-**MAKAYLA**
-_(to Dominic)_
-Dad, I'm heading to the back with the others. I'll be back later.
-
-**DOMINIC**
-Okay, Just stay close - we have a lot of people over and we're about to eat. 
-
-**MAKAYLA**
-Yes, Dad.
-
-_Makayla_ glances at _Mac_, making brief eye contact before turning and heading toward the far end of the backyard. She disappears into the twilight, her figure silhouetted against the setting sun as she makes her way toward the coast.
-
-_Dallas_ watches her leave, sensing something in the air, but he doesn't say anything. _Dominic_ resumes his animated conversation, drawing Dallas back into the moment.
-
-**DOMINIC**
-So this charity event...
-
-## Scene 16: EXT. MOLLY'S FAR BACKYARD BY THE COAST - AFTERNOON
-
-The deck party continues, the noise and laughter distant now as _MAC_ wanders alone near the far end of Molly's backyard, which stretches all the way to the coast stuck in the last dog days of summer. 
-
-_Mac_ stands still, staring out at the water. The waves roll in thickly, and their soft crash against the rocks fills the air. Mac scans the grass, looking for the mysterious eyes and then back to _Makayla_ - who is pointing a telescope down at a certain part of the coastline.
-
-Suddenly, he hears a faint whimper--a distant cry that sounds like an animal in pain, far off in the wilderness. The nautical sounds engulf him, heightening his fear. The grass rustles, but it's unclear if it's the wind or something else.
-
-Frightened, _Mac_ takes a step back, ready to head back to the safety of the deck party. But before he can leave, he's stopped by a group of kids emerging from the fog--_MAKAYLA_, _ASHER_, and a few others, including _MISTY_ (13), one of the older girls. They move with purpose, their faces serious.
-
-_Makayla_ steps forward, her eyes focused on Mac.
-
-**MAKAYLA**
-_(firm, yet with a hint of urgency)_
-Mac, give me that shovel.
-
-_Mac_ hesitates for a moment, unsure of what they're planning, but the determined look on Makayla's face convinces him. He nods and runs to grab the shovel that's leaning against a nearby tree.
-
-As he hands it over, _Makayla_ turns to the group, her expression shifting from determination to leadership.
-
-**MAKAYLA**
-_(lowering her voice, as if revealing a secret plan)_
-Alright, we need to move quickly. The storm's coming, and if we're going to lure it out, this is our only shot. Asher, you're on lookout. Misty, make sure the bait's ready. We'll set the traps near the tall grass, just like we planned.
-
-The other kids nod, following Makayla's lead without question. _Mac_ watches them, both intrigued and nervous. He knows they're about to do something dangerous, but the pull of the mystery--the chance to finally confront the creature--keeps him from backing out.
-
-_Makayla_ catches Mac's eye, sensing his hesitation.
-
-**MAKAYLA**
-_(softly, with a hint of reassurance)_
-You with us, Mac?
-
-_Mac_ takes a deep breath and nods.
-
-_Makayla_ smiles briefly, then turns back to the group.
-
-**MAKAYLA**
-Let's go.
-
-The kids, led by _Makayla_, move deeper into the night, toward the farthest reaches of the backyard, where the grass is tallest and the coast drops off into the sea. The fog thickens, and the air grows colder, but they press on.
-
-## Scene 17: EXT. CORNER BEACH - NIGHT
-
-The crew scours the corner beach, searching for evidence of lightning strikes and other burn marks. They find nothing. _Makayla_ suggests they head to "the fort."
-
-**MAC**
-You guys have a fort?
-
-## Scene 18: EXT. THE FORT - LATE AFTERNOON
-
-The kids flock to their hideaway--a makeshift fort hidden among the tall grass. They begin laying traps made of various forms of food tied to driftwood sticks outside the fort.
-
-**MAKAYLA**
-The creatures are likely to come from the sea, though my grandfather always said they come from the grass. They come from the sea first, then go into the grass.
-
-**JEFFERSON**
-_(skeptical)_
-How could you possibly know that?
-
-**MAKAYLA**
-Shut up Jefferson - you're lucky you're even here.
-
-The two exchange glances for a while.
-
-A debate ensues among the kids about how the creature would behave on land, how it would move, and how it would scatter about the tall grass.
-
-**MISTY**
-_(setting up a camera)_
-Let's see if we can catch something on film.
-
-_Makayla_ watches _Misty_ (Age 13) sets up an old digital point and shoot camera while the rest of the group prepares the bait, waiting for the thunderstorm to roll in.
-
-## Scene 19: EXT. OUTSIDE NEIGHBORHOOD CORNER GRASS - DOG DAYS IN THE TALL GRASS
-
-The crew stand idle by the tall grass and just stare at it for a while. _Asher_ looks at the clouds. _Jefferson_ looks at the cars and the neighbors looking. _Makayla_ looks head on. And _Mac_ ignores all and looks for the eyes. 
-
-**JEFFERSON**
-Your grandfather was just writing those stories to make you laugh. He didn't believe in that stuff.
-
-**MISTY**
-Jefferson - - Mom says we have to go back to the party. 
-
-**MAKAYLA**
-No--he actually did.
-
-**JEFFERSON**
-Did what?
-
-**MAKAYLA**
-Believe
-
-**JEFFERSON**
-In what? 
-
-**MISTY**
-Jefferson, we should get going - come on - we have to go back - mom just texted me we got to go now. 
-
-## Scene 20: INT. MOLLY'S HOUSE - EVENING
-
-The kids hang back to the party. _Mac_ approaches _Dallas_ who is standing by himself in the hallway of the house - looking at family portraits - looking at wall mounted family portraits - photos of when the kids were little and what not. 
-
-## Scene 21: EXT. TALL BEACHY - DUSK
-
-That night it is windy. _Dallas_ makes his way to the makeshift shed workshop - and flips the light on - revealing a small wooden desk with wires and instruments - and notebooks.
-
-_Dallas_ turns on a computer and begins to type 4tran
