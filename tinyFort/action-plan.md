@@ -53,6 +53,7 @@
 ### October 2, 2024
 - Conduct site surveys and finalize land acquisition details
 - Begin permit application process
+- (Question) ***COULD*** I start with permit process even before doing anything to the land? Or even buying the land?
 
 ### October 3, 2024
 - Follow up with real estate agents and schedule site visits
@@ -68,7 +69,7 @@
 ### October 10, 2024
 - Finalize decision on land acquisition
 - Begin negotiations and legal documentation for land purchase
-
+- (What is this process like - how can I prep and do it on my own accord?)
 ### October 11, 2024
 - Continue negotiations and finalize land purchase
 - Ensure all legal documentation is in order
