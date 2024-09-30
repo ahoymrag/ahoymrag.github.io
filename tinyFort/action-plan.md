@@ -1,12 +1,5 @@
 # Action Plan
 
-## Task Assignments
-- **Project Manager**: Oversee all tasks and ensure deadlines are met
-- **Construction Lead**: Manage construction of editing suites
-- **Interior Designer**: Handle interior setup and furniture
-- **IT Specialist**: Setup and test editing equipment
-- **Legal Advisor**: Secure permits and handle legal documentation
-
 ## Overview of Tasks and Timeline
 
 ### Goal: Acquire Land and Build a Basic Campsite by Thanksgiving 2024
