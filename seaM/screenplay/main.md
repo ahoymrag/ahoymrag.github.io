@@ -384,6 +384,15 @@ The setting sun bathes the backyard in a golden glow. Laughter and sizzling BBQ 
 _(gesturing with a fork full of ziti)_
 > Yeah, yeah, Hugo--my cousin--throws an annual charity event every summer. You'd really like him--his daughter's into all that sea stuff too. You and your son should join us. The kids can play, and we can all hang out.
 
+**DOMINIC**
+_(chuckling, gesturing with his fork)_
+> You know, it's wild that we're having a BBQ on a Wednesday, right? But that's just how our schedules are these days. Everyone's away on the weekends, picking apples and whatnot. We've got to squeeze in as many BBQs as we can while we still have breath in our lungs!
+
+_(takes a bite of ziti, then continues)_
+> I mean, who knows when the next storm might hit, or when life might throw us a curveball? So we gather when we can, break bread together, and enjoy these moments. That's what community's all about, isn't it?
+
+
+
 _Dallas smiles politely, but seems a bit overwhelmed by Dominic's energy. Mac stands nearby, quietly listening but not engaging, his eyes occasionally drifting to the edge of the backyard._
 
 _MAKAYLA (12) approaches Dominic, hugging him quickly. She then steps back, looking over at Mac as she adjusts her backpack straps._
@@ -393,7 +402,7 @@ _(to Dominic)_
 > Dad, I'm heading to the back with the others. I'll be back later.
 
 **DOMINIC**
-> Okay, just stay close - we have a lot of people over and we're about to eat.
+> Okay, just stay close. We're about to eat. We've got clam chowder that'll warm your soul, lobster rolls bursting with flavor, and a seafood boil with shrimp, clams, and mussels straight from the Sound. And don't miss the stuffed clams and the corn on the cob, all seasoned to perfection. Oh, and save room for the blueberry pie - it's a local legend!
 
 **MAKAYLA**
 > Yes, Dad.
@@ -458,19 +467,20 @@ _The crew searches the corner beach for evidence of lightning strikes and burn m
 
 ## Scene 5: EXT. THE FORT - LATE AFTERNOON
 
-_The kids gather at their hideaway--a makeshift fort hidden in the tall grass. They lay traps made of food tied to driftwood sticks outside the fort._
+_The kids gather at their hideaway--a makeshift fort hidden in the tall grass. They lay traps made of food tied to driftwood sticks outside the fort. Inside, they've set up a rudimentary surveillance system: several iPads, are propped up against rocks and driftwood, their screens glowing in the dim light. The iPads are connected to a jury-rigged power supply--a large battery bank cobbled together from old car batteries and solar chargers._
+
+_ASHER fiddles with the wiring, his tongue sticking out in concentration as he ensures each iPad is properly connected. MISTY arranges the tablets in a semicircle, angling them for the best view of their makeshift command center. The setup is far from professional, with duct tape holding wires in place and a tangle of charging cables snaking across the fort's floor, but it's impressive for a group of determined kids._
+
+_MAC watches in awe as MAKAYLA boots up a weather app on one of the iPads, the radar showing the approaching storm. On another screen, a live feed from their hidden cameras flickers to life, revealing grainy images of the traps they've set outside._
 
 **MAKAYLA**
 > The creatures are likely to come from the sea, though my grandfather always said they come from the grass. They come from the sea first, then go into the grass.
 
 **JEFFERSON**
 _(skeptical)_
-> How could you possibly know that?
+> How do you know that?
 
-**MAKAYLA**
-> Shut up Jefferson - you're lucky you're even here.
-
-_They exchange glances. A debate ensues about the creature's behavior on land._
+_They exchange glances. 
 
 **MISTY**
 _(setting up a camera)_
@@ -479,13 +489,54 @@ _(setting up a camera)_
 _Molly watches Misty set up an old digital point-and-shoot camera while the rest prepare the bait, waiting for the thunderstorm._
 
 ---
-
-## Scene 6: EXT. THE FORT - LATE AFTERNOON
-
-_The kids gather around a monitor displaying 4 camera feeds, discussing potential monsters._
-
 **JEFFERSON**
 > Your grandfather was just writing those stories to make you laugh. He didn't believe in that stuff.
+
+**MAKAYLA**
+_(frowning at her iPad)_
+> Guys, the camera feed isn't working.
+
+_Asher leans over, squinting at the screen._
+
+**ASHER**
+> Let me see.
+
+_He taps a few buttons, but the screen remains black._
+
+**ASHER** (CONT'D)
+> I think it's the Wi-Fi. The signal's too weak out here.
+
+**MOLLY**
+_(checking her phone)_
+> My dad's gonna kill me if I use up all our data again.
+
+_Mac glances at the darkening sky, a hint of worry in his voice._
+
+**MAC**
+> It's getting pretty late. Maybe we should head back?
+
+_Makayla looks torn, glancing between the malfunctioning equipment and her friends._
+
+**MAKAYLA**
+> But we haven't seen anything yet. We can't just give up.
+
+**JEFFERSON**
+_(standing up)_
+> My mom's gonna freak if I'm not home soon. We should probably go.
+
+_The group exchanges uncertain looks. Misty checks her watch and sighs._
+
+**MISTY**
+> Yeah, we better pack up. We can try again another night when the tech's working.
+
+_Reluctantly, they begin to gather their things. Makayla lingers, staring out at the tall grass with a mix of disappointment and determination._
+
+**MAKAYLA**
+_(softly)_
+> Next time. We'll be ready next time.
+
+_As they pack up their makeshift surveillance system, the wind picks up, rustling through the grass. For a moment, it almost sounds like whispers carried on the breeze._
+
 
 **MISTY**
 > Jefferson - - Mom says we have to go back to the party.
@@ -1011,4 +1062,172 @@ MAC quickly ducks away from the window, his heart racing. He climbs back into be
 ***AUTHOR'S NOTE***
 > This scene is a bit of a mess - I'm not sure how to write it. - From Here it gest very GPT 
 
-That morning is a long one to school. Mac and Dallas are silent as they drive past the windy hills
+That morning is a long one to school. Mac and Dallas are silent as they drive past the windy hills and seaside coast. 
+
+## Scene 1: INT. SCHOOL - KITCHEN
+
+The school is buzzing with the news of the creatures. The kids are whispering and pointing at Mac and Dallas as they enter.
+
+_Mac_ and _Dallas_ sit at a table with _Makayla_ and _Asher_.
+
+**MAKAYLA**
+We have to do it tonight. You've heard the forcast.
+
+**MAC**
+I know.
+
+**ASHER**
+We're going to be stuck in this metal box with a bunch of dead batteries.
+
+**MAKAYLA**
+What?
+
+**ASHER**
+The thermometers - they're dead.
+
+**MAC**
+I know.
+
+**MAKAYLA**
+We're going to be stuck in this metal box with a bunch of dead batteries.
+
+**MAC**
+I know.
+
+**MAKAYLA**
+We have to do it tonight.
+
+**MAC**
+I know.
+
+## Scene 2: INT. SCHOOL - SUBSITITUE TEACHER
+
+_The classroom is unusually quiet as Mac and Asher walk in. They notice a stranger standing at the front of the room, a SUBSTITUTE TEACHER, who is fumbling with the attendance sheet._
+
+**SUBSTITUTE TEACHER**
+_(nervously)_
+> Good morning, class. I'm Mr. Thompson, and I'll be your substitute teacher today.
+
+_The students exchange curious glances. Mac and Asher take their seats, whispering to each other._
+
+_The substitute teacher clears his throat, trying to gain the class's attention._
+
+**SUBSTITUTE TEACHER**
+> Alright, let's get started. Today, we'll be continuing with your weather patterns lesson.
+
+_Mac and Asher exchange a look._
+
+---
+
+## Scene 3: INT. ASHER'S HOUSE - LATE AFTERNOON
+
+_Asher's house is filled with the sound of the storm approaching. The wind howls outside as Makayla arrives, carrying a backpack full of supplies. She knocks on the door, and Asher quickly lets her in._
+
+**ASHER**
+> Did you bring everything?
+
+**MAKAYLA**
+> Yeah, it's all here. We need to set up the trap before it gets any worse out there.
+
+_They move to the living room, where they spread out the contents of Makayla's backpack: ropes, stakes, and a few homemade devices._
+
+**ASHER**
+> Are you sure this is going to work?
+
+**MAKAYLA**
+> It has to. We don't have any other choice.
+
+_They work quickly, setting up the trap near the back door. The wind outside grows stronger, rattling the windows._
+
+**ASHER**
+> What if the storm gets too bad?
+
+**MAKAYLA**
+> Then we'll have to be extra careful. But we can't wait any longer. The creatures are coming, and we need to be ready.
+
+_Asher nods, determination in his eyes. They finish setting up the trap and double-check everything._
+
+**MAKAYLA**
+> Alright, let's go over the plan one more time.
+
+_They huddle together, going over the details of their plan as the storm rages outside._
+
+**ASHER**
+> We can do this.
+
+**MAKAYLA**
+> We have to.
+
+_They share a determined look, ready to face whatever comes their way._
+
+Dallas comes outside and sees what they are doing.
+_Dallas steps outside, noticing the kids setting up the traps. He watches them for a moment, then silently approaches, his presence unnoticed at first._
+
+_Asher and Makayla are focused on their task, unaware of Dallas's approach. He quietly picks up a stake and a rope, examining their setup._
+
+**MAKAYLA**
+> Make sure the ropes are tight. We can't afford any mistakes.
+
+_Asher nods, tightening a knot. Dallas steps in, securing another stake into the ground with practiced ease. The kids look up, surprised to see him there._
+
+_As the wind howls louder, Dallas checks the stability of their setup, making sure everything is in place. He hands Makayla a rope, and she ties it down, her confidence growing with his support._
+
+_The kids nod, their resolve strengthened by his presence. As the storm continues to rage, they prepare to face the creatures, knowing they have Dallas's silent support._
+
+## Scene 4: EXT. MAC'S HOUSE - NIGHT
+
+_The house is dark and Mac and Dallas have dinner. Mac begins to talk about the creatures._
+
+**MAC**
+> Dad... Do you think this is all real?
+
+**DALLAS**
+> It could be. 
+
+**MAC**
+> Do you think we're ready?
+
+**DALLAS**
+> I think we'll catch something.
+
+**MAC**
+> What if we don't?
+
+**DALLAS**
+> Then we'll won't.
+
+**MAC**
+> Dad... Have you seen the eyes?
+
+_Dallas pauses, his expression serious. He looks at Mac, considering his words carefully._
+
+**DALLAS**
+> I've seen something out there. I'm not sure what it is.
+
+_Mac's eyes widen, a mix of fear and curiosity._
+
+**MAC**
+> What do you think they are?
+
+**DALLAS**
+> I don't know..
+
+_Mac nods, feeling a sense of reassurance from his father's words. The bond between them strengthens as they prepare for the unknown._
+
+**MAC**
+> I'm glad you're with us, Dad.
+
+**CUT TO**
+
+## Scene 5: INT. MAC'S HOUSE - NIGHT
+
+_Mac and Dallas sit in the living room, the glow of the TV casting shadows on their faces. Suddenly, Mac's phone rings. He looks at the screen and sees it's a FaceTime call from Makayla._
+
+***AUTHOR'S NOTE***
+> Need to think of the tension and Makayla's call. 
+
+
+
+# THURSDAY #2
+
+
