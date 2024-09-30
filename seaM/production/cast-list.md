@@ -12,14 +12,14 @@
 ## Main Cast
 
 ### Dallas (40s)
-- **Actor**: [Actor Name]
+- **Actor**: Dallas DeMartini
 - **Contact**: [Actor Contact]
 - **Total Days on Set**: 20
 - **Dates on Set**:
   - August 2, 3, 4, 9, 10, 11, 16, 17, 18, 23, 24, 25, 30, 31, September 1, 6, 7, 8, 13, 14
 
 ### Mac (10)
-- **Actor**: [Actor Name]
+- **Actor**: Mac Sheldon
 - **Contact**: [Actor Contact]
 - **Total Days on Set**: 20
 - **Dates on Set**:
