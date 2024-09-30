@@ -535,7 +535,7 @@ _Reluctantly, they begin to gather their things. Makayla lingers, staring out at
 _(softly)_
 > Next time. We'll be ready next time.
 
-_As they pack up their makeshift surveillance system, the wind picks up, rustling through the grass. For a moment, it almost sounds like whispers carried on the breeze._
+_As they pack up their makeshift surveillance system, the wind picks up, rustling through the grass. For a moment, it almost sounds like whispers carried on the breeze._b
 
 
 **MISTY**
@@ -564,6 +564,8 @@ _The kids return to the party. Mac approaches Dallas, who's standing alone in th
 
 _Dallas_ begins to go inside, the sound of the breeze from the Long Island Sound rustling through the trees. He pauses, looking out at the sky before stepping through the door. From the corner of his eye - he spots a burn mark near the mailbox.
 
+Dallas walks over and stands over it for a good while.
+
 ---
 
 ## Scene 32: EXT. SCHOOL PLAYGROUND - AFTERNOON
@@ -571,18 +573,35 @@ _Dallas_ begins to go inside, the sound of the breeze from the Long Island Sound
 Later that afternoon at recess, _Mac_ finds _Makayla_ standing by the soccer net, staring at some strange burn marks on the grass. She turns to him, her expression serious.
 
 **MAKAYLA**
-> My grandfather told me last night that it's happening. I can show you.
+> Have you noticed that the dogs in this town are acting up?
+
+**ASHER**
+> Acting Up?
+
+**MAKAYLA**
+> Acting up. 
 
 _Mac_ hesitates but then nods.
 
-**MAC**
-> I thought your grandfather died.
+**MAKAYLA**
+> Mac - Asher and I are going to come by later this afternoon and set up more traps.
+
+**ASHER**
+> Don't we have Youth Group today?
+
+**MAKAYLA**
+> Crap. 
 
 ---
 
 ## Scene 33: INT. YOUTH GROUP CLASS - AFTERNOON
 
 _Mac_ looks around and notices that some of his classmates are also his Sunday School classmates. The _Youth Pastor_ begins handing out papers on the topic of ancient Israelites and what we can learn from their mistaken ways of seeking atonement.
+
+The group sit around in a circle and play basic board games - and getting to know you ice breakers. 
+
+**MAKAYLA**
+> Pastor Jerry - have you noticed what is going on with the Weather?
 
 After the class, the _Youth Pastor_ notices _Mac_ sitting alone and goes over to console him.
 
