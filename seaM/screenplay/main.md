@@ -436,7 +436,7 @@ _Mac hesitates, then nods and grabs a nearby shovel. As he hands it over, Molly 
 
 **MAKAYLA**
 _(lowering her voice)_
-> Alright, we need to move quickly. The storm's coming, and if we're going to lure it out, this is our only shot. Asher, you're on lookout. Misty, make sure the bait's ready. We'll set the traps near the tall grass, just like we planned.
+> Alright, we need to move quickly. The storm's coming, and if we're going to lure it out, we ought to do it now. Asher, you're on lookout on the outer banks. Misty, make sure the bait's ready. We'll set the traps near the tall grass, just like we planned.
 
 _The other kids nod, following Molly's lead. Mac watches, intrigued and nervous._
 
@@ -449,25 +449,35 @@ _Mac takes a deep breath and nods._
 **MAKAYLA**
 > Let's go.
 
-_The kids, led by Molly, move deeper into the night, toward the tallest grass where the coast drops off into the sea. The fog thickens, and the air grows colder._
+_The kids, led by Molly, move deeper into the tall grass, toward the tallest grass where the coast drops off into the sea. The fog thickens, and the air grows colder._
 
 ---
 
-## Scene 28: EXT. CORNER BEACH - NIGHT
+## Scene 28: EXT. TALL GRASS THICKET
+
+_The crew hang around the tallgrass - it gets thicker and thicker_
 
 _The crew searches the corner beach for evidence of lightning strikes and burn marks. They find nothing._
 
-**MOLLY**
-> Let's head to the fort.
+**MAKAYLA**
+> You sure you saw it here?
 
 **MAC**
-> You guys have a fort?
+> I thought I did 
+
+**MAKAYLA**
+> We'll leave some traps here.
+
+_Makayla takes out a steak from Asher's backpack and puts it in the ground - Mac digs the shovel - and Asher slowly brings the chicken over and puts it on the steak_
+
+**JOCYLEN**
+> How do we know this isn't just a racoon or a coyote eating this?
 
 ---
 
-## Scene 29: EXT. THE FORT - LATE AFTERNOON
+## Scene 29: EXT. THE SIDEWALK ON THE WAY HOME  - LATE AFTERNOON
 
-_The kids gather at their hideaway--a makeshift fort hidden in the tall grass. They lay traps made of food tied to driftwood sticks outside the fort. Inside, they've set up a rudimentary surveillance system: several iPads, are propped up against rocks and driftwood, their screens glowing in the dim light. The iPads are connected to a jury-rigged power supply--a large battery bank cobbled together from old car batteries and solar chargers._
+_The kids gather at their hideaway--a makeshift fort hidden in Makayla's backyard old playground set - grass. They lay traps made of food tied to driftwood sticks outside the fort. Inside, they've set up a rudimentary surveillance system: several iPads, are propped up against rocks and driftwood, their screens glowing in the dim light. The iPads are connected to a jury-rigged power supply--a large battery bank cobbled together from old car batteries and solar chargers._
 
 _ASHER fiddles with the wiring, his tongue sticking out in concentration as he ensures each iPad is properly connected. MISTY arranges the tablets in a semicircle, angling them for the best view of their makeshift command center. The setup is far from professional, with duct tape holding wires in place and a tangle of charging cables snaking across the fort's floor, but it's impressive for a group of determined kids._
 
