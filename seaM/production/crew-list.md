@@ -1,31 +1,45 @@
 # Crew List for "Sea Monster" Shoot
 
+**Total Crew Members: 7**
+
 ## Director
 - **Name**: Alex Gonzalez
-- **Contact**: alex@example.com
+- **Contact**: alex@ahoy.ooo
 
 ## Producer
-- **Name**: Alex Gonzalez
-- **Contact**: jamie@example.com
+- **Name**: ###
+- **Contact**: ###
+- **Name**: ###
+- **Contact**: ###
 
 ## Director of Photography
 - **Name**: Ellen Martin
-- **Contact**: sam@example.com
+- **Contact**: ellen@ahoy.ooo
+- **Name**: ###
+- **Contact**: ###
 
 ## Sound Engineer
-- **Name**: Chris Wong
-- **Contact**: chris@example.com
+- **Name**: Chris Batista
+- **Contact**: chris.batista@ahoy.ooo
+- **Name**: ###
+- **Contact**: ###
 
 ## Gaffer
-- **Name**: Pat Johnson
-- **Contact**: pat@example.com
+- **Name**: Ellen Martin
+- **Contact**: ellen@ahoy.ooo
+- **Name**: ###
+- **Contact**: ###
 
 ## Makeup Artist
-- **Name**: Kelly Smith
-- **Contact**: kelly@example.com
+- **Name**: ###
+- **Contact**: ###
+- **Name**: ###
+- **Contact**: ###
 
 ## Production Assistant
-- **Name**: Jordan Brown
-- **Contact**: jordan@example.com
+- **Name**: Robert Megliola
+- **Contact**: robert@example.com
+- **Name**: ###
+- **Contact**: ###
 
 This list should be updated regularly to reflect any changes in crew members or their contact information.
