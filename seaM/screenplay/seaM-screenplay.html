@@ -240,14 +240,23 @@
             src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
         <script>
         document.addEventListener("DOMContentLoaded", function() {
-            fetch('main.md')
-                .then(response => response.text())
+            fetch('./main.md') // Ensure the path is correct
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok ' + response.statusText);
+                    }
+                    return response.text();
+                })
                 .then(text => {
                     const screenplayElement = document.getElementById('screenplay');
                     screenplayElement.innerHTML = convertMarkdownToHTML(text);
                     generateNav(text);
                     updateStickyHeader();
                     updatePageNumbers();
+                })
+                .catch(error => {
+                    console.error('There has been a problem with your fetch operation:', error);
+                    document.getElementById('screenplay').innerHTML = '<p>Error loading screenplay. Please try again later.</p>';
                 });
 
             window.addEventListener('scroll', updateStickyHeader);
