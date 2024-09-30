@@ -363,3 +363,652 @@ _Dallas_ and _Mac_ sit down on their couch for dinner. Tension still lingers in 
 On the TV is the _WEATHERMAN_ - the same weatherman that was out the day before. He's talking about a hurricane that is quickly making its case, and how it is hurricane season. He urges viewers to be on the lookout.
 
 **FADE OUT.**
+
+
+# WEDNESDAY
+
+## Scene 1: EXT. DRIVEWAY - EVENING
+
+_DALLAS_ and _MAC_ drive to a neighbor's house for dinner. The radio plays in the background.
+
+**RADIO ANNOUNCER (V.O.)**
+> And now for your evening weather forecast. Expect clear skies tonight with a slight breeze. Perfect weather for the upcoming Branford Sea Harvest Festival next week. Don't miss out on this annual extravaganza!
+
+---
+
+## Scene 2: EXT. MOLLY'S BACKYARD DECK PARTY - EVENING
+
+The setting sun bathes the backyard in a golden glow. Laughter and sizzling BBQ sounds fill the air as neighbors mingle on the deck. _DALLAS_ stands with _DOMINIC_, an animated neighbor who's talking enthusiastically.
+
+**DOMINIC**
+_(gesturing with a fork full of ziti)_
+> Yeah, yeah, Hugo--my cousin--throws an annual charity event every summer. You'd really like him--his daughter's into all that sea stuff too. You and your son should join us. The kids can play, and we can all hang out.
+
+_Dallas smiles politely, but seems a bit overwhelmed by Dominic's energy. Mac stands nearby, quietly listening but not engaging, his eyes occasionally drifting to the edge of the backyard._
+
+_MAKAYLA (12) approaches Dominic, hugging him quickly. She then steps back, looking over at Mac as she adjusts her backpack straps._
+
+**MAKAYLA**
+_(to Dominic)_
+> Dad, I'm heading to the back with the others. I'll be back later.
+
+**DOMINIC**
+> Okay, just stay close - we have a lot of people over and we're about to eat.
+
+**MAKAYLA**
+> Yes, Dad.
+
+_Makayla glances at Mac, making brief eye contact before turning and heading toward the far end of the backyard. She disappears into the twilight, silhouetted against the setting sun._
+
+_Dallas watches her leave, sensing something in the air, but doesn't say anything. Dominic resumes his animated conversation._
+
+**DOMINIC**
+> So this charity event...
+
+---
+
+## Scene 3: EXT. MOLLY'S FAR BACKYARD BY THE COAST - AFTERNOON
+
+_The deck party continues in the distance. MAC wanders alone near the far end of Molly's backyard, which stretches to the coast._
+
+_Mac stands still, staring at the water. Waves crash against the rocks. He scans the grass, looking for mysterious eyes, then back to Makayla, who's pointing a telescope at the coastline._
+
+_Suddenly, a faint whimper--like an animal in pain--echoes from the wilderness. Nautical sounds engulf him, heightening his fear. The grass rustles, but it's unclear if it's wind or something else._
+
+_Frightened, Mac steps back, ready to return to the party. But before he can leave, a group of kids emerges from the fog--MOLLY, ASHER, and others, including MISTY (13). They move purposefully, faces serious._
+
+_Molly steps forward, focusing on Mac._
+
+**MAKAYLA**
+_(firm, yet urgent)_
+> Mac, give me that shovel.
+
+_Mac hesitates, then nods and grabs a nearby shovel. As he hands it over, Molly turns to the group, her expression shifting to leadership._
+
+**MAKAYLA**
+_(lowering her voice)_
+> Alright, we need to move quickly. The storm's coming, and if we're going to lure it out, this is our only shot. Asher, you're on lookout. Misty, make sure the bait's ready. We'll set the traps near the tall grass, just like we planned.
+
+_The other kids nod, following Molly's lead. Mac watches, intrigued and nervous._
+
+**MAKAYLA**
+_(softly, reassuring)_
+> You with us, Mac?
+
+_Mac takes a deep breath and nods._
+
+**MAKAYLA**
+> Let's go.
+
+_The kids, led by Molly, move deeper into the night, toward the tallest grass where the coast drops off into the sea. The fog thickens, and the air grows colder._
+
+---
+
+## Scene 4: EXT. CORNER BEACH - NIGHT
+
+_The crew searches the corner beach for evidence of lightning strikes and burn marks. They find nothing._
+
+**MOLLY**
+> Let's head to the fort.
+
+**MAC**
+> You guys have a fort?
+
+---
+
+## Scene 5: EXT. THE FORT - LATE AFTERNOON
+
+_The kids gather at their hideaway--a makeshift fort hidden in the tall grass. They lay traps made of food tied to driftwood sticks outside the fort._
+
+**MAKAYLA**
+> The creatures are likely to come from the sea, though my grandfather always said they come from the grass. They come from the sea first, then go into the grass.
+
+**JEFFERSON**
+_(skeptical)_
+> How could you possibly know that?
+
+**MAKAYLA**
+> Shut up Jefferson - you're lucky you're even here.
+
+_They exchange glances. A debate ensues about the creature's behavior on land._
+
+**MISTY**
+_(setting up a camera)_
+> Let's see if we can catch something on film.
+
+_Molly watches Misty set up an old digital point-and-shoot camera while the rest prepare the bait, waiting for the thunderstorm._
+
+---
+
+## Scene 6: EXT. THE FORT - LATE AFTERNOON
+
+_The kids gather around a monitor displaying 4 camera feeds, discussing potential monsters._
+
+**JEFFERSON**
+> Your grandfather was just writing those stories to make you laugh. He didn't believe in that stuff.
+
+**MISTY**
+> Jefferson - - Mom says we have to go back to the party.
+
+**MAKAYLA**
+> No--he actually did.
+
+**JEFFERSON**
+> Okay that makes sense now.
+
+**MISTY**
+> Jefferson, we have to go back - mom just texted me we got to go now.
+
+---
+
+## Scene 7: INT. NEIGHBOR'S HOUSE - HALLWAY - EVENING
+
+_The kids return to the party. Mac approaches Dallas, who's standing alone in the hallway, looking at wall-mounted family portraits--photos of when the kids were little. He looks at his son and smiles._
+
+**FADE OUT.**
+
+# THURSDAY
+
+## Scene 1: INT. HOUSE - MORNING
+
+_Dallas_ begins to go inside, the sound of the breeze from the Long Island Sound rustling through the trees. He pauses, looking out at the sky before stepping through the door. From the corner of his eye - he spots a burn mark near the mailbox.
+
+---
+
+## Scene 2: EXT. SCHOOL PLAYGROUND - AFTERNOON
+
+Later that afternoon at recess, _Mac_ finds _Makayla_ standing by the soccer net, staring at some strange burn marks on the grass. She turns to him, her expression serious.
+
+**MAKAYLA**
+> My grandfather told me last night that it's happening. I can show you.
+
+_Mac_ hesitates but then nods.
+
+**MAC**
+> I thought your grandfather died.
+
+---
+
+## Scene 3: INT. YOUTH GROUP CLASS - AFTERNOON
+
+_Mac_ looks around and notices that some of his classmates are also his Sunday School classmates. The _Youth Pastor_ begins handing out papers on the topic of ancient Israelites and what we can learn from their mistaken ways of seeking atonement.
+
+After the class, the _Youth Pastor_ notices _Mac_ sitting alone and goes over to console him.
+
+---
+
+## Scene 4: EXT. CHURCH PARKING LOT
+
+_Mac_ sits alone as the rest of the kids' parents pick them up from Youth Group. He watches everyone and their families go into their various mini vans.
+
+The _Youth Pastor_ notices _Mac_ sitting alone and joins him on the stoop.
+
+**JERRY**
+> Mac, you seem deep in thought. Can I sit?
+
+**MAC**
+> Yeah.
+
+**JERRY**
+> Is your Dad coming to pick you up?
+
+**MAC**
+> Yeah.
+
+**JERRY**
+> That's good - that's good. First week - new town - new school - how's it going?
+
+**MAC**
+> Good.
+
+**JERRY**
+> Ah - that's good...
+
+_A group of seagulls fly overhead._
+
+**JERRY** (CONT'D)
+> Yeah - I remember coming here from Georgia - wasn't used to these New England winters. But that was a while ago.
+
+_Mac continues to look onward._
+
+**MAC**
+> Do you think there are creatures in other worlds?
+
+**JERRY**
+> What's that?
+
+**MAC**
+> The handout you gave before - and the talk after - you said that the *** came from *** to serve God.
+
+**JERRY**
+> I did - yes.
+
+**MAC**
+> So are there still creatures in this world?
+
+**JERRY**
+> Hmmm. Well, maybe you could think of the creatures of the deep waters that we're still figuring out. 
+(MORE)
+
+**JERRY** (CONT'D)
+> I think it's easy for us to get hung up on the logistics - - but if you think about it there are still - - ancient things - things we don't understand - we're discovering about dinosaurs and whatnot.
+
+**MAC**
+> That's not what I mean. Makayla was talking about these creatures that she has been seeing in the tall grass - and now her and Asher and me are taking pictures of the tall grass.
+
+**JERRY**
+> Makayla is interesting huh - she's come a long way since her father died.
+
+**MAC**
+> I thought it was her grandfather that died.
+
+**JERRY**
+> Is that what she said?
+
+_Dallas approaches and walks outside. He goes up to Jerry and shakes his hand._
+
+**DALLAS**
+> Sorry I was late - thank you -
+
+_Mac walks into the car._
+
+---
+
+## Scene 5: EXT. MAC'S HOUSE - NIGHT
+
+That night, _Mac_ steps outside and sees _Dallas_ grilling. The smoke from the grill rises and catches the light, casting eerie shadows. _Mac_ looks beyond the borders of their property, his gaze fixated on the tall grass swaying in the breeze.
+
+_Dallas_ notices him staring and follows his gaze, looking at the tall grass as well.
+
+---
+
+## Scene 6: INT. MAC'S HOUSE - LIVING ROOM - NIGHT
+
+Later, _Mac_ walks back inside to find _Dallas_ staring at the weather TV. _Dallas_ notices _Mac_ and gets up. The two sit together by the TV. Off in the distance - the wind pulls up.
+
+---
+
+## Scene 7: EXT. MAC'S HOUSE - NIGHT
+
+That night, as they prepare for bed, a strange sound echoes through the house. The wind begins to pick up, rattling the windows. _Dallas_ looks out into the night, the tall grass swaying ominously.
+
+---
+
+## Scene 8: EXT. MAC'S HOUSE - NIGHT
+
+_Dallas_ steps outside into the thunderstorm to make sure everything is secure. The wind howls around him as he checks the perimeter, a sense of unease settling in.
+
+**FADE OUT.**
+
+
+
+# FRIDAY
+
+## Scene 1: INT. MAC'S HOUSE - MORNING
+
+The next morning, the storm has passed, but the air is still heavy with the remnants of the previous night's events. _DALLAS_ looks out the window and finds the seed from the bird feeder scattered about. _MAC_ searches for the rocks they had collected earlier.
+
+---
+
+## Scene 2: INT. SCHOOL CLASSROOM - DAY
+
+The _TEACHER_ stands at the front of the class, addressing the students.
+
+**TEACHER**
+> Not sure if you folks have been noticing, but the weather has been acting sporadic lately. Johnny, can you spell 'sporadic' for me?
+
+---
+
+## Scene 3: EXT. BEACH ROAD - SATURDAY MORNING
+
+The crew goes wild with their bikes down the road, past the post office, riding along the tiny coastal sidewalks. The wind whips through their hair as they pedal furiously, their laughter carried away by the sea breeze.
+
+---
+
+## Scene 4: INT. SCHOOL MEDIA LAB - AFTERNOON
+
+The crew--_MAKAYLA_, _MAC_, and a few other kids--gather around a computer. They stand over a software editor, DaVinci Resolve, going frame by frame through various camera footage, scanning for any sign of eyes or other mysterious figures. _MISTY_ hands _MAKAYLA_ another camera, and she inserts its SD card into the computer.
+
+Nothing unusual comes up on the screen.
+
+**JEFFERSON**
+_(to Makayla)_
+> Hey, you showed Mac that dumb book yet?
+
+_Makayla shoots Jefferson a warning glance, silencing him._
+
+**MAKAYLA**
+> No.
+
+**MAC**
+> What book?
+
+**MAKAYLA**
+> Never mind.
+
+**ASHER**
+_(to Mac)_
+> It's the book our grandfather wrote.
+
+**MAC**
+> What?
+
+**MAKAYLA**
+> It's the book our grandfather wrote.
+
+**MAC**
+> What?
+
+**MAKAYLA**
+> Never mind.
+
+### AUTHORS NOTE
+> FLESH OUT THIS SCENE
+
+
+# SATURDAY #2
+
+## Scene 1: EXT. MAC'S HOUSE - MORNING
+
+_DALLAS_ is outside, focused on building a bird feeder. He examines his creation, then turns his attention to a bucket filled with gardening supplies. Initially hesitant, he eventually begins tending to the garden.
+
+_MAC_ rummages through the bucket, discovering an old fishing wire and a ring. He fashions a makeshift ring toss game on a tree across from the tall grass.
+
+_Mac_ plays for a while, then retrieves his bike and rides off.
+
+## Scene 2: EXT. MAKAYLA'S HOUSE - MORNING
+
+_Mac_ parks his bike outside Makayla and Asher's home. _DOMINIC_, the talkative neighbor, answers the door.
+
+**DOMINIC**
+Oh, what's up Mr. Mac - what's shaking my friend? How's your dad?
+
+**MAC**
+He's okay.
+
+**DOMINIC**
+You should tell him to call me sometime. You looking for Makayla?
+
+**MAC**
+Yeah - I have her *Item.
+
+_Makayla_ comes running down the stairs, arms full of laptops, camcorders, and various electronic equipment.
+
+## Scene 3: INT. MAKAYLA'S GRANDPA'S STUDY - DAY
+
+The room is cluttered with old DVD covers, playhouses, and dust-covered blankets concealing books and chests. _Makayla_, _Mac_, and _Asher_ huddle around a dusty laptop with basic movie editing software.
+
+**MAKAYLA**
+_(whispering)_
+I was thinking we could triangulate the creature.
+
+**MAC**
+How do you know all of this?
+
+**MAKAYLA**
+Can I trust you?
+
+_Makayla_ retrieves an old, leather-bound journal from a shelf. She begins reading aloud from an entry dated 1925, describing her grandfather's encounter with strange creatures in the woods.
+
+**MAKAYLA**
+_(reading)_
+"Cold - summer night in September - Wednesday - 1925 - cold windy - outside - near the coast - far off in the distance I stood with my father - and we both saw the stones..."
+
+_As Makayla continues reading, the wind outside picks up._
+
+**MAC**
+I think I should go home.
+
+**MAKAYLA**
+What do you mean?
+
+**ASHER**
+It's getting windy.
+
+**MAC**
+My dad's been worried about the weather.
+
+**MAKAYLA**
+_(determined, closing the journal)_
+We have to find out what happened next. If Grandpa saw them, then we can too. We just need to figure out what they want... before it's too late. I think they want the chicken on the stick.
+
+**MAC**
+Okay - when do you want to do this?
+
+**MAKAYLA**
+We have to wait on the weather - for a true thunderstorm.
+
+## Scene 4: EXT. MAC'S BIKE RIDE HOME
+
+_Mac_ rides his bike along the tall grass, scanning for eyes. He notices a dog in the distance acting strangely, barking at the tall grass. Mac speeds up.
+
+## Scene 5: EXT. MAC'S HOUSE - OUTSIDE GARAGE
+
+_Mac_ finds _Dallas_ outside taking weather measurements. Dallas explains how it works.
+
+In the distance, a camera crew is filming something in the tall grass. Mac, curious, walks over to investigate. He spots another gemstone on the ground but doesn't touch it.
+
+## Scene 6: INT. MAC'S HOUSE - DINNER TIME
+
+_Mac_ and _Dallas_ eat dinner while watching TV. News reports discuss the approaching hurricane and "hurricane season."
+
+_Mac_ looks out the window, searching for eyes in the tall grass. He sees a flicker in the night.
+
+That night, as the wind howls, Mac's gaze wanders across the street to the tall grass.
+
+
+# SUNDAY #2
+
+## Scene 1: INT. CHURCH SANCTUARY 
+
+The church is buzzing with talk of the town - apparently a very strange event happened to everything the night before.
+
+_Mac_ looks at different congregates hovering around a coffee pot as an older gentleman hands out welcome cards. On the screen there are announcements for the upcoming Harvest Festival - the church is going to be a part of it and run the kids crafts table - volunteers are needed.
+
+_Mac_ and _Dallas_ walk into the pew and sit behind a baby that stares at Mac.
+
+The piano begins.
+
+**PASTOR JERRY**
+Please find a seat - our call to worship this morning is from the book of Isaiah - Chapter 52 verse 25.
+
+_The projector screen displays the verse._
+
+_Mac_ looks around for _Makayla_ and _Asher_ but they are not here this morning.
+
+## Scene 2: EXT. CHURCH OUTSIDE FELLOWSHIP LUNCH
+
+_Mac_ approaches _Jerry_ and asks him if he has seen _Makayla_ or _Asher_.
+
+**MAC**
+I was with them yesterday.
+
+**PASTOR JERRY**
+They were supposed to help out with the nursery room - all good - just not like their father to not bring them - okay - sorry - just wanted to make sure they were okay.
+
+## Scene 3: EXT. BEACH HOUSE
+
+_Mac_ and _Dallas_ approach their home from their walk. _Mac_ runs over to the mailbox.
+
+_Mac_ looks around the neighbors' house but sees their car gone.
+
+# MONDAY #2
+
+## Scene 1: INT. SCHOOL
+
+_Mac_ checks the stones - they are still there. School begins and ends. The teacher talks about the weather more. _Asher_ and _Mac_ eat silently during lunch. _Makayla's_ father takes them home.
+
+_Mac_ goes home that night and sees _Makayla_ sitting alone.
+
+## Scene 2: EXT. MAKAYLA'S HOUSE
+
+**MAKAYLA**
+I saw the creature last night.
+
+_Mac's eyes widen._
+
+**MAKAYLA**
+It came.
+
+_Mac's eyes widen again._
+
+**MAKAYLA**
+Asher's in the hospital.
+
+**MAC**
+Really?
+
+**MAKAYLA**
+We were going to get the footage before it got dark - and as we were approaching the camera - He saw the creature too and he ran away and he broke his leg - I stood there and stood still... we were there until late - and I was tired so I asked my dad if I could stay home from school today and he said it was okay - he took off work himself - Asher's in the hospital and we're going to go over after we shower and visit him - he should be back tomorrow.
+
+**MAC**
+Have you talked to him?
+
+**MAKAYLA**
+No - not really - I told him not to talk about what we were doing back there - as the adults would think would get all worried and start a big investigation and ruin our plans before they begin.
+
+**MAC**
+What do you see?
+
+**MAKAYLA**
+I saw eyes in the distance... And then - and then I don't know what happened - it was like - I was dreaming for a second - but then I woke up and it was gone - and Asher was crying in the distance.
+
+**MAC**
+Did you look at the footage?
+
+_Makayla Smiles._
+
+**CUT TO**
+
+## Scene 3: INT. HALF-FINISHED BASEMENT COMPUTER ROOM 
+
+The crew look at a series of old CRT era laptops all haphazardly and hackerdly arranged - and then a big slow motion - and then nothing - and then Asher crying - but a flash of light - and in the center as they zoom nothing - but as a filter is applied - some makeshift eyes appear.
+
+_The dad comes downstairs and tells Makayla that they have to go - Mac needs to go home._
+
+**CUT TO**
+
+## Scene 4: EXT. MAC HOUSE
+
+_Dallas_ is out in the front yard looking at the gemstones and then he looks at _Mac_ - _Mac_ looks back - the two walk inside and check the weather.
+
+
+# TUESDAY #2
+
+## Scene 1: EXT. MAC'S HOUSE - MORNING
+
+_School has been cancelled. DALLAS turns on the TV._
+
+**TV ANNOUNCER (V.O.)**
+Due to the impending hurricane, all schools in the area will be closed today. The storm is expected to make landfall...
+
+_MAC looks out the window, seeing a bright sunny sky. MAKAYLA and ASHER arrive on bikes._
+
+**MAKAYLA**
+Can we use your sink?
+
+## Scene 2: INT. MAC'S KITCHEN
+
+_DALLAS stands over the sink, washing dirt off potatoes. He moves aside as MAKAYLA storms in._
+
+_MAKAYLA takes out an old metal instrument and begins washing dirt off of it._
+
+**MAKAYLA**
+_(rattling on)_
+I have a plan. I think the creatures have landed. I believe they've come with the storm. Now, we're going to mark them.
+
+_DALLAS putters around, looking for a towel to dry his hands._
+
+_MAKAYLA hands MAC the wet instrument. DALLAS hands MAC a cloth._
+
+_MAKAYLA and DALLAS lock eyes. ASHER bumps into them, carrying a box of meat thermometers._
+
+## Scene 3: EXT. MAC'S BACKYARD
+
+_MAKAYLA demonstrates to MAC, ASHER, and DALLAS how to plant a device in the ground._
+
+**MAKAYLA (V.O.)**
+Creatures, like animals, give off heat... These are set to pick up temperature changes in the ground.
+
+_MAKAYLA pulls out an electrical device. DALLAS picks it up, inspecting it._
+
+**ASHER**
+Does it work?
+
+_DALLAS looks concerned, takes it to his workshop._
+
+**MAKAYLA**
+He's going to fix it, right? I think that one works. He'll figure it out. Here's another.
+_(tosses a trail cam to MAC)_
+It's a trail cam. When we get notice of ground temperature changes, we'll know when to look for footage. Grade A stuff - they detect night vision and anything else.
+
+**MAC**
+Where do you want to hang them?
+
+## Scene 4: EXT. MAC'S BACKYARD - THE TREE
+
+_MAC uses his fishing line kit to tie down a device._
+
+## Scene 5: EXT. MAKAYLA'S BACKYARD
+
+_MAC hangs another deer cam. ASHER plants meat thermometers near the tall grass._
+
+**MAKAYLA (V.O.)**
+The creatures give off heat - just like any other creatures.
+
+## Scene 6: EXT. NEIGHBORHOOD
+
+_The kids ride bikes. MAKAYLA scouts locations. ASHER and MAC ride together._
+
+**ASHER**
+Do you think there are really creatures in the tall grass?
+
+**MAC**
+_(Looking at Asher)_
+Do you?
+
+**ASHER**
+I think so. Makayla seems to think so, at least.
+
+## Scene 7: EXT. MAC'S HOUSE - DUSK
+
+_The children arrive. DALLAS comes out with the fixed device, handing it to MAKAYLA. They exchange looks. MAKAYLA and ASHER ride off._
+
+_MAC and DALLAS go inside silently. DALLAS resumes washing potatoes._
+
+## Scene 8: INT. MAC'S BEDROOM - NIGHT
+
+_MAC stares at glow-in-the-dark stars on his ceiling, then at a picture of his mom._
+
+_A faint cry, like a wounded animal, is heard in the distance, then stops._
+
+_MAC looks out the window at the tall grass. He sees nothing at first, then spots eyes._
+
+_He retreats to bed, then looks out again. Nothing._
+
+_Another cry is heard, followed by a loud crash._
+
+
+## Scene 9: INT. MAC'S BEDROOM - NIGHT
+
+MAC stands at his bedroom window, peering out into the darkness. The moonlight casts eerie shadows across the backyard. From his vantage point, he can see the BURN MARKS on the ground, scattered near the tall grass, more numerous than before.
+
+His eyes scan the dark horizon, searching. For the briefest moment, GLOWING EYES appear between the swaying grass. MAC's breath catches in his throat. He blinks, and the eyes are gone. Was it real, or just his imagination?
+
+Another faint cry echoes in the distance, sending a shiver down MAC's spine. He leans closer to the window, pressing his forehead against the cool glass.
+
+Suddenly, the motion-activated porch light flicks on, startling MAC. He sees DALLAS step out onto the porch, looking around with a concerned expression.
+
+MAC quickly ducks away from the window, his heart racing. He climbs back into bed, pulling the covers up to his chin. As he lies there in the dark, he can't shake the feeling that something out there is watching them.
+
+
+
+
+
+
+# WEDNESDAY #2
+
+***AUTHOR'S NOTE***
+> This scene is a bit of a mess - I'm not sure how to write it. - From Here it gest very GPT 
+
+That morning is a long one to school. Mac and Dallas are silent as they drive past the windy hills
