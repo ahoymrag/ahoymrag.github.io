@@ -15,6 +15,7 @@
 10. Design land and building plans
 11. Review pecans - put money into a new account just to pay off the CC
 12. Pay Josh Bills + Prepare for October Bills - create a pecan plan
+13. Edit and post Friday's recordings to YouTube
 
 ---
 
@@ -64,6 +65,9 @@
 - **Review Pecans**: Review pecan finances and transfer money into a new account to pay off the credit card.
 - **Pay Bills**: Pay Josh's bills and prepare for October bills, creating a financial plan for pecans.
 
+### YouTube Recordings
+- **Edit and Post**: Edit and post the two recordings from Friday to YouTube, ensuring all necessary edits are made.
+
 ---
 
 ## ----------------------------------------
@@ -87,3 +91,9 @@
 - **Design land and building plans**
 - **Review pecans - put money into a new account just to pay off the CC**
 - **Pay Josh Bills + Prepare for October Bills - create a pecan plan**
+- **Edit and post Friday's recordings to YouTube**
+
+---
+
+## Additional Notes
+
