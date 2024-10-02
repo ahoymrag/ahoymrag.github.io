@@ -85,13 +85,17 @@
 - **Gather notes and action plan for Ahoy**
 - **Gather notes and action plan for Danny Wine**
 - **Improve upon CPC Website**
-- **Edit and Produce Rob Show + Beyond**
+- **Edit and Produce Rob Show** ✅
+- **Edit and Produce Beyond**
 - **Get new Ahoy graphics (if time and in mood)**
 - **Work on Seamonster tale**
 - **Design land and building plans**
 - **Review pecans - put money into a new account just to pay off the CC**
-- **Pay Josh Bills + Prepare for October Bills - create a pecan plan**
-- **Edit and post Friday's recordings to YouTube**
+- **Pay Josh Bills** ✅
+- **Prepare for October Bills - create a pecan plan**
+- **UPLOAD Friday's recordings to YouTube**
+- **Edit and post Friday's APEPAY** ✅
+- **Edit and post Friday's MARGINAL** ✅
 
 ---
 
