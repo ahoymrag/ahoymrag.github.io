@@ -6,9 +6,13 @@
 - **Lineup**:
   - The Tines
   - Jake Custer
+  - Unannounced Band 1
+  - Unannounced Band 2
 - **MC**: Rob Meglio
   - Host of Rob Show
   - Pro on the Mic
+- **Merch Table**: Yes
+- **Wine Collaboration**: Possible collaboration with Naz Wine
 
 ## Event Concept
 - An old-school variety show reminiscent of past eras.
@@ -84,8 +88,6 @@
 - **Design Plans**: Design detailed plans for land and building projects.
 - **Edit and Post**: Edit and post the two recordings from Friday to YouTube, ensuring all necessary edits are made.
 - **Create Task List**: Develop a task list for the CPC website change.
-
-
 
 ## Checklists
 
