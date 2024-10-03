@@ -2,9 +2,9 @@
 
 ### Task 1: Work on Newsletter
 - [ ] Download graphics
-- [ ] Reread the draft
-- [ ] Send test to Mike
-- [ ] Look for import list
+- [ -x ] Reread the draft
+- [-x ] Send test to Mike
+- [-x ] Look for import list
 
 ### Task 2: Polish up the trailer
 - [ ] Sound enhancements
@@ -25,9 +25,9 @@
 ### Newsletter
 - [ ] Download graphics
 - [ ] Reread the draft
-- [ ] Send test to Mike
-- [ ] Look for import list
-- [ ] Get a solid ready-to-go draft of the newsletter while at the coffee shop
+- [x ] Send test to Mike
+- [ x] Look for import list
+- [x ] Get a solid ready-to-go draft of the newsletter while at the coffee shop
 
 ### Trailer
 - [ ] Sound enhancements
@@ -67,7 +67,7 @@
 
 
 # MIP Friday
-- [ ] Work on Newsletter
+- [x ] Work on Newsletter
 - [ ] Work on Trailer
 - [ ] Meeting with Mike
 - [ ] PACK for Trip 
