@@ -1,4 +1,8 @@
 # Terms and Agreement of Work  
+
+## Overview of Proposed Work
+The Consultant will provide comprehensive services to The Montauk Project, focusing on commercial strategy, sales and distribution, marketing and brand development, customer and retailer relationship management, creative and technical services, and ad hoc consulting. Key deliverables include enhancing the company's website, integrating Square POS systems, and producing a commercial film. The timeline prioritizes website updates and POS integration within the first two months, followed by the commercial film shoot in early January.
+
 **Parties Involved:**  
 - **The Montauk Project** ("Company")  
 - **[Your Name]** ("Consultant")
@@ -53,10 +57,19 @@ The Consultant agrees to provide the following services for the Company:
 ## 3. Timeline  
 - **Initial Contract Term:** [Start Date] to [End Date]  
 - **Deliverables:**  
-   - Sales target for Connecticut by [Target Date]  
-   - First marketing campaign rollout by [Target Date]  
-   - Website updates by [Target Date]  
-   - Quarterly review of the commercial strategy and adjustment of sales tactics.
+   - **Website Enhancements:**  
+     - Complete front-end development and e-commerce platform enhancements by [End of Month 1].  
+     - Ensure mobile responsiveness and SEO optimization by [Mid-Month 2].  
+     - Launch updated website with improved user experience by [End of Month 2].  
+   - **Square POS System Integration:**  
+     - Begin integration of Square POS systems for retail partners by [Start of Month 2].  
+     - Complete integration and testing by [End of Month 2].  
+   - **Film Shoot for Commercial:**  
+     - Schedule and plan the film shoot for the commercial by [Early January].  
+     - Conduct the film shoot by [Mid-January].  
+   - **Sales target for Connecticut by [Target Date]**  
+   - **First marketing campaign rollout by [Target Date]**  
+   - **Quarterly review of the commercial strategy and adjustment of sales tactics.**
 
 ---
 

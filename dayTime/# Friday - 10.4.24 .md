@@ -46,7 +46,9 @@
 FRIDAY LAST LICKS
 1. MASS E-MAIL NEWSLETTER
 2. LINK UP ADULT SUNDAY 
-3. CALL CHRIS AND REMIND HIM OF SUNDAY
+~~35. Call Danny~~
+~~3. CALL CHRIS AND REMIND HIM OF SUNDAY~~
 4. Slight WIP Improvements if time to SB
-
+5. Danny Action Plan
+6. AG lost Job Action Plan? If so
 
