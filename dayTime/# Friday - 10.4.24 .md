@@ -23,8 +23,8 @@
 ## │             MIP               │
 ## └───────────────────────────────┘
 
-- [ ] Update Basic for SB
-- [ ] Mission Anabaino Newsletter
+- [x] Update Basic for SB
+- [x] Mission Anabaino Newsletter
 - [x] Edit and Publish Adult Sunday Podcast
 - [ ] Call Chris and Remind him of Sunday
 
@@ -38,5 +38,15 @@
 4. Gym - 1:45pm
 5. Walmart - 3pm
 6. Beachhouse Ready to go for Ellen - 4pm
+
+
+
+
+
+FRIDAY LAST LICKS
+1. MASS E-MAIL NEWSLETTER
+2. LINK UP ADULT SUNDAY 
+3. CALL CHRIS AND REMIND HIM OF SUNDAY
+4. Slight WIP Improvements if time to SB
 
 
