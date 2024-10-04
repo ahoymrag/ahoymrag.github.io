@@ -1,0 +1,15 @@
+.silverback-product-website-theme {
+    --color-primary: #4a90e2;
+    --color-secondary: #50e3c2;
+    --color-accent: #f5a623;
+    --color-background: #1F1E33;
+    --super-text-color: #fff;
+    --color-base-color: #4a90e2;
+}
+
+/*BODY SPECIFIC*/
+.sb-web {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}

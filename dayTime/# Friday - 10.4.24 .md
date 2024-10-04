@@ -10,8 +10,8 @@
 ## │      Land and Building        │
 ## └───────────────────────────────┘
 
-- [ ] E-mail Lynne
-- [ ] E-mail Zone Lady
+- [x] E-mail Lynne
+- [x] E-mail Zone Lady
 
 ## ┌───────────────────────────────┐
 ## │     Ahoy Indie Media          │
@@ -23,16 +23,16 @@
 ## │             MIP               │
 ## └───────────────────────────────┘
 
-- [ ] Update Trailer Latest
+- [ ] Update Basic for SB
 - [ ] Mission Anabaino Newsletter
-- [ ] Edit and Publish Adult Sunday Podcast
+- [x] Edit and Publish Adult Sunday Podcast
 - [ ] Call Chris and Remind him of Sunday
 
 ## ┌───────────────────────────────┐
 ## │      Plans for the Day        │
 ## └───────────────────────────────┘
 
-1. Dev and Mike Meeting 10am
+1. ~~Dev and Mike Meeting 10am~~
 2. Leave for Pits at 11:45am
 3. Pits Lunch - 12:15-1:15pm
 4. Gym - 1:45pm

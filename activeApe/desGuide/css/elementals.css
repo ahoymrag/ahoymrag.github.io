@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;900&display=swap');
 
-
-
 :root {
     --font-family: 'Barlow', sans-serif;
     --h1-font-size: 2rem;
@@ -20,18 +18,13 @@
 
     /*COLOR ROOTS*/
 
-
-    /*VARIATIONS BASED ON THE PRIMARY COLOR */
-
+    /* Default Theme */
     --color-primary: var(--color-base-color);
     --color-secondary: hsl(from var(--color-base-color) h s 80%);
     --color-accent: hsl(from var(--color-base-color) h s 60%);
     --color-background: hsl(from var(--color-base-color) h s 90%);
-    --text-color: #333333;
+    --text-color: var(---super-text-color);
     --color-base-color: #ff0060;
-
-
-
 
     /*STATES OF SUCCESS AND ERROR */
     --success-color: #28a745;
@@ -121,7 +114,7 @@ p {
     font-family: var(--font-family);
     margin: 0;
     padding: 0;
-    color: #333;
+    color: var(--text-color);
     text-align: justify;
     hyphens: auto;
     word-wrap: break-word;
@@ -137,7 +130,7 @@ ul {
     padding: 0;
     margin: 0;
     font-family: var(--font-family);
-    color: #333;
+    color: var(--text-color);
 }
 
 li {
@@ -258,9 +251,28 @@ nav {
     border-radius: 2.5px;
 }
 
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.nav-links {
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
 
 
-/*CHAPTER 5 - BUTTONS */
+/*CHAPTER 7 - BUTTONS */
 
 /*ACTIVE VS INACTIVE STATES OF BUTTON */
 

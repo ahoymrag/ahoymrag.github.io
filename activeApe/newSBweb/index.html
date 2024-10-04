@@ -2,16 +2,53 @@
     <head>
         <title>Silverback</title>
         <link rel="stylesheet" href="../desGuide/css/elementals.css">
+        <link rel="stylesheet" href="silverback-product-website.css">
     </head>
     <body class="sb-web">
         <nav>
-            <img>
-            <a href="#">Features</a>
-            <a href="#">Get Started</a>
-            <a href="#">Pricing</a>
-            <a href="#">Try it free</a>
-            <a href="#">Join the CLI Beta</a>
+            <img src="logo.png" alt="Logo" style="height: 40px;">
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+            <div class="nav-links">
+                <a href="#">Features</a>
+                <a href="#">Get Started</a>
+                <a href="#">Pricing</a>
+                <a href="#">Try it free</a>
+                <a href="#">Join the CLI Beta</a>
+            </div>
         </nav>
-
+        <section>
+            <h1>Deploy, Monitor, Adapt</h1>
+            <p>Create, customize, and launch web3 bots to handle everything
+                on-chain, from monitoring to trading and beyond</p>
+            <button>Join the CLI Beta</button>
+            <button>Notify Me When Web App Launches</button>
+        </section>
+        <section>
+            <article>
+                <img src="./assets/thumbnail_Video.png">
+            </article>
+            <article>
+                <h1>You need to sleep. Silverback does not.</h1>
+                <p>With 24/7 uptime, your bots keep running even when you’re
+                    offline.</p>
+                <button>Join the CLI Beta</button>
+                <button>View the Docs</button>
+            </article>
+        </section>
+        <section>
+            <header>
+                <h2>Silverback is the most powerful bot tool on earth</h2>
+            </header>
+            <article>
+                <img src="./assets/thumbnail_Code.png">
+            </article>
+        </section>
+        <script>
+            // JavaScript to toggle the menu
+            function toggleMenu() {
+                const navLinks = document.querySelector('.nav-links');
+                navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+            }
+        </script>
     </body>
 </html>
