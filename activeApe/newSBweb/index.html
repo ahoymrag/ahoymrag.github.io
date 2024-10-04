@@ -6,24 +6,26 @@
     </head>
     <body class="sb-web">
         <nav>
-            <img src="logo.png" alt="Logo" style="height: 40px;">
+            <img src="./assets/Silverback Logo.png" alt="Logo">
             <div class="hamburger" onclick="toggleMenu()">☰</div>
             <div class="nav-links">
-                <a href="#">Features</a>
-                <a href="#">Get Started</a>
-                <a href="#">Pricing</a>
-                <a href="#">Try it free</a>
-                <a href="#">Join the CLI Beta</a>
+                <a href="#features">Features</a>
+                <a href="#get-started">Get Started</a>
+                <a href="#pricing">Pricing</a>
+                <!-- Assuming you have a section with id="pricing" -->
+                <a href="#try-for-free">Try it free</a>
+                <a href="#join-cli-beta">Join the CLI Beta</a>
+                <!-- Assuming you have a section with id="join-cli-beta" -->
             </div>
         </nav>
-        <section>
+        <section id="hero" class="hero">
             <h1>Deploy, Monitor, Adapt</h1>
             <p>Create, customize, and launch web3 bots to handle everything
                 on-chain, from monitoring to trading and beyond</p>
             <button>Join the CLI Beta</button>
             <button>Notify Me When Web App Launches</button>
         </section>
-        <section>
+        <section id="features" class="two-col">
             <article>
                 <img src="./assets/thumbnail_Video.png">
             </article>
@@ -35,12 +37,116 @@
                 <button>View the Docs</button>
             </article>
         </section>
-        <section>
+
+        <section id="features">
             <header>
                 <h2>Silverback is the most powerful bot tool on earth</h2>
             </header>
+            <article class="layout-grid columns-2">
+                <article id="feature-1">
+                    <h3>Feature 1</h3>
+                    <p>Feature 1</p>
+                </article>
+                <article id="feature-2">
+                    <h3>Feature 2</h3>
+                    <p>Feature 2</p>
+                </article>
+                <article id="feature-3">
+                    <h3>Feature 3</h3>
+                    <p>Feature 3</p>
+                </article>
+                <article id="feature-4">
+                    <h3>Feature 4</h3>
+                    <p>Feature 4</p>
+                </article>
+            </article>
+        </section>
+        <section id="testimonial">
+            <article>
+                <p>
+                    “Silverback is next level... every protocol should be
+                    thinking about @ApeFramework
+                    for the simple reason that bots are so easy to write with
+                    Silverback + ape”
+                </p>
+                <p>
+                    - @0xBrent
+                </p>
+            </article>
+        </section>
+        <section id="get-started">
             <article>
                 <img src="./assets/thumbnail_Code.png">
+
+            </article>
+            <article>
+                <h2>Deploy in Mintues</h2>
+                <p>Provision a Cluster with your exact specfications of your
+                    cluster</p>
+                <button>
+                    View the Docs
+                </button>
+            </article>
+        </section>
+        <section id="pricing">
+            <header>
+                <h1>Plans tailored to you</h1>
+
+                <p>Pick one of our popular configurations, or customize the
+                    exact specfications of your cluster</p>
+            </header>
+            <article class="product-card">
+                <img src="./assets/Planet.png" alt="Standard Plan Logo">
+                <h3>Standard</h3>
+                <h2>100 USDC / mo</h2>
+                <ul>
+                    <li>Run bots on ApeWorX Cloud</li>
+                    <li>Silverback CLI access</li>
+                    <li>Up to 5 bots</li>
+                    <li>0.25 vCPU power per bot</li>
+                    <li>512 MiB memory per bot</li>
+                    <li>Up to 3 networks</li>
+                    <li>1 month data retention @ 1.2 GiB/month</li>
+                </ul>
+            </article>
+            <article class="product-card">
+                <img src="./assets/Wavy.png" alt="Premium Plan Logo">
+                <h3>Premium</h3>
+                <h2>100 USDC / mo</h2>
+                <ul>
+                    <li>Run bots on ApeWorX Cloud</li>
+                    <li>Silverback CLI access</li>
+                    <li>Up to 5 bots</li>
+                    <li>0.25 vCPU power per bot</li>
+                    <li>512 MiB memory per bot</li>
+                    <li>Up to 3 networks</li>
+                    <li>1 month data retention @ 1.2 GiB/month</li>
+                </ul>
+            </article>
+            <article class="product-card">
+                <img src="./assets/User_Check.png" alt="Standard Plan Logo">
+                <h3>Custom</h3>
+                <h2>Contact Us</h2>
+                <ul>
+                    <li>Run bots on ApeWorX Cloud</li>
+                    <li>Silverback CLI access</li>
+                    <li>Up to 20 bots</li>
+                    <li>1vCPU power per bot</li>
+                    <li>2GiB memory per bot</li>
+                    <li>Up to 10 networks</li>
+                    <li>12 month data retention @ 1.2 GiB/month</li>
+                </ul>
+            </article>
+        </section>
+        <section id="try-for-free">
+            <article>
+                <h2>Try for free</h2>
+                <p>The Silverback SDK is and always will be free for you to
+                    build, tinker, and unleash your bots locally. Make something
+                    cool? Let us handle the deployment and hosting through one
+                    of our paid plans.</p>
+                <button>Download the SDK</button>
+                <button>View the Docs</button>
             </article>
         </section>
         <script>

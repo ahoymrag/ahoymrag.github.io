@@ -13,3 +13,66 @@
     padding: 0;
     overflow-x: hidden;
 }
+
+/* Add these styles to your existing CSS file */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(31, 30, 51, 0.1) 0%, rgba(74, 144, 226, 0.1) 100%);
+    padding: 10px 20px;
+    position: sticky;
+    /* Make the nav sticky */
+    top: 0;
+    /* Stick to the top of the viewport */
+    z-index: 1000;
+    /* Ensure it stays above other content */
+}
+
+nav img {
+    height: 40px;
+    width: 40px;
+    /* Make the logo square */
+    object-fit: cover;
+    /* Ensure the image fits within the square dimensions */
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links a {
+        padding: 10px 0;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
