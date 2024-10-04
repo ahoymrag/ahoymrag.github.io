@@ -48,7 +48,7 @@ The Consultant agrees to provide the following services for the Company:
 ---
 
 ## 2. Compensation  
-- **Base Salary:** The Consultant will receive $X monthly for services rendered, payable on the 1st of each month.  
+- **Base Salary:** The Consultant will receive $45,000 annually for services rendered, payable in bi-weekly installments of $1,730.77.  
 - **Commission:** Consultant will receive a commission of X% on all sales generated in Connecticut.  
 - **Bonuses:** Performance-based bonuses will be provided for key milestones such as successful launches, achieving sales targets, and expanding distribution to additional regions.
 
