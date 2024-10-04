@@ -1,10 +1,10 @@
 .silverback-product-website-theme {
-    --color-primary: #4a90e2;
-    --color-secondary: #50e3c2;
-    --color-accent: #f5a623;
-    --color-background: #1F1E33;
-    --super-text-color: #fff;
-    --color-base-color: #4a90e2;
+    --color-primary: #4a90e2 !important;
+    --color-secondary: #50e3c2 !important;
+    --color-accent: #f5a623 !important;
+    --color-background: #1F1E33 !important;
+    --super-text-color: #fff !important;
+    --color-base-color: #4a90e2 !important;
 }
 
 /*BODY SPECIFIC*/
@@ -12,7 +12,24 @@
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    color: var(--super-text-color);
+    background-color: #1F1E33;
+    color: white !important;
 }
+
+.sb-web button {
+
+    color: var(--super-text-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 2px;
+    font-size: 16px;
+    font-weight: 600;
+
+}
+
 
 /* Add these styles to your existing CSS file */
 

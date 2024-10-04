@@ -22,7 +22,7 @@
     --color-primary: var(--color-base-color);
     --color-secondary: hsl(from var(--color-base-color) h s 80%);
     --color-accent: hsl(from var(--color-base-color) h s 60%);
-    --color-background: hsl(from var(--color-base-color) h s 90%);
+    --color-background: var(--color-background-variable, hsl(from var(--color-base-color) h s 90%));
     --text-color: var(---super-text-color);
     --color-base-color: #ff0060;
 
@@ -38,7 +38,6 @@
 }
 
 body {
-    background-color: var(--color-background);
     font-family: var(--font-family);
     overflow: auto;
 }
@@ -463,7 +462,6 @@ hr {
 /*Layout Classes*/
 
 section {
-    background: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
@@ -501,6 +499,14 @@ section:hover {
 
 .layout-grid[class*="columns-"] {
     grid-template-columns: repeat(var(--num-columns), 1fr);
+}
+
+.layout-grid.columns-1 {
+    --num-columns: 1;
+}
+
+.layout-grid.columns-2 {
+    --num-columns: 2;
 }
 
 .layout-grid.columns-3 {
@@ -1109,19 +1115,6 @@ object details {
     justify-content: center;
 }
 
-.hero button {
-    background-color: var(--color-accent);
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    max-width: 200px;
-}
-
-.hero button:hover {
-    background-color: var(--color-accent-hover);
-}
 
 .hero h1 {
     color: white;
