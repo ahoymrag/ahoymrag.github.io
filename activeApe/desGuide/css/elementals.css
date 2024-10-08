@@ -122,6 +122,18 @@ p {
     margin-bottom: 1rem;
 }
 
+caption {
+    font-size: var(--h6-font-size);
+    line-height: 1.5;
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+    text-align: justify;
+    hyphens: auto;
+    font-style: italic;
+}
+
 /*Chapter 3 - THE LISTS THE LIST  */
 
 ul {
@@ -462,6 +474,7 @@ hr {
 /*Layout Classes*/
 
 section {
+
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
@@ -476,6 +489,8 @@ section:hover {
     background: rgba(255, 255, 255, 0.15);
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
 }
+
+
 
 .layout-horizontal {
     display: flex;
@@ -622,7 +637,7 @@ article {
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(5px);
     padding: 20px;
     transition: transform 0.3s ease, background 0.3s ease;
 }
@@ -942,7 +957,6 @@ object details {
 
 .product-card {
     min-width: 200px;
-    height: 250px;
     text-decoration: none;
     display: flex;
     flex-direction: column;
@@ -1173,4 +1187,16 @@ object details {
     font-weight: 400;
     line-height: 24px;
     word-wrap: break-word
+}
+
+.testimonial {
+    width: 100%;
+    height: auto;
+    vertical-align: top;
+}
+
+@media (max-width: 768px) {
+    .testimonial {
+        padding: 10px;
+    }
 }

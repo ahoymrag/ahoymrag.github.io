@@ -15,8 +15,10 @@
     color: var(--super-text-color);
     background-color: #1F1E33;
     color: white !important;
-    position: relative;
-    z-index: -1;
+
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
     /* Add as a layer behind the content */
 }
 
@@ -97,4 +99,11 @@ nav img {
     .hamburger {
         display: block;
     }
+}
+
+/* Remove min-height from sections */
+.sb-web section {
+    /* Remove any min-height property if it exists */
+    /* Other existing styles */
+    /* Add any specific styles for sections within .sb-web if needed */
 }

@@ -3,8 +3,21 @@
         <title>Silverback</title>
         <link rel="stylesheet" href="../desGuide/css/elementals.css">
         <link rel="stylesheet" href="silverback-product-website.css">
+        <link rel="preload"
+            href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;900&display=swap"
+            as="style" onload="this.rel='stylesheet'">
     </head>
     <body class="sb-web">
+        <style>
+            .animated-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    pointer-events: none;
+}
+        </style>
+
         <nav>
             <img src="./assets/Silverback Logo.png" alt="Logo">
             <div class="hamburger" onclick="toggleMenu()">☰</div>
@@ -60,7 +73,7 @@
                 </article>
             </article>
         </section>
-        <section id="testimonial">
+        <section id="testimonial" class="testimonial">
             <article>
                 <p>
                     “Silverback is next level... every protocol should be
@@ -68,9 +81,9 @@
                     for the simple reason that bots are so easy to write with
                     Silverback + ape”
                 </p>
-                <p>
+                <caption>
                     - @0xBrent
-                </p>
+                </caption>
             </article>
         </section>
         <section id="get-started" class="two-col">
@@ -157,18 +170,16 @@
                 navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
             }
         </script>
-        <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-                <filter id="grain">
-                    <feturbulence type="fractalNoise" baseFrequency="0.8"
-                        numOctaves="4" stitchTiles="stitch" />
-                    <fecolormatrix type="saturate" values="0" />
-                    <fecomponenttransfer>
-                        <fefunca type="linear" slope="0.1" />
-                    </fecomponenttransfer>
-                </filter>
-            </defs>
-            <rect width="100%" height="100%" filter="url(#grain)" />
+        <svg class="animated-background" xmlns="http://www.w3.org/2000/svg"
+            width="100%" height="100%">
+            <circle cx="50%" cy="50%" r="20" fill="none"
+                stroke="var(--color-accent)" stroke-width="2">
+                <animate attributeName="r" from="20" to="1000" dur="10s"
+                    repeatCount="indefinite" />
+                <animate attributeName="stroke-opacity" from="0.5" to="0"
+                    dur="10s"
+                    repeatCount="indefinite" />
+            </circle>
         </svg>
     </body>
 </html>
