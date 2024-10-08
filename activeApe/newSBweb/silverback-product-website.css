@@ -15,7 +15,12 @@
     color: var(--super-text-color);
     background-color: #1F1E33;
     color: white !important;
+    position: relative;
+    z-index: -1;
+    /* Add as a layer behind the content */
 }
+
+
 
 .sb-web button {
 
