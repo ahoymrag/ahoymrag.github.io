@@ -93,6 +93,28 @@ Should the Company require additional services beyond the scope outlined in this
 
 ---
 
+## 8. Equity Compensation
+
+### 8.1 Equity Agreement
+The Consultant may be eligible to receive equity in The Montauk Project as part of the compensation package. The specific terms, including the percentage of equity and vesting schedule, will be negotiated and agreed upon in a separate equity agreement.
+
+### 8.2 Stock Options
+The Company may offer stock options to the Consultant, granting the right to purchase shares at a predetermined price. The terms, including the number of options, exercise price, and vesting period, will be detailed in a stock option agreement.
+
+### 8.3 Performance-Based Equity
+The Consultant may earn additional equity based on achieving specific performance milestones. These milestones and the corresponding equity percentages will be outlined in a performance-based equity plan.
+
+### 8.4 Advisory Shares
+If the Consultant provides strategic advisory services, the Company may allocate advisory shares. The terms, including the number of shares and vesting conditions, will be specified in an advisory agreement.
+
+### 8.5 Convertible Note
+The Consultant may choose to invest in the Company through a convertible note, which will convert into equity at a future financing round. The terms of the convertible note, including interest rate and conversion terms, will be documented in a convertible note agreement.
+
+### 8.6 Legal and Tax Considerations
+The Consultant is advised to seek independent legal and tax advice regarding the equity compensation terms. The Company will provide necessary documentation to facilitate this process.
+
+---
+
 ## Additional Recommendations Based on Expertise:
 
 ### 1. Video Production & Creative Direction  
