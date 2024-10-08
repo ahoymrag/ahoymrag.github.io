@@ -40,8 +40,19 @@
 body {
     font-family: var(--font-family);
     overflow: auto;
+    width: 100%;
 }
 
+.content-wrapper {
+    max-width: 1200px;
+    /* Set the desired max width */
+    margin: 0 auto;
+    /* Center the container */
+    padding: 0 20px;
+    /* Optional padding for spacing */
+    box-sizing: border-box;
+    /* Include padding and border in the element's total width */
+}
 
 /*Chapter 1 - the H1 Tags */
 
@@ -483,6 +494,9 @@ section {
     border: 1px solid rgba(255, 255, 255, 0.2);
     transition: all 0.3s ease;
     width: 100%;
+    max-width: 1200px;
+    /* Adjust this value as needed */
+
 }
 
 section:hover {
