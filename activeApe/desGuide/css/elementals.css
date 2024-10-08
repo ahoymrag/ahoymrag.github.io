@@ -301,6 +301,26 @@ img {
 
 /*CHAPTER 7 - BUTTONS */
 
+button.top-join {
+    color: #6BF1A1;
+    font-size: 14px;
+    font-family: Barlow;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 18px;
+    word-wrap: break-word;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #6BF1A1;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    text-align: center;
+    width: 100%;
+}
+
 button.join {
     color: #6BF1A1;
     font-size: 14px;
@@ -340,8 +360,17 @@ button.join {
     text-align: center;
 }
 
-.inactive {
-    background-color: var(--inactive-color);
+button.inactive {
+
+    color: rgba(255, 255, 255, 0.2);
+    font-size: 14px;
+    font-family: Barlow;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 18px;
+    word-wrap: break-word;
+    border-color: rgba(255, 255, 255, 0.2);
+    ;
 }
 
 /*CHAPTER 6 - HEADER + MAIN + FOOTER */
@@ -531,6 +560,7 @@ form {
 
 button {
     position: relative;
+    background-color: rgba(255, 255, 255, 0.2);
     z-index: 1;
     overflow: hidden;
     text-transform: uppercase;
@@ -539,20 +569,18 @@ button {
     font-size: 0.9rem;
     letter-spacing: 0.05em;
     line-height: 1.2;
-    background: rgba(255, 255, 255, 0.1);
-    color: black;
-    border: 1px solid black;
     border-radius: 8px;
+    color: white;
     display: flex;
     padding: 12px 24px;
     justify-content: center;
     align-items: center;
     gap: 8px;
-    align-self: stretch;
     text-align: center;
     width: 100%;
     backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
 }
 
@@ -1293,6 +1321,7 @@ object details {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    gap: 20px;
 }
 
 

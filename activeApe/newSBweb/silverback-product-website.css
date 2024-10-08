@@ -8,6 +8,18 @@
     --primary-border-color: rgba(255, 255, 255, 0.12) !important;
 }
 
+/* Override hover effect for article */
+article:hover {
+    box-shadow: none !important;
+    background: none !important;
+}
+
+/* Override hover effect for section */
+section:hover {
+    box-shadow: none !important;
+    background: none !important;
+}
+
 /*BODY SPECIFIC*/
 .sb-web {
     margin: 0;
