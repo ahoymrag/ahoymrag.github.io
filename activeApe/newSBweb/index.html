@@ -71,8 +71,11 @@
                 <h1>Deploy, Monitor, Adapt</h1>
                 <p>Create, customize, and launch web3 bots to handle everything
                     on-chain, from monitoring to trading and beyond</p>
-                <button>Join the CLI Beta</button>
-                <button>Notify Me When Web App Launches</button>
+                <article class="two-buttons">
+                    <button class="join">Join the CLI Beta</button>
+                    <button class="inactive">Notify Me When Web App
+                        Launches</button>
+                </article>
             </section>
             <section id="features" class="two-col">
                 <article>
@@ -88,8 +91,12 @@
             </section>
 
             <section id="features">
-                <header>
-                    <h2>Silverback is the most powerful bot tool on earth</h2>
+                <header class="header-style-splash">
+                    <h2 class="center">Silverback is the most powerful bot tool
+                        on earth</h2>
+                    <p>Built by hodlers for hodlers to supercharge bot
+                        operations and carve your niche in the web3
+                        ecosystem</p>
                 </header>
                 <article class="layout-grid columns-2">
                     <article id="feature-1">
@@ -139,7 +146,7 @@
                 </article>
             </section>
             <section id="pricing">
-                <header>
+                <header class="header-style-splash">
                     <h1>Plans tailored to you</h1>
 
                     <p>Pick one of our popular configurations, or customize the
@@ -204,7 +211,30 @@
                     <button>View the Docs</button>
                 </article>
             </section>
+            <section id="wait-list" class="wait-list">
+                <h2>Join the Waitlist</h2>
+                <p>Be the first to know about the launch of our web app and
+                    other
+                    upcoming Silverback releases</p>
+                <form>
+                    <input type="email" placeholder="Email Address">
+                    <button>Submit</button>
+                </form>
+            </section>
         </div>
+        <footer>
+
+            <div class="social-icons">
+                <a href="#"><img src="./assets/discord-icon.png"
+                        alt="Discord"></a>
+                <a href="#"><img src="./assets/github-icon.png"
+                        alt="GitHub"></a>
+                <a href="#"><img src="./assets/telegram-icon.png"
+                        alt="Telegram"></a>
+                <a href="#"><img src="./assets/x-icon.png" alt="X"></a>
+            </div>
+            <p>Copyright © 2024 ApeWorX | All Rights Reserved</p>
+        </footer>
         <!--Scripts-->
         <script>
             // JavaScript to toggle the menu
@@ -212,6 +242,12 @@
                 const navLinks = document.querySelector('.nav-links');
                 navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
             }
+        </script>
+        <script id="footer-animation">
+            document.addEventListener('DOMContentLoaded', function() {
+    const footer = document.querySelector('footer');
+    footer.classList.add('visible');
+});
         </script>
         <svg class="animated-background" xmlns="http://www.w3.org/2000/svg"
             width="100%" height="100%">

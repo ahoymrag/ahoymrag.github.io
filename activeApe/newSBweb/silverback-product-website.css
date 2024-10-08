@@ -5,6 +5,7 @@
     --color-background: #1F1E33 !important;
     --super-text-color: #fff !important;
     --color-base-color: #4a90e2 !important;
+    --primary-border-color: rgba(255, 255, 255, 0.12) !important;
 }
 
 /*BODY SPECIFIC*/
@@ -22,23 +23,9 @@
     /* Add as a layer behind the content */
 }
 
-
-
-.sb-web button {
-
-    color: var(--super-text-color);
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin: 2px;
-    font-size: 16px;
-    font-weight: 600;
-
+section {
+    border-color: transparent;
 }
-
-
-/* Add these styles to your existing CSS file */
 
 nav {
     display: flex;
@@ -47,11 +34,8 @@ nav {
     background: linear-gradient(90deg, rgba(31, 30, 51, 0.1) 0%, rgba(74, 144, 226, 0.1) 100%);
     padding: 10px 20px;
     position: sticky;
-    /* Make the nav sticky */
     top: 0;
-    /* Stick to the top of the viewport */
     z-index: 1000;
-    /* Ensure it stays above other content */
 }
 
 nav img {
@@ -101,9 +85,69 @@ nav img {
     }
 }
 
-/* Remove min-height from sections */
-.sb-web section {
-    /* Remove any min-height property if it exists */
-    /* Other existing styles */
-    /* Add any specific styles for sections within .sb-web if needed */
+
+.wait-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+    background-color: #1F1E33;
+    /* Ensure background matches the theme */
+    color: #fff;
+    /* Text color */
+    padding: 20px;
+    /* Add some padding */
+    text-align: center;
+    /* Center text */
+}
+
+.wait-list form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.wait-list input[type="email"] {
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    margin-right: 10px;
+    width: 250px;
+    /* Adjust width */
+    background-color: transparent;
+    color: var(--primary-border-color);
+    padding-left: 10px;
+    /* Add padding to the placeholder text */
+}
+
+.wait-list button {
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid var(--primary-border-color);
+    background-color: transparent;
+    color: var(--primary-text-color);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.wait-list button:hover {
+    background-color: var(--hover-background-color);
+    /* Change background on hover */
+}
+
+.wait-list .social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.wait-list .social-icons img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
 }
