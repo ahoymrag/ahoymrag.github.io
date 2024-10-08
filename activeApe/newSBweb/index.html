@@ -8,14 +8,50 @@
             as="style" onload="this.rel='stylesheet'">
     </head>
     <body class="sb-web">
+        <div class="animated-background">
+            <img src="./assets/sb_BG_1.png">
+        </div>
+
         <style>
             .animated-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    pointer-events: none;
-}
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 100vh;
+                overflow: hidden;
+                z-index: -1;
+            }
+        
+            .animated-background img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                animation: brightnessAnimation 15s ease-in-out infinite, fadeIn 3s ease-in;
+            }
+        
+            @keyframes brightnessAnimation {
+                0%, 100% {
+                    filter: brightness(0.8) contrast(1.2);
+                }
+                50% {
+                    filter: brightness(1.2) contrast(1.2);
+                }
+            }
+        
+            @keyframes fadeIn {
+                0% {
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 1;
+                }
+            }
+        
+            .animated-background img:hover {
+                transform: scale(1.02);
+                transition: transform 1s ease;
+            }
         </style>
 
         <nav>
