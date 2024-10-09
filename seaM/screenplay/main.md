@@ -2,6 +2,7 @@
 title: "Sea Monster"
 author: Alex Gonzalez
 date: 2024-09-29
+updated: 2024-10-09
 ---
 
 # SATURDAY
@@ -9,6 +10,8 @@ date: 2024-09-29
 ## Scene 1: EXT. WINDY SEASIDE ROAD - DAY
 
 _DALLAS (40s)_ and his son _MAC (10)_ drive along a winding seaside road. The rugged coastline stretches beside them, with Atlantic waves crashing against the rocks. A storm brews in the distance, dark clouds gathering on the horizon.
+
+As they drive the radio is on and the newscaster is almost excited to announce that there is a storm coming and that we are about to enter hurricane season.  
 
 ---
 

@@ -55,3 +55,16 @@
 
 **AUTHOR'S NOTE:**
 - Review and integrate these todos into the screenplay to enhance character depth, atmosphere, pacing, dialogue, and overall plot development.
+
+
+
+# NUGGETS TO ADD
+1. Questions of the size of the creature - the kids disagree - Makayla talks often about the type of terrain it would like 
+
+
+## Vibes to Address
+1. Makayla - to Mac - Seems far and distant - maybe even almost underwater 
+
+
+
+
