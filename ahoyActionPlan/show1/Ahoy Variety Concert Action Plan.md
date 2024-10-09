@@ -2,7 +2,12 @@
 
 ## Event Details
 - **Date**: [Event Date]
-- **Venue**: Cafe 9
+- **Venue**: 
+  - Cafe 9
+  - The State House
+  - Toad's Place
+  - College Street Music Hall
+  - Stella Blues
 - **Lineup**:
   - The Tines
   - Jake Custer
@@ -71,23 +76,6 @@
 - Set up the venue.
 - Conduct a final rehearsal.
 - Ensure all staff and volunteers are briefed and ready.
-
-## Additional Notes
-- **Call Lynne**: Organize a tour of the land with Lynne.
-- **Call Zone Lady**: Discuss zoning requirements and regulations.
-- **Touch Base with Sam Carlson**: Confirm plans and dates for upcoming projects.
-- **Touch Base with Dan**: Discuss updates and plans for the wine business.
-- **Create Action Plan**: Develop an action plan and timeline for the Ahoy Indie Media show.
-- **Edit and Publish Beyond**: Finalize edits and publish the latest episode.
-- **Ready Rob Show**: Prepare the Rob Show with a delay for Ahoy.
-- **Review Credit Card**: Review credit card statements and create a financial plan for October.
-- **Review Pecans**: Transfer money into a new account to pay off the credit card.
-- **Pay Bills**: Pay Josh's bills and prepare for October bills, creating a financial plan for pecans.
-- **Fix Background**: Ask Bryant to help fix the background of the SB website.
-- **Work on Story**: Continue developing the Seamonster tale, focusing on plot and character development.
-- **Design Plans**: Design detailed plans for land and building projects.
-- **Edit and Post**: Edit and post the two recordings from Friday to YouTube, ensuring all necessary edits are made.
-- **Create Task List**: Develop a task list for the CPC website change.
 
 ## Checklists
 
