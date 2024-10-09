@@ -119,8 +119,17 @@ nav img {
     justify-content: center;
 }
 
-.wait-list h1 {
+.wait-list h2 {
     font-size: 92px;
+    font-weight: 700;
+    line-height: 92px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
 }
 
 
