@@ -336,8 +336,7 @@ footer img {
     transition: transform 0.3s;
 }
 
-
-.join-form {
+.basic-form {
     width: 100%;
     height: 100%;
     padding: 48px;
@@ -353,7 +352,7 @@ footer img {
     max-width: 400px;
 }
 
-.join-form h2 {
+.basic-form h2 {
     text-align: center;
     color: white;
     font-size: 32px;
@@ -362,7 +361,7 @@ footer img {
     line-height: 38.4px;
 }
 
-.join-form p {
+.basic-form p {
     color: white;
     font-size: 16px;
     font-family: Barlow, sans-serif;
@@ -371,7 +370,7 @@ footer img {
     text-align: left;
 }
 
-.join-form label {
+.basic-form label {
     color: white;
     font-size: 14px;
     font-family: Barlow, sans-serif;
@@ -382,7 +381,7 @@ footer img {
     margin-bottom: 8px;
 }
 
-.join-form input {
+.basic-form input {
     width: 100%;
     padding: 16px 24px;
     border-radius: 12px;
@@ -391,7 +390,7 @@ footer img {
     color: white;
 }
 
-.join-form button {
+.basic-form button {
     width: 100%;
     padding: 8px 16px;
     background: rgba(188, 188, 188, 0.03);
@@ -410,7 +409,7 @@ footer img {
     align-items: center;
 }
 
-.join-form a {
+.basic-form a {
     color: white;
     font-size: 16px;
     font-family: Barlow, sans-serif;
