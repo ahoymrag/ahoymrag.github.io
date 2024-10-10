@@ -169,17 +169,8 @@ nav img {
     /* Change background on hover */
 }
 
-.wait-list .social-icons {
-    display: flex;
-    gap: 15px;
-    margin-top: 20px;
-}
 
-.wait-list .social-icons img {
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-}
+
 
 
 .animated-background {
@@ -307,4 +298,123 @@ nav img {
 .testimonial p {
 
     font-style: italic;
+}
+
+#testimonial section {
+    min-height: 70px;
+    background-color: var(--primary-color-light) !important;
+}
+
+footer img {
+    width: 100px;
+    height: 100px;
+    filter: invert(0);
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.social-icons a i {
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    color: rgba(105, 105, 105, 0.7) !important;
+    /* Dark grey with 70% opacity */
+    transition: color 0.3s;
+}
+
+.social-icons a i:hover {
+    color: rgba(105, 105, 105, 1);
+    /* Fully opaque on hover */
+    transform: scale(1.1);
+    transition: transform 0.3s;
+}
+
+
+.join-form {
+    width: 100%;
+    height: 100%;
+    padding: 48px;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0px 4px 24px rgba(15.21, 25.59, 25.59, 0.25);
+    border-radius: 32px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(72px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-width: 400px;
+}
+
+.join-form h2 {
+    text-align: center;
+    color: white;
+    font-size: 32px;
+    font-family: Barlow, sans-serif;
+    font-weight: 400;
+    line-height: 38.4px;
+}
+
+.join-form p {
+    color: white;
+    font-size: 16px;
+    font-family: Barlow, sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+.join-form label {
+    color: white;
+    font-size: 14px;
+    font-family: Barlow, sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 21px;
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+
+.join-form input {
+    width: 100%;
+    padding: 16px 24px;
+    border-radius: 12px;
+    border: 1px solid #E0E0E0;
+    background-color: transparent;
+    color: white;
+}
+
+.join-form button {
+    width: 100%;
+    padding: 8px 16px;
+    background: rgba(188, 188, 188, 0.03);
+    border-radius: 4px;
+    border: 1px solid #87FFB8;
+    color: #6BF1A1;
+    font-size: 14px;
+    font-family: Barlow, sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 18px;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.join-form a {
+    color: white;
+    font-size: 16px;
+    font-family: Barlow, sans-serif;
+    font-weight: 400;
+    text-decoration: underline;
+    line-height: 24px;
 }

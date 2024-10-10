@@ -387,15 +387,25 @@ header p {
     text-align: center;
 }
 
-/*
+
 .header-style-splash {
-    min-height: 30vh;
+    min-height: 70px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     max-width: 100%;
     overflow: hidden;
+}
+
+.header-style-splash h1 {
+    text-align: center;
+    color: white;
+    font-size: 32px;
+    font-family: Barlow;
+    font-weight: 500;
+    line-height: 38.40px;
+    word-wrap: break-word
 }
 
 .header-style-splash h2 {
@@ -416,7 +426,6 @@ header p {
     line-height: 24px;
     word-wrap: break-word
 }
-*/
 
 main {
     gap: 10px;
