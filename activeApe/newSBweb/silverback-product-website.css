@@ -50,7 +50,6 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(90deg, rgba(31, 30, 51, 0.1) 0%, rgba(74, 144, 226, 0.1) 100%);
     padding: 10px 20px;
     position: sticky;
     top: 0;
