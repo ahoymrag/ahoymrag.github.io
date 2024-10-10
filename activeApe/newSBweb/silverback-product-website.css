@@ -282,14 +282,25 @@ nav img {
     border-radius: 20px;
     padding: 20px;
     /* Add padding to allow the content to breathe */
+    border: 1px solid var(--primary-color-light);
+
 }
 
 
 .product-icon {
-    width: 54px;
-    height: 54px;
+    width: 3rem;
+    /* Adjust size for responsiveness */
+    height: 3rem;
+    font-size: 3rem;
+    /* Adjust size for responsiveness */
+    /* Smooth transition for hover effect */
+    /* Ensure the icon color matches the theme */
 }
 
+.product-icon:hover {
+    transform: scale(1.051);
+    /* Slightly enlarge the icon on hover */
+}
 
 /*TESTIMINONIAL */
 
