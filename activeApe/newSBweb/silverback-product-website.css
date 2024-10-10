@@ -282,7 +282,7 @@ nav img {
     border-radius: 20px;
     padding: 20px;
     /* Add padding to allow the content to breathe */
-    border: 1px solid var(--primary-color-light);
+    border: 1px solid var(--primary-color-);
 
 }
 
