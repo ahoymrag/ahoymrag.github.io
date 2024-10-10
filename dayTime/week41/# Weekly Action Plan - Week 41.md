@@ -67,12 +67,10 @@
 ## ┌───────────────────────────────┐
 ## │          Life Stuff           │
 ## └───────────────────────────────┘
-- [] Send Ellen pictures
+- [DONE] Send Ellen pictures
 - [] Brew cider
 - [] Plan Sleepy Hollow trip
 - [] Catch up with old friends
-
-
 
 
 ## Tuesday, October 8, 2024

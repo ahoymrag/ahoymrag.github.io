@@ -389,6 +389,7 @@ header p {
     text-align: center;
 }
 
+/*
 .header-style-splash {
     min-height: 30vh;
     display: flex;
@@ -417,6 +418,7 @@ header p {
     line-height: 24px;
     word-wrap: break-word
 }
+*/
 
 main {
     gap: 10px;
@@ -437,11 +439,10 @@ footer {
     align-items: center;
     justify-content: center;
     padding: 20px;
-    background-color: #1a1a2e;
+    background-color: transparent;
     color: #fff;
     text-align: center;
-    transform: translateY(100%);
-    transition: transform 0.5s ease-in-out;
+
 }
 
 footer.visible {
@@ -468,12 +469,14 @@ footer .social-icons {
     display: flex;
     gap: 10px;
     margin: 20px 0;
+    color: white;
 }
 
 footer .social-icons a img {
     width: 30px;
     height: 30px;
     transition: transform 0.3s;
+    color: white;
 }
 
 footer .social-icons a img:hover {
@@ -527,19 +530,6 @@ form {
     width: 100%;
     margin-bottom: 20px;
 }
-
-/*ELEMENTAL TYPOGRAPHY*/
-
-
-/*CHAPTER 7 - NAVIGATION */
-
-
-
-
-
-
-/* ELEMENTAL LISTS */
-
 
 
 /*UL STRUCTURES */
@@ -612,6 +602,7 @@ hr {
     display: flex;
     width: 100%;
     flex-direction: column;
+    gap: 10px;
 }
 
 

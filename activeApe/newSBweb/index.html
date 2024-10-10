@@ -1,6 +1,11 @@
 <html>
     <head>
-        <title>Silverback</title>
+        <title>Silverback - Deploy, Monitor, Adapt Web3 Bots</title>
+        <meta name="description" content="Silverback is the most powerful bot tool on earth, offering 24/7 uptime, easy deployments, and powerful analytics for web3 ecosystems. Join the CLI Beta today!">
+        <meta name="keywords" content="Silverback, web3 bots, bot deployment, bot monitoring, web3 ecosystem, CLI Beta, ApeWorX">
+        <meta name="author" content="ApeWorX">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#1F1E33;">
         <link rel="stylesheet" href="../desGuide/css/elementals.css">
         <link rel="stylesheet" href="silverback-product-website.css">
         <link rel="preload"
@@ -13,7 +18,6 @@
         <div class="animated-background">
             <img src="./assets/sb_BG_1.png">
         </div>
-
         <nav>
             <img src="./assets/Silverback Logo.png" alt="Logo">
             <div class="hamburger" onclick="toggleMenu()">☰</div>
@@ -21,7 +25,7 @@
                 <a href="#features">Features</a>
                 <a href="#get-started">Get Started</a>
                 <a href="#pricing">Pricing</a>
-                <a href="#try-for-free">Try it free</a>
+                <a href="#try-free">Try it free</a>
                 <a href="#join-cli-beta" class="top-join">Join the CLI Beta</a>
                 <!-- Assuming you have a section with id="join-cli-beta" -->
             </div>
@@ -31,11 +35,11 @@
                 <h1>Deploy, Monitor, Adapt</h1>
                 <p>Create, customize, and launch web3 bots to handle everything
                     on-chain, from monitoring to trading and beyond</p>
-                <article class="two-buttons">
+                <nav class="two-buttons">
                     <button class="join">Join the CLI Beta</button>
                     <button class="inactive">Notify Me When Web App
                         Launches</button>
-                </article>
+                    </nav>
             </section>
             <section id="features" class="two-col">
                 <article>
@@ -45,8 +49,10 @@
                     <h1>You need to sleep. Silverback does not.</h1>
                     <p>With 24/7 uptime, your bots keep running even when you’re
                         offline.</p>
-                    <button>Join the CLI Beta</button>
-                    <button>View the Docs</button>
+                    <nav class="vertical-menu">
+                        <button class="join">Join the CLI Beta</button>
+                        <button>View the Docs</button>
+                    </nav>
                 </article>
             </section>
             <style>
@@ -166,8 +172,7 @@
                         </ul>
                     </article>
                     <article class="product-card">
-                        <i class="fas fa-user-check fa-x"
-                            aria-hidden="true"></i>
+                        <i class="fas fa-user-check product-icon"></i>
                         <h3>Custom</h3>
                         <h2>??? USDC / mo</h2>
                         <ul>
@@ -187,7 +192,7 @@
                     </article>
                 </article>
             </section>
-            <section id="try-for-free">
+            <section id="try-free">
                 <article class="two-col">
                     <article>
                     <h1>Try for free</h1></article>
@@ -198,10 +203,10 @@
                         one
                         of our paid plans.</p>
                         </article>
-                    <article class="two-buttons">
+                    <nav class="two-buttons">
                         <button class="join">Download the SDK</button>
                         <button>View the Docs</button></article>
-                </article>
+                    </nav>
             </section>
             <section id="wait-list" class="wait-list">
                 <h2>Join the Waitlist</h2>
@@ -232,28 +237,18 @@
             <p>Copyright © 2024 ApeWorX | All Rights Reserved</p>
         </footer>
         <!--Scripts-->
-        <script>
+        <script id="menu-toggle">
             // JavaScript to toggle the menu
             function toggleMenu() {
                 const navLinks = document.querySelector('.nav-links');
                 navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
             }
         </script>
-        <script id="footer-animation">
-            document.addEventListener('DOMContentLoaded', function() {
-    const footer = document.querySelector('footer');
-    footer.classList.add('visible');
-});
-        </script>
-        <svg class="animated-background" xmlns="http://www.w3.org/2000/svg"
-            width="100%" height="100%">
-            <circle cx="50%" cy="50%" r="20" fill="none"
-                stroke="var(--color-accent)" stroke-width="2">
-                <animate attributeName="r" from="20" to="1000" dur="10s"
-                    repeatCount="indefinite" />
-                <animate attributeName="stroke-opacity" from="0.5" to="0"
-                    dur="10s"
-                    repeatCount="indefinite" />
+        <!--SVG ANIMATION-->
+        <svg class="animated-background" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+            <circle cx="50%" cy="50%" r="20" fill="none" stroke="var(--color-accent)" stroke-width="2">
+                <animate attributeName="r" from="20" to="1000" dur="10s" repeatCount="indefinite" />
+                <animate attributeName="stroke-opacity" from="0.5" to="0" dur="10s" repeatCount="indefinite" />
             </circle>
         </svg>
     </body>

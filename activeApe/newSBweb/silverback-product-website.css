@@ -6,20 +6,30 @@
     --primary-color-darker: #0F0E1A;
 }
 
+/*CSS OVERRIDDE DEFAULT CSS EFFECTS*/
 
 /* Override hover effect for article */
-article:hover {
+
+.sb-web article {
+    border-color: transparent;
+    background-color: transparent;
     box-shadow: none !important;
-    background: none !important;
 }
 
-/* Override hover effect for section */
-section:hover {
+.sb-web section {
+    border-color: transparent;
+    background-color: transparent;
     box-shadow: none !important;
-    background: none !important;
 }
 
-/*BODY SPECIFIC*/
+
+
+
+
+
+
+
+/*SILVERBACK ONE PAGER BODY SPECIFIC*/
 .sb-web {
     margin: 0;
     padding: 0;
@@ -34,9 +44,7 @@ section:hover {
     /* Add as a layer behind the content */
 }
 
-section {
-    border-color: transparent;
-}
+
 
 nav {
     display: flex;
@@ -275,4 +283,18 @@ nav img {
     border-radius: 20px;
     padding: 20px;
     /* Add padding to allow the content to breathe */
+}
+
+
+.product-icon {
+    width: 54px;
+    height: 54px;
+}
+
+
+/*TESTIMINONIAL */
+
+.testimonial p {
+
+    font-style: italic;
 }
