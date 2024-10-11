@@ -3,10 +3,11 @@
 
 
 ### Little Do Docs
-1. Publish Layne Epsiode for Beyond the Sunday
-2. Code out the Ape Website
-3. Review the Newsletter for Make
-4. Video for Vany (SB Interview)
+- [DONE ] Publish Layne Episode for Beyond the Sunday
+- [ ] Code out the Ape Website
+- [ ] Review the Newsletter for Make
+- [ ] Video for Vany (SB Interview)
+- [ ] Rob Show Episode #36
 
 
 ### Vany's Feedback
