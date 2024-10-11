@@ -344,10 +344,8 @@ button.join {
     word-wrap: break-word;
     border: 1px solid #6BF1A1;
     border-radius: 8px;
-    padding: 12px 24px;
     justify-content: center;
     align-items: center;
-    gap: 8px;
     align-self: stretch;
     text-align: center;
 }
@@ -469,6 +467,20 @@ footer {
 
 footer.visible {
     transform: translateY(0);
+}
+
+footer p {
+    font-size: var(--p-font-size);
+    font-family: var(--font-family);
+}
+
+footer p.copyright {
+    font-size: 12px;
+    /* Adjust the size as needed */
+    color: #fff;
+    /* Ensure the text is visible */
+    margin-top: 10px;
+    /* Add some spacing if needed */
 }
 
 footer form {
@@ -607,7 +619,7 @@ button:hover {
 @media (max-width: 600px) {
     button {
         width: 100%;
-        font-size: smaller;
+        padding: 6px 12px;
         /* adjust font size for smaller screens */
     }
 }
@@ -1135,62 +1147,6 @@ object details {
 
 /*LINK CLASSES*/
 
-.product-card {
-    min-width: 200px;
-    text-decoration: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    border-radius: 15px;
-    padding: 20px;
-    transition: all 0.3s ease;
-    overflow: hidden;
-}
-
-.product-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.02);
-    background: rgba(255, 255, 255, 0.002);
-}
-
-.product-card img {
-    width: 80px;
-    height: 80px;
-    object-fit: contain;
-    margin-bottom: 15px;
-    transition: transform 0.3s ease;
-}
-
-.product-card:hover img {
-    transform: scale(1.1);
-}
-
-.product-card h3 {
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin-bottom: 10px;
-    color: #ffffff;
-}
-
-.product-card p {
-    font-size: 0.9rem;
-    text-align: center;
-    color: rgba(255, 255, 255, 0.8);
-}
-
-.product-card h1 h2 h3 a p {
-    color: white;
-}
-
-.product-card img {
-    filter: brightness(100);
-    align-items: center;
-    float: center;
-    justify-content: center;
-    width: 50%;
-    height: auto;
-}
 
 /*IMG CLASSES*/
 
