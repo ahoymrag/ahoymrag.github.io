@@ -23,7 +23,17 @@
 }
 
 
+.testimonial {
+    width: 100%;
+    height: auto;
+    vertical-align: top;
+}
 
+@media (max-width: 768px) {
+    .testimonial {
+        padding: 10px;
+    }
+}
 
 
 
@@ -31,8 +41,7 @@
 
 /*SILVERBACK ONE PAGER BODY SPECIFIC*/
 .sb-web {
-    margin: 0;
-    padding: 0;
+
     overflow-x: hidden;
     color: var(--super-text-color);
     background-color: #1F1E33;
@@ -127,16 +136,15 @@ nav img {
 }
 
 .wait-list h2 {
-    font-size: 92px;
-    font-weight: 700;
-    line-height: 92px;
+    font-size: calc(2rem + 2vw);
+    font-weight: 500;
+    line-height: 1.2;
     letter-spacing: 0em;
     text-align: center;
     color: white;
     margin-bottom: 20px;
     margin-top: 20px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
 }
 
 

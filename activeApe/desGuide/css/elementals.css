@@ -48,10 +48,18 @@ body {
     /* Set the desired max width */
     margin: 0 auto;
     /* Center the container */
-    padding: 0 20px;
+
     /* Optional padding for spacing */
     box-sizing: border-box;
     /* Include padding and border in the element's total width */
+}
+
+@media (max-width: 768px) {
+    .content-wrapper {
+        max-width: 100%;
+
+        margin: 0;
+    }
 }
 
 /*Chapter 1 - the H1 Tags */
@@ -131,6 +139,13 @@ p {
     max-width: 100%;
     overflow-wrap: break-word;
     margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    p {
+        max-width: 65ch;
+        /* Adjust max-width for better readability on mobile */
+    }
 }
 
 caption {
@@ -589,7 +604,13 @@ button:hover {
     transform: translateY(-2px);
 }
 
-
+@media (max-width: 600px) {
+    button {
+        width: 100%;
+        font-size: smaller;
+        /* adjust font size for smaller screens */
+    }
+}
 
 /*ULTILITY CLASSES*/
 
@@ -634,7 +655,6 @@ section {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    padding: 20px;
     border: 1px solid rgba(255, 255, 255, 0.2);
     transition: all 0.3s ease;
     width: 100%;
@@ -695,15 +715,16 @@ section:hover {
     --num-columns: 5;
 }
 
-/* Responsive adjustments for screens less than 750px */
+
 @media (max-width: 750px) {
     .layout-grid {
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        grid-template-columns: 1fr;
+        /* Default to 1 column on small screens */
     }
 
     .layout-grid[class*="columns-"] {
-        grid-template-columns: repeat(2, 1fr);
-        /* Default to 2 columns on small screens */
+        grid-template-columns: 1fr;
+        /* Ensure one column on small screens */
     }
 
     .layout-grid.columns-1 {
@@ -1331,17 +1352,6 @@ object details {
     justify-content: center;
 }
 
-@media (max-width: 768px) {
-    .two-col {
-        flex-direction: column;
-        width: 100%;
-        min-width: 100%;
-    }
-}
-
-.two-col article {
-    width: 50%;
-    padding: 20px;
 }
 
 .two-col article img {
@@ -1358,16 +1368,4 @@ object details {
     font-weight: 400;
     line-height: 24px;
     word-wrap: break-word
-}
-
-.testimonial {
-    width: 100%;
-    height: auto;
-    vertical-align: top;
-}
-
-@media (max-width: 768px) {
-    .testimonial {
-        padding: 10px;
-    }
 }
