@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>Montauk Project</title>
+        <link rel="stylesheet" href="montauk.css">
+        <style>
+            body {
+                background-image: url('montauk-wine-splash-page.png');
+                background-attachment: fixed; /* This creates the parallax effect */
+                background-size: cover;
+                background-position: center;
+                min-height: 100vh;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                color: white;
+                text-shadow: 1px 1px 2px black;
+            }
+            nav, footer {
+                background-color: rgba(0, 0, 0, 0.5);
+                padding: 10px;
+            }
+            main {
+                flex-grow: 1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+            .layout-vertical {
+                background-color: rgba(0, 0, 0, 0.5);
+                padding: 20px;
+                border-radius: 10px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section class="layout-vertical">
+                <h2>TMP Rosé</h2>
+                <p>It’s a rare rosé blend that’s crisp and dry, pairs well with
+                    charcuterie and tomato-based dishes. On the nose you’ll find
+                    strawberry, peach, floral undertones with a bit of minerals.
+                    Highly drinkable, best enjoyed chilled.</p>
+                <p class="center-content">
+                    <a href="https://square.link/u/Ma98Nf9L">
+                        <button>Order A Case</button>
+                    </a>
+                </p>
+            </section>
+        </main>
+        <footer>
+            <h1>Montauk Project</h1>
+            <p>The Montauk Project was inspired through the passion felt by two
+                friends as an homage to and for the most scenic part of NY.
+                Fashioned with French sensibility and elegance, we bring you a
+                foreign import, domestically.</p>
+        </footer>
+    </body>
+</html>
