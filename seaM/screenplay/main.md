@@ -48,12 +48,12 @@ _Mac_ sets the table and turns on the TV. He flips through channels until he fin
 _ON TV_: The same _REPORTER_ from earlier, standing outside their house, discusses the unpredictable weather this time of year.
 
 **REPORTER**
-As you can see behind me, new residents are moving in despite the ominous weather forecast. Meteorologists are predicting an unusually severe storm system to hit our coast within the next 48 hours.
+As you can see behind me, new residents are moving in despite the ominous weather forecast. Meteorologists are predicting an unusually severe storm system to hit our coast within the couple of weeks hours. That's right folks - we're in for a wild ride.
 
 _Dallas moves closer to the TV, his expression growing concerned as he listens to the report._
 
-**REPORTER**
-Residents are advised to stock up on essentials and prepare for potential power outages. Stay tuned for further updates on this developing situation.
+**REPORTER** (Interviewing the Mayor in a Podcast style setting)
+Residents are advised always be ready in case of an emergency - stock up on the basics - essentials and prepare for potential power outages. Stay tuned for further updates on this developing situation.
 
 
 _Mac's eyes drift back to the window, where the wind has picked up, rustling the tall grass outside._
@@ -62,7 +62,7 @@ _Mac's eyes drift back to the window, where the wind has picked up, rustling the
 
 ## Scene 6: EXT. NEW HOUSE - NIGHT
 
-*Thunder rumbles* in the distance, adding to the tension as the storm approaches.
+*Thunder rumbles* in the distance, and the wind causes  the storm approaches.
 
 **FADE OUT.**
 
@@ -73,7 +73,7 @@ _Mac's eyes drift back to the window, where the wind has picked up, rustling the
 The _PASTOR_ stands at the pulpit, addressing the congregation. The church is filled with attentive listeners, including _DALLAS_ (40s) and _MAC_ (10), sitting quietly in a pew.
 
 **PASTOR**
-During ancient times, Israelites would make sacrifices of all kinds--grain, animals, even blood. But today, we know that blood sacrifice is no longer required.
+According to the book of Isiah - David - today we are going to look at a new passage from the new testament - and ask why we call it the new testament. Is the old testament that much older? Have people changed that much? During ancient times, Israelites would make sacrifices of all kinds--grain, animals, even blood. But today, we know that blood sacrifice is no longer required.
 
 The sermon concludes. The congregation begins to stir as they prepare to leave.
 
@@ -165,7 +165,7 @@ _Mac nods, gripping his backpack tightly as they pull up to the school._
 
 ## Scene 13: EXT. SCHOOL ENTRANCE - MORNING
 
-_Mac_ steps out of the sedan, looking up at the imposing structure of his new school. The sounds of chattering students and the ringing of the school bell fill the air. _Dallas_ watches him from the car, giving a final nod before driving off.
+_Mac_ steps out of the sedan, looking up at the imposing structure of his new school. The sounds of chattering students and the ringing of the school bell fill the air. _Dallas_ watches him from the car before driving off.
 
 ## Scene 14: INT. CLASSROOM - MORNING
 
@@ -176,8 +176,8 @@ The _TEACHER_, a man in his early 30s, stands at the front of the room, beginnin
 > **TEACHER**
 > 
 **TEACHER**
-(enthusiastically)
-> Good morning, everyone. Welcome to a new school year - a fresh start is what we have in front of us.
+(Sheepishly)
+> Hello everyone. Good morning, everyone. Welcome to class - my name is Mr. ### and I am your 5th grade science teacher - .
 
 (noticing a distracted student)
 Hey, you paying attention?
