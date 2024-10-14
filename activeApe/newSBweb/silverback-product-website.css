@@ -555,7 +555,6 @@ footer img {
     /* Ensure full width on mobile */
     align-items: center;
     /* Center align the buttons */
-    gap: 10px;
     /* Adjust gap for a more compact look on mobile */
   }
 }
