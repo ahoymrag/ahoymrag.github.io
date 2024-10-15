@@ -35,10 +35,10 @@
         </nav>
         <div id="main-page-content" class="content-wrapper ">
             <section id="hero" class="hero">
-                <h1 class="text-focus-in">Deploy, Monitor, Adapt</h1>
+                <h1>Deploy, Monitor, Adapt</h1>
                 <p>Create, customize, and launch web3 bots to handle everything
                     on-chain, from monitoring to trading and beyond</p>
-                <nav class="two-buttons s">
+                <nav class="two-buttons">
                     <button class="join"
                         onclick="location.href='join-cli-beta.html'">Join the
                         CLI Beta</button>
@@ -113,19 +113,42 @@
                     </caption>
                 </article>
             </section>
-            <section id="get-started" class="two-col">
+            <section id="get-started" class="responsive-container">
+                <article class="tab-container two-col-layout">
+                    <article class="tabs">
+                        <button class="tab-button active" onclick="showTab('create-cluster')">Create Cluster</button>
+                        <button class="tab-button" onclick="showTab('deploy-bot')">Deploy a Bot</button>
+                    </article>
+                    <article class="tab-content" id="create-cluster">
+                        <pre>
+                            <code>
+                                // Quick Start Card
+                                // Create Cluster
+                                // Authenticate Silverback CLI with ApeWorX
+                                silverback login
+                            </code>
+                        </pre>
+                    </article>
+                    <article class="tab-content" id="deploy-bot" style="display: none;">
+                        <pre>
+                            <code>
+                                // Quick Start Card
+                                // Deploy a Bot
+                                // Deploy your bot with a single command
+                                silverback deploy
+                            </code>
+                        </pre>
+                    </article>
+                </article>
                 <article>
-                    <img src="./assets/thumbnail_Code.png">
+                    <h2>Deploy in Minutes</h2>
+                    <p>Provision a Cluster with your exact specifications of your cluster</p>
+                    <button>View the Docs</button>
+                </article>
+            </section>
 
-                </article>
-                <article>
-                    <h2>Deploy in Mintues</h2>
-                    <p>Provision a Cluster with your exact specfications of your
-                        cluster</p>
-                    <button>
-                        View the Docs
-                    </button>
-                </article>
+ 
+              
             </section>
             <section id="pricing">
                 <header class="header-style-splash">
@@ -283,5 +306,36 @@
                     dur="10s" repeatCount="indefinite" />
             </circle>
         </svg>
+
+        <!-- CODE TO HANDLE CODE TAB DISPLAY AND SWITCHING -->
+        <script>
+            // This function is used to display a specific tab and hide the others
+            function showTab(tabId) {
+                // Select all elements with the class 'tab-content'
+                const tabs = document.querySelectorAll('.tab-content');
+                // Select all elements with the class 'tab-button'
+                const buttons = document.querySelectorAll('.tab-button');
+                
+                // Hide all tab contents
+                tabs.forEach(tab => {
+                    tab.style.display = 'none';
+                });
+                
+                // Remove the 'active' class from all tab buttons
+                buttons.forEach(button => {
+                    button.classList.remove('active');
+                });
+                
+                // Display the tab content with the given tabId
+                document.getElementById(tabId).style.display = 'block';
+                // Add the 'active' class to the button that corresponds to the given tabId
+                document.querySelector(`.tab-button[onclick="showTab('${tabId}')"]`).classList.add('active');
+            }
+
+            // When the document is fully loaded, show the "Create Cluster" tab by default
+            document.addEventListener('DOMContentLoaded', () => {
+                showTab('create-cluster');
+            });
+        </script>
     </body>
 </html>
