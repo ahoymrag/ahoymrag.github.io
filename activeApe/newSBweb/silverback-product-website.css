@@ -74,7 +74,7 @@ nav img {
   /* Ensure the image fits within the square dimensions */
 }
 
-.two-col {
+.two-col>article {
   padding-right: 40px;
 }
 
