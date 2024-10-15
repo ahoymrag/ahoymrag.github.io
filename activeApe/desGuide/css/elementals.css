@@ -773,7 +773,6 @@ section:hover {
     flex-direction: column;
     /* Stack children vertically */
     overflow: hidden;
-    /* Prevent overflow on mobile */
 }
 
 .center-flex {
@@ -1324,4 +1323,63 @@ object details {
     font-weight: 400;
     line-height: 24px;
     word-wrap: break-word
+}
+
+
+/*TAB CONTAINER FOR CODE*/
+
+.responsive-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.tab-container,
+.tab-content {
+    flex: 1 1 50%;
+    max-width: 50%;
+    box-sizing: border-box;
+}
+
+.tabs {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+}
+
+.tab-button {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.tab-button.active {
+    border-bottom: 2px solid #000;
+    font-weight: bold;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content pre {
+
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.tab-content code {
+    display: block;
+    white-space: pre-wrap;
+}
+
+@media (max-width: 768px) {
+
+    .tab-container,
+    .tab-content {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
 }
