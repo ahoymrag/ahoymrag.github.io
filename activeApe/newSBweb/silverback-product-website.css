@@ -74,6 +74,9 @@ nav img {
   /* Ensure the image fits within the square dimensions */
 }
 
+.two-col {
+  padding-right: 40px;
+}
 
 .nav-links {
   display: flex;
