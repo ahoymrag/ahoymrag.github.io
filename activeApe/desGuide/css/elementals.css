@@ -1308,15 +1308,14 @@ object details {
 }
 
 
-
-.two-col article img {
+.two-col>article img {
     width: 100%;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.two-col article p {
+.two-col>article p {
     color: var(--primary-text-color);
     font-size: 16px;
     font-family: Barlow;
@@ -1343,7 +1342,7 @@ object details {
 
 .tabs {
     display: flex;
-    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
 }
 
 .tab-button {
