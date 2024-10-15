@@ -11,13 +11,10 @@
 .layout-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  /* Reduce the gap between grid items */
-  padding: 20px;
-  /* Optional: Adjust padding if needed */
+
 }
 
-.layout-grid article {
+.layout-grid>article {
   margin: 0;
   /* Remove any default margin */
   padding: 10px;
@@ -77,9 +74,6 @@ nav img {
   /* Ensure the image fits within the square dimensions */
 }
 
-.layout-grid {
-  background-color: red;
-}
 
 .nav-links {
   display: flex;
@@ -126,6 +120,7 @@ nav img {
   align-items: center;
   justify-content: center;
   min-height: 50vh;
+
   /* Ensure background matches the theme */
   color: #fff;
   /* Text color */
@@ -152,6 +147,18 @@ nav img {
   margin-bottom: 20px;
   margin-top: 20px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.wait-list p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  max-width: 350px;
 }
 
 .wait-list input[type="email"] {
@@ -262,6 +269,9 @@ nav img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  max-width: 400px;
+  margin: 0 auto;
+  /* Center the elements horizontally */
 }
 
 #feature-1 p,
