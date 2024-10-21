@@ -7,10 +7,29 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
+
         <div id="photo-gallery">
-            <div id="photo-container"></div>
-            <button id="back-button" onclick="goBack()">Back to Home</button>
+            <div id="gallery-container"></div>
         </div>
-        <script src="2024.js"></script>
+        <div class="collection">
+            <p>2024 Collection</p>
+            <p>photographer |</p>
+            <p>Alex Gonzalez</p>
+        </div>
+        <!-- Feedback Form -->
+        <form id="feedback-form"
+            action="https://formspree.io/f/yourFormID"
+            method="POST">
+            <input type="text" name="name" placeholder="Your Name"
+                required>
+            <input type="email" name="email" placeholder="Your Email"
+                required>
+            <textarea name="message" placeholder="Your Feedback"
+                rows="5"
+                required></textarea>
+            <button type="submit">Send Feedback</button>
+        </form>
+
+        <script src="2024photos.js"></script>
     </body>
 </html>

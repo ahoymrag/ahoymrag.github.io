@@ -1,14 +1,14 @@
 {
     "photos": [
-        { "id": 1, "year": 2024, "url": "https://via.placeholder.com/1600x900" },
-        { "id": 2, "year": 2024, "url": "https://via.placeholder.com/1600x900" },
-        { "id": 3, "year": 2024, "url": "https://via.placeholder.com/1600x900" },
-        { "id": 4, "year": 2024, "url": "https://via.placeholder.com/1600x900" },
-        { "id": 5, "year": 2024, "url": "https://via.placeholder.com/1600x900" },
-        { "id": 6, "year": 2024, "url": "https://via.placeholder.com/1600x900" },
-        { "id": 7, "year": 2024, "url": "https://via.placeholder.com/1600x900" },
-        { "id": 8, "year": 2024, "url": "https://via.placeholder.com/1600x900" },
-        { "id": 9, "year": 2024, "url": "https://via.placeholder.com/1600x900" },
-        { "id": 10, "year": 2024, "url": "https://via.placeholder.com/1600x900" }
+        { "id": 1, "year": 2024, "url": "https://storage.googleapis.com/ag-photography/2024/0%20ag-photography-2024.JPG" },
+        { "id": 2, "year": 2024, "url": "https://storage.googleapis.com/ag-photography/2024/1%20ag-photography-2024.JPG" },
+        { "id": 3, "year": 2024, "url": "https://storage.googleapis.com/ag-photography/2024/2%20ag-photography-2024.JPG" },
+        { "id": 4, "year": 2024, "url": "https://storage.googleapis.com/ag-photography/2024/3%20ag-photography-2024.JPG" },
+        { "id": 5, "year": 2024, "url": "https://storage.googleapis.com/ag-photography/2024/4%20ag-photography-2024.JPG" },
+        { "id": 6, "year": 2024, "url": "https://storage.googleapis.com/ag-photography/2024/5%20ag-photography-2024.JPG" },
+        { "id": 7, "year": 2024, "url": "https://storage.googleapis.com/ag-photography/2024/6%20ag-photography-2024.JPG" },
+        { "id": 8, "year": 2024, "url": "https://storage.googleapis.com/ag-photography/2024/7%20ag-photography-2024.JPG" },
+        { "id": 9, "year": 2024, "url": "https://storage.googleapis.com/ag-photography/2024/8%20ag-photography-2024.JPG" },
+        { "id": 10, "year": 2024, "url": "https://storage.googleapis.com/ag-photography/2024/9%20ag-photography-2024.JPG" }
     ]
 }

@@ -2,24 +2,24 @@ let currentPhotoIndex = 0;
 let photos = [];
 
 // Fetch photos from JSON
-fetch('photos.json')
+fetch('2024photos.json') // Ensure this path is correct relative to your HTML file
     .then(response => response.json())
     .then(data => {
         photos = data.photos;
-        showPhoto(currentPhotoIndex);
+        showGallery();
     });
 
-function showPhoto(index) {
-    const photoContainer = document.getElementById('photo-container');
-    photoContainer.style.backgroundImage = `url(${photos[index]})`;
+function showGallery() {
+    const galleryContainer = document.getElementById('gallery-container');
+    galleryContainer.innerHTML = ''; // Clear existing photos
 
-    // Automatically transition to the next photo
-    setTimeout(() => {
-        currentPhotoIndex = (currentPhotoIndex + 1) % photos.length;
-        showPhoto(currentPhotoIndex);
-    }, 3000); // Change photo every 3 seconds
+    // Display a grid of photos
+    photos.forEach(photo => {
+        const photoDiv = document.createElement('div');
+        photoDiv.className = 'photo-item';
+        photoDiv.style.backgroundImage = `url(${photo.url})`;
+        galleryContainer.appendChild(photoDiv);
+    });
 }
 
-function goBack() {
-    window.location.href = 'index.html';
-}
+

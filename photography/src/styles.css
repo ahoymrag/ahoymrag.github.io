@@ -2,11 +2,27 @@ body,
 html {
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    overflow-x: hidden;
+    /* Prevent horizontal scrolling */
     font-family: Arial, sans-serif;
+    height: 100%;
+    /* Ensure full height for scrolling */
 }
 
-#year-intro,
+#year-intro {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.5rem;
+    /* Tiny text */
+    height: 100vh;
+    /* Full viewport height for centering */
+    width: 100vw;
+    /* Full viewport width for centering */
+}
+
 #portfolio {
     display: flex;
     justify-content: center;
@@ -14,11 +30,6 @@ html {
     width: 100vw;
     height: 100vh;
     transition: opacity 1s ease-in-out;
-}
-
-#year-intro {
-    background-color: #000;
-    color: #fff;
 }
 
 #portfolio.hidden {
@@ -32,4 +43,88 @@ html {
     background-size: cover;
     background-position: center;
     transition: background-image 1s ease-in-out;
+}
+
+#gallery-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.photo-item {
+    width: 100vw;
+    /* Full viewport width */
+    height: 100vh;
+    /* Full viewport height */
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10px;
+    /* Space between photos */
+}
+
+#photo-gallery {
+    height: 100vh;
+    /* Full viewport height */
+    overflow-y: auto;
+    /* Enable vertical scrolling */
+}
+
+.collection {
+    position: relative;
+    background-color: #fff;
+    /* White background */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    gap: 10px;
+    padding: 20px;
+    /* Add padding for spacing */
+    border-radius: 10px;
+    /* Rounded corners */
+    /* Removed box-shadow for simplicity */
+}
+
+.collection p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 18px;
+    /* Slightly larger font size */
+    color: #333;
+    /* Darker text color for better readability */
+    font-weight: bold;
+    /* Bold text for emphasis */
+    font-family: 'Courier New', Courier, monospace;
+    /* Typewriter-style font */
+}
+
+#feedback-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ccc;
+}
+
+#feedback-form input,
+#feedback-form textarea {
+    width: 80%;
+    max-width: 400px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#feedback-form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
 }
