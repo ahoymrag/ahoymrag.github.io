@@ -174,3 +174,20 @@ button:hover {
     backdrop-filter: blur(12px);
     /* Increase blur on hover */
 }
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+    .collection p {
+        font-size: 16px;
+    }
+
+    #feedback-form input,
+    #feedback-form textarea {
+        width: 90%;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
