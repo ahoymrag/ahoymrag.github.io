@@ -1,0 +1,14 @@
+{
+    "photos": [
+        { "id": 1, "year": 2024, "url": "https://via.placeholder.com/1600x900" },
+        { "id": 2, "year": 2024, "url": "https://via.placeholder.com/1600x900" },
+        { "id": 3, "year": 2024, "url": "https://via.placeholder.com/1600x900" },
+        { "id": 4, "year": 2024, "url": "https://via.placeholder.com/1600x900" },
+        { "id": 5, "year": 2024, "url": "https://via.placeholder.com/1600x900" },
+        { "id": 6, "year": 2024, "url": "https://via.placeholder.com/1600x900" },
+        { "id": 7, "year": 2024, "url": "https://via.placeholder.com/1600x900" },
+        { "id": 8, "year": 2024, "url": "https://via.placeholder.com/1600x900" },
+        { "id": 9, "year": 2024, "url": "https://via.placeholder.com/1600x900" },
+        { "id": 10, "year": 2024, "url": "https://via.placeholder.com/1600x900" }
+    ]
+}

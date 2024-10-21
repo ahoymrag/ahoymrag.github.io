@@ -1,0 +1,35 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+#year-intro,
+#portfolio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    transition: opacity 1s ease-in-out;
+}
+
+#year-intro {
+    background-color: #000;
+    color: #fff;
+}
+
+#portfolio.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#photo-container {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 1s ease-in-out;
+}
