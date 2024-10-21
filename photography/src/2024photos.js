@@ -13,6 +13,9 @@ function showGallery() {
     const galleryContainer = document.getElementById('gallery-container');
     galleryContainer.innerHTML = ''; // Clear existing photos
 
+    // Shuffle photos array
+    photos = photos.sort(() => Math.random() - 0.5);
+
     // Display a grid of photos
     photos.forEach(photo => {
         const photoDiv = document.createElement('div');
@@ -21,5 +24,6 @@ function showGallery() {
         galleryContainer.appendChild(photoDiv);
     });
 }
+
 
 
