@@ -85,7 +85,7 @@ html {
     width: 100%;
     justify-content: center;
     align-items: center;
-    height: 10vh;
+    min-height: 10vh;
     gap: 10px;
     padding: 20px;
     /* Add padding for spacing */
