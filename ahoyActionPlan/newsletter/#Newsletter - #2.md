@@ -1,0 +1,3 @@
+#Newsletter - #2
+
+Okay so it has been a hot minute - long story short - some things on the day job have been jobbin the day - and thus the constant ahoy data stream just doesn't seem there - like it used to be - but I am happy with where the platform rests - for I want to take things so - lest this be a platform like all the others - good things take time -and for this season of busy day job work - it is hard - but I hope that ahoy lives on beyond the mountain - 
