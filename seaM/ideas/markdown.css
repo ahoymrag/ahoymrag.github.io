@@ -1,30 +1,72 @@
-/* Page setup for print or PDF export */
+/* General body settings for a screenplay */
 @page {
-  size: A4;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  margin-left: 70px;
-  margin-right: 70px;
+  size: Letter;
+  margin: 1in;
 }
 
-/* General HTML and body styling */
 html,
 body {
+  font-family: Courier, monospace;
+  font-size: 12pt;
   margin: 0;
   padding: 0;
-  font-family: Roboto, sans-serif;
-  font-size: 12px;
+  line-height: 1.5;
 }
 
-/* Body container with a maximum width */
-body {
-  display: block;
-  max-width: 700px;
-  margin: 0 auto;
-  padding: 0;
+/* Scene headings (INT./EXT. location - time) */
+.scene-heading {
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+  text-align: left;
+  font-weight: bold;
 }
 
-/* Styling for lists */
-li {
-  line-height: 118%;
+/* Action/description (non-dialogue text) */
+.action {
+  margin: 0;
+  padding-left: 0;
+  text-align: left;
+  text-indent: 0;
+}
+
+/* Character names (before dialogue) */
+.character {
+  margin: 1em 0 0.5em;
+  text-transform: uppercase;
+  text-align: center;
+  padding-left: 3in; /* Indented to approx 3 inches from the left */
+  font-weight: bold;
+}
+
+/* Dialogue formatting */
+.dialogue {
+  margin: 0;
+  padding-left: 2in; /* Indented to approx 2 inches from the left */
+  text-align: left;
+  width: 3.5in; /* Width of the dialogue block */
+}
+
+/* Parentheticals (directions for actors during dialogue) */
+.parenthetical {
+  margin: 0.25em 0;
+  padding-left: 2.5in;
+  font-style: italic;
+  text-align: left;
+}
+
+/* Voiceover (V.O.) or Off-Screen (O.S.) annotations */
+.voiceover {
+  margin-left: 3in;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* Transitions (CUT TO:, FADE OUT:) */
+.transition {
+  margin-top: 2em;
+  text-transform: uppercase;
+  text-align: right;
+  font-weight: bold;
 }

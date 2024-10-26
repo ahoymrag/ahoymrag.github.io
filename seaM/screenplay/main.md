@@ -5,6 +5,20 @@ date: 2024-09-29
 updated: 2024-10-09
 ---
 
+<link rel="stylesheet" href="seaM-md-css.css">
+
+# A LONG LONG TIME AGO
+
+## Scene 0: Thunderstorm down south
+
+Flashes of a thunderstorm - Flashes of a mother playing with her son - and building bird houses - flashes of wind hitting the breeze in the mountains - and flashes of a vacaction up north - up towards new england - flashes of a seaside beach town - flashes of a big thunderstorm - flashes of the mom and the dog driving doing errands - flashes of Dallas setting up an instrument and pointing it towards the sky - flashes of Mac helping him - flashes of the woods - flashes of the dark grass - flashes of the mother coming back and running away from the dog - towards the light -
+
+Flashes of a funeral.
+
+**VO MAC**
+Life doesn't seem to control anything - just not the way that light does. The man from the funeral home had a nephew who was slow - he was showing me off wrestling magazines and talked about how life throws the lemons at the champion and the champion always squashes the lemons - I nodded but later have come to think about this quote often - life throwing things at me - what is life? Does life have a mind? Does life make decisions? What does that mean? <br>
+I went on the internet that night and found that quote scattered everywhere. But then I realized that I was wrong in the looking.
+
 # SATURDAY
 
 ## Scene 1: EXT. WINDY SEASIDE ROAD - DAY
