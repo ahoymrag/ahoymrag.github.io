@@ -478,7 +478,7 @@ _Mac hesitates, then nods and grabs a nearby shovel. As he hands it over, Molly 
 **MAKAYLA**
 _(lowering her voice)_
 
-> Alright, we need to move quickly. The storm's coming, and if we're going this thing out lure it out, we ought to do it now. Asher, you're on lookout on the outer banks. Misty, make sure the bait's ready. We'll set the traps near the tall grass, just like we planned.
+> Alright, we move quickly. Asher, you're on lookout on the outer banks. Misty, handles all aspects of the bait. Set the traps near the tall grass.  
 
 _The other kids nod, following Molly's lead. Mac watches, intrigued and nervous._
 
