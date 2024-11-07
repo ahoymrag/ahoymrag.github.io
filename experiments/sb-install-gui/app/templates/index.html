@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Install Silverback</title>
+        <script>
+        async function installSilverback() {
+            const response = await fetch("/install_silverback", {
+                method: "POST"
+            });
+            const result = await response.json();
+            
+            if (result.status === "success") {
+                document.getElementById("output").innerText = "Installation successful!\n" + result.output;
+            } else {
+                document.getElementById("output").innerText = "Error during installation:\n" + result.output;
+            }
+        }
+    </script>
+    </head>
+    <body>
+        <h1>Silverback Installer</h1>
+        <button onclick="installSilverback()">Install Silverback</button>
+        <pre id="output"></pre>
+
+        <!-- Explanation Section -->
+        <section id="explanation">
+            <h2>Application Overview</h2>
+            <p>This application is a simple web interface for installing
+                Silverback using Flask.</p>
+            <h3>Backend (app.py)</h3>
+            <ul>
+                <li>Uses Flask to create a web application.</li>
+                <li>Defines two routes:
+                    <ul>
+                        <li><code>/</code>: Serves the index.html page.</li>
+                        <li><code>/install_silverback</code>: Handles POST
+                            requests to install Silverback.</li>
+                    </ul>
+                </li>
+                <li>Checks for a virtual environment and installs Silverback
+                    using pip.</li>
+                <li>Returns JSON responses indicating success or failure.</li>
+            </ul>
+            <h3>Frontend (index.html)</h3>
+            <ul>
+                <li>Contains a button to trigger the installation process.</li>
+                <li>Uses JavaScript to send a POST request to the backend.</li>
+                <li>Displays the result of the installation process on the
+                    page.</li>
+            </ul>
+        </section>
+    </body>
+</html>
