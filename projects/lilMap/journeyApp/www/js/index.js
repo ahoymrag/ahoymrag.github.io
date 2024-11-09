@@ -1,24 +1,45 @@
-
-
 let map;
 let journeyPath;
 let watchId;
 
 function initMap() {
-    map = new google.maps.Map(document.getElementById('map'), {
-        center: { lat: -34.397, lng: 150.644 }, // Default center
-        zoom: 8
-    });
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(position => {
+            const pos = {
+                lat: position.coords.latitude,
+                lng: position.coords.longitude
+            };
 
-    journeyPath = new google.maps.Polyline({
-        path: [],
-        geodesic: true,
-        strokeColor: '#FF0000',
-        strokeOpacity: 1.0,
-        strokeWeight: 2
-    });
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: pos, // Center map on current location
+                zoom: 15 // Adjust zoom level as needed
+            });
 
-    journeyPath.setMap(map);
+            journeyPath = new google.maps.Polyline({
+                path: [],
+                geodesic: true,
+                strokeColor: '#FF0000',
+                strokeOpacity: 1.0,
+                strokeWeight: 2
+            });
+
+            journeyPath.setMap(map);
+        }, error => {
+            console.error('Error occurred. Error code: ' + error.code);
+            // Fallback to a default location if geolocation fails
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: { lat: -34.397, lng: 150.644 }, // Default center
+                zoom: 8
+            });
+        });
+    } else {
+        console.error('Geolocation is not supported by this browser.');
+        // Fallback to a default location if geolocation is not supported
+        map = new google.maps.Map(document.getElementById('map'), {
+            center: { lat: -34.397, lng: 150.644 }, // Default center
+            zoom: 8
+        });
+    }
 }
 
 function startJourney() {
