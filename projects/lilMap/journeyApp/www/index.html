@@ -3,18 +3,40 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Journey Tracker</title>
+        <title>Just a Little Map</title>
         <style>
+        body {
+            background-color: #ececa3; /* Light background */
+            color: #607c3c; /* Text color */
+            font-family: Arial, sans-serif;
+        }
         #map {
-            height: 100vh;
+            height: 80vh;
             width: 100%;
+            border: 2px solid #abc32f; /* Border around the map */
+        }
+        button {
+            background-color: #b5e550; /* Button background */
+            color: #607c3c; /* Button text color */
+            border: none;
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #abc32f; /* Button hover effect */
+        }
+        h1 {
+            color: #809c13; /* Header color */
+            text-align: center;
         }
     </style>
         <script
             src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY"></script>
     </head>
     <body>
-        <h1>Journey Tracker</h1>
+        <h1>Just a Little Map</h1>
         <div id="map"></div>
         <button onclick="startJourney()">Start Journey</button>
         <button onclick="stopJourney()">Stop Journey</button>
