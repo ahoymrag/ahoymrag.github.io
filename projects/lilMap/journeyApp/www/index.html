@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Journey Tracker</title>
+        <style>
+        #map {
+            height: 100vh;
+            width: 100%;
+        }
+    </style>
+        <script
+            src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY"></script>
+    </head>
+    <body>
+        <h1>Journey Tracker</h1>
+        <div id="map"></div>
+        <button onclick="startJourney()">Start Journey</button>
+        <button onclick="stopJourney()">Stop Journey</button>
+        <script src="js/index.js"></script>
+    </body>
+</html>
