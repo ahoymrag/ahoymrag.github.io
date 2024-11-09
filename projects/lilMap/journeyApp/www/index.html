@@ -4,6 +4,19 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Just a Little Map</title>
+        <script>
+            document.addEventListener("deviceready", function() {
+                var div = document.getElementById("map");
+    
+                // Initialize the map plugin
+                var map = plugin.google.maps.Map.getMap(div);
+    
+                // Show the map
+                map.addEventListener(plugin.google.maps.event.MAP_READY, function() {
+                    map.setCameraZoom(15);
+                });
+            });
+        </script>
         <style>
         body {
             background-color: #ececa3; /* Light background */
@@ -33,7 +46,7 @@
         }
     </style>
         <script
-            src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY"></script>
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpzseDyV7F9FzZZDPrQlFIuTbOk37ZUAQ"></script>
     </head>
     <body>
         <h1>Just a Little Map</h1>

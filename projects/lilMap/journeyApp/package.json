@@ -11,5 +11,21 @@
     "ecosystem:cordova"
   ],
   "author": "Apache Cordova Team",
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "cordova-ios": "^7.1.1",
+    "cordova-plugin-googlemaps": "^2.7.1",
+    "cordova-plugin-googlemaps-sdk": "github:mapsplugin/cordova-plugin-googlemaps-sdk"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-googlemaps": {
+        "API_KEY_FOR_ANDROID": "AIzaSyCpzseDyV7F9FzZZDPrQlFIuTbOk37ZUAQ",
+        "API_KEY_FOR_IOS": "AIzaSyCpzseDyV7F9FzZZDPrQlFIuTbOk37ZUAQ"
+      }
+    },
+    "platforms": [
+      "ios"
+    ]
+  }
 }
