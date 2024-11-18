@@ -36,7 +36,7 @@
         "title": "CPC Web App",
         "summary": "A comprehensive web application for CPC management.",
         "link": "./cpc-web-app/index.html",
-        "description": "The CPC Web App is a robust tool designed to streamline the management of CPC processes. I was responsible for the full-stack development of the application, ensuring a seamless user experience and efficient data handling. This project showcases my proficiency in web development, problem-solving skills, and ability to deliver high-quality software solutions.",
+        "description": "The CPC Web App is a robust tool designed to streamline the management of CPC processes. I was responsible for the full-stack development of the application, ensuring user experience and efficient data handling. This project showcases proficiency in web development, problem-solving skills, and ability to deliver high-quality software solutions.",
         "images": [
             "./cpc-web-app/image1.jpg",
             "./cpc-web-app/image2.jpg"
@@ -53,9 +53,9 @@
     },
     {
         "title": "Ahoy Indie Media Launch",
-        "summary": "Launching a new platform for indie media creators.",
+        "summary": "Launching a new platform for indie media.",
         "link": "./ahoy-indie-media-launch/index.html",
-        "description": "This project involved the launch of a new digital platform aimed at supporting indie media creators. I managed the project from concept to execution, including market research, platform design, and promotional strategies. This project demonstrates my project management skills, creativity, and ability to bring innovative ideas to life.",
+        "description": "This project involved the launch of a new digital platform aimed at supporting indie media creators. Concept to execution, including market research, platform design, and promotional strategies. This project demonstrates management skills, creativity, and ability to bring ideas to life.",
         "images": [
             "./ahoy-indie-media-launch/image1.jpg",
             "./ahoy-indie-media-launch/image2.jpg"
@@ -74,7 +74,7 @@
         "title": "Screenplays",
         "summary": "A collection of screenplays written over the years.",
         "link": "./screenplays/index.html",
-        "description": "This collection features a variety of screenplays that I have written, showcasing my storytelling abilities and creative writing skills. Each screenplay explores different themes and genres, reflecting my versatility and passion for narrative creation. This project highlights my ability to craft engaging stories and develop complex characters.",
+        "description": "This collection features a variety of screenplays that I have written, Each screenplay explores different themes and genres, This project highlights ability to craft stories and develop characters.",
         "images": [
             "./screenplays/image1.jpg",
             "./screenplays/image2.jpg"
@@ -86,7 +86,7 @@
         "title": "Misc Projects",
         "summary": "Various projects spanning different domains.",
         "link": "./misc-projects/index.html",
-        "description": "The Misc Projects portfolio includes a diverse range of projects that I have undertaken, from software development to creative endeavors. Each project demonstrates my adaptability, technical skills, and commitment to continuous learning. This collection is a testament to my ability to tackle challenges across various fields and deliver successful outcomes.",
+        "description": "The Misc Projects portfolio includes a range of projects that I have undertaken, Each project demonstrates adaptability and commitment to continuous learning. This collection is a testament to my attempt to tackle challenges across fields and deliver outcomes.",
         "images": [
             "./misc-projects/image1.jpg",
             "./misc-projects/image2.jpg"
