@@ -2,9 +2,9 @@
 
     {
         "title": "Silverback",
-        "summary": "An innovative approach to wildlife conservation.",
+        "summary": "Silverback lets you create and deploy your own Python bots that respond to on-chain events.",
         "link": "./silverback/index.html",
-        "description": "Silverback is a project focused on developing new strategies for wildlife conservation. I led a team in designing a digital platform that tracks animal movements and provides data analytics to conservationists. This project highlights my leadership skills, technical expertise in data analysis, and commitment to environmental sustainability.",
+        "description": "Silverback is a library that leverages the Ape development framework to enable the development of automated bots that monitor and respond to live chain data. It is ideal for use cases involving continuous monitoring of on-chain events, such as newly confirmed blocks or contract event logs.",
         "images": [
             "./silverback/image1.jpg",
             "./silverback/image2.jpg"
@@ -17,7 +17,20 @@
                 "type": "GitHub",
                 "url": "https://github.com/username/silverback"
             }
-        ]
+        ],
+        "contributions": {
+            "roles": [
+                "Frontend Development",
+                "Design",
+                "Marketing",
+                "Logo Design"
+            ],
+            "tools": [
+                "JavaScript",
+                "HTMX",
+                "Figma"
+            ]
+        }
     },
     {
         "title": "CPC Web App",

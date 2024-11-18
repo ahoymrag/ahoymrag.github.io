@@ -35,6 +35,16 @@
                             ${project.images.map(image => `<img src="${image}" alt="${project.title} image" class="project-image">`).join('')}
                             ${project.videos.map(video => `<iframe src="${video}" frameborder="0" allowfullscreen class="project-video"></iframe>`).join('')}
                             ${project.additionalLinks.map(link => `<a href="${link.url}" target="_blank">${link.type}</a>`).join('')}
+                            <div class="project-contributions">
+                                <h3>Contributions</h3>
+                                <ul>
+                                    ${project.contributions.roles.map(role => `<li>${role}</li>`).join('')}
+                                </ul>
+                                <h3>Tools Used</h3>
+                                <ul>
+                                    ${project.contributions.tools.map(tool => `<li>${tool}</li>`).join('')}
+                                </ul>
+                            </div>
                             <a class="back-to-business-button" href="${project.link}">Read More</a>
                         `;
                     } else {
