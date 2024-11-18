@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>2024 Project Routing</title>
+        <title>2024 Project Showcase</title>
         <link rel="stylesheet" href="2024-style.css">
         <style>
             body {
@@ -25,6 +25,12 @@
             h1 {
                 font-size: 2.5em;
                 margin: 0;
+            }
+
+            .year-summary {
+                font-size: 1.2em;
+                color: #666;
+                margin: 20px 0;
             }
 
             main {
@@ -87,6 +93,12 @@
                 color: #666;
             }
 
+            .bio {
+                font-size: 1em;
+                color: #333;
+                margin-top: 10px;
+            }
+
             .back-home-button {
                 display: inline-block;
                 margin-top: 20px;
@@ -105,77 +117,40 @@
     </head>
     <body>
         <header>
-            <h1>2024 Project Routing</h1>
-            <p>This is a list of projects I've worked on in 2024.</p>
+            <h1>2024 Project Showcase</h1>
+            <p class="year-summary">A year of innovation and creativity,
+                showcasing projects that highlight my skills and
+                achievements.</p>
         </header>
         <main>
-            <ul>
-                <li>
-                    <div class="project-thumbnail"></div>
-                    <div class="project-description">
-                        <div class="project-title">New Haven Indie</div>
-                        <div class="project-summary">A deep dive into the indie
-                            music scene of New Haven.</div>
-                        <a class="back-to-business-button"
-                            href="../newHavenIndie/index.html">Read More</a>
-                    </div>
-                </li>
-                <li>
-                    <div class="project-thumbnail"></div>
-                    <div class="project-description">
-                        <div class="project-title">Silverback</div>
-                        <div class="project-summary">An innovative approach to
-                            wildlife conservation.</div>
-                        <a class="back-to-business-button"
-                            href="./silverback/index.html">Read More</a>
-                    </div>
-                </li>
-                <li>
-                    <div class="project-thumbnail"></div>
-                    <div class="project-description">
-                        <div class="project-title">CPC Web App</div>
-                        <div class="project-summary">A comprehensive web
-                            application for CPC management.</div>
-                        <a class="back-to-business-button"
-                            href="./cpc-web-app/index.html">Read More</a>
-                    </div>
-                </li>
-                <li>
-                    <div class="project-thumbnail"></div>
-                    <div class="project-description">
-                        <div class="project-title">Ahoy Indie Media Launch</div>
-                        <div class="project-summary">Launching a new platform
-                            for indie media creators.</div>
-                        <a class="back-to-business-button"
-                            href="./ahoy-indie-media-launch/index.html">Read
-                            More</a>
-                    </div>
-                </li>
-                <li>
-                    <div class="project-thumbnail"></div>
-                    <div class="project-description">
-                        <div class="project-title">Screenplays</div>
-                        <div class="project-summary">A collection of screenplays
-                            written over the years.</div>
-                        <a class="back-to-business-button"
-                            href="./screenplays/index.html">Read More</a>
-                    </div>
-                </li>
-                <li>
-                    <div class="project-thumbnail"></div>
-                    <div class="project-description">
-                        <div class="project-title">Misc Projects</div>
-                        <div class="project-summary">Various projects spanning
-                            different domains.</div>
-                        <a class="back-to-business-button"
-                            href="./misc-projects/index.html">Read More</a>
-                    </div>
-                </li>
+            <ul id="project-list">
+                <!-- Projects will be dynamically inserted here -->
             </ul>
             <a class="back-home-button" href="../index.html">Back to Home</a>
         </main>
         <footer>
             <p>© 2024 Alex Gonzalez</p>
         </footer>
+        <script>
+            fetch('projects.json')
+                .then(response => response.json())
+                .then(data => {
+                    const projectList = document.getElementById('project-list');
+                    data.forEach(project => {
+                        const listItem = document.createElement('li');
+                        listItem.innerHTML = `
+                            <div class="project-thumbnail"></div>
+                            <div class="project-description">
+                                <div class="project-title">${project.title}</div>
+                                <div class="project-summary">${project.summary}</div>
+                                <a class="back-to-business-button" href="${project.link}">Read More</a>
+                                ${project.bio ? `<div class="bio">${project.bio}</div>` : ''}
+                            </div>
+                        `;
+                        projectList.appendChild(listItem);
+                    });
+                })
+                .catch(error => console.error('Error loading projects:', error));
+        </script>
     </body>
 </html>

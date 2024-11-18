@@ -1,0 +1,33 @@
+[
+    {
+        "title": "New Haven Indie",
+        "summary": "A deep dive into the indie music scene of New Haven.",
+        "bio": "In this project, I explored the vibrant indie music culture, capturing the essence of local talent and community spirit.",
+        "link": "../newHavenIndie/index.html"
+    },
+    {
+        "title": "Silverback",
+        "summary": "An innovative approach to wildlife conservation.",
+        "link": "./silverback/index.html"
+    },
+    {
+        "title": "CPC Web App",
+        "summary": "A comprehensive web application for CPC management.",
+        "link": "./cpc-web-app/index.html"
+    },
+    {
+        "title": "Ahoy Indie Media Launch",
+        "summary": "Launching a new platform for indie media creators.",
+        "link": "./ahoy-indie-media-launch/index.html"
+    },
+    {
+        "title": "Screenplays",
+        "summary": "A collection of screenplays written over the years.",
+        "link": "./screenplays/index.html"
+    },
+    {
+        "title": "Misc Projects",
+        "summary": "Various projects spanning different domains.",
+        "link": "./misc-projects/index.html"
+    }
+]
