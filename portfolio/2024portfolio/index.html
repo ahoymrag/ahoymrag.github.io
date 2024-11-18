@@ -136,15 +136,14 @@
                 .then(response => response.json())
                 .then(data => {
                     const projectList = document.getElementById('project-list');
-                    data.forEach(project => {
+                    data.forEach((project, index) => {
                         const listItem = document.createElement('li');
                         listItem.innerHTML = `
-                            <div class="project-thumbnail"></div>
+                            <div class="project-thumbnail" style="background-image: url('${project.images[0]}');"></div>
                             <div class="project-description">
                                 <div class="project-title">${project.title}</div>
                                 <div class="project-summary">${project.summary}</div>
-                                <a class="back-to-business-button" href="${project.link}">Read More</a>
-                                ${project.bio ? `<div class="bio">${project.bio}</div>` : ''}
+                                <a class="back-to-business-button" href="project-template.html?id=${index}">Read More</a>
                             </div>
                         `;
                         projectList.appendChild(listItem);
