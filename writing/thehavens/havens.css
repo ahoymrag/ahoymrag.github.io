@@ -1,0 +1,77 @@
+/* General document styling */
+body {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 12pt;
+  line-height: 1.5;
+  margin: 1in;
+  max-width: 6in;
+  /* Typical width for a printed book */
+}
+
+/* Title styling */
+h1 {
+  font-size: 24pt;
+  text-align: center;
+  margin-top: 2in;
+  margin-bottom: 1in;
+}
+
+/* Chapter headings */
+h2 {
+  font-size: 18pt;
+  text-align: center;
+  margin-top: 1.5in;
+  margin-bottom: 1in;
+}
+
+/* Paragraph styling */
+p {
+  text-indent: 0.5in;
+  margin: 0;
+  margin-bottom: 0.5in;
+}
+
+/* Blockquote styling */
+blockquote {
+  font-style: italic;
+  margin-left: 0.5in;
+  margin-right: 0.5in;
+  padding-left: 0.5in;
+  border-left: 2px solid #ccc;
+}
+
+/* Code block styling */
+pre,
+code {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 10pt;
+  background-color: #f4f4f4;
+  padding: 0.5em;
+  border-radius: 4px;
+}
+
+/* Horizontal rule styling */
+hr {
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 2em 0;
+}
+
+/* Image styling */
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+/* List styling */
+ul,
+ol {
+  margin: 0;
+  padding-left: 1.5em;
+  margin-bottom: 0.5in;
+}
+
+li {
+  margin-bottom: 0.25in;
+}
