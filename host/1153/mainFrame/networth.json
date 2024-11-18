@@ -1,0 +1,16 @@
+{
+  "net_worth": [
+    { "date": "Dec 31, 2023", "value": 103090 },
+    { "date": "Jan 31, 2024", "value": 102305 },
+    { "date": "Feb 29, 2024", "value": 105200 },
+    { "date": "Mar 31, 2024", "value": 108852 },
+    { "date": "Apr 30, 2024", "value": 99206 },
+    { "date": "May 31, 2024", "value": 103330 },
+    { "date": "Jun 30, 2024", "value": 107619 },
+    { "date": "Jul 31, 2024", "value": 106452 },
+    { "date": "Aug 31, 2024", "value": 111010 },
+    { "date": "Sep 30, 2024", "value": 111914 },
+    { "date": "Oct 31, 2024", "value": 113725 },
+    { "date": "Nov 30, 2024", "value": 116321 }
+  ]
+}

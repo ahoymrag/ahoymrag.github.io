@@ -26,7 +26,16 @@ new Vue({
         { name: 'MBRSHIP - INTERNAL SA RI', amount: '$8.91', account: '••6053', frequency: 'Monthly' },
         { name: 'RADIODOTCO 35314369001', amount: '$35.00', account: '••5316', frequency: 'Monthly' },
         { name: 'Vanguard Investments', amount: '$50.00', account: '••6053', frequency: 'Monthly' },
-      ]
+      ],
+      netWorth: []
+    },
+    created() {
+      fetch('networth.json')
+        .then(response => response.json())
+        .then(data => {
+          this.netWorth = data.net_worth;
+        })
+        .catch(error => console.error('Error loading net worth data:', error));
     }
   });
   
