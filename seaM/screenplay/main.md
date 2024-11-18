@@ -372,6 +372,17 @@ _(speaking softly)_
 
 > He does physics and nuclear theoretical stuff.
 
+**MAKAYLA**
+> He doesn't talk much does he.
+
+**MAC**
+> No
+
+**MAKAYLA**
+> He see's things doesn't he? Things that arent there?
+
+_Mac doesn't respond - a long break. 
+
 _The atmosphere is tense. Strange, wild sounds echo in the distance, like coyotes letting loose - and howling from far - and then close._
 
 **ASHER**
@@ -382,14 +393,11 @@ _The kids freeze, glancing around. MAKAYLA grabs out a small audio recorder that
 
 ## Scene 23: EXT. MAC'S HOUSE - NIGHT
 
-_Mac_ pedals home as fast as he can, the events of the evening still fresh in his mind. When he arrives, he sees _Dallas_ outside, watching the bird feeder.
+_Mac_ pedals home as fast as he can, the events of the evening still fresh in his mind. When he arrives, he sees _Dallas_ outside, watching the bird feeder sway with the wind.
 
 Without hesitation, _Mac_ runs to him and gives him a tight hug.
 
-**DALLAS**
-What happened?
-
-_Before Mac can answer, they both hear the strange sound together--carried on the wind from the direction of the beach. Dallas looks out into the darkness, his concern growing._
+Dallas turns toward his son. And for a moment embrace - whilst doing so - they both hear the strange sound together--carried on the wind from the direction of the beach. Dallas looks out into the darkness, his concern growing._
 
 ## Scene 24: INT. NEW HOUSE - DINING ROOM - NIGHT
 
