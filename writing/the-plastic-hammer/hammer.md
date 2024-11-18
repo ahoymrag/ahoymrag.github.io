@@ -3,19 +3,39 @@ title: "The Plastic Hammer: The Lament"
 author: Alex Gonzalez
 date: 2024-11-17
 updated: 2024-10-09
+description: A story of life and death and the moments in between
 ---
 
 <link rel="stylesheet" href="hammer.css">
 
 # Feels
-
+## The verbal garbage of an introduction 
 This is chapter one - but I've been carrying this with me for years.
 The thought of writing scares me - because it, to my opinion, flirts so close to - somewhere I don't know if I want to go.
 Has to do with perception I suppose
 And a fear of being cringe.
 
 I distract and distract
-To get to this land
+To get to weight off of my shoulder
+A deep down feeling of responsiblity - to share 
+A deep well of timidity interfering with rational judgement
+because I am so afraid of saying "psh - tihs guy is out to lucn h - how it 
+would affect my imaginary career - who does he think he is- great another bro - of not wanting the public rejection - but 
+it also is selfishlessy theraputic - and I want people to have it - to hold on to the words when they are down 
+
+Not all the words will be 
+
+
+
+Halfbaked Theology
+Caveman Apology
+
+
+In the days of old 
+
+Rant and rave - rant and rave - 
+
+
 Its another place entirely
 And I run from it - run far from the land
 for I want to build a little island of my own.
@@ -27,7 +47,14 @@ Whatever the case may be - the truth is - we have found eachother - lest in word
 
 # Words are powerful
 
-Words are powerful are they not?
+Words are powerful - wouldn't you say?
+What would you say? 
+Words are powerful - hard to deny - especially whilst using words.
+And then one realizes the power as self evident. 
+And puts further weight on ones word.
+A person - has thea bility to have their word be perfect - and scandal happens when there word is broken. 
+
+
 We get amazed at babies - lest the author does.
 
 And this book was supposed to be something enlightened for the world.
@@ -42,7 +69,7 @@ Imposter syndrome madness
 # The Plastic Hammer
 
 It seems pretty clear - lest to the author - that death is at the door.
-Yet - one finds themself with an insatiable desire to live - and to live forever.
+Yet - death is an elusive enemey - that one must not conjur up lest one faces it. one finds themself with an insatiable desire to live - and to live forever.
 And one is afraid if they do not change their ways - they won't end up at the right place
 But the wrong place.
 The right place - where there is everyone you've ever met
@@ -64,7 +91,7 @@ the race of saint.
 
 What does it mean to be the race of saint?
 I think of the garden - moreover a path - morever marble with hedges - and flowers on the side of each.
-I think of the
+I think of pure clear water - flower beds that rise to perfume and the air sparkling - radiance 
 
 ## Life without Screens
 

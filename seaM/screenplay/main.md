@@ -395,19 +395,23 @@ _The kids freeze, glancing around. MAKAYLA grabs out a small audio recorder that
 
 _Mac_ pedals home as fast as he can, the events of the evening still fresh in his mind. When he arrives, he sees _Dallas_ outside, watching the bird feeder sway with the wind.
 
-Without hesitation, _Mac_ runs to him and gives him a tight hug.
+Without hesitation, _Mac_ runs to him and gives him a hug.
 
 Dallas turns toward his son. And for a moment embrace - whilst doing so - they both hear the strange sound together--carried on the wind from the direction of the beach. Dallas looks out into the darkness, his concern growing._
 
 ## Scene 24: INT. NEW HOUSE - DINING ROOM - NIGHT
 
-_Dallas_ and _Mac_ sit down on their couch for dinner. Tension still lingers in the air, and they eat quietly. The distant sounds of the night mix with the clatter of utensils, adding to the growing sense of unease.
+_Dallas_ and _Mac_ sit down on their couch for dinner. Tension lingers, and they eat quietly. The distant sounds of the night mix with the clatter of utensils, adding to the growing sense of unease.
 
-On the TV is the _WEATHERMAN_ - the same weatherman that was out the day before. He's talking about a hurricane that is quickly making its case, and how it is hurricane season. He urges viewers to be on the lookout.
+On the TV is the _WEATHERMAN_ - talking about how some hurricane quickly making headway along the southern coast, and how it is hurricane season. He urges viewers to be on the lookout.
 
 **FADE OUT.**
 
 # WEDNESDAY
+
+## Scene 25a EXT. Outside Morning 
+
+Dallas and Mac walk there dog. They walk it by a patch of grass - tall grass - and Dallas looks off into the distance - Mac watches his gaze - and soon does the Dog - the latter too now staring at the great no where - beneath the tall grass.
 
 ## Scene 25: EXT. DRIVEWAY - EVENING
 
@@ -431,7 +435,7 @@ _(gesturing with a fork full of ziti)_
 **DOMINIC**
 _(chuckling, gesturing with his fork)_
 
-> You know, it's wild that we're having a BBQ on a Wednesday, right? But that's just how our schedules are these days. Everyone's away on the weekends, picking apples and whatnot. We've got to squeeze in as many BBQs as we can while we still have breath in our lungs!
+> You know, it's wild that we're having this on a Wednesday, right? But that's just how our schedules are these days. Everyone's away on the weekends, picking apples and whatnot. We've got to squeeze in as many BBQs as we can while we still have breath in our lungs!
 
 _(takes a bite of ziti, then continues)_
 
@@ -474,34 +478,34 @@ _Suddenly, a faint whimper--like an animal in pain--echoes from the wilderness. 
 
 _Frightened, Mac steps back, ready to return to the party. But before he can leave, a group of kids emerges from the fog--MOLLY, ASHER, and others, including MISTY (13). They move purposefully, faces serious._
 
-_Molly steps forward, focusing on Mac._
+_Makayla steps forward, focusing on Mac._
 
 **MAKAYLA**
 _(firm, yet urgent)_
 
 > Mac, give me that shovel.
 
-_Mac hesitates, then nods and grabs a nearby shovel. As he hands it over, Molly turns to the group, her expression shifting to leadership._
+_Mac hesitates, then nods and grabs a nearby shovel. As he hands it over, Makayla turns to the group, her expression shifting to leadership._
 
 **MAKAYLA**
 _(lowering her voice)_
 
-> Alright, we move quickly. Asher, you're on lookout on the outer banks. Misty, handles all aspects of the bait. Set the traps near the tall grass.  
+> Alright, we move quickly. Asher, you're on the lookout on the outer banks. Misty, you are on the handling of all aspects bait. Set the traps near the tall grass and make sure the cameras are rolling - Mac - you have to make sure the cameras are rolling too - there will be multiple cameras - and we all will be rolling.   
 
 _The other kids nod, following Molly's lead. Mac watches, intrigued and nervous._
 
 **MAKAYLA**
 _(softly, reassuring)_
 
-> You with us, Mac?
+> You there Mac, Mac?
 
 _Mac takes a deep breath and nods._
 
 **MAKAYLA**
 
-> Let's go.
+> Alright.
 
-_The kids, led by Molly, move deeper into the tall grass, toward the tallest grass where the coast drops off into the sea. The fog thickens, and the air grows colder._
+_The kids, led by Makayla, move deeper into the tall grass, toward the tallest grass where the coast drops off into the sea. The fog thickens, and the air grows colder._
 
 ---
 
@@ -511,24 +515,13 @@ _The crew hang around the tallgrass - it gets thicker and thicker_
 
 _The crew searches the corner beach for evidence of lightning strikes and burn marks. They find nothing._
 
-**MAKAYLA**
-
-> You sure you saw it here?
-
-**MAC**
-
-> I thought I did
-
-**MAKAYLA**
-
-> We'll leave some traps here.
-
 _Makayla takes out a steak from Asher's backpack and puts it in the ground - Mac digs the shovel - and Asher slowly brings the chicken over and puts it on the steak_
 
 **JOCYLEN**
 
 > How do we know this isn't just a racoon or a coyote eating this?
 
+Mac and Asher diligently set up cameras on the surronding trees - they hook cables up to a battery pack taped onto a wooden panel
 ---
 
 ## Scene 29: EXT. THE SIDEWALK ON THE WAY HOME - LATE AFTERNOON
