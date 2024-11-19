@@ -13,12 +13,23 @@
             max-width: 800px;
             margin: 0 auto;
         }
+        table {
+            width: 100%;
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
     </style>
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     </head>
     <body>
         <h1>Net Worth Overview</h1>
-        <canvas id="netWorthChart"></canvas>
+
+        <div id="currentNetWorth"></div>
         <div>
             <h2>Predict Future Net Worth</h2>
             <label for="growthRate">Annual Growth Rate (%):</label>
@@ -28,6 +39,85 @@
             <button onclick="predictNetWorth()">Predict</button>
             <div id="predictionResult"></div>
         </div>
+        <div>
+            <h2>Net Worth Table</h2>
+            <table id="netWorthTable" border="1">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Value</th>
+                        <th>Change (%)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Table rows will be inserted here -->
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <h2>Prediction Table</h2>
+            <table id="predictionTable" border="1">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Predicted Value</th>
+                        <th>Predicted Change (%)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Prediction rows will be inserted here -->
+                </tbody>
+            </table>
+        </div>
         <script src="networth.js"></script>
+        <script>
+            fetch('networth.json')
+                .then(response => response.json())
+                .then(data => {
+                    const tableBody = document.getElementById('netWorthTable').getElementsByTagName('tbody')[0];
+                    let previousValue = null;
+                    let totalChange = 0;
+                    let changeCount = 0;
+
+                    data.net_worth.forEach(entry => {
+                        const row = tableBody.insertRow();
+                        const dateCell = row.insertCell(0);
+                        const valueCell = row.insertCell(1);
+                        const changeCell = row.insertCell(2);
+
+                        dateCell.textContent = entry.date;
+                        valueCell.textContent = `$${entry.value.toLocaleString()}`;
+
+                        if (previousValue !== null) {
+                            const change = ((entry.value - previousValue) / previousValue * 100).toFixed(2);
+                            changeCell.textContent = `${change}%`;
+                            totalChange += parseFloat(change);
+                            changeCount++;
+                        } else {
+                            changeCell.textContent = 'N/A';
+                        }
+
+                        previousValue = entry.value;
+                    });
+
+                    const averageChange = totalChange / changeCount;
+                    const predictionTableBody = document.getElementById('predictionTable').getElementsByTagName('tbody')[0];
+                    const months = ['December 2024', 'January 2025', 'February 2025'];
+                    let predictedValue = previousValue;
+
+                    months.forEach(month => {
+                        const row = predictionTableBody.insertRow();
+                        const dateCell = row.insertCell(0);
+                        const predictedValueCell = row.insertCell(1);
+                        const predictedChangeCell = row.insertCell(2);
+
+                        predictedValue *= (1 + averageChange / 100);
+                        dateCell.textContent = month;
+                        predictedValueCell.textContent = `$${predictedValue.toLocaleString()}`;
+                        predictedChangeCell.textContent = `${averageChange.toFixed(2)}%`;
+                    });
+                })
+                .catch(error => console.error('Error loading net worth data:', error));
+        </script>
     </body>
 </html>

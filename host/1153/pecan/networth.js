@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    fetch('pecan/networth.json')
+    fetch('networth.json')
         .then(response => response.json())
         .then(data => {
             const netWorthSection = document.getElementById('netWorthSection');
@@ -15,6 +15,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
             htmlContent += '</table>';
             netWorthSection.innerHTML = htmlContent;
+
+            // Add current net worth display
+            const currentNetWorth = data.net_worth[data.net_worth.length - 1];
+            const currentNetWorthDisplay = document.getElementById('currentNetWorth');
+            currentNetWorthDisplay.innerHTML = `<h2>Current Net Worth</h2>
+                <p>Date: ${currentNetWorth.date}</p>
+                <p>Value: $${currentNetWorth.value.toLocaleString()}</p>`;
         })
         .catch(error => console.error('Error fetching net worth data:', error));
 });
