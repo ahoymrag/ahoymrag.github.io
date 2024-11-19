@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Net Worth Overview</title>
+        <style>
+        body {
+            font-family: 'Barlow', sans-serif;
+            background-color: #f4f4f9;
+            padding: 20px;
+            text-align: center;
+        }
+        canvas {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+    </style>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    </head>
+    <body>
+        <h1>Net Worth Overview</h1>
+        <canvas id="netWorthChart"></canvas>
+        <div>
+            <h2>Predict Future Net Worth</h2>
+            <label for="growthRate">Annual Growth Rate (%):</label>
+            <input type="number" id="growthRate" value="5">
+            <label for="years">Years to Predict:</label>
+            <input type="number" id="years" value="5">
+            <button onclick="predictNetWorth()">Predict</button>
+            <div id="predictionResult"></div>
+        </div>
+        <script src="networth.js"></script>
+    </body>
+</html>
