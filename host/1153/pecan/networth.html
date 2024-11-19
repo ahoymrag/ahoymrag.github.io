@@ -55,8 +55,8 @@
             </table>
         </div>
         <div>
-            <h2>Prediction Table</h2>
-            <table id="predictionTable" border="1">
+            <h2>2025 Monthly Prediction Table</h2>
+            <table id="monthlyPredictionTable" border="1">
                 <thead>
                     <tr>
                         <th>Date</th>
@@ -65,9 +65,53 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <!-- Prediction rows will be inserted here -->
+                    <!-- Monthly prediction rows will be inserted here -->
                 </tbody>
             </table>
+        </div>
+        <div>
+            <h2>Long-term Prediction Table</h2>
+            <table id="longTermPredictionTable" border="1">
+                <thead>
+                    <tr>
+                        <th>Year</th>
+                        <th>Predicted Value</th>
+                        <th>Predicted Change (%)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Long-term prediction rows will be inserted here -->
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <h3>Explanation of Long-term Predictions</h3>
+            <p>The long-term predictions are calculated using the average
+                monthly change percentage derived from historical data. This
+                percentage is compounded over the specified number of years to
+                estimate future net worth.</p>
+            <p><strong>Example Calculations:</strong></p>
+            <div
+                style="padding: 10px; border: 1px solid #ddd; background-color: #f9f9f9;">
+                <p>Suppose the average monthly change is 1.5%. To predict the
+                    net worth for different years, the formula used is:</p>
+                <pre style="background-color: #e8e8e8; padding: 10px;">
+Future Value = Current Value × (1 + Average Change/100)^(12 × Number of Years)
+                </pre>
+                <p>For a current value of $100,000, the calculations would
+                    be:</p>
+                <pre style="background-color: #e8e8e8; padding: 10px;">
+5 Years:  Future Value = $100,000 × (1.015)^60 ≈ $209,378.14
+10 Years: Future Value = $100,000 × (1.015)^120 ≈ $438,391.15
+15 Years: Future Value = $100,000 × (1.015)^180 ≈ $918,998.45
+20 Years: Future Value = $100,000 × (1.015)^240 ≈ $1,926,824.92
+30 Years: Future Value = $100,000 × (1.015)^360 ≈ $9,292,354.54
+                </pre>
+                <p>This means the predicted net worth after 5, 10, 15, 20, and
+                    30 years would be approximately $209,378.14, $438,391.15,
+                    $918,998.45, $1,926,824.92, and $9,292,354.54
+                    respectively.</p>
+            </div>
         </div>
         <script src="networth.js"></script>
         <script>
@@ -101,12 +145,14 @@
                     });
 
                     const averageChange = totalChange / changeCount;
-                    const predictionTableBody = document.getElementById('predictionTable').getElementsByTagName('tbody')[0];
-                    const months = ['December 2024', 'January 2025', 'February 2025'];
+                    
+                    // Monthly Predictions for 2025
+                    const monthlyPredictionTableBody = document.getElementById('monthlyPredictionTable').getElementsByTagName('tbody')[0];
+                    const months = ['January 2025', 'February 2025', 'March 2025', 'April 2025', 'May 2025', 'June 2025', 'July 2025', 'August 2025', 'September 2025', 'October 2025', 'November 2025', 'December 2025'];
                     let predictedValue = previousValue;
 
                     months.forEach(month => {
-                        const row = predictionTableBody.insertRow();
+                        const row = monthlyPredictionTableBody.insertRow();
                         const dateCell = row.insertCell(0);
                         const predictedValueCell = row.insertCell(1);
                         const predictedChangeCell = row.insertCell(2);
@@ -115,6 +161,23 @@
                         dateCell.textContent = month;
                         predictedValueCell.textContent = `$${predictedValue.toLocaleString()}`;
                         predictedChangeCell.textContent = `${averageChange.toFixed(2)}%`;
+                    });
+
+                    // Long-term Predictions
+                    const longTermPredictionTableBody = document.getElementById('longTermPredictionTable').getElementsByTagName('tbody')[0];
+                    const years = [3, 5, 8, 10, 12, 15];
+                    let initialValue = previousValue; // Reset to the last known value
+
+                    years.forEach(yearsAhead => {
+                        const row = longTermPredictionTableBody.insertRow();
+                        const yearCell = row.insertCell(0);
+                        const predictedValueCell = row.insertCell(1);
+                        const predictedChangeCell = row.insertCell(2);
+
+                        const futureValue = initialValue * Math.pow((1 + averageChange / 100), 12 * yearsAhead);
+                        yearCell.textContent = `${2025 + yearsAhead}`;
+                        predictedValueCell.textContent = `$${futureValue.toLocaleString()}`;
+                        predictedChangeCell.textContent = `${((Math.pow((1 + averageChange / 100), 12 * yearsAhead) - 1) * 100).toFixed(2)}%`;
                     });
                 })
                 .catch(error => console.error('Error loading net worth data:', error));
