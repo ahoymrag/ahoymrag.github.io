@@ -1,25 +1,22 @@
+# captured from google keeps
 
-# captured from google keeps 
 ## 9-26-24
 
 Seamonster
 
-
 Makyals grandfsther said went missing - but he was left to the crewtures world for a better purpose
-
 
 The portal opens to their world and they sre hurting there
 
 Luttle snipes are sneaking out
 
 Mac interprets his kothers loss the same way
-Mymom went disappeaing 
+Mymom went disappeaing
 We looked for a while
 Dad never really spoke after that
 Didnt reallyspeak much before
 
-
-Ashers new name is jaffy 
+Ashers new name is jaffy
 
 Jaffy us adopted
 
@@ -29,41 +26,36 @@ Even in his 20s he hangs out with kids and buoda thigs - hes alone and tinkers -
 
 Where do you get this stuff asks mac
 
-Grainer 
+Grainer
 Heres voices from the creatures
-Portal will ooen during the next thunderstorm 
+Portal will ooen during the next thunderstorm
 
 Tells them that hest signals will attract yhem and asks whyyou want to go
 Because my granfather thought it was important for a grander scheme of things
 
 There are snipes
-And if they are not listening theyll stsrt to test the waters - flirt with humanity 
-
-
+And if they are not listening theyll stsrt to test the waters - flirt with humanity
 
 Ape
-Peoplr catchingfish 
+Peoplr catchingfish
 
-
-Cpulx ge an owl 
+Cpulx ge an owl
 
 Static
 Walkie talkie
 Sjadoesymbols
 Strange lughts
 
-
-And just like that an auyumnal beeeze 
+And just like that an auyumnal beeeze
 Came through and got my mind thinking
 
-
-
-Big embrace as florida prepares fo helena 
-
-
-
+Big embrace as florida prepares fo helena
 
 ## CAPTURED ON NOVEMBER 18th 2024
 
 ### MAKYALA's Logic
 
+1. They are from the tall grass
+2. They smell bait fish with the turning of the tide
+3. They communicate within the thunder
+4. Dallas and \_\_\_ can see them

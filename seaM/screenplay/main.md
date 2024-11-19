@@ -373,15 +373,18 @@ _(speaking softly)_
 > He does physics and nuclear theoretical stuff.
 
 **MAKAYLA**
+
 > He doesn't talk much does he.
 
 **MAC**
+
 > No
 
 **MAKAYLA**
+
 > He see's things doesn't he? Things that arent there?
 
-_Mac doesn't respond - a long break. 
+\_Mac doesn't respond - a long break.
 
 _The atmosphere is tense. Strange, wild sounds echo in the distance, like coyotes letting loose - and howling from far - and then close._
 
@@ -397,7 +400,7 @@ _Mac_ pedals home as fast as he can, the events of the evening still fresh in hi
 
 Without hesitation, _Mac_ runs to him and gives him a hug.
 
-Dallas turns toward his son. And for a moment embrace - whilst doing so - they both hear the strange sound together--carried on the wind from the direction of the beach. Dallas looks out into the darkness, his concern growing._
+Dallas turns toward his son. And for a moment embrace - whilst doing so - they both hear the strange sound together--carried on the wind from the direction of the beach. Dallas looks out into the darkness, his concern growing.\_
 
 ## Scene 24: INT. NEW HOUSE - DINING ROOM - NIGHT
 
@@ -409,7 +412,7 @@ On the TV is the _WEATHERMAN_ - talking about how some hurricane quickly making 
 
 # WEDNESDAY
 
-## Scene 25a EXT. Outside Morning 
+## Scene 25a EXT. Outside Morning
 
 Dallas and Mac walk there dog. They walk it by a patch of grass - tall grass - and Dallas looks off into the distance - Mac watches his gaze - and soon does the Dog - the latter too now staring at the great no where - beneath the tall grass.
 
@@ -490,7 +493,7 @@ _Mac hesitates, then nods and grabs a nearby shovel. As he hands it over, Makayl
 **MAKAYLA**
 _(lowering her voice)_
 
-> Alright, we move quickly. Asher, you're on the lookout on the outer banks. Misty, you are on the handling of all aspects bait. Set the traps near the tall grass and make sure the cameras are rolling - Mac - you have to make sure the cameras are rolling too - there will be multiple cameras - and we all will be rolling.   
+> Alright, we move quickly. Asher, you're on the lookout on the outer banks. Misty, you are on the handling of all aspects bait. Set the traps near the tall grass and make sure the cameras are rolling - Mac - you have to make sure the cameras are rolling too - there will be multiple cameras - and we all will be rolling.
 
 _The other kids nod, following Molly's lead. Mac watches, intrigued and nervous._
 
@@ -515,29 +518,30 @@ _The crew hang around the tallgrass - it gets thicker and thicker_
 
 _The crew searches the corner beach for evidence of lightning strikes and burn marks. They find nothing._
 
-_Makayla takes out a steak from Asher's backpack and puts it in the ground - Mac digs the shovel - and Asher slowly brings the chicken over and puts it on the steak_
+\_Makayla takes out a steak from Asher's backpack and puts it in the ground - Mac digs the shovel - and Asher slowly brings the baitfish over and puts it in the bucket.
 
 **JOCYLEN**
 
 > How do we know this isn't just a racoon or a coyote eating this?
 
-Mac and Asher diligently set up cameras on the surronding trees - they hook cables up to a battery pack taped onto a wooden panel
----
+**Makayla**
+(ignoring this)
 
-## Scene 29: EXT. THE SIDEWALK ON THE WAY HOME - LATE AFTERNOON
+> They are likely to smell the baitfish between tides. The wind is steady - this is good.
 
-_The kids gather at their hideaway--a makeshift fort hidden in Makayla's backyard old playground set - grass. They lay traps made of food tied to driftwood sticks outside the fort. Inside, they've set up a rudimentary surveillance system: several iPads, are propped up against rocks and driftwood, their screens glowing in the dim light. The iPads are connected to a jury-rigged power supply--a large battery bank cobbled together from old car batteries and solar chargers._
+\_ Mac and Asher diligently set up cameras on the surronding trees - they hook cables up to a battery pack taped onto a wooden panel.
 
-_ASHER fiddles with the wiring, his tongue sticking out in concentration as he ensures each iPad is properly connected. MISTY arranges the tablets in a semicircle, angling them for the best view of their makeshift command center. The setup is far from professional, with duct tape holding wires in place and a tangle of charging cables snaking across the fort's floor, but it's impressive for a group of determined kids._
+## Scene 29: EXT. THE HIDEAWAY - LATE AFTERNOON
 
-_MAC watches in awe as MAKAYLA boots up a weather app on one of the iPads, the radar showing the approaching storm. On another screen, a live feed from their hidden cameras flickers to life, revealing grainy images of the traps they've set outside._
+_The kids gather at their hideaway--a makeshift fort hidden in Makayla's backyard old playground set - grass. Inside, houses a rudimentary surveillance system: several old LCD Monitors, are propped up against rocks and driftwood, their screens glowing in the dim light. Cables stretch out towards to a jury-rigged power supply--a large battery bank cobbled together from old car batteries and solar chargers._
+
+\_ASHER fiddles with the wiring, his tongue sticking out in concentration as he ensures each screen is properly connected. MISTY arranges the screens in a semicircle, angling them for the best view of their makeshift command center. The setup is far from professional, with duct tape holding wires in place and a tangle of charging cables snaking across the fort's floor, but it's impressive.
 
 **MAKAYLA**
 
-> The creatures are likely to come from the sea, though my grandfather always said they come from the grass. They come from the sea first, then go into the grass.
+> The creatures are likely to smell the bait fish .
 
 **JEFFERSON**
-_(skeptical)_
 
 > How do you know that?
 
@@ -546,43 +550,38 @@ _(skeptical)_
 **MISTY**
 _(setting up a camera)_
 
-> Let's see if we can catch something on film.
+> LThe wind Jefferson - the Wnd
 
-_Molly watches Misty set up an old digital point-and-shoot camera while the rest prepare the bait, waiting for the thunderstorm._
+_Makayla watches Misty set up an old digital point-and-shoot camera while the rest prepare the bait, waiting for the thunderstorm._
 
 ---
 
 **JEFFERSON**
 
-> Your grandfather was just writing those stories to make you laugh. He didn't believe in that stuff.
+> We got to go back soon.
 
 **MAKAYLA**
-_(frowning at her iPad)_
+_(frowning at the sreens)_
 
-> Guys, the camera feed isn't working.
+> Asher, the camera feed isn't working.
 
 _Asher leans over, squinting at the screen._
 
-**ASHER**
-
-> Let me see.
-
 _He taps a few buttons, but the screen remains black._
 
-**ASHER** (CONT'D)
+**Makayla**
 
-> I think it's the Wi-Fi. The signal's too weak out here.
+> What is it?
 
-**MOLLY**
-_(checking her phone)_
+_Mac watches Makayla - and off in the distance - he hears a little noise - that it seems like only he could hear - he looks out the window glances at the darkening sky, a hint of worry in his voice._
 
-> My dad's gonna kill me if I use up all our data again.
+**Makayla**
 
-_Mac glances at the darkening sky, a hint of worry in his voice._
+> Mac what is it?
 
-**MAC**
+**Makayla**
 
-> It's getting pretty late. Maybe we should head back?
+> What do you see?
 
 _Makayla looks torn, glancing between the malfunctioning equipment and her friends._
 
@@ -602,13 +601,7 @@ _The group exchanges uncertain looks. Misty checks her watch and sighs._
 > Yeah, we better pack up. We can try again another night when the tech's working.
 
 _Reluctantly, they begin to gather their things. Makayla lingers, staring out at the tall grass with a mix of disappointment and determination._
-
-**MAKAYLA**
-_(softly)_
-
-> Next time. We'll be ready next time.
-
-\_As they pack up their makeshift surveillance system, the wind picks up, rustling through the grass. For a moment, it almost sounds like whispers carried on the breeze.\_b
+\_As they pack up their makeshift surveillance system, the wind picks up, rustling through the grass. For a moment, it almost sounds like whispers carried on the breeze.
 
 **MISTY**
 
@@ -631,6 +624,10 @@ _(softly)_
 ## Scene 30: INT. NEIGHBOR'S HOUSE - HALLWAY - EVENING
 
 _The kids return to the party. Mac approaches Dallas, who's standing alone in the hallway, looking at wall-mounted family portraits--photos of when the kids were little. He looks at his son and smiles._
+
+**Dominic**
+
+> Where were you guys?
 
 **FADE OUT.**
 
