@@ -61,3 +61,9 @@ Came through and got my mind thinking
 Big embrace as florida prepares fo helena 
 
 
+
+
+## CAPTURED ON NOVEMBER 18th 2024
+
+### MAKYALA's Logic
+
