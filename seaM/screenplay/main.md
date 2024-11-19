@@ -11,7 +11,7 @@ updated: 2024-10-09
 
 ## Scene 0: Thunderstorm down south
 
-Flashes of a thunderstorm - Flashes of a mother playing with her son - and building bird houses - flashes of wind hitting the breeze in the mountains - and flashes of a vacaction up north - up towards new england - flashes of a seaside beach town - flashes of a big thunderstorm - flashes of the mom and the dog driving doing errands - flashes of Dallas setting up an instrument and pointing it towards the sky - flashes of Mac helping him - flashes of the woods - flashes of the dark grass - flashes of the mother coming back and running away from the dog - towards the light -
+Flashes of a thunderstorm - Flashes of a mother playing with her son - and building bird houses - flashes of wind hitting the yoooo breeze in the mountains - and flashes of a vacaction up north - up towards new england - flashes of a seaside beach town - flashes of a big thunderstorm - flashes of the mom and the dog driving doing errands - flashes of Dallas setting up an instrument and pointing it towards the sky - flashes of Mac helping him - flashes of the woods - flashes of the dark grass - flashes of the mother coming back and running away from the dog - towards the light -
 
 Flashes of a funeral.
 

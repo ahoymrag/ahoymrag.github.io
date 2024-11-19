@@ -68,3 +68,15 @@
 
 
 
+
+
+
+## MAKAYLA EXPLAINATIONS
+
+- DOMINIC Says shes still afraid of the dark
+-- The lights in the sky - some people think they are ufos - but they are them
+
+-- Your dad (dallas) - sees them in the flowers - in the trees - some folks call it pollen
+and it is true - there is pollen - but its more than pollen - there's more.
+-- You believe in that radio is picking up a broadcast - from what - a signal - can you see that signal?
+No - there we go - now we are on the same page...
