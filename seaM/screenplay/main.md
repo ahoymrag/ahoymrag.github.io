@@ -384,7 +384,7 @@ _(speaking softly)_
 
 > He see's things doesn't he? Things that arent there?
 
-\_Mac doesn't respond - a long break.
+_Mac doesn't respond - a long break.
 
 _The atmosphere is tense. Strange, wild sounds echo in the distance, like coyotes letting loose - and howling from far - and then close._
 
@@ -422,7 +422,7 @@ _DALLAS_ and _MAC_ drive to a neighbor's house for dinner. The radio plays in th
 
 **RADIO ANNOUNCER (V.O.)**
 
-> And now for your evening weather forecast. Expect clear skies tonight with a slight breeze. Perfect weather for the upcoming Branford Sea Harvest Festival next week. Don't miss out on this annual extravaganza!
+> And now for your evening weather forecast. Expect clear skies tonight with a slight breeze off the bay side. Perfect weather for the upcoming Branford Sea Harvest Festival next week. Don't miss out on this annual extravaganza!
 
 ---
 
@@ -550,7 +550,7 @@ _The kids gather at their hideaway--a makeshift fort hidden in Makayla's backyar
 **MISTY**
 _(setting up a camera)_
 
-> LThe wind Jefferson - the Wnd
+> The wind Jefferson - the Wnd
 
 _Makayla watches Misty set up an old digital point-and-shoot camera while the rest prepare the bait, waiting for the thunderstorm._
 
@@ -627,7 +627,29 @@ _The kids return to the party. Mac approaches Dallas, who's standing alone in th
 
 **Dominic**
 
-> Where were you guys?
+> Where were you guys? 
+
+**Makayla**
+>We were out in the backyard?
+
+**Dominic**
+> You out there cookin Lizards - you better watch yourself Makayla (jokin) - I gotta check that the girl is not into witchcraft things you kno. 
+
+Alright - let's go - it's time for dinner.
+
+
+## Scene 30a - Dinner Table
+
+The crew sit around a table filled with bbq fixings and corn. Makyala doesn't eat her food much - Mac and the children set silent.
+
+**Dominic**
+> What's wrong with you guys? Eat. (beat) Mac - how are you liking it up here? 
+
+**Mac**
+> It's nice.
+
+**Dominic** 
+> Nice? It's great. 
 
 **FADE OUT.**
 
@@ -875,10 +897,6 @@ _(to Mac)_
 **MAC**
 
 > What?
-
-**MAKAYLA**
-
-> Never mind.
 
 ### AUTHORS NOTE
 
