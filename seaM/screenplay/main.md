@@ -690,7 +690,7 @@ Yeah baby - smart and beautiful and sexy.
 > They have snacks.
 
 **Dominic**
-They better have snacks - your mother and I have been 
+They better have snacks - your mother and I give 200 dollars a month - they better get the good stuff - Asher you tell me if you get it 
 
 **Dominic** 
 > Yeah - has Makayla been outside collecting bugs and frogs and sticks and making science experiments driving her old man's hair out - right Makayla... Since she's been a kid Dallas - a kid!  She used to take little army men I would get for Asher and freeze them. Asher - you remember?
