@@ -630,15 +630,18 @@ _The kids return to the party. Mac approaches Dallas, who's standing alone in th
 > Where were you guys? 
 
 **Makayla**
->We were out in the backyard?
+>We were out in the backyard
 
 **Dominic**
-> You out there cookin Lizards - you better watch yourself Makayla (jokin) - I gotta check that the girl is not into witchcraft things you kno. 
+> You out there cookin Lizards - you better watch yourself Makayla (jokin) I'm joking kid relax -  (to Dallas) I gotta check that the girl is not into witchcraft things you kno. 
 
-Alright - let's go - it's time for dinner.
+_Bonnie comes out with a big mashed potato plate of mashed potatoes. 
+
+**Dominic**
+> Alright - let's go - it's time for dinner.
 
 
-## Scene 30a - Dinner Table
+## Scene 30a - DINNER TABLE WITH THE DOMINICS 
 
 The crew sit around a table filled with bbq fixings and corn. Makyala doesn't eat her food much - Mac and the children set silent.
 
@@ -648,14 +651,71 @@ The crew sit around a table filled with bbq fixings and corn. Makyala doesn't ea
 **Mac**
 > It's okay.
 
-**Dominic** 
-> Yeah - has Makayla shown you her secret collection.
+**Dominic**
+> You guys have Dr. Stover this year?
 
-**MAKAYLA**
-> Dad!
+**Mac**
+> Yeah
+
+**Dominics**
+> That old man - I used that have him too - he still talking about the weather and what not?
+
+**Mac**
+> Yeah
 
 **Dominic**
-> Oh sush - yeah - she keeps all these jars - ever since she was little. She would collect little things out in the jars and what not. 
+> Funny guy funny guy - You that funny guy that Mr. Robertson says hello.
+
+**MAC**
+> Okay.
+
+**Dominic**
+> Dallas - you got this kid in CCD yet?
+
+Dallas looks at Mac.
+
+**Mac**
+> What is CCD?
+
+**Bonnie**
+> Confraternity of Christian Doctrine. 
+
+**Dominic**
+Yeah baby - smart and beautiful and sexy. 
+
+**Makayla**
+> It basically is Sunday School - but on Wednesdays.
+
+**Asher**
+> They have snacks.
+
+**Dominic**
+They better have snacks - your mother and I have been 
+
+**Dominic** 
+> Yeah - has Makayla been outside collecting bugs and frogs and sticks and making science experiments driving her old man's hair out - right Makayla... Since she's been a kid Dallas - a kid!  She used to take little army men I would get for Asher and freeze them. Asher - you remember?
+
+**ASHER**
+> Yeah
+
+**Dominic**
+Oh these kids - these kids keep me young - right kids - you like your young pop? Pop Pop Pop - Boom! 
+
+_Dallas smiles.
+
+**Dominic**
+So how do you find it all?
+
+**Dallas**
+> What's that?
+
+**Dominic**
+> The weather - no - how do you find it all - what is like being a dad?
+
+**Dallas**
+> It's nice. 
+
+
 
 **FADE OUT.**
 
