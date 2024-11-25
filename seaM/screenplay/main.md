@@ -646,10 +646,16 @@ The crew sit around a table filled with bbq fixings and corn. Makyala doesn't ea
 > What's wrong with you guys? Eat. (beat) Mac - how are you liking it up here? 
 
 **Mac**
-> It's nice.
+> It's okay.
 
 **Dominic** 
-> Nice? It's great. 
+> Yeah - has Makayla shown you her secret collection.
+
+**MAKAYLA**
+> Dad!
+
+**Dominic**
+> Oh sush - yeah - she keeps all these jars - ever since she was little. She would collect little things out in the jars and what not. 
 
 **FADE OUT.**
 
@@ -663,39 +669,37 @@ Dallas walks over and stands over it for a good while.
 
 ---
 
-## Scene 32: EXT. SCHOOL PLAYGROUND - AFTERNOON
+## Scene 32: EXT. MAINSTREET TOWN - AFTERNOON
 
-Later that afternoon at recess, _Mac_ finds _Makayla_ standing by the soccer net, staring at some strange burn marks on the grass. She turns to him, her expression serious.
+Later that afternoon at _Mac_, _Makayla_, and _Asher_ walk along the coastal sleepy town - the town is buzzing - they all look at the weather chimes and the weather ** NOTE - - have a foreshadowment here. 
 
 **MAKAYLA**
 
-> Have you noticed that the dogs in this town are acting up?
+> Have you noticed the dogs?
 
 **ASHER**
 
-> Acting Up?
+> The dogs?
 
 **MAKAYLA**
 
-> Acting up.
+> The dogs.
+
+_Mac looks around for the apparent dogs. 
+
+**ASHER**
+> What about them?
+
+**MAKAYLA**
+> They're acting batty. 
 
 _Mac_ hesitates but then nods.
-
-**MAKAYLA**
-
-> Mac - Asher and I are going to come by later this afternoon and set up more traps.
-
-**ASHER**
-
-> Don't we have Youth Group today?
-
-**MAKAYLA**
-
-> Crap.
 
 ---
 
 ## Scene 33: INT. YOUTH GROUP CLASS - AFTERNOON
+
+
 
 _Mac_ looks around and notices that some of his classmates are also his Sunday School classmates. The _Youth Pastor_ begins handing out papers on the topic of ancient Israelites and what we can learn from their mistaken ways of seeking atonement.
 
