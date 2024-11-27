@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Land Search Table</title>
+        <link rel="stylesheet" href="land-search.css">
+        <link rel="stylesheet"
+            href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script
+            src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+        <!-- Include DataTables CSS if using DataTables -->
+        <!-- <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css"> -->
+    </head>
+    <body>
+        <table id="landTable" class="display">
+            <thead>
+                <tr>
+                    <th>Zip Code</th>
+                    <th>Address</th>
+                    <th>Size (Acres)</th>
+                    <th>Cost</th>
+                    <th>Distance to 06512 (mi)</th>
+                    <th>Driving Time from 06512</th>
+                    <th>Water Access</th>
+                    <th>URL</th>
+                    <th>Source</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data will be inserted here by JavaScript -->
+            </tbody>
+        </table>
+
+        <!-- Include jQuery and DataTables JS if using DataTables -->
+        <!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> -->
+        <!-- <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script> -->
+        <script src="land-search.js"></script>
+    </body>
+</html>

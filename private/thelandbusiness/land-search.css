@@ -1,0 +1,28 @@
+/* General table styling */
+#landTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+    font-size: 0.9em;
+    font-family: 'Arial', sans-serif;
+}
+
+#landTable thead tr {
+    background-color: #333;
+    color: #fff;
+    text-align: left;
+}
+
+#landTable th,
+#landTable td {
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+}
+
+#landTable tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+#landTable tbody tr:nth-of-type(even) {
+    background-color: #f9f9f9;
+}
