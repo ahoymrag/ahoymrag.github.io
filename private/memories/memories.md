@@ -19,9 +19,15 @@ yesterday had some fun - we went grocery - back and forth now in text - hope it 
 
 
 
-11.25.24 : Monday
+# 11.25.24 : Monday
 At my parents house with Ellie - we went to ctown - and then muddy waters - and then a cosignment shop - she found ice skates - now shes smashing work - and I'm hanging a bit - writing and what not - and then going to take a walk on the aquaduct - and then 
 - we went on a walk on the aquaduct - it was lovely - ellie took a lot of photos with her little digital camera - perfect sunset through the trees - we then went back for dinner - and then rested a bit - i napped a bit and then we went out to setback and then we went to the tapp - had a really nice time - a little romantic towards the end - lots of love
 
-11.26.24 : Tuesday
+# 11.26.24 : Tuesday
 Ellie is big girl by herself in tarrytown today - we woke up and had english muffins and butter and avacado with my mom - and Ellen went about town - I called the realestate agent regarding 19 whitman ave in East Haven CT - - then I took a shower - - now I am about to go visit Chris Naz in the hospital - - later tonight we're going to go to Aldo's new apartment and jam.
+
+
+## 11-27-30 : Writing this on Saturday 
+
+Today we went to the park - rockwood - then home to pee - then around stone barn - and then got ice cream - and then came back and cuddled and watched elf - and then burgers for dinner - all before this morning we had a nice diner - - before that # Friday - we went to Vallos - with Matt, Annie, Gio, Marco, Millie, Allison, Sam, Amelia, Clare, Fig, Walker, Vita, Kenny - - it was really nice - we played MExican Dimones and marco was funny - - before we blacked friday - I got a lot of gear for the live ahoy - Ellie got a m1 lappy on ebay on the cheap - good deals - - before that we hmm - we had an english muffin - and pre that - we had a nice back and forth taking boxes from the attic from benedict - christmas decorations and what not - - Thursday - thanksgiving - - it was really nice - the whole gang - - Aldo played a lot of good music - tello was happy to play the shaker a bit - Bita was there and sang a little - Carmita - Mari - Alex - Bianca- there aids - Mom - dad - Aldo - Ellie - - - - before thanksgiving was Wednesday - Ellie took some calls in the morning - and then we went to Dobbs Ferry - to a local pub called Double Days - - Ellie got some gifts for her grandmother - Maple Syrup and A tiny little blankie coaster --- ohh shes here! We cuddled for a bit but she was a bit restless - now shes packing and sorting and doing all types of hot girls things - she's packing her bag - tomorrow we're leaving in the morning -early morning - most likely 7:30a - - got to get to CPC for 9:30 - and need to check the air pressure on the cars - - and a lot of other things it seems - Ellen is going through the belongings - I am going to take a pause and write some todo lists - okay - I have it going - now Ellie is done packing and she is back next to me - but is on the phone - heeee - she is a locked in little lass. 
+
