@@ -9,8 +9,14 @@
 
 Misc Remidners
 1. tell chris about dec 10 + 14
+2. Ask Dan C about showing J a trade 
+3. Camera Test 
 
 Sunday Chores
 1. Pay Josh
 2. Unpack and Clean Room
 3. Decide what chapter to showcase
+
+
+Future
+1. Honda - Prop that Baby Up
