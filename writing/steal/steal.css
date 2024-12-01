@@ -1,0 +1,85 @@
+/* General document styling */
+body {
+    font-family: 'Georgia', serif;
+    font-size: 14pt;
+    line-height: 1.6;
+    margin: 1in;
+    max-width: 7in;
+    /* Slightly wider for a modern look */
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Title styling */
+h1 {
+    font-size: 28pt;
+    text-align: center;
+    margin-top: 2.5in;
+    margin-bottom: 1.5in;
+    color: #2c3e50;
+}
+
+/* Chapter headings */
+h2 {
+    font-size: 22pt;
+    text-align: center;
+    margin-top: 2in;
+    margin-bottom: 1.2in;
+    color: #34495e;
+}
+
+/* Paragraph styling */
+p {
+    text-indent: 0.5in;
+    margin: 0;
+    margin-bottom: 0.6in;
+}
+
+/* Blockquote styling */
+blockquote {
+    font-style: italic;
+    margin-left: 0.5in;
+    margin-right: 0.5in;
+    padding-left: 0.5in;
+    border-left: 3px solid #7f8c8d;
+    background-color: #ecf0f1;
+    padding: 0.5em;
+}
+
+/* Code block styling */
+pre,
+code {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 11pt;
+    background-color: #e8e8e8;
+    padding: 0.6em;
+    border-radius: 5px;
+}
+
+/* Horizontal rule styling */
+hr {
+    border: 0;
+    border-top: 2px solid #bdc3c7;
+    margin: 2.5em 0;
+}
+
+/* Image styling */
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* List styling */
+ul,
+ol {
+    margin: 0;
+    padding-left: 1.5em;
+    margin-bottom: 0.6in;
+}
+
+li {
+    margin-bottom: 0.3in;
+}
