@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>scenes-25-31.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<!-- START HERE TO PRINT - PART 2 -->
+<hr>
+<h2 id="title-%22sea-monster---scenes-25---31%22author-alex-gonzalezdate-2024-12-01last-updated-2024-12-01">title: &quot;Sea Monster - Scenes 25 - 31&quot;
+author: Alex Gonzalez
+date: 2024-12-01
+last-updated: 2024-12-01</h2>
+<link rel="stylesheet" href="seaM-md-css.css">
+<h1 id="wednesday">WEDNESDAY</h1>
+<h2 id="scene-25a-ext-outside-morning">Scene 25a EXT. Outside Morning</h2>
+<p>Dallas and Mac walk there dog. They walk it by a patch of grass - tall grass - and Dallas looks off into the distance - Mac watches his gaze - and soon does the Dog - the latter too now staring at the great no where - beneath the tall grass.</p>
+<hr>
+<h2 id="scene-25-ext-driveway---evening">Scene 25: EXT. DRIVEWAY - EVENING</h2>
+<p><em>DALLAS</em> and <em>MAC</em> drive to a neighbor's house for dinner. The radio plays in the background.</p>
+<p><strong>RADIO ANNOUNCER (V.O.)</strong></p>
+<blockquote>
+<p>And now for your evening weather forecast. Expect clear skies tonight with a slight breeze off the bay side. Perfect weather for the upcoming Branford Sea Harvest Festival next week. Don't miss out on this annual extravaganza!</p>
+</blockquote>
+<hr>
+<h2 id="scene-26-ext-dominics-backyard-deck-party---evening">Scene 26: EXT. DOMINIC'S BACKYARD DECK PARTY - EVENING</h2>
+<p>The setting sun bathes the backyard in a golden glow. Laughter and sizzling BBQ sounds fill the air as neighbors mingle on the deck. <em>DALLAS</em> stands with <em>DOMINIC</em>, an animated neighbor who's talking enthusiastically.</p>
+<p><strong>DOMINIC</strong>
+<em>(gesturing with a fork full of ziti)</em></p>
+<blockquote>
+<p>Yeah, yeah, Hugo--my cousin--throws an annual charity event every summer. You'd really like him--his daughter's into all that sea stuff too. You and your son should join us. The kids can play, and we can all hang out.</p>
+</blockquote>
+<p><strong>DOMINIC</strong>
+<em>(chuckling, gesturing with his fork)</em></p>
+<blockquote>
+<p>You know, it's wild that we're having this on a Wednesday, right? But that's just how our schedules are these days. Everyone's away on the weekends, picking apples and whatnot. We've got to squeeze in as many BBQs as we can while we still have breath in our lungs!</p>
+</blockquote>
+<p><em>(takes a bite of ziti, then continues)</em></p>
+<blockquote>
+<p>I mean, who knows when the next storm might hit, or when life might throw us a curveball? So we gather when we can, break bread together, and enjoy these moments. That's what community's all about, isn't it?</p>
+</blockquote>
+<p><em>Dallas smiles politely, but seems a bit overwhelmed by Dominic's energy. Mac stands nearby, quietly listening but not engaging, his eyes occasionally drifting to the edge of the backyard.</em></p>
+<p><em>MAKAYLA (12) approaches Dominic, hugging him quickly. She then steps back, looking over at Mac as she adjusts her backpack straps.</em></p>
+<p><strong>MAKAYLA</strong>
+<em>(to Dominic)</em></p>
+<blockquote>
+<p>Dad, I'm heading to the back with the others. I'll be back later.</p>
+</blockquote>
+<p><strong>DOMINIC</strong></p>
+<blockquote>
+<p>Okay, just stay close. We're about to eat. We've got clam chowder that'll warm your soul, lobster rolls bursting with flavor, and a seafood boil with shrimp, clams, and mussels straight from the Sound. And don't miss the stuffed clams and the corn on the cob, all seasoned to perfection. Oh, and save room for the blueberry pie - it's a local legend!</p>
+</blockquote>
+<p><strong>MAKAYLA</strong></p>
+<blockquote>
+<p>Yes, Dad.</p>
+</blockquote>
+<p><em>Makayla glances at Mac, making brief eye contact before turning and heading toward the far end of the backyard. She disappears into the twilight, silhouetted against the setting sun.</em></p>
+<p><em>Dallas watches her leave, sensing something in the air, but doesn't say anything. Dominic resumes his animated conversation.</em></p>
+<p><strong>DOMINIC</strong></p>
+<blockquote>
+<p>So this charity event...</p>
+</blockquote>
+<hr>
+<h2 id="scene-27-ext-dominicss-far-backyard-by-the-coast---afternoon">Scene 27: EXT. DOMINICS'S FAR BACKYARD BY THE COAST - AFTERNOON</h2>
+<p><em>The deck party continues in the distance. MAC wanders alone near the far end of Dominics's backyard, which stretches to the coast.</em></p>
+<p><em>Mac stands still, staring at the water. Waves crash against the rocks. He scans the grass, looking for mysterious eyes, then back to Makayla, who's pointing a telescope at the coastline.</em></p>
+<p><em>Suddenly, a faint whimper--like an animal in pain--echoes from the wilderness. Nautical sounds engulf him, heightening his fear. The grass rustles, but it's unclear if it's wind or something else.</em></p>
+<p><em>Frightened, Mac steps back, ready to return to the party. But before he can leave, a group of kids emerges from the fog--Makayla, Asher, and others, including Jocylen (13). They move purposefully, faces serious.</em></p>
+<p><em>Makayla steps forward, focusing on Mac.</em></p>
+<p><strong>MAKAYLA</strong>
+<em>(firm, yet urgent)</em></p>
+<blockquote>
+<p>Mac, give me that shovel.</p>
+</blockquote>
+<p><em>Mac hesitates, then nods and grabs a nearby shovel. As he hands it over, Makayla turns to the group, her expression shifting to leadership.</em></p>
+<p><strong>MAKAYLA</strong>
+<em>(lowering her voice)</em></p>
+<blockquote>
+<p>Alright, we move quickly. Asher, you're on the lookout on the outer banks. Jocylen, you are on the handling of all aspects bait. Set the traps near the tall grass and make sure the cameras are rolling - Mac - you have to make sure the cameras are rolling too - there will be multiple cameras - and we all will be rolling.</p>
+</blockquote>
+<p><em>The other kids nod, following Makayla's lead. Mac watches, intrigued and nervous.</em></p>
+<p><strong>MAKAYLA</strong>
+<em>(reassuring)</em></p>
+<blockquote>
+<p>You there Mac, Mac?</p>
+</blockquote>
+<p>_Mac takes a short breath and grasps his shovel. He begins to dig and dig and dig - almost in anger - almost too fast.</p>
+<p><strong>MAKAYLA</strong></p>
+<blockquote>
+<p>Alright.</p>
+</blockquote>
+<p><em>The kids, led by Makayla, move deeper into the tall grass, toward the tallest grass where the coast drops off into the sea. The fog thickens, and the air grows colder.</em></p>
+<hr>
+<h2 id="scene-28-ext-tall-grass-thicket">Scene 28: EXT. TALL GRASS THICKET</h2>
+<p>The crew hang around the tallgrass - time moves slowly - the sun sets - and the wind picks up. They move</p>
+<p>_Makayla takes out a steak from Asher's backpack and puts it in the ground - Mac grabs the the shovel again - and Asher slowly brings the baitfish over and puts it in the bucket.</p>
+<p><strong>JOCYLEN</strong></p>
+<blockquote>
+<p>Makayla...</p>
+</blockquote>
+<p><strong>MAKAYLA</strong></p>
+<blockquote>
+<p>Yeah</p>
+</blockquote>
+<p><strong>JOCYLEN</strong></p>
+<blockquote>
+<p>Makayla</p>
+</blockquote>
+<p><strong>MAKAYLA</strong></p>
+<blockquote>
+<p>JOCYLEN</p>
+</blockquote>
+<p><strong>JOCYLCEN</strong></p>
+<blockquote>
+<p>How do we know this isn't just some racoon getting its kicks on?</p>
+</blockquote>
+<p><strong>MAKAYLA</strong>
+<em>(ignoring Jocylen)</em></p>
+<blockquote>
+<p>Asher - when you get the baitfish - you put it in the bucket.</p>
+</blockquote>
+<p>_Mac and _Asher diligently set up cameras on the surronding trees - they hook cables up to a battery pack taped onto a wooden panel.</p>
+<h2 id="scene-29-ext-the-hideaway---late-afternoon">Scene 29: EXT. THE HIDEAWAY - LATE AFTERNOON</h2>
+<p><em>The kids gather at their hideaway--a makeshift wigwam - fort hidden deep in Makayla's backyard old playground set - grass. Inside, houses a rudimentary surveillance system: several portable HDMI Monitors - run by a batterypank tied to a solar panel. Shovels and buckets and poles are propped up against rocks and driftwood, their screens glowing in the dim light. Cables stretch out towards to a jury-rigged power supply--a large battery bank cobbled together from old car batteries and solar chargers.</em></p>
+<p><em>ASHER fiddles with the wiring as he ensures each screen is properly connected. Makayla walks over and sits down in front of the monitors. Asher, Mac, and Jocylen behind her.</em></p>
+<p><strong>MAKAYLA</strong></p>
+<blockquote>
+<p>The creatures are likely to smell the bait fish .</p>
+</blockquote>
+<p><em>Mac looks out the cracks of the makeshift wigwam - through it he watches the tallgrass swaying in the wind.</em></p>
+<p><strong>JOCYLEN</strong></p>
+<blockquote>
+<p>How do you know that?</p>
+</blockquote>
+<p>_They exchange glances.</p>
+<p><strong>ASHER</strong>
+<em>(setting up a camera)</em></p>
+<blockquote>
+<p>The wind will pick up and push the smell out -</p>
+</blockquote>
+<p><strong>JOCYLEN</strong></p>
+<blockquote>
+<p>Out where?</p>
+</blockquote>
+<p><strong>ASHER</strong></p>
+<blockquote>
+<p>Out there.</p>
+</blockquote>
+<p>The camera pans</p>
+<p><em>Makayla watches Asher set up the final camera.</em></p>
+<h2 id="scene-30---back-at-the-wigwam-hq">SCENE 30 - BACK AT THE WIGWAM HQ</h2>
+<p><strong>MAKAYLA</strong>
+<em>(frowning at the sreens)</em></p>
+<blockquote>
+<p>Asher, the camera feed isn't working.</p>
+</blockquote>
+<p><em>Asher leans over, squinting at the screen.</em></p>
+<p><em>He taps a few buttons, but the screen remains black.</em></p>
+<p><strong>Makayla</strong></p>
+<blockquote>
+<p>What is it?</p>
+</blockquote>
+<p><em>Mac watches Makayla - and off in the distance - he hears a little noise - that it seems like only he could hear - he looks out the window glances at the darkening sky, a hint of worry in his voice.</em></p>
+<p><strong>Makayla</strong></p>
+<blockquote>
+<p>Mac what is it?</p>
+</blockquote>
+<p><strong>Makayla</strong></p>
+<blockquote>
+<p>What do you see?</p>
+</blockquote>
+<p><em>Makayla looks torn, glancing between the malfunctioning equipment and her friends.</em></p>
+<p><strong>MAKAYLA</strong></p>
+<blockquote>
+<p>But we haven't seen anything yet. We can't just give up.</p>
+</blockquote>
+<p><strong>JOCYLEN</strong>
+<em>(standing up)</em></p>
+<blockquote>
+<p>My mom's gonna freak if we're not back soon.</p>
+</blockquote>
+<p><strong>MAKAYLA</strong></p>
+<blockquote>
+<p>Go then Jocylen - we are right in the backyard - tell them we're fine - but go if you need to - go go go go go.</p>
+</blockquote>
+<p>_Jocylen leaves the wigwam...</p>
+<p><strong>CUT TO: EXT. DOMINICS'S BACKYARD - NIGHT</strong></p>
+<p><em>Reluctantly, they begin to gather their things. Makayla lingers, staring out at the tall grass with a mix of disappointment and determination.</em></p>
+<p><em>As they pack up their makeshift surveillance system, the wind picks up, rustling through the grass. For a moment, it almost sounds like whispers carried on the breeze.</em></p>
+<hr>
+<h2 id="scene-31-int-neighbors-house---hallway---evening">Scene 31: INT. NEIGHBOR'S HOUSE - HALLWAY - EVENING</h2>
+<p><em>The kids return to the party. Mac approaches Dallas, who's standing alone in the hallway, looking at wall-mounted family portraits--photos of when the kids were little. He looks at his son and smiles.</em></p>
+<p><strong>Dominic</strong></p>
+<blockquote>
+<p>Where were you guys?</p>
+</blockquote>
+<p><strong>Makayla</strong></p>
+<blockquote>
+<p>We were out in the backyard.</p>
+</blockquote>
+<p><strong>Dominic</strong></p>
+<blockquote>
+<p>You showed them the wigwam ? - i Build this girl a tree house but all she wants to do is go put old tvs around the wigwams - tell them Makayla - You out there cookin Lizards - you better watch yourself Makayla (jokin) I'm joking kid relax -  (to Dallas) I gotta check that the girl is not into witchcraft things you kno.</p>
+</blockquote>
+<p>_Bonnie comes out with a big mashed potato plate of mashed potatoes.</p>
+<p><strong>Dominic</strong></p>
+<blockquote>
+<p>Alright - let's go - it's time for dinner.</p>
+</blockquote>
+<h2 id="scene-31a---dinner-table-with-the-dominics">Scene 31a - DINNER TABLE WITH THE DOMINICS</h2>
+<p>The crew sit around a table filled with bbq fixings and corn. Makyala doesn't eat her food much - Mac and the children set silent.</p>
+<p><strong>Dominic</strong></p>
+<blockquote>
+<p>What's wrong with you guys? Eat. (beat) Mac - how are you liking it up here?</p>
+</blockquote>
+<p><strong>Mac</strong></p>
+<blockquote>
+<p>It's okay.</p>
+</blockquote>
+<p><strong>Dominic</strong></p>
+<blockquote>
+<p>You guys have Dr. Stover this year?</p>
+</blockquote>
+<p><strong>Mac</strong></p>
+<blockquote>
+<p>Yeah</p>
+</blockquote>
+<p><strong>Dominics</strong></p>
+<blockquote>
+<p>That old man - I used that have him too - he still talking about the weather and what not?</p>
+</blockquote>
+<p><strong>Mac</strong></p>
+<blockquote>
+<p>Yeah</p>
+</blockquote>
+<p><strong>Dominic</strong></p>
+<blockquote>
+<p>Funny guy funny guy - You that funny guy that Mr. Robertson says hello.</p>
+</blockquote>
+<p><strong>MAC</strong></p>
+<blockquote>
+<p>Okay.</p>
+</blockquote>
+<p><strong>Dominic</strong></p>
+<blockquote>
+<p>Dallas - you got this kid in CCD yet?</p>
+</blockquote>
+<p>Dallas looks at Mac.</p>
+<p><strong>Mac</strong></p>
+<blockquote>
+<p>What is CCD?</p>
+</blockquote>
+<p><strong>Bonnie</strong></p>
+<blockquote>
+<p>Confraternity of Christian Doctrine.</p>
+</blockquote>
+<p><strong>Dominic</strong>
+Yeah baby - smart and beautiful and sexy.</p>
+<p><strong>Makayla</strong></p>
+<blockquote>
+<p>It basically is Sunday School - but on Wednesdays.</p>
+</blockquote>
+<p><strong>Asher</strong></p>
+<blockquote>
+<p>They have snacks.</p>
+</blockquote>
+<p><strong>Dominic</strong>
+They better have snacks - your mother and I give 200 dollars a month - they better get the good stuff - Asher you tell me if you get it</p>
+<p><strong>Dominic</strong></p>
+<blockquote>
+<p>Yeah - has Makayla been outside collecting bugs and frogs and sticks and making science experiments driving her old man's hair out - right Makayla... Since she's been a kid Dallas - a kid!  She used to take little army men I would get for Asher and freeze them. Asher - you remember?</p>
+</blockquote>
+<p><strong>ASHER</strong></p>
+<blockquote>
+<p>Yeah</p>
+</blockquote>
+<p><strong>Dominic</strong>
+Oh these kids - these kids keep me young - right kids - you like your young pop? Pop Pop Pop - Boom!</p>
+<p>_Dallas smiles.</p>
+<p><strong>Dominic</strong>
+So how do you find it all?</p>
+<p><strong>Dallas</strong></p>
+<blockquote>
+<p>What's that?</p>
+</blockquote>
+<p><strong>Dominic</strong></p>
+<blockquote>
+<p>The weather - no - how do you find it all - what is like being a dad?</p>
+</blockquote>
+<p><strong>Dallas</strong></p>
+<blockquote>
+<p>It's nice.</p>
+</blockquote>
+<p><strong>FADE OUT.</strong></p>
+<h1 id="night">NIGHT</h1>
+<h2 id="scene-31b-int-house---night">Scene 31b: INT. HOUSE - NIGHT</h2>
+<p><em>Dallas</em> begins to go inside, the sound of the breeze from the Long Island Sound rustling through the trees. He pauses, looking out at the sky before stepping through the door. From the corner of his eye - he spots a burn mark near the mailbox.</p>
+<p>Dallas walks over and stands over it for a good while.</p>
+<hr>
+<!-- END HERE -->
+</body>
+</html>

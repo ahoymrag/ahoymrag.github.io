@@ -103,3 +103,14 @@
 - Set up the venue
 - Conduct a final rehearsal
 - Ensure all staff and volunteers are briefed and ready
+
+
+
+
+## FURTHER UPDATE AND NOTES AND IDEAS
+as of 12.01.24
+
+- Pat Clendenen Reads a Christmas Poem
+- We have a word from Santa Claus 
+
+

@@ -3,10 +3,12 @@ title: "Sea Monster"
 author: Alex Gonzalez
 date: 2024-09-29
 updated: 2024-10-09
+updated: 2024-12-01
 ---
 
 <link rel="stylesheet" href="seaM-md-css.css">
 
+<!-- SHARE HERE - START PART 1-->
 # A LONG LONG TIME AGO
 
 ## Scene 0: Thunderstorm down south
@@ -15,15 +17,12 @@ Flashes of a thunderstorm - Flashes of a mother playing with her son - and build
 
 Flashes of a funeral.
 
-**VO MAC**
-Life doesn't seem to control anything - just not the way that light does. The man from the funeral home had a nephew who was slow - he was showing me off wrestling magazines and talked about how life throws the lemons at the champion and the champion always squashes the lemons - I nodded but later have come to think about this quote often - life throwing things at me - what is life? Does life have a mind? Does life make decisions? What does that mean? <br>
-I went on the internet that night and found that quote scattered everywhere. But then I realized that I was wrong in the looking.
 
 # SATURDAY
 
 ## Scene 1: EXT. WINDY SEASIDE ROAD - DAY
 
-_DALLAS (40s)_ and his son _MAC (10)_ drive along a winding seaside road. The rugged coastline stretches beside them, with Atlantic waves crashing against the rocks. A storm brews in the distance, dark clouds gathering on the horizon.
+_DALLAS (40s)_ and his son _MAC (10)_ drive along a winding seaside road. The rugged coastline stretches beside them, with Atlantic waves crashing against the rocks. A storm brews in the distance, dark clouds gather on the horizon.
 
 As they drive the radio is on and the newscaster is almost excited to announce that there is a storm coming and that we are about to enter hurricane season.
 
@@ -49,7 +48,9 @@ _Dallas_ pauses, staring somberly at the bucket. His emotions overwhelm for a mo
 
 _Mac stands by the window, gazing out at the dimming light. Fireflies flicker in the tall grass. As the wind sways the branches, the fireflies' lights resemble the glint of eyes peering from the darkness._
 
-_Mac glances up at the sky - it is clear._
+_Mac glances up at the sky - a late autumn night, clear._
+
+_A whimpering sound echos from a distance._
 
 ---
 
@@ -57,17 +58,17 @@ _Mac glances up at the sky - it is clear._
 
 _Dallas_ carefully plates an avocado, an onion, and a sliced lemon—meticulously into small pieces and then reassembled to appear untouched. His movements are deliberate, almost ritualistic.
 
-_Mac_ sets the table and turns on the TV. He flips through channels until he finds the local weather report.
+_Mac_ sets the coffee table and turns on the TV. He flips through channels until he finds the local weather report.
 
 _ON TV_: The same _REPORTER_ from earlier, standing outside their house, discusses the unpredictable weather this time of year.
 
 **REPORTER**
-As you can see behind me, new residents are moving in despite the ominous weather forecast. Meteorologists are predicting an unusually severe storm system to hit our coast within the couple of weeks hours. That's right folks - we're in for a wild ride.
+> As you can see behind me, new traffic is - we even have some new residents - despite the ominous weather forecast. Meteorologists are predicting an unusually severe storm system to hit our coast within the couple of weeks hours. That's right folks - we're in for a wild ride.
 
 _Dallas moves closer to the TV, his expression growing concerned as he listens to the report._
 
-**REPORTER** (Interviewing the Mayor in a Podcast style setting)
-Residents are advised always be ready in case of an emergency - stock up on the basics - essentials and prepare for potential power outages. Stay tuned for further updates on this developing situation.
+**REPORTER** 
+> Residents are advised to always be ready in case of a such an emergency - have a plan - stock up on the basics - essentials and prepare for potential power outages. Stay tuned for further updates on this developing situation.
 
 _Mac's eyes drift back to the window, where the wind has picked up, rustling the tall grass outside._
 
@@ -79,6 +80,8 @@ _Thunder rumbles_ in the distance, and the wind causes the storm approaches.
 
 **FADE OUT.**
 
+<!-- END OF SHARE COPY - PART 1 -->
+
 # SUNDAY
 
 ## Scene 7: INT. CHURCH - MORNING
@@ -86,10 +89,9 @@ _Thunder rumbles_ in the distance, and the wind causes the storm approaches.
 The _PASTOR_ stands at the pulpit, addressing the congregation. The church is filled with attentive listeners, including _DALLAS_ (40s) and _MAC_ (10), sitting quietly in a pew.
 
 **PASTOR**
-According to the book of Isiah - David - today we are going to look at a new passage from the new testament - and ask why we call it the new testament. Is the old testament that much older? Have people changed that much? During ancient times, Israelites would make sacrifices of all kinds--grain, animals, even blood. But today, we know that blood sacrifice is no longer required.
+> We are going to look at a new passage from the book of Isiah - on our teaching series - and ask why we and what they thought back then - and what we think now - and what is still true. Have people changed that much? During ancient times, Israelites would make sacrifices of all kinds--grain, animals, even blood. But today, we know that blood sacrifice is no longer required.
 
-The sermon concludes. The congregation begins to stir as they prepare to leave.
-
+**CUT TO:**
 ---
 
 ## Scene 8: EXT. CHURCH FELLOWSHIP AREA - AFTERNOON
@@ -251,7 +253,7 @@ _Molly glances over at Dallas and the Talkative Neighbor, then back to Mac._
 
 > I have a bike.
 
-_Mac_ nods.\_
+_Mac_ nods.
 
 **MAKAYLA**
 
@@ -409,6 +411,8 @@ _Dallas_ and _Mac_ sit down on their couch for dinner. Tension lingers, and they
 On the TV is the _WEATHERMAN_ - talking about how some hurricane quickly making headway along the southern coast, and how it is hurricane season. He urges viewers to be on the lookout.
 
 **FADE OUT.**
+
+<!-- START HERE TO PRINT - PART 2 -->
 
 # WEDNESDAY
 
@@ -728,6 +732,8 @@ _Dallas_ begins to go inside, the sound of the breeze from the Long Island Sound
 Dallas walks over and stands over it for a good while.
 
 ---
+
+<!-- END HERE -->
 
 ## Scene 32: EXT. MAINSTREET TOWN - AFTERNOON
 

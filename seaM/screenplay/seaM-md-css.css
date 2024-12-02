@@ -1,20 +1,22 @@
 /* General styles for the screenplay */
 body {
-  font-family: Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   font-size: 12pt;
-  margin: 0;
-  padding: 0;
-  line-height: 1.5;
-  max-width: 8.5in; /* Match typical letter size width */
   margin: 0 auto;
+  padding: 0;
+  line-height: 1.5; /* Adjusted for better readability */
+  max-width: 8.5in; /* Match typical letter size width */
 }
 
 /* Scene headings (like h1, h2) */
 h2 {
-  margin-top: 2em;
+  font-size: 12pt; /* Slightly larger for emphasis */
+  margin-top: 1em;
+  margin-bottom: 0.5em;
   text-transform: uppercase;
   text-align: left;
   font-weight: bold;
+  letter-spacing: 0.1em;
 }
 
 /* Action or description text */
@@ -23,31 +25,36 @@ p {
   text-indent: 0;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
+  font-size: 12pt; /* Match the font size of the screenplay */
 }
 
-/* Character names should be bold, but NOT indented */
+/* Character names should be bold, centered, and uppercase */
 strong {
   font-weight: bold;
   text-transform: uppercase;
   display: block;
+  text-align: center;
+  margin: 0 auto;
   margin-top: 1em;
   margin-bottom: 0.5em;
 }
 
 /* Automatically indent dialogue that appears after a character name */
 strong + p {
-  text-indent: 2in; /* Indent for dialogue */
-  width: 4in; /* Width of the dialogue block */
+  width: 6in; /* Width of the dialogue block */
   text-align: left;
+  margin: 0 auto;
   margin-bottom: 0.5em;
+  margin-top: 0.5em;
 }
 
 /* Parentheticals (directions for actors during dialogue) */
 strong + p + em {
-  margin-left: 2in;
+  margin-left: 2.5in;
   font-style: italic;
   display: block;
   margin-bottom: 0.25em;
+  text-align: left;
 }
 
 /* Voiceover (V.O.) or Off-Screen (O.S.) */
@@ -55,7 +62,7 @@ strong + p + em {
   font-weight: bold;
   font-style: italic;
   text-transform: uppercase;
-  margin-left: 2in;
+  margin-left: 2.5in;
 }
 
 /* Transitions (CUT TO:, FADE OUT:) */
@@ -63,11 +70,73 @@ strong + p + em {
   text-align: right;
   text-transform: uppercase;
   font-weight: bold;
-  margin-top: 2em;
+  margin-top: 1in;
+  margin-right: 1in;
 }
 
 /* Horizontal rule to represent scene breaks */
 hr {
   margin: 2em 0;
   border: 1px solid black;
+}
+
+/* Add page size and margin for print */
+@page {
+  size: letter;
+  margin: 1in 1in 1in 1.5in; /* Top, Right, Bottom, Left */
+}
+
+/* Style for screenplay block */
+.screenplay {
+  width: 6in; /* Action/description block width */
+  margin: auto;
+}
+
+/* Scene heading styles */
+.scene-heading {
+  text-align: left;
+  font-weight: bold;
+  margin-top: 1in;
+  margin-bottom: 0.25in;
+}
+
+/* Action or description text */
+.action {
+  text-align: left;
+  margin-top: 0.25in;
+  margin-bottom: 0.25in;
+}
+
+/* Character name styles */
+.character {
+  margin-left: 3.5in; /* Center the character's name */
+  text-transform: uppercase;
+  margin-bottom: 0.1in;
+}
+
+/* Dialogue styles */
+.dialogue {
+  margin-left: 2.5in; /* Indented dialogue */
+  margin-right: 2in;
+  text-align: left;
+}
+
+/* Parenthetical styles */
+.parenthetical {
+  margin-left: 3in; /* Slightly indented parentheticals */
+  margin-right: 2in;
+  font-style: italic;
+}
+
+/* Blockquote styles for screenplay dialogue */
+blockquote {
+  background-color: white !important;
+  margin-left:1in;
+  margin-right:1in;
+  text-align: left;
+  font-size: 12pt; /* Match the font size of the screenplay */
+  line-height: 1.5; /* Match the line height of the screenplay */
+  font-family: "Courier New", Courier, monospace; /* Match the font family */
+  border-left: none; /* Remove default blockquote border */
+  padding-left: 0; /* Remove default padding */
 }
