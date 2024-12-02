@@ -44,16 +44,45 @@ _Cut To Kids table:
 Mac
 
 **Jocylen**
-Jocylen (beat) you are that new kid from midwest?
+Jocylen (beat) nice to meet you - my mom said you and your dad are from minnesota? 
 
 **Mac**
-He's over there
+No -Michigian - but we travelled a bit 
 
 **Jocylen**
-What does he do?
+My mom said that your Dad and my dad work together 
 
 **Mac**
-Maths
+Whose your dad?
+
+**Jocylen**
+Mr Roberts
+
+**Mac**
+What does he do?
+
+**Jocylen**
+He studies the weather.
+
+**Makayla**
+Her dad is a hero
+
+**Mac**
+Really?
+
+**Asher**
+I like him
+
+**Makayla**
+He invented the kaledoscope **** 
+
+**Asher**
+Where is he?
+
+**Jocylen**
+He moved to Florida - i'm here now with my mom
+
+
 
 **Makalaya enters
 
