@@ -38,62 +38,68 @@ _(gesturing with a fork full of ziti)_
 
 > Yeah, yeah, Hugo--my cousin--throws a big party every summer. You'd really like him-- he used to own a cosignment store out in branford but now he throws these parties - for charity you kno - . You and your boy - what's his name?
 
-_Cut To Kids table:
+### Cut To : Kids table:
 
 **Mac**
-Mac
+> Mac
 
 **Jocylen**
-Jocylen (beat) nice to meet you - my mom said you and your dad are from minnesota? 
+> Jocylen (beat) nice to meet you - my mom said you and your dad are from minnesota? 
 
 **Mac**
-No -Michigian - but we travelled a bit 
+> No -Michigian - but we travelled a bit 
 
 **Jocylen**
-My mom said that your Dad and my dad work together 
+> My mom said that your Dad and my dad work together 
 
 **Mac**
-Whose your dad?
+> Whose your dad?
 
 **Jocylen**
-Mr Roberts
+> Rodney Roberts
 
 **Mac**
-What does he do?
+> What does he do?
 
 **Jocylen**
-He studies the weather.
+> He makes tools and stuff for the weather.
 
 **Makayla**
-Her dad is a hero
+> Your dad is absolute Legend - watch your mouth Jocylen
 
 **Mac**
-Really?
+> Really?
 
 **Asher**
-I like him
+> I like him
 
 **Makayla**
-He invented the kaledoscope **** 
+> He invented the kaledoscope **** 
 
-**Asher**
-Where is he?
+**Mac**
+> Where is he?
 
 **Jocylen**
-He moved to Florida - i'm here now with my mom
+> He moved to Florida - i'm here now with my mom and grandma. 
+
+**Mac**
+> How does my dad know him?
+
+**Jocylen**
+> My dad says everyone should know your dad. 
+
+**Makayla**
+> My grandfather was like that 
 
 
-
-**Makalaya enters
-
-Cut to:
-
+### Cut to: Adults Table
 
 should join us. The kids can play, we can hang out.
 
 _(takes a bite of ziti, then continues)_
 
-> I mean, who knows when the next storm might hit
+**Dominic**
+> My old man - God rest his soul - used to tell me - Dominic - baby - get with the times - but he wasnt around much - and I worked the bars - I always respected what he did though - that with the weather - I mean, who knows when the next storm might hit
 
 _Dallas nods politely, but seems a bit overwhelmed by Dominic's energy. Mac stands nearby, quietly listening but not engaging, his eyes occasionally drifting to the edge of the backyard. In the far distance there appears to be an object
 
@@ -104,7 +110,6 @@ _(to Dominic)_
 > Dad, I'm heading to the back with the others. We'll be back in 20 minutes.
 
 **DOMINIC**
-
 > 20 minutes? What do you got to for 20 minutes?
 
 **MAKAYLA**
@@ -113,17 +118,16 @@ _(to Dominic)_
 **DOMINIC**
 > Ooo the secret fort - - Makyala - when you going to show us the secret fort?
 
-
 **MAKAYLA**
 > Yes, Dad.
 
-_Makayla glances at Mac, making brief eye contact before turning and heading toward the far end of the backyard. She disappears into the twilight, silhouetted against the setting sun.
+_Makayla and the crew at the kids table - head toward the far end of the backyard. She disappears into the twilight, silhouetted against the setting sun.
 
-_Dallas watches her leave, as if sensing something in the air, but doesn't say anything. Dominic resumes the animated conversation.
+_Dallas watches them leave, as if sensing something in the air, but doesn't say anything. Dominic resumes the animated conversation.
 
 ---
 
-## Scene 27: EXT. DOMINICS'S FAR BACKYARD BY THE COAST - AFTERNOON
+## Scene 27: EXT. MAKAYLA'S SECRET LAIR - LATE AFTERNOON
 
 _The deck party continues in the distance. MAC wanders alone near the far end of Dominics's backyard, which stretches to the coast._
 
@@ -164,27 +168,32 @@ _The kids, led by Makayla, move deeper into the tall grass, toward the tallest g
 
 ---
 
-## Scene 28: EXT. TALL GRASS THICKET
+## Scene 28: EXT. THE EDGE OF THE TALL GRASS THICKET
 
-The crew hang around the tallgrass - time moves slowly - the sun sets - and the wind picks up. They move 
+The crew hang around the tall grass as time moves slowly agaisnt the wind - agaisnt the branches of the tall grass.
 
-\_Makayla takes out a steak from Asher's backpack and puts it in the ground - Mac grabs the the shovel again - and Asher slowly brings the baitfish over and puts it in the bucket.
+_Makayla takes out a pack of hotdogs from Asher's backpack cooler and cleans it on a flat rock - Mac grabs the the shovel leaning agaisnt the outer wall of the wigwam - and Asher slowly brings the baitfish over and puts it in the bucket. 
 
 **JOCYLEN**
-
-> Makayla...
+> Makayla this is crazy
 
 **MAKAYLA**
-> Yeah
+> Yeah - you think?
 
 **JOCYLEN**
 > Makayla
 
 **MAKAYLA**
-> JOCYLEN
+> What's crazy about it?
+
+**JOCYLEN**
+> Huh?
+
+**MAKAYLA**
+> You said this was crazy - what's crazy about it - Mac get the shovel and dig a hole by the edge of the lawn - we call that the outpost - we're going to plant another camera - Asher - get the rope swing pulley and string the bags of bait. - - See what  we do is tie these bad boys to that tree there - and let them swing -
 
 **JOCYLCEN**
-> How do we know this isn't just some racoon getting its kicks on?
+> How do we know this isn't just some racoon getting its kicks oabout it?
 
 **MAKAYLA**
 _(ignoring Jocylen)_
@@ -193,7 +202,7 @@ _(ignoring Jocylen)_
 
 _Mac and _Asher diligently set up cameras on the surronding trees - they hook cables up to a battery pack taped onto a wooden panel.
 
-## Scene 29: EXT. THE HIDEAWAY - LATE AFTERNOON
+## Scene 29: EXT. MAKAYLA'S HIDEAWAY - LATE AFTERNOON
 
 _The kids gather at their hideaway--a makeshift wigwam - fort hidden deep in Makayla's backyard old playground set - grass. Inside, houses a rudimentary surveillance system: several portable HDMI Monitors - run by a batterypank tied to a solar panel. Shovels and buckets and poles are propped up against rocks and driftwood, their screens glowing in the dim light. Cables stretch out towards to a jury-rigged power supply--a large battery bank cobbled together from old car batteries and solar chargers._
 
@@ -201,7 +210,7 @@ _ASHER fiddles with the wiring as he ensures each screen is properly connected. 
 
 **MAKAYLA**
 
-> The creatures are likely to smell the bait fish .
+> The creatures are likely to come out tonight - the tide  .
 
 _Mac looks out the cracks of the makeshift wigwam - through it he watches the tallgrass swaying in the wind._
 
@@ -211,11 +220,12 @@ _Mac looks out the cracks of the makeshift wigwam - through it he watches the ta
 
 _They exchange glances.
 
+**MAC**
+> What creatures?
+
 **ASHER**
 _(setting up a camera)_
-
 > The wind will pick up and push the smell out - 
-
 
 **JOCYLEN**
 > Out where?
@@ -223,7 +233,7 @@ _(setting up a camera)_
 **ASHER**
 > Out there. 
 
-The camera pans 
+Asher tests the camera pan into the Tall Grass 
 
 _Makayla watches Asher set up the final camera._
 
@@ -232,36 +242,28 @@ _Makayla watches Asher set up the final camera._
 **MAKAYLA**
 _(frowning at the sreens)_
 
-> Asher, the camera feed isn't working.
+> Asher, the feed isn't working.
 
 _Asher leans over, squinting at the screen._
 
-_He taps a few buttons, but the screen remains black._
+_He scrolls through the tiny menu of the cheap digital camera, but the screen remains locked in the wrong shutter speed._
 
 **Makayla**
+> Just turn the night vision on - we can fix it on computer
 
-> What is it?
-
-_Mac watches Makayla - and off in the distance - he hears a little noise - that it seems like only he could hear - he looks out the window glances at the darkening sky, a hint of worry in his voice._
+_Mac watches Makayla - and off in the distance - he hears a little noise - that it seems like only he could hear - he looks out the at the darkening sky, a hint of worry in his voice._
 
 **Makayla**
-
 > Mac what is it?
-
-**Makayla**
-
-> What do you see?
 
 _Makayla looks torn, glancing between the malfunctioning equipment and her friends._
 
 **MAKAYLA**
-
-> But we haven't seen anything yet. We can't just give up.
+> But we haven't got the camera working yet. Haaaaaa - okay - I guess we have enough cameras - Asher go and record - make sure you are saving it as an mp4. 
 
 **JOCYLEN**
 _(standing up)_
-
-> My mom's gonna freak if we're not back soon. 
+> Makayla we ought to go back - its been more than 20 min
 
 **MAKAYLA**
 > Go then Jocylen - we are right in the backyard - tell them we're fine - but go if you need to - go go go go go. 
@@ -275,6 +277,9 @@ _Reluctantly, they begin to gather their things. Makayla lingers, staring out at
 _As they pack up their makeshift surveillance system, the wind picks up, rustling through the grass. For a moment, it almost sounds like whispers carried on the breeze._
 
 ---
+
+
+------ CUT HERE ----- 
 
 ## Scene 31: INT. NEIGHBOR'S HOUSE - HALLWAY - EVENING
 
