@@ -4,7 +4,8 @@
 title: "Sea Monster - Scenes 25 - 31"
 author: Alex Gonzalez
 date: 2024-12-01
-last-updated: 2024-12-01
+updated: 2024-12-01
+last-updated: 2024-12-02
 ---
 
 <link rel="stylesheet" href="seaM-md-css.css">
@@ -14,7 +15,7 @@ last-updated: 2024-12-01
 
 ## Scene 25a EXT. Outside Morning
 
-Dallas and Mac walk there dog. They walk it by a patch of grass - tall grass - and Dallas looks off into the distance - Mac watches his gaze - and soon does the Dog - the latter too now staring at the great no where - beneath the tall grass.
+Dallas and Mac walk the neighbor's dog but it isn't working well. They walk it by a patch of grass - tall grass - and Dallas looks off into the distance - Mac watches his gaze - and soon does the Dog - the latter too now staring at the great no where - beneath the tall grass.
 
 ---
 
@@ -24,52 +25,72 @@ _DALLAS_ and _MAC_ drive to a neighbor's house for dinner. The radio plays in th
 
 **RADIO ANNOUNCER (V.O.)**
 
-> And now for your evening weather forecast. Expect clear skies tonight with a slight breeze off the bay side. Perfect weather for the upcoming Branford Sea Harvest Festival next week. Don't miss out on this annual extravaganza!
+> And now for your evening weather forecast. Expect clear skies tonight with a slight breeze off the bay side. Perfect weather for the upcoming Branford Sea Harvest Festival next week. Don't miss out on this annual experience for you and the whole family - the whole family - everyone can experience this joyus - everyone is welcomed - come forth towards the extravaganza!
 
 ---
 
-## Scene 26: EXT. DOMINIC'S BACKYARD DECK PARTY - EVENING
+## Scene 26: INT. DOMINIC'S SCREENED BACKYARD DECK PARTY - EVENING
 
-The setting sun bathes the backyard in a golden glow. Laughter and sizzling BBQ sounds fill the air as neighbors mingle on the deck. _DALLAS_ stands with _DOMINIC_, an animated neighbor who's talking enthusiastically.
+The setting sun bathes the backyard in a golden glow of fury. Laughter and sizzling sounds engulf the air as the neighbors mingle upon the backyard screened deck. _DALLAS_ stands with _DOMINIC_, who's talking enthusiastically.
 
 **DOMINIC**
 _(gesturing with a fork full of ziti)_
 
-> Yeah, yeah, Hugo--my cousin--throws an annual charity event every summer. You'd really like him--his daughter's into all that sea stuff too. You and your son should join us. The kids can play, and we can all hang out.
+> Yeah, yeah, Hugo--my cousin--throws a big party every summer. You'd really like him-- he used to own a cosignment store out in branford but now he throws these parties - for charity you kno - . You and your boy - what's his name?
 
-**DOMINIC**
-_(chuckling, gesturing with his fork)_
+_Cut To Kids table:
 
-> You know, it's wild that we're having this on a Wednesday, right? But that's just how our schedules are these days. Everyone's away on the weekends, picking apples and whatnot. We've got to squeeze in as many BBQs as we can while we still have breath in our lungs!
+**Mac**
+Mac
+
+**Jocylen**
+Jocylen (beat) you are that new kid from midwest?
+
+**Mac**
+He's over there
+
+**Jocylen**
+What does he do?
+
+**Mac**
+Maths
+
+**Makalaya enters
+
+Cut to:
+
+
+should join us. The kids can play, we can hang out.
 
 _(takes a bite of ziti, then continues)_
 
-> I mean, who knows when the next storm might hit, or when life might throw us a curveball? So we gather when we can, break bread together, and enjoy these moments. That's what community's all about, isn't it?
+> I mean, who knows when the next storm might hit
 
-_Dallas smiles politely, but seems a bit overwhelmed by Dominic's energy. Mac stands nearby, quietly listening but not engaging, his eyes occasionally drifting to the edge of the backyard._
+_Dallas nods politely, but seems a bit overwhelmed by Dominic's energy. Mac stands nearby, quietly listening but not engaging, his eyes occasionally drifting to the edge of the backyard. In the far distance there appears to be an object
 
-_MAKAYLA (12) approaches Dominic, hugging him quickly. She then steps back, looking over at Mac as she adjusts her backpack straps._
+_MAKAYLA (12) approaches Dominic, hugging him quickly. She then steps back, looking over at Mac as she adjusts her backpack straps.
 
 **MAKAYLA**
 _(to Dominic)_
-
-> Dad, I'm heading to the back with the others. I'll be back later.
+> Dad, I'm heading to the back with the others. We'll be back in 20 minutes.
 
 **DOMINIC**
 
-> Okay, just stay close. We're about to eat. We've got clam chowder that'll warm your soul, lobster rolls bursting with flavor, and a seafood boil with shrimp, clams, and mussels straight from the Sound. And don't miss the stuffed clams and the corn on the cob, all seasoned to perfection. Oh, and save room for the blueberry pie - it's a local legend!
+> 20 minutes? What do you got to for 20 minutes?
 
 **MAKAYLA**
-
-> Yes, Dad.
-
-_Makayla glances at Mac, making brief eye contact before turning and heading toward the far end of the backyard. She disappears into the twilight, silhouetted against the setting sun._
-
-_Dallas watches her leave, sensing something in the air, but doesn't say anything. Dominic resumes his animated conversation._
+> I want to show them the fort 
 
 **DOMINIC**
+> Ooo the secret fort - - Makyala - when you going to show us the secret fort?
 
-> So this charity event...
+
+**MAKAYLA**
+> Yes, Dad.
+
+_Makayla glances at Mac, making brief eye contact before turning and heading toward the far end of the backyard. She disappears into the twilight, silhouetted against the setting sun.
+
+_Dallas watches her leave, as if sensing something in the air, but doesn't say anything. Dominic resumes the animated conversation.
 
 ---
 
