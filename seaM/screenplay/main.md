@@ -402,7 +402,7 @@ _Mac_ pedals home as fast as he can, the events of the evening still fresh in hi
 
 Without hesitation, _Mac_ runs to him and gives him a hug.
 
-Dallas turns toward his son. And for a moment embrace - whilst doing so - they both hear the strange sound together--carried on the wind from the direction of the beach. Dallas looks out into the darkness, his concern growing.\_
+Dallas turns toward his son. And for a moment embrace - whilst doing so - they both hear the strange sound together--carried on the wind from the direction of the beach. Dallas looks out into the darkness, his concern growing._
 
 ## Scene 24: INT. NEW HOUSE - DINING ROOM - NIGHT
 
@@ -412,25 +412,15 @@ On the TV is the _WEATHERMAN_ - talking about how some hurricane quickly making 
 
 **FADE OUT.**
 
-<!-- START HERE TO PRINT - PART 2 -->
-<!-- START HERE TO PRINT - PART 2 -->
 
----
-title: "Sea Monster - Scenes 25 - 31"
-author: Alex Gonzalez
-date: 2024-12-01
-updated: 2024-12-01
-last-updated: 2024-12-02
----
-
-<link rel="stylesheet" href="seaM-md-css.css">
+<!-- START OF 25-30 -->
 
 
 # WEDNESDAY
 
 ## Scene 25a EXT. Outside Morning
 
-Dallas and Mac walk the neighbor's dog but it isn't working well. They walk it by a patch of grass - tall grass - and Dallas looks off into the distance - Mac watches his gaze - and soon does the Dog - the latter too now staring at the great no where - beneath the tall grass.
+Dallas and Mac walk the neighbor's dog but it isn't going well. They walk it by a patch of grass - tall grass - and Dallas looks off into the distance - Mac watches his gaze - and soon does the Dog - the latter too now staring at the great nothingness among the tall grass.
 
 ---
 
@@ -440,8 +430,7 @@ _DALLAS_ and _MAC_ drive to a neighbor's house for dinner. The radio plays in th
 
 **RADIO ANNOUNCER (V.O.)**
 
-> And now for your evening weather forecast. Expect clear skies tonight with a slight breeze off the bay side. Perfect weather for the upcoming Branford Sea Harvest Festival next week. Don't miss out on this annual experience for you and the whole family - the whole family - everyone can experience this joyus - everyone is welcomed - come forth towards the extravaganza!
-
+> And now for your evening weather forecast. Expect clear skies tonight with a slight breeze off the bay side. Perfect weather for the upcoming that Branford Sea Harvest Festival next week. Oh yeah - it should be good this year - get the kids - the get family - the whole family! Though right now the storm seems to be coming in - so you might want to stay indoors - but not too long - because the storm will pass and we should be good for the festival.
 ---
 
 ## Scene 26: INT. DOMINIC'S SCREENED BACKYARD DECK PARTY - EVENING
@@ -508,10 +497,7 @@ _(gesturing with a fork full of ziti)_
 
 
 ### Cut to: Adults Table
-
-should join us. The kids can play, we can hang out.
-
-_(takes a bite of ziti, then continues)_
+_(Dominic takes a bite of ziti, then continues)_
 
 **Dominic**
 > My old man - God rest his soul - used to tell me - Dominic - baby - get with the times - but he wasnt around much - and I worked the bars - I always respected what he did though - that with the weather - I mean, who knows when the next storm might hit
@@ -693,6 +679,9 @@ _As they pack up their makeshift surveillance system, the wind picks up, rustlin
 
 ---
 
+
+<!-- END of 25-30 -->
+
 ## Scene 31: INT. DOMINICS DINING ROOM KITCHEN - EVENING
 
 _The kids return to the party. Mac approaches Dallas, who's standing alone in the hallway, looking at wall-mounted family portraits--photos of when the kids were little. He looks at his son and smiles._
@@ -713,7 +702,7 @@ _Bonnie comes out with a big mashed potato plate of mashed potatoes.
 > Alright - let's go - it's time for dinner.
 
 
-## Scene 30a - DINNER TABLE WITH THE DOMINICS 
+## Scene 31a - DINNER TABLE WITH THE DOMINICS 
 
 The crew sit around a table filled with bbq fixings and corn. Makyala doesn't eat her food much - Mac and the children set silent.
 
