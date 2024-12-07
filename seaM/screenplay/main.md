@@ -96,12 +96,12 @@ The _PASTOR_ stands at the pulpit, addressing the congregation. The church is fi
 
 ## Scene 8: EXT. CHURCH FELLOWSHIP AREA - AFTERNOON
 
-The church bustles with activity as congregates gather and plop iceberg lettuce on their plastic plates. _Dallas_ and _Mac_ stand awkwardly, each holding a plate of food. They stare at their plates, struggling to feel at ease.
+The church bustles with activity as congregates gather and plop iceberg lettuce on their plastic plates. _Dallas_ and _Mac_ stand awkwardly on line - progressing slowly. 
 
 A _FRIENDLY MAN_ (50s), noticing their discomfort, approaches them with a welcoming smile.
 
 **FRIENDLY MAN**
-Hey there, - hey (hey) where y'all from?
+Hey there, - hey (hey) - dont worry - im not cutting the line ha - but i mean i will if you let me ha ha - i joke i joke where y'all from?
 
 **DALLAS**
 Indiana.
@@ -110,32 +110,27 @@ Indiana.
 Indiana, huh? Never been - Well, welcome - Where are you living now?
 
 **DALLAS**
-Branford.
+> Branford.
 
 _The Friendly Man's face lights up._
 
 **FRIENDLY MAN**
-No way! I'm in Branford too! We have a BBQ going on tomorrow for Labor Day. Come through if you can.
+> No way! I'm in Branford too! Names Dominic - Howdy - hey whose this big guy - yo Kid you meet my kids - Whats your name again ? Dallas what are you from texas (snarls) hey hey big listen - We have a BBQ going on tomorrow for the three day weekend - you got off work right? bonnie told me youre some professor at Yale - i got a cousin who works at Yale - yeah big time - full health benefits - yeah he works the library - truthfully i dont know what the hell he does ha ha - okay let's get you a plate big guy .
 
 _Dallas nods politely, but he and Mac still seem out of place._
 
 _In the distance, Mac spots MOLLY (12) and ASHER (10) huddled over something. Asher holds a bunch of gear, while Molly waves what looks like weather instruments in the air._
 
-_The Friendly Man points toward a MINI FRIDGE near the coffee machine. A flyer pinned to the fridge reads: "23rd Annual Branford Harvest Sea Festival."_
+_Dominic points toward a MINI FRIDGE near the coffee machine. A flyer pinned to the fridge reads: "23rd Annual Branford Harvest Sea Festival."_
 
 _Dominic enters the scene - giving a nod to the friendly man._
 
 **DOMINIC**
-See that? My cousin's in charge of the whole thing. It's the Sea Festival--a big deal around here. We do it every year to raise money for the Little League.
-
-(MORE)
-
-**DOMINIC (CONT'D)**
-Borrow some stage equipment from the big arenas, get some local swashbuckle and jam bands to play... and of course, oysters for days. Not as famous as the Oyster Festival, but we hold our own.
+See that? It's the Branford Sea Festival--myfriend Diego works there - some charity who knows - we should go
 
 _Dallas listens politely, nodding along, but his attention drifts as the man continues to rattle on._
 
-_Makayla and Asher put something in a bag and put it under a tree. Mac doesn't say anything._
+In the distance outside by the playground, _Makayla and Asher hover around an object - Makayla looks around and signals Asher to put it in a backpack - Mac sees from the distance - but doesn't say anything._
 
 ---
 
