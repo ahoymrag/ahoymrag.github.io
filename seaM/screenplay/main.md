@@ -14,9 +14,7 @@ updated: 2024-12-07
 
 ## Scene 0: Thunderstorm down south
 
-Flashes of a thunderstorm - Flashes of a mother playing with her son - buildings and bird houses - - flashes of wind hitting the breeze upon the mountain fog - and flashes of a packed car and a vacaction up north and to the east - from the barren west towards new england - flashes of a seaside beach town - flashes of a big thunderstorm - flashes of  mom and dad getting gas - driving doing errands - flashes of Dallas setting up an weather device - flashes of a smile - flashes of a young boy in his mother's arms - flashes of a soft embrace - flashes of the hand on her shoulder from the warmth of her husband -  flashes of chemo - flashes of weather instrument - flashes of experimental procedures in the garage and pointing it towards the sky - flashes of Mac helping him - flashes of the woods - flashes of green eyes in the tall grass - flashes of the dark grass - flashes of the mother coming back and running away from the dog - towards the light -
-
-Flashes of a funeral.
+Flashes of a thunderstorm - Flashes of a mother playing with her son - buildings and bird houses - - flashes of wind hitting the breeze upon the mountain fog - and flashes of a packed car and a vacaction up north and to the east - from the barren west towards new england - flashes of a seaside beach town - flashes of a big thunderstorm - flashes of  mom and dad getting gas - driving doing errands - flashes of Dallas setting up an weather device - flashes of a smile - flashes of a young boy in his mother's arms - flashes of a soft embrace - flashes of the hand on her shoulder from the warmth of her husband -  flashes of chemo - flashes of weather instrument - flashes of experimental procedures in the garage and pointing it towards the sky - flashes of Mac helping him - flashes of the woods - flashes of green eyes in the tall grass - flashes of the dark grass - flashes of the mother coming back and running away from the dog - towards the light - flashes of a mother holding on to a bird house - sick - as she watches the birds flutter - she smiles - flashes of the darkness - of the tallgrass and green eyes that sparkle like fireflies. 
 
 
 # SATURDAY
@@ -118,16 +116,10 @@ _The Friendly Man's face lights up._
 **FRIENDLY MAN**
 > No way! I'm in Branford too! Names Dominic - Howdy - hey whose this big guy - yo Kid you meet my kids - Whats your name again ? Dallas what are you from texas (snarls) hey hey big listen - We have a BBQ going on tomorrow for the three day weekend - you got off work right? bonnie told me youre some professor at Yale - i got a cousin who works at Yale - yeah big time - full health benefits - yeah he works the library - truthfully i dont know what the hell he does ha ha - okay let's get you a plate big guy .
 
-_Dallas nods politely, but he and Mac still seem out of place._
-
-_In the distance, Mac spots MOLLY (12) and ASHER (10) huddled over something. Asher holds a bunch of gear, while Molly waves what looks like weather instruments in the air._
-
-_Dominic points toward a MINI FRIDGE near the coffee machine. A flyer pinned to the fridge reads: "23rd Annual Branford Harvest Sea Festival."_
-
-_Dominic enters the scene - giving a nod to the friendly man._
+_Dallas nods politely, _Dominic points toward a flyer hanging on the fridge near the coffee machine. It reads: "23rd Annual Branford Harvest Sea Festival."_
 
 **DOMINIC**
-See that? It's the Branford Sea Festival--myfriend Diego works there - some charity who knows - we should go
+> My friend Diego works there - some charity who knows - we should go
 
 _Dallas listens politely, nodding along, but his attention drifts as the man continues to rattle on._
 
