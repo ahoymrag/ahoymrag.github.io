@@ -102,7 +102,10 @@ I'm looking at this computer - nice and cold steel - a company purchased across 
 Could one live without screens?
 I think so.
 
-##
+## Nebulas 
+nebulas - what a word - what a concept- holy battle cosmic battle thrown on display across the stars - 
+
+## The Great Repent 
 
 
 ### notes on sermon 12.08.24
@@ -110,3 +113,10 @@ I think so.
 - splits judgemental into 2 psrts
 first psrt on cross 
 second when jesus returns
+
+2. Christian has a different battle now then they did in the old covenate
+
+warfare on own sin - sin is on the loosing side
+
+
+do you want God to come or cling to sin? Great repentance 
