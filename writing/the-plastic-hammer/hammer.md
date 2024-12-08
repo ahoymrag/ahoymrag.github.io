@@ -103,3 +103,10 @@ Could one live without screens?
 I think so.
 
 ##
+
+
+### notes on sermon 12.08.24
+- life without sin
+- splits judgemental into 2 psrts
+first psrt on cross 
+second when jesus returns
