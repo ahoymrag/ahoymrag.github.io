@@ -5,6 +5,7 @@ date: 2024-09-29
 updated: 2024-10-09
 updated: 2024-12-01
 updated: 2024-12-07
+updated: 2024-12-09
 ---
 
 <link rel="stylesheet" href="seaM-md-css.css">
@@ -16,6 +17,7 @@ updated: 2024-12-07
 
 Flashes of a thunderstorm - Flashes of a mother playing with her son - buildings and bird houses - - flashes of wind hitting the breeze upon the mountain fog - and flashes of a packed car and a vacaction up north and to the east - from the barren west towards new england - flashes of a seaside beach town - flashes of a big thunderstorm - flashes of  mom and dad getting gas - driving doing errands - flashes of Dallas setting up an weather device - flashes of a smile - flashes of a young boy in his mother's arms - flashes of a soft embrace - flashes of the hand on her shoulder from the warmth of her husband -  flashes of chemo - flashes of weather instrument - flashes of experimental procedures in the garage and pointing it towards the sky - flashes of Mac helping him - flashes of the woods - flashes of green eyes in the tall grass - flashes of the dark grass - flashes of the mother coming back and running away from the dog - towards the light - flashes of a mother holding on to a bird house - sick - as she watches the birds flutter - she smiles - flashes of the darkness - of the tallgrass and green eyes that sparkle like fireflies. 
 
+---
 
 # SATURDAY
 
