@@ -15,7 +15,7 @@ updated: 2024-12-09
 
 ## Scene 0: Thunderstorm down south
 
-Flashes of a thunderstorm - Flashes of a mother playing with her son - buildings and bird houses - - flashes of wind hitting the breeze upon the mountain fog - and flashes of a packed car and a vacaction up north and to the east - from the barren west towards new england - flashes of a seaside beach town - flashes of a big thunderstorm - flashes of  mom and dad getting gas - driving doing errands - flashes of Dallas setting up an weather device - flashes of a smile - flashes of a young boy in his mother's arms - flashes of a soft embrace - flashes of the hand on her shoulder from the warmth of her husband -  flashes of chemo - flashes of weather instrument - flashes of experimental procedures in the garage and pointing it towards the sky - flashes of Mac helping him - flashes of the woods - flashes of green eyes in the tall grass - flashes of the dark grass - flashes of the mother coming back and running away from the dog - towards the light - flashes of a mother holding on to a bird house - sick - as she watches the birds flutter - she smiles - flashes of the darkness - of the tallgrass and green eyes that sparkle like fireflies. 
+Flashes of a thunderstorm - Flashes of a mother playing with her son - buildings and bird houses - - flashes of wind hitting the breeze upon the mountain fog - and flashes of a packed car and a vacaction up north and to the east - from the barren west towards new england - flashes of a seaside beach town - flashes of a big thunderstorm - flashes of  mom and dad getting gas - driving doing errands - flashes of Dallas setting up an weather device - flashes of a smile - flashes of a young boy in his mother's arms - flashes of a soft embrace - flashes of the hand on her shoulder from the warmth of her husband -  flashes of chemo - flashes of weather instrument - flashes of experimental procedures in the garage and pointing it towards the sky - flashes of Mac helping him - flashes of the woods - flashes of green eyes in the tall grass - flashes of the dark grass - flashes of the mother coming back and running away from the dog - towards the light - flashes of a mother holding on to a bird house - sick - as she watches the birds flutter - she smiles - flashes of the darkness - flashes - of Dallas trying to shine lazers into the mirrors - and then the refractions into the eyes of the mom - but leaving the mom hopeless and flashes of dallas holding young mac alone in a hospital waiting room - of the tallgrass and green eyes that sparkle like fireflies. 
 
 ---
 
@@ -964,51 +964,12 @@ The crew--_MAKAYLA_, _MAC_, and a few other kids--gather around a computer. They
 
 Nothing unusual comes up on the screen.
 
-**JEFFERSON**
-_(to Makayla)_
-
-> Hey, you showed Mac that dumb book yet?
-
-_Makayla shoots Jefferson a warning glance, silencing him._
-
-**MAKAYLA**
-
-> No.
-
-**MAC**
-
-> What book?
-
-**MAKAYLA**
-
-> Never mind.
-
-**ASHER**
-_(to Mac)_
-
-> It's the book our grandfather wrote.
-
-**MAC**
-
-> What?
-
-**MAKAYLA**
-
-> It's the book our grandfather wrote.
-
-**MAC**
-
-> What?
-
-### AUTHORS NOTE
-
-> FLESH OUT THIS SCENE
 
 # SATURDAY #2
 
 ## Scene 43: EXT. MAC'S HOUSE - MORNING
 
-_DALLAS_ is outside, focused on building a bird feeder. He examines his creation, then turns his attention to a bucket filled with gardening supplies. Initially hesitant, he eventually begins tending to the garden.
+_DALLAS_ is outside, focused on building a bird feeder. He watches the way that the reflection of the glass holding the seed reflects off of it - and how it goes into the garage. He examines his creation, a little then turns his attention to a bucket filled with gardening supplies. Initially hesitant, he eventually begins tending to the garden.
 
 _MAC_ rummages through the bucket, discovering an old fishing wire and a ring. He fashions a makeshift ring toss game on a tree across from the tall grass.
 
@@ -1019,56 +980,119 @@ _Mac_ plays for a while, then retrieves his bike and rides off.
 _Mac_ parks his bike outside Makayla and Asher's home. _DOMINIC_, the talkative neighbor, answers the door.
 
 **DOMINIC**
-Oh, what's up Mr. Mac - what's shaking my friend? How's your dad?
-
+Oh, what's up Mr. Mac - what's shaking my friend? How's your Dad doing?
 **MAC**
 He's okay.
 
 **DOMINIC**
-You should tell him to call me sometime. You looking for Makayla?
+What's he up to these days? 
 
 **MAC**
-Yeah - I have her \*Item.
+Works mostly
 
-_Makayla_ comes running down the stairs, arms full of laptops, camcorders, and various electronic equipment.
+**DOMINIC**
+Tell him to call me sometime. You looking for Makayla?
 
-## Scene 45: INT. MAKAYLA'S GRANDPA'S STUDY - DAY
+**MAC**
+Yea.
 
-The room is cluttered with old DVD covers, playhouses, and dust-covered blankets concealing books and chests. _Makayla_, _Mac_, and _Asher_ huddle around a dusty laptop with basic movie editing software.
+**DOMINIC**
+> Makaylaaaaaaaaaaaaaaaaa
+
+_Makayla_ comes running upstairs from the den to the kitchen - with camcorders, and various electronic equipment in hand she .
+
+## Scene 45: INT. MAKAYLA'S DOWNSTAIRS DEN STUDY - DAY
+
+The room is cluttered with bookcases of vinly and vhs - radios and dials - but beyond it lies a little beads that hang from the wall - as they enter between the dishwasher and the single cement window lays Makaylas inner headquarters. - She turns on a feed and it shows the remote locations outside - the feed shows the wigwam.  covers, playhouses, and dust-covered blankets concealing books and chests. _Makayla_, _Mac_, and _Asher_ huddle around a dusty laptop with basic movie editing software.
+
+There is a washer and dryer and various other household items. 
 
 **MAKAYLA**
 _(whispering)_
-I was thinking we could triangulate the creature.
+> I was thinking we could triangulate the places where we had our encounters and make a map - find a pattern and start to track.
 
-**MAC**
-How do you know all of this?
+Makayla fires open a rediumnetary (sic) paint program on her computer. 
 
 **MAKAYLA**
-Can I trust you?
+> Mac... Mac
 
-_Makayla_ retrieves an old, leather-bound journal from a shelf. She begins reading aloud from an entry dated 1925, describing her grandfather's encounter with strange creatures in the woods.
+**Mac**
+> Yeah?
+
+**MAKAYLA**
+> Can I trust you?
+
+_Makayla_ retrieves an old, leather-bound journal from a shelf. She begins reading aloud from an entry dated 1925, describing her grandfather's encounter with strange creatures in the woods. 
+
+Inside the book there are various drawings of the creatures - Mac's eyes grow wide. 
 
 **MAKAYLA**
 _(reading)_
-"Cold - summer night in September - Wednesday - 1925 - cold windy - outside - near the coast - far off in the distance I stood with my father - and we both saw the stones..."
+> "Wednesday - 79 degree farhienhite - 1925 - wind gust averages ___ - outside - near the coast - far off in the distance I stood with my father - and we both saw the stones..."
 
 _As Makayla continues reading, the wind outside picks up._
 
-**MAC**
-I think I should go home.
-
-**MAKAYLA**
-What do you mean?
-
-**ASHER**
-It's getting windy.
-
-**MAC**
-My dad's been worried about the weather.
 
 **MAKAYLA**
 _(determined, closing the journal)_
-We have to find out what happened next. If Grandpa saw them, then we can too. We just need to figure out what they want... before it's too late. I think they want the chicken on the stick.
+> We have to find out what happened next. If Grandpa saw them, then we can too. We just need to figure out what they want... before it's too late. I think they want the chicken on the stick.
+
+
+**MAC**
+> I think I should go home.
+
+**MAKAYLA**
+> What do you mean?
+
+**ASHER**
+> It's getting windy.
+
+**MAC**
+> I don't feel good.
+
+**MAKAYLA**
+> Don't lie to me Mac. 
+
+The two look at each other for a good while.
+
+**MAKAYLA**
+> Don't ever lie to me.
+
+**MAC**
+> Okay - I want to go home because I don't think it is a good idea that we summon these creatures...
+
+**MAKAYLA**
+> You really think that?
+
+**MAC**
+> What do you mean?
+
+**MAKAYLA**
+> Is that the real reason why you want to go home?
+
+**ASHER**
+> Makayla - stop
+
+**MAC**
+> I want to see my dad.
+
+**MAKAYLA**
+> What do you think he's doing right now?
+
+**ASHER**
+> Makayla...
+
+**MAC**
+> I'm out of here.
+
+_Mac gets up and walks out the deen and grabs his bike and rides home.
+
+## SCENE 45B
+
+Mac rides his bike home alone among the tall grass.
+
+
+---
 
 **MAC**
 Okay - when do you want to do this?
