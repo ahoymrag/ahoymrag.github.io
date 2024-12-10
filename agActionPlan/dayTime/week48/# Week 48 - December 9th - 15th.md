@@ -21,6 +21,12 @@
 2. updates for ahoy read by Ellen 
 
 
+## Xmas gift ideas
+1. dad - tile kit - 2 keys and wallet
+2. dad Alexa smart lights + echo pop ?
+3. aldo echo pop and smart lights
+4. aldo loop pedal ? 
+
 
 	_ Loose Ideas _
 
