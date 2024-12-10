@@ -9,7 +9,16 @@
 
 
 # ways to feel accomplished
-1. book house
+1. put offer on house
+2. stretch plan
+3. be loose of preston
+4. assemble visual of Gustavo
+5. edit and release christmas episode
+
+
+# Xmas episode ideas
+1. 25 min total
+2. updates for ahoy read by Ellen 
 
 
 
