@@ -746,9 +746,50 @@ _Dallas_ begins to go inside, the sound of the breeze from the Long Island Sound
 
 Dallas walks over and stands over it for a good while.
 
+Cut to : Dallas and Mac in the car - driving to school. 
 
-## Scene 35: EXT. MAINSTREET TOWN - MORNING
-The class is on a field trip to the local town - the kids are all excited - and they are all looking at the weather chimes and the weather ** NOTE - - have a foreshadowment here. 
+## Scene 35: INT. CLASSROOM - MORNING
+
+The class is in class eseshion - Mac looks out in the distance and sees another weather reporter taking footage of some bush behind a chain linked fence. 
+
+The teacher an elderly woman - asks the class a question - and Mac is the first to answer. 
+
+**Teacher**
+> Mac - what have you learned about the weather so far this year?
+
+**Mac**
+> There are a bunch of things - we live in an atmosphere - and the atmosphere is made up of a bunch of different things - and the weather is what happens when the atmosphere changes. Different things happen when the atmosphere changes. Animals and plants and things act differently when the atmosphere changes. And we can predict the weather - but we can't predict everything.
+
+**Teacher**
+> Okay Mac - I see you. 
+
+**Teacher**
+> Asher
+
+**ASHER**
+> Yeah?
+
+**Teacher**
+> What do you think about the weather?
+
+**ASHER**
+> I like it.
+
+**Teacher**
+> What makes you say that?
+
+**ASHER**
+> I don't know - I just like it. 
+
+**Teacher**
+> Can you elaborate?
+
+**ASHER**
+> I don't know - I just like it. 
+
+---
+
+## Scene 36: INT. YOUTH GROUP CLASS - AFTERNOON
 
 **MAKAYLA**
 > Did you guys hear the coyotes last night?
@@ -768,11 +809,6 @@ _Mac looks around for the apparent dogs.
 > That's all you say? Yeah? 
 
 _Mac_ hesitates but then nods.
-
----
-
-## Scene 33: INT. YOUTH GROUP CLASS - AFTERNOON
-
 
 
 _Mac_ looks around and notices that some of his classmates are also his Sunday School classmates. The _Youth Pastor_ begins handing out papers on the topic of ancient Israelites and what we can learn from their mistaken ways of seeking atonement.
