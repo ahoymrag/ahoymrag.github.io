@@ -789,7 +789,7 @@ The teacher an elderly woman - asks the class a question - and Mac is the first 
 
 ---
 
-## Scene 36: INT. YOUTH GROUP CLASS - AFTERNOON
+## Scene 36: EXT. CHURCH PARKING LOT
 
 **MAKAYLA**
 > Did you guys hear the coyotes last night?
@@ -810,6 +810,7 @@ _Mac looks around for the apparent dogs.
 
 _Mac_ hesitates but then nods.
 
+## Scene 37: INT. CHURCH YOUTH GROUP CLASSROOM - AFTERNOON
 
 _Mac_ looks around and notices that some of his classmates are also his Sunday School classmates. The _Youth Pastor_ begins handing out papers on the topic of ancient Israelites and what we can learn from their mistaken ways of seeking atonement.
 
@@ -823,7 +824,7 @@ After the class, the _Youth Pastor_ notices _Mac_ sitting alone and goes over to
 
 ---
 
-## Scene 34: EXT. CHURCH PARKING LOT
+## Scene 38: EXT. CHURCH PARKING LOT
 
 _Mac_ sits alone as the rest of the kids' parents pick them up from Youth Group. He watches everyone and their families go into their various mini vans.
 
@@ -920,7 +921,7 @@ _Mac walks into the car._
 
 ---
 
-## Scene 35: EXT. MAC'S HOUSE - NIGHT
+## Scene 39: EXT. MAC'S HOUSE - NIGHT
 
 That night, _Mac_ steps outside and sees _Dallas_ grilling. The smoke from the grill rises and catches the light, casting eerie shadows. _Mac_ looks beyond the borders of their property, his gaze fixated on the tall grass swaying in the breeze.
 
@@ -928,19 +929,19 @@ _Dallas_ notices him staring and follows his gaze, looking at the tall grass as 
 
 ---
 
-## Scene 36: INT. MAC'S HOUSE - LIVING ROOM - NIGHT
+## Scene 40: INT. MAC'S HOUSE - LIVING ROOM - NIGHT
 
 Later, _Mac_ walks back inside to find _Dallas_ staring at the weather TV. _Dallas_ notices _Mac_ and gets up. The two sit together by the TV. Off in the distance - the wind pulls up.
 
 ---
 
-## Scene 37: EXT. MAC'S HOUSE - NIGHT
+## Scene 41: EXT. MAC'S HOUSE - NIGHT
 
 That night, as they prepare for bed, a strange sound echoes through the house. The wind begins to pick up, rattling the windows. _Dallas_ looks out into the night, the tall grass swaying ominously.
 
 ---
 
-## Scene 38: EXT. MAC'S HOUSE - NIGHT
+## Scene 42: EXT. MAC'S HOUSE - NIGHT
 
 _Dallas_ steps outside into the thunderstorm to make sure everything is secure. The wind howls around him as he checks the perimeter, a sense of unease settling in.
 
@@ -948,13 +949,13 @@ _Dallas_ steps outside into the thunderstorm to make sure everything is secure. 
 
 # FRIDAY
 
-## Scene 39: INT. MAC'S HOUSE - MORNING
+## Scene 43: INT. MAC'S HOUSE - MORNING
 
 The next morning, the storm has passed, but the air is still heavy with the remnants of the previous night's events. _DALLAS_ looks out the window and finds the seed from the bird feeder scattered about. _MAC_ searches for the rocks they had collected earlier.
 
 ---
 
-## Scene 40: INT. SCHOOL CLASSROOM - DAY
+## Scene 44: INT. SCHOOL CLASSROOM - DAY
 
 The _TEACHER_ stands at the front of the class, addressing the students.
 
@@ -964,13 +965,13 @@ The _TEACHER_ stands at the front of the class, addressing the students.
 
 ---
 
-## Scene 41: EXT. BEACH ROAD - SATURDAY MORNING
+## Scene 45: EXT. BEACH ROAD - SATURDAY MORNING
 
 The crew goes wild with their bikes down the road, past the post office, riding along the tiny coastal sidewalks. The wind whips through their hair as they pedal furiously, their laughter carried away by the sea breeze.
 
 ---
 
-## Scene 42: INT. SCHOOL MEDIA LAB - AFTERNOON
+## Scene 46: INT. SCHOOL MEDIA LAB - AFTERNOON
 
 The crew--_MAKAYLA_, _MAC_, and a few other kids--gather around a computer. They stand over a software editor, DaVinci Resolve, going frame by frame through various camera footage, scanning for any sign of eyes or other mysterious figures. _MISTY_ hands _MAKAYLA_ another camera, and she inserts its SD card into the computer.
 
@@ -979,7 +980,7 @@ Nothing unusual comes up on the screen.
 
 # SATURDAY #2
 
-## Scene 43: EXT. MAC'S HOUSE - MORNING
+## Scene 47: EXT. MAC'S HOUSE - MORNING
 
 _DALLAS_ is outside, focused on building a bird feeder. He watches the way that the reflection of the glass holding the seed reflects off of it - and how it goes into the garage. He examines his creation, a little then turns his attention to a bucket filled with gardening supplies. Initially hesitant, he eventually begins tending to the garden.
 
@@ -987,7 +988,7 @@ _MAC_ rummages through the bucket, discovering an old fishing wire and a ring. H
 
 _Mac_ plays for a while, then retrieves his bike and rides off.
 
-## Scene 44: EXT. MAKAYLA'S HOUSE - MORNING
+## Scene 48: EXT. MAKAYLA'S HOUSE - MORNING
 
 _Mac_ parks his bike outside Makayla and Asher's home. _DOMINIC_, the talkative neighbor, answers the door.
 
@@ -1014,7 +1015,7 @@ Yea.
 
 _Makayla_ comes running upstairs from the den to the kitchen - with camcorders, and various electronic equipment in hand she .
 
-## Scene 45: INT. MAKAYLA'S DOWNSTAIRS DEN STUDY - DAY
+## Scene 49: INT. MAKAYLA'S DOWNSTAIRS DEN STUDY - DAY
 
 The room is cluttered with bookcases of vinly and vhs - radios and dials - but beyond it lies a little beads that hang from the wall - as they enter between the dishwasher and the single cement window lays Makaylas inner headquarters. - She turns on a feed and it shows the remote locations outside - the feed shows the wigwam.  covers, playhouses, and dust-covered blankets concealing books and chests. _Makayla_, _Mac_, and _Asher_ huddle around a dusty laptop with basic movie editing software.
 
@@ -1100,7 +1101,7 @@ The two look at each other for a good while.
 
 _Mac gets up and walks out the deen and grabs his bike and rides home.
 
-## SCENE 45B
+## SCENE 50: EXT. MAC'S HOUSE - NIGHT
 
 Mac rides his bike home alone among the tall grass.
 
@@ -1113,17 +1114,17 @@ Okay - when do you want to do this?
 **MAKAYLA**
 We have to wait on the weather - for a true thunderstorm.
 
-## Scene 46: EXT. MAC'S BIKE RIDE HOME
+## Scene 51: EXT. MAC'S BIKE RIDE HOME
 
 _Mac_ rides his bike along the tall grass, scanning for eyes. He notices a dog in the distance acting strangely, barking at the tall grass. Mac speeds up.
 
-## Scene 47: EXT. MAC'S HOUSE - OUTSIDE GARAGE
+## Scene 52: EXT. MAC'S HOUSE - OUTSIDE GARAGE
 
 _Mac_ finds _Dallas_ outside taking weather measurements. Dallas explains how it works.
 
 In the distance, a camera crew is filming something in the tall grass. Mac, curious, walks over to investigate. He spots another gemstone on the ground but doesn't touch it.
 
-## Scene 48: INT. MAC'S HOUSE - DINNER TIME
+## Scene 53: INT. MAC'S HOUSE - DINNER TIME
 
 _Mac_ and _Dallas_ eat dinner while watching TV. News reports discuss the approaching hurricane and "hurricane season."
 
@@ -1133,7 +1134,7 @@ That night, as the wind howls, Mac's gaze wanders across the street to the tall 
 
 # SUNDAY #2
 
-## Scene 49: INT. CHURCH SANCTUARY
+## Scene 54: INT. CHURCH SANCTUARY
 
 The church is buzzing with talk of the town - apparently a very strange event happened to everything the night before.
 
@@ -1150,7 +1151,7 @@ _The projector screen displays the verse._
 
 _Mac_ looks around for _Makayla_ and _Asher_ but they are not here this morning.
 
-## Scene 50: EXT. CHURCH OUTSIDE FELLOWSHIP LUNCH
+## Scene 55: EXT. CHURCH OUTSIDE FELLOWSHIP LUNCH
 
 _Mac_ approaches _Jerry_ and asks him if he has seen _Makayla_ or _Asher_.
 
@@ -1160,7 +1161,7 @@ I was with them yesterday.
 **PASTOR JERRY**
 They were supposed to help out with the nursery room - all good - just not like their father to not bring them - okay - sorry - just wanted to make sure they were okay.
 
-## Scene 51: EXT. BEACH HOUSE
+## Scene 56: EXT. BEACH HOUSE
 
 _Mac_ and _Dallas_ approach their home from their walk. _Mac_ runs over to the mailbox.
 
@@ -1168,13 +1169,13 @@ _Mac_ looks around the neighbors' house but sees their car gone.
 
 # MONDAY #2
 
-## Scene 52: INT. SCHOOL
+## Scene 57: INT. SCHOOL
 
 _Mac_ checks the stones - they are still there. School begins and ends. The teacher talks about the weather more. _Asher_ and _Mac_ eat silently during lunch. _Makayla's_ father takes them home.
 
 _Mac_ goes home that night and sees _Makayla_ sitting alone.
 
-## Scene 53: EXT. MAKAYLA'S HOUSE
+## Scene 58: EXT. MAKAYLA'S HOUSE
 
 **MAKAYLA**
 I saw the creature last night.
@@ -1219,7 +1220,7 @@ _Makayla Smiles._
 
 **CUT TO**
 
-## Scene 54: INT. HALF-FINISHED BASEMENT COMPUTER ROOM
+## Scene 59: INT. HALF-FINISHED BASEMENT COMPUTER ROOM
 
 The crew look at a series of old CRT era laptops all haphazardly and hackerdly arranged - and then a big slow motion - and then nothing - and then Asher crying - but a flash of light - and in the center as they zoom nothing - but as a filter is applied - some makeshift eyes appear.
 
@@ -1227,13 +1228,13 @@ _The dad comes downstairs and tells Makayla that they have to go - Mac needs to 
 
 **CUT TO**
 
-## Scene 55: EXT. MAC HOUSE
+## Scene 60: EXT. MAC HOUSE
 
 _Dallas_ is out in the front yard looking at the gemstones and then he looks at _Mac_ - _Mac_ looks back - the two walk inside and check the weather.
 
 # TUESDAY #2
 
-## Scene 56: EXT. MAC'S HOUSE - MORNING
+## Scene 61: EXT. MAC'S HOUSE - MORNING
 
 _School has been cancelled. DALLAS turns on the TV._
 
@@ -1245,7 +1246,7 @@ _MAC looks out the window, seeing a bright sunny sky. MAKAYLA and ASHER arrive o
 **MAKAYLA**
 Can we use your sink?
 
-## Scene 57: INT. MAC'S KITCHEN
+## Scene 62: INT. MAC'S KITCHEN
 
 _DALLAS stands over the sink, washing dirt off potatoes. He moves aside as MAKAYLA storms in._
 
@@ -1261,7 +1262,7 @@ _MAKAYLA hands MAC the wet instrument. DALLAS hands MAC a cloth._
 
 _MAKAYLA and DALLAS lock eyes. ASHER bumps into them, carrying a box of meat thermometers._
 
-## Scene 58: EXT. MAC'S BACKYARD
+## Scene 63: EXT. MAC'S BACKYARD
 
 _MAKAYLA demonstrates to MAC, ASHER, and DALLAS how to plant a device in the ground._
 
@@ -1283,18 +1284,18 @@ It's a trail cam. When we get notice of ground temperature changes, we'll know w
 **MAC**
 Where do you want to hang them?
 
-## Scene 59: EXT. MAC'S BACKYARD - THE TREE
+## Scene 64: EXT. MAC'S BACKYARD - THE TREE
 
 _MAC uses his fishing line kit to tie down a device._
 
-## Scene 60: EXT. MAKAYLA'S BACKYARD
+## Scene 65: EXT. MAKAYLA'S BACKYARD
 
 _MAC hangs another deer cam. ASHER plants meat thermometers near the tall grass._
 
 **MAKAYLA (V.O.)**
 The creatures give off heat - just like any other creatures.
 
-## Scene 61: EXT. NEIGHBORHOOD
+## Scene 66: EXT. NEIGHBORHOOD
 
 _The kids ride bikes. MAKAYLA scouts locations. ASHER and MAC ride together._
 
@@ -1308,13 +1309,13 @@ Do you?
 **ASHER**
 I think so. Makayla seems to think so, at least.
 
-## Scene 62: EXT. MAC'S HOUSE - DUSK
+## Scene 67: EXT. MAC'S HOUSE - DUSK
 
 _The children arrive. DALLAS comes out with the fixed device, handing it to MAKAYLA. They exchange looks. MAKAYLA and ASHER ride off._
 
 _MAC and DALLAS go inside silently. DALLAS resumes washing potatoes._
 
-## Scene 63: INT. MAC'S BEDROOM - NIGHT
+## Scene 68: INT. MAC'S BEDROOM - NIGHT
 
 _MAC stares at glow-in-the-dark stars on his ceiling, then at a picture of his mom._
 
@@ -1326,7 +1327,7 @@ _He retreats to bed, then looks out again. Nothing._
 
 _Another cry is heard, followed by a loud crash._
 
-## Scene 64: INT. MAC'S BEDROOM - NIGHT
+## Scene 69: INT. MAC'S BEDROOM - NIGHT
 
 MAC stands at his bedroom window, peering out into the darkness. The moonlight casts eerie shadows across the backyard. From his vantage point, he can see the BURN MARKS on the ground, scattered near the tall grass, more numerous than before.
 
@@ -1346,7 +1347,7 @@ MAC quickly ducks away from the window, his heart racing. He climbs back into be
 
 That morning is a long one to school. Mac and Dallas are silent as they drive past the windy hills and seaside coast.
 
-## Scene 65: INT. SCHOOL - KITCHEN
+## Scene 70: INT. SCHOOL - KITCHEN
 
 The school is buzzing with the news of the creatures. The kids are whispering and pointing at Mac and Dallas as they enter.
 
@@ -1391,7 +1392,7 @@ We're going to be stuck in this metal box with a bunch of dead batteries.
 
 > I know.
 
-## Scene 66: INT. SCHOOL - SUBSITITUE TEACHER
+## Scene 71: INT. SCHOOL - SUBSITITUE TEACHER
 
 _The classroom is unusually quiet as Mac and Asher walk in. They notice a stranger standing at the front of the room, a SUBSTITUTE TEACHER, who is fumbling with the attendance sheet._
 
@@ -1412,7 +1413,7 @@ _Mac and Asher exchange a look._
 
 ---
 
-## Scene 67: INT. ASHER'S HOUSE - LATE AFTERNOON
+## Scene 72: INT. ASHER'S HOUSE - LATE AFTERNOON
 
 _Asher's house is filled with the sound of the storm approaching. The wind howls outside as Makayla arrives, carrying a backpack full of supplies. She knocks on the door, and Asher quickly lets her in._
 
@@ -1477,7 +1478,7 @@ _As the wind howls louder, Dallas checks the stability of their setup, making su
 
 _The kids nod, their resolve strengthened by his presence. As the storm continues to rage, they prepare to face the creatures, knowing they have Dallas's silent support._
 
-## Scene 68: EXT. MAC'S HOUSE - NIGHT
+## Scene 73: EXT. MAC'S HOUSE - NIGHT
 
 _The house is dark and Mac and Dallas have dinner. Mac begins to talk about the creatures._
 
@@ -1529,16 +1530,36 @@ _Mac nods, feeling a sense of reassurance from his father's words. The bond betw
 
 **CUT TO**
 
-## Scene 69: INT. MAC'S HOUSE - NIGHT
+## Scene 74: INT. MAC'S HOUSE - NIGHT
 
-\_Dallas and Mac go into overdrive mode - preparing the house. They board up the windows and the stakes.
-TV Reporter:
-Evaucations are underway - but are limited in scope focusing on the northen regions - for the southern regions - it is advise that people stay in their homes and board up any long - head for a basement.
+_Dallas and Mac go into overdrive mode - preparing the house. They board up the windows and the stakes.
 
-Mac and Dallas sit in the living room, the glow of the TV casting shadows on their faces. Suddenly, Mac's phone rings. He looks at the screen and sees it's a FaceTime call from Makayla.\_
+**TV REPORTER (V.O.)**
+> Evaucations are underway in the area - but are limited in scope focusing on the northen regions - for the southern regions - it is advise that people stay in their homes and board up any long - head for a basement.
 
-**_AUTHOR'S NOTE_**
+Mac and Dallas sit in the living room, the glow of the TV casting shadows on their faces. Suddenly, Mac's phone rings. He looks at the screen and sees it's a FaceTime call from Makayla.
 
-> Need to think of the tension and Makayla's call.
+**MAKAYLA**
 
-# THURSDAY #2
+> Mac?
+
+**MAC**
+
+> Makayla?
+
+**MAKAYLA**
+
+> We're ready.
+
+As Dallas and Mac watch the tv - Dalls looks up at his book shelf - and takes out a box that he had eariler - and opens it - and takes out a mirror - and hands it to Mac.
+
+**MAC**
+> What's this?
+
+**DALLAS**
+> It's a mirror.
+
+**MAC**
+> What do we do with it?
+
+
