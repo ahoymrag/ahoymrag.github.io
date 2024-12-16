@@ -208,45 +208,36 @@ _Dallas_ picks up _Mac_ after school. As they drive home, they realize that _Ash
 _Makayla walks behind her father into frame and walks right up to Mac. a group of neighborhood kids approaches Mac, one of them, a GIRL (10), speaks up._
 
 **MAKAYLA**
-
 > Did you see me give Asher that bag?
 
 **MAC**
-
 > Yeah.
 
 **MAKAYLA**
-
 > You Did?
 
 **MAC**
-
 > Yeah.
 
 _Asher, looking sheepish, quickly walks away back to the house. Molly approaches Mac, looking him up and down._
 
 **MAKAYLA**
-
 > Can I trust you?
 
 **MAC**
-
 > Yeah.
 
 _Molly glances over at Dallas and the Talkative Neighbor, then back to Mac._
 
 **MAKAYLA**
-
 > Ask your dad if it's okay for you to come over after dinner tonight. If so - I'll tell Asher and he'll meet you outside with a bike.
 
 **MAC**
-
 > I have a bike.
 
 _Mac_ nods.
 
 **MAKAYLA**
-
 > Good.
 
 _Makayla turns and walks away, disappearing into the crowd._
@@ -353,27 +344,21 @@ _(speaking softly)_
 > That's cool - my mom too - _(pause)_ - so Why did you move here?
 
 **MAC**
-
 > My dad got a job at Yale.
 
 **MAKAYLA**
-
-> What does your dad do?
+> Doing what?
 
 **MAC**
-
-> He does physics and nuclear theoretical stuff.
+> I don't know - physics and nuclear stuff.
 
 **MAKAYLA**
-
 > He doesn't talk much does he.
 
 **MAC**
-
 > No
 
 **MAKAYLA**
-
 > He see's things doesn't he? Things that arent there?
 
 _Mac doesn't respond - a long break.
@@ -381,7 +366,6 @@ _Mac doesn't respond - a long break.
 _The atmosphere is tense. Strange, wild sounds echo in the distance, like coyotes letting loose - and howling from far - and then close._
 
 **ASHER**
-
 > What was that?
 
 _The kids freeze, glancing around. MAKAYLA grabs out a small audio recorder that she has - and motions for the rest of the crew to stay silent - but after the second cry - without a word, they quickly gather their things and rush to their bikes._
@@ -662,14 +646,13 @@ _As they pack up their makeshift surveillance system, the wind picks up, rustlin
 _The kids return to the party. Mac approaches Dallas, who's standing alone in the hallway, looking at wall-mounted family portraits--photos of when the kids were little. He looks at his son and smiles._
 
 **Dominic**
-
 > Where were you guys? 
 
 **Makayla**
 >We were out in the backyard
 
 **Dominic**
-> You out there cookin Lizards - you better watch yourself Makayla (jokin) I'm joking kid relax -  (to Dallas) I gotta check that the girl is not into witchcraft things you kno. 
+> You out there cookin Lizards - you better watch yourself Makayla (jokin) I'm joking kid relax -  (to Dallas) I gotta check that the girl - i vote yes for bush craft - but got to make sure she aint doing witch craft. 
 
 _Bonnie comes out with a big mashed potato plate of mashed potatoes. 
 
@@ -708,27 +691,21 @@ The crew sit around a table filled with bbq fixings and corn. Makyala doesn't ea
 **Dominic**
 > Dallas - you got this kid in CCD yet?
 
-Dallas looks at Mac.
-
 **Mac**
 > What is CCD?
 
-**Bonnie**
-> Confraternity of Christian Doctrine. 
+**JOCYLEN**
+> Confraternity of the Christian Doctrine. 
 
 **Dominic**
-Yeah baby - smart and beautiful and sexy. 
+Yeah baby - and they got the best snacks - right Makayla? Tell them - tell them - - Makayla likes to horde the snacks - - 
 
 **Makayla**
-> It basically is Sunday School - but on Wednesdays.
-
-**Asher**
-> They have snacks.
+> You don't understand how I'm using them? 
 
 **Dominic**
-They better have snacks - your mother and I give 200 dollars a month - they better get the good stuff - Asher you tell me if you get it 
+> Alright - you're right - you are right - sorry darlin - - Makayla ain't be eating them no no .
 
-**Dominic** 
 > Yeah - has Makayla been outside collecting bugs and frogs and sticks and making science experiments driving her old man's hair out - right Makayla... Since she's been a kid Dallas - a kid!  She used to take little army men I would get for Asher and freeze them. Asher - you remember?
 
 **ASHER**
@@ -746,50 +723,49 @@ So how do you find it all?
 > What's that?
 
 **Dominic**
-> The weather - no - how do you find it all - what is like being a dad?
+> How do you find it - The town - the weather - you know civic stuff - how do you find it all?
 
 **Dallas**
-> It's nice. 
+> It's not bad. 
 
+## Scene 32 - EXT. MAC'S HOUSE - NIGHT
 
+Dallas and Mac walk home - and Dallas is looking at the sky at the ocean - at the neighborhood - at the tall grass. 
 
-**FADE OUT.**
+As they walk into their driveway - they notice a howl in the distance followed by a series of howls and howls and slow whimpers. They go inside.
 
-# THURSDAY
+## Scene 33 - INT. MAC'S HOUSE - NIGHT
 
-## Scene 31: INT. HOUSE - MORNING
+Mac looks outside his window and sees a disturbance in the tall grass. In the distance a small light glows and flickers. Mac takes a little flash light and flickers back - and the light goes out. And then it doesn't go on again. 
+
+# THURSDAY MORNING
+
+## Scene 34: INT. HOUSE - MORNING
 
 _Dallas_ begins to go inside, the sound of the breeze from the Long Island Sound rustling through the trees. He pauses, looking out at the sky before stepping through the door. From the corner of his eye - he spots a burn mark near the mailbox.
 
 Dallas walks over and stands over it for a good while.
 
----
 
-<!-- END HERE -->
-
-## Scene 32: EXT. MAINSTREET TOWN - AFTERNOON
-
-Later that afternoon at _Mac_, _Makayla_, and _Asher_ walk along the coastal sleepy town - the town is buzzing - they all look at the weather chimes and the weather ** NOTE - - have a foreshadowment here. 
+## Scene 35: EXT. MAINSTREET TOWN - MORNING
+The class is on a field trip to the local town - the kids are all excited - and they are all looking at the weather chimes and the weather ** NOTE - - have a foreshadowment here. 
 
 **MAKAYLA**
-
-> Have you noticed the dogs?
+> Did you guys hear the coyotes last night?
 
 **ASHER**
-
-> The dogs?
+> How many do you think there were?
 
 **MAKAYLA**
-
-> The dogs.
+> Dozens - - Mac did you hear them?
 
 _Mac looks around for the apparent dogs. 
 
-**ASHER**
-> What about them?
+**Mac**
+> Yeah
 
 **MAKAYLA**
-> They're acting batty. 
+> That's all you say? Yeah? 
 
 _Mac_ hesitates but then nods.
 
@@ -981,6 +957,7 @@ _Mac_ parks his bike outside Makayla and Asher's home. _DOMINIC_, the talkative 
 
 **DOMINIC**
 Oh, what's up Mr. Mac - what's shaking my friend? How's your Dad doing?
+
 **MAC**
 He's okay.
 
