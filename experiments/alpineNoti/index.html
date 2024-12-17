@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Status Table</title>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+    <style>
+        body {
+            background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        th {
+            background-color: rgba(0, 123, 255, 0.5);
+            color: white;
+        }
+        .active { background-color: rgba(76, 175, 80, 0.5); }
+        .down { background-color: rgba(244, 67, 54, 0.5); }
+        .maintenance { background-color: rgba(255, 152, 0, 0.5); }
+        .control-panel {
+            margin-bottom: 20px;
+        }
+        .control-panel button {
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #007BFF;
+            color: white;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="control-panel" x-data="statusNotification()">
+        <button @click="generateNotifications(5)">5 Notifications</button>
+        <button @click="generateNotifications(10)">10 Notifications</button>
+        <button @click="generateNotifications(15)">15 Notifications</button>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Status</th>
+                <th>Message</th>
+                <th>Time</th>
+            </tr>
+        </thead>
+        <tbody>
+            <template x-for="notification in notifications" :key="notification.message">
+                <tr :class="notification.status">
+                    <td x-text="notification.status"></td>
+                    <td x-text="notification.message"></td>
+                    <td x-text="notification.time"></td>
+                </tr>
+            </template>
+        </tbody>
+    </table>
+
+    <script>
+        function statusNotification() {
+            return {
+                notifications: [
+                    { status: 'active', message: 'All systems operational', time: '10:00 AM' },
+                    { status: 'down', message: 'System outage in sector 7', time: '11:30 AM' },
+                    { status: 'maintenance', message: 'Scheduled maintenance at 2 PM', time: '1:00 PM' },
+                    { status: 'active', message: 'New updates available', time: '3:45 PM' },
+                    { status: 'down', message: 'Unexpected downtime', time: '4:15 PM' }
+                ],
+                generateNotifications(count) {
+                    // This function can be used to reset or add more notifications if needed
+                    this.notifications = this.notifications.slice(0, count);
+                }
+            }
+        }
+    </script>
+</body>
+</html>

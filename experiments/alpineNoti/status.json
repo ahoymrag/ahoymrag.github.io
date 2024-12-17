@@ -1,0 +1,17 @@
+[
+    {
+        "message": "All systems active",
+        "status": "active",
+        "time": "10:00 AM"
+    },
+    {
+        "message": "System down",
+        "status": "down",
+        "time": "2:00 PM"
+    },
+    {
+        "message": "Maintenance ongoing",
+        "status": "maintenance",
+        "time": "4:00 PM"
+    }
+]
