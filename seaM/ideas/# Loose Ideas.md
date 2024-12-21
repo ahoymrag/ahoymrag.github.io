@@ -24,3 +24,9 @@ doesn't talk
 in the dom scene - introduce them to the grandfather - who was telling makayla storeis
 
 and then tells the father to let her go through with her plans
+s
+
+## there is a threat of cold war
+
+- - - find it at the dinner table?
+- Makayla spent her life capturing coyotes - in fact she follows this hunter who tracks stuff - puts mud on there face.
