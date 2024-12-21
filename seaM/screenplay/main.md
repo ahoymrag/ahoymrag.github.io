@@ -7,6 +7,7 @@ updated: 2024-12-01
 updated: 2024-12-07
 updated: 2024-12-09
 updated: 2024-12-15
+updated: 2024-12-20
 ---
 
 <link rel="stylesheet" href="seaM-md-css.css">
@@ -16,7 +17,7 @@ updated: 2024-12-15
 
 ## Scene 0: Thunderstorm down south
 
-Flashes of a thunderstorm - Flashes of a mother playing with her son - buildings and bird houses - - flashes of wind hitting the breeze upon the mountain fog - and flashes of a packed car and a vacaction up north and to the east - from the barren west towards new england - flashes of a seaside beach town - flashes of a big thunderstorm - flashes of  mom and dad getting gas - driving doing errands - flashes of Dallas setting up an weather device - flashes of a smile - flashes of a young boy in his mother's arms - flashes of a soft embrace - flashes of the hand on her shoulder from the warmth of her husband -  flashes of chemo - flashes of weather instrument - flashes of experimental procedures in the garage and pointing it towards the sky - flashes of Mac helping him - flashes of the woods - flashes of green eyes in the tall grass - flashes of the dark grass - flashes of the mother coming back and running away from the dog - towards the light - flashes of a mother holding on to a bird house - sick - as she watches the birds flutter - she smiles - flashes of the darkness - flashes - of Dallas trying to shine lazers into the mirrors - and then the refractions into the eyes of the mom - but leaving the mom hopeless and flashes of dallas holding young mac alone in a hospital waiting room - of the tallgrass and green eyes that sparkle like fireflies. 
+Flashes of a thunderstorm - Flashes of a mother playing with her son - buildings and bird houses - - flashes of wind hitting the breeze upon the mountain fog - and flashes of a packed car and a vacaction up north and to the east - from the barren west towards new england - flashes of a seaside beach town - flashes of a big thunderstorm - flashes of  mom and dad getting gas - driving doing errands - flashes of Dallas setting up an weather device - flashes of a smile - flashes of a young boy in his mother's arms - flashes of a soft embrace - flashes of the hand on her shoulder from the warmth of her husband -  flashes of chemo - flashes of weather instrument - flashes of experimental procedures in the garage and pointing it towards the sky - flashes of Dallas and his wife putting up a bird house - flashes of the mom marveling at a baby bird - zflashes of Mac helping him - flashes of the woods - flashes of green eyes in the tall grass - flashes of the dark grass - flashes of the mother coming back and running away from the dog - towards the light - flashes of a mother holding on to a bird house - sick - as she watches the birds flutter - she smiles - flashes of the darkness - flashes - of Dallas trying to shine lazers into the mirrors - and then the refractions into the eyes of the mom - but leaving the mom hopeless and flashes of dallas holding young mac alone in a hospital waiting room - of the tallgrass and green eyes that sparkle like fireflies. 
 
 ---
 
@@ -384,6 +385,17 @@ Dallas turns toward his son. And for a moment embrace - whilst doing so - they b
 _Dallas_ and _Mac_ sit down on their couch for dinner. Tension lingers, and they eat quietly. The distant sounds of the night mix with the clatter of utensils, adding to the growing sense of unease.
 
 On the TV is the _WEATHERMAN_ - talking about how some hurricane quickly making headway along the southern coast, and how it is hurricane season. He urges viewers to be on the lookout.
+
+--
+
+*** Scene to update 
+
+Dallas after dinner tells Mac he's going to go upstair- Mac follows him up and goes into the little attic - Dallas is building lots of little bird feeders - he sands and shaves them down and puts them on the internet 
+
+
+*** 
+
+---
 
 **FADE OUT.**
 
