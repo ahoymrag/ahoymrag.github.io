@@ -46,3 +46,8 @@ Had a whale of a day - cpc this morning - a bit foggy - said goodbye to aldo - p
 ## 12-17-24 : Tuesday 9:32am
 
 Oh gosh Ellie is leaving tomorrow - gong to go to hers tonight - or today - heeeee - got to code a lot first and do my work so i can spend some quality time with the bug. 
+
+
+## 12-20-24
+
+at koffee?,just caught up with Dan Carbonella - behind the scenes of the coffee world - interesting system- now im just chilling and waiting for this drink - and am killing time - Ellen is in London - listening to this random young dude talk smack about nothing. tonight gonna meet up with Dallas and Chris at Trinity at 9 - have a couple pints then onwards back to the beach house - it's snowing here and I haven't been at Koffee in a while- would love some Christmas music - went to PF today stayed home cozy - dropped the Ahoy Cabaret episode 1 today - amazing by this AI tool that worked well - - had a meeting with bryant a bit - pf - had left over stew which was nice - shaved a bit - - last night I felt bad for skipping life group but was charmed by the cozy evening I had- - I feel content - at the moment all is well - Ellenis in london but she's with her family and im not in despair about it in the slightest this time about. happy to go back to sleepy hollow - hopefully rest and catch up with my parents - I should print out pictures for bita and Mari and carmita at Walgreens why I am in time - and join the gym - and see naz 
