@@ -93,15 +93,38 @@ _Thunder rumbles_ in the distance, and the wind causes the storm approaches.
 
 ## Scene 7: INT. CHURCH - MORNING
 
-The _PASTOR_ stands at the pulpit, addressing the congregation. The church is filled with attentive listeners, including _DALLAS_ (40s) and _MAC_ (10), sitting quietly in a pew.
+The Elderly woman stands at the pulpit, addressing the congregation. The church is filled with attentive listeners, including _DALLAS_ (40s) and _MAC_ (10), sitting quietly in a pew.
 
-**PASTOR**
+**COMMON FOLK**
 
-> We are going to look at a new passage from the book of Isiah - on our teaching series - and ask why we and what they thought back then - and what we think now - and what is still true. Have people changed that much? During ancient times, Israelites would make sacrifices of all kinds--grain, animals, even blood. But today, we know that blood sacrifice is no longer required.
+> TODAY IS A READING FROM THE BOOK OF ISHAIH CHAPTER 5 VERSE 5
 
-## **CUT TO:**
+VO
 
-## Scene 8: EXT. CHURCH FELLOWSHIP AREA - AFTERNOON
+> Ishaiah
+>
+> "God will stretch out over Edom
+
+    the measuring line of chaos
+    and the plumb line of desolation.
+
+12 Her nobles will have nothing there to be called a kingdom,
+all her princes will vanish away.
+13 Thorns will overrun her citadels,
+nettles and brambles her strongholds.
+She will become a haunt for jackals,
+a home for owls.
+14 Desert creatures will meet with hyenas,
+and wild goats will bleat to each other;
+there the night creatures will also lie down
+and find for themselves places of rest.
+15 The owl will nest there and lay eggs,
+she will hatch them, and care for her young
+under the shadow of her wings;
+there also the falcons will gather,
+each with its mate.
+
+## Scene 8: EXT. CHURCH FRONT LAWN - AFTERNOON
 
 The church bustles with activity as congregates gather and plop iceberg lettuce on their plastic plates. _Dallas_ and _Mac_ stand awkwardly on line - progressing slowly.
 
@@ -166,14 +189,13 @@ As _Mac_ focuses on the distance, the fireflies' lights begin to resemble eyes w
 
 # MONDAY
 
-## Scene 12: INT. SEDAN - MORNING
+---
+
+## Scene 12: INT. CAR - MORNING
 
 _Dallas_ closes the garage door of a makeshift outdoor workshop.
 
 _DALLAS_, holding his phone with the latest iOS, follows Google Maps as they drive through town in their old sedan. The car's engine hums steadily as they approach the school. _DALLAS_ glances at _MAC_ (10), who sits quietly in the passenger seat, a mix of nervousness and anticipation on his face.
-
-**DALLAS**
-Hope you have a good day.
 
 _Mac nods, gripping his backpack tightly as they pull up to the school._
 
@@ -188,14 +210,19 @@ _Mac_ enters the classroom, glancing around nervously at the unfamiliar faces. H
 The _TEACHER_, a man in his early 30s, stands at the front of the room, beginning his introduction.
 
 > **TEACHER**
->
-> **TEACHER**
 > Hello everyone. Good morning, everyone. Welcome to class - my name is Mr. ### and I am your 5th grade science teacher - - - - Life doesn't seem to control - not the way the light goes - just the way the light bends across.
 
-(noticing a distracted student)
-Hey, you paying attention?
+The teacher walks around - and grabs a globe off of the desk - and a little rocket ship - and then flies it around - and then walks over to another demonstration - of a minuture forest - inside of the forest -
 
 (continuing)
+
+> A lot of folks focus outside - and of the warm games - a farm family out have a missle site - and they are eating lunch one day - and suddenly they are seeing the missles are filing off -
+
+The teacher walks around to the ministration - the mini set - inside there ar little mystical looking creates
+
+> No - I do not want to talk about that - a lot of folks
+
+There are sightings and weird things in the sky - but the creatures below.
 
 > This semester, we'll be exploring the wonders world of-weather patterns, the phases of the moon, and count all of the ripples of the tides... We'll then move on and examine different ways in which the phases of the moon rile together. In a chasm of solar gravity - moon beams. the tides work.
 
