@@ -190,8 +190,7 @@ The _TEACHER_, a man in his early 30s, stands at the front of the room, beginnin
 > **TEACHER**
 >
 > **TEACHER**
-> (Sheepishly)
-> Hello everyone. Good morning, everyone. Welcome to class - my name is Mr. ### and I am your 5th grade science teacher - .
+> Hello everyone. Good morning, everyone. Welcome to class - my name is Mr. ### and I am your 5th grade science teacher - - - - Life doesn't seem to control - not the way the light goes - just the way the light bends across.
 
 (noticing a distracted student)
 Hey, you paying attention?
@@ -234,6 +233,8 @@ _Makayla walks behind her father into frame and walks right up to Mac. a group o
 
 _Asher, looking sheepish, quickly walks away back to the house. Molly approaches Mac, looking him up and down._
 
+They go there sepearte ways .. .
+
 **MAKAYLA**
 
 > Can I trust you?
@@ -246,7 +247,7 @@ _Molly glances over at Dallas and the Talkative Neighbor, then back to Mac._
 
 **MAKAYLA**
 
-> Ask your dad if it's okay for you to come over after dinner tonight. If so - I'll tell Asher and he'll meet you outside with a bike.
+> Do you have a bike?
 
 **MAC**
 
@@ -264,13 +265,13 @@ _Mac_ looks over at his dad - who is still talking to Dominic - and then back to
 
 ## Scene 17: EXT. MOLLY'S HOUSE - NIGHT
 
-_Molly_ opens up the bag, revealing crab meat and bits of chicken in some tiny zip locks. She hands some to _Mac_, along with sticks and string. The kids spend the night trying to lure something out in the wetlands, but nothing happens. A thunderstorm begins to brew, and the wind howls around them.
-
-_Suddenly, Molly's MOTHER calls her home, and the kids quickly pack up._
+Makayla opens up the bag, revealing crab meat and bits of chicken in some tiny zip locks. She hands some to _Mac_, along with sticks and string. The kids spend the night trying to lure something out in the wetlands, but nothing happens. A thunderstorm begins to brew, and the wind howls around them.
 
 ## Scene 18: INT. NEW HOUSE - MAC'S ROOM - NIGHT
 
-_That night, Mac looks out his bedroom window. The thunderstorm rages outside, the wind shaking the trees and tall grass. The power flickers, then goes out. Mac stares into the darkness, his eyes wide as he hears a loud crash from outside._
+Mac looks around his new room - and takes out his friendly recorder and begins to record little objects around his room.
+
+That night, Mac looks out his bedroom window. The thunderstorm rages outside, the wind shaking the trees and tall grass. The power flickers, then goes out. Mac stares into the darkness, his eyes wide as he hears a loud crash from outside.\_
 
 _He presses his face closer to the glass, trying to make out what caused the noise, but all he can see are the blurred, glowing fireflies--now resembling eyes watching him through the storm._
 
@@ -739,7 +740,7 @@ _(standing up)_
 
 <!-- START OF 31 -->
 
-## Scene 31: INT. DOMINICS DINING ROOM KITCHEN - EVENING
+## Scene 31: INT. DOMINICS BACK DECK - EARLY EVENING
 
 _The kids return to the party. Mac approaches Dallas, who's standing alone in the hallway, looking at wall-mounted family portraits--photos of when the kids were little. He looks at his son and smiles._
 
@@ -761,13 +762,45 @@ _The kids return to the party. Mac approaches Dallas, who's standing alone in th
 
 > Alright - let's go - it's time for dinner.
 
-## Scene 32 - EXT. MAC'S HOUSE - NIGHT
+## Scene 32 - EXT. BEACHSIDE NEIGHBORHOOD- SUNSET
 
-Dallas and Mac walk home - and Dallas is looking at the sky at the ocean - at the neighborhood - at the tall grass.
+**_[Traveling Montage]_**
+
+Dallas and Mac walk home - the pair gently stroll through the windy sunset and watch all of the docks dance upon the ocean - they walk towards the edge of mansions - towards the sidewalks - towards the tallgrass.
+
+As they walk adjacent to the tall grass - Mac begins to notice some movement in the far distance. Dallas stops - and for a moment the two begin to listen. Silence.
+
+They continue their walk
 
 As they walk into their driveway - they notice a howl in the distance followed by a series of howls and howls and slow whimpers. They go inside.
 
-## Scene 33 - INT. MAC'S HOUSE - NIGHT
+## Scene 33 - INT. MAC'S KITCHEN - NIGHT
+
+Mac and Dallas get ready for bed - Dallas checks upon his project on the table - and mac goes and looks at a spindel of a paper towel holder - which he holds up to the light - Dallas notices him looking at it - and then goes back to his own creation.
+
+**Mac**
+
+> Do you think this could be used as a tripod?
+
+**Dallas**
+
+> A tripod for what
+
+**Mac**
+
+> Makayla wants to build a radar system - so she wants to mount something
+
+**Dallas**
+
+> That wont be able to hold the weight
+
+Mac puts a couple of obects on the edges
+
+**Mac**
+
+> But it can stand the wind. Do you think its possible for for animals to give off distinct radiation?
+
+## Scene 33a- INT. MAC'S BEDROOM - NIGHT
 
 Mac looks outside his window and sees a disturbance in the tall grass. In the distance a small light glows and flickers. Mac takes a little flash light and flickers back - and the light goes out. And then it doesn't go on again.
 
@@ -775,20 +808,21 @@ Mac looks outside his window and sees a disturbance in the tall grass. In the di
 
 ## Scene 34: INT. HOUSE - MORNING
 
-_Dallas_ begins to go inside, the sound of the breeze from the Long Island Sound rustling through the trees. He pauses, looking out at the sky before stepping through the door. From the corner of his eye - he spots a burn mark near the mailbox.
+_Dallas_ begins to go inside, the sound of the breeze from the Long Island Sound rustling through the trees. He pauses, looking out at the sky before stepping through the door. From the corner of his eye - he spots an obect by the mailbox but he doesn't go up to it.
 
-Dallas walks over and stands over it for a good while.
+## SCENE 34a - INT CAR
 
-Cut to : Dallas and Mac in the car - driving to school.
+Dallas drives Mac to school.
 
 ## Scene 35: INT. CLASSROOM - MORNING
 
-The class is in class eseshion - Mac looks out in the distance and sees another weather reporter taking footage of some bush behind a chain linked fence.
+The class mid-session - Mac looks out the window in the distance and sees another weather reporter taking footage of some bush behind a chain linked fence across the street. The cameraman is pointing to something on the ground.
 
 The teacher an elderly woman - asks the class a question - and Mac is the first to answer.
 
 **Teacher**
 
+> Light gives us an alert - in the 1980s it was the - the man from the funeral home and the scientist have the same fate. But that is not this class -
 > Mac - what have you learned about the weather so far this year?
 
 **Mac**
@@ -835,35 +869,25 @@ The teacher an elderly woman - asks the class a question - and Mac is the first 
 
 ## Scene 36: EXT. CHURCH PARKING LOT
 
+The crew gather around outside of youth group parking lot playground - there parents drop them off and they meet with Pastor Jerry outside and sit in a citcle of chairs outside -
+
+The group sit around in a circle and play basic board games - and getting to know you ice breakers.
+
+**JERRY**
+
+> Let's go around and see where we are all from
+
 **MAKAYLA**
 
 > Did you guys hear the coyotes last night?
 
-**ASHER**
+**JERRY**
 
 > How many do you think there were?
 
 **MAKAYLA**
 
-> Dozens - - Mac did you hear them?
-
-\_Mac looks around for the apparent dogs.
-
-**Mac**
-
-> Yeah
-
-**MAKAYLA**
-
-> That's all you say? Yeah?
-
-_Mac_ hesitates but then nods.
-
-## Scene 37: INT. CHURCH YOUTH GROUP CLASSROOM - AFTERNOON
-
-_Mac_ looks around and notices that some of his classmates are also his Sunday School classmates. The _Youth Pastor_ begins handing out papers on the topic of ancient Israelites and what we can learn from their mistaken ways of seeking atonement.
-
-The group sit around in a circle and play basic board games - and getting to know you ice breakers.
+> Dozens
 
 **MAKAYLA**
 
@@ -875,13 +899,13 @@ After the class, the _Youth Pastor_ notices _Mac_ sitting alone and goes over to
 
 ## Scene 38: EXT. CHURCH PARKING LOT
 
-_Mac_ sits alone as the rest of the kids' parents pick them up from Youth Group. He watches everyone and their families go into their various mini vans.
+_Mac_ sits alone on the picnic table near the parking lot as the rest of the crew's parents pack up. Jerry helps by folding the chairs and asks for a hand.
 
 The _Youth Pastor_ notices _Mac_ sitting alone and joins him on the stoop.
 
 **JERRY**
 
-> Mac, you seem deep in thought. Can I sit?
+> Mac, you seem deep in thought.
 
 **MAC**
 
@@ -893,27 +917,47 @@ The _Youth Pastor_ notices _Mac_ sitting alone and joins him on the stoop.
 
 **MAC**
 
-> Yeah.
+> He should be here soon. He's sometimes late.
 
 **JERRY**
 
-> That's good - that's good. First week - new town - new school - how's it going?
+> That's okay - I'm in no rush - that's good. First week - new town - new school - new youth group - new haven - you guys live in new haven?
 
 **MAC**
 
-> Good.
+> No - we live closer to Branford .
 
 **JERRY**
 
-> Ah - that's good...
+> How did you father find this church?
 
-_A group of seagulls fly overhead._
+**MAC**
+
+> he works at Yale
+
+> Ah - that's good...
 
 **JERRY** (CONT'D)
 
 > Yeah - I remember coming here from Georgia - wasn't used to these New England winters. But that was a while ago.
 
 _Mac continues to look onward._
+
+**MAC**
+
+> Do you believe in ghost stories?
+
+**JERRY**
+
+> Well, I
+
+**MAC**
+
+> What about creatures?
+
+**JERRY**
+
+> What do you mean?
 
 **MAC**
 
@@ -946,33 +990,25 @@ _Mac continues to look onward._
 
 **MAC**
 
-> That's not what I mean. Makayla was talking about these creatures that she has been seeing in the tall grass - and now her and Asher and me are taking pictures of the tall grass.
+> That's not what I mean. Makayla was talking about these creatures that she has been seeing in the tall grass - and now her and Asher and me are taking pictures of the tall grass. And the other day - I really could have sworn - that I saw one outside my window.
 
-**JERRY**
+\_Dallas parks outside - and Mac shakes Jerrys hand.
 
-> Makayla is interesting huh - she's come a long way since her father died.
-
-**MAC**
-
-> I thought it was her grandfather that died.
-
-**JERRY**
-
-> Is that what she said?
-
-_Dallas approaches and walks outside. He goes up to Jerry and shakes his hand._
+Dallas gives an apologetic wave - thank you
 
 **DALLAS**
 
 > Sorry I was late - thank you -
 
-_Mac walks into the car._
+_Mac walks into the car and looks off in the distance of a small object on the side of the road far off in the distance._
+
+[MONTAGE OF DRIVING FROM THE HAVENS TO BRANFORD]
 
 ---
 
 ## Scene 39: EXT. MAC'S HOUSE - NIGHT
 
-That night, _Mac_ steps outside and sees _Dallas_ grilling. The smoke from the grill rises and catches the light, casting eerie shadows. _Mac_ looks beyond the borders of their property, his gaze fixated on the tall grass swaying in the breeze.
+Dallas grills oustide - - _Dallas_ grilling. The smoke from the grill rises and catches the light, casting eerie shadows. _Mac_ looks beyond the borders of their property, his gaze fixated on the tall grass swaying in the breeze.
 
 _Dallas_ notices him staring and follows his gaze, looking at the tall grass as well.
 
@@ -994,13 +1030,55 @@ That night, as they prepare for bed, a strange sound echoes through the house. T
 
 _Dallas_ steps outside into the thunderstorm to make sure everything is secure. The wind howls around him as he checks the perimeter, a sense of unease settling in.
 
+## SCENE 42a : : :
+
+::
+
+**_THE SMALL ENCOUNTER_**
+
+Disturbance in the tall grass
+
+**THE MEDIUM ENCOUNTER**
+
+A rattle - and a communicaton - there was a radio transimission - that could be heard - mac records on casette
+
+_THE BIG ENCOUNTER_
+
+::
+
+\*\* THE BIG ENCOUNTER
+
+Mac goes outside and takes out the trash - he notices a dead bird - and then from the far
+
+This is
+
 **FADE OUT.**
 
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
 # FRIDAY
+
+---
 
 ## Scene 43: INT. MAC'S HOUSE - MORNING
 
 The next morning, the storm has passed, but the air is still heavy with the remnants of the previous night's events. _DALLAS_ looks out the window and finds the seed from the bird feeder scattered about. _MAC_ searches for the rocks they had collected earlier.
+
+Birds are
 
 ---
 

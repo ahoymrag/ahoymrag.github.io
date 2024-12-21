@@ -98,3 +98,23 @@ So how do you find it all?
 **Dallas**
 
 > It's not bad.
+
+---
+
+\*\* FROM THE SCENE WITH PASTOR JERRY
+
+## Scene 37: INT. CHURCH YOUTH GROUP CLASSROOM - AFTERNOON
+
+_Mac_ looks around and notices that some of his classmates are also his Sunday School classmates. The _Youth Pastor_ begins handing out papers on the topic of ancient Israelites and what we can learn from their mistaken ways of seeking atonement.
+
+**JERRY**
+
+> Makayla is interesting huh - she's come a long way since her father died.
+
+**MAC**
+
+> I thought it was her grandfather that died.
+
+**JERRY**
+
+> Is that what she said?
