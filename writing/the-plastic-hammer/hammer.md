@@ -3,38 +3,37 @@ title: "The Plastic Hammer: The Lament"
 author: Alex Gonzalez
 date: 2024-11-17
 updated: 2024-10-09
+updated: 2024-12-24
 description: A story of life and death and the moments in between
 ---
 
 <link rel="stylesheet" href="hammer.css">
 
 # Feels
-## The verbal garbage of an introduction 
-This is chapter one - but I've been carrying this with me for years.
+
+## The verbal garbage of an introduction
+
+This is nugget of an idea - but I've been carrying this with me for years - but yet I have not had the courage to drop anything hot - in the fear that it wouldn't be hot and I'd embarass myself as a lowly theologian - an unstudied one - a man who spends much time in the digital ether .
 The thought of writing scares me - because it, to my opinion, flirts so close to - somewhere I don't know if I want to go.
 Has to do with perception I suppose
 And a fear of being cringe.
 
 I distract and distract
 To get to weight off of my shoulder
-A deep down feeling of responsiblity - to share 
+A deep down feeling of responsiblity - to share
 A deep well of timidity interfering with rational judgement
-because I am so afraid of saying "psh - tihs guy is out to lucn h - how it 
-would affect my imaginary career - who does he think he is- great another bro - of not wanting the public rejection - but 
-it also is selfishlessy theraputic - and I want people to have it - to hold on to the words when they are down 
+because I am so afraid of saying "psh - tihs guy is out to lucn h - how it
+would affect my imaginary career - who does he think he is- great another bro - of not wanting the public rejection - but
+it also is selfishlessy theraputic - and I want people to have it - to hold on to the words when they are down
 
-Not all the words will be 
-
-
+Not all the words will be
 
 Halfbaked Theology
 Caveman Apology
 
+In the days of old
 
-In the days of old 
-
-Rant and rave - rant and rave - 
-
+Rant and rave - rant and rave -
 
 Its another place entirely
 And I run from it - run far from the land
@@ -48,12 +47,11 @@ Whatever the case may be - the truth is - we have found eachother - lest in word
 # Words are powerful
 
 Words are powerful - wouldn't you say?
-What would you say? 
+What would you say?
 Words are powerful - hard to deny - especially whilst using words.
-And then one realizes the power as self evident. 
+And then one realizes the power as self evident.
 And puts further weight on ones word.
-A person - has thea bility to have their word be perfect - and scandal happens when there word is broken. 
-
+A person - has thea bility to have their word be perfect - and scandal happens when there word is broken.
 
 We get amazed at babies - lest the author does.
 
@@ -91,7 +89,7 @@ the race of saint.
 
 What does it mean to be the race of saint?
 I think of the garden - moreover a path - morever marble with hedges - and flowers on the side of each.
-I think of pure clear water - flower beds that rise to perfume and the air sparkling - radiance 
+I think of pure clear water - flower beds that rise to perfume and the air sparkling - radiance
 
 ## Life without Screens
 
@@ -102,21 +100,36 @@ I'm looking at this computer - nice and cold steel - a company purchased across 
 Could one live without screens?
 I think so.
 
-## Nebulas 
-nebulas - what a word - what a concept- holy battle cosmic battle thrown on display across the stars - 
+## Nebulas
 
-## The Great Repent 
+nebulas - what a word - what a concept- holy battle cosmic battle thrown on display across the stars -
 
+## The Great Repent
 
 ### notes on sermon 12.08.24
+
 - life without sin
 - splits judgemental into 2 psrts
-first psrt on cross 
-second when jesus returns
+  first psrt on cross
+  second when jesus returns
 
 2. Christian has a different battle now then they did in the old covenate
 
 warfare on own sin - sin is on the loosing side
 
+do you want God to come or cling to sin? Great repentance
 
-do you want God to come or cling to sin? Great repentance 
+## LOST ON EARTH
+
+12-24-24
+Gosh Golly Gee - what a life we live eh?
+We are born - we pass away.
+On the brink of nuclear war
+Lest what is the difference between that
+or plauge
+
+## THE CHURCHES RESPONSE TO WHEN ALIENS COME DOWN
+
+In the book a childhood's end - ships appear - and they stay stagnat for a generation - and then another - and by the third generation human beings are so accustomoed to the ships that they no longer fear them.
+
+What would the church's response be? Who even respresents the church anymore? Would it be the pope? What would scripture say? What would the boys of West Minister come up with?
