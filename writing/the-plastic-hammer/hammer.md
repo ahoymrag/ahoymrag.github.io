@@ -13,7 +13,12 @@ description: A story of life and death and the moments in between
 
 ## The verbal garbage of an introduction
 
-This is nugget of an idea - but I've been carrying this with me for years - but yet I have not had the courage to drop anything hot - in the fear that it wouldn't be hot and I'd embarass myself as a lowly theologian - an unstudied one - a man who spends much time in the digital ether .
+This is nugget of an idea - and nuggets look messy until you process them. This is a book that I have been terrified of compiling - lest I be casted for the rest of my life as a certain school of thinking - - I would like to note to future Alex - who reads this one day while grey - God willing - that this was in a way - a therapy caught on paper - that's all - the contents of this book are of theological nature.
+
+And who am I? Ya boy - Alex Gonzalez.
+I was on a show for a while called smoking theologians - a relatively unpopular spotify program that talked about this sort of jingle jangle - and the showrunner I did it with - Preston Graham - started a bunch of churches and was super theologian guy - but before him - I was involved in a bunch of different circles - still am - float in and out and out and in - and I wander - looking for a unique character.
+
+but I've been carrying this with me for years - but yet I have not had the courage to drop anything hot - in the fear that it wouldn't be hot and I'd embarass myself as a lowly theologian - an unstudied one - a man who spends much time in the digital ether .
 The thought of writing scares me - because it, to my opinion, flirts so close to - somewhere I don't know if I want to go.
 Has to do with perception I suppose
 And a fear of being cringe.
@@ -53,7 +58,9 @@ And then one realizes the power as self evident.
 And puts further weight on ones word.
 A person - has thea bility to have their word be perfect - and scandal happens when there word is broken.
 
-We get amazed at babies - lest the author does.
+We get amazed at babies and get charmed at them using words. Mama - Dada - No - No no no no no - AGAIN - - - baby talk is amazing - as are words.
+
+Words hold concepts and ideas - words are powerful - they create and destroy - kings use them - queens use them - even the mute uses them - through written word - - words can be written down - spoke - acted out - but they are different than dance - different than music - though they are usually in all of that in some capacity or another - words are words and words are powerful.
 
 And this book was supposed to be something enlightened for the world.
 But my intentions were bad.
@@ -70,9 +77,9 @@ It seems pretty clear - lest to the author - that death is at the door.
 Yet - death is an elusive enemey - that one must not conjur up lest one faces it. one finds themself with an insatiable desire to live - and to live forever.
 And one is afraid if they do not change their ways - they won't end up at the right place
 But the wrong place.
-The right place - where there is everyone you've ever met
-Seems so far
-And a looney tunes idea.
+The right place - where there is everyone you've ever met and time and space to love and play and be silly with - -
+Seems so far away
+A looney toon idea.
 So then what - what does one do when everything is going to fade away?
 Where does one put their foundation on life.
 
@@ -126,7 +133,7 @@ Gosh Golly Gee - what a life we live eh?
 We are born - we pass away.
 On the brink of nuclear war
 Lest what is the difference between that
-or plauge
+or plauge - the phone gives a constant feed of what is going on in the world. I used to say - perhaps wrongly \* - how much I think it in our design - to
 
 ## THE CHURCHES RESPONSE TO WHEN ALIENS COME DOWN
 
