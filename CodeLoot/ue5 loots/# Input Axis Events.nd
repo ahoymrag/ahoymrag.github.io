@@ -1,0 +1,49 @@
+# Input Axis Events
+Begin Object Class=/Script/BlueprintGraph.K2Node_InputAxisEvent Name="K2Node_InputAxisEvent_Forward"
+   InputAxisName="MoveForward"
+   NodePosX=0
+   NodePosY=0
+   CustomProperties Pin (PinId=OutputDelegate, Direction="EGPD_Output")
+   CustomProperties Pin (PinId=AxisValue, Direction="EGPD_Output", PinType.PinCategory="float")
+End Object
+
+Begin Object Class=/Script/BlueprintGraph.K2Node_InputAxisEvent Name="K2Node_InputAxisEvent_Turn"
+   InputAxisName="Turn"
+   NodePosX=0
+   NodePosY=100
+   CustomProperties Pin (PinId=OutputDelegate, Direction="EGPD_Output")
+   CustomProperties Pin (PinId=AxisValue, Direction="EGPD_Output", PinType.PinCategory="float")
+End Object
+
+Begin Object Class=/Script/BlueprintGraph.K2Node_InputAxisEvent Name="K2Node_InputAxisEvent_LookUp"
+   InputAxisName="LookUp"
+   NodePosX=0
+   NodePosY=200
+   CustomProperties Pin (PinId=OutputDelegate, Direction="EGPD_Output")
+   CustomProperties Pin (PinId=AxisValue, Direction="EGPD_Output", PinType.PinCategory="float")
+End Object
+
+# Rotation Logic
+Begin Object Class=/Script/BlueprintGraph.K2Node_CallFunction Name="K2Node_CallFunction_Yaw"
+   FunctionReference=(MemberName="AddControllerYawInput", bSelfContext=True)
+   NodePosX=200
+   NodePosY=100
+   CustomProperties Pin (PinId=Val, Direction="EGPD_Input", LinkedTo=(K2Node_InputAxisEvent_Turn.AxisValue))
+End Object
+
+Begin Object Class=/Script/BlueprintGraph.K2Node_CallFunction Name="K2Node_CallFunction_Pitch"
+   FunctionReference=(MemberName="AddControllerPitchInput", bSelfContext=True)
+   NodePosX=200
+   NodePosY=200
+   CustomProperties Pin (PinId=Val, Direction="EGPD_Input", LinkedTo=(K2Node_InputAxisEvent_LookUp.AxisValue))
+End Object
+
+# Forward Thrust
+Begin Object Class=/Script/BlueprintGraph.K2Node_CallFunction Name="K2Node_CallFunction_AddInputVector"
+   FunctionReference=(MemberParent="/Script/Engine.PawnMovementComponent", MemberName="AddInputVector")
+   NodePosX=200
+   NodePosY=0
+   CustomProperties Pin (PinId=WorldVector_X, Direction="EGPD_Input", LinkedTo=(K2Node_InputAxisEvent_Forward.AxisValue))
+   CustomProperties Pin (PinId=WorldVector_Y, Direction="EGPD_Input", DefaultValue="0.0")
+   CustomProperties Pin (PinId=WorldVector_Z, Direction="EGPD_Input", DefaultValue="0.0")
+End Object
