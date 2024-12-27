@@ -8,8 +8,8 @@
   justify-content: space-evenly;
   align-items: center;
   font-family: "Roboto", sans-serif;
-  background: rgba(255, 255, 255, 0.1);
-  /* Light glass effect */
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(200, 200, 255, 0.1));
+  /* Soft gradient glass effect */
   backdrop-filter: blur(10px);
   /* Stronger blur for a glassy look */
   border-radius: 10px;
