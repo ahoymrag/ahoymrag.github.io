@@ -21,10 +21,12 @@
             rel="icon"
             type="image/png"
             href="./src/assets/AlexGonzalez-favicon.png" />
+        <script defer
+            src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
     </head>
 
-    <body id="index-body">
+    <body id="index-body" x-data="{ code: '', showMenu: false }">
 
         <header>
             <div class="header-main-wrap">
@@ -76,8 +78,66 @@
 
             <footer>
                 <p class="footer-copy">MMXXIII</p>
-
+                <div x-show="showMenu" class="neumorphic-popup">
+                    <ul>
+                        <li><a href="./projects/index.html">Active
+                                Projects</a></li>
+                        <li><a href="#">Menu Item 2</a></li>
+                        <li><a href="#">Menu Item 3</a></li>
+                    </ul>
+                </div>
             </footer>
 
+            <input type="text" x-model="code"
+                @input="showMenu = (code === '1153')"
+                placeholder="Enter special code" class="centered-input" />
+
+            <style>
+                .centered-input {
+                    padding: 10px 20px;
+                    font-size: 1.2em;
+                    border: none;
+                    border-radius: 25px;
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                    outline: none;
+                    transition: box-shadow 0.3s ease;
+                }
+                .centered-input:focus {
+                    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+                }
+                .neumorphic-popup {
+                    position: absolute;
+                    bottom: 10px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    background: rgba(255, 255, 255, 0.9);
+                    box-shadow: 10px 10px 30px #babecc, -10px -10px 30px #ffffff;
+                    border-radius: 15px;
+                    padding: 30px;
+                    backdrop-filter: blur(15px);
+                    display: none;
+                    transition: all 0.3s ease;
+                }
+                [x-show="showMenu"] {
+                    display: block;
+                }
+                .neumorphic-popup ul {
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+                }
+                .neumorphic-popup li {
+                    margin: 10px 0;
+                }
+                .neumorphic-popup a {
+                    text-decoration: none;
+                    color: #333;
+                    font-weight: bold;
+                    transition: color 0.3s ease;
+                }
+                .neumorphic-popup a:hover {
+                    color: #007BFF;
+                }
+            </style>
         </body>
     </html>
