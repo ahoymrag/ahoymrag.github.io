@@ -8,24 +8,37 @@
   justify-content: space-evenly;
   align-items: center;
   font-family: "Roboto", sans-serif;
+  background: rgba(255, 255, 255, 0.1);
+  /* Light glass effect */
+  backdrop-filter: blur(10px);
+  /* Stronger blur for a glassy look */
+  border-radius: 10px;
+  /* Rounded corners */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  /* Soft shadow */
 }
 
 .link-download {
   font-size: 16px;
-  color: black;
-  opacity: 0.5;
+  color: #fff;
+  /* White text for contrast */
+  opacity: 0.8;
   text-align: center !important;
-  border-style: solid;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  /* Semi-transparent border */
   padding: 20px;
-  border-color: white;
   text-decoration: none;
+  transition: all 0.3s ease;
+  /* Smooth transition */
 }
 
 .link-download:hover {
   opacity: 1;
   cursor: pointer;
-  border-style: solid;
-  border-color: black;
+  border-color: rgba(255, 255, 255, 0.6);
+  /* More visible border on hover */
+  background: rgba(255, 255, 255, 0.2);
+  /* Slightly more opaque background */
 }
 
 @media (max-width: 768px) {
@@ -36,6 +49,24 @@
 
 .footer-copy {
   font-size: 12px;
-  color: rgba(0, 15, 44, 0.427) !important;
+  color: rgba(255, 255, 255, 0.6) !important;
+  /* Lighter text color */
   text-align: center !important;
+}
+
+.nav-ul li a .header-button {
+  transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+
+.nav-ul li a .header-button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  /* Light glass effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Soft shadow */
+  backdrop-filter: blur(5px);
+  /* Optional: adds a blur effect */
+  border-radius: 5px;
+  /* Optional: rounded corners */
+  transform: scale(1.05);
+  /* Slightly enlarge on hover */
 }
