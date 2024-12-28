@@ -15,3 +15,21 @@
 
 ## 
 
+
+A note to the land and the sea
+a place where they used to dwell
+no longer do they do 
+but they crawl from the sea
+
+they crawled from the sea and went into the tall grass and buried and waited 
+who knows where any of the animals come from 
+
+some say only some folks could see them 
+but they care about us - and are sad that we don't give them a chance to
+understand them more - but are patient because they believe that they are 
+
+
+## Mac's wants
+1. Wants to be able to record good
+
+## Dallas wants
