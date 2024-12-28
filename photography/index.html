@@ -5,17 +5,59 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Photography Portfolio</title>
         <link rel="stylesheet" href="./src/styles.css">
+        <style>
+            /* Add styles for a glass-like button effect */
+            #year-intro button {
+                background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+                border: 1px solid rgba(255, 255, 255, 0.5);
+                color: black;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+                border-radius: 12px;
+                transition: background-color 0.3s ease, transform 0.3s ease;
+                backdrop-filter: blur(5px); /* Glass effect */
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
+
+            #year-intro button:hover {
+                background-color: rgba(255, 255, 255, 0.3);
+                transform: scale(1.05);
+            }
+
+            #year-intro {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                overflow: hidden;
+                background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+            }
+
+            #year-intro h1 {
+                color: #333;
+                margin-bottom: 20px;
+                font-size: 1.5em;
+            }
+        </style>
     </head>
     <body>
         <div id="year-intro">
-            <button onclick="startPortfolio()">View 2024 Collection</button>
+            <h1>Photography</h1>
+            <button onclick="startPortfolio('2024')">View 2024
+                Collection</button>
+            <button onclick="startPortfolio('2025')">View 2025
+                Collection</button>
         </div>
-        <div id="portfolio" class="hidden">
-            <div id="photo-container"></div>
-        </div>
+
         <script>
-            function startPortfolio() {
-                window.location.href = 'src/2024.html'; // Ensure the path is correct
+            function startPortfolio(year) {
+                window.location.href = `src/${year}.html`;
             }
         </script>
     </body>
