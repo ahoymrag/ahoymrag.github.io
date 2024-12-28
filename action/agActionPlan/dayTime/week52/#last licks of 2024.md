@@ -18,3 +18,9 @@ last liks backk
 
 ## Living Situation 
 
+
+
+
+## editing cleanup
+1. subway and Monday- publish all of the Sunday sermons
+2. bring nice monitor to bedroom
