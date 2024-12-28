@@ -13,3 +13,8 @@ last liks backk
 
 ## Pecan Business
 1. Set Aside 2k for Eric - checking out transfer to venmo or zelle? for Alex Waldman
+
+## Portfolio Business
+
+## Living Situation 
+

@@ -30,6 +30,25 @@ understand them more - but are patient because they believe that they are
 
 
 ## Mac's wants
-1. Wants to be able to record good
+1. Wants to be able to record good and clean audio
 
 ## Dallas wants
+1. To not think about all the things he is thinking about
+
+## Dominic wants
+1. to pay the bills and support his family
+
+## Makayla
+1. Wants to know the truth
+
+## Asher
+1. Wants to be helpful and have things be easy and calm
+
+## Jocylens
+1. Wants to have things be right
+
+## Teacher
+1. Wants to be right
+
+## Pastor
+1. Wants to do the best he can and be relatable to all 
