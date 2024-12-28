@@ -28,6 +28,10 @@
         <meta name="twitter:description"
             content="Explore the 2025 unedited and randomly sorted photo collection by photographer Alex Gonzalez. Discover the raw beauty captured in each shot.">
         <meta name="twitter:image" content="URL_to_a_representative_image.jpg">
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+            defer></script>
     </head>
     <body>
 
@@ -42,19 +46,24 @@
             <p>Alex Gonzalez</p>
 
         </div>
-        <!-- Feedback Form -->
-        <form id="feedback-form"
-            action="https://formspree.io/f/xdkokkbv"
-            method="POST">
-            <input type="text" name="name" placeholder="Your Name"
-                required>
-            <input type="email" name="email" placeholder="Your Email"
-                required>
-            <textarea name="message" placeholder="Your Feedback"
-                rows="5"
-                required></textarea>
-            <button type="submit">Send Feedback</button>
-        </form>
+        <!-- Feedback Form with Alpine.js -->
+        <div x-data="{ open: false }">
+            <button @click="open = !open" type="button">
+                Toggle Feedback Form
+            </button>
+            <form x-show="open" id="feedback-form"
+                action="https://formspree.io/f/xdkokkbv"
+                method="POST">
+                <input type="text" name="name" placeholder="Your Name"
+                    required>
+                <input type="email" name="email" placeholder="Your Email"
+                    required>
+                <textarea name="message" placeholder="Your Feedback"
+                    rows="5"
+                    required></textarea>
+                <button type="submit">Send Feedback</button>
+            </form>
+        </div>
 
         <script src="2025photos.js"></script>
     </body>
