@@ -5,7 +5,7 @@
             type="image/png"
             href="../src/assets/AlexGonzalez-favicon.png" />
         <meta name="description"
-            content="Portfolio website for Alex Gonzalez of Sleepy Hollow. Includes resume, CV, animation, VR experiments, and teacher work.">
+            content="Active Projects. Portfolio website for Alex Gonzalez of Sleepy Hollow. Includes resume, CV, animation, VR experiments, and teacher work.">
         <meta name="keywords"
             content="Alex Gonzalez, portfolio, resume, CV, animation, VR experiments, teacher work, Sleepy Hollow">
         <meta name="author" content="Alex Gonzalez">
@@ -17,6 +17,9 @@
         <link rel="stylesheet" href="./portfolio/src/ag-cv-css-1.css">
         <title>Active Projects</title>
         <link rel="stylesheet" href="./activeProjects.css">
+        <script
+            src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+            defer></script>
         <style>
             body {
                 background: #fdfdfd;
@@ -42,6 +45,26 @@
             .nav-ul {
                 list-style-type: none;
                 padding: 0;
+                display: none;
+            }
+
+            .nav-ul.show {
+                display: block;
+            }
+
+            .menu-toggle {
+                display: none;
+                cursor: pointer;
+                padding: 10px;
+                background-color: #0073e6;
+                color: white;
+                text-align: center;
+            }
+
+            @media (max-width: 768px) {
+                .menu-toggle {
+                    display: block;
+                }
             }
 
             .nav-ul li {
@@ -62,18 +85,64 @@
                 font-size: 0.9em;
                 color: #777;
             }
+
+            .header-content-title-wrap-a h2 {
+                font-size: 2em;
+                margin-bottom:20px;
+                text-align: center;
+                overflow: hidden;
+                white-space: nowrap;
+                border-right: 0.15em solid;
+                margin: 0 auto;
+                width: 0;
+                animation: typing 4s steps(30, end) infinite, blink-caret 0.75s step-end infinite, colorChange 5s infinite;
+            }
+
+            @keyframes typing {
+                from {
+                    width: 0;
+                }
+                to {
+                    width: 100%;
+                }
+            }
+
+            @keyframes blink-caret {
+                from, to {
+                    border-color: transparent;
+                }
+                50% {
+                    border-color: currentColor;
+                }
+            }
+
+            @keyframes colorChange {
+                0% {
+                    color: #0073e6;
+                }
+                25% {
+                    color: #e6007a;
+                }
+                50% {
+                    color: #00e676;
+                }
+                75% {
+                    color: #ffea00;
+                }
+                100% {
+                    color: #0073e6;
+                }
+            }
         </style>
     </head>
     <body>
 
-        <nav class="home-button-wrap">
-            <a class="home-button-link" href="../index.html">Home</a>
-        </nav>
         <header>
             <div class="header-main-wrap">
                 <div class="header-content-wrap">
-                    <div class="header-content-title-wrap">
-                        <h1>Active Projects</h1></div>
+                    <div class="header-content-title-wrap-a">
+                        <h2>Active Projects</h2>
+                    </div>
                     <div class="header-content-subheader-wrap">
                         <p>These are all active and actively developed projects.
                             Feel free to view them and see the latest
@@ -81,7 +150,7 @@
                     </div>
 
                     <div class="header-content-menu-wrap">
-                        <ul class="nav-ul">
+                        <ul class="nav-ul show">
                             <li>
                                 <a
                                     href="https://ahoy.ooo/ahoyApp/www/index.html">Ahoy
@@ -91,18 +160,20 @@
                                     Haven, CT, offering a homegrown alternative
                                     for media consumption.</p>
                             </li>
+                            <!--
                             <li>
                                 <a href="../host/doc/index.html">Day Off
                                     Cider</a>
                                 <p class="project-description">A brewing company
                                     founded by Ellen and I.</p>
                             </li>
+                            -->
                             <li>
                                 <a
-                                    href="../seaM/welcome-seaMonster.html">Sea
-                                    Monster</a>
-                                <p class="project-description">More information
-                                    to be added.</p>
+                                    href="../seaM/welcome-seaMonster.html">Feature
+                                    Film</a>
+                                <p class="project-description">Presently in
+                                    Pre-Production</p>
                             </li>
                             <li>
                                 <a href="./palbot3/index.html">Pal-bot 3</a>
@@ -110,29 +181,25 @@
                                     collaboration with Rob Meglio, scheduled for
                                     2026.</p>
                             </li>
+                            <!--
                             <li>
                                 <a href="./theNibbler/index.html">The
                                     Nibbler</a>
                                 <p class="project-description">An upcoming
                                     project set for 2026.</p>
                             </li>
+                            -->
                         </ul>
                     </div>
-                </div>
-
-                <div id="wolfboyDescription"
-                    style="padding: 20px; background-color: #f0f0f0; margin-top: 20px;">
-                    <p>Wolfboy is an intriguing movie creature feature that
-                        explores the depths of friendship and fear. Join the
-                        adventure as our characters uncover mysteries in a
-                        thrilling narrative.</p>
                 </div>
 
             </header>
 
             <footer>
-                <p class="footer-copy">MMXXIII</p>
-            </footer>
+                <p class="footer-copy">MMXXV</p>
 
-        </body>
-    </html>
+            </nav>
+        </footer>
+
+    </body>
+</html>

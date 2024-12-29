@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Family Tree</title>
+        <style>
+        .tree ul {
+            padding-top: 20px; 
+            position: relative;
+            transition: all 0.5s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .tree li {
+            text-align: center;
+            list-style-type: none;
+            position: relative;
+            padding: 20px 5px 0 5px;
+            transition: all 0.5s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .tree li::before, .tree li::after {
+            content: '';
+            position: absolute; 
+            top: 0; 
+            right: 50%;
+            border-top: 2px solid #ccc;
+            width: 50%; 
+            height: 20px;
+        }
+
+        .tree li::after {
+            right: auto; 
+            left: 50%;
+            border-left: 2px solid #ccc;
+        }
+
+        .tree li:only-child::after, .tree li:only-child::before {
+            display: none;
+        }
+
+        .tree li:only-child { 
+            padding-top: 0;
+        }
+
+        .tree li:first-child::before, .tree li:last-child::after {
+            border: 0 none;
+        }
+
+        .tree li:last-child::before {
+            border-right: 2px solid #ccc;
+            border-radius: 0 5px 0 0;
+        }
+
+        .tree li:first-child::after {
+            border-radius: 5px 0 0 0;
+        }
+
+        .tree li a {
+            border: 2px solid #ccc;
+            padding: 5px 10px;
+            text-decoration: none;
+            color: #666;
+            font-family: arial, verdana, tahoma;
+            font-size: 11px;
+            display: inline-block;
+            border-radius: 5px;
+            transition: all 0.5s;
+        }
+
+        .tree li a:hover, .tree li a:hover+ul li a {
+            background: #c8e4f8; 
+            color: #000; 
+            border: 2px solid #94a0b4;
+        }
+
+        .tree li a:hover+ul li::after, 
+        .tree li a:hover+ul li::before, 
+        .tree li a:hover+ul::before, 
+        .tree li a:hover+ul ul::before {
+            border-color:  #94a0b4;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        @media (max-width: 600px) {
+            .tree ul {
+                padding-top: 10px;
+            }
+
+            .tree li {
+                padding: 10px 5px 0 5px;
+            }
+
+            .tree li a {
+                font-size: 9px;
+                padding: 3px 7px;
+            }
+        }
+    </style>
+        <script
+            src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+            defer></script>
+    </head>
+    <body>
+        <div class="tree" x-data="{ open: {} }">
+            <ul>
+                <li>
+                    <a href="#" @click="open['dallas'] = !open['dallas']">Dallas
+                        Family</a>
+                    <ul x-show="open['dallas']" class="hidden">
+                        <li>
+                            <a href="#"
+                                @click="open['dallas-father'] = !open['dallas-father']">Dallas
+                                (Father)</a>
+                            <ul x-show="open['dallas-father']" class="hidden">
+                                <li><a href="#">Mac (Son)</a></li>
+                                <li><a href="#">Mom (Deceased)</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#"
+                        @click="open['dominic'] = !open['dominic']">Dominic
+                        Family</a>
+                    <ul x-show="open['dominic']" class="hidden">
+                        <li>
+                            <a href="#"
+                                @click="open['dominic-father'] = !open['dominic-father']">Dominic's
+                                Father</a>
+                            <ul x-show="open['dominic-father']" class="hidden">
+                                <li><a href="#">Dominic's Mother</a></li>
+                                <li>
+                                    <a href="#"
+                                        @click="open['dominic'] = !open['dominic']">Dominic</a>
+                                    <ul x-show="open['dominic']" class="hidden">
+                                        <li><a href="#">Makayla</a></li>
+                                        <li><a href="#">Julie Bee</a></li>
+                                        <li><a href="#">Asher</a></li>
+                                        <li><a href="#">Jocyclen (Step
+                                                Sister)</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Dominic's Brother 1</a></li>
+                                <li><a href="#">Dominic's Brother 2</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Wife (Deceased)</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>

@@ -5,11 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Welcome to Sea Monster Project</title>
         <style>
+        /* Base styles */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #fffdf7;
+            background-color: #e0f7fa; /* Coastal blue */
         }
 
         #welcome {
@@ -17,23 +18,27 @@
             max-width: 800px;
             margin: 2em auto;
             padding: 2em;
-            background-color: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background: rgba(255, 255, 255, 0.7);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
             text-align: center;
         }
 
         h1 {
             font-family: 'Cinzel', serif;
             font-size: 2.5em;
-            color: #333;
+            color: #004d40; /* Dark teal */
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
         }
 
         p {
             line-height: 1.6;
             text-align: left;
+            color: #004d40; /* Dark teal */
         }
 
+        /* Table of contents */
         #toc {
             margin: 2em 0;
             text-align: left;
@@ -47,12 +52,14 @@
             cursor: pointer;
             padding: 10px;
             border-radius: 5px;
-            background: linear-gradient(135deg, #fffdf7 0%, #f5f5f5 100%);
+            background: rgba(255, 255, 255, 0.7);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
             transition: background 0.3s ease;
         }
 
         .section-title:hover, .sub-section-title:hover {
-            background: linear-gradient(135deg, #f5f5f5 0%, #fffdf7 100%);
+            background: rgba(255, 255, 255, 0.9);
         }
 
         .section-content, .sub-section-content {
@@ -72,240 +79,357 @@
 
         .section-content a, .sub-section-content a {
             text-decoration: none;
-            color: #333;
+            color: #004d40; /* Dark teal */
             display: block;
             padding: 10px;
             border-radius: 5px;
-            background: linear-gradient(135deg, #fffdf7 0%, #f5f5f5 100%);
+            background: rgba(255, 255, 255, 0.7);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
             transition: background 0.3s ease;
         }
 
         .section-content a:hover, .sub-section-content a:hover {
-            background: linear-gradient(135deg, #f5f5f5 0%, #fffdf7 100%);
+            background: rgba(255, 255, 255, 0.9);
         }
 
+        /* Controls */
         #controls {
             text-align: center;
             margin: 20px;
         }
 
         button {
-            padding: 10px 20px;
+            padding: 12px 20px;
             font-size: 16px;
             cursor: pointer;
-            background-color: #007bff;
-            color: white;
-            border: none;
-            border-radius: 5px;
+            background: linear-gradient(145deg, #e0f7fa, #ffffff);
+            color: #004d40;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(10px);
+            transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+            margin-bottom:10px;
         }
 
         button:hover {
-            background-color: #0056b3;
+            background: linear-gradient(145deg, #ffffff, #e0f7fa);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.5);
+            transform: translateY(-2px);
+        }
+
+        button:active {
+            background: linear-gradient(145deg, #e0f7fa, #ffffff);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+            transform: translateY(0);
+        }
+
+        button:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+        }
+
+        /* Crew member modal */
+        .crew-member {
+            cursor: pointer;
+            color: #007bff;
+            text-decoration: underline;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            z-index: 1000;
+        }
+
+        .modal.active {
+            display: block;
+        }
+
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }
+
+        .modal-overlay.active {
+            display: block;
+        }
+
+        /* Responsive design */
+        @media (min-width: 768px) {
+            #welcome {
+                padding: 3em;
+            }
+
+            h1 {
+                font-size: 3em;
+            }
+
+            button {
+                padding: 20px 30px;
+                font-size: 18px;
+            }
         }
         </style>
+        <!-- Include Alpine.js -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+            defer></script>
     </head>
     <body>
-        <div id="welcome">
-            <h1>Welcome to the Sea Monster Project</h1>
+        <div id="welcome"
+            x-data="{ activeTab: 'pre-production', activeSubTab: 'script-development', activeProductionSubTab: 'filming', activePostProductionSubTab: 'editing', activeExtraTab: 'call-sheets' }">
+            <h1>codename SeaM</h1>
             <div id="controls">
                 <button
-                    onclick="window.location.href='./screenplay/seaM-screenplay.html'">View
+                    @click="window.location.href='./screenplay/seaM-screenplay.html'">View
                     Screenplay</button>
             </div>
-            <p>Welcome to the pre-production phase of the Sea Monster project.
+            <p>Welcome to the pre-production phase of a feature film.
                 Below is a table of contents outlining the key components of our
                 pre-production process.</p>
 
             <div id="toc">
-                <div class="section-title"
-                    onclick="toggleSection('pre-production')">Pre-Production</div>
-                <div id="pre-production" class="section-content">
+                <div class="tabs">
+                    <button
+                        :class="{ 'active': activeTab === 'pre-production' }"
+                        @click="activeTab = 'pre-production'">Pre-Production</button>
+                    <button
+                        :class="{ 'active': activeTab === 'production' }"
+                        @click="activeTab = 'production'">Production</button>
+                    <button
+                        :class="{ 'active': activeTab === 'post-production' }"
+                        @click="activeTab = 'post-production'">Post-Production</button>
+                    <button
+                        :class="{ 'active': activeExtraTab === 'call-sheets' }"
+                        @click="activeExtraTab = 'call-sheets'">Call
+                        Sheets</button>
+                    <button
+                        :class="{ 'active': activeExtraTab === 'crew-directory' }"
+                        @click="activeExtraTab = 'crew-directory'">Crew
+                        Directory</button>
+                    <button
+                        :class="{ 'active': activeExtraTab === 'project-timeline' }"
+                        @click="activeExtraTab = 'project-timeline'">Project
+                        Timeline</button>
+                </div>
+
+                <div x-show="activeTab === 'pre-production'"
+                    class="tab-content">
+                    <h2>Pre-Production</h2>
+                    <div class="sub-tabs">
+                        <button
+                            :class="{ 'active': activeSubTab === 'script-development' }"
+                            @click="activeSubTab = 'script-development'">Script
+                            Development</button>
+                        <button
+                            :class="{ 'active': activeSubTab === 'budgeting' }"
+                            @click="activeSubTab = 'budgeting'">Budgeting</button>
+                        <button
+                            :class="{ 'active': activeSubTab === 'concept-art' }"
+                            @click="activeSubTab = 'concept-art'">Concept
+                            Art</button>
+                        <button
+                            :class="{ 'active': activeSubTab === 'concept-visual' }"
+                            @click="activeSubTab = 'concept-visual'">Concept
+                            Visual</button>
+                        <button
+                            :class="{ 'active': activeSubTab === 'concept-sound' }"
+                            @click="activeSubTab = 'concept-sound'">Concept
+                            Sound</button>
+                        <button
+                            :class="{ 'active': activeSubTab === 'concept-plan' }"
+                            @click="activeSubTab = 'concept-plan'">Concept
+                            Plan</button>
+                    </div>
+
+                    <div x-show="activeSubTab === 'script-development'"
+                        class="sub-tab-content">
+                        <p>Details about script development...</p>
+                    </div>
+                    <div x-show="activeSubTab === 'budgeting'"
+                        class="sub-tab-content">
+                        <p>Details about budgeting...</p>
+                    </div>
+                    <div x-show="activeSubTab === 'concept-art'"
+                        class="sub-tab-content">
+                        <p>Details about concept art...</p>
+                    </div>
+                    <div x-show="activeSubTab === 'concept-visual'"
+                        class="sub-tab-content">
+                        <p>Details about concept visual...</p>
+                    </div>
+                    <div x-show="activeSubTab === 'concept-sound'"
+                        class="sub-tab-content">
+                        <p>Details about concept sound...</p>
+                    </div>
+                    <div x-show="activeSubTab === 'concept-plan'"
+                        class="sub-tab-content">
+                        <p>Details about concept plan...</p>
+                    </div>
+                </div>
+
+                <div x-show="activeTab === 'production'" class="tab-content">
+                    <h2>Production</h2>
+                    <div class="sub-tabs">
+                        <button
+                            :class="{ 'active': activeProductionSubTab === 'filming' }"
+                            @click="activeProductionSubTab = 'filming'">Filming</button>
+                        <button
+                            :class="{ 'active': activeProductionSubTab === 'directing' }"
+                            @click="activeProductionSubTab = 'directing'">Directing</button>
+                        <button
+                            :class="{ 'active': activeProductionSubTab === 'sound-recording' }"
+                            @click="activeProductionSubTab = 'sound-recording'">Sound
+                            Recording</button>
+                        <!-- Add more sub-tabs as needed -->
+                    </div>
+
+                    <div x-show="activeProductionSubTab === 'filming'"
+                        class="sub-tab-content">
+                        <p>Details about filming...</p>
+                    </div>
+                    <div x-show="activeProductionSubTab === 'directing'"
+                        class="sub-tab-content">
+                        <p>Details about directing...</p>
+                    </div>
+                    <div x-show="activeProductionSubTab === 'sound-recording'"
+                        class="sub-tab-content">
+                        <p>Details about sound recording...</p>
+                    </div>
+                    <!-- Add more content sections as needed -->
+                </div>
+
+                <div x-show="activeTab === 'post-production'"
+                    class="tab-content">
+                    <h2>Post-Production</h2>
+                    <div class="sub-tabs">
+                        <button
+                            :class="{ 'active': activePostProductionSubTab === 'editing' }"
+                            @click="activePostProductionSubTab = 'editing'">Editing</button>
+                        <button
+                            :class="{ 'active': activePostProductionSubTab === 'sound-editing' }"
+                            @click="activePostProductionSubTab = 'sound-editing'">Sound
+                            Editing</button>
+                        <button
+                            :class="{ 'active': activePostProductionSubTab === 'visual-effects' }"
+                            @click="activePostProductionSubTab = 'visual-effects'">Visual
+                            Effects</button>
+                        <!-- Add more sub-tabs as needed -->
+                    </div>
+
+                    <div x-show="activePostProductionSubTab === 'editing'"
+                        class="sub-tab-content">
+                        <p>Details about editing...</p>
+                    </div>
+                    <div x-show="activePostProductionSubTab === 'sound-editing'"
+                        class="sub-tab-content">
+                        <p>Details about sound editing...</p>
+                    </div>
+                    <div
+                        x-show="activePostProductionSubTab === 'visual-effects'"
+                        class="sub-tab-content">
+                        <p>Details about visual effects...</p>
+                    </div>
+                    <!-- Add more content sections as needed -->
+                </div>
+
+                <div x-show="activeExtraTab === 'call-sheets'"
+                    class="tab-content">
+                    <h2>Call Sheets</h2>
+                    <p>Access daily call sheets for crew members.</p>
                     <ul>
-                        <li>
-                            <div class="sub-section-title"
-                                onclick="toggleSection('script-development')">Script
-                                Development</div>
-                            <div id="script-development"
-                                class="sub-section-content">
-                                <ul>
-                                    <li><a href="#script-outline">Script
-                                            Outline</a></li>
-                                    <li><a href="#script-draft">Script
-                                            Draft</a></li>
-                                    <li><a href="#script-revision">Script
-                                            Revision</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="sub-section-title"
-                                onclick="toggleSection('budgeting')">Budgeting</div>
-                            <div id="budgeting" class="sub-section-content">
-                                <ul>
-                                    <li><a href="#budget-overview">Budget
-                                            Overview ($7,500)</a>
-                                        <p>
-                                            To create a budget of $7,500, we'll
-                                            need to prioritize essential
-                                            elements and
-                                            allocate funds accordingly. Here's a
-                                            breakdown of the key areas we'll
-                                            focus on:
-                                        </p>
-                                        <ul>
-                                            <li>Pre-Production: $2,500</li>
-                                            <li>Production: $3,000</li>
-                                            <li>Post-Production: $1,500</li>
-                                            <li>Marketing & Distribution:
-                                                $500</li>
-                                        </ul>
-                                    </li>
-                                    <li><a
-                                            href="#pre-production-costs">Pre-Production
-                                            Costs</a>
-                                        <p>
-                                            Pre-production costs include
-                                            expenses related to script
-                                            development, location scouting,
-                                            casting, and scheduling. We'll
-                                            allocate $2,500 for these
-                                            activities.
-                                        </p>
-                                    </li>
-                                    <li><a href="#production-costs">Production
-                                            Costs</a>
-                                        <p>
-                                            Production costs involve expenses
-                                            related to filming, directing, sound
-                                            recording, and lighting.
-                                            We'll allocate $3,000 for these
-                                            activities.
-                                        </p>
-                                    </li>
-                                    <li><a
-                                            href="#post-production-costs">Post-Production
-                                            Costs</a>
-                                        <p>
-                                            Post-production costs include
-                                            expenses related to editing, sound
-                                            editing, visual effects,
-                                            color grading, and distribution.
-                                            We'll allocate $1,500 for these
-                                            activities.
-                                        </p>
-                                    </li>
-                                    <li><a
-                                            href="#marketing-distribution">Marketing
-                                            & Distribution</a>
-                                        <p>
-                                            We'll allocate $500 for marketing
-                                            and distribution efforts to ensure
-                                            our film reaches a
-                                            wider audience.
-                                        </p>
-                                    </li>
-                                    <li><a
-                                            href="#cost-saving-strategies">Cost-Saving
-                                            Strategies</a>
-                                        <p>
-                                            To save costs, we'll consider the
-                                            following strategies:
-                                        </p>
-                                        <ul>
-                                            <li>Use local crew and
-                                                volunteers</li>
-                                            <li>Use free or low-cost
-                                                locations</li>
-                                            <li>Use natural lighting</li>
-                                            <li>Use free or low-cost
-                                                equipment</li>
-                                            <li>Use non-professional actors</li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="#budget-planning">Budget
-                                            Planning</a>
-                                        <p>
-                                            We'll create a detailed budget plan
-                                            that outlines all expenses and
-                                            allocate funds accordingly.
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <a href="#budget-approval">Budget
-                                            Approval</a>
-                                        <p>
-                                            We'll review and approve the budget
-                                            plan with the production team and
-                                            stakeholders.
-                                        </p>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="sub-section-title"
-                                    onclick="toggleSection('fundraising')">Fundraising</div>
-                                <div id="fundraising"
-                                    class="sub-section-content">
-                                    <ul>
-                                        <li><a
-                                                href="#crowdfunding">Crowdfunding</a></li>
-                                        <li><a
-                                                href="#investor-meetings">Investor
-                                                Meetings</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li><a href="#casting">Casting</a></li>
-                            <li><a href="#location-scouting">Location
-                                    Scouting</a></li>
-                            <li><a href="#storyboarding">Storyboarding</a></li>
-                            <li><a href="#scheduling">Scheduling</a></li>
-                            <li><a href="#crew-assembly">Crew Assembly</a></li>
-                            <li><a href="#equipment-rental">Equipment
-                                    Rental</a></li>
-                            <li><a href="#rehearsals">Rehearsals</a></li>
-                        </ul>
+                        <li><a href="./call-sheets/day1.pdf" target="_blank">Day
+                                1 Call Sheet</a></li>
+                        <li><a href="./call-sheets/day2.pdf" target="_blank">Day
+                                2 Call Sheet</a></li>
+                        <!-- Add more call sheets as needed -->
+                    </ul>
+                </div>
+
+                <div x-data="crewModal">
+                    <div class="modal-overlay" :class="{ 'active': showModal }"
+                        @click="closeModal"></div>
+                    <div class="modal" :class="{ 'active': showModal }">
+                        <p x-text="memberInfo"></p>
+                        <button @click="closeModal">Close</button>
                     </div>
-                    <div class="section-title"
-                        onclick="toggleSection('production')">Production</div>
-                    <div id="production" class="section-content">
+
+                    <div x-show="activeExtraTab === 'crew-directory'"
+                        class="tab-content">
+                        <h2>Crew Directory</h2>
+                        <p>Contact information and roles of the crew
+                            members.</p>
                         <ul>
-                            <li><a href="#filming">Filming</a></li>
-                            <li><a href="#directing">Directing</a></li>
-                            <li><a href="#sound-recording">Sound
-                                    Recording</a></li>
-                            <li><a href="#lighting">Lighting</a></li>
-                        </ul>
-                    </div>
-                    <div class="section-title"
-                        onclick="toggleSection('post-production')">Post-Production</div>
-                    <div id="post-production" class="section-content">
-                        <ul>
-                            <li><a href="#editing">Editing</a></li>
-                            <li><a href="#sound-editing">Sound Editing</a></li>
-                            <li><a href="#visual-effects">Visual
-                                    Effects</a></li>
-                            <li><a href="#color-grading">Color Grading</a></li>
-                            <li><a href="#distribution">Distribution</a></li>
+                            <li class="crew-member"
+                                @click="openModal('John Doe - Director - john.doe@example.com')">John
+                                Doe - Director</li>
+                            <li class="crew-member"
+                                @click="openModal('Jane Smith - Producer - jane.smith@example.com')">Jane
+                                Smith - Producer</li>
+                            <!-- Add more crew members as needed -->
                         </ul>
                     </div>
                 </div>
+
+                <div x-show="activeExtraTab === 'project-timeline'"
+                    class="tab-content">
+                    <h2>Project Timeline</h2>
+                    <p>Visual timeline of the project phases and milestones.</p>
+                    <ul>
+                        <li>Pre-Production: Jan 1 - Feb 15</li>
+                        <li>Production: Feb 16 - Mar 30</li>
+                        <li>Post-Production: Apr 1 - May 15</li>
+                        <!-- Add more timeline details as needed -->
+                    </ul>
+                </div>
             </div>
 
-            <script>
-        function viewScreenplay() {
-            window.location.href = 'seaM-screenplay.html';
-        }
+            <div x-data="{ searchQuery: '' }">
+                <input type="text" placeholder="Search..." x-model="searchQuery"
+                    class="search-bar" />
 
-        function toggleSection(sectionId) {
-            const section = document.getElementById(sectionId);
-            if (section.style.display === "none" || section.style.display === "") {
-                section.style.display = "block";
-            } else {
-                section.style.display = "none";
-            }
-        }
+                <div class="search-results">
+                    <template
+                        x-for="item in ['Script Development', 'Budgeting', 'Filming', 'Editing']"
+                        :key="item">
+                        <div
+                            x-show="item.toLowerCase().includes(searchQuery.toLowerCase())">
+                            <p x-text="item"></p>
+                        </div>
+                    </template>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            document.addEventListener('alpine:init', () => {
+                Alpine.data('crewModal', () => ({
+                    showModal: false,
+                    memberInfo: '',
+                    openModal(info) {
+                        this.memberInfo = info;
+                        this.showModal = true;
+                    },
+                    closeModal() {
+                        this.showModal = false;
+                    }
+                }));
+            });
         </script>
-        </body>
-    </html>
+    </body>
+</html>
