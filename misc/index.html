@@ -1,50 +1,93 @@
 <html>
     <head>
         <title>Miscellaneous Contents</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap"
+            rel="stylesheet">
         <style>
             body {
-                font-family: 'Times New Roman', serif;
+                font-family: 'Barlow', sans-serif;
                 background-color: #f8f8f8;
                 color: #333;
                 padding: 20px;
                 margin: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
             }
             h1 {
                 text-align: center;
-                font-size: 24px;
+                font-size: 36px;
                 color: #000;
+                margin-bottom: 10px;
+            }
+            p.sub-description {
+                text-align: center;
+                font-size: 18px;
+                color: #666;
+                margin-bottom: 40px;
             }
             .toc {
                 list-style-type: none;
                 padding: 0;
+                max-width: 600px;
+                width: 100%;
+                background: rgba(255, 255, 255, 0.8);
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                overflow: hidden;
             }
             .toc li {
-                margin-bottom: 10px;
+                margin: 0;
+                border-bottom: 1px solid #ddd;
+            }
+            .toc li:last-child {
+                border-bottom: none;
             }
             .toc a {
+                display: block;
+                padding: 15px 20px;
                 text-decoration: none;
                 color: #333;
                 font-size: 18px;
+                transition: background 0.3s, color 0.3s;
             }
             .toc a:hover {
-                text-decoration: underline;
+                background: rgba(255, 255, 255, 0.5);
+                color: #000;
+                backdrop-filter: blur(5px);
+            }
+            .home-button {
+                margin-top: 20px;
+                padding: 10px 20px;
+                font-size: 16px;
+                color: #fff;
+                background-color: #333;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background 0.3s;
+            }
+            .home-button:hover {
+                background-color: #555;
             }
         </style>
     </head>
     <body>
         <h1>Miscellaneous Contents</h1>
+        <p class="sub-description"> a variety of sawdust and other stuff </p>
         <ul class="toc">
             <li><a href="./recipe-grilled-frozen-shrimp.html">Recipe: Grilled
                     Frozen Shrimp</a></li>
             <li><a href="./recipe-grilled-babyback.html">Recipe: Grilled
                     Babyback Ribs</a></li>
-            <li><a href="../treeIndex/index.html">Tree Index</a></li>
-            <li><a href="./story/index.html">Story</a></li>
-            <li><a href="../homebase/homeProject/index.html">Home
-                    Project</a></li>
-            <li><a href="../projects/scripts/comingOfAge/index.html">Coming Of
-                    Age</a></li>
-            <li><a href="../trading/index.html">AG Auto Trades</a></li>
+            <li><a href="./story/index.html">Interactive Storyboard
+                    Template</a></li>
+
         </ul>
+        <button class="home-button"
+            onclick="window.location.href='../index.html'">Home</button>
     </body>
 </html>

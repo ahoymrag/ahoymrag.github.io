@@ -4,6 +4,17 @@
         <meta charset="UTF-8">
         <title>Storyboard</title>
         <link rel="stylesheet" href="styles.css">
+        <style>
+            /* Add this CSS to style the watermark */
+            .watermark {
+                position: fixed;
+                bottom: 10px;
+                right: 10px;
+                font-size: 12px;
+                color: rgba(0, 0, 0, 0.5);
+                pointer-events: none; /* Ensures the watermark doesn't interfere with other elements */
+            }
+        </style>
     </head>
     <body>
         <div id="storyboard">
@@ -15,6 +26,7 @@
             <button id="next" onclick="changeSlide(1)">Next</button>
         </div>
         <div id="allSlides"></div>
+        <div class="watermark">Written and coded by Alex Gonzalez</div>
         <script src="./scripts.js"></script>
     </body>
 </html>
