@@ -36,3 +36,38 @@ s
 # mac likes to record links and things
 
 the creature
+
+
+
+Makayla's little sister is a little special and explains it all
+
+Basically it is a family of gpyspy and what not 
+
+
+
+## RESEARCH BASED ON ET RESEARCH
+1. RNG BASELINE DATA
+2. 
+
+
+# intent on the water
+- after prayer of the water
+love + Gratitude
+Love of Husband and wife
+
+Water and intend something positive - it alters the structure itself
+
+Research Russel Targ
+Entanglements
+
+## Entangled with one another with photons
+
+
+Have a room with no windows
+have a houseplant 
+a single growing light
+The light has a equal quadrant 
+what you find is that light - a houseplant
+bends 
+
+my spiritiual development was paid to him by the cia - g

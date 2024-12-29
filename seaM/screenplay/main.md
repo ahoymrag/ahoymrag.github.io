@@ -9,6 +9,7 @@ updated: 2024-12-09
 updated: 2024-12-15
 updated: 2024-12-20
 updated: 2024-12-21
+updated: 2024-12-29
 ---
 
 <link rel="stylesheet" href="seaM-md-css.css">
@@ -635,7 +636,44 @@ _Mac hesitates, then nods and grabs a nearby shovel. As he hands it over, Makayl
 
 > He's not digging FOR anything
 
-> Alright. The best thing we could probably do is rub our faces with mod.
+> Alright. The best thing we could probably do is rub our faces with mud - it hides our scents.
+
+**MAC**
+> What is going on?
+**MAKAYLA**
+> There is something out there - and I am going to make contact with it.
+
+**MAC**
+> What do you mean? 
+
+**MAC**
+> What are you going to say?
+
+**MAKAYLA**
+> What do you say to a group of photons who are distangled from eachother?
+
+**Julie Been**
+> what are they saying
+
+Makayla and Asher look at each other. Makayla continues to gear up.
+
+**MAKAYALA**
+> I am not sure. 
+
+**MAC**
+> Well, what does it look like? 
+
+**MAKAYLA**
+> Well, there is more than one type - so far in this part of the region - they are part of a subsect - they are phsyical - real - things that can tackle you - 
+
+**ASHER**
+> They are also small. 
+
+**JULIE BEEN**
+> Tiny
+
+**MAKAYLA**
+> You guys still claim that - there is no evidence of that - we have no relationship to this. 
 
 The kids, led by Makayla, move deeper into the tall grass, toward the tallest grass where the coast drops off into the sea. The fog thickens, and the air grows colder.
 

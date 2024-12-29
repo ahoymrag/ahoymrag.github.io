@@ -4,8 +4,10 @@ body {
   font-size: 10pt;
   margin: 1in auto;
   padding: 0;
-  line-height: 1.5; /* Adjusted for better readability */
-  max-width: 8.5in; /* Match typical letter size width */
+  line-height: 1.5;
+  /* Adjusted for better readability */
+  max-width: 8.5in;
+  /* Match typical letter size width */
 }
 
 /* Scene headings (like h1, h2) */
@@ -40,8 +42,9 @@ strong {
 }
 
 /* Automatically indent dialogue that appears after a character name */
-strong + p {
-  width: 6in; /* Width of the dialogue block */
+strong+p {
+  width: 6in;
+  /* Width of the dialogue block */
   text-align: left;
   margin: 0 auto;
   margin-bottom: 0.5em;
@@ -49,7 +52,7 @@ strong + p {
 }
 
 /* Parentheticals (directions for actors during dialogue) */
-strong + p + em {
+strong+p+em {
   margin-left: 2.5in;
   font-style: italic;
   display: block;
@@ -82,35 +85,37 @@ hr {
 
 /* Add page size and margin for print */
 @page {
-  size: Letter; /* Use Letter size for screenplay */
-  margin: 1in; /* Uniform margin for all sides */
+  size: Letter;
+  /* Use Letter size for screenplay */
+  margin: 1in;
+  /* Uniform margin for all sides */
   /* You can also specify different margins for each side like: margin: 1in 1in 1in 1.5in; */
-  
+
   /* Add headers and footers */
   @top-left {
     content: "Screenplay Title";
     font-size: 8px;
     font-family: "Courier New", Courier, monospace;
   }
-  
+
   @top-right {
     content: "Page " counter(page);
     font-size: 6pt;
     font-family: "Courier New", Courier, monospace;
   }
-  
+
   @bottom-left {
     content: "Author Name";
     font-size: 6pt;
     font-family: "Courier New", Courier, monospace;
   }
-  
+
   @bottom-right {
     content: "Confidential";
     font-size: 6pt;
     font-family: "Courier New", Courier, monospace;
   }
-  
+
   /* Control page orientation */
   /* Uncomment the following line to set landscape orientation */
   /* size: landscape; */
@@ -118,7 +123,8 @@ hr {
 
 /* Style for screenplay block */
 .screenplay {
-  width: 6in; /* Action/description block width */
+  width: 6in;
+  /* Action/description block width */
   margin: auto;
 }
 
@@ -139,22 +145,26 @@ hr {
 
 /* Character name styles */
 .character {
-  margin-left: 3.5in; /* Center the character's name */
+  margin-left: 3.5in;
+  /* Center the character's name */
   text-transform: uppercase;
   margin-bottom: 0.1in;
 }
 
 /* Dialogue styles */
 .dialogue {
-  margin-left: 2.5in; /* Indented dialogue */
+  margin-left: 2.5in;
+  /* Indented dialogue */
   margin-right: 2in;
   text-align: left;
-  background-color: #a9a9a937; /* Light grey color for dialogue */
+  background-color: #a9a9a937;
+  /* Light grey color for dialogue */
 }
 
 /* Parenthetical styles */
 .parenthetical {
-  margin-left: 3in; /* Slightly indented parentheticals */
+  margin-left: 3in;
+  /* Slightly indented parentheticals */
   margin-right: 2in;
   font-style: italic;
 }
@@ -162,8 +172,8 @@ hr {
 /* Blockquote styles for screenplay dialogue */
 blockquote {
   background-color: white !important;
-  margin-left:1in;
-  margin-right:1in;
+  margin-left: 1in;
+  margin-right: 1in;
   text-align: left;
   font-size: 10pt;
   line-height: 1.5;

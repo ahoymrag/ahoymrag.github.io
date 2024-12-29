@@ -24,3 +24,10 @@ last liks backk
 ## editing cleanup
 1. subway and Monday- publish all of the Sunday sermons
 2. bring nice monitor to bedroom
+
+
+
+## Reminders 
+### Social
+1. Hang out with Connor + Allaire
+2. Send and Get Naz Photos

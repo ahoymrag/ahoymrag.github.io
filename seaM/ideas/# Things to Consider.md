@@ -264,3 +264,12 @@
 3. Outline or draft key beats of the **Climax** and **Aftermath**.
 
 Would you like me to draft the **Midpoint Reveal** or brainstorm some dialogue for the group’s arguments? Let’s keep pushing forward! 🚀
+
+
+
+
+## Makayla Family
+
+1. Dominic
+2. Asher
+3. 
