@@ -3,82 +3,123 @@
         <link rel="stylesheet" href="./ag-cv-css-1.css">
         <title>Canon of Work | Alex Gonzalez</title>
         <style>
+            :root {
+                --font-family: Arial, sans-serif;
+                --font-color: #000;
+                --background-color: #fff;
+                --font-size-base: 16px;
+                --font-size-large: 24px;
+                --font-size-medium: 18px;
+                --font-size-small: 14px;
+                --font-size-xsmall: 12px;
+                --padding-base: 20px;
+                --margin-base: 10px;
+            }
+
             body {
+                font-family: var(--font-family);
                 font-weight: bold;
+                background-color: var(--background-color);
+                color: var(--font-color);
+                margin: 0;
+                padding: 0;
+            }
+
+            .home-button-wrap {
+                text-align: center;
+                margin: var(--margin-base) 0;
+            }
+
+            .home-button-link {
+                text-decoration: none;
+                color: var(--font-color);
+                font-size: var(--font-size-medium);
+            }
+
+            .header-main-wrap {
+                padding: var(--padding-base);
+                text-align: center;
+            }
+
+            .header-content-title-wrap h1 {
+                font-size: var(--font-size-large);
+                margin: 0;
+            }
+
+            .listOfLinks {
+                text-align: center;
+                margin: var(--padding-base) 0;
+            }
+
+            .listOfLinks a {
+                text-decoration: none;
+                color: var(--font-color);
+                font-size: var(--font-size-base);
+            }
+
+            .theLONGlist {
+                padding: var(--padding-base);
+                font-size: var(--font-size-small);
+                line-height: 1.5;
+            }
+
+            @media (max-width: 600px) {
+                .header-content-title-wrap h1 {
+                    font-size: var(--font-size-medium);
+                }
+
+                .home-button-link, .listOfLinks a {
+                    font-size: var(--font-size-small);
+                }
+
+                .theLONGlist {
+                    font-size: var(--font-size-xsmall);
+                }
             }
         </style>
-
     </head>
     <body>
         <nav class="home-button-wrap">
             <a class="home-button-link" href="../../index.html">Home</a>
         </nav>
-
-<header>
-    <div class="header-main-wrap">
-        <div class="header-content-wrap">
-            <div class="header-content-title-wrap">
-                <h1>Canon of Work</h1></div>
-              
-            <!-- <div class="header-content-menu-wrap">
-                <ul class="nav-ul">
-                <li><a href="#"><div class="header-button-inactive"><h3>Film</h3></div></a></li>
-                <li><a href="./portfolio/painting/painting.html"><div class="header-button"><h3>Business</h3></div></a></li>
-                <li><a href="#"><div class="header-button-inactive"><h3>Frontend</h3></div></a></li>
-                <li><a href="#"><div class="header-button-inactive"><h3>Animation</h3></div></a></li>
-                <li><a href="#"><div class="header-button-inactive"><h3>Writing</h3></div></a></li>
-                <li><a href="./portfolio/painting/painting.html"><div class="header-button"><h3>Painting</h3></div></a></li>
-                </ul></div>              -->
-     </div>
-     <div class="header-subHeader"></div>
-</header>
-
-<style>
-    .theLONGlist {
-        font-family: Arial, sans-serif;
-        font-size: 14px;
-        line-height: 1.5;
-    }
-</style>
-<div class="listOfLinks">
-    <a href="../../work/apeG/splash.html">Ape Genius</a>
-</div>
-<div class="theLONGlist">
-    <p>This is going to be a long list - best to my memory - of every project I have ever been a part of:</p>
-    <ul>
-        <li>King Gustavo Loves Blueberry Pancakes (Unreleased) (2019)</li>
-        <li>Pal-Bot 2 (MiniFeature Film) (2018)</li>
-        <li>Beyond the Mountain - Virtual Reality Film (2016)</li>
-        <li>Kiwikah (Website and Application Design Company) (2014-2015)</li>
-        <li>Excess String Beans - Making of a Song (Short Doc) (2013)</li>
-        <li>Young Broke and Awesome (Startup) (2013)</li>
-        <li>Jesse Humm is Young, Broke and Awesome (Short Doc) 2012</li>
-        <li>The Urt with Mike Leeper (Short Doc) (2012)</li>
-        <li>Body by Judy (Website) (2012)</li>
-        <li>Fairfield Mirror Online (Website) (2010)</li>
-        <li>Vandaliss - One More Time (2010)</li>
-        <li>Vandaliss - Ryder Musix (Music Video) (2010)</li>
-        <li>Malz - Party All Night</li>
-        <li>Vandaliss - Rythm of the Night (Music Video) (2009)</li>
-        <li>McKenzie's Tribe (Film) (2009)</li>
-        <li>The Nothing Project (Short Film) (2009)</li>
-        <li>The Gloria Show (Film) (2009)</li>
-        <li>Sherman (Short Film) (2009) </li>
-        <li>Echo 49 (Film) (2008)</li>
-        <li>The Bushes (Short Film) (2008)</li>
-        <li>HomeJacked (2008)</li>
-        <li>HomeJacked (2005)</li>
-        <li>HomeJack 4: The Best Ever</li>
-        <li>HomeJack 3</li>
-        <li>HomeJack 2 (2003)</li>
-        <li>HomeJack (2002)</li>
-    </ul>
-</div>
-
-
-
-
-
-
+        <h1>Canon of Work</h1>
+        <header>
+            <div class="theLONGlist">
+                <p>The long list - best to memory - of projects I've been a part
+                    of:</p>
+                <ul>
+                    <li>King Gustavo Loves Blueberry Pancakes (Unreleased)
+                        (2019)</li>
+                    <li>Pal-Bot 2 (MiniFeature Film) (2018)</li>
+                    <li>Beyond the Mountain - Virtual Reality Film (2016)</li>
+                    <li>Kiwikah (Website and Application Design Company)
+                        (2014-2015)</li>
+                    <li>Excess String Beans - Making of a Song (Short Doc)
+                        (2013)</li>
+                    <li>Young Broke and Awesome (Startup) (2013)</li>
+                    <li>Jesse Humm is Young, Broke and Awesome (Short Doc)
+                        2012</li>
+                    <li>The Urt with Mike Leeper (Short Doc) (2012)</li>
+                    <li>Body by Judy (Website) (2012)</li>
+                    <li>Fairfield Mirror Online (Website) (2010)</li>
+                    <li>Vandaliss - One More Time (2010)</li>
+                    <li>Vandaliss - Ryder Musix (Music Video) (2010)</li>
+                    <li>Malz - Party All Night</li>
+                    <li>Vandaliss - Rythm of the Night (Music Video) (2009)</li>
+                    <li>McKenzie's Tribe (Film) (2009)</li>
+                    <li>The Nothing Project (Short Film) (2009)</li>
+                    <li>The Gloria Show (Film) (2009)</li>
+                    <li>Sherman (Short Film) (2009) </li>
+                    <li>Echo 49 (Film) (2008)</li>
+                    <li>The Bushes (Short Film) (2008)</li>
+                    <li>HomeJacked (2008)</li>
+                    <li>HomeJacked (2005)</li>
+                    <li>HomeJack 4: The Best Ever</li>
+                    <li>HomeJack 3</li>
+                    <li>HomeJack 2 (2003)</li>
+                    <li>HomeJack (2002)</li>
+                </ul>
+            </div>
+        </header>
     </body>
 </html>

@@ -1,156 +1,173 @@
 <html><!-- AS OF 7.21.23 -->
     <head>
-        <link rel="stylesheet" href="./ag-cv-css-1.css">
-        <title>Alex Gonzalez | Film + Animation </title>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <script
+            src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+            defer></script>
+        <title>Alex Gonzalez | Film and Animation Portfolio 2025 | Award-Winning
+            Filmmaker & Animator</title>
+        <meta name="description"
+            content="Explore the 2025 portfolio of Alex Gonzalez, a filmmaker and animator. Discover innovative film and animation projects, behind-the-scenes insights, and more.">
+        <meta name="keywords"
+            content="Alex Gonzalez, film, animation, portfolio, 2025, award-winning, filmmaker, animator, projects, behind-the-scenes">
+        <meta name="author" content="Alex Gonzalez">
+        <meta name="robots" content="index, follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
+            body {
+                background-color: #1c1c1c;
+                color: #ffffff;
+                font-family: 'Arial', sans-serif;
+            }
 
             h1, h2, h3, h4, h5, h6, p {
-                margin:0;
-                padding:0;
-            }
-            /* CSS FOR LOGOS */
-            .companyLogo-portfolio {
-                width: 100%;
-                height: auto;
+                margin: 0;
+                padding: 0;
             }
 
-            /* Flexbox styles */
+            .companyLogo-portfolio, .littleBuddyLogo {
+                width: 100%;
+                height: auto;
+                max-width: 150px; /* Adjust max-width as needed */
+                display: block;
+                margin: 0 auto;
+            }
+
             main {
-                display: flex;
-                flex-wrap: wrap;
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+                gap: 20px;
+                padding: 20px;
             }
 
             .portfolio-item {
-                flex: 1 1 900px; /* Each item will have a minimum width of 300px */
-                margin: 10px;
+                margin: 0;
                 padding: 20px;
+                background-color: #2c2c2c;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                text-align: left;
+            }
+
+            .action-buttons {
+                display: flex;
+                gap: 10px;
+                margin-top: 10px;
+            }
+
+            .portfolio-button {
+                margin-top: 10px;
+                margin-bottom: 10px;
+                text-transform: uppercase;
+                background-color: #ff0060;
+                border: none;
+                width: 200px;
+                height: 50px;
+                color: white;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .portfolio-button:hover {
+                background-color: #e60055;
+            }
+
+            .portfolio-button i {
+                margin-right: 5px;
+            }
+
+            .modal {
+                display: none;
+                position: fixed;
+                z-index: 1;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                overflow: auto;
+                background-color: rgba(0, 0, 0, 0.8);
+                padding-top: 50px;
+            }
+
+            .modal iframe {
+                width: 80%;
+                height: 80%;
+                margin: 0 auto;
+                display: block;
+            }
+
+            h1, h3 {
+                font-weight: normal;
+            }
+
+            p {
+                font-size: 14px;
+                color: #cccccc;
             }
         </style>
-        <style>
-            /* Add styles for the modal */
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: white;
-    padding-top: 50px;
-}
-
-.modal iframe {
-    width: 90%;
-    height: 90%;
-    margin: 0 auto;
-    display: block;
-}
-
-        </style>
     </head>
-    <body>
-        <!-- Development Warning -->
+    <body x-data="{ openModal: null }">
         <div
-            style="background-color: #ff0060; text-align: center; padding: 10px;">
-            <strong>Warning:</strong> This page is under active development.
-            View at your own risk.
+            style="background-color: #ffcc00; color: #000; text-align: center; padding: 10px;">
+            <strong>Warning:</strong> This page is in active development.
         </div>
-
         <nav class="home-button-wrap">
-            <a class="home-button-link" href="/index.html">Home</a>
+            <a class="home-button-link" href="/index.html"
+                style="color: #ff0060;">Home</a>
         </nav>
-
-        <header>
-            <div class="header-main-wrap">
-                <div class="header-content-wrap">
-                    <div class="header-content-title-wrap">
-                        <h1>Film + Animation</h1>
-                    </div>
-                    <!-- Development Warning -->
-                    <div
-                        style="background-color: #ff0060; text-align: center; padding: 10px;">
-                        <strong>Warning:</strong> This page is under active
-                        development. View at your own risk.
-                    </div>
-
-                </div>
-                <div class="header-subHeader"></div>
-            </div>
-        </header>
+        <h1>Film + Animation</h1>
 
         <main>
-            <style>
-          
-                .littleBuddyLogo {
-                    margin-top: 10px;
-                    margin-bottom: 10px;
-                    width:64px;
-                    height:auto;
-                    background-color:rgb(0, 0, 0);
-                    border-style:solid;
-                    border-radius:2px;
-                    padding:20px;
-                }
-
-                .portfolio-button {
-                    margin-top: 10px;
-                    margin-bottom: 10px;
-                    text-transform:uppercase;
-                    background-color:white;
-                    border-style:solid;
-                    border-color:black;
-                    width:200px;
-                    height:50px;
-
-                }
-
-                .portfolio-button:hover {
-                    background-color:rgb(0, 0, 0);
-                    color:white;
-                    cursor: pointer;
-                }
-            </style>
-
             <div id="port-silverTrailer" class="portfolio-item">
                 <h1>Silverback trailer</h1> <h3>2023</h3>
-                <button class="portfolio-button">Watch </button><a href="#"></a>
+                <p>Description of the project goes here.</p>
+                <div class="action-buttons">
+                    <button class="portfolio-button"
+                        @click="openModal = 'video1'"><i
+                            class="fas fa-play"></i>
+                        Watch</button>
+                    <button class="portfolio-button"><i
+                            class="fas fa-download"></i> Download</button>
+                    <button class="portfolio-button"><i
+                            class="fas fa-share"></i> Share</button>
+                </div>
             </div>
 
             <div id="port-panta" class="portfolio-item">
-                <h1>pantalones intro</h1>
+                <h1>Pantalones Intro</h1>
                 <h3>2023</h3>
-                <button class="portfolio-button">Watch </button><a href="#"></a>
-
+                <button class="portfolio-button">Watch</button>
             </div>
 
             <div id="port-chaosTrailer" class="portfolio-item">
-                <h1>cHaosnet Trailer</h1><h3>2023</h3>
-                <button class="portfolio-button">Watch </button><a href="#"></a>
+                <h1>Chaosnet Trailer</h1><h3>2023</h3>
+                <button class="portfolio-button">Watch</button>
             </div>
-            <style>
-                #port-colorMusicVideo {
-                    min-width:100%;
-                }
-            </style>
+
             <div id="port-colorMusicVideo" class="portfolio-item">
                 <h1>Color Fields</h1><h2>Music Videos</h2><h3>2020</h3>
                 <button class="portfolio-button"
-                    data-modal-id="video1">Penudulum</button>
+                    data-modal-id="video1">Pendulum</button>
                 <button class="portfolio-button"
                     data-modal-id="video2">Summertime</button>
             </div>
 
             <!-- Add hidden modal elements for each video -->
-            <div id="video1" class="modal">
-                <h2>Color Fields - Penudulum</h2>
+            <div id="video1" class="modal" x-show="openModal === 'video1'"
+                @click.away="openModal = null">
+                <h2>Color Fields - Pendulum</h2>
                 <iframe width="560" height="315"
                     src="https://www.youtube.com/embed/keIDw9hVNB0"
                     frameborder="0" allowfullscreen></iframe>
             </div>
 
-            <div id="video2" class="modal">
+            <div id="video2" class="modal" x-show="openModal === 'video2'"
+                @click.away="openModal = null">
                 <h2>Color Fields - Summertime</h2>
                 <iframe width="560" height="315"
                     src="https://www.youtube.com/embed/kKMWBglaRMM"
@@ -162,59 +179,30 @@
                     src="/ahoymrag.github.io/portfolio/assets/companyLogos/apePay.png"
                     class="littleBuddyLogo">
                 <h1>Pal-bot 2</h1><h3>2020</h3>
-                <button class="portfolio-button">Watch </button><a href="#"></a>
+                <button class="portfolio-button">Watch</button>
             </div>
+
             <div id="port-Gustavo" class="portfolio-item">
                 <img
                     src="/ahoymrag.github.io/portfolio/assets/companyLogos/apePay.png"
                     class="littleBuddyLogo">
                 <h1>King Gustavo Loves Blueberry Pancakes</h1><h3>2019</h3>
                 <h5>Unreleased - Still Editing</h5>
-                <button class="portfolio-button">Watch </button><a href="#"></a>
+                <button class="portfolio-button">Watch</button>
             </div>
+
             <div id="port-chaosTrailer" class="portfolio-item">
                 <img
                     src="/ahoymrag.github.io/portfolio/assets/companyLogos/apePay.png"
                     class="littleBuddyLogo">
                 <h1>Beyond the Mountain</h1><h3>2017</h3>
-                <button class="portfolio-button">Watch Trailer</button><a
-                    href="#"></a>
+                <button class="portfolio-button">Watch Trailer</button>
             </div>
-
         </main>
 
         <div class="centeredDiv">
-            <a href="./the-canon.html"><h3>LIFETIME CANON OF FILM WORK</h3></a>
+            <a href="./the-canon.html"><h3 style="color: #ff0060;">LIFETIME
+                    CANON OF FILM WORK</h3></a>
         </div>
-        <script>
-            // Get all buttons with the class "portfolio-button"
-            const buttons = document.querySelectorAll(".portfolio-button");
-        
-            // Add event listeners to each button
-            buttons.forEach(button => {
-                button.addEventListener("click", () => {
-                    // Get the data-modal-id attribute from the button
-                    const modalId = button.getAttribute("data-modal-id");
-                    
-                    // Get the corresponding modal element
-                    const modal = document.getElementById(modalId);
-        
-                    // Display the modal
-                    modal.style.display = "block";
-                });
-            });
-        
-            // Close the modal when the user clicks outside of it
-            window.addEventListener("click", event => {
-                // Get the target element that was clicked
-                const targetElement = event.target;
-        
-                // Check if the clicked element is a modal and not one of its descendants
-                if (targetElement.classList.contains("modal") && !targetElement.closest(".modal-content")) {
-                    targetElement.style.display = "none";
-                }
-            });
-        </script>
-
     </body>
 </html>
