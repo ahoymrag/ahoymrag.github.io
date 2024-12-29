@@ -16,3 +16,13 @@ updated: 2024-12-29
 
 
 
+## Health
+1. Vitamin D
+2. Fix my back
+3. Fix my neck
+4. Fix my teeth
+2. AG1 and Other AntiAging for the Wrinkles
+
+
+## Vain Glories
+f
