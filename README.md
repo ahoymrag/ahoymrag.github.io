@@ -1,29 +1,27 @@
-# ahoymrag.github.io
-I have long awaited to put something together to show off to the world. 
-Not sure why - figured I always had better things to do - and I would chip away at this - little by little - to have a self induced canon of work is appealing - the concept of having a single source for a life full of work and play - how does one compress it all digitally?
+# AhoyMrag Portfolio & Codebase
 
+Welcome to the digital portfolio, creative playground, and code repository of Alex Gonzalez. This repository serves as a central hub for showcasing personal projects, professional work, and experimental ideas. It reflects a life of creativity, curiosity, and code.
 
+## 🌟 Highlights
+- **Portfolio**: Explore a curated selection of projects across film, animation, design, and development.
+- **Code Experiments**: Dive into innovative code snippets, tools, and experiments, including Unreal Engine workflows and web app ideas.
+- **Writing**: Access creative and technical writing pieces, capturing thoughts and explorations in various domains.
+- **Photography & Visuals**: A growing gallery of moments and stories captured through the lens.
+- **Projects in Progress**: See what's actively being built, including tools, apps, and other ventures.
 
-# Origins
+## 🧭 About
+Originally hailing from Sleepy Hollow, NY, Alex Gonzalez now resides in New Haven, CT, blending a passion for art, technology, and storytelling. As a Creative Director and Front-End Developer by day, and a Filmmaker, Writer, and Musician by night, this repository encapsulates the intersection of these roles.
 
-I'm originally from Tarrytown - Sleepy Hollow - a small costal town off the mighty Hudson river. Grew up across the street from a private school with a ton of private woodland property and a town pool. Life was full of imagination and mischef. 
+## 🚀 Key Features
+- **Creative Showcase**: A digital canon of work and play, including film, animations, and personal projects.
+- **Dynamic Experiments**: Cutting-edge projects in various stages of development, ranging from web apps to storytelling tools.
+- **Collaborative Spirit**: A repository that invites collaboration and serves as a source of inspiration.
 
-Spent my days to and fro the woods, my room and the computer. I have always been enamored at the ideas - that a computer - if you just type the right combinations of things - can do anything.
+## 🛠 Technologies
+HTML, CSS, JavaScript, Python, Svelte, TeX, and more.
 
-I remember being 6 years old and watching Toy Story - and simantenously convincing myself that the computer we were about to grab was going to be able to make Toy Story. 
+## 🌐 Live Site
+Visit the portfolio and project site: [alexgonzalez.ooo](http://alexgonzalez.ooo)
 
-Years later I discovered how about to go about this - but for now - I stuck with what I knew - which was HTML - and I made my first dragon ball z fan club website - that I burnt to a CD room in 1998. 
-
-I remember the first time messing with computers. Fascinated. 
-
-# And now
-
-And now I'm in the Havens of CT - but I might trek elsewhere - or stay here for life and make a little indie mischef - who knows - the Lord does. 
-
-I like my days. I spend most days waking up and getting right coding. Doing big things and breaking things before 10am. And then the rest of the day I kind of go into a maintence mode. 
-
-# For work
-
-For work - for a while - I would take any work - being fascianted by work itself. 
-for my day job I most service as the creative director and product designer for ApeWorx, LTD
-- I also serve as the Director of the AV Team at CPC New Haven and as the Director of Digital Commuincations for the organization Mission Anabaino
+## 🤝 Contributions
+This repository represents a personal journey but remains open to ideas, feedback, and collaboration.
