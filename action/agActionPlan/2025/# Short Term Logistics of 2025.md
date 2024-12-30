@@ -4,7 +4,8 @@
 
 ## London Trip
 
-
+1. Apply for the UK Thing Ellen Sent
+2. Get Card and Monies in Order 
 ---
 
 ## Land Aqucisition

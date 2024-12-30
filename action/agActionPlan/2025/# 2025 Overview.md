@@ -19,7 +19,7 @@
 2. Stretch Everyday
 3. Quit Vapings
 ## Material
-1. Plan out the land mapx
+1. Plan out the land map
 ## Health
 1. Vitamin D
 2. Fix my back
