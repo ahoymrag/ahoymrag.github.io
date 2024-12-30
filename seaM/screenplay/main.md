@@ -10,6 +10,7 @@ updated: 2024-12-15
 updated: 2024-12-20
 updated: 2024-12-21
 updated: 2024-12-29
+updated: 2024-12-30
 ---
 
 <link rel="stylesheet" href="seaM-md-css.css">
@@ -36,7 +37,7 @@ As they drive the radio is on and the newscaster is almost excited to announce t
 
 ## Scene 2: EXT. NEW HOUSE - SOUTHERN CONNECTICUT COAST - DAY
 
-_Dallas_ signs papers on a clipboard handed to him by a _MOVER_. The Movers begin unloading boxes from the truck.
+_Dallas_ signs papers on a clipboard handed to him by a _MOVER_. The Movers begin by unloading a large wooden piano from the back of the truck.
 
 Nearby, a _TV CAMERAMAN_ and a _CAMERA CREW_ capture a _REPORTER_ speaking into the camera. _Mac_ watches from a distance, curious and uncertain about the commotion.
 
@@ -44,27 +45,29 @@ Nearby, a _TV CAMERAMAN_ and a _CAMERA CREW_ capture a _REPORTER_ speaking into 
 
 ## Scene 3: EXT. NEW HOUSE - DRIVEWAY - DAY
 
-_Dallas_ and _Mac_ unload various items from a bucket in the back of their sedan. Among the items are an unfinished bird feeder and gardening tools.
+_Dallas_ and _Mac_ unload various items from a bucket in the back of their sedan. Dallas stands over the bucket and the items are an unfinished bird feeder and gardening tools.
 
-_Dallas_ pauses, staring somberly at the bucket. His emotions overwhelm for a moment.
+_Dallas_ pauses, staring somberly at the bucket. His emotions overwhelm for a moment. Mac noticing this takes the bucket and walks away.
 
 ---
 
 ## Scene 4: INT. NEW HOUSE - MAC'S ROOM - DUSK
 
-_Mac stands by the window, gazing out at the dimming light. Fireflies flicker in the tall grass. As the wind sways the branches, the fireflies' lights resemble the glint of eyes peering from the darkness._
+_Mac stands by the window, gazing out at the fading sunset as it dims the outdoor light around him. As the wind sways the branches, the fireflies' lights resemble the glint of eyes peering from the darkness._
 
-_Mac glances up at the sky - a late autumn night, clear._
+_Mac glances up at the sky - a late autumn night, clear with some weather coming in from the west._
 
 _A whimpering sound echos from a distance._
 
 ---
 
-## Scene 5: INT. KITCHEN - NIGHT
+## Scene 5: INT. MAC AND DALLAS HOUSE - DINNERTIME - NIGHT
 
 _Dallas_ carefully plates an avocado, an onion, and a sliced lemon—meticulously into small pieces and then reassembled to appear untouched. His movements are deliberate, almost ritualistic.
 
-_Mac_ sets the coffee table and turns on the TV. He flips through channels until he finds the local weather report.
+Mac plays the piano for a bit and a bit haphazardly - he uses a cassette audio capture tape - and rewinds as he attempts another go at the song he was working on. 
+
+Dallas comes in with the food and places it on the coffee table - Mac scoots over. They flip on the channels and finds the weather channel. 
 
 _ON TV_: The same _REPORTER_ from earlier, standing outside their house, discusses the unpredictable weather this time of year.
 
@@ -80,11 +83,15 @@ _Dallas moves closer to the TV, his expression growing concerned as he listens t
 
 _Mac's eyes drift back to the window, where the wind has picked up, rustling the tall grass outside._
 
+Mac walks over to the piano and grabs the tape recorder and positions it outside of the window. 
+
 ---
 
-## Scene 6: EXT. NEW HOUSE - NIGHT
+## Scene 6: INT. MAC ROOM - NIGHT
 
-_Thunder rumbles_ in the distance, and the wind causes the storm approaches.
+_Thunder rumbles_ in the distance, and the wind causes the storm approaches. 
+
+Mac looks out the window but the recorder has stopped. Mac opens the device to look for the batteries and finds a single battery - but is suddenly startled by the sound of the tape recorder is making - it is playing irregularly - and then it stops again - suddenly a faint whimperering sound is heard out Mac's bedroom window - and the window shakes a bit. 
 
 **FADE OUT.**
 
@@ -96,34 +103,9 @@ _Thunder rumbles_ in the distance, and the wind causes the storm approaches.
 
 The Elderly woman stands at the pulpit, addressing the congregation. The church is filled with attentive listeners, including _DALLAS_ (40s) and _MAC_ (10), sitting quietly in a pew.
 
-**COMMON FOLK**
+**VO**
 
-> TODAY IS A READING FROM THE BOOK OF ISHAIH CHAPTER 5 VERSE 5
-
-VO
-
-> Ishaiah
->
-> "God will stretch out over Edom
-
-    the measuring line of chaos
-    and the plumb line of desolation.
-
-12 Her nobles will have nothing there to be called a kingdom,
-all her princes will vanish away.
-13 Thorns will overrun her citadels,
-nettles and brambles her strongholds.
-She will become a haunt for jackals,
-a home for owls.
-14 Desert creatures will meet with hyenas,
-and wild goats will bleat to each other;
-there the night creatures will also lie down
-and find for themselves places of rest.
-15 The owl will nest there and lay eggs,
-she will hatch them, and care for her young
-under the shadow of her wings;
-there also the falcons will gather,
-each with its mate.
+> Today's old testament reading is from the Book of Isaiah, Chapter 5 Verse 5. God will stretch out over Edom the measuring line of chaos and the plumb line of desolation. Her nobles will have nothing there to be called a kingdom, all her princes will vanish away. Thorns will overrun her citadels, nettles and brambles her strongholds. She will become a haunt for jackals, a home for owls. Desert creatures will meet with hyenas, and wild goats will bleat to each other; there the night creatures will also lie down and find for themselves places of rest. The owl will nest there and lay eggs, she will hatch them, and care for her young under the shadow of her wings; there also the falcons will gather, each with its mate.
 
 ## Scene 8: EXT. CHURCH FRONT LAWN - AFTERNOON
 
