@@ -21,7 +21,7 @@ updated: 2024-12-30
 
 ## Scene 0: Thunderstorm down south
 
-Flashes of a thunderstorm - Flashes of a mother playing with her son - buildings and bird houses - - flashes of wind hitting the breeze upon the mountain fog - and flashes of a packed car and a vacaction up north and to the east - from the barren west towards new england - flashes of a seaside beach town - flashes of a big thunderstorm - flashes of mom and dad getting gas - driving doing errands - flashes of Dallas setting up an weather device - flashes of a smile - flashes of a young boy in his mother's arms - flashes of a soft embrace - flashes of the hand on her shoulder from the warmth of her husband - flashes of chemo - flashes of weather instrument - flashes of experimental procedures in the garage and pointing it towards the sky - flashes of Dallas and his wife putting up a bird house - flashes of the mom marveling at a baby bird - zflashes of Mac helping him - flashes of the woods - flashes of green eyes in the tall grass - flashes of the dark grass - flashes of the mother coming back and running away from the dog - towards the light - flashes of a mother holding on to a bird house - sick - as she watches the birds flutter - she smiles - flashes of the darkness - flashes - of Dallas trying to shine lazers into the mirrors - and then the refractions into the eyes of the mom - but leaving the mom hopeless and flashes of dallas holding young mac alone in a hospital waiting room - of the tallgrass and green eyes that sparkle like fireflies.
+Flashes of a thunderstorm - Flashes of a mother playing with her son - buildings and bird houses - - flashes of wind hitting the breeze upon the mountain fog - and flashes of a packed car and a vacaction up north and to the east - from the barren west towards new england - flashes of a seaside beach town - flashes of a big thunderstorm - flashes of mom and dad getting gas - driving doing errands - flashes of Dallas setting up an weather device - flashes of a smile - flashes of a young boy in his mother's arms - flashes of a soft embrace - flashes of the hand on her shoulder from the warmth of her husband - flashes of chemo - flashes of weather instrument - flashes of experimental procedures in the garage and pointing it towards the sky - flashes of Dallas and his wife putting up a bird house - flashes of the mother pressing record on a tape and teaching young Mac how her voice sounds- flashes of the mom marveling at a baby bird - zflashes of Mac helping him - flashes of the woods - flashes of green eyes in the tall grass - flashes of the dark grass - flashes of the mother coming back and running away from the dog - towards the light - flashes of a mother holding on to a bird house - sick - as she watches the birds flutter - she smiles - flashes of the darkness - flashes - of Dallas trying to shine lazers into the mirrors - and then the refractions into the eyes of the mom - but leaving the mom hopeless and flashes of dallas holding young mac alone in a hospital waiting room - of the tallgrass and green eyes that sparkle like fireflies.
 
 ---
 
@@ -37,9 +37,9 @@ As they drive the radio is on and the newscaster is almost excited to announce t
 
 ## Scene 2: EXT. NEW HOUSE - SOUTHERN CONNECTICUT COAST - DAY
 
-_Dallas_ signs papers on a clipboard handed to him by a _MOVER_. The Movers begin by unloading a large wooden piano from the back of the truck.
+_Dallas_ signs papers on a clipboard handed to him by a _MOVER_. The Movers begin moving various boxes and furniture including a large wooden piano from the back of the truck.
 
-Nearby, a _TV CAMERAMAN_ and a _CAMERA CREW_ capture a _REPORTER_ speaking into the camera. _Mac_ watches from a distance, curious and uncertain about the commotion.
+Nearby across the street from the house - outside the nature preserve with the tall grass - , a _TV CAMERAMAN_ and a _CAMERA CREW_ capture a _REPORTER_ speaking into the camera. _Mac_ watches from a distance, curious and uncertain about the commotion.
 
 ---
 
@@ -109,34 +109,34 @@ The Elderly woman stands at the pulpit, addressing the congregation. The church 
 
 ## Scene 8: EXT. CHURCH FRONT LAWN - AFTERNOON
 
-The church bustles with activity as congregates gather and plop iceberg lettuce on their plastic plates. _Dallas_ and _Mac_ stand awkwardly on line - progressing slowly.
+The church bustles with activity as congregates gather around long tables with plastic plates and plastic cups of ice tea. _Dallas_ and _Mac_ stand awkwardly on line - progressing slowly.
 
-A _FRIENDLY MAN_ (50s), noticing their discomfort, approaches them with a welcoming smile.
+_DOMINIC_ (50s), noticing their discomfort, approaches them with a welcoming smile.
 
-**FRIENDLY MAN**
-Hey there, - hey (hey) - dont worry - im not cutting the line ha - but i mean i will if you let me ha ha - i joke i joke where y'all from?
+**DOMINIC**
+Hey there, - hey (hey) - dont worry - im not cutting the line ha - but i mean i will if you let
 
 **DALLAS**
 Indiana.
 
-**FRIENDLY MAN**
+**DOMINIC**
 Indiana, huh? Never been - Well, welcome - Where are you living now?
 
 **DALLAS**
 
 > Branford.
 
-_The Friendly Man's face lights up._
-
-**FRIENDLY MAN**
-
-> No way! I'm in Branford too! Names Dominic - Howdy - hey whose this big guy - yo Kid you meet my kids - Whats your name again ? Dallas what are you from texas (snarls) hey hey big listen - We have a BBQ going on tomorrow for the three day weekend - you got off work right? bonnie told me youre some professor at Yale - i got a cousin who works at Yale - yeah big time - full health benefits - yeah he works the library - truthfully i dont know what the hell he does ha ha - okay let's get you a plate big guy .
-
-_Dallas nods politely, \_Dominic points toward a flyer hanging on the fridge near the coffee machine. It reads: "23rd Annual Branford Harvest Sea Festival."_
+_Dominic's face lights up._
 
 **DOMINIC**
 
-> My friend Diego works there - some charity who knows - we should go
+> No way! I'm in Branford too! Names Dominic - Howdy - hey whose this big guy - yo Kid you meet my kids - Whats your name again ? Dallas what are you from texas (snarls) hey hey big listen - We have a BBQ going on tomorrow for the three day weekend - you got off work right? bonnie told me youre some professor at Yale - i got a cousin who works at Yale - yeah big time - full health benefits - yeah he works the library - truthfully i dont know what the hell he does ha ha - okay let's get you a plate big guy .
+
+_Dallas nods politely, _Dominic points toward a flyer hanging on the fridge near the coffee machine. It reads: "23rd Annual Branford Harvest Sea Festival."_
+
+**DOMINIC**
+
+> Diego - ayo Diego! - yeah - Diego, works there - some charity who the hell knows - we should go
 
 _Dallas listens politely, nodding along, but his attention drifts as the man continues to rattle on._
 
@@ -154,76 +154,94 @@ _Dallas_ and _Mac_ walk home from church. The journey is a bit of a hike. They p
 
 They continue past it all, into their corner of the world--a quiet cul-de-sac near a land preserve and a bird sanctuary.
 
-They finally arrive home, exhausted, taking in the sight of their new house as the wind begins to pick up.
+They finally arrive home, exhausted, taking in the sight of their new house as the wind begins to pick up and the clouds begin to gather.
 
-The two look around at the property - and the property looks back at them.
+Mac and Dallas look around at the property - and the property looks back at them.
 
-_Dallas_ peers in the distance at a kind of torn outdoor shed - he lifts peers the door open - and looks past all of the cobwebs and overgrown marsh that has entered it - he flicks the light switch - nothing.
+## SCENE 10 A: EXT. MAC AND DALLAS HOUSE - BACKYARD - SUNSET
 
-_Mac_ runs in the backyard and checks out the mailbox - which is irregular and begins to open.
+Mac takes out his tape recorder and records the distant winds. 
 
----
+Dallas looks over at the tall grass - and then walks over and begins to dig a hole.
 
-## Scene 11: INT. NEW HOUSE - MAC'S ROOM - NIGHT
+He puts a weather device - along top.
 
-Later that night, _Mac_ looks out his bedroom window. The fireflies are out again, their soft glow dotting the landscape. The wind rustles the tall grass outside, making the fireflies flicker and blur.
+In time Mac and him add a bird feeder - and a cable from the device - all the way to the kitchen window. 
+
+Mac looks over at the device - and then looks away. 
+
+
+## SCENE 10 B: INT MAC AND DALLAS KITCHEN NIGHT
+
+Mac and Dallas sit down to eat - and Dallas puts on the weather channel - and they watch the weather in the background. Dallas silently checks the device that accompanies the table - and a video feed and dashboard of content. Dallas watches. And then walks over and grabs a sheet of paper and a pen and begins to do math. Mac watches him in silent - and fiddles with his tape recorder. 
+
+V.O Weatherman 
+> We are in for a wild ride - expect the unexpected - weather is unpredictable - yet here is the weather - > Good evening, folks. As we look ahead, we're in for quite a ride with the weather. Currently, the barometric pressure is dropping rapidly, indicating a significant storm system moving in from the southwest. Expect wind speeds to increase, reaching up to 60 miles per hour by midnight. 
+>
+> The National Weather Service has issued a severe weather warning for the coastal areas, with a 70% chance of heavy rainfall, potentially accumulating up to 3 inches overnight. Temperatures will drop to the mid-40s, with a wind chill factor making it feel closer to the mid-30s.
+>
+> Satellite imagery shows a well-defined cold front approaching, which could lead to isolated thunderstorms. Residents are advised to secure outdoor items and prepare for possible power outages. Stay tuned for further updates as this system develops.
+
+
+## SCENE 10 C: INT. MAC'S BEDROOM - NIGHT
+
+Mac goes to sleep and looks outside the window - as the weather and the storm approaches. Mac_ looks out his bedroom window. The fireflies are out again, their soft glow dotting the landscape. The wind rustles the tall grass outside, making the fireflies flicker and blur.
 
 As _Mac_ focuses on the distance, the fireflies' lights begin to resemble eyes watching from the darkness, unsettling him.
 
-# MONDAY
-
 ---
 
-## Scene 12: INT. CAR - MORNING
+## SCENE 11 : INT. MAC'S BEDROOM - MORNING
 
-_Dallas_ closes the garage door of a makeshift outdoor workshop.
+Mac looks in the morning and the earth is foggy but still - Mac peers out the window - nothing 
 
-_DALLAS_, holding his phone with the latest iOS, follows Google Maps as they drive through town in their old sedan. The car's engine hums steadily as they approach the school. _DALLAS_ glances at _MAC_ (10), who sits quietly in the passenger seat, a mix of nervousness and anticipation on his face.
+## SCENE 11a : INT: DALLAS AND MAC KITCHEN - MORNING
+
+Mac goes downstairs and Dallas is already up - and they eat breakfast - Dallas silently checks the device that accompanies the table - and a video feed and dashboard of content. Dallas watches. And then walks over and grabs a sheet of paper and a pen and begins to do math again. Mac watches him in silent - and puts the tape recorder in his backpack. 
+
+## Scene 12: INT. DALLAS AND MAC CAR - MORNING
+
+_DALLAS_ drive through town in their old sedan. The car's engine hums steadily as they approach the school. Mac sits quietly in the passenger seat, a mix of nervousness and anticipation on his face.
 
 _Mac nods, gripping his backpack tightly as they pull up to the school._
 
-## Scene 13: EXT. SCHOOL ENTRANCE - MORNING
+## Scene 13: EXT. SCHOOL PARKING LOT - BACK ENTRANCE - MORNING
 
 _Mac_ steps out of the sedan, looking up at the imposing structure of his new school. The sounds of chattering students and the ringing of the school bell fill the air. _Dallas_ watches him from the car before driving off.
+
+Off in the distance - Dominic drops off his Kids - Makayla, Asher, and Julie-Bee - who is accompanied by a hispanic aid. 
 
 ## Scene 14: INT. CLASSROOM - MORNING
 
 _Mac_ enters the classroom, glancing around nervously at the unfamiliar faces. He finds an empty seat and sits down, trying to blend in.
 
-The _TEACHER_, a man in his early 30s, stands at the front of the room, beginning his introduction.
+The _Mr. Foster_, a man in his mid 30s, stands at the front of the room, beginning his introduction.
 
-> **TEACHER**
-> Hello everyone. Good morning, everyone. Welcome to class - my name is Mr. ### and I am your 5th grade science teacher - - - - Life doesn't seem to control - not the way the light goes - just the way the light bends across.
+> **MR. FOSTER**
+> Hello everyone. Good morning, welcome - howdy - hello - hello everyone - all settled? Good - Hello class - I am Mr. David Allensworth Foster and I to you shall be referred to as Mr Foster - your 5th grade science teacher - - - - this semester we will be exploring the wonders world of-weather patterns, the phases of the moon, and count all of the ripples of the tides... We'll then move on and examine different ways in which the phases of the moon rile together. In a chasm of solar gravity - moon beams. the tides work.
 
 The teacher walks around - and grabs a globe off of the desk - and a little rocket ship - and then flies it around - and then walks over to another demonstration - of a minuture forest - inside of the forest -
 
 (continuing)
 
-> A lot of folks focus outside - and of the warm games - a farm family out have a missle site - and they are eating lunch one day - and suddenly they are seeing the missles are filing off -
-
-The teacher walks around to the ministration - the mini set - inside there ar little mystical looking creates
-
-> No - I do not want to talk about that - a lot of folks
-
-There are sightings and weird things in the sky - but the creatures below.
-
-> This semester, we'll be exploring the wonders world of-weather patterns, the phases of the moon, and count all of the ripples of the tides... We'll then move on and examine different ways in which the phases of the moon rile together. In a chasm of solar gravity - moon beams. the tides work.
-
 _Mac listens intently, but his attention is soon drawn to the window. Outside, the sky is overcast, and a field of wetlands with tall grass stretches out beyond the schoolyard._
 
 ## Scene 15: EXT. SCHOOL YARD - AFTERNOON
 
-_Mac_ sees _ASHER_ (10) from afar, accompanied by _MOLLY_ (12), the same girl from church. _Molly_ hands _Asher_ a bag, and _Asher_ discreetly puts it in his backpack. _Mac_ watches the exchange, his curiosity piqued.
+_Mac_ sees _ASHER_ (10) from afar, accompanied by MAKAYLA (12), the same girl from church. _Makayla_ hands _Asher_ a bag, and _Asher_ discreetly puts it in his backpack. _Mac_ watches the exchange, his curiosity piqued.
+
+Mac pretends to not have noticed but is clearly busted by Makayla. 
 
 ## Scene 16: INT. SEDAN - AFTERNOON
 
 _Dallas_ picks up _Mac_ after school. As they drive home, they realize that _Asher_ and _MAKAYLA_ are their neighbors. The _TALKATIVE NEIGHBOR_ from church approaches their car, greeting them enthusiastically.
 
-**DOMINIC TALKATIVE NEIGHBOR**
+**DOMINIC**
 
 > My Lord Indiana! Check you out big guy! Hey, Indiana! Look at us - we're neighbors! These kids are neighbors! Small world, huh?
 
-_Makayla walks behind her father into frame and walks right up to Mac. a group of neighborhood kids approaches Mac, one of them, a GIRL (10), speaks up._
+
+_Makayla walks behind her father into frame and walks right up to Mac. 
 
 **MAKAYLA**
 
@@ -235,15 +253,19 @@ _Makayla walks behind her father into frame and walks right up to Mac. a group o
 
 **MAKAYLA**
 
-> You Did?
+> You Did? Did you see what was inside it?
 
 **MAC**
 
 > Yeah.
 
-_Asher, looking sheepish, quickly walks away back to the house. Molly approaches Mac, looking him up and down._
+**MAKAYLA**
+YEAH?
 
-They go there sepearte ways .. .
+**MAC**
+> I mean no - I didn't see what was inside - I wasn't really looking. 
+
+_Asher, looking sheepish, quickly walks away back to the house. Makayla approaches Mac, looking him up and down._
 
 **MAKAYLA**
 
@@ -253,15 +275,11 @@ They go there sepearte ways .. .
 
 > Yeah.
 
-_Molly glances over at Dallas and the Talkative Neighbor, then back to Mac._
+_Molly glances over at Dallas and to her father Dominic, then back to Mac._
 
 **MAKAYLA**
 
 > Do you have a bike?
-
-**MAC**
-
-> I have a bike.
 
 _Mac_ nods.
 
@@ -269,17 +287,65 @@ _Mac_ nods.
 
 > Good.
 
-_Makayla turns and walks away, disappearing into the crowd._
+_Makayla turns and walks away, disappearing into the garage._
 
 _Mac_ looks over at his dad - who is still talking to Dominic - and then back to the retreating figure of Makayla.
 
-## Scene 17: EXT. MOLLY'S HOUSE - NIGHT
+Asher notices the tape recorder - and then looks over at Mac. 
+
+**ASHER**
+
+> What is that?
+
+**MAC**
+
+> It's a tape recorder.
+
+**ASHER**
+
+> What does it do?
+
+**MAC**
+
+> It records the sounds of the world.
+
+Makayla remerges with a bike and Ashers bike.
+
+**MAKAYLA**
+
+> You guys ready? Dad - I'm going to show Mac the neighborhood.
+
+**Dominic**
+> Don't you be terrifyin those lizards again Makayla - - 
+
+---
+
+**MAC**
+
+> It's a tape recorder.
+
+**MAKAYLA**
+
+> What does it do?
+
+**MAC**
+
+> It records the sounds of the world.
+
+## Scene 17: EXT. THE HUNT - DAY 1 - DAYTIME 
 
 Makayla opens up the bag, revealing crab meat and bits of chicken in some tiny zip locks. She hands some to _Mac_, along with sticks and string. The kids spend the night trying to lure something out in the wetlands, but nothing happens. A thunderstorm begins to brew, and the wind howls around them.
 
+Mac takes out his tape recorder and records the distant winds. 
+Makayla looks over at him - and then looks away. 
+
+
+
+
+
 ## Scene 18: INT. NEW HOUSE - MAC'S ROOM - NIGHT
 
-Mac looks around his new room - and takes out his friendly recorder and begins to record little objects around his room.
+Mac looks around his new room - and takes out and plays back the tape recorder - and then puts it away.
 
 That night, Mac looks out his bedroom window. The thunderstorm rages outside, the wind shaking the trees and tall grass. The power flickers, then goes out. Mac stares into the darkness, his eyes wide as he hears a loud crash from outside.\_
 
