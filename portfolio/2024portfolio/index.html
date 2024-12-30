@@ -68,6 +68,12 @@
                 font-weight: bold;
                 font-size: 1.2em;
                 margin-left: 20px;
+                transition: background-color 0.3s, color 0.3s;
+            }
+
+            .back-to-business-button:active {
+                background-color: #ddd;
+                color: #000;
             }
 
             .project-thumbnail {
@@ -113,9 +119,46 @@
             .back-home-button:hover {
                 background-color: #555;
             }
+
+            .modal {
+                display: none; /* Hidden by default */
+                position: fixed; /* Stay in place */
+                z-index: 1; /* Sit on top */
+                left: 0;
+                top: 0;
+                width: 100%; /* Full width */
+                height: 100%; /* Full height */
+                overflow: auto; /* Enable scroll if needed */
+                background-color: rgba(0, 0, 0, 0.5); /* Black w/ opacity */
+            }
+
+            .modal-content {
+                background-color: #fefefe;
+                margin: 15% auto; /* 15% from the top and centered */
+                padding: 20px;
+                border: 1px solid #888;
+                width: 80%; /* Could be more or less, depending on screen size */
+                max-width: 600px; /* Maximum width */
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            }
+
+            .close {
+                color: #aaa;
+                float: right;
+                font-size: 28px;
+                font-weight: bold;
+            }
+
+            .close:hover,
+            .close:focus {
+                color: black;
+                text-decoration: none;
+                cursor: pointer;
+            }
         </style>
     </head>
-    <body>
+    <body x-data="{ showModal: false, currentProject: {} }">
         <header>
             <h1>2024 Project Showcase</h1>
             <p class="year-summary">A year 
@@ -129,8 +172,31 @@
             <ul id="project-list">
                 <!-- Projects will be dynamically inserted here -->
             </ul>
-            <a class="back-home-button" href="../index.html">Back to Home</a>
+            <a class="back-home-button" href="../../index.html">Back to Home</a>
         </main>
+
+        <!-- Modal Structure -->
+        <div x-show="showModal" class="modal">
+            <div class="modal-content">
+                <span class="close" @click="showModal = false">&times;</span>
+                <h2 x-text="currentProject.title"></h2>
+                <p x-text="currentProject.description"></p>
+                <div x-show="currentProject.videos">
+                    <h3>Demo Videos</h3>
+                    <template x-for="video in currentProject.videos">
+                        <iframe :src="video" frameborder="0" allowfullscreen></iframe>
+                    </template>
+                </div>
+                <div x-show="currentProject.additionalLinks">
+                    <h3>Additional Links</h3>
+                    <ul>
+                        <template x-for="link in currentProject.additionalLinks">
+                            <li><a :href="link.url" target="_blank" x-text="link.type"></a></li>
+                        </template>
+                    </ul>
+                </div>
+            </div>
+        </div>
         <footer>
             <p>© 2024 Alex Gonzalez</p>
         </footer>
@@ -146,7 +212,7 @@
                             <div class="project-description">
                                 <div class="project-title">${project.title}</div>
                                 <div class="project-summary">${project.summary}</div>
-                                <a class="back-to-business-button" href="project-template.html?id=${index}">Read More</a>
+                                <button class="back-to-business-button" @click="showModal = true; currentProject = ${JSON.stringify(project)}">Read More</button>
                             </div>
                         `;
                         projectList.appendChild(listItem);

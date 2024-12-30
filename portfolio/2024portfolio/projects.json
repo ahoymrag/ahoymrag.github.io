@@ -33,6 +33,22 @@
         }
     },
     {
+        "title": "Ahoy Indie Media App Launch",
+        "summary": "Launching a new platform for indie media.",
+        "link": "https://ahoy.ooo",
+        "description": "This project involved the launch of a new digital platform aimed at supporting indie media creators. Concept to execution, including market research, platform design, and promotional strategies. This project demonstrates management skills, creativity, and ability to bring ideas to life.",
+        "images": [
+            "https://ahoy.ooo/images/ahoy-logo-red.png",
+            "./ahoy-indie-media-launch/image2.jpg"
+        ],
+        "additionalLinks": [
+            {
+                "type": "GitHub",
+                "url": "https://github.com/oooAHOYooo/oooAHOYooo.github.io"
+            }
+        ]
+    },
+    {
         "title": "CPC Web App Launch",
         "summary": "A comprehensive web application for CPC management.",
         "link": "https://cpcnewhaven.org",
@@ -50,22 +66,7 @@
                 "url": "https://github.com/username/cpc-web-app"
             }
         ]
-    },
-    {
-        "title": "Ahoy Indie Media App Launch",
-        "summary": "Launching a new platform for indie media.",
-        "link": "https://ahoy.ooo",
-        "description": "This project involved the launch of a new digital platform aimed at supporting indie media creators. Concept to execution, including market research, platform design, and promotional strategies. This project demonstrates management skills, creativity, and ability to bring ideas to life.",
-        "images": [
-            "https://ahoy.ooo/images/ahoy-logo-red.png",
-            "./ahoy-indie-media-launch/image2.jpg"
-        ],
-        "additionalLinks": [
-            {
-                "type": "GitHub",
-                "url": "https://github.com/oooAHOYooo/oooAHOYooo.github.io"
-            }
-        ]
     }
+ 
  
 ]
