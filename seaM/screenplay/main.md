@@ -462,7 +462,7 @@ _(speaking softly)_
 
 > He see's things doesn't he? Things that arent there?
 
-\_Mac doesn't respond - a long break.
+_Mac doesn't respond - a long break.
 
 _The atmosphere is tense. Strange, wild sounds echo in the distance, like coyotes letting loose - and howling from far - and then close._
 
@@ -869,7 +869,7 @@ _The kids return to the party. Mac approaches Dallas, who's standing alone in th
 
 > You out there cookin Lizards - you better watch yourself Makayla (jokin) I'm joking kid relax - (to Dallas) I gotta check that the girl - i vote yes for bush craft - but got to make sure she aint doing witch craft.
 
-\_Bonnie comes out with a big mashed potato plate of mashed potatoes.
+_Bonnie comes out with a big mashed potato plate of mashed potatoes.
 
 **Dominic**
 
@@ -883,7 +883,9 @@ Dallas and Mac walk home - the pair gently stroll through the windy sunset and w
 
 As they walk adjacent to the tall grass - Mac begins to notice some movement in the far distance. Dallas stops - and for a moment the two begin to listen. Silence.
 
-They continue their walk
+## SCENE 32a - EXT. BEACHSIDE NEIGHBORHOOD - SUNSET
+
+They continue their walk. 
 
 As they walk into their driveway - they notice a howl in the distance followed by a series of howls and howls and slow whimpers. They go inside.
 
@@ -923,6 +925,8 @@ Mac looks outside his window and sees a disturbance in the tall grass. In the di
 
 _Dallas_ begins to go inside, the sound of the breeze from the Long Island Sound rustling through the trees. He pauses, looking out at the sky before stepping through the door. From the corner of his eye - he spots an obect by the mailbox but he doesn't go up to it.
 
+Mac goes and begins to record the sounds through his tape recorder.
+
 ## SCENE 34a - INT CAR
 
 Dallas drives Mac to school.
@@ -933,7 +937,7 @@ The class mid-session - Mac looks out the window in the distance and sees anothe
 
 The teacher an elderly woman - asks the class a question - and Mac is the first to answer.
 
-**Teacher**
+**Mr. Foster**
 
 > Light gives us an alert - in the 1980s it was the - the man from the funeral home and the scientist have the same fate. But that is not this class -
 > Mac - what have you learned about the weather so far this year?
@@ -1446,7 +1450,7 @@ It came.
 _Mac's eyes widen again._
 
 **MAKAYLA**
-Asher's in the hospital.
+Julie Bee is in the hospital.
 
 **MAC**
 
@@ -1478,6 +1482,8 @@ _Makayla Smiles._
 
 **CUT TO**
 
+The footage is profound - and the kids are excited - it shows a creature - and then a flash of light - and then nothing - and then Asher crying - but a flash of light - and in the center as they zoom nothing - but as a filter is applied - some makeshift eyes appear.
+
 ## Scene 59: INT. HALF-FINISHED BASEMENT COMPUTER ROOM
 
 The crew look at a series of old CRT era laptops all haphazardly and hackerdly arranged - and then a big slow motion - and then nothing - and then Asher crying - but a flash of light - and in the center as they zoom nothing - but as a filter is applied - some makeshift eyes appear.
@@ -1504,7 +1510,14 @@ _MAC looks out the window, seeing a bright sunny sky. MAKAYLA and ASHER arrive o
 **MAKAYLA**
 Can we use your sink?
 
-## Scene 62: INT. MAC'S KITCHEN
+## Scene 62: INT. MAC'S KITCHEN 
+
+Dominic and his family are there -
+
+**DOMINIC**
+Thank you for letting us use your sink. And for the shelter.
+
+
 
 _DALLAS stands over the sink, washing dirt off potatoes. He moves aside as MAKAYLA storms in._
 
@@ -1545,6 +1558,8 @@ Where do you want to hang them?
 ## Scene 64: EXT. MAC'S BACKYARD - THE TREE
 
 _MAC uses his fishing line kit to tie down a device._
+
+Makayla runs out of the kitchen and everyone tries to get her to stay - but she is determined. And escapes - she runs away through the tall grass.
 
 ## Scene 65: EXT. MAKAYLA'S BACKYARD
 
@@ -1657,7 +1672,7 @@ _The classroom is unusually quiet as Mac and Asher walk in. They notice a strang
 **SUBSTITUTE TEACHER**
 _(nervously)_
 
-> Good morning, class. I'm Mr. Thompson, and I'll be your substitute teacher today.
+> Good morning, class. I'm Mr. Sullivan, and I'll be your substitute teacher today. Mr. Foster is out sick - and I'm here to help out with the lesson plan. Let's see what we got here. 
 
 _The students exchange curious glances. Mac and Asher take their seats, whispering to each other._
 
@@ -1790,7 +1805,11 @@ _Mac nods, feeling a sense of reassurance from his father's words. The bond betw
 
 ## Scene 74: INT. MAC'S HOUSE - NIGHT
 
-\_Dallas and Mac go into overdrive mode - preparing the house. They board up the windows and the stakes.
+_Dallas and Mac go into overdrive mode - preparing the house. They board up the windows and and cover all necessary areas. 
+
+Dominic prepares some mashed potatoes and stew for the whole family. 
+
+Makayla in Mac's room getting impatient - but Asher is admiring all of Mac's collectiables and what not. 
 
 **TV REPORTER (V.O.)**
 
@@ -1822,4 +1841,96 @@ As Dallas and Mac watch the tv - Dalls looks up at his book shelf - and takes ou
 
 **MAC**
 
-> What do we do with it?
+> What do we do with it?s
+
+Asher sets up the tripods and the cameras and points out the window - and he aims the cameras. Mac also sets up his tape recorder next to him. 
+
+## Scene 75 : 
+
+Makayla and Mac and Dallas and Asher all rush to the center of the tall grass - as they do horrific sounds are heard.
+
+## Scene 76 : 
+
+The creatures and the chidlren make contact with each other - and there are creatures of dark figures all around them too - but the creatures are soft with the children and are delighted by the gifts that they offer - 
+
+They show this by hovering over the meat and dancing among them - in a big orchestra of light and sound around them. 
+
+It is like the wind - like the whisper - and like the wonder - and through the vision the children see flowers and peace and growth and wonder through the light - and then a gated wall - and far off in the distance - darkness over a forest - and microorganisims growing - growing into metal - into steel - and into objects of despair. 
+
+## Scene 77: 
+
+As the children go inside the world they begin to see that the world is much like theyre own - and theyre true home and yet they see all the loved lones back home - they see the hurricane coming from a distance and the creatures in the tall grass - bring them back to the tall grass - and do dances around the bottom floor - 
+
+Suddenly a dark creature is surronding them all.
+
+## Scene 78:
+
+The cat like creature - shadows and hangs over the children and dallas and the creature on the floor from a branch nearby - - interlude of the creature is so vast - it has wingspan and it comes down and goes for the throat of oneo f the soft small creature and goes for the neck - and Makayla tries to get a stick to swat it away - but the creature grabs the stick - and Dallas - looks at the creature and grabs it - Mac and Asher stand paralyzed with fear - the dark winged creatures grow in length - eventually covering the entire treescape - and the howls that they emitt are so devasting
+
+The winds pick up 
+
+## Scene 79
+
+The good little creatures come out of the wood work - and begin to help there fallen friend - they arrise and begin to climb and make music together that tears the dark creatures into sparks and particles that blow into the wind and the storm - and the little creatures - are hurt - and the hurricane winds pick up - and they begin to float away - as there little bodies are light as feathers - and they begin to cry - and as they cry a cone of light emits from their head - much like a projector - that of flowers and of winds - and of mystics 
+
+## Scene 80:
+
+Mac has an encounter with the creature as it bleeds to death and as the light begins to fade - as the other creatures begin to cry - the dying little creature tells Mac a story in his mind
+
+## Creature ##
+
+> There was peace once and there will be peace again - but not in this world - not in this world - 
+
+
+---
+
+
+
+## Scene 81:
+
+Weather report 
+Clouds are good back to normal 
+
+Makayla and Mac sit on a log - and 
+
+**MAKAYLA**
+
+> Did you get any of that on tape?
+
+**MAC**
+> No - I don't think so 
+
+**MAC**
+> The creature sang with me a song - and was the reason why the hurricane broke up you know.
+I think we need to plant something.
+
+**Makayla**
+> What do you mean?
+
+**MAKAYLA**
+> I know. 
+
+## Scene 82:
+
+Dallas Drives Mac to Church
+
+
+## Scene 83:
+
+Church BBQ
+
+Mac tells Makayla and the gang what the creature told them 
+
+## Scene 84:
+
+Tall grass outside 
+
+## Scene 85: 
+
+Seaside festival
+
+## Scene 86: 
+
+The children plant the thing the creature told them to plant - a seed a beacon of hope - a symbol of a gift - of a time for peace - a rememberence - of time for peace. And as the statue remains there - time passes - and people age and the hurricane season never really 
+
+Fade to black.
