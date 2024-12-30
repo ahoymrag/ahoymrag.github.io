@@ -37,6 +37,13 @@ Host Rob Meglio
 2. Bach = Thursday March - Sunday March
 3. Wedding = June - June
 
+## Cost Owed Now
+1. Alex Waldman - 560 
+
+
+Bills Owed Now - using splitwise 
+1. Alex Waldman [Eric Bach]
+
 
 ### Cost
 
