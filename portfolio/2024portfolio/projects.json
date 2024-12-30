@@ -33,9 +33,9 @@
         }
     },
     {
-        "title": "CPC Web App",
+        "title": "CPC Web App Launch",
         "summary": "A comprehensive web application for CPC management.",
-        "link": "./cpc-web-app/index.html",
+        "link": "https://cpcnewhaven.org",
         "description": "The CPC Web App is a robust tool designed to streamline the management of CPC processes. I was responsible for the full-stack development of the application, ensuring user experience and efficient data handling. This project showcases proficiency in web development, problem-solving skills, and ability to deliver high-quality software solutions.",
         "images": [
             "./cpc-web-app/image1.jpg",
@@ -52,46 +52,20 @@
         ]
     },
     {
-        "title": "Ahoy Indie Media Launch",
+        "title": "Ahoy Indie Media App Launch",
         "summary": "Launching a new platform for indie media.",
-        "link": "./ahoy-indie-media-launch/index.html",
+        "link": "https://ahoy.ooo",
         "description": "This project involved the launch of a new digital platform aimed at supporting indie media creators. Concept to execution, including market research, platform design, and promotional strategies. This project demonstrates management skills, creativity, and ability to bring ideas to life.",
         "images": [
-            "./ahoy-indie-media-launch/image1.jpg",
+            "https://ahoy.ooo/images/ahoy-logo-red.png",
             "./ahoy-indie-media-launch/image2.jpg"
-        ],
-        "videos": [
-            "https://www.youtube.com/watch?v=example3"
         ],
         "additionalLinks": [
             {
                 "type": "GitHub",
-                "url": "https://github.com/username/ahoy-indie-media-launch"
+                "url": "https://github.com/oooAHOYooo/oooAHOYooo.github.io"
             }
         ]
-    },
-    {
-        "title": "Screenplays",
-        "summary": "A collection of screenplays written over the years.",
-        "link": "./screenplays/index.html",
-        "description": "This collection features a variety of screenplays that I have written, Each screenplay explores different themes and genres, This project highlights ability to craft stories and develop characters.",
-        "images": [
-            "./screenplays/image1.jpg",
-            "./screenplays/image2.jpg"
-        ],
-        "videos": [],
-        "additionalLinks": []
-    },
-    {
-        "title": "Misc Projects",
-        "summary": "Various projects spanning different domains.",
-        "link": "./misc-projects/index.html",
-        "description": "The Misc Projects portfolio includes a range of projects that I have undertaken, Each project demonstrates adaptability and commitment to continuous learning. This collection is a testament to my attempt to tackle challenges across fields and deliver outcomes.",
-        "images": [
-            "./misc-projects/image1.jpg",
-            "./misc-projects/image2.jpg"
-        ],
-        "videos": [],
-        "additionalLinks": []
     }
+ 
 ]
