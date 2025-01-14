@@ -34,13 +34,14 @@ function dashboardApp() {
                     }
                 );
                 if (!response.ok) {
+                    console.error('Failed to save to cloud:', response.status);
                     alert('Failed to save to cloud.');
                 } else {
-                    alert('Goals saved to cloud successfully!');
+                    alert('Saved to cloud successfully!');
                 }
             } catch (error) {
                 console.error('Error saving to cloud:', error);
-                alert('Error saving to cloud.');
+                alert('Error saving to cloud.' + error);
             }
         },
 
