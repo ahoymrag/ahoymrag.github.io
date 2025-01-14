@@ -24,6 +24,63 @@
 
             <!-- Main Content -->
             <div class="dashboard">
+                <!-- View of the Day Section -->
+                <div class="view-of-the-day">
+                    <h2>Daily Snapshot</h2>
+                    <p>
+                        F: <span x-text="feelings"></span> |
+                        T: <span x-text="tasksToAccomplish"></span> |
+                        PF: <span x-text="projectFocus"></span> |
+                        DV: <span x-text="dreamsVisionFocus"></span> |
+                        RF: <span x-text="relationshipsFocus"></span>
+                    </p>
+                    <button @click="saveDailySnapshot()">Save Snapshot</button>
+                </div>
+
+                <!-- New Focus Sections -->
+                <div class="focus-section">
+                    <label for="learnFocus">Things I Want to Learn (1-5)</label>
+                    <input type="range" id="learnFocus" x-model="learnFocus"
+                        min="1" max="5" step="1" @input="updateMood()">
+                    <span x-text="learnFocus"></span>
+                </div>
+
+                <div class="focus-section">
+                    <label for="readFocus">Things to Read (1-5)</label>
+                    <input type="range" id="readFocus" x-model="readFocus"
+                        min="1" max="5" step="1" @input="updateMood()">
+                    <span x-text="readFocus"></span>
+                </div>
+
+                <div class="focus-section">
+                    <label for="choresFocus">Chores to Focus On (1-5)</label>
+                    <input type="range" id="choresFocus" x-model="choresFocus"
+                        min="1" max="5" step="1" @input="updateMood()">
+                    <span x-text="choresFocus"></span>
+                </div>
+
+                <div class="focus-section">
+                    <label for="remindersFocus">Reminders (1-5)</label>
+                    <input type="range" id="remindersFocus"
+                        x-model="remindersFocus" min="1" max="5" step="1"
+                        @input="updateMood()">
+                    <span x-text="remindersFocus"></span>
+                </div>
+
+                <div class="focus-section">
+                    <label for="ideasFocus">Ideas (1-5)</label>
+                    <input type="range" id="ideasFocus" x-model="ideasFocus"
+                        min="1" max="5" step="1" @input="updateMood()">
+                    <span x-text="ideasFocus"></span>
+                </div>
+
+                <!-- Legend Section -->
+                <div class="legend">
+                    <h3>Legend</h3>
+                    <p>1: Low Focus, 5: High Focus</p>
+                </div>
+
+                <!-- Goals Section -->
                 <input type="text" x-model="newGoal"
                     placeholder="Enter your goal" />
                 <button @click="addGoal()">Add Goal</button>
@@ -36,6 +93,77 @@
                     </template>
                 </ul>
                 <button @click="saveToCloud()">Save Goals to Cloud</button>
+                <textarea x-model="thoughts"
+                    placeholder="Write your thoughts here..."></textarea>
+                <button @click="saveThoughtsToCloud()">Save Thoughts to
+                    Cloud</button>
+                <button @click="loadThoughtsFromCloud()">Load Thoughts from
+                    Cloud</button>
+
+                <!-- Feelings Scale Section -->
+                <div class="feelings-scale">
+                    <label for="feelings">How are you feeling today?
+                        (1-10)</label>
+                    <input type="range" id="feelings" x-model="feelings" min="1"
+                        max="10" step="1">
+                    <span x-text="feelings"></span>
+                    <button @click="saveFeelingsToCloud()">Save Feelings to
+                        Cloud</button>
+                    <button @click="loadFeelingsFromCloud()">Load Feelings from
+                        Cloud</button>
+                </div>
+
+                <!-- Tasks to Accomplish Scale Section -->
+                <div class="tasks-scale">
+                    <label for="tasks">How many tasks would you like to
+                        accomplish today? (1-10)</label>
+                    <input type="range" id="tasks" x-model="tasksToAccomplish"
+                        min="1" max="10" step="1">
+                    <span x-text="tasksToAccomplish"></span>
+                    <button @click="saveTasksToCloud()">Save Tasks to
+                        Cloud</button>
+                    <button @click="loadTasksFromCloud()">Load Tasks from
+                        Cloud</button>
+                </div>
+
+                <!-- Project Focus Scale Section -->
+                <div class="project-focus-scale">
+                    <label for="projectFocus">Which project will you focus on
+                        today? (1-5)</label>
+                    <input type="range" id="projectFocus" x-model="projectFocus"
+                        min="1" max="5" step="1">
+                    <span x-text="projectFocus"></span>
+                    <button @click="saveProjectFocusToCloud()">Save Project
+                        Focus to Cloud</button>
+                    <button @click="loadProjectFocusFromCloud()">Load Project
+                        Focus from Cloud</button>
+                </div>
+
+                <!-- Dreams and Big Vision Scale Section -->
+                <div class="dreams-vision-scale">
+                    <label for="dreamsVision">Focus on Dreams and Big Vision
+                        (1-5)</label>
+                    <input type="range" id="dreamsVision"
+                        x-model="dreamsVisionFocus" min="1" max="5" step="1">
+                    <span x-text="dreamsVisionFocus"></span>
+                    <button @click="saveDreamsVisionToCloud()">Save Dreams and
+                        Vision to Cloud</button>
+                    <button @click="loadDreamsVisionFromCloud()">Load Dreams and
+                        Vision from Cloud</button>
+                </div>
+
+                <!-- Relationships Focus Scale Section -->
+                <div class="relationships-scale">
+                    <label for="relationshipsFocus">Focus on Relationships
+                        (1-5)</label>
+                    <input type="range" id="relationshipsFocus"
+                        x-model="relationshipsFocus" min="1" max="5" step="1">
+                    <span x-text="relationshipsFocus"></span>
+                    <button @click="saveRelationshipsFocusToCloud()">Save
+                        Relationships Focus to Cloud</button>
+                    <button @click="loadRelationshipsFocusFromCloud()">Load
+                        Relationships Focus from Cloud</button>
+                </div>
             </div>
 
             <!-- Start Button -->

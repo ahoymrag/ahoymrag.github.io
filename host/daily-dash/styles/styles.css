@@ -1,26 +1,56 @@
+/* Keyframes for saturation animation */
+@keyframes saturationAnimation {
+
+    0%,
+    100% {
+        filter: saturate(1);
+    }
+
+    50% {
+        filter: saturate(1.2);
+    }
+}
+
 /* Glass effect for the top bar */
 .top-bar {
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
-    padding: 10px;
+    background: linear-gradient(145deg, rgba(255, 182, 193, 0.9), rgba(255, 105, 180, 0.3));
+    backdrop-filter: blur(20px);
+    padding: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    animation: saturationAnimation 5s infinite alternate;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Header and time styling */
+.top-bar h1,
+.top-bar .os-info span {
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 8px;
 }
 
 /* Main container styling */
 .main-container {
     display: flex;
-    height: calc(100vh - 50px);
-    /* Adjust based on top bar height */
+    height: calc(100vh - 70px);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(145deg, rgba(255, 182, 193, 0.1), rgba(255, 105, 180, 0.1));
+    animation: saturationAnimation 5s infinite alternate;
 }
 
 /* Dashboard content */
 .dashboard {
     flex-grow: 1;
-    padding: 20px;
+    padding: 25px;
     overflow-y: auto;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 12px;
+    color: #fff;
 }
 
 /* Bottom bar */
@@ -28,35 +58,79 @@
     position: fixed;
     bottom: 0;
     width: 100%;
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
+    background: linear-gradient(145deg, rgba(255, 182, 193, 0.9), rgba(255, 105, 180, 0.3));
+    backdrop-filter: blur(20px);
     display: flex;
     justify-content: flex-start;
-    padding: 10px;
-    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 -8px 16px rgba(0, 0, 0, 0.2);
+    animation: saturationAnimation 5s infinite alternate;
 }
 
-/* Start button */
-.start-button button {
+/* Button styling */
+button {
     background: rgba(255, 255, 255, 0.3);
     border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
+    padding: 12px 24px;
+    border-radius: 12px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+    font-family: 'Courier New', Courier, monospace;
+    color: #000;
+    backdrop-filter: blur(10px);
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.5);
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Specific button styles for different sections */
+.top-bar button,
+.bottom-bar button {
+    background: rgba(255, 182, 193, 0.5);
+}
+
+.top-bar button:hover,
+.bottom-bar button:hover {
+    background: rgba(255, 182, 193, 0.7);
+}
+
+.start-button button {
+    background: rgba(255, 105, 180, 0.4);
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
     cursor: pointer;
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s, transform 0.3s;
+}
+
+.start-button button:hover {
+    background: rgba(255, 105, 180, 0.6);
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .start-button .start-menu {
     position: absolute;
-    bottom: 50px;
+    bottom: 60px;
     left: 0;
-    background: rgba(255, 255, 255, 0.9);
-    backdrop-filter: blur(10px);
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 10px;
+    background: rgba(138, 43, 226, 0.95);
+    backdrop-filter: blur(20px);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 12px;
     display: none;
 }
 
@@ -66,9 +140,90 @@
 
 /* Data Tab */
 .data-tab {
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.8);
+    padding: 25px;
+    background: rgba(255, 105, 180, 0.85);
+    backdrop-filter: blur(20px);
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Input styling for glass effect */
+input[type="text"] {
+    background: rgba(255, 255, 255, 0.2);
+    /* Semi-transparent background */
     backdrop-filter: blur(10px);
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Blur effect for glass look */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    /* Light border for definition */
+    padding: 10px;
+    border-radius: 8px;
+    color: #fff;
+    /* White text for contrast */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+    transition: background 0.3s, box-shadow 0.3s;
+    /* Smooth transition effects */
+}
+
+input[type="text"]:focus {
+    background: rgba(255, 255, 255, 0.3);
+    /* Slightly darker on focus */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    /* Enhanced shadow on focus */
+    outline: none;
+    /* Remove default outline */
+}
+
+/* Remove button styling */
+.dashboard ul li button {
+    background: rgba(255, 255, 255, 0.1);
+    /* More transparent background */
+    color: #fff;
+    /* White text for contrast */
+    border: none;
+    padding: 5px 10px;
+    /* Smaller padding */
+    border-radius: 4px;
+    /* Smaller border radius */
+    font-size: 0.8em;
+    /* Smaller font size */
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+    /* Smooth transition effects */
+}
+
+.dashboard ul li button:hover {
+    background: rgba(255, 255, 255, 0.2);
+    /* Slightly darker on hover */
+    transform: scale(1.05);
+    /* Slightly larger on hover */
+}
+
+/* Mood-based styles */
+body.happy {
+    background-color: #e0ffe0;
+    /* Light green for happy */
+}
+
+body.neutral {
+    background-color: #f0f0f0;
+    /* Light gray for neutral */
+}
+
+body.stressed {
+    background-color: #ffe0e0;
+    /* Light red for stressed */
+}
+
+/* Focus section styling */
+.focus-section {
+    margin-bottom: 15px;
+}
+
+.legend {
+    margin-top: 20px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    color: #fff;
 }
