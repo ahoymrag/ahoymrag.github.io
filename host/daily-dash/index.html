@@ -37,68 +37,56 @@
                     <button @click="saveDailySnapshot()">Save Snapshot</button>
                 </div>
 
-                <!-- New Focus Sections -->
-                <div class="focus-section">
-                    <label for="learnFocus">Things I Want to Learn (1-5)</label>
-                    <input type="range" id="learnFocus" x-model="learnFocus"
-                        min="1" max="5" step="1" @input="updateMood()">
-                    <span x-text="learnFocus"></span>
-                </div>
-
-                <div class="focus-section">
-                    <label for="readFocus">Things to Read (1-5)</label>
-                    <input type="range" id="readFocus" x-model="readFocus"
-                        min="1" max="5" step="1" @input="updateMood()">
-                    <span x-text="readFocus"></span>
-                </div>
-
-                <div class="focus-section">
-                    <label for="choresFocus">Chores to Focus On (1-5)</label>
-                    <input type="range" id="choresFocus" x-model="choresFocus"
-                        min="1" max="5" step="1" @input="updateMood()">
-                    <span x-text="choresFocus"></span>
-                </div>
-
-                <div class="focus-section">
-                    <label for="remindersFocus">Reminders (1-5)</label>
-                    <input type="range" id="remindersFocus"
-                        x-model="remindersFocus" min="1" max="5" step="1"
-                        @input="updateMood()">
-                    <span x-text="remindersFocus"></span>
-                </div>
-
-                <div class="focus-section">
-                    <label for="ideasFocus">Ideas (1-5)</label>
-                    <input type="range" id="ideasFocus" x-model="ideasFocus"
-                        min="1" max="5" step="1" @input="updateMood()">
-                    <span x-text="ideasFocus"></span>
-                </div>
-
-                <!-- Legend Section -->
-                <div class="legend">
-                    <h3>Legend</h3>
-                    <p>1: Low Focus, 5: High Focus</p>
+                <!-- Thoughts Section -->
+                <div class="thoughts-section">
+                    <h2>Thoughts</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Timestamp</th>
+                                <th>Thought</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <template x-for="(thought, index) in thoughts"
+                                :key="index">
+                                <tr>
+                                    <td x-text="thought.timestamp"></td>
+                                    <td x-text="thought.text"></td>
+                                </tr>
+                            </template>
+                        </tbody>
+                    </table>
+                    <input type="range" min="0" :max="thoughts.length - 1"
+                        x-model="currentThoughtIndex"
+                        @input="updateCurrentThought">
+                    <textarea x-model="newThought"
+                        placeholder="Write your thoughts here..."></textarea>
+                    <button @click="addThought()">Add Thought</button>
+                    <button @click="saveThoughtsToCloud()">Save Thoughts to
+                        Cloud</button>
+                    <button @click="loadThoughtsFromCloud()">Load Thoughts from
+                        Cloud</button>
                 </div>
 
                 <!-- Goals Section -->
-                <input type="text" x-model="newGoal"
-                    placeholder="Enter your goal" />
-                <button @click="addGoal()">Add Goal</button>
-                <ul>
-                    <template x-for="(goal, index) in goals" :key="index">
-                        <li>
-                            <span x-text="goal"></span>
-                            <button @click="removeGoal(index)">Remove</button>
-                        </li>
-                    </template>
-                </ul>
-                <button @click="saveToCloud()">Save Goals to Cloud</button>
-                <textarea x-model="thoughts"
-                    placeholder="Write your thoughts here..."></textarea>
-                <button @click="saveThoughtsToCloud()">Save Thoughts to
-                    Cloud</button>
-                <button @click="loadThoughtsFromCloud()">Load Thoughts from
-                    Cloud</button>
+                <div class="goals-section">
+                    <h2>Goals</h2>
+                    <!-- Goals Section -->
+                    <input type="text" x-model="newGoal"
+                        placeholder="Enter your goal" />
+                    <button @click="addGoal()">Add Goal</button>
+                    <ul>
+                        <template x-for="(goal, index) in goals" :key="index">
+                            <li>
+                                <span x-text="goal"></span>
+                                <button
+                                    @click="removeGoal(index)">Remove</button>
+                            </li>
+                        </template>
+                    </ul>
+                    <button @click="saveToCloud()">Save Goals to Cloud</button>
+                </div>
 
                 <!-- Feelings Scale Section -->
                 <div class="feelings-scale">
@@ -164,6 +152,24 @@
                     <button @click="loadRelationshipsFocusFromCloud()">Load
                         Relationships Focus from Cloud</button>
                 </div>
+            </div>
+
+            <!-- Legend Section -->
+            <div class="legend">
+                <h3>Legend</h3>
+                <div>
+                    <label for="focusLegend">Focus Legend:</label>
+                    <input type="text" id="focusLegend" x-model="focusLegend"
+                        placeholder="Enter legend for focus">
+                </div>
+                <p x-text="focusLegend"></p>
+            </div>
+
+            <!-- Mood Wheel -->
+            <div class="mood-wheel">
+                <label for="moodColor">Select Mood Color:</label>
+                <input type="color" id="moodColor" x-model="moodColor"
+                    @input="updateMoodColor">
             </div>
 
             <!-- Start Button -->

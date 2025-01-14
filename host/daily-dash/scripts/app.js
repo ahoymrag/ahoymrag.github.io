@@ -20,7 +20,9 @@ function dashboardApp() {
         thoughts: '',
         feelings: 5,
         projectFocus: 1,
-        mood: 'neutral',
+        newThought: '',
+        thoughts: [],
+        currentThoughtIndex: 0,
 
         addGoal() {
             if (this.newGoal.trim()) {
@@ -130,7 +132,7 @@ function dashboardApp() {
                 if (response.ok) {
                     const data = await response.json();
                     console.log('Thoughts loaded from cloud:', data);
-                    this.thoughts = data.thoughts || '';
+                    this.thoughts = data.thoughts || [];
                     alert('Thoughts loaded from cloud successfully!');
                 } else {
                     console.error('Failed to load thoughts from cloud:', response.status, response.statusText);
@@ -236,15 +238,23 @@ function dashboardApp() {
             }
         },
 
-        updateMood() {
-            if (this.feelings <= 3) {
-                this.mood = 'stressed';
-            } else if (this.feelings <= 7) {
-                this.mood = 'neutral';
-            } else {
-                this.mood = 'happy';
+        addThought() {
+            if (this.newThought.trim()) {
+                this.thoughts.push({
+                    text: this.newThought.trim(),
+                    timestamp: new Date().toLocaleString()
+                });
+                this.newThought = '';
+                console.log('Thought added:', this.thoughts);
+                this.saveThoughtsToCloud();
             }
-            document.body.className = this.mood;
+        },
+
+        updateCurrentThought() {
+            const thought = this.thoughts[this.currentThoughtIndex];
+            if (thought) {
+                console.log('Current thought:', thought);
+            }
         }
     };
 }
