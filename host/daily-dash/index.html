@@ -7,51 +7,50 @@
         <script
             src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
             defer></script>
+
         <link rel="stylesheet" href="./styles/styles.css">
     </head>
     <body>
-        <div class="dashboard" x-data="dashboardApp()">
-            <h1>Daily Dashboard</h1>
-            <div>
+        <div
+            x-data="{ startMenuOpen: false, currentTime: '', currentDate: '', newGoal: '', goals: [] }"
+            x-init="setInterval(() => { currentTime = new Date().toLocaleTimeString(); currentDate = new Date().toLocaleDateString(); }, 1000)">
+            <!-- Top Bar -->
+            <div class="top-bar glass-effect">
+                <h1>Daily Dashboard OS</h1>
+                <div class="os-info">
+                    <span x-text="currentTime"></span>
+                    <span x-text="currentDate"></span>
+                </div>
+            </div>
+
+            <!-- Main Content -->
+            <div class="dashboard">
                 <input type="text" x-model="newGoal"
                     placeholder="Enter your goal" />
-                <button @click="addGoal()">Add Goal</button>
-            </div>
-            <ul>
-                <template x-for="(goal, index) in goals" :key="index">
-                    <li>
-                        <span x-text="goal"></span>
-                        <button @click="removeGoal(index)">Remove</button>
-                    </li>
-                </template>
-            </ul>
-            <button @click="saveToCloud()">Save to Cloud</button>
-            <button @click="loadFromCloud()">Load from Cloud</button>
-
-            <!-- New Calendar Section -->
-            <div class="calendar">
-                <!-- Calendar component goes here -->
+                <button @click="goals.push(newGoal); newGoal = ''">Add
+                    Goal</button>
+                <ul>
+                    <template x-for="(goal, index) in goals" :key="index">
+                        <li>
+                            <span x-text="goal"></span>
+                            <button
+                                @click="goals.splice(index, 1)">Remove</button>
+                        </li>
+                    </template>
+                </ul>
             </div>
 
-            <!-- New Notes Section -->
-            <div class="notes">
-                <textarea placeholder="Write your notes here..."></textarea>
-            </div>
-        </div>
-
-        <!-- Robot Interface Section -->
-        <div class="robot-interface">
-            <div class="crt-screen">
-                <div class="terminal">
-                    <div class="output">
-                        <!-- Robot responses will be displayed here -->
-                    </div>
-                    <input type="text" placeholder="Type a command..." />
+            <!-- Start Button -->
+            <div class="bottom-bar">
+                <button @click="startMenuOpen = !startMenuOpen">Start</button>
+                <div x-show="startMenuOpen" class="start-menu">
+                    <ul>
+                        <li><button
+                                @click="goals.push(newGoal); newGoal = ''">Add
+                                Goal</button></li>
+                    </ul>
                 </div>
             </div>
         </div>
-
-        <script src="./scripts/app.js"></script>
-
     </body>
 </html>

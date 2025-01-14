@@ -1,159 +1,98 @@
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(135deg, #f5e6e8, #fbcac9);
-    color: #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    transition: background 0.3s ease-in-out;
-}
-
-.dashboard {
-    background: rgba(255, 255, 255, 0.85);
-    padding: 30px;
-    border-radius: 20px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 500px;
-    backdrop-filter: blur(12px);
-}
-
-h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    text-align: center;
-    color: #ff6b6b;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-input {
-    width: calc(100% - 24px);
-    padding: 14px;
-    margin-bottom: 14px;
-    font-size: 1.2em;
-    border: 1px solid #f5a6a6;
-    border-radius: 10px;
-    transition: border-color 0.3s ease;
-}
-
-input:focus {
-    border-color: #ff6b6b;
-    outline: none;
-}
-
-button {
-    padding: 14px;
-    font-size: 1.2em;
-    border: none;
-    border-radius: 10px;
-    background: #ff6b6b;
-    color: white;
-    cursor: pointer;
-    margin-top: 10px;
-    transition: background 0.3s ease;
-}
-
-button:hover {
-    background: #e55b5b;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-li {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 0;
-    border-bottom: 1px solid #f5a6a6;
-    transition: background 0.3s ease;
-}
-
-li:hover {
-    background: rgba(255, 107, 107, 0.1);
-}
-
-li span {
-    flex-grow: 1;
-}
-
-/* New Calendar Section Styles */
-.calendar {
-    margin-top: 20px;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.9);
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-/* New Notes Section Styles */
-.notes {
-    margin-top: 20px;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.9);
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-.notes textarea {
-    width: 100%;
-    height: 100px;
-    padding: 10px;
-    border-radius: 10px;
-    border: 1px solid #f5a6a6;
-    font-size: 1em;
-    resize: none;
-    transition: border-color 0.3s ease;
-}
-
-.notes textarea:focus {
-    border-color: #ff6b6b;
-    outline: none;
-}
-
-/* Robot Interface Section Styles */
-.robot-interface {
-    margin-top: 40px;
-    padding: 20px;
+/* Glass effect for the top bar */
+.top-bar {
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
-    color: #333;
-    font-family: 'Courier New', Courier, monospace;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.crt-screen {
-    background: rgba(255, 255, 255, 0.1);
+/* Main container styling */
+.main-container {
+    display: flex;
+    height: calc(100vh - 50px);
+    /* Adjust based on top bar height */
+}
+
+/* Left sidebar */
+.left-sidebar {
+    width: 200px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.5);
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
 
-.terminal {
-    max-height: 200px;
+/* Dashboard content */
+.dashboard {
+    flex-grow: 1;
+    padding: 20px;
     overflow-y: auto;
 }
 
-.terminal .output {
-    margin-bottom: 10px;
-}
-
-.terminal input {
+/* Bottom bar */
+.bottom-bar {
+    position: fixed;
+    bottom: 0;
     width: 100%;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid rgba(255, 255, 255, 0.5);
     background: rgba(255, 255, 255, 0.2);
-    color: #333;
-    font-family: 'Courier New', Courier, monospace;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.terminal input:focus {
-    outline: none;
-    border-color: rgba(255, 255, 255, 0.8);
+/* Start button */
+.start-button {
+    position: relative;
+}
+
+.start-button button {
+    background: rgba(255, 255, 255, 0.3);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.start-button .start-menu {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    display: none;
+}
+
+.start-button .start-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.start-button .start-menu li {
+    margin: 5px 0;
+}
+
+.start-button .start-menu button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Show start menu when open */
+.start-button[x-show="startMenuOpen"] .start-menu {
+    display: block;
 }
