@@ -16,15 +16,6 @@
     /* Adjust based on top bar height */
 }
 
-/* Left sidebar */
-.left-sidebar {
-    width: 200px;
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
-    padding: 20px;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-}
-
 /* Dashboard content */
 .dashboard {
     flex-grow: 1;
@@ -46,10 +37,6 @@
 }
 
 /* Start button */
-.start-button {
-    position: relative;
-}
-
 .start-button button {
     background: rgba(255, 255, 255, 0.3);
     border: none;
@@ -73,26 +60,15 @@
     display: none;
 }
 
-.start-button .start-menu ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.start-button .start-menu li {
-    margin: 5px 0;
-}
-
-.start-button .start-menu button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-
-/* Show start menu when open */
 .start-button[x-show="startMenuOpen"] .start-menu {
     display: block;
+}
+
+/* Data Tab */
+.data-tab {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }

@@ -7,13 +7,12 @@
         <script
             src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
             defer></script>
-
         <link rel="stylesheet" href="./styles/styles.css">
     </head>
     <body>
         <div
-            x-data="{ startMenuOpen: false, currentTime: '', currentDate: '', newGoal: '', goals: [] }"
-            x-init="setInterval(() => { currentTime = new Date().toLocaleTimeString(); currentDate = new Date().toLocaleDateString(); }, 1000)">
+            x-data="dashboardApp()"
+            x-init="loadFromCloud(); setInterval(() => { currentTime = new Date().toLocaleTimeString(); currentDate = new Date().toLocaleDateString(); }, 1000)">
             <!-- Top Bar -->
             <div class="top-bar glass-effect">
                 <h1>Daily Dashboard OS</h1>
@@ -27,17 +26,16 @@
             <div class="dashboard">
                 <input type="text" x-model="newGoal"
                     placeholder="Enter your goal" />
-                <button @click="goals.push(newGoal); newGoal = ''">Add
-                    Goal</button>
+                <button @click="addGoal()">Add Goal</button>
                 <ul>
                     <template x-for="(goal, index) in goals" :key="index">
                         <li>
                             <span x-text="goal"></span>
-                            <button
-                                @click="goals.splice(index, 1)">Remove</button>
+                            <button @click="removeGoal(index)">Remove</button>
                         </li>
                     </template>
                 </ul>
+                <button @click="saveToCloud()">Save Goals to Cloud</button>
             </div>
 
             <!-- Start Button -->
@@ -45,12 +43,26 @@
                 <button @click="startMenuOpen = !startMenuOpen">Start</button>
                 <div x-show="startMenuOpen" class="start-menu">
                     <ul>
+                        <li><button @click="saveToCloud()">Save
+                                Goals</button></li>
+                        <li><button @click="loadFromCloud()">Load
+                                Goals</button></li>
                         <li><button
-                                @click="goals.push(newGoal); newGoal = ''">Add
-                                Goal</button></li>
+                                @click="dataTabOpen = !dataTabOpen">Data</button></li>
                     </ul>
                 </div>
             </div>
+
+            <!-- Data Tab -->
+            <div x-show="dataTabOpen" class="data-tab">
+                <h2>Available Cloud Storage</h2>
+                <ul>
+                    <template x-for="storage in cloudStorage" :key="storage">
+                        <li x-text="storage"></li>
+                    </template>
+                </ul>
+            </div>
         </div>
+        <script src="./scripts/app.js"></script>
     </body>
 </html>
