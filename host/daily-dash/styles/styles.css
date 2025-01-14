@@ -11,6 +11,11 @@
     }
 }
 
+* {
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+
 /* Glass effect for the top bar */
 .top-bar {
     background: linear-gradient(145deg, rgba(255, 182, 193, 0.9), rgba(255, 105, 180, 0.3));
@@ -50,7 +55,6 @@
     overflow-y: auto;
     background: rgba(0, 0, 0, 0.7);
     border-radius: 12px;
-    color: #fff;
 }
 
 /* Bottom bar */
@@ -266,4 +270,130 @@ body.stressed {
     background: rgba(0, 0, 0, 0.7);
     border-radius: 12px;
     color: #fff;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+
+    /* Disable animations */
+    .top-bar,
+    .main-container,
+    .bottom-bar,
+    button,
+    .start-button button,
+    .start-button .start-menu,
+    .data-tab,
+    input[type="text"],
+    .dashboard ul li button,
+    .thoughts-section {
+        animation: none;
+        transition: none;
+    }
+
+    /* Remove blur effects */
+    .top-bar,
+    .bottom-bar,
+    button,
+    .start-button .start-menu,
+    .data-tab,
+    input[type="text"] {
+        backdrop-filter: none;
+    }
+
+    /* Simplify backgrounds for faster loading */
+    .top-bar,
+    .main-container,
+    .bottom-bar,
+    .dashboard,
+    .start-button .start-menu,
+    .data-tab,
+    .thoughts-section {
+        background: #fff;
+        /* or any solid color */
+    }
+
+    /* Adjust button styles for simplicity */
+    button,
+    .dashboard ul li button {
+        background: #fff;
+        box-shadow: none;
+        border: .51px solid #000;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    /* Simplify input styles */
+    input[type="text"] {
+        background: #fff;
+        /* or any solid color */
+        box-shadow: none;
+    }
+
+    /* Change font color to black */
+    body,
+    .top-bar,
+    .main-container,
+    .bottom-bar,
+    .dashboard,
+    .start-button .start-menu,
+    .data-tab,
+    .thoughts-section,
+    button,
+    input[type="text"] {
+        color: #000;
+        /* Set font color to black */
+    }
+}
+
+/* Desktop-specific styles */
+@media (min-width: 769px) {
+
+    /* Disable animations */
+    .top-bar,
+    .main-container,
+    .bottom-bar,
+    .start-button .start-menu,
+    .data-tab,
+    input[type="text"],
+    .thoughts-section {
+        animation: none;
+        transition: none;
+    }
+
+    /* Remove blur effects */
+    .top-bar,
+    .bottom-bar,
+    .start-button .start-menu,
+    .data-tab,
+    input[type="text"] {
+        backdrop-filter: none;
+    }
+
+    /* Simplify backgrounds for better visibility */
+    .top-bar,
+    .main-container,
+    .bottom-bar,
+    .dashboard,
+    .start-button .start-menu,
+    .data-tab,
+    .thoughts-section {
+        background: #fff;
+        /* or any solid color */
+    }
+
+    /* Change font color to black for better contrast */
+    body,
+    .top-bar,
+    .main-container,
+    .bottom-bar,
+    .dashboard,
+    .start-button .start-menu,
+    .data-tab,
+    .thoughts-section,
+    input[type="text"],
+    .thoughts-section th,
+    .thoughts-section td {
+        color: #000;
+        /* Set font color to black */
+    }
 }
