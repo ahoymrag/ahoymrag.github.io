@@ -1,0 +1,159 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f5e6e8, #fbcac9);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    transition: background 0.3s ease-in-out;
+}
+
+.dashboard {
+    background: rgba(255, 255, 255, 0.85);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    backdrop-filter: blur(12px);
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #ff6b6b;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input {
+    width: calc(100% - 24px);
+    padding: 14px;
+    margin-bottom: 14px;
+    font-size: 1.2em;
+    border: 1px solid #f5a6a6;
+    border-radius: 10px;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #ff6b6b;
+    outline: none;
+}
+
+button {
+    padding: 14px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 10px;
+    background: #ff6b6b;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #e55b5b;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #f5a6a6;
+    transition: background 0.3s ease;
+}
+
+li:hover {
+    background: rgba(255, 107, 107, 0.1);
+}
+
+li span {
+    flex-grow: 1;
+}
+
+/* New Calendar Section Styles */
+.calendar {
+    margin-top: 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* New Notes Section Styles */
+.notes {
+    margin-top: 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.notes textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #f5a6a6;
+    font-size: 1em;
+    resize: none;
+    transition: border-color 0.3s ease;
+}
+
+.notes textarea:focus {
+    border-color: #ff6b6b;
+    outline: none;
+}
+
+/* Robot Interface Section Styles */
+.robot-interface {
+    margin-top: 40px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    color: #333;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.crt-screen {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.terminal {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.terminal .output {
+    margin-bottom: 10px;
+}
+
+.terminal input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.2);
+    color: #333;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.terminal input:focus {
+    outline: none;
+    border-color: rgba(255, 255, 255, 0.8);
+}

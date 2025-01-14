@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Daily Dashboard</title>
+        <script
+            src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+            defer></script>
+        <link rel="stylesheet" href="./styles/styles.css">
+    </head>
+    <body>
+        <div class="dashboard" x-data="dashboardApp()">
+            <h1>Daily Dashboard</h1>
+            <div>
+                <input type="text" x-model="newGoal"
+                    placeholder="Enter your goal" />
+                <button @click="addGoal()">Add Goal</button>
+            </div>
+            <ul>
+                <template x-for="(goal, index) in goals" :key="index">
+                    <li>
+                        <span x-text="goal"></span>
+                        <button @click="removeGoal(index)">Remove</button>
+                    </li>
+                </template>
+            </ul>
+            <button @click="saveToCloud()">Save to Cloud</button>
+            <button @click="loadFromCloud()">Load from Cloud</button>
+
+            <!-- New Calendar Section -->
+            <div class="calendar">
+                <!-- Calendar component goes here -->
+            </div>
+
+            <!-- New Notes Section -->
+            <div class="notes">
+                <textarea placeholder="Write your notes here..."></textarea>
+            </div>
+        </div>
+
+        <!-- Robot Interface Section -->
+        <div class="robot-interface">
+            <div class="crt-screen">
+                <div class="terminal">
+                    <div class="output">
+                        <!-- Robot responses will be displayed here -->
+                    </div>
+                    <input type="text" placeholder="Type a command..." />
+                </div>
+            </div>
+        </div>
+
+        <script src="./scripts/app.js"></script>
+
+    </body>
+</html>
