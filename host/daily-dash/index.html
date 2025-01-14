@@ -43,12 +43,40 @@
                 <button @click="startMenuOpen = !startMenuOpen">Start</button>
                 <div x-show="startMenuOpen" class="start-menu">
                     <ul>
-                        <li><button @click="saveToCloud()">Save
-                                Goals</button></li>
-                        <li><button @click="loadFromCloud()">Load
-                                Goals</button></li>
-                        <li><button
-                                @click="dataTabOpen = !dataTabOpen">Data</button></li>
+                        <li>
+                            <button @click="saveToCloud()">Save Goals</button>
+                        </li>
+                        <li>
+                            <button @click="loadFromCloud()">Load Goals</button>
+                        </li>
+                        <li>
+                            <button
+                                @click="dataTabOpen = !dataTabOpen">Data</button>
+                        </li>
+                        <li>
+                            <button
+                                @click="programsOpen = !programsOpen">Programs</button>
+                            <ul x-show="programsOpen" class="submenu">
+                                <template x-for="program in programs"
+                                    :key="program.name">
+                                    <li><button @click="program.action">{{
+                                            program.name }}</button></li>
+                                </template>
+                                <li>
+                                    <button
+                                        @click="utilitiesOpen = !utilitiesOpen">Utilities</button>
+                                    <ul x-show="utilitiesOpen" class="submenu">
+                                        <template x-for="utility in utilities"
+                                            :key="utility.name">
+                                            <li><button
+                                                    @click="utility.action">{{
+                                                    utility.name
+                                                    }}</button></li>
+                                        </template>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
             </div>
