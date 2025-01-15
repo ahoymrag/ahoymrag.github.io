@@ -38,6 +38,7 @@ function dashboardApp() {
         currentResearchIndex: 0,
         cryptoTickers: ['BTC', 'ETH'],
         cryptoPrices: {},
+        moodMenuOpen: false,
 
         addGoal() {
             if (this.newGoal.trim()) {
@@ -371,6 +372,35 @@ function dashboardApp() {
             document.documentElement.style.setProperty('--button-background-color', this.moodColor);
             document.documentElement.style.setProperty('--button-border-color', this.moodColor);
             // You can add more properties if needed
+        },
+
+        setMood(mood) {
+            const moodColors = {
+                happy: {
+                    primary: '#FFD700', // Gold
+                    secondary: '#FFEC8B', // Light Goldenrod
+                    text: '#000000', // Black
+                },
+                calm: {
+                    primary: '#87CEEB', // Sky Blue
+                    secondary: '#B0E0E6', // Powder Blue
+                    text: '#000000', // Black
+                },
+                energetic: {
+                    primary: '#FF4500', // Orange Red
+                    secondary: '#FF6347', // Tomato
+                    text: '#FFFFFF', // White
+                },
+                // Add more moods and their colors
+            };
+
+            const selectedColors = moodColors[mood];
+            if (selectedColors) {
+                document.documentElement.style.setProperty('--primary-color', selectedColors.primary);
+                document.documentElement.style.setProperty('--secondary-color', selectedColors.secondary);
+                document.documentElement.style.setProperty('--text-color', selectedColors.text);
+                // Update other properties as needed
+            }
         },
     };
 }

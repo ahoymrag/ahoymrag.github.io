@@ -13,6 +13,22 @@
         <div
             x-data="dashboardApp()"
             x-init="loadFromCloud(); setInterval(() => { currentTime = new Date().toLocaleTimeString(); currentDate = new Date().toLocaleDateString(); }, 1000)">
+            <!-- Mood Selection Button -->
+            <div class="mood-selection">
+                <button @click="moodMenuOpen = !moodMenuOpen">Select
+                    Mood</button>
+                <div x-show="moodMenuOpen" class="mood-menu">
+                    <ul>
+                        <li><button
+                                @click="setMood('happy')">Happy</button></li>
+                        <li><button @click="setMood('calm')">Calm</button></li>
+                        <li><button
+                                @click="setMood('energetic')">Energetic</button></li>
+                        <!-- Add more moods as needed -->
+                    </ul>
+                </div>
+            </div>
+
             <!-- Mood Wheel -->
             <div class="mood-wheel">
                 <label for="moodColor">Select Mood Color:</label>
