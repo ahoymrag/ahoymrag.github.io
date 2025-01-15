@@ -13,6 +13,13 @@
         <div
             x-data="dashboardApp()"
             x-init="loadFromCloud(); setInterval(() => { currentTime = new Date().toLocaleTimeString(); currentDate = new Date().toLocaleDateString(); }, 1000)">
+            <!-- Mood Wheel -->
+            <div class="mood-wheel">
+                <label for="moodColor">Select Mood Color:</label>
+                <input type="color" id="moodColor" x-model="moodColor"
+                    @input="updateMoodColor">
+            </div>
+
             <!-- Top Bar -->
             <div class="top-bar glass-effect">
                 <h1>Daily Dashboard OS</h1>
@@ -28,6 +35,7 @@
                 <div class="view-of-the-day">
                     <h2>Daily Snapshot</h2>
                     <p>
+                        Day: <span x-text="currentDay"></span> |
                         F: <span x-text="feelings"></span> |
                         T: <span x-text="tasksToAccomplish"></span> |
                         PF: <span x-text="projectFocus"></span> |
@@ -35,6 +43,40 @@
                         RF: <span x-text="relationshipsFocus"></span>
                     </p>
                     <button @click="saveDailySnapshot()">Save Snapshot</button>
+                </div>
+
+                <!-- Research Section -->
+                <div class="research-section">
+                    <h2>Research & URLs</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Timestamp</th>
+                                <th>Entry</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <template x-for="(entry, index) in researchEntries"
+                                :key="index">
+                                <tr>
+                                    <td x-text="entry.timestamp"></td>
+                                    <td x-text="entry.text"></td>
+                                </tr>
+                            </template>
+                        </tbody>
+                    </table>
+                    <input type="range" min="0"
+                        :max="researchEntries.length - 1"
+                        x-model="currentResearchIndex"
+                        @input="updateCurrentResearch">
+                    <textarea x-model="newResearchEntry"
+                        placeholder="Enter research or URL here..."></textarea>
+                    <button @click="addResearchEntry()">Add Entry</button>
+                    <button @click="saveResearchToCloud()">Save Research to
+                        Cloud</button>
+                    <br><br>
+                    <button @click="loadResearchFromCloud()">Load Research from
+                        Cloud</button>
                 </div>
 
                 <!-- Thoughts Section -->
@@ -167,13 +209,6 @@
                 <p x-text="focusLegend"></p>
             </div>
 
-            <!-- Mood Wheel -->
-            <div class="mood-wheel">
-                <label for="moodColor">Select Mood Color:</label>
-                <input type="color" id="moodColor" x-model="moodColor"
-                    @input="updateMoodColor">
-            </div>
-
             <!-- Start Button -->
             <div class="bottom-bar">
                 <button @click="startMenuOpen = !startMenuOpen">Start</button>
@@ -210,6 +245,27 @@
                                                     }}</button></li>
                                         </template>
                                     </ul>
+                                </li>
+                                <li>
+                                    <button
+                                        @click="homeAutomationOpen = !homeAutomationOpen">Home
+                                        Automation</button>
+                                    <ul x-show="homeAutomationOpen"
+                                        class="submenu">
+                                        <template
+                                            x-for="automation in homeAutomations"
+                                            :key="automation.name">
+                                            <li><button
+                                                    @click="automation.action">{{
+                                                    automation.name
+                                                    }}</button></li>
+                                        </template>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <button
+                                        @click="openProgram('Pecan Research')">Pecan
+                                        Research</button>
                                 </li>
                             </ul>
                         </li>

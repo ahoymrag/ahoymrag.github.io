@@ -1,3 +1,17 @@
+:root {
+    --primary-color: rgba(255, 182, 193, 0.9);
+    --secondary-color: rgba(255, 105, 180, 0.3);
+    --text-color: #000;
+    --background-color: rgba(0, 0, 0, 0.7);
+    --button-hover-color: rgba(255, 255, 255, 0.5);
+    --input-background: rgba(255, 255, 255, 0.2);
+    --input-focus-background: rgba(255, 255, 255, 0.3);
+    --thoughts-background: rgba(255, 105, 180, 0.85);
+    --legend-background: rgba(255, 255, 255, 0.2);
+    --table-header-background: rgba(255, 105, 180, 0.5);
+    --mood-color: #ffffff;
+}
+
 /* Keyframes for saturation animation */
 @keyframes saturationAnimation {
 
@@ -18,7 +32,7 @@
 
 /* Glass effect for the top bar */
 .top-bar {
-    background: linear-gradient(145deg, rgba(255, 182, 193, 0.9), rgba(255, 105, 180, 0.3));
+    background: linear-gradient(145deg, var(--primary-color), var(--secondary-color));
     backdrop-filter: blur(20px);
     padding: 15px;
     display: flex;
@@ -28,6 +42,7 @@
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     animation: saturationAnimation 5s infinite alternate;
     font-family: 'Courier New', Courier, monospace;
+    color: var(--text-color);
 }
 
 /* Header and time styling */
@@ -53,7 +68,7 @@
     flex-grow: 1;
     padding: 25px;
     overflow-y: auto;
-    background: rgba(0, 0, 0, 0.7);
+    background: var(--background-color);
     border-radius: 12px;
 }
 
@@ -74,8 +89,8 @@
 
 /* Button styling */
 button {
-    background: rgba(255, 255, 255, 0.3);
-    border: none;
+    background: var(--button-background-color, rgba(255, 255, 255, 0.3));
+    border: 2px solid var(--button-border-color, transparent);
     padding: 12px 24px;
     border-radius: 12px;
     cursor: pointer;
@@ -86,12 +101,12 @@ button {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
     font-family: 'Courier New', Courier, monospace;
-    color: #000;
+    color: var(--text-color);
     backdrop-filter: blur(10px);
 }
 
 button:hover {
-    background: rgba(255, 255, 255, 0.5);
+    background: var(--button-hover-color, rgba(255, 255, 255, 0.5));
     transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
@@ -153,7 +168,7 @@ button:hover {
 
 /* Input styling for glass effect */
 input[type="text"] {
-    background: rgba(255, 255, 255, 0.2);
+    background: var(--input-background);
     /* Semi-transparent background */
     backdrop-filter: blur(10px);
     /* Blur effect for glass look */
@@ -170,7 +185,7 @@ input[type="text"] {
 }
 
 input[type="text"]:focus {
-    background: rgba(255, 255, 255, 0.3);
+    background: var(--input-focus-background);
     /* Slightly darker on focus */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
     /* Enhanced shadow on focus */
@@ -181,26 +196,18 @@ input[type="text"]:focus {
 /* Remove button styling */
 .dashboard ul li button {
     background: rgba(255, 255, 255, 0.1);
-    /* More transparent background */
-    color: #fff;
-    /* White text for contrast */
+    color: #000;
     border: none;
     padding: 5px 10px;
-    /* Smaller padding */
     border-radius: 4px;
-    /* Smaller border radius */
     font-size: 0.8em;
-    /* Smaller font size */
     cursor: pointer;
     transition: background 0.3s, transform 0.3s;
-    /* Smooth transition effects */
 }
 
 .dashboard ul li button:hover {
     background: rgba(255, 255, 255, 0.2);
-    /* Slightly darker on hover */
     transform: scale(1.05);
-    /* Slightly larger on hover */
 }
 
 /* Mood-based styles */
@@ -227,7 +234,7 @@ body.stressed {
 .legend {
     margin-top: 20px;
     padding: 10px;
-    background: rgba(255, 255, 255, 0.2);
+    background: var(--legend-background);
     border-radius: 8px;
     color: #fff;
 }
@@ -248,7 +255,7 @@ body.stressed {
 }
 
 .thoughts-section th {
-    background-color: rgba(255, 105, 180, 0.5);
+    background-color: var(--table-header-background);
 }
 
 .thoughts-section input[type="range"] {
@@ -267,7 +274,7 @@ body.stressed {
 .thoughts-section {
     margin-bottom: 20px;
     padding: 15px;
-    background: rgba(0, 0, 0, 0.7);
+    background: var(--thoughts-background);
     border-radius: 12px;
     color: #fff;
 }

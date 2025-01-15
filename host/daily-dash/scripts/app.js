@@ -2,12 +2,14 @@ function dashboardApp() {
     return {
         currentTime: '',
         currentDate: '',
+        currentDay: new Date().toLocaleDateString('en-US', { weekday: 'long' }),
         newGoal: '',
         goals: [],
         startMenuOpen: false,
         dataTabOpen: false,
         programsOpen: false,
         utilitiesOpen: false,
+        homeAutomationOpen: false,
         cloudStorage: ['Google Drive', 'Dropbox', 'OneDrive'],
         programs: [
             { name: 'Program 1', action: () => this.openProgram('Program 1') },
@@ -17,12 +19,25 @@ function dashboardApp() {
             { name: 'Utility 1', action: () => this.openUtility('Utility 1') },
             { name: 'Utility 2', action: () => this.openUtility('Utility 2') }
         ],
-        thoughts: '',
-        feelings: 5,
-        projectFocus: 1,
-        newThought: '',
+        homeAutomations: [
+            { name: 'Automation 1', action: () => this.openAutomation('Automation 1') },
+            { name: 'Automation 2', action: () => this.openAutomation('Automation 2') }
+        ],
         thoughts: [],
+        feelings: 5,
+        tasksToAccomplish: 5,
+        projectFocus: 1,
+        dreamsVisionFocus: 1,
+        relationshipsFocus: 1,
+        focusLegend: '',
+        moodColor: '#ffffff',
+        newThought: '',
         currentThoughtIndex: 0,
+        researchEntries: [],
+        newResearchEntry: '',
+        currentResearchIndex: 0,
+        cryptoTickers: ['BTC', 'ETH'],
+        cryptoPrices: {},
 
         addGoal() {
             if (this.newGoal.trim()) {
@@ -89,6 +104,9 @@ function dashboardApp() {
 
         openProgram(programName) {
             console.log('Opening program:', programName);
+            if (programName === 'Pecan Research') {
+                this.loadCryptoPrices();
+            }
             // Implement program opening logic here
         },
 
@@ -255,6 +273,104 @@ function dashboardApp() {
             if (thought) {
                 console.log('Current thought:', thought);
             }
-        }
+        },
+
+        addResearchEntry() {
+            if (this.newResearchEntry.trim()) {
+                this.researchEntries.push({
+                    text: this.newResearchEntry.trim(),
+                    timestamp: new Date().toLocaleString()
+                });
+                this.newResearchEntry = '';
+                console.log('Research entry added:', this.researchEntries);
+                this.saveResearchToCloud();
+            }
+        },
+
+        async saveResearchToCloud() {
+            try {
+                console.log('Saving research entries to cloud:', this.researchEntries);
+                const response = await fetch(
+                    'https://storage.googleapis.com/ag-dash/data/research.json',
+                    {
+                        method: 'PUT',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({ researchEntries: this.researchEntries }),
+                    }
+                );
+                if (!response.ok) {
+                    console.error('Failed to save research to cloud:', response.status, response.statusText);
+                    alert('Failed to save research to cloud.');
+                } else {
+                    console.log('Research entries successfully saved to cloud.');
+                    alert('Research saved to cloud successfully!');
+                }
+            } catch (error) {
+                console.error('Error saving research to cloud:', error);
+                alert('Error saving research to cloud: ' + error.message);
+            }
+        },
+
+        async loadResearchFromCloud() {
+            try {
+                console.log('Loading research entries from cloud...');
+                const response = await fetch(
+                    'https://storage.googleapis.com/ag-dash/data/research.json'
+                );
+                if (response.ok) {
+                    const data = await response.json();
+                    console.log('Research entries loaded from cloud:', data);
+                    this.researchEntries = data.researchEntries || [];
+                    alert('Research entries loaded from cloud successfully!');
+                } else {
+                    console.error('Failed to load research from cloud:', response.status, response.statusText);
+                    alert('Failed to load research from cloud.');
+                }
+            } catch (error) {
+                console.error('Error loading research from cloud:', error);
+                alert('Error loading research from cloud: ' + error.message);
+            }
+        },
+
+        updateCurrentResearch() {
+            const research = this.researchEntries[this.currentResearchIndex];
+            if (research) {
+                console.log('Current research entry:', research);
+            }
+        },
+
+        async loadCryptoPrices() {
+            try {
+                console.log('Loading crypto prices...');
+                // Example API call to fetch crypto prices
+                const response = await fetch('https://api.example.com/crypto-prices', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ tickers: this.cryptoTickers }),
+                });
+                if (response.ok) {
+                    const data = await response.json();
+                    this.cryptoPrices = data.prices;
+                    console.log('Crypto prices loaded:', this.cryptoPrices);
+                } else {
+                    console.error('Failed to load crypto prices:', response.status, response.statusText);
+                    alert('Failed to load crypto prices.');
+                }
+            } catch (error) {
+                console.error('Error loading crypto prices:', error);
+                alert('Error loading crypto prices: ' + error.message);
+            }
+        },
+
+        updateMoodColor() {
+            document.documentElement.style.setProperty('--mood-color', this.moodColor);
+            document.documentElement.style.setProperty('--button-background-color', this.moodColor);
+            document.documentElement.style.setProperty('--button-border-color', this.moodColor);
+            // You can add more properties if needed
+        },
     };
 }
