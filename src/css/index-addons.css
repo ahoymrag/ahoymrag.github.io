@@ -60,7 +60,6 @@
 
 .nav-ul li a .header-button:hover {
   background-color: rgba(255, 255, 255, 0.2);
-  /* Light glass effect */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   /* Soft shadow */
   backdrop-filter: blur(5px);

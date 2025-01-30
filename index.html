@@ -1,6 +1,7 @@
 <html>
     <head><!-- AS OF 2.21.24 -->
         <!-- UPDATED 12-21-24 -->
+        <!-- UPDATED 01-29-25-->
         <meta name="description"
             content="Portfolio website for Alex Gonzalez of Sleepy Hollow. Includes resume, CV, animation, VR experiments, and teacher work.">
         <meta name="keywords"
@@ -23,7 +24,34 @@
             href="./src/assets/AlexGonzalez-favicon.png" />
         <script defer
             src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const backgroundImages = [
+                    'https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExa3UzcHpuZm1kbXdlaG8xMTV4Y3J0cnU4MGI1YzVmZjZ5aHJyYWx0aSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3HW49pLbfiKsvsc40p/giphy.gif',
+                    'https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbms3MnNnc2hpcjFpdGRtMzE2ZTN5Z3d2dTdzNG80ZmVrNWd0dWh3dyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/5bDAc3il2DySZAFGpQ/giphy.gif',
+                    'https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExc2NhZTBwcm5nazE5MzZ1c245eHlqa2NyOW53eWU3cmplcTdlZ2NxYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/7FfMZCl2DSThYO1KGf/giphy.gif',
+                    'https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExemU4OXhoMXF5eHhtZTVwaTBkNnBuemYwcjQzaDVraXZiYXdtZGNzZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/aCCleAr6W1njtygxHC/giphy.gif',
+                    'https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExM2M2c2g0ZXQyOWttZXdwZHgxbGtjbHExZWg2aHNreW51MGlleml0YyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/irCR68lB8tZDy8GKb0/giphy.gif',
+                    'https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExc3JjODUzYmw1ZHV3YnlrOWI1djlqM3UzajgwaXdseXRhZTAwMWY1aiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xKBdOSxnnd03FaPgxn/giphy.gif',
+                    'https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNGxlOTV3bzhzenJiemZkNDRhMG14djFmOGJqdWFtNGM1dDNsY3poaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3ohhwuJS2LOyBhPt96/giphy.gif',
+                    'https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcnIyMWxvYnQyZjZ2Y3NqMnd2ZXZlM2JpMXdhazdmcmJxd2IxMjltMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/4bhs1boql4XVJgmm4H/giphy.gif',
+                    'https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExbDdlYjVjZ2o2ZzFuYjhycmNvYmNzbjJ2YmU4bGozM2J1MzJzbGJ2aiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/39lJ5rGSMmXbINhurn/giphy.gif',
+                    'https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExY2Y1MjlwNDAyaW93YTlnOWo5anVlcjd3cXk4MDkwNmRmdTNobm83bCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/gIODGWDBuG5AWlUExJ/giphy.gif',
+                    'https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMWpkMjVqeHZ0cG1mYzAzOXdmYnZ4ZWt1eWw0MTM1MTBiYzhndzMweiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/iI4vhciiVh2b3j9sgo/giphy.gif',
+                    'https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExMTI0dHd1eDdnc2lrZTQ4OGlkamp6ejlrejR2aGYybGtqOXhuYTJwNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Kc2J1Ox5fGmt6m9R6w/giphy.gif',
+                    'https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdnJmYXc4YWd6bzZmeGN3M3B2eTZvbnJqc2hscTd4Y3E0YXB1eWJnMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/lpxs7DGIViMi31IvWr/giphy.gif'
 
+
+                ];
+
+                const randomIndex = Math.floor(Math.random() * backgroundImages.length);
+                const selectedImage = backgroundImages[randomIndex];
+                document.body.style.backgroundImage = `url(${selectedImage})`;
+                document.body.style.backgroundSize = 'cover';
+                document.body.style.backgroundRepeat = 'no-repeat';
+                document.body.style.backgroundPosition = 'center';
+            });
+        </script>
     </head>
 
     <body id="index-body" x-data="{ code: '', showMenu: false }">

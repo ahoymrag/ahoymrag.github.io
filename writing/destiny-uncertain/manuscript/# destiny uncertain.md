@@ -14,7 +14,7 @@ Right now - I emotionally want to just start blasting - asking anyone who would 
 
 I am not sure where to begin - I have never worked at a large company - the one i just did was the - i am 34 - just 2 months shy of being 35 - and for my age bracket - i feel like I ought to have way more - that everyone else - my friends from high school - my girlfriend - everyone else in my life - is capable of getting a good job - rather than doing what I am doing. I do not want to give up - and just work on amazon - or end up on the streets - but my mind goes there - it goes there so far and wide. 
 
-As I was writing this I ran into my old friend sean - who told me that he was going to leave New Haven - that he was going to go to Washington DC and join the secret service - albeit pending a background check - that he applied to something like 150 jobs and the only ones that heard back was this - but yet he remained optimistic - as do I. 
+As I was writing this I ran into my old friend Sean - who told me that he was going to leave New Haven - that he was going to go to Washington DC and join the secret service - albeit pending a background check - that he applied to something like 150 jobs and the only ones that heard back was this - but yet he remained optimistic - as do I. 
 
 Now I sit in my office ooutside of New Haven and am thankful to be here - thinking of opportunity - I have 15 minutes left until I pick up my lady. I think of all the things I could be doing - all of the jobs - I created a google spreadsheet with the tabs - todo, to contact, job links, job(s) stream, education and remote. Not sure how each one will fall into place - but I like the idea of having a place to go and catchall and take action and log everyday. 
 
