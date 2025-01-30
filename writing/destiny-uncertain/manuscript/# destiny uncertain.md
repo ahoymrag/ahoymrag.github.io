@@ -31,8 +31,23 @@ Apparently I can net profit 5-6k if I do $50 per student per class - but I would
 - Lunch at Bodega - 15
 - Drip Medium Coffee at gCafe 2 - $4 cash
 
- Total: $27.20
+Later that night
+## 
+- Beer at Old Heidenberg - $9 with tip
+- Beers at Rudies - ?
+
+ Total: $38.20
 
  //
 
 
+## 1.30.25
+
+Working at home today - just signed 
+
+## Daily saved: 
+
+## Daily Spend
+- Nick Onoforio Jr (Security Deposit) - $2850
+
+Total : $2850
