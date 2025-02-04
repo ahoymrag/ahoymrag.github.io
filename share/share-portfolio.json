@@ -45,10 +45,34 @@
   },
   {
     "id": 6,
-    "title": "Animated Intro - ApeWorx",
+    "title": "Animated Intro - ApeWorX Tutorial",
     "category": "Animation",
     "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/AG%20-%20Animated%20Intros%20-%20001.jpg",
     "mediaType": "video",
     "mediaUrl": "https://storage.googleapis.com/ag-photography/video-animation/%5BAG%5D%5BApeworX%5D%5BPromoshowcase%5D%5B001%5D.mp4"
+  },
+  {
+    "id": 7,
+    "title": "Animated Graphic - Silverback POAP",
+    "category": "Animation",
+    "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/AG%20-%20Animated%20Intros%20-%20002.jpg",
+    "mediaType": "video",
+    "mediaUrl": "https://storage.googleapis.com/ag-photography/video-animation/%5BPromo%5D%5Banimated%20gif%5D%5BPOAP%20OPTION%20ANIMATED%5D%5Bsilverback%5D%5Bapeworx%5D.mp4"
+  },
+  {
+    "id": 8,
+    "title": "Animated Pitchdeck - ApeWorX Hack-a-thon",
+    "category": "Animation",
+    "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/AG%20-%20Animated%20Pitch%20Deck%20-%20001.jpg",
+    "mediaType": "video",
+    "mediaUrl": "https://storage.googleapis.com/ag-photography/video-animation/%5BPromo%5D%5BEvent%5D%5BApeWorx%20Eth%20Denver%20Booth%20_%20A%5D%5Bapeworx%5D.mp4"
+  },
+  {
+    "id": 9,
+    "title": "Animated Graphic - cHaOSneT Logo Reveal",
+    "category": "Animation",
+    "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/AG%20-%20ANIMATED%20GRAPHIC%20-%20CHAOSNET%20REVEAL%20.jpg",
+    "mediaType": "video",
+    "mediaUrl": "https://storage.googleapis.com/ag-photography/video-animation/%5BPromo%5D%5Banimation%5D%5BchaosReveal_1%5D%5Bapeworx%5D.mp4"
   }
 ]
