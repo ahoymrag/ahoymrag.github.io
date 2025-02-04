@@ -93,10 +93,35 @@
   },
   {
     "id": 12,
-    "title": "Animated Graphic - Silverback Logo Teaser Trailer",
+    "title": "Animated Graphic - Silverback Logo Reveal Trailer",
     "category": "Trailers",
     "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/AG%20-%20Trailer%20-%20Teaser%20-%20Silverback%20Logo.jpg",
     "mediaType": "video",
     "mediaUrl": "https://storage.googleapis.com/ag-photography/video-trailers/%5BTrailer%5D%5BProduct%5D%5BSilverback%5D%5BIntroducing%20Silverback%20Logo%20(Teaser%20Trailer)%202023%5D.mp4"
+  },
+  {
+    "id": 13,
+    "title": "Silverback Product Trailer 1",
+    "category": "Trailers",
+    "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/AG%20-%20Trailer%20-%20-%20Silverback%20Product%20Trailer%20001.jpg",
+    "mediaType": "video",
+    "mediaUrl": "https://storage.googleapis.com/ag-photography/video-trailers/%5BTrailer%5D%5BProduct%5D%5BIntroducing%20Silverback%20_%20A%20Platform%20for%20Web3%20Bots%20-%20Full%20Trailer%20-%202023%5D.mp4"
+  },
+  {
+    "id": 14,
+    "title": "Silverback Product Final Musical Trailer",
+    "category": "Trailers",
+    "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/AG%20-%20Trailers%20-%20Silverback%20Final%20Trailer.jpg",
+    "mediaType": "video",
+    "mediaUrl": "https://storage.googleapis.com/ag-photography/video-trailers/%5BTrailer%5D%5BFinal%20Silverback%20Product%20Trailer%202%5D.mp4"
+  },
+
+  {
+    "id": 15,
+    "title": "Film Pre-Production - Moodboard - Branford Streets",
+    "category": "Video & Filmmaking",
+    "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/AG%20-%20PreProduction%20-%20Film%20Mood%20-%20001.jpg",
+    "mediaType": "video",
+    "mediaUrl": "https://storage.googleapis.com/ag-photography/video-film/%5BVIBE%20EDIT%5D%5BBRANFORD%20STREETS%5D%5B12-21-24%5D%5B1080p%5D-1.mov"
   }
 ]
