@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" x-data="portfolioPage()">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <title>My Shared Portfolio</title>
+        <!-- Minimal Inline Styling for Demo Purposes -->
+        <style>
+    body {
+      font-family: sans-serif;
+      margin: 0; padding: 0;
+      background: #f9f9f9; color: #333;
+    }
+    header {
+      background: #fff;
+      padding: 1rem;
+      box-shadow: 0 0 6px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    h1 { margin: 0; }
+    .filter-buttons {
+      display: flex; flex-wrap: wrap; justify-content: center;
+      gap: 0.5rem; margin: 1rem 0;
+    }
+    .filter-buttons button {
+      padding: 0.5rem 1rem;
+      border: 1px solid #ccc;
+      background: #fff;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    .filter-buttons .active {
+      background: #333;
+      color: #fff;
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 1rem; padding: 1rem;
+      max-width: 1200px; margin: 0 auto;
+    }
+    .gallery-item {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      padding: 0.5rem;
+      text-align: center;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .gallery-item:hover {
+      transform: scale(1.02);
+    }
+    .gallery-item img {
+      max-width: 100%;
+      border-radius: 4px;
+    }
+    .gallery-item h3 {
+      margin: 0.5rem 0 0; 
+      font-size: 1.1rem;
+    }
+    /* Modal Styling */
+    .modal {
+      position: fixed; top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.6);
+      display: flex; justify-content: center; align-items: center;
+      padding: 1rem;
+      z-index: 999;
+    }
+    .modal-content {
+      background: #fff;
+      max-width: 800px;
+      width: 100%;
+      border-radius: 6px;
+      position: relative;
+      padding: 1rem;
+    }
+    .close-btn {
+      position: absolute; top: 1rem; right: 1rem;
+      background: none; border: none;
+      font-size: 1.2rem; cursor: pointer;
+    }
+    video, img.modal-media {
+      max-width: 100%; margin-bottom: 1rem;
+      display: block; margin-left: auto; margin-right: auto;
+      border-radius: 4px;
+    }
+    .description {
+      margin-top: 0.5rem; line-height: 1.4;
+    }
+  </style>
+        <!-- Alpine.js CDN -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+            defer></script>
+    </head>
+    <body>
+
+        <header>
+            <h1>My Shared Portfolio</h1>
+            <p>Quick overview of my graphic/web/video projects</p>
+        </header>
+
+        <!-- Filter Buttons -->
+        <div class="filter-buttons">
+            <button
+                :class="{'active': filter === 'All'}"
+                @click="filter = 'All'">All</button>
+            <template x-for="cat in categories" :key="cat">
+                <button
+                    :class="{'active': filter === cat}"
+                    @click="filter = cat"
+                    x-text="cat">
+                </button>
+            </template>
+        </div>
+
+        <!-- Gallery Grid -->
+        <section class="gallery-grid">
+            <template x-for="item in filteredItems" :key="item.id">
+                <div class="gallery-item" @click="openModal(item)">
+                    <img :src="item.thumbnail" :alt="item.title">
+                    <h3 x-text="item.title"></h3>
+                </div>
+            </template>
+        </section>
+
+        <!-- Modal / Lightbox -->
+        <div class="modal" x-show="showModal" @click.self="closeModal()"
+            x-transition>
+            <div class="modal-content">
+                <button class="close-btn" @click="closeModal()">✕</button>
+
+                <!-- If media is a video -->
+                <template
+                    x-if="selectedItem && selectedItem.mediaType === 'video'">
+                    <video controls x-bind:src="selectedItem.mediaUrl"></video>
+                </template>
+
+                <!-- If media is an image -->
+                <template
+                    x-if="selectedItem && selectedItem.mediaType === 'image'">
+                    <img class="modal-media" x-bind:src="selectedItem.mediaUrl"
+                        alt />
+                </template>
+
+                <h2 x-text="selectedItem ? selectedItem.title : ''"></h2>
+                <p class="description"
+                    x-text="selectedItem ? selectedItem.description : ''"></p>
+            </div>
+        </div>
+
+        <!-- Alpine.js Logic -->
+        <script>
+    function portfolioPage() {
+      return {
+        portfolioItems: [],
+        filter: 'All',
+        selectedItem: null,
+        showModal: false,
+
+        async init() {
+          try {
+            // Update the path to point to the correct JSON file
+            const response = await fetch('./share-portfolio.json');
+            this.portfolioItems = await response.json();
+          } catch (error) {
+            console.error('Error fetching portfolio data:', error);
+          }
+        },
+
+        get categories() {
+          const cats = this.portfolioItems.map(item => item.category);
+          return [...new Set(cats)];
+        },
+
+        get filteredItems() {
+          if (this.filter === 'All') return this.portfolioItems;
+          return this.portfolioItems.filter(item => item.category === this.filter);
+        },
+
+        openModal(item) {
+          this.selectedItem = item;
+          this.showModal = true;
+        },
+
+        closeModal() {
+          this.showModal = false;
+          this.selectedItem = null;
+        }
+      }
+    }
+  </script>
+
+    </body>
+</html>

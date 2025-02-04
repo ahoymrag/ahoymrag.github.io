@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "title": "Web3 Tutorial Series",
+    "category": "Teaching & Workshops",
+    "thumbnail": "https://YOUR_CLOUD_BUCKET/thumbnails/tutorial1.jpg",
+    "mediaType": "video",
+    "mediaUrl": "https://YOUR_CLOUD_BUCKET/videos/tutorial1.mp4",
+    "description": "A set of tutorials on Web3 for ApeWorx..."
+  },
+  {
+    "id": 2,
+    "title": "Podcast Thumbnail Design",
+    "category": "Graphic & Print",
+    "thumbnail": "https://YOUR_CLOUD_BUCKET/images/podcast_poster.jpg",
+    "mediaType": "image",
+    "mediaUrl": "https://YOUR_CLOUD_BUCKET/images/podcast_poster_full.jpg",
+    "description": "Promotional poster design for CPC podcast episodes."
+  },
+  {
+    "id": 3,
+    "title": "Ahoy Indie Promo Teaser",
+    "category": "Video & Filmmaking",
+    "thumbnail": "https://YOUR_CLOUD_BUCKET/images/ahoy_teaser_thumb.jpg",
+    "mediaType": "video",
+    "mediaUrl": "https://YOUR_CLOUD_BUCKET/videos/ahoy_teaser.mp4",
+    "description": "A short promotional video for Ahoy Indie Media."
+  }
+]

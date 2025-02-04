@@ -97,6 +97,18 @@
           <button @click="setMood('surprised')">Surprised</button>
         </div>
 
+        <!-- Chat Section -->
+        <div class="chat-container">
+          <textarea x-model="chatMessage"
+            placeholder="Type your message here..."></textarea>
+          <button @click="sendMessage()">Send</button>
+          <div class="chat-history">
+            <template x-for="(message, index) in chatHistory" :key="index">
+              <p x-text="message"></p>
+            </template>
+          </div>
+        </div>
+
         <!-- Speech Input Section -->
         <div class="speech-container">
           <input type="text" x-model="speechTranscript"
