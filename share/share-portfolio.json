@@ -124,14 +124,7 @@
     "mediaType": "video",
     "mediaUrl": "https://storage.googleapis.com/ag-photography/video-film/%5BVIBE%20EDIT%5D%5BBRANFORD%20STREETS%5D%5B12-21-24%5D%5B1080p%5D-1.mov"
   },
-  {
-    "id": 16,
-    "title": "Film Pre-Production - Moodboard - Branford Streets",
-    "category": "Video & Filmmaking",
-    "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/AG%20-%20PreProduction%20-%20Film%20Mood%20-%20001.jpg",
-    "mediaType": "video",
-    "mediaUrl": "https://storage.googleapis.com/ag-photography/video-film/%5BVIBE%20EDIT%5D%5BBRANFORD%20STREETS%5D%5B12-21-24%5D%5B1080p%5D-1.mov"
-  },
+
   {
     "id": 17,
     "title": "Animated Graphic - ApeWorX Logo",
@@ -147,5 +140,21 @@
     "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/AG%20-%20Animated%20Graphic%20-%20Ape%20Logo%20Reveal%20-%203.jpg",
     "mediaType": "video",
     "mediaUrl": "https://storage.googleapis.com/ag-photography/video-animation/%5BPromo%5D%5BAnimatedGraphic%5D%5BApeWorX-Logo-002%5D.mov"
+  },
+  {
+    "id": 19,
+    "title": "Animated Trailer - Ape Academy",
+    "category": "Animation",
+    "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/AG%20-%20Animated%20Trailer%20-%20Ape%20Academy.jpg",
+    "mediaType": "video",
+    "mediaUrl": "https://storage.googleapis.com/ag-photography/video-trailers/%5BTrailer%5D%5BProduct%5D%5BApeAcademy%5D.mp4"
+  },
+  {
+    "id": 20,
+    "title": "Logo Design - Academy Billboards",
+    "category": "Graphic & Print",
+    "thumbnail": "https://storage.googleapis.com/ag-photography/graphic-logo-design/AG-%20LOGO%20DESIGN%20-%20ACADEMY.png",
+    "mediaType": "image",
+    "mediaUrl": "https://storage.googleapis.com/ag-photography/graphic-logo-design/AG-%20LOGO%20DESIGN%20-%20ACADEMY.png"
   }
 ]
