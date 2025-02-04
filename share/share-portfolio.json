@@ -123,5 +123,29 @@
     "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/AG%20-%20PreProduction%20-%20Film%20Mood%20-%20001.jpg",
     "mediaType": "video",
     "mediaUrl": "https://storage.googleapis.com/ag-photography/video-film/%5BVIBE%20EDIT%5D%5BBRANFORD%20STREETS%5D%5B12-21-24%5D%5B1080p%5D-1.mov"
+  },
+  {
+    "id": 16,
+    "title": "Film Pre-Production - Moodboard - Branford Streets",
+    "category": "Video & Filmmaking",
+    "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/AG%20-%20PreProduction%20-%20Film%20Mood%20-%20001.jpg",
+    "mediaType": "video",
+    "mediaUrl": "https://storage.googleapis.com/ag-photography/video-film/%5BVIBE%20EDIT%5D%5BBRANFORD%20STREETS%5D%5B12-21-24%5D%5B1080p%5D-1.mov"
+  },
+  {
+    "id": 17,
+    "title": "Animated Graphic - ApeWorX Logo",
+    "category": "Animation",
+    "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/AG%20-%20Animated%20Graphic%20-%20Ape%20Logo%20Reveal%20-%202.jpg",
+    "mediaType": "video",
+    "mediaUrl": "https://storage.googleapis.com/ag-photography/video-animation/%5BPromo%5D%5BAnimatedGraphic%5D%5BApeWorX-Logo%5D.mov"
+  },
+  {
+    "id": 18,
+    "title": "Animated Graphic - ApeWorX Logo 2",
+    "category": "Animation",
+    "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/AG%20-%20Animated%20Graphic%20-%20Ape%20Logo%20Reveal%20-%203.jpg",
+    "mediaType": "video",
+    "mediaUrl": "https://storage.googleapis.com/ag-photography/video-animation/%5BPromo%5D%5BAnimatedGraphic%5D%5BApeWorX-Logo-002%5D.mov"
   }
 ]
