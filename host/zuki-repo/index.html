@@ -15,27 +15,28 @@
     <!-- Navigation Bar -->
     <nav class="navbar">
       <ul>
-        <li @click="currentPage = 'home'"
+        <li data-page="home" @click="currentPage = 'home'"
           :class="{ active: currentPage === 'home' }">
           Home
         </li>
-        <li @click="currentPage = 'notes'"
+        <li data-page="notes" @click="currentPage = 'notes'"
           :class="{ active: currentPage === 'notes' }">
           Notes
         </li>
-        <li @click="currentPage = 'reminders'"
+        <li data-page="reminders" @click="currentPage = 'reminders'"
           :class="{ active: currentPage === 'reminders' }">
           Reminders
         </li>
-        <li @click="currentPage = 'music'"
+        <li data-page="music" @click="currentPage = 'music'"
           :class="{ active: currentPage === 'music' }">
           Music
         </li>
-        <li @click="currentPage = 'game'"
+        <li data-page="game" @click="currentPage = 'game'"
           :class="{ active: currentPage === 'game' }">
           Game
         </li>
         <li
+          data-page="settings"
           @click="currentPage = 'settings'"
           :class="{ active: currentPage === 'settings' }"
           class="settings-link">
@@ -71,7 +72,7 @@
         </button>
       </div>
       <!-- Home Section: Robot Face with Emotion Controls, Cursor Tracking, and Speech Input -->
-      <section x-show="currentPage === 'home'" class="page">
+      <section data-page="home" x-show="currentPage === 'home'" class="page">
         <div class="robot-face">
           <!-- The robot face is built using SVG so that its features can be updated mathematically -->
           <svg id="robotFace" viewBox="0 0 200 150"
@@ -107,13 +108,15 @@
 
         <h1>Welcome to Engine Zuki</h1>
         <p>Your friendly robot companion.</p>
+        <p>Sample data: This is the home page where you can interact with
+          Zuki.</p>
         <button class="connect-btn" @click="connectSerial()">Connect
           Arduino</button>
         <p x-text="serialStatus"></p>
       </section>
 
       <!-- Notes Section -->
-      <section x-show="currentPage === 'notes'" class="page">
+      <section data-page="notes" x-show="currentPage === 'notes'" class="page">
         <h1>Notes</h1>
         <form @submit.prevent="addNote">
           <input type="text" placeholder="Enter a note" x-model="newNote" />
@@ -124,10 +127,12 @@
             <li x-text="note"></li>
           </template>
         </ul>
+        <p>Sample data: Here you can add and view your notes.</p>
       </section>
 
       <!-- Reminders Section -->
-      <section x-show="currentPage === 'reminders'" class="page">
+      <section data-page="reminders" x-show="currentPage === 'reminders'"
+        class="page">
         <h1>Reminders</h1>
         <form @submit.prevent="addReminder">
           <input type="text" placeholder="Enter a reminder"
@@ -139,25 +144,29 @@
             <li x-text="reminder"></li>
           </template>
         </ul>
+        <p>Sample data: Manage your reminders here.</p>
       </section>
 
       <!-- Music Section -->
-      <section x-show="currentPage === 'music'" class="page">
+      <section data-page="music" x-show="currentPage === 'music'" class="page">
         <h1>Music</h1>
         <audio controls>
           <source src="assets/music/sample.mp3" type="audio/mpeg" />
           Your browser does not support the audio element.
         </audio>
+        <p>Sample data: Listen to your favorite tracks here.</p>
       </section>
 
       <!-- Game Section -->
-      <section x-show="currentPage === 'game'" class="page">
+      <section data-page="game" x-show="currentPage === 'game'" class="page">
         <h1>Game</h1>
         <p>Simple game coming soon... Stay tuned!</p>
+        <p>Sample data: Enjoy some fun games here.</p>
       </section>
 
       <!-- Settings Section: Instructions -->
-      <section x-show="currentPage === 'settings'" class="page">
+      <section data-page="settings" x-show="currentPage === 'settings'"
+        class="page">
         <h1>Settings &amp; Instructions</h1>
         <div class="glass instructions">
           <h2>Project Features</h2>
@@ -183,11 +192,12 @@
             facial expression, and watch as the face follows your cursor. Speak
             into the speech box to have your speech transcribed.
           </p>
+          <p>Sample data: Adjust your settings and read instructions here.</p>
         </div>
       </section>
     </main>
     <button class="clear-cache-btn" @click="clearCache()">Clear Cache</button>
     <!-- Link to main JS file -->
-    <script src="main.js"></script>
+    <script src="./main.js"></script>
   </body>
 </html>

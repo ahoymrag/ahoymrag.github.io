@@ -247,3 +247,30 @@ setInterval(() => {
 buddy.addEventListener("animationend", () => {
   buddy.classList.remove("wink");
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const navItems = document.querySelectorAll('.navbar ul li');
+    const sections = document.querySelectorAll('main section');
+
+    navItems.forEach(item => {
+        item.addEventListener('click', function() {
+            const page = this.getAttribute('data-page');
+
+            // Update active class on nav items
+            navItems.forEach(nav => nav.classList.remove('active'));
+            this.classList.add('active');
+
+            // Show the selected section and hide others
+            sections.forEach(section => {
+                if (section.getAttribute('data-page') === page) {
+                    section.style.display = 'block';
+                } else {
+                    section.style.display = 'none';
+                }
+            });
+        });
+    });
+
+    // Initialize the first tab as active
+    navItems[0].click();
+});
