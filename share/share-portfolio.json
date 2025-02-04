@@ -28,10 +28,18 @@
   },
   {
     "id": 4,
-    "title": "Vyper Day Promo",
+    "title": "Ape Brunch Event Promo",
     "category": "Event Promos",
     "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/AG.ooo%20-%20Share%20-%20Thumbnails.jpg",
     "thumbnail-2": "https://storage.googleapis.com/ag-photography/thumbnails/AG%20-%20PROMO%20-%20002.jpg",
+    "mediaType": "video",
+    "mediaUrl": "https://storage.googleapis.com/ag-photography/video-animation/%5BPromos%5D%5BEvents%5D%5BVYPER%20DAY%20-%20APEWORX%20LOOP%20-%20BY%20AGBABBBYCAKES%20-%20d1%5D.mp4"
+  },
+  {
+    "id": 5,
+    "title": "Vyper Day Promo",
+    "category": "Event Promos",
+    "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/AG%20-%20PROMO%20-%20003.jpg",
     "mediaType": "video",
     "mediaUrl": "https://storage.googleapis.com/ag-photography/video-animation/%5BPromos%5D%5BEvents%5D%5BVYPER%20DAY%20-%20APEWORX%20LOOP%20-%20BY%20AGBABBBYCAKES%20-%20d1%5D.mp4"
   }
