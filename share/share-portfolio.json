@@ -42,5 +42,13 @@
     "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/AG%20-%20PROMO%20-%20003.jpg",
     "mediaType": "video",
     "mediaUrl": "https://storage.googleapis.com/ag-photography/video-animation/%5BPromos%5D%5BEvents%5D%5BVYPER%20DAY%20-%20APEWORX%20LOOP%20-%20BY%20AGBABBBYCAKES%20-%20d1%5D.mp4"
+  },
+  {
+    "id": 6,
+    "title": "Animated Intro - ApeWorx",
+    "category": "Animation",
+    "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/AG%20-%20Animated%20Intros%20-%20001.jpg",
+    "mediaType": "video",
+    "mediaUrl": "https://storage.googleapis.com/ag-photography/video-animation/%5BAG%5D%5BApeworX%5D%5BPromoshowcase%5D%5B001%5D.mp4"
   }
 ]
