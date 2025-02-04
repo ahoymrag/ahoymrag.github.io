@@ -2,35 +2,36 @@
   {
     "id": 1,
     "title": "Web3 Tutorial Series",
-    "category": "Teaching & Workshops",
-    "thumbnail": "https://YOUR_CLOUD_BUCKET/thumbnails/tutorial1.jpg",
+    "category": "Video Tutorials",
+    "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/AG%20-%20VIDEO%20ANIMATION%20-%20001.jpg",
     "mediaType": "video",
-    "mediaUrl": "https://YOUR_CLOUD_BUCKET/videos/tutorial1.mp4",
+    "mediaUrl": "https://storage.googleapis.com/ag-photography/apeworx-tutorials/%5BTutorials%5D%5BApeworX%5D%5B3_starkNET%5D.mp4",
     "description": "A set of tutorials on Web3 for ApeWorx..."
   },
   {
     "id": 2,
     "title": "Podcast Thumbnail Design",
     "category": "Graphic & Print",
-    "thumbnail": "https://YOUR_CLOUD_BUCKET/images/podcast_poster.jpg",
+    "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/CPC%20Podcast%20Thumbnails%20-%20002.jpg",
     "mediaType": "image",
-    "mediaUrl": "https://YOUR_CLOUD_BUCKET/images/podcast_poster_full.jpg",
+    "mediaUrl": "https://storage.googleapis.com/ag-photography/thumbnails/CPC%20Podcast%20Thumbnails%20-%20002.jpg",
     "description": "Promotional poster design for CPC podcast episodes."
   },
   {
     "id": 3,
     "title": "Ahoy Indie Promo Teaser",
     "category": "Video & Filmmaking",
-    "thumbnail": "https://YOUR_CLOUD_BUCKET/images/ahoy_teaser_thumb.jpg",
+    "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/AG%20-%20Event%20PROMO%20-%20003.jpg",
     "mediaType": "video",
-    "mediaUrl": "https://YOUR_CLOUD_BUCKET/videos/ahoy_teaser.mp4",
+    "mediaUrl": "https://storage.googleapis.com/ag-photography/event-promos/%5BahoyCaba%5D%5BPromo%5D%5BCABARET%20FLIERS%20-%20D001%5D-%5Bep2%5D.mov",
     "description": "A short promotional video for Ahoy Indie Media."
   },
   {
     "id": 4,
     "title": "Vyper Day Promo",
     "category": "Event Promos",
-    "thumbnail": "https://YOUR_CLOUD_BUCKET/thumbnails/tutorial1.jpg",
+    "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/AG.ooo%20-%20Share%20-%20Thumbnails.jpg",
+    "thumbnail-2": "https://storage.googleapis.com/ag-photography/thumbnails/AG%20-%20PROMO%20-%20002.jpg",
     "mediaType": "video",
     "mediaUrl": "https://storage.googleapis.com/ag-photography/video-animation/%5BPromos%5D%5BEvents%5D%5BVYPER%20DAY%20-%20APEWORX%20LOOP%20-%20BY%20AGBABBBYCAKES%20-%20d1%5D.mp4"
   }
