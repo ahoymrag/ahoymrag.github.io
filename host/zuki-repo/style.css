@@ -1,0 +1,316 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #121212;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* Navigation Bar */
+.navbar {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar li {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.navbar li:hover,
+.navbar li.active {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Main Content */
+main {
+  padding: 6rem 1rem 1rem;
+}
+
+/* Page Container */
+.page {
+  display: none;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+[x-cloak] {
+  display: none !important;
+}
+
+.page[x-show="true"] {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* Glassmorphism Panel */
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 2rem auto;
+  max-width: 400px;
+}
+
+/* Robot Face Styling */
+.robot-face {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.robot-face svg {
+  width: 600px;
+  height: auto;
+}
+
+.robot-face svg circle {
+  transition: cx 0.1s ease, cy 0.1s ease;
+}
+
+/* Mood Controls */
+.mood-controls {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.mood-controls button {
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.mood-controls button:hover {
+  background: #444;
+}
+
+/* Speech Input Container */
+.speech-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.speech-container input {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+  width: 200px;
+}
+
+.speech-container button {
+  background: #ff6f61;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.speech-container button:hover {
+  background: #e65b4d;
+}
+
+/* Connect Button */
+.connect-btn {
+  background: #ff6f61;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-top: 1rem;
+}
+
+.connect-btn:hover {
+  background: #e65b4d;
+}
+
+/* Instructions in Settings */
+.instructions {
+  margin-top: 1rem;
+  line-height: 1.5;
+}
+
+.instructions h2 {
+  margin-bottom: 0.5rem;
+}
+
+.instructions ul {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Clear Cache Button */
+.clear-cache-btn {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.clear-cache-btn:hover {
+  background: #444;
+}
+
+.buddy {
+  /* Reset */
+  border: none;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: 92px !important;
+  padding: 0;
+  cursor: pointer;
+
+  @media screen and (-ms-high-contrast: active) {
+    border: 2px solid currentColor;
+  }
+
+  /* Core styles */
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--background);
+  color: var(--color);
+  border-radius: 0.15em;
+  padding: 0.35em 0.75em 0.25em;
+  font-size: clamp(3rem, 5vw, 4rem);
+  text-align: center;
+  line-height: 1;
+  font-weight: 500;
+  transition: 180ms all ease-in-out;
+  grid-area: buddy;
+  justify-self: center;
+
+  &:focus {
+    outline-style: solid;
+    outline-color: transparent;
+    background-color: var(--focus-background);
+    color: var(--focus-color);
+  }
+
+  .face {
+    width: 1em;
+    height: 1em;
+    margin-right: 0.25em;
+    transform: translateY(-0.05em);
+
+    svg {
+      width: 100%;
+      height: 100%;
+      transform: rotate(-10deg);
+
+      path {
+        transition: all 180ms ease-in;
+      }
+    }
+  }
+}
+
+svg.wink .left-eye {
+  transform: scale(1);
+  transform-origin: 90% 20%;
+  animation: wink 480ms ease-in-out 1;
+}
+
+/* Curious how this is working?
+ * Check out my guide to advanced CSS selectors:
+ * https://moderncss.dev/guide-to-advanced-css-selectors-part-one/
+ */
+#happy:checked~button svg path,
+#sad:checked~button svg path {
+  fill: transparent;
+  stroke-width: clamp(6px, 1vw, min(0.1em, 6px));
+}
+
+#sad:checked~button svg path {
+  transform: scaleY(-1);
+  transform-origin: 50% 80%;
+}
+
+@keyframes wink {
+
+  0%,
+  20%,
+  70% {
+    transform: scale(1.5, 0.25);
+  }
+
+  30%,
+  50%,
+  90%,
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+
+.buddywrapper {
+  display: grid;
+  grid-template-areas: "excited happy sad" "buddy buddy buddy";
+  grid-gap: 1rem;
+  place-content: center;
+  align-items: center;
+}
+
+.excited {
+  grid-area: excited;
+}
+
+.happy {
+  grid-area: happy;
+}
+
+.sad {
+  grid-area: sad;
+}

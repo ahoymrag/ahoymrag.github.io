@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{ currentPage: 'reminders' }" x-init="init()">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Engine Zuki</title>
+    <!-- Alpine.js via CDN for reactivity -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+      defer></script>
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <ul>
+        <li @click="currentPage = 'home'"
+          :class="{ active: currentPage === 'home' }">
+          Home
+        </li>
+        <li @click="currentPage = 'notes'"
+          :class="{ active: currentPage === 'notes' }">
+          Notes
+        </li>
+        <li @click="currentPage = 'reminders'"
+          :class="{ active: currentPage === 'reminders' }">
+          Reminders
+        </li>
+        <li @click="currentPage = 'music'"
+          :class="{ active: currentPage === 'music' }">
+          Music
+        </li>
+        <li @click="currentPage = 'game'"
+          :class="{ active: currentPage === 'game' }">
+          Game
+        </li>
+        <li
+          @click="currentPage = 'settings'"
+          :class="{ active: currentPage === 'settings' }"
+          class="settings-link">
+          Settings
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main>
+      <div class="buddywrapper">
+        <input name="emotions" class="excited" id="excited" type="radio"
+          checked>
+        <label class="excited" for="excited">Excited</label>
+        <input name="emotions" class="happy" id="happy" type="radio">
+        <label class="happy" for="happy">Happy</label>
+        <input name="emotions" class="sad" id="sad" type="radio">
+        <label class="sad" for="sad">Sad</label>
+
+        <button type="button" class="buddy">
+          <span class="face">
+            <svg viewBox="0 0 100 60">
+              <ellipse cx="15" cy="12" rx="8" ry="9" class="eye right-eye"
+                fill="currentColor" />
+              <ellipse cx="80" cy="12" rx="8" ry="9" class="eye left-eye"
+                fill="currentColor" />
+              <path stroke-linecap="round" d="M30 40 c0 20, 40 20, 40 0"
+                fill="currentColor" stroke="currentColor" />
+
+            </svg>
+          </span>
+          Zuki
+        </button>
+      </div>
+      <!-- Home Section: Robot Face with Emotion Controls, Cursor Tracking, and Speech Input -->
+      <section x-show="currentPage === 'home'" class="page">
+        <div class="robot-face">
+          <!-- The robot face is built using SVG so that its features can be updated mathematically -->
+          <svg id="robotFace" viewBox="0 0 200 150"
+            xmlns="http://www.w3.org/2000/svg">
+            <!-- Face background -->
+            <rect x="0" y="0" width="200" height="150" fill="#555" rx="10" />
+            <!-- Left Eye -->
+            <circle id="leftEye" cx="60" cy="60" r="10" fill="#fff" />
+            <!-- Right Eye -->
+            <circle id="rightEye" cx="140" cy="60" r="10" fill="#fff" />
+            <!-- Mouth (its path "d" attribute is updated dynamically) -->
+            <path id="mouth" d="M60,100 Q100,110 140,100" stroke="#ff6f61"
+              stroke-width="5" fill="none" stroke-linecap="round" />
+          </svg>
+        </div>
+
+        <!-- Mood Control Buttons -->
+        <div class="mood-controls">
+          <button @click="setMood('neutral')">Neutral</button>
+          <button @click="setMood('happy')">Happy</button>
+          <button @click="setMood('sad')">Sad</button>
+          <button @click="setMood('surprised')">Surprised</button>
+        </div>
+
+        <!-- Speech Input Section -->
+        <div class="speech-container">
+          <input type="text" x-model="speechTranscript"
+            placeholder="Speak something..." readonly />
+          <button @click="toggleListening">
+            <span x-text="isListening ? 'Stop' : 'Speak'"></span>
+          </button>
+        </div>
+
+        <h1>Welcome to Engine Zuki</h1>
+        <p>Your friendly robot companion.</p>
+        <button class="connect-btn" @click="connectSerial()">Connect
+          Arduino</button>
+        <p x-text="serialStatus"></p>
+      </section>
+
+      <!-- Notes Section -->
+      <section x-show="currentPage === 'notes'" class="page">
+        <h1>Notes</h1>
+        <form @submit.prevent="addNote">
+          <input type="text" placeholder="Enter a note" x-model="newNote" />
+          <button type="submit">Add Note</button>
+        </form>
+        <ul>
+          <template x-for="(note, index) in notes" :key="index">
+            <li x-text="note"></li>
+          </template>
+        </ul>
+      </section>
+
+      <!-- Reminders Section -->
+      <section x-show="currentPage === 'reminders'" class="page">
+        <h1>Reminders</h1>
+        <form @submit.prevent="addReminder">
+          <input type="text" placeholder="Enter a reminder"
+            x-model="newReminder" />
+          <button type="submit">Add Reminder</button>
+        </form>
+        <ul>
+          <template x-for="(reminder, index) in reminders" :key="index">
+            <li x-text="reminder"></li>
+          </template>
+        </ul>
+      </section>
+
+      <!-- Music Section -->
+      <section x-show="currentPage === 'music'" class="page">
+        <h1>Music</h1>
+        <audio controls>
+          <source src="assets/music/sample.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+      </section>
+
+      <!-- Game Section -->
+      <section x-show="currentPage === 'game'" class="page">
+        <h1>Game</h1>
+        <p>Simple game coming soon... Stay tuned!</p>
+      </section>
+
+      <!-- Settings Section: Instructions -->
+      <section x-show="currentPage === 'settings'" class="page">
+        <h1>Settings &amp; Instructions</h1>
+        <div class="glass instructions">
+          <h2>Project Features</h2>
+          <ul>
+            <li><strong>Home (Robot Face):</strong> Displays an animated robot
+              face with dynamic emotions that follow your cursor.</li>
+            <li><strong>Speech Input:</strong> Use the text box to speak and
+              have your words transcribed.</li>
+            <li><strong>Notes:</strong> Create and manage simple notes.</li>
+            <li><strong>Reminders:</strong> Add reminders for tasks.</li>
+            <li><strong>Music:</strong> Play audio files from a local
+              soundbank.</li>
+            <li><strong>Game:</strong> A placeholder for a simple game (more
+              features coming).</li>
+            <li><strong>Arduino Connection:</strong> Connect to your Arduino via
+              the Web Serial API.</li>
+          </ul>
+          <h2>How to Use</h2>
+          <p>
+            Use the navigation bar at the top to switch between features. On the
+            Home page, click "Connect Arduino" to initiate a serial connection
+            with your Arduino. Use the mood controls to change the robot's
+            facial expression, and watch as the face follows your cursor. Speak
+            into the speech box to have your speech transcribed.
+          </p>
+        </div>
+      </section>
+    </main>
+    <button class="clear-cache-btn" @click="clearCache()">Clear Cache</button>
+    <!-- Link to main JS file -->
+    <script src="main.js"></script>
+  </body>
+</html>
