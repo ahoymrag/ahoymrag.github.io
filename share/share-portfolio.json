@@ -159,10 +159,27 @@
   },
   {
     "id": 21,
-    "title": "Logo Design - Smokin'Theologians Podcast",
+    "title": "Logo Design - Smokin' Theologians Podcast",
     "category": "Graphic & Print",
     "thumbnail": "https://storage.googleapis.com/ag-photography/graphic-logo-design/%5BGRAPHIC%5D%20-%20%5BAG%20-%20LOGO%20DESIGN%5D%20-%20%5BSmokin%20Theologians%20Logo%5D.png",
     "mediaType": "image",
     "mediaUrl": "https://storage.googleapis.com/ag-photography/graphic-logo-design/%5BGRAPHIC%5D%20-%20%5BAG%20-%20LOGO%20DESIGN%5D%20-%20%5BSmokin%20Theologians%20Logo%5D.png"
+  },
+  {
+    "id": 22,
+    "title": "Graphic Design - New Haven Make Music Day - Event Flyer",
+    "category": "Graphic & Print",
+    "thumbnail": "https://storage.googleapis.com/ag-photography/graphic-event-fliers/%5BGRAPHIC%5D%20%5BEVENT%20FLYER%5D%20%5BMAKE%20MUSIC%20DAY%20NEW%20HAVEN%5D%20.png",
+    "mediaType": "image",
+    "mediaUrl": "https://storage.googleapis.com/ag-photography/graphic-event-fliers/%5BGRAPHIC%5D%20%5BEVENT%20FLYER%5D%20%5BMAKE%20MUSIC%20DAY%20NEW%20HAVEN%5D%20.png"
+  },
+  {
+    "id": 23,
+    "title": "Graphic Design - Beyond the Sunday Sermon - Episode Cover Art",
+    "category": "Graphic & Print",
+    "thumbnail": "https://storage.googleapis.com/ag-photography/graphic-podcast-art/%5BGRAPHIC%5D%20%5BPODCAST%20COVER%20ART%5D%20%5BBeyond%20Sermon%20Sample%5D%20.png",
+    "mediaType": "image",
+    "mediaUrl": "https://storage.googleapis.com/ag-photography/graphic-podcast-art/%5BGRAPHIC%5D%20%5BPODCAST%20COVER%20ART%5D%20%5BBeyond%20Sermon%20Sample%5D%20.png"
   }
+
 ]
