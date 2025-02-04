@@ -74,5 +74,29 @@
     "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/AG%20-%20ANIMATED%20GRAPHIC%20-%20CHAOSNET%20REVEAL%20.jpg",
     "mediaType": "video",
     "mediaUrl": "https://storage.googleapis.com/ag-photography/video-animation/%5BPromo%5D%5Banimation%5D%5BchaosReveal_1%5D%5Bapeworx%5D.mp4"
+  },
+  {
+    "id": 10,
+    "title": "Animated Pitchdeck - ApeWorX",
+    "category": "Animation",
+    "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/AG%20-%20ANIMATED%20Pitchedeck%20-%20002.jpg",
+    "mediaType": "video",
+    "mediaUrl": "https://storage.googleapis.com/ag-photography/video-animation/%5BPromo%5D%5BAnimated%20Pitchdeck-02%5D.mp4"
+  },
+  {
+    "id": 11,
+    "title": "Animated Graphic - ApeWorX Logo Reveal",
+    "category": "Animation",
+    "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/AG%20-%20ANIMATED%20Logo%20-%20Apeworx%20-%20002.jpg",
+    "mediaType": "video",
+    "mediaUrl": "https://storage.googleapis.com/ag-photography/video-animation/%5BPromo%5D%5BAnimated%20Logo%5D%5BApeworx%20reveal%5D%5BSmaller_Ape_Hero_2_1%5D.mp4"
+  },
+  {
+    "id": 12,
+    "title": "Animated Graphic - Silverback Logo Teaser Trailer",
+    "category": "Trailers",
+    "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/AG%20-%20Trailer%20-%20Teaser%20-%20Silverback%20Logo.jpg",
+    "mediaType": "video",
+    "mediaUrl": "https://storage.googleapis.com/ag-photography/video-trailers/%5BTrailer%5D%5BProduct%5D%5BSilverback%5D%5BIntroducing%20Silverback%20Logo%20(Teaser%20Trailer)%202023%5D.mp4"
   }
 ]
