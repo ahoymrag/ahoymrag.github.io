@@ -220,5 +220,21 @@
     "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/%5BTutorial%5D%20%5BApeWorX%5D%5BMaking%20an%20ERC20%20Token%5D.jpg",
     "mediaType": "video",
     "mediaUrl": "https://storage.googleapis.com/ag-photography/apeworx-tutorials/%5BTutorial%5D%5BApeWorX%5D%5BHow%20to%20Deploy%20a%20Vyper-Based%20ERC-20%20Smart%20Contract%20with%20Ape%5D.mp4"
+  },
+  {
+    "id": 29,
+    "title": "ApeWorX - Tutorial - How to Make a Community Plugin",
+    "category": "Video Tutorials",
+    "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/%5BTutorial%5D%20%5BApeWorX%5D%5BHow%20to%20Make%20a%20Community%20Plugin%5D.png",
+    "mediaType": "video",
+    "mediaUrl": "https://storage.googleapis.com/ag-photography/video-tutorials/%5BTutorial%5D%5BApeWorX%5D%5BHow%20to%20create%20a%20community%20plugin%20with%20Ape%20Framework%20ft%20z80%20_%20Community%20Hangout%5D.mp4"
+  },
+  {
+    "id": 30,
+    "title": "ApeWorX - Tutorial - The Starknet Plugin Series",
+    "category": "Video Tutorials",
+    "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/%5BTutorial%5D%20%5BApeWorX%5D%5BThe%20Starknet%20Plugin%20Series%5D.png",
+    "mediaType": "video",
+    "mediaUrl": "https://storage.googleapis.com/ag-photography/video-tutorials/%5BTutorial%5D%5BApeWorX%5D%5BThe%20Starknet%20Plugin%20_%20Part%201%20_%20Account%20Management%5D.mp4"
   }
 ]
