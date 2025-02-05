@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "title": "Web3 Tutorial Series",
+    "title": "ApeWorX - Starknet Tutorial",
     "category": "Video Tutorials",
     "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/AG%20-%20VIDEO%20ANIMATION%20-%20001.jpg",
     "mediaType": "video",
@@ -188,7 +188,21 @@
     "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/%5BTrailer%5D%20%5BCHAOSNET%5D.jpg",
     "mediaType": "video",
     "mediaUrl": "https://storage.googleapis.com/ag-photography/video-trailers/%5BTrailer%5D%5BcHaOSneT%20Official%20Trailer%20-%20ApeWorX%5D.mp4"
+  },
+  {
+    "id": 25,
+    "title": "ApeWorX - ERC4626 Tutorial",
+    "category": "Video Tutorials",
+    "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/%5BTutorial%5D%20%5BApeWorX%5D%5BERC4626%5D.jpg",
+    "mediaType": "video",
+    "mediaUrl": "https://storage.googleapis.com/ag-photography/video-tutorials/%5BTutorial%5BApeWorX%5D%5D%5BERC4626%20Part%201_%20Tokenized%20Vault%20Explained%5D.mp4"
+  },
+  {
+    "id": 26,
+    "title": "ApeWorX - Tutorial How to Create A Python Console To Interact With Ethereum Smart Contracts",
+    "category": "Video Tutorials",
+    "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/%5BTutorial%5D%20%5BApeWorX%5D%5BHow%20to%20Create%20A%20Python%20Console%20To%20Interact%20With%20Ethereum%20Smart%20Contracts%5D%20%5D.jpg",
+    "mediaType": "video",
+    "mediaUrl": "https://storage.googleapis.com/ag-photography/video-tutorials/%5BTutorial%5D%5BApeWorX%5D%5BPart%202_%20How%20to%20Create%20A%20Python%20Console%20To%20Interact%20With%20Ethereum%20Smart%20Contracts%5D.mp4"
   }
-  
-
 ]
