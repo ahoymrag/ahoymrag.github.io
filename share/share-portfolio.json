@@ -204,5 +204,21 @@
     "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/%5BTutorial%5D%20%5BApeWorX%5D%5BHow%20to%20Create%20A%20Python%20Console%20To%20Interact%20With%20Ethereum%20Smart%20Contracts%5D%20%5D.jpg",
     "mediaType": "video",
     "mediaUrl": "https://storage.googleapis.com/ag-photography/video-tutorials/%5BTutorial%5D%5BApeWorX%5D%5BPart%202_%20How%20to%20Create%20A%20Python%20Console%20To%20Interact%20With%20Ethereum%20Smart%20Contracts%5D.mp4"
+  },
+  {
+    "id": 27,
+    "title": "ApeWorX - Porting Brownie Project to Ape Framework",
+    "category": "Video Tutorials",
+    "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/%5BTutorial%5D%20%5BApeWorX%5D%5BPorting%20From%20Brownie%20to%20Ape%5D.jpg",
+    "mediaType": "video",
+    "mediaUrl": "https://storage.googleapis.com/ag-photography/apeworx-tutorials/%5BTutorial%5D%5BApeWorX%5D%5BHow%20To%20Port%20Your%20Brownie%20Project%20to%20Ape%20Framework%20%5D.mp4"
+  },
+  {
+    "id": 28,
+    "title": "ApeWorX - Tutorial - Making an ERC20 Token",
+    "category": "Video Tutorials",
+    "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/%5BTutorial%5D%20%5BApeWorX%5D%5BMaking%20an%20ERC20%20Token%5D.jpg",
+    "mediaType": "video",
+    "mediaUrl": "https://storage.googleapis.com/ag-photography/apeworx-tutorials/%5BTutorial%5D%5BApeWorX%5D%5BHow%20to%20Deploy%20a%20Vyper-Based%20ERC-20%20Smart%20Contract%20with%20Ape%5D.mp4"
   }
 ]
