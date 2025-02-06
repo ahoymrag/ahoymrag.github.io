@@ -284,5 +284,13 @@
     "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/%5BVideo%5D%20%5BCPC%5D%5BPSA%20about%20Community%20Lifegroups%5D.png",
     "mediaType": "video",
     "mediaUrl": "https://storage.googleapis.com/ag-photography/video-film/%5BVideo%5D%20%5BCPC%5D%5BPSA%20about%20Community%20Lifegroups%5D.mp4"
+  },
+  {
+    "id": 37,
+    "title": "Short Film - [Cinematographer + Editor]- Dallas",
+    "category": "Video & Filmmaking",
+    "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/%5BShort%20Film%5D%20%5BCinematographer%20%2B%20Editor%5D%5BDallas%5D.png",
+    "mediaType": "video",
+    "mediaUrl": "https://storage.googleapis.com/ag-photography/video-film/%5BShort%20Film%5D%20%5BCinematographer%20%2B%20Editor%5D%5BDallas%5D.mp4"
   }
 ]
