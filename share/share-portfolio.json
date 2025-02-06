@@ -236,5 +236,21 @@
     "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/%5BTutorial%5D%20%5BApeWorX%5D%5BThe%20Starknet%20Plugin%20Series%5D.png",
     "mediaType": "video",
     "mediaUrl": "https://storage.googleapis.com/ag-photography/video-tutorials/%5BTutorial%5D%5BApeWorX%5D%5BThe%20Starknet%20Plugin%20_%20Part%201%20_%20Account%20Management%5D.mp4"
+  },
+  {
+    "id": 31,
+    "title": "Animated Storyboard for an upcoming film - PreProduction",
+    "category": "Video & Filmmaking",
+    "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/%5BVideo%20%26%20Film%5D%20%5BpreProduction%5D%5BAnimated%20Storyboard%20for%20Film%5D.png",
+    "mediaType": "video",
+    "mediaUrl": "https://storage.googleapis.com/ag-photography/video-film/%5BVideo-Film%5D%5BPreProduction%5D%5Bsb%5D%5Bscene48%5D.mp4"
+  },
+  {
+    "id": 32,
+    "title": "Animation - cHaOSneT Logo Reveal",
+    "category": "Animation",
+    "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/%5BAnimation%5D%20%5BApeWorX%5D%5BcHaOSneT%20-%20Logo%20Animation%5D.jpg",
+    "mediaType": "video",
+    "mediaUrl": "https://storage.googleapis.com/ag-photography/video-animation/%5BAnimation%5D%20%5BApeWorX%5D%5BcHaOSneT%20-%20Logo%20Animation%5D.mp4"
   }
 ]
