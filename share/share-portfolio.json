@@ -248,9 +248,41 @@
   {
     "id": 32,
     "title": "Animation - cHaOSneT Logo Reveal",
-    "category": "Animation",
-    "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/%5BAnimation%5D%20%5BApeWorX%5D%5BcHaOSneT%20-%20Logo%20Animation%5D.jpg",
+    "category": "Creative Project",
+    "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/%5BMusic%20Video%5D%20%5BCreative%20Project%5D%5BLofi%20Timelapse%20of%20Sleepy%20Hollow%5D.jpg",
     "mediaType": "video",
     "mediaUrl": "https://storage.googleapis.com/ag-photography/video-animation/%5BAnimation%5D%20%5BApeWorX%5D%5BcHaOSneT%20-%20Logo%20Animation%5D.mp4"
+  },
+  {
+    "id": 33,
+    "title": "Music Video - Lofi Timelapse of Sleepy Hollow",
+    "category": "Creative Project",
+    "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/%5BMusic%20Video%5D%20%5BCreative%20Project%5D%5BLofi%20Timelapse%20of%20Sleepy%20Hollow%5D.jpg",
+    "mediaType": "video",
+    "mediaUrl": "https://storage.googleapis.com/ag-photography/video-creative/%5BMusic%20Video%5D%20%5BCreative%20Project%5D%5BLofi%20Timelapse%20of%20Sleepy%20Hollow%5D.mp4"
+  },
+  {
+    "id": 34,
+    "title": "Animation - ApeWorX NFT Animation",
+    "category": "Animation",
+    "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/%5BAnimation%5D%20%5BApeWorX%5D%5BNFT%20Animation%5D.jpg",
+    "mediaType": "video",
+    "mediaUrl": "https://storage.googleapis.com/ag-photography/video-animation/%5BAnimation%5D%20%5BApeWorX%5D%5BNFT%20Animation%5D.mp4"
+  },
+  {
+    "id": 35,
+    "title": "Animation - ApeWorX Company Animation",
+    "category": "Animation",
+    "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/%5BAnimation%5D%20%5BApeWorX%5D%5BCompany%20Animation%5D.png",
+    "mediaType": "video",
+    "mediaUrl": "https://storage.googleapis.com/ag-photography/video-animation/%5BAnimation%5D%20%5BApeWorX%5D%5BCompany%20Animation%5D.mp4"
+  },
+  {
+    "id": 36,
+    "title": "CPC - PSA about Community Lifegroups",
+    "category": "Video & Filmmaking",
+    "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/%5BVideo%5D%20%5BCPC%5D%5BPSA%20about%20Community%20Lifegroups%5D.png",
+    "mediaType": "video",
+    "mediaUrl": "https://storage.googleapis.com/ag-photography/video-film/%5BVideo%5D%20%5BCPC%5D%5BPSA%20about%20Community%20Lifegroups%5D.mp4"
   }
 ]
