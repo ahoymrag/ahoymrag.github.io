@@ -108,6 +108,11 @@
         margin-top: 0.5rem; 
         line-height: 1.4;
       }
+      .tags {
+        font-size: 0.9rem;
+        color: #666;
+        margin-top: 0.5rem;
+      }
     </style>
     <!-- Alpine.js CDN -->
     <script
@@ -143,6 +148,10 @@
         <div class="gallery-item" @click="openModal(item)">
           <img :src="item.thumbnail" :alt="item.title">
           <h3 x-text="item.title"></h3>
+          <!-- Display tags for websites -->
+          <template x-if="item.mediaType === 'website'">
+            <p class="tags" x-text="item.tags.join(', ')"></p>
+          </template>
         </div>
       </template>
     </section>
@@ -164,6 +173,11 @@
         <!-- If media is an image -->
         <template x-if="selectedItem && selectedItem.mediaType === 'image'">
           <img class="modal-media" x-bind:src="selectedItem.mediaUrl" alt />
+        </template>
+
+        <!-- If media is a website -->
+        <template x-if="selectedItem && selectedItem.mediaType === 'website'">
+          <iframe class="modal-media" x-bind:src="selectedItem.mediaUrl" frameborder="0" style="width: 100%; height: auto; aspect-ratio: 16/9; border-radius: 4px;"></iframe>
         </template>
 
         <h2 x-text="selectedItem ? selectedItem.title : ''"></h2>

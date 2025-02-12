@@ -292,5 +292,35 @@
     "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/%5BShort%20Film%5D%20%5BCinematographer%20%2B%20Editor%5D%5BDallas%5D.png",
     "mediaType": "video",
     "mediaUrl": "https://storage.googleapis.com/ag-photography/video-film/%5BShort%20Film%5D%20%5BCinematographer%20%2B%20Editor%5D%5BDallas%5D.mp4"
+  },
+  {
+    "id": 38,
+    "title": "Personal Portfolio Website",
+    "category": "Websites",
+    "thumbnail": "https://example.com/thumbnails/portfolio.jpg",
+    "mediaType": "website",
+    "mediaUrl": "https://example.com/portfolio",
+    "description": "A personal portfolio showcasing my projects and skills.",
+    "tags": ["HTML", "CSS", "JavaScript"]
+  },
+  {
+    "id": 39,
+    "title": "E-commerce Platform - Montauk Wine",
+    "category": "Websites",
+    "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/%5BWebsite%5D%20%5BMontauk%20Wine%5D.png",
+    "mediaType": "website",
+    "mediaUrl": "https://storage.googleapis.com/ag-photography/thumbnails/%5BWebsite%5D%20%5BMontauk%20Wine%5D.png",
+    "description": "An e-commerce platform for selling digital products.",
+    "tags": ["React", "Node.js", "MongoDB"]
+  },
+  {
+    "id": 40,
+    "title": "ApeWorx Website - ApeDocs",
+    "category": "Websites",
+    "thumbnail": "https://storage.googleapis.com/ag-photography/website-thumbnails/AG.ooo%20-%20WEB%20-%20THUMBNAILS.gif",
+    "mediaType": "website",
+    "mediaUrl": "https://storage.googleapis.com/ag-photography/website-thumbnails/AG.ooo%20-%20WEB%20-%20THUMBNAILS.gif",
+    "description": "Documentation for ApeWorX.",
+    "tags": ["HTML", "CSS", "JavaScript"]
   }
 ]
