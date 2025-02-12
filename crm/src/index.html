@@ -17,7 +17,7 @@
       background: #333;
       color: white;
       padding: 20px;
-      height: 100vh;
+      min-height: 100vh;
       box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
     }
     .sidebar h2, .sidebar h4 {
@@ -39,6 +39,9 @@
     .content {
       flex: 1;
       padding: 20px;
+      width: 800px;
+      height: 600px;
+      overflow: auto;
     }
     .logo {
       text-align: center;
@@ -83,9 +86,18 @@
       padding: 8px 12px;
       margin-top: 10px;
     }
-    
     h4 > span {
       color: #ff0060;
+    }
+    /* Glass-like style for goals */
+    .glass-goal-item {
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 8px;
+      padding: 10px;
+      margin: 5px 0;
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
   </style>
   <!-- Alpine.js Library -->
@@ -122,12 +134,12 @@
         <p x-text="time"></p>
       </div>
 
-      <!-- Goals List -->
+      <!-- Goals List with Glass-like Styling -->
       <div x-data="goalsComponent()">
         <h4>Goals for Dashboard</h4>
         <ul>
           <template x-for="goal in goals" :key="goal.id">
-            <li x-text="goal.text"></li>
+            <li class="glass-goal-item" x-text="goal.text"></li>
           </template>
         </ul>
       </div>
@@ -275,9 +287,9 @@
           { id: 1, text: 'Increase monthly recurring revenue' },
           { id: 2, text: 'Reduce invoice processing time' },
           { id: 3, text: 'Improve client retention' },
-          { id: 4, text: 'Overview: I want to own and operate a coffee shop that sells products and artwork while also writing books and making films. To support this dream without financial stress, I plan to secure monthly retainers for digital/web work ($6K-$8K/month) to cover expenses, giving me the flexibility and stability to pursue my creative and business goals. The coffee shop will serve as both a community hub for artists and a revenue-generating business, integrating live performances, film screenings, and merchandise sales. Over time, I'll transition away from client work and focus on running the café, publishing books, and producing films.' },
-          { id: 5, text: '📌 Pros & Cons of This Plan: ✅ Pros: Financial Stability with Retainers → Covers expenses while keeping time flexible. Building Ownership with the Coffee Shop → Long-term business investment and community hub. Creative Work Without Financial Pressure → I can make films and write books without relying on them for income. Scalable Model → Retainers can be stacked early on and phased out later as the café grows. Integration of Multiple Revenue Streams → Coffee shop can include events, merch, memberships, and digital sales. Retainers Are Better Than One-Off Projects or a Part-Time Job → More predictable, scalable, and allows full control of my schedule. ❌ Cons & Challenges: Securing Retainers Takes Time → Requires targeted outreach to land 3-5 solid clients at $2K+ each. Balancing Client Work & Coffee Shop Launch → Need to limit retainers over time and possibly hire a café manager. Initial Investment for the Coffee Shop → Requires funding via loans, grants, or a pop-up phase first. Long-Term Transition from Digital Work → Will need to gradually shift income from retainers to the café and creative projects.' },
-          { id: 6, text: '📌 Action Plan (Short-Term & Long-Term): Phase 1 (2025-2026): Build Financial Stability & Lay the Coffee Shop Foundation: ✅ Lock in $6K-$8K/month in retainers for steady income. ✅ Begin coffee shop research & scouting locations. ✅ Experiment with merch, digital art, and product sales under the Ahoy Indie Media brand. ✅ Write & develop my first book or screenplay. Phase 2 (2027-2029): Launch the Coffee Shop & Scale Creative Work: ✅ Open the coffee shop & integrate live events, film screenings, and art sales. ✅ Transition away from most client retainers and focus on the business & creative work. ✅ Start full production on my first feature film or major creative project. ✅ Publish my first book & expand Ahoy Indie Media's content output.' }
+          { id: 4, text: 'Own and operate a coffee shop that supports my creative projects' },
+          { id: 5, text: 'Secure digital retainers to ensure financial stability' },
+          { id: 6, text: 'Develop and launch creative projects alongside my business goals' }
         ]
       };
     }

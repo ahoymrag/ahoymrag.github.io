@@ -1,375 +1,326 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AG CRM Dashboard</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-      display: flex;
-    }
-    .sidebar {
-      width: 150px;
-      background: #333;
-      color: white;
-      padding: 20px;
-      height: 100vh;
-      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-    }
-    .sidebar h2, .sidebar h4 {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    .sidebar ul {
-      list-style: none;
-      padding: 0;
-    }
-    .sidebar ul li {
-      margin: 10px 0;
-    }
-    .sidebar ul li a {
-      color: white;
-      text-decoration: none;
-      cursor: pointer;
-    }
-    .content {
-      flex: 1;
-      padding: 20px;
-    }
-    .logo {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    .print-button {
-      margin-top: 20px;
-      display: block;
-      text-align: center;
-    }
-    iframe {
-      width: 100%;
-      height: 400px;
-      border: none;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 20px;
-    }
-    table,
-    th,
-    td {
-      border: 1px solid #ddd;
-    }
-    th,
-    td {
-      padding: 8px;
-      text-align: left;
-    }
-    th {
-      background-color: #f2f2f2;
-    }
-    input,
-    select {
-      margin: 5px 0;
-      padding: 5px;
-      width: 100%;
-      box-sizing: border-box;
-    }
-    button {
-      padding: 8px 12px;
-      margin-top: 10px;
-    }
-    
-    h4 > span {
-      color: #ff0060;
-    }
-  </style>
-  <!-- Alpine.js Library -->
-  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
-</head>
-<body x-data="{ activeFeature: 'dashboard' }">
-  <!-- Sidebar Navigation -->
-  <div class="sidebar">
-    <div class="logo">
-      <a href="https://alexgonzalez.ooo">
-        <img src="./../../src/assets/AG Squares.png" alt="Logo" width="100" />
-      </a>
-    </div>
-    <h4><span>AG</span> CRM Dashboard</h4>
-    <ul>
-      <li><a @click="activeFeature = 'dashboard'">Dashboard</a></li>
-      <li><a @click="activeFeature = 'invoices'">Invoices</a></li>
-      <li><a @click="activeFeature = 'retainers'">Retainers</a></li>
-      <li><a @click="activeFeature = 'automation'">Automation</a></li>
-      <li><a @click="activeFeature = 'reports'">Reports</a></li>
-      <li><a @click="activeFeature = 'proposals'">Proposals</a></li>
-      <li><a @click="activeFeature = 'leads'">Leads</a></li>
-    </ul>
-  </div>
+[
+  {
+    "id": 1,
+    "title": "ApeWorX - Starknet Tutorial",
+    "category": "Video Tutorials",
+    "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/AG%20-%20VIDEO%20ANIMATION%20-%20001.jpg",
+    "mediaType": "video",
+    "mediaUrl": "https://storage.googleapis.com/ag-photography/apeworx-tutorials/%5BTutorials%5D%5BApeworX%5D%5B3_starkNET%5D.mp4",
+    "description": "A set of tutorials on Web3 for ApeWorx..."
+  },
+  {
+    "id": 2,
+    "title": "Podcast Thumbnail Design",
+    "category": "Graphic & Print",
+    "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/CPC%20Podcast%20Thumbnails%20-%20002.jpg",
+    "mediaType": "image",
+    "mediaUrl": "https://storage.googleapis.com/ag-photography/thumbnails/CPC%20Podcast%20Thumbnails%20-%20002.jpg",
+    "description": "Promotional poster design for CPC podcast episodes."
+  },
+  {
+    "id": 3,
+    "title": "Ahoy Indie Promo Teaser",
+    "category": "Video & Filmmaking",
+    "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/AG%20-%20Event%20PROMO%20-%20003.jpg",
+    "mediaType": "video",
+    "mediaUrl": "https://storage.googleapis.com/ag-photography/event-promos/%5BahoyCaba%5D%5BPromo%5D%5BCABARET%20FLIERS%20-%20D001%5D-%5Bep2%5D.mov",
+    "description": "A short promotional video for Ahoy Indie Media."
+  },
+  {
+    "id": 4,
+    "title": "Ape Brunch Event Promo",
+    "category": "Event Promos",
+    "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/AG.ooo%20-%20Share%20-%20Thumbnails.jpg",
+    "thumbnail-2": "https://storage.googleapis.com/ag-photography/thumbnails/AG%20-%20PROMO%20-%20002.jpg",
+    "mediaType": "video",
+    "mediaUrl": "https://storage.googleapis.com/ag-photography/video-animation/%5BPromos%5D%5BEvents%5D%5BVYPER%20DAY%20-%20APEWORX%20LOOP%20-%20BY%20AGBABBBYCAKES%20-%20d1%5D.mp4"
+  },
+  {
+    "id": 5,
+    "title": "Vyper Day Promo",
+    "category": "Event Promos",
+    "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/AG%20-%20PROMO%20-%20003.jpg",
+    "mediaType": "video",
+    "mediaUrl": "https://storage.googleapis.com/ag-photography/video-animation/%5BPromos%5D%5BEvents%5D%5BVYPER%20DAY%20-%20APEWORX%20LOOP%20-%20BY%20AGBABBBYCAKES%20-%20d1%5D.mp4"
+  },
+  {
+    "id": 6,
+    "title": "Animated Intro - ApeWorX Tutorial",
+    "category": "Animation",
+    "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/AG%20-%20Animated%20Intros%20-%20001.jpg",
+    "mediaType": "video",
+    "mediaUrl": "https://storage.googleapis.com/ag-photography/video-animation/%5BAG%5D%5BApeworX%5D%5BPromoshowcase%5D%5B001%5D.mp4"
+  },
+  {
+    "id": 7,
+    "title": "Animated Graphic - Silverback POAP",
+    "category": "Animation",
+    "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/AG%20-%20Animated%20Intros%20-%20002.jpg",
+    "mediaType": "video",
+    "mediaUrl": "https://storage.googleapis.com/ag-photography/video-animation/%5BPromo%5D%5Banimated%20gif%5D%5BPOAP%20OPTION%20ANIMATED%5D%5Bsilverback%5D%5Bapeworx%5D.mp4"
+  },
+  {
+    "id": 8,
+    "title": "Animated Pitchdeck - ApeWorX Hack-a-thon",
+    "category": "Animation",
+    "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/AG%20-%20Animated%20Pitch%20Deck%20-%20001.jpg",
+    "mediaType": "video",
+    "mediaUrl": "https://storage.googleapis.com/ag-photography/video-animation/%5BPromo%5D%5BEvent%5D%5BApeWorx%20Eth%20Denver%20Booth%20_%20A%5D%5Bapeworx%5D.mp4"
+  },
+  {
+    "id": 9,
+    "title": "Animated Graphic - cHaOSneT Logo Reveal",
+    "category": "Animation",
+    "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/AG%20-%20ANIMATED%20GRAPHIC%20-%20CHAOSNET%20REVEAL%20.jpg",
+    "mediaType": "video",
+    "mediaUrl": "https://storage.googleapis.com/ag-photography/video-animation/%5BPromo%5D%5Banimation%5D%5BchaosReveal_1%5D%5Bapeworx%5D.mp4"
+  },
+  {
+    "id": 10,
+    "title": "Animated Pitchdeck - ApeWorX",
+    "category": "Animation",
+    "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/AG%20-%20ANIMATED%20Pitchedeck%20-%20002.jpg",
+    "mediaType": "video",
+    "mediaUrl": "https://storage.googleapis.com/ag-photography/video-animation/%5BPromo%5D%5BAnimated%20Pitchdeck-02%5D.mp4"
+  },
+  {
+    "id": 11,
+    "title": "Animated Graphic - ApeWorX Logo Reveal",
+    "category": "Animation",
+    "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/AG%20-%20ANIMATED%20Logo%20-%20Apeworx%20-%20002.jpg",
+    "mediaType": "video",
+    "mediaUrl": "https://storage.googleapis.com/ag-photography/video-animation/%5BPromo%5D%5BAnimated%20Logo%5D%5BApeworx%20reveal%5D%5BSmaller_Ape_Hero_2_1%5D.mp4"
+  },
+  {
+    "id": 12,
+    "title": "Animated Graphic - Silverback Logo Reveal Trailer",
+    "category": "Trailers",
+    "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/AG%20-%20Trailer%20-%20Teaser%20-%20Silverback%20Logo.jpg",
+    "mediaType": "video",
+    "mediaUrl": "https://storage.googleapis.com/ag-photography/video-trailers/%5BTrailer%5D%5BProduct%5D%5BSilverback%5D%5BIntroducing%20Silverback%20Logo%20(Teaser%20Trailer)%202023%5D.mp4"
+  },
+  {
+    "id": 13,
+    "title": "Silverback Product Trailer 1",
+    "category": "Trailers",
+    "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/AG%20-%20Trailer%20-%20-%20Silverback%20Product%20Trailer%20001.jpg",
+    "mediaType": "video",
+    "mediaUrl": "https://storage.googleapis.com/ag-photography/video-trailers/%5BTrailer%5D%5BProduct%5D%5BIntroducing%20Silverback%20_%20A%20Platform%20for%20Web3%20Bots%20-%20Full%20Trailer%20-%202023%5D.mp4"
+  },
+  {
+    "id": 14,
+    "title": "Silverback Product Final Musical Trailer",
+    "category": "Trailers",
+    "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/AG%20-%20Trailers%20-%20Silverback%20Final%20Trailer.jpg",
+    "mediaType": "video",
+    "mediaUrl": "https://storage.googleapis.com/ag-photography/video-trailers/%5BTrailer%5D%5BFinal%20Silverback%20Product%20Trailer%202%5D.mp4"
+  },
 
-  <!-- Main Content Area -->
-  <div class="content">
-    <!-- Dashboard Section -->
-    <div x-show="activeFeature === 'dashboard'">
-      <h3>Dashboard</h3>
-      <p>Dashboard content goes here.</p>
+  {
+    "id": 15,
+    "title": "Film Pre-Production - Moodboard - Branford Streets",
+    "category": "Video & Filmmaking",
+    "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/AG%20-%20PreProduction%20-%20Film%20Mood%20-%20001.jpg",
+    "mediaType": "video",
+    "mediaUrl": "https://storage.googleapis.com/ag-photography/video-film/%5BVIBE%20EDIT%5D%5BBRANFORD%20STREETS%5D%5B12-21-24%5D%5B1080p%5D-1.mov"
+  },
 
-      <!-- Dynamic Clock -->
-      <div x-data="clock()" x-init="init()">
-        <strong>Current Date & Time:</strong>
-        <p x-text="time"></p>
-      </div>
-
-      <!-- Goals List -->
-      <div x-data="goalsComponent()">
-        <h4>Goals for Dashboard</h4>
-        <ul>
-          <template x-for="goal in goals" :key="goal.id">
-            <li x-text="goal.text"></li>
-          </template>
-        </ul>
-      </div>
-
-      <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTsHCeTyekwx4oYLsrBnWTHssZxYKlM4Ivob4CdHyz-vOknxtHMT_efu3uhJqXnOlMh7UFvqK3MXBsj/pubhtml?gid=0&single=true&widget=true&headers=false"></iframe>
-    </div>
-
-    <!-- Invoices Section -->
-    <div x-show="activeFeature === 'invoices'">
-      <div x-data="invoiceManager()">
-        <h3>Invoices</h3>
-        <hr>
-        <!-- Invoice Form -->
-        <form @submit.prevent="addInvoice">
-          <h4>MGMT Recurring Invoices</h4>
-          <label for="client-name">Client Name:</label>
-          <input type="text" id="client-name" x-model="client" placeholder="Enter client name" />
-
-          <label for="amount">Amount:</label>
-          <input type="number" id="amount" x-model="amount" placeholder="Enter amount" />
-
-          <label for="frequency">Frequency:</label>
-          <select id="frequency" x-model="frequency">
-            <option value="monthly">Monthly</option>
-            <option value="quarterly">Quarterly</option>
-            <option value="annually">Annually</option>
-          </select>
-          <button type="submit">Create Invoice</button>
-        </form>
-
-        <!-- Dynamic Invoices Table -->
-        <table>
-          <thead>
-            <tr>
-              <th>ID</th>
-              <th>Client</th>
-              <th>Amount</th>
-              <th>Frequency</th>
-              <th>Date Created</th>
-            </tr>
-          </thead>
-          <tbody>
-            <template x-for="invoice in invoices" :key="invoice.id">
-              <tr>
-                <td x-text="invoice.id"></td>
-                <td x-text="invoice.client"></td>
-                <td x-text="invoice.amount"></td>
-                <td x-text="invoice.frequency"></td>
-                <td x-text="invoice.date"></td>
-              </tr>
-            </template>
-            <tr x-show="invoices.length === 0">
-              <td colspan="5" style="text-align: center;">No invoices yet.</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-
-    <!-- Retainers Section -->
-    <div x-show="activeFeature === 'retainers'">
-      <h3>Retainers</h3>
-      <p>Retainer management content goes here.</p>
-      <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTsHCeTyekwx4oYLsrBnWTHssZxYKlM4Ivob4CdHyz-vOknxtHMT_efu3uhJqXnOlMh7UFvqK3MXBsj/pubhtml?gid=1220441200&single=true&widget=true&headers=false"></iframe>
-      <hr />
-      <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTsHCeTyekwx4oYLsrBnWTHssZxYKlM4Ivob4CdHyz-vOknxtHMT_efu3uhJqXnOlMh7UFvqK3MXBsj/pubhtml?gid=1220441200&single=true">View in Google Sheets</a>
-    </div>
-
-    <!-- Automation Section -->
-    <div x-show="activeFeature === 'automation'">
-      <h3>Automation</h3>
-      <p>Automation tools and settings go here.</p>
-      <p>Mind map of business processes:</p>
-      <iframe src="https://www.mindmeister.com/maps/public_map_shell/1234567890?width=600&height=400&zoom=1" frameborder="0"></iframe>
-    </div>
-
-    <!-- Reports Section -->
-    <div x-show="activeFeature === 'reports'">
-      <h3>Reports</h3>
-      <p>Reports and analytics content goes here.</p>
-      <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTsHCeTyekwx4oYLsrBnWTHssZxYKlM4Ivob4CdHyz-vOknxtHMT_efu3uhJqXnOlMh7UFvqK3MXBsj/pubhtml?gid=3&single=true&widget=true&headers=false"></iframe>
-    </div>
-
-    <!-- Proposals Section -->
-    <div x-show="activeFeature === 'proposals'" x-data="proposalsComponent()">
-      <h3>Proposals</h3>
-      <p>Below is a list of blank proposals ready to be used.
-         Click the links to open the proposal templates in a new tab.</p>
-      <table>
-        <thead>
-          <tr>
-            <th>Proposal Name</th>
-            <th>Document Type</th>
-            <th>Link</th>
-          </tr>
-        </thead>
-        <tbody>
-          <template x-for="proposal in proposals" :key="proposal.id">
-            <tr>
-              <td x-text="proposal.name"></td>
-              <td x-text="proposal.type"></td>
-              <td>
-                <a :href="proposal.link" target="_blank">View Proposal</a>
-              </td>
-            </tr>
-          </template>
-        </tbody>
-      </table>
-    </div>
-
-    <!-- Leads Section -->
-    <div x-show="activeFeature === 'leads'" x-data="leadsComponent()">
-      <h3>Leads</h3>
-      <p>Add website URLs to track potential leads.</p>
-      <!-- Leads Form -->
-      <form @submit.prevent="addLead">
-        <label for="website-name">Website Name:</label>
-        <input type="text" id="website-name" x-model="newLead.name" placeholder="Enter website name" />
-
-        <label for="website-url">Website URL:</label>
-        <input type="url" id="website-url" x-model="newLead.url" placeholder="Enter website URL" />
-
-        <button type="submit">Add Lead</button>
-      </form>
-      <!-- Dynamic Leads Table -->
-      <table>
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Website Name</th>
-            <th>URL</th>
-          </tr>
-        </thead>
-        <tbody>
-          <template x-for="lead in leads" :key="lead.id">
-            <tr>
-              <td x-text="lead.id"></td>
-              <td x-text="lead.name"></td>
-              <td>
-                <a :href="lead.url" target="_blank" x-text="lead.url"></a>
-              </td>
-            </tr>
-          </template>
-          <tr x-show="leads.length === 0">
-            <td colspan="3" style="text-align: center;">No leads yet.</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <button class="print-button" onclick="window.print()">Print Overview</button>
-  </div>
-
-  <!-- Alpine.js Component Definitions -->
-  <script>
-    // Clock Component: Updates the displayed date and time every second.
-    function clock() {
-      return {
-        time: new Date().toLocaleString(),
-        init() {
-          setInterval(() => {
-            this.time = new Date().toLocaleString();
-          }, 1000);
-        }
-      };
-    }
-
-    // Goals Component: Lists a few sample dashboard goals.
-    function goalsComponent() {
-      return {
-        goals: [
-          { id: 1, text: 'Increase monthly recurring revenue' },
-          { id: 2, text: 'Reduce invoice processing time' },
-          { id: 3, text: 'Improve client retention' }
-        ]
-      };
-    }
-
-    // Invoice Manager Component: Handles invoice creation and displays them in a dynamic table.
-    function invoiceManager() {
-      return {
-        invoices: [],
-        client: '',
-        amount: '',
-        frequency: 'monthly',
-        addInvoice() {
-          if (this.client && this.amount) {
-            this.invoices.push({
-              id: Date.now(),
-              client: this.client,
-              amount: parseFloat(this.amount).toFixed(2),
-              frequency: this.frequency,
-              date: new Date().toLocaleString()
-            });
-            // Reset form fields after adding an invoice.
-            this.client = '';
-            this.amount = '';
-            this.frequency = 'monthly';
-          } else {
-            alert('Please fill in all required fields.');
-          }
-        }
-      };
-    }
-
-    // Proposals Component: Lists blank proposal templates with links.
-    function proposalsComponent() {
-      return {
-        proposals: [
-          { id: 1, name: 'CPC New Haven', type: 'Google Doc', link: 'https://docs.google.com/document/d/EXAMPLE_CPC_NEW_HAVEN' },
-          { id: 2, name: 'CreateCR', type: 'PDF', link: 'https://example.com/CREATECR.pdf' },
-          { id: 3, name: 'Material Promotions', type: 'Google Doc', link: 'https://docs.google.com/document/d/EXAMPLE_MATERIAL_PROMOTIONS' }
-        ]
-      };
-    }
-
-    // Leads Component: Handles lead creation and displays a list of website URLs.
-    function leadsComponent() {
-      return {
-        leads: [],
-        newLead: {
-          name: '',
-          url: ''
-        },
-        addLead() {
-          if (this.newLead.name && this.newLead.url) {
-            this.leads.push({
-              id: Date.now(),
-              name: this.newLead.name,
-              url: this.newLead.url
-            });
-            // Reset the input fields after adding a lead.
-            this.newLead.name = '';
-            this.newLead.url = '';
-          } else {
-            alert('Please fill in both website name and URL.');
-          }
-        }
-      };
-    }
-  </script>
-</body>
-</html>
+  {
+    "id": 17,
+    "title": "Animated Graphic - ApeWorX Logo",
+    "category": "Animation",
+    "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/AG%20-%20Animated%20Graphic%20-%20Ape%20Logo%20Reveal%20-%202.jpg",
+    "mediaType": "video",
+    "mediaUrl": "https://storage.googleapis.com/ag-photography/video-animation/%5BPromo%5D%5BAnimatedGraphic%5D%5BApeWorX-Logo%5D.mov"
+  },
+  {
+    "id": 18,
+    "title": "Animated Graphic - ApeWorX Logo 2",
+    "category": "Animation",
+    "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/AG%20-%20Animated%20Graphic%20-%20Ape%20Logo%20Reveal%20-%203.jpg",
+    "mediaType": "video",
+    "mediaUrl": "https://storage.googleapis.com/ag-photography/video-animation/%5BPromo%5D%5BAnimatedGraphic%5D%5BApeWorX-Logo-002%5D.mov"
+  },
+  {
+    "id": 19,
+    "title": "Animated Trailer - Ape Academy",
+    "category": "Animation",
+    "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/AG%20-%20Animated%20Trailer%20-%20Ape%20Academy.jpg",
+    "mediaType": "video",
+    "mediaUrl": "https://storage.googleapis.com/ag-photography/video-trailers/%5BTrailer%5D%5BProduct%5D%5BApeAcademy%5D.mp4"
+  },
+  {
+    "id": 20,
+    "title": "Logo Design - Academy Billboards",
+    "category": "Graphic & Print",
+    "thumbnail": "https://storage.googleapis.com/ag-photography/graphic-logo-design/AG-%20LOGO%20DESIGN%20-%20ACADEMY.png",
+    "mediaType": "image",
+    "mediaUrl": "https://storage.googleapis.com/ag-photography/graphic-logo-design/AG-%20LOGO%20DESIGN%20-%20ACADEMY.png"
+  },
+  {
+    "id": 21,
+    "title": "Logo Design - Smokin' Theologians Podcast",
+    "category": "Graphic & Print",
+    "thumbnail": "https://storage.googleapis.com/ag-photography/graphic-logo-design/%5BGRAPHIC%5D%20-%20%5BAG%20-%20LOGO%20DESIGN%5D%20-%20%5BSmokin%20Theologians%20Logo%5D.png",
+    "mediaType": "image",
+    "mediaUrl": "https://storage.googleapis.com/ag-photography/graphic-logo-design/%5BGRAPHIC%5D%20-%20%5BAG%20-%20LOGO%20DESIGN%5D%20-%20%5BSmokin%20Theologians%20Logo%5D.png"
+  },
+  {
+    "id": 22,
+    "title": "Graphic Design - New Haven Make Music Day - Event Flyer",
+    "category": "Graphic & Print",
+    "thumbnail": "https://storage.googleapis.com/ag-photography/graphic-event-fliers/%5BGRAPHIC%5D%20%5BEVENT%20FLYER%5D%20%5BMAKE%20MUSIC%20DAY%20NEW%20HAVEN%5D%20.png",
+    "mediaType": "image",
+    "mediaUrl": "https://storage.googleapis.com/ag-photography/graphic-event-fliers/%5BGRAPHIC%5D%20%5BEVENT%20FLYER%5D%20%5BMAKE%20MUSIC%20DAY%20NEW%20HAVEN%5D%20.png"
+  },
+  {
+    "id": 23,
+    "title": "Graphic Design - Beyond the Sunday Sermon - Cover Art",
+    "category": "Graphic & Print",
+    "thumbnail": "https://storage.googleapis.com/ag-photography/graphic-podcast-art/%5BGRAPHIC%5D%20%5BPODCAST%20COVER%20ART%5D%20%5BBeyond%20Sermon%20Sample%5D%20.png",
+    "mediaType": "image",
+    "mediaUrl": "https://storage.googleapis.com/ag-photography/graphic-podcast-art/%5BGRAPHIC%5D%20%5BPODCAST%20COVER%20ART%5D%20%5BBeyond%20Sermon%20Sample%5D%20.png"
+  },
+  {
+    "id": 24,
+    "title": "cHaOSneT - Product Trailer",
+    "category": "Trailers",
+    "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/%5BTrailer%5D%20%5BCHAOSNET%5D.jpg",
+    "mediaType": "video",
+    "mediaUrl": "https://storage.googleapis.com/ag-photography/video-trailers/%5BTrailer%5D%5BcHaOSneT%20Official%20Trailer%20-%20ApeWorX%5D.mp4"
+  },
+  {
+    "id": 25,
+    "title": "ApeWorX - ERC4626 Tutorial",
+    "category": "Video Tutorials",
+    "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/%5BTutorial%5D%20%5BApeWorX%5D%5BERC4626%5D.jpg",
+    "mediaType": "video",
+    "mediaUrl": "https://storage.googleapis.com/ag-photography/video-tutorials/%5BTutorial%5BApeWorX%5D%5D%5BERC4626%20Part%201_%20Tokenized%20Vault%20Explained%5D.mp4"
+  },
+  {
+    "id": 26,
+    "title": "ApeWorX - Tutorial How to Create A Python Console To Interact With Ethereum Smart Contracts",
+    "category": "Video Tutorials",
+    "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/%5BTutorial%5D%20%5BApeWorX%5D%5BHow%20to%20Create%20A%20Python%20Console%20To%20Interact%20With%20Ethereum%20Smart%20Contracts%5D%20%5D.jpg",
+    "mediaType": "video",
+    "mediaUrl": "https://storage.googleapis.com/ag-photography/video-tutorials/%5BTutorial%5D%5BApeWorX%5D%5BPart%202_%20How%20to%20Create%20A%20Python%20Console%20To%20Interact%20With%20Ethereum%20Smart%20Contracts%5D.mp4"
+  },
+  {
+    "id": 27,
+    "title": "ApeWorX - Porting Brownie Project to Ape Framework",
+    "category": "Video Tutorials",
+    "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/%5BTutorial%5D%20%5BApeWorX%5D%5BPorting%20From%20Brownie%20to%20Ape%5D.jpg",
+    "mediaType": "video",
+    "mediaUrl": "https://storage.googleapis.com/ag-photography/apeworx-tutorials/%5BTutorial%5D%5BApeWorX%5D%5BHow%20To%20Port%20Your%20Brownie%20Project%20to%20Ape%20Framework%20%5D.mp4"
+  },
+  {
+    "id": 28,
+    "title": "ApeWorX - Tutorial - Making an ERC20 Token",
+    "category": "Video Tutorials",
+    "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/%5BTutorial%5D%20%5BApeWorX%5D%5BMaking%20an%20ERC20%20Token%5D.jpg",
+    "mediaType": "video",
+    "mediaUrl": "https://storage.googleapis.com/ag-photography/apeworx-tutorials/%5BTutorial%5D%5BApeWorX%5D%5BHow%20to%20Deploy%20a%20Vyper-Based%20ERC-20%20Smart%20Contract%20with%20Ape%5D.mp4"
+  },
+  {
+    "id": 29,
+    "title": "ApeWorX - Tutorial - How to Make a Community Plugin",
+    "category": "Video Tutorials",
+    "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/%5BTutorial%5D%20%5BApeWorX%5D%5BHow%20to%20Make%20a%20Community%20Plugin%5D.png",
+    "mediaType": "video",
+    "mediaUrl": "https://storage.googleapis.com/ag-photography/video-tutorials/%5BTutorial%5D%5BApeWorX%5D%5BHow%20to%20create%20a%20community%20plugin%20with%20Ape%20Framework%20ft%20z80%20_%20Community%20Hangout%5D.mp4"
+  },
+  {
+    "id": 30,
+    "title": "ApeWorX - Tutorial - The Starknet Plugin Series",
+    "category": "Video Tutorials",
+    "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/%5BTutorial%5D%20%5BApeWorX%5D%5BThe%20Starknet%20Plugin%20Series%5D.png",
+    "mediaType": "video",
+    "mediaUrl": "https://storage.googleapis.com/ag-photography/video-tutorials/%5BTutorial%5D%5BApeWorX%5D%5BThe%20Starknet%20Plugin%20_%20Part%201%20_%20Account%20Management%5D.mp4"
+  },
+  {
+    "id": 31,
+    "title": "Animated Storyboard for an upcoming film - PreProduction",
+    "category": "Video & Filmmaking",
+    "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/%5BVideo%20%26%20Film%5D%20%5BpreProduction%5D%5BAnimated%20Storyboard%20for%20Film%5D.png",
+    "mediaType": "video",
+    "mediaUrl": "https://storage.googleapis.com/ag-photography/video-film/%5BVideo-Film%5D%5BPreProduction%5D%5Bsb%5D%5Bscene48%5D.mp4"
+  },
+  {
+    "id": 32,
+    "title": "Animation - cHaOSneT Logo Reveal",
+    "category": "Animation",
+    "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/%5BAnimation%5D%20%5BApeWorX%5D%5BcHaOSneT%20-%20Logo%20Animation%5D.jpg",
+    "mediaType": "video",
+    "mediaUrl": "https://storage.googleapis.com/ag-photography/video-animation/%5BAnimation%5D%20%5BApeWorX%5D%5BcHaOSneT%20-%20Logo%20Animation%5D.mp4"
+  },
+  {
+    "id": 33,
+    "title": "Music Video - Lofi Timelapse of Sleepy Hollow",
+    "category": "Creative Project",
+    "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/%5BMusic%20Video%5D%20%5BCreative%20Project%5D%5BLofi%20Timelapse%20of%20Sleepy%20Hollow%5D.jpg",
+    "mediaType": "video",
+    "mediaUrl": "https://storage.googleapis.com/ag-photography/video-creative/%5BMusic%20Video%5D%20%5BCreative%20Project%5D%5BLofi%20Timelapse%20of%20Sleepy%20Hollow%5D.mp4"
+  },
+  {
+    "id": 34,
+    "title": "Animation - ApeWorX NFT Animation",
+    "category": "Animation",
+    "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/%5BAnimation%5D%20%5BApeWorX%5D%5BNFT%20Animation%5D.jpg",
+    "mediaType": "video",
+    "mediaUrl": "https://storage.googleapis.com/ag-photography/video-animation/%5BAnimation%5D%20%5BApeWorX%5D%5BNFT%20Animation%5D.mp4"
+  },
+  {
+    "id": 35,
+    "title": "Animation - ApeWorX Company Animation",
+    "category": "Animation",
+    "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/%5BAnimation%5D%20%5BApeWorX%5D%5BCompany%20Animation%5D.png",
+    "mediaType": "video",
+    "mediaUrl": "https://storage.googleapis.com/ag-photography/video-animation/%5BAnimation%5D%20%5BApeWorX%5D%5BCompany%20Animation%5D.mp4"
+  },
+  {
+    "id": 36,
+    "title": "CPC - PSA about Community Lifegroups",
+    "category": "Video & Filmmaking",
+    "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/%5BVideo%5D%20%5BCPC%5D%5BPSA%20about%20Community%20Lifegroups%5D.png",
+    "mediaType": "video",
+    "mediaUrl": "https://storage.googleapis.com/ag-photography/video-film/%5BVideo%5D%20%5BCPC%5D%5BPSA%20about%20Community%20Lifegroups%5D.mp4"
+  },
+  {
+    "id": 37,
+    "title": "Short Film - [Cinematographer + Editor]- Dallas",
+    "category": "Video & Filmmaking",
+    "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/%5BShort%20Film%5D%20%5BCinematographer%20%2B%20Editor%5D%5BDallas%5D.png",
+    "mediaType": "video",
+    "mediaUrl": "https://storage.googleapis.com/ag-photography/video-film/%5BShort%20Film%5D%20%5BCinematographer%20%2B%20Editor%5D%5BDallas%5D.mp4"
+  },
+  {
+    "id": 38,
+    "title": "Personal Portfolio Website",
+    "category": "Websites",
+    "thumbnail": "https://example.com/thumbnails/portfolio.jpg",
+    "mediaType": "website",
+    "mediaUrl": "https://example.com/portfolio",
+    "description": "A personal portfolio showcasing my projects and skills.",
+    "tags": ["HTML", "CSS", "JavaScript"]
+  },
+  {
+    "id": 39,
+    "title": "E-commerce Platform - Montauk Wine",
+    "category": "Websites",
+    "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/%5BWebsite%5D%20%5BMontauk%20Wine%5D.png",
+    "mediaType": "website",
+    "mediaUrl": "https://storage.googleapis.com/ag-photography/thumbnails/%5BWebsite%5D%20%5BMontauk%20Wine%5D.png",
+    "description": "An e-commerce platform for selling digital products.",
+    "tags": ["React", "Node.js", "MongoDB"]
+  },
+  {
+    "id": 40,
+    "title": "ApeWorx Website - ApeDocs",
+    "category": "Websites",
+    "thumbnail": "https://storage.googleapis.com/ag-photography/website-thumbnails/AG.ooo%20-%20WEB%20-%20THUMBNAILS.gif",
+    "mediaType": "website",
+    "mediaUrl": "https://storage.googleapis.com/ag-photography/website-thumbnails/AG.ooo%20-%20WEB%20-%20THUMBNAILS.gif",
+    "description": "Documentation for ApeWorX.",
+    "tags": ["HTML", "CSS", "JavaScript"]
+  }
+]
