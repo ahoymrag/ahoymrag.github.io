@@ -139,12 +139,10 @@
     <div x-show="activeFeature === 'invoices'">
       <div x-data="invoiceManager()">
         <h3>Invoices</h3>
-        <p>Below you can create and track invoices dynamically:</p>
-        <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTsHCeTyekwx4oYLsrBnWTHssZxYKlM4Ivob4CdHyz-vOknxtHMT_efu3uhJqXnOlMh7UFvqK3MXBsj/pubhtml?gid=1&single=true&widget=true&headers=false"></iframe>
-
+       <hr>
         <!-- Invoice Form -->
         <form @submit.prevent="addInvoice">
-          <h4>Create Recurring Invoice</h4>
+          <h4>MGMT Recurring Invoices</h4>
           <label for="client-name">Client Name:</label>
           <input type="text" id="client-name" x-model="client" placeholder="Enter client name" />
 
