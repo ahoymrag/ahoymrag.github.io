@@ -7,32 +7,113 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
-            padding: 20px;
+            margin: 0;
+            padding: 0;
             background-color: #f4f4f4;
+            display: flex;
         }
-        .container {
-            max-width: 800px;
-            margin: auto;
-            background: white;
+        .sidebar {
+            width: 200px;
+            background: #333;
+            color: white;
             padding: 20px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            height: 100vh;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
         }
-        h2 {
+        .sidebar h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            margin: 10px 0;
+        }
+        .sidebar ul li a {
+            color: white;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+        .logo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .print-button {
+            margin-top: 20px;
+            display: block;
             text-align: center;
         }
         iframe {
             width: 100%;
-            height: 500px;
+            height: 400px;
             border: none;
         }
     </style>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
 </head>
-<body>
-    <div class="container">
-        <h2>My Simple CRM Dashboard</h2>
-        <p>Below is an embedded Google Sheet tracking invoices and retainers.</p>
-        <iframe src="https://docs.google.com/spreadsheets/d/1_aXAOcb_PB7veuX4IZtCiSsLeGknN9TJPijQYLZFoJ4/pubhtml?widget=true&headers=false"></iframe>
+<body x-data="{ activeFeature: 'dashboard' }">
+    <div class="sidebar">
+        <div class="logo">
+            <img src="logo.png" alt="Logo" width="100">
+        </div>
+        <h2>CRM Dashboard</h2>
+        <ul>
+            <li><a @click="activeFeature = 'dashboard'">Dashboard</a></li>
+            <li><a @click="activeFeature = 'invoices'">Invoices</a></li>
+            <li><a @click="activeFeature = 'retainers'">Retainers</a></li>
+            <li><a @click="activeFeature = 'automation'">Automation</a></li>
+            <li><a @click="activeFeature = 'reports'">Reports</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <div x-show="activeFeature === 'dashboard'">
+            <h3>Dashboard</h3>
+            <p>Dashboard content goes here.</p>
+            <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTsHCeTyekwx4oYLsrBnWTHssZxYKlM4Ivob4CdHyz-vOknxtHMT_efu3uhJqXnOlMh7UFvqK3MXBsj/pubhtml?gid=0&single=true&widget=true&headers=false"></iframe>
+        </div>
+        <div x-show="activeFeature === 'invoices'">
+            <h3>Invoices</h3>
+            <p>List of invoices or embedded Google Drive content goes here.</p>
+            <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTsHCeTyekwx4oYLsrBnWTHssZxYKlM4Ivob4CdHyz-vOknxtHMT_efu3uhJqXnOlMh7UFvqK3MXBsj/pubhtml?gid=1&single=true&widget=true&headers=false"></iframe>
+            <form id="invoice-wizard">
+                <h4>Create Recurring Invoice</h4>
+                <label for="client-name">Client Name:</label>
+                <input type="text" id="client-name" name="client-name"><br>
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" name="amount"><br>
+                <label for="frequency">Frequency:</label>
+                <select id="frequency" name="frequency">
+                    <option value="monthly">Monthly</option>
+                    <option value="quarterly">Quarterly</option>
+                    <option value="annually">Annually</option>
+                </select><br>
+                <button type="submit">Create Invoice</button>
+            </form>
+        </div>
+        <div x-show="activeFeature === 'retainers'">
+            <h3>Retainers</h3>
+            <p>Retainer management content goes here.</p>
+            <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTsHCeTyekwx4oYLsrBnWTHssZxYKlM4Ivob4CdHyz-vOknxtHMT_efu3uhJqXnOlMh7UFvqK3MXBsj/pubhtml?gid=1220441200&single=true&widget=true&headers=false"></iframe>
+			<hr><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTsHCeTyekwx4oYLsrBnWTHssZxYKlM4Ivob4CdHyz-vOknxtHMT_efu3uhJqXnOlMh7UFvqK3MXBsj/pubhtml?gid=1220441200&single=true">View in Google Sheets</a>
+		</div>
+        <div x-show="activeFeature === 'automation'">
+            <h3>Automation</h3>
+            <p>Automation tools and settings go here.</p>
+            <p>Mind map of business processes:</p>
+            <iframe src="https://www.mindmeister.com/maps/public_map_shell/1234567890?width=600&height=400&zoom=1" frameborder="0"></iframe>
+        </div>
+        <div x-show="activeFeature === 'reports'">
+            <h3>Reports</h3>
+            <p>Reports and analytics content goes here.</p>
+            <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTsHCeTyekwx4oYLsrBnWTHssZxYKlM4Ivob4CdHyz-vOknxtHMT_efu3uhJqXnOlMh7UFvqK3MXBsj/pubhtml?gid=3&single=true&widget=true&headers=false"></iframe>
+        </div>
+        <button class="print-button" onclick="window.print()">Print Overview</button>
     </div>
 </body>
 </html>
