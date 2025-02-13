@@ -6,8 +6,11 @@
     <title>My Shared Portfolio</title>
     <!-- Minimal Inline Styling for Demo Purposes -->
     <style>
+      * {
+        font-family: 'Montserrat', sans-serif; /* Updated font */
+      }
       body {
-        font-family: sans-serif;
+        font-family: 'Montserrat', sans-serif; /* Updated font */
         margin: 0; padding: 0;
         background: #f9f9f9; 
         color: #333;
@@ -177,7 +180,9 @@
 
         <!-- If media is a website -->
         <template x-if="selectedItem && selectedItem.mediaType === 'website'">
-          <iframe class="modal-media" x-bind:src="selectedItem.mediaUrl" frameborder="0" style="width: 100%; height: auto; aspect-ratio: 16/9; border-radius: 4px;"></iframe>
+          <iframe class="modal-media" x-bind:src="selectedItem.mediaUrl"
+            frameborder="0"
+            style="width: 100%; height: auto; aspect-ratio: 16/9; border-radius: 4px;"></iframe>
         </template>
 
         <h2 x-text="selectedItem ? selectedItem.title : ''"></h2>
@@ -280,8 +285,14 @@
   </body>
   <footer
     style="background: #fff; padding: 1rem; text-align: center; box-shadow: 0 -1px 6px rgba(0,0,0,0.1);">
- <a href="https://alexgonzalez.ooo//public/cv+resume/index.html" target="_blank"
-        style="color: #333; text-decoration: none; font-weight: bold;">View my
-        full CV in print format</a></p>
+    <a href="https://alexgonzalez.ooo//public/cv+resume/index.html"
+      target="_blank"
+      style="color: #333; text-decoration: none; font-weight: bold;">View my
+      full CV in print format</a>
+    <p>
+      <a href="https://alexgonzalez.ooo" target="_blank"
+        style="color: #333; text-decoration: none; font-weight: bold;">Return
+        Home</a>
+    </p>
   </footer>
 </html>
