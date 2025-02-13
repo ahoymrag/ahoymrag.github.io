@@ -287,7 +287,7 @@
   },
   {
     "id": 37,
-    "title": "Short Film - [Cinematographer + Editor]- Dallas",
+    "title": "Short Film - [Editor]- Dallas",
     "category": "Video & Filmmaking",
     "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/%5BShort%20Film%5D%20%5BCinematographer%20%2B%20Editor%5D%5BDallas%5D.png",
     "mediaType": "video",
@@ -295,23 +295,23 @@
   },
   {
     "id": 38,
-    "title": "Personal Portfolio Website",
+    "title": "ApeWorX.io  ",
     "category": "Websites",
-    "thumbnail": "https://example.com/thumbnails/portfolio.jpg",
+    "thumbnail": "https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExYmNjbno3bmM2Z25rYWI0dWxlc3J2Mmw4emxoYmxqOXFrODh6cW5iNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/zi1gtVbaNGDg40e0Ed/giphy.gif",
     "mediaType": "website",
-    "mediaUrl": "https://example.com/portfolio",
-    "description": "A personal portfolio showcasing my projects and skills.",
+    "mediaUrl": "https://apeworx.io",
+    "description": "A website for all of ApeWorX's products and services.",
     "tags": ["HTML", "CSS", "JavaScript"]
   },
   {
     "id": 39,
-    "title": "E-commerce Platform - Montauk Wine",
+    "title": "CPC New Haven Website",
     "category": "Websites",
-    "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/%5BWebsite%5D%20%5BMontauk%20Wine%5D.png",
+    "thumbnail": "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExc3d6M2Q5djBvazJmdzQ3cmh5d2JhYXI1MDJ5MXdhdzNlOXFrY2FucCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/GHkBOT6YGs2miujwQe/giphy.gif",
     "mediaType": "website",
-    "mediaUrl": "https://storage.googleapis.com/ag-photography/thumbnails/%5BWebsite%5D%20%5BMontauk%20Wine%5D.png",
-    "description": "An e-commerce platform for selling digital products.",
-    "tags": ["React", "Node.js", "MongoDB"]
+    "mediaUrl": "https://cpcnewhaven.org",
+    "description": "A website for the Community Presbyterian Church in New Haven, CT.",
+    "tags": ["HTML", "CSS", "Alpine JS", "Google Cloud Platform"]
   },
   {
     "id": 40,
@@ -319,8 +319,26 @@
     "category": "Websites",
     "thumbnail": "https://storage.googleapis.com/ag-photography/website-thumbnails/AG.ooo%20-%20WEB%20-%20THUMBNAILS.gif",
     "mediaType": "website",
-    "mediaUrl": "https://storage.googleapis.com/ag-photography/website-thumbnails/AG.ooo%20-%20WEB%20-%20THUMBNAILS.gif",
+    "mediaUrl": "https://docs.apeworx.io",
     "description": "Documentation for ApeWorX.",
     "tags": ["HTML", "CSS", "JavaScript"]
+  },
+  {
+    "id": 41,
+    "title": "Ahoy Indie Media - Web App",
+    "category": "Websites",
+    "thumbnail": "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExaTNmc3huOTRvbWRwcGE0d3hqajE5NjQ3NjkwN21zbTF3NXp1aWF6NSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/NVE7cJDJe3cc6dTawM/giphy.gif",
+    "mediaType": "website",
+    "mediaUrl": "https://ahoy.ooo",
+    "description": "A progressive web app for Ahoy Indie Media.",
+    "tags": ["Progressive Web App", "CSS", "Alpine JS", "Google Cloud Platform"]
+  },
+  {
+    "id": 42,
+    "title": "Short Film - Tallboyz - Pantalones Intro - [Cinematographer + Editor + Director]",
+    "category": "Video & Filmmaking",
+    "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/%5BShort%20Intro%20Film%5D%20%5BCinematographer%20%2B%20Editor%5D%5BTallboyz%20-%20Pantalones%20Intro%5D%5D.jpg",
+    "mediaType": "video",
+    "mediaUrl": "https://storage.googleapis.com/ag-photography/video-film/%5BTallboyz%5D%5BVideo%2BFIlmmaking%5D%5BPantalones%20Intro%5D.mp4"
   }
 ]
