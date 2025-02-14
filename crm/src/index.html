@@ -263,6 +263,45 @@
       </table>
     </div>
 
+    <!-- Links Section -->
+    <div x-show="activeFeature === 'links'" x-data="linksWizard()">
+      <h3>Links Wizard</h3>
+      <div x-show="step === 1">
+        <h4>Step 1: Enter Link Details</h4>
+        <label for="link-name">Link Name:</label>
+        <input type="text" id="link-name" x-model="newLink.name" placeholder="Enter link name" />
+
+        <label for="link-url">Link URL:</label>
+        <input type="url" id="link-url" x-model="newLink.url" placeholder="Enter link URL" />
+
+        <button @click="nextStep()">Next</button>
+      </div>
+
+      <div x-show="step === 2">
+        <h4>Step 2: Review Link</h4>
+        <p><strong>Name:</strong> <span x-text="newLink.name"></span></p>
+        <p><strong>URL:</strong> <span x-text="newLink.url"></span></p>
+
+        <button @click="previousStep()">Back</button>
+        <button @click="addLink()">Add Link</button>
+      </div>
+
+      <div x-show="step === 3">
+        <h4>Step 3: Link Added</h4>
+        <p>Your link has been added successfully!</p>
+        <button @click="resetWizard()">Add Another Link</button>
+      </div>
+
+      <h4>Existing Links</h4>
+      <ul>
+        <template x-for="link in links" :key="link.id">
+          <li>
+            <a :href="link.url" target="_blank" x-text="link.name"></a>
+          </li>
+        </template>
+      </ul>
+    </div>
+
     <button class="print-button" onclick="window.print()">Print Overview</button>
   </div>
 
@@ -340,6 +379,62 @@
           { id: 2, name: 'Lead Two', link: 'https://example-lead2.com' },
           { id: 3, name: 'Lead Three', link: 'https://example-lead3.com' }
         ]
+      };
+    }
+
+    // Import Firebase
+    import { initializeApp } from "firebase/app";
+    import { getFirestore, collection, addDoc, getDocs } from "firebase/firestore";
+
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "YOUR_API_KEY",
+      authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
+      projectId: "YOUR_PROJECT_ID",
+      storageBucket: "YOUR_PROJECT_ID.appspot.com",
+      messagingSenderId: "YOUR_SENDER_ID",
+      appId: "YOUR_APP_ID"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+
+    // Initialize Firestore
+    const db = getFirestore(app);
+
+    // Function to add a new link
+    async function addLink(name, url) {
+      try {
+        const docRef = await addDoc(collection(db, "links"), {
+          name: name,
+          url: url,
+          createdAt: new Date()
+        });
+        console.log("Document written with ID: ", docRef.id);
+      } catch (e) {
+        console.error("Error adding document: ", e);
+      }
+    }
+
+    // Function to get all links
+    async function getLinks() {
+      const querySnapshot = await getDocs(collection(db, "links"));
+      querySnapshot.forEach((doc) => {
+        console.log(`${doc.id} => ${doc.data().name}: ${doc.data().url}`);
+      });
+    }
+
+    function filterComponent() {
+      return {
+        query: '',
+        items: [
+          { id: 1, name: 'Item One' },
+          { id: 2, name: 'Item Two' },
+          { id: 3, name: 'Item Three' }
+        ],
+        get filteredItems() {
+          return this.items.filter(item => item.name.toLowerCase().includes(this.query.toLowerCase()));
+        }
       };
     }
   </script>

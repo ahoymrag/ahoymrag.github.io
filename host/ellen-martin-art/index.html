@@ -15,6 +15,27 @@
             <p>Inked and Watercolor Portraits of New Haven Buildings & also
                 fish</p>
         </header>
+        <!-- Add filtering system -->
+        <div id="filter-system">
+            <form>
+                <label for="art-type">Art Type:</label>
+                <select id="art-type" name="art-type">
+                    <option value="all">All</option>
+                    <option value="ink">Ink</option>
+                    <option value="paint">Paint</option>
+                    <option value="print">Print</option>
+                </select>
+                <label for="season">Season:</label>
+                <select id="season" name="season">
+                    <option value="all">All</option>
+                    <option value="fall">Fall</option>
+                    <option value="winter">Winter</option>
+                    <option value="spring">Spring</option>
+                    <option value="summer">Summer</option>
+                </select>
+                <button type="submit">Filter</button>
+            </form>
+        </div>
         <main>
             <section>
                 <article>
