@@ -51,10 +51,13 @@ figcaption {
 }
 
 header {
-    background-color: var(--header-color);
+    background-color: rgba(210, 180, 140, 0.8); /* Semi-transparent header color */
+    backdrop-filter: blur(8px);
     color: var(--secondary-color);
     text-align: center;
-    padding: 1rem;
+    padding: 0.75rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 main {
