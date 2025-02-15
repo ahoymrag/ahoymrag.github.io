@@ -10,11 +10,12 @@
     --spacing-small: 0.5rem;
     --spacing-medium: 1rem;
     --spacing-large: 2rem;
-    --font-family: 'Courier New', Courier, monospace; /* Monotype font */
+    --font-family: 'Georgia', serif; /* Updated to Georgia font */
+    --header-font-family: 'Arial', sans-serif; /* New header font */
 }
 
 body {
-    font-family: var(--font-family);
+    font-family: var(--font-family); /* This will now use Georgia */
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -51,13 +52,26 @@ figcaption {
 }
 
 header {
-    background-color: rgba(210, 180, 140, 0.8); /* Semi-transparent header color */
+    background-color: rgba(213, 161, 92, 0.798); /* Semi-transparent header color */
     backdrop-filter: blur(8px);
     color: var(--secondary-color);
     text-align: center;
-    padding: 0.75rem;
+    padding: 0.5rem; /* Reduced overall header padding */
     border-radius: var(--border-radius);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: var(--header-font-family); /* Use new header font */
+}
+
+header h1, header p {
+    margin: 0.5rem 0; /* Reduced margin for h1 and p */
+    padding: 0; /* Remove any additional padding */
+}
+
+header p {
+    margin: 0.5rem auto; /* Center the paragraph */
+    padding: 0; /* Remove any additional padding */
+    max-width: 50ch;
+
 }
 
 main {
@@ -130,6 +144,37 @@ img {
     margin: 0;
 }
 
+#filter-system select {
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+    backdrop-filter: blur(5px); /* Blur effect for glass-like appearance */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Light border */
+    color: var(--text-color); /* Text color */
+    padding: var(--spacing-small);
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 4px var(--shadow-color);
+    transition: background 0.3s ease;
+}
+
+#filter-system select:hover {
+    background: rgba(255, 255, 255, 0.3); /* Slightly more opaque on hover */
+}
+
+#filter-system button {
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+    backdrop-filter: blur(5px); /* Blur effect for glass-like appearance */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Light border */
+    color: var(--text-color); /* Text color */
+    padding: var(--spacing-small);
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 4px var(--shadow-color);
+    transition: background 0.3s ease;
+}
+
+#filter-system button:hover {
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.3); /* Slightly more opaque on hover */
+}
+
 .call-to-action {
     text-align: center;
     margin-top: 2rem;
@@ -178,4 +223,27 @@ img {
     margin-left: auto;
     margin-right: auto;
     border-radius: 4px;
+}
+
+footer {
+    padding: var(--spacing-medium);
+    font-family: 'Georgia', serif; /* More readable and blog-like font */
+    line-height: 1.8;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 1em; /* Adjust font size for readability */
+    }
+
+    section {
+        grid-template-columns: 1fr; /* Single column layout for small screens */
+    }
+
+    footer {
+        padding: var(--spacing-large);
+        font-size: 1.1em; /* Slightly larger font for better readability */
+    }
 }
