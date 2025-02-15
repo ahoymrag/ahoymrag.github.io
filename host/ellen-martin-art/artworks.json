@@ -7,7 +7,12 @@
       "currentBid": 150,
       "season": "summer",
       "artType": "paint",
-      "forSale": true
+      "forSale": true,
+      "squareLinks": [
+        "https://squareup.com/store/ellen-martin/item/toby",
+        "https://squareup.com/store/ellen-martin/item/toby-print",
+        "https://squareup.com/store/ellen-martin/item/toby-canvas"
+      ]
     },
     {
       "id": 2,
@@ -16,7 +21,10 @@
       "currentBid": 200,
       "season": "summer",
       "artType": "paint",
-      "forSale": true
+      "forSale": true,
+      "squareLinks": [
+        "https://squareup.com/store/ellen-martin/item/caspar"
+      ]
     },
     {
       "id": 3,
@@ -25,7 +33,10 @@
       "currentBid": 180,
       "season": "winter",
       "artType": "paint",
-      "forSale": true
+      "forSale": true,
+      "squareLinks": [
+        "https://squareup.com/store/ellen-martin/item/melissa"
+      ]
     },
     {
       "id": 4,
@@ -34,7 +45,10 @@
       "currentBid": 160,
       "season": "fall",
       "artType": "ink",
-      "forSale": true
+      "forSale": true,
+      "squareLinks": [
+        "https://squareup.com/store/ellen-martin/item/new-haven-print"
+      ]
     },
     {
       "id": 5,
@@ -43,7 +57,10 @@
       "currentBid": 220,
       "season": "summer",
       "artType": "paint",
-      "forSale": true
+      "forSale": true,
+      "squareLinks": [
+        "https://squareup.com/store/ellen-martin/item/singapore-print"
+      ]
     },
     {
       "id": 6,
@@ -52,7 +69,10 @@
       "currentBid": 190,
       "season": "fall",
       "artType": "print",
-      "forSale": true
+      "forSale": true,
+      "squareLinks": [
+        "https://squareup.com/store/ellen-martin/item/new-haven-ink"
+      ]
     }
   ]
 }

@@ -28,12 +28,17 @@ fetch('artworks.json')
         };
 
         const openModal = (artwork) => {
+            const linksHtml = artwork.squareLinks.map(link => 
+                `<a href="${link}" target="_blank" class="purchase-link">Purchase on Square</a>`
+            ).join('<br>');
+
             modal.innerHTML = `
                 <div class="modal-content">
                     <button class="close-btn">✕</button>
                     <img src="${artwork.image}" alt="${artwork.title}" class="modal-media">
                     <h2>${artwork.title}</h2>
                     <p>${artwork.forSale ? 'Available for Sale' : 'Not for Sale'}</p>
+                    ${linksHtml}
                 </div>
             `;
             modal.style.display = 'flex';
