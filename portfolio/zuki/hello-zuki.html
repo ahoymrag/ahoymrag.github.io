@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Zuki - Personal Robot Overview</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 2rem;
+                background: #1E1A34; /* Dark Purple */
+                color: #D9D6D6; /* Off-White */
+            }
+            header, footer {
+                text-align: center;
+                margin-bottom: 2rem;
+                color: #BFA2DB; /* Light Purple */
+            }
+            main {
+                max-width: 800px;
+                margin: 0 auto;
+                background: #2E2047; /* Deep Purple */
+                padding: 1rem 2rem;
+                border-radius: 5px;
+            }
+            h1, h2 {
+                color: #7A5C99; /* Vibrant Purple */
+            }
+            code {
+                background: #BFA2DB; /* Light Purple */
+                padding: 2px 4px;
+                font-family: Consolas, monospace;
+            }
+            .github-link {
+                color: #D9D6D6; /* Off-White */
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Zuki - Your Personal Robot</h1>
+        </header>
+
+        <main>
+            <section>
+                <h2>What is Zuki?</h2>
+                <p>
+                    Zuki is a Raspberry Pi-powered personal robotic system that
+                    can be controlled via a command-line interface (CLI).
+                    It can also provide interactive features like facial
+                    expressions, speech, and more. It's modular, so you can
+                    replace
+                    placeholder functions (e.g., motor control, AI) with your
+                    own hardware or software solutions, making it very
+                    customizable!
+                </p>
+            </section>
+
+            <section>
+                <h2>Key Features</h2>
+                <ul>
+                    <li>Command-line interface (CLI) for direct control</li>
+                    <li>Optional facial expressions and speech bubble UI</li>
+                    <li>Speech recognition and text-to-speech (TTS) modules</li>
+                    <li>Motor control and sensors (if available)</li>
+                    <li>AI-based question/answer and potential expansions</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Getting Started at Home</h2>
+                <ol>
+                    <li>
+                        <strong>Clone the Repository:</strong><br />
+                        <code>git clone
+                            https://github.com/ahoymrag/engine.zuki.git</code>
+                    </li>
+                    <li>
+                        <strong>Set Up a Virtual Environment:</strong><br />
+                        <code>python -m venv .zuki<br />source
+                            .zuki/bin/activate</code> (Mac/Linux)
+                    </li>
+                    <li>
+                        <strong>Install Dependencies:</strong><br />
+                        <code>pip install -r requirements.txt</code>
+                    </li>
+                    <li>
+                        <strong>Option 1:</strong> Run Zuki in CLI Mode<br />
+                        <code>python main.py</code>
+                    </li>
+                    <li>
+                        <strong>Option 2:</strong> Run Zuki with a Graphical
+                        UI<br />
+                        <code>python zuki_ui.py</code><br />
+                        This will show Zuki's visual expressions and speech
+                        bubbles.
+                    </li>
+                    <li>
+                        <strong>Option 3:</strong> Run Both CLI &amp; UI
+                        Simultaneously<br />
+                        See <code>zuki.sh</code> (Mac/Linux) or
+                        <code>zuki.bat</code> (Windows).
+                    </li>
+                </ol>
+            </section>
+
+            <section>
+                <h2>How It Works</h2>
+                <p>
+                    Zuki uses Python scripts for each part of its functionality:
+                </p>
+                <ul>
+                    <li><code>main.py</code>: CLI entry point for controlling
+                        everything.</li>
+                    <li><code>zuki_ui.py</code>: A Pygame-based interface that
+                        displays Zuki's "face" and speech bubbles.</li>
+                    <li><code>web_server.py</code>: A Flask server that provides
+                        remote control and commands over HTTP.</li>
+                    <li><code>speech.py</code>: Text-to-speech (TTS) and
+                        (optional) speech recognition logic.</li>
+                    <li><code>piano.py</code>: A playful feature for generating
+                        musical notes through your computer's audio or a speaker
+                        connected to Zuki.</li>
+                </ul>
+                <p>
+                    Each file can be customized or replaced. For example, you
+                    can enhance <code>motor_control.py</code> if you have motors
+                    or <code>sensors.py</code> if you have distance sensors. The
+                    idea is that all the building blocks are ready for you
+                    to tweak or extend based on your hardware and personal
+                    creativity!
+                </p>
+            </section>
+
+            <section>
+                <h2>More Information</h2>
+                <p>
+                    Feel free to visit the
+                    <a class="github-link"
+                        href="https://github.com/ahoymrag/engine.zuki"
+                        target="_blank">
+                        engine.zuki GitHub repository
+                    </a>
+                    for more details and official updates.
+                </p>
+            </section>
+        </main>
+
+        <footer>
+            <p>&COPY; 2025 Alex Gonzalez</p>
+        </footer>
+
+        <!-- Example placeholder for new JavaScript you might have added to ./ahoyapp/www/ -->
+        <script src="zuki.js"></script>
+    </body>
+</html>
