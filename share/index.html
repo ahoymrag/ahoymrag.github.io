@@ -122,6 +122,19 @@
         color: #666;
         margin-top: 0.5rem;
       }
+      .home-button {
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        background-color: #007BFF;
+        color: #ffffff;
+        border-radius: 4px;
+        text-decoration: none;
+        transition: background-color 0.3s, color 0.3s;
+      }
+      .home-button:hover {
+        background-color: #0056b3;
+        color: #ffffff;
+      }
     </style>
     <!-- Alpine.js CDN -->
     <script
@@ -131,7 +144,7 @@
   <body>
 
     <header>
-      <h1>My Shared Portfolio</h1>
+      <h1>My Selected Portfolio</h1>
       <p>Quick overview of my graphic/web/video projects</p>
     </header>
 
@@ -291,14 +304,13 @@
   </body>
   <footer
     style="background: #fff; padding: 1rem; text-align: center; box-shadow: 0 -1px 6px rgba(0,0,0,0.1);">
-    <a href="https://alexgonzalez.ooo//public/cv+resume/index.html"
+    <a href="https://alexgonzalez.ooo//public/cv+resume/25cv/cv25-1.html"
       target="_blank"
       style="color: #333; text-decoration: none; font-weight: bold;">View my
       full CV in print format</a>
     <p>
       <a href="https://alexgonzalez.ooo" target="_blank"
-        style="color: #333; text-decoration: none; font-weight: bold;">Return
-        Home</a>
+        class="home-button">Return Home</a>
     </p>
   </footer>
 </html>
