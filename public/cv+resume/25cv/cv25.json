@@ -1,0 +1,176 @@
+{
+  "name": "Alex Gonzalez",
+  "title": "Creative Director | Filmmaker | Software Designer",
+  "contact": {
+    "phone": "(914) 391-9934",
+    "email": "alex@ahoy.ooo",
+    "portfolio": "alexgonzalez.ooo/share",
+    "websites": ["ahoy.ooo", "apeworx.io", "cpcnewhaven.org"]
+  },
+  "professional_summary": "A multidisciplinary professional with a background in film production, software design, and business. Proven ability to lead creative teams, mentor students, and deliver long-term projects in innovative and technical fields.",
+  "work_experience": [
+    {
+      "company": "The Montauk Wine Project",
+      "year": "2025",
+      "title": "Product Designer and Frontend Engineer"
+    },
+    {
+      "company": "Silverback at ApeWorx, LTD",
+      "years": "2021 - 2025",
+      "title": "Product Designer"
+    },
+    {
+      "company": "Mission Anabaino",
+      "year": "2023",
+      "title": "Executive Digital Platform Director",
+      "description": "Created a system for new church plants to have a base-level foundation of technology."
+    },
+    {
+      "company": "ApeWorx",
+      "years": "2022 - 2023",
+      "title": "Product Designer"
+    },
+    {
+      "company": "ApeWorx",
+      "years": "2021 - 2022",
+      "title": "Creative Director"
+    },
+    {
+      "company": "Ahoy Indie Media",
+      "years": "2022 - Present",
+      "title": "Founder and Chief"
+    },
+    {
+      "company": "Choate Rosemary",
+      "year": "2023",
+      "title": "Adjunct Film Professor",
+      "description": "Taught undergraduate preparatory courses in Film Studies and Digital Photography."
+    },
+    {
+      "company": "CPC New Haven",
+      "years": "2020 - Present",
+      "title": "AV Director",
+      "description": "Oversaw the audiovisual department."
+    }
+  ],
+  "teaching_experience": [
+    {
+      "institution": "Choate Rosemary Hall, Wallingford, CT",
+      "year": "2023",
+      "courses_taught": ["Digital Filmmaking II", "Digital Photography I", "Digital Photography II"]
+    },
+    {
+      "institution": "SUNY New Paltz, New Paltz, NY",
+      "years": "2019 - 2021",
+      "courses_taught": ["Digital Filmmaking II", "Digital Photography I", "Digital Photography II"]
+    },
+    {
+      "institution": "Wilton Library - Maker Program, Wilton, CT",
+      "year": "2019",
+      "courses_taught": ["VR World Building"]
+    },
+    {
+      "institution": "Workspace Academy, Bethel, CT",
+      "year": "2019",
+      "courses_taught": ["Immersive Storytelling", "VR Production"]
+    },
+    {
+      "institution": "New Haven Ives Squared - Maker Program, New Haven, CT",
+      "year": "2018",
+      "courses_taught": ["Immersive Storytelling", "VR World Building"]
+    },
+    {
+      "institution": "Jacob Burns Film Center, Pleasantville, NY",
+      "years": "2017 - 2019",
+      "courses_taught": ["Adventures in Media", "Immersive Storytelling", "Podcast People", "Camera Tricks"]
+    },
+    {
+      "institution": "Ridgefield Library, Ridgefield, CT",
+      "year": "2018",
+      "courses_taught": ["Making Magic from Scratch", "Immersive Storytelling"]
+    },
+    {
+      "institution": "Yonkers Public Library, Yonkers, NY",
+      "years": "2017 - 2018",
+      "courses_taught": ["Making Magic from Scratch"]
+    },
+    {
+      "institution": "Coding Kidz, NY, NY",
+      "years": "2016 - 2017",
+      "courses_taught": ["Making Magic from Scratch"]
+    },
+    {
+      "institution": "Tarrytown Summer Challenge Camp, Tarrytown, NY",
+      "years": "2015 - 2018",
+      "courses_taught": ["Making Magic from Scratch"]
+    }
+  ],
+  "recent_projects": {
+    "filmmaking": [
+      {
+        "title": "Editor and Colorist",
+        "project": "Dallas (2025)",
+        "company": "Childlike Studios"
+      },
+      {
+        "title": "Editor and Media Director",
+        "project": "Ahoy Indie Media Live Shows (2025)"
+      },
+      {
+        "title": "Producer | Director | Editor",
+        "project": "The Rob Show (2022 - 2025)"
+      },
+      {
+        "title": "Director | Editor",
+        "project": "Silverback Trailer (2023)"
+      },
+      {
+        "title": "Director | Editor",
+        "project": "Pantalones Cinematic Skatefilm Opening (2023)"
+      },
+      {
+        "title": "Director | Editor",
+        "project": "ChaosNet Trailer (2023)"
+      }
+    ]
+  },
+  "skills": [
+    "Creating Custom GPTs using Advanced AI APIs",
+    "Developing Python applications integrated with open-source AI models",
+    "Bulk video editing automation",
+    "Index creation and data monitoring",
+    "Virtual Reality Development (Unreal Engine 4 & 5, APK Development for Oculus Quest & Android)",
+    "Film & Video Production (Adobe Premiere Pro, DaVinci Resolve, After Effects, Dragon Capture)",
+    "Web & App Development (HTML, CSS, JavaScript, Cordova, Alpine.js, Git Version Control)",
+    "Software Programming (OOP, Objective-C, Python for UI apps and internal systems)",
+    "UI/UX Design (Responsive design, various CSS & JS frameworks, Figma)",
+    "Business & Marketing (Writing business plans, campaign strategies)",
+    "Problem-Solving (Troubleshooting, debugging, performance optimization, web security)",
+    "Team Collaboration (Remote and in-person leadership for creative & technical projects)"
+  ],
+  "achievements": [
+    "Launched Ahoy Indie Media App Platform and Debuted a Live Variety Show (2025)",
+    "Winner of 2022 - ETH DENVER Vega HACKATHON",
+    "Creative-in-Residence, New Haven Public Library (2018)",
+    "Maker-in-Residence, Ridgefield Library (2018)",
+    "Creative Culture Fellowship, Creative Culture Program - Jacob Burns (2017)",
+    "Middlebury Film Festival Acceptance - Beyond the Mountain (VR Film, 2017)"
+  ],
+  "references": [
+    {
+      "name": "Bryant Eisenbach",
+      "title": "Founder",
+      "company": "ApeWorX, LTD"
+    },
+    {
+      "name": "Preston Graham",
+      "title": "Founder",
+      "company": "Mission Anabaino"
+    },
+    {
+      "name": "Craig Luekens",
+      "title": "Senior Pastor",
+      "company": "CPC New Haven"
+    }
+  ]
+}
