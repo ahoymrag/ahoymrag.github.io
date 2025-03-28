@@ -1,7 +1,185 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
-        <title>
-            Hello Cinemafi
-        </title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CinemaFi - The Future of Indie Film</title>
+        <link rel="stylesheet" href="styles.css" />
+        <style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  color: #000;
+  line-height: 1.6;
+  background: url('https://storage.googleapis.com/ag-photography/global/cinemafi/logo-bg-light.jpg') no-repeat center center fixed;
+  background-size: cover;
+  background-color: #f0f0f0;
+  overflow-x: hidden;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.overlay {
+  background: rgba(255, 255, 255, 0.75);
+  padding: 3rem;
+  text-align: center;
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  max-width: 90%;
+}
+
+.overlay h1 {
+  font-size: 4rem;
+  color: #222;
+}
+
+.overlay p {
+  font-size: 1.25rem;
+  color: #444;
+  margin-top: 1rem;
+}
+
+main {
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+  padding: 2rem;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: -40px;
+  left: -40px;
+  width: 150px;
+  height: 150px;
+  background: radial-gradient(circle, rgba(255,255,255,0.4), transparent);
+  transform: rotate(45deg);
+  pointer-events: none;
+}
+
+.card h2 {
+  color: #222;
+  margin-bottom: 1rem;
+}
+
+.card ul {
+  padding-left: 1.5rem;
+  list-style: disc;
+}
+
+.card code {
+  background: #e0e0e0;
+  color: #000;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+pre {
+  background: #eee;
+  padding: 1rem;
+  overflow-x: auto;
+  border-radius: 12px;
+  color: #000;
+  margin-top: 1rem;
+}
+
+a {
+  color: #333;
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  color: #777;
+  font-size: 0.9rem;
+  background: #f5f5f5;
+}
+</style>
     </head>
+    <body>
+        <div class="hero">
+            <div class="overlay">
+                <h1>CinemaFi</h1>
+                <p>The command center for your indie film investment journey</p>
+            </div>
+        </div>
+
+        <main>
+            <section class="card">
+                <h2>What is CinemaFi?</h2>
+                <p>
+                    CinemaFi is your one-stop platform to explore, evaluate, and invest in indie films using Web3 tools. Track your portfolio, engage with creators, and earn through decentralized entertainment.
+                </p>
+            </section>
+
+            <section class="card">
+                <h2>Core Features</h2>
+                <ul>
+                    <li>ETH Wallet integration</li>
+                    <li>Real-time film project updates</li>
+                    <li>Investment history and tracking</li>
+                    <li>CLI and Web UI control</li>
+                    <li>Educational hub for new investors</li>
+                </ul>
+            </section>
+
+            <section class="card">
+                <h2>How It Works</h2>
+                <p>CinemaFi CLI is powered by Python modules:</p>
+                <ul>
+                    <li><code>main.py</code> — Main terminal interface</li>
+                    <li><code>wallet.py</code> — Simulated ETH wallet operations</li>
+                    <li><code>films.py</code> — Film browsing & investing</li>
+                    <li><code>web_launcher.py</code> — Opens the web app</li>
+                </ul>
+            </section>
+
+            <section class="card">
+                <h2>Quickstart</h2>
+                <pre><code>
+git clone https://github.com/yourusername/cinemafi-cli.git
+cd cinemafi-cli
+python -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+python main.py
+                </code></pre>
+            </section>
+
+            <section class="card">
+                <h2>More Info</h2>
+                <p>Check out the full project on <a href="https://github.com/yourusername/cinemafi-cli" target="_blank">GitHub</a>.</p>
+            </section>
+        </main>
+
+        <footer>
+            <a href="https://alexgonzalez.ooo" target="_blank">&copy; 2025 Alex Gonzalez — CinemaFi</a>
+        </footer>
+    </body>
 </html>
