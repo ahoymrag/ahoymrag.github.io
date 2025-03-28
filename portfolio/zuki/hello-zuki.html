@@ -3,70 +3,191 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Zuki - Your Friendly Personal Robot</title>
+        <title>Zuki - The Soft & Smart Bot</title>
         <link rel="stylesheet" href="styles.css" />
+
+        <style>
+/* Base reset and global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  color: #ffffff;
+  line-height: 1.6;
+  background: #1e1a34;
+  overflow-x: hidden;
+}
+
+/* Parallax background */
+.hero {
+  background: url('https://storage.googleapis.com/ag-photography/global/zuki/glass-superZuki.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.overlay {
+  background: rgba(30, 26, 52, 0.7);
+  padding: 3rem;
+  text-align: center;
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  max-width: 90%;
+}
+
+.overlay h1 {
+  font-size: 4rem;
+  color: #ffffff;
+}
+
+.overlay p {
+  font-size: 1.25rem;
+  color: #e0e0e0;
+  margin-top: 1rem;
+}
+
+/* Card sections */
+main {
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 2rem;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Shiny white light gradient on top-left corner */
+.card::before {
+  content: "";
+  position: absolute;
+  top: -40px;
+  left: -40px;
+  width: 150px;
+  height: 150px;
+  background: radial-gradient(circle, rgba(255,255,255,0.3), transparent);
+  transform: rotate(45deg);
+  pointer-events: none;
+}
+
+.card h2 {
+  color: #f6daff;
+  margin-bottom: 1rem;
+}
+
+.card ul {
+  padding-left: 1.5rem;
+  list-style: disc;
+}
+
+.card code {
+  background: #2e2047;
+  color: #fff;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+pre {
+  background: #2e2047;
+  padding: 1rem;
+  overflow-x: auto;
+  border-radius: 12px;
+  color: #fff;
+  margin-top: 1rem;
+}
+
+a {
+  color: #ffdefe;
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem;
+  color: #aaa;
+  font-size: 0.9rem;
+  background: #1e1a34;
+}
+</style>
+
     </head>
     <body>
         <div class="hero">
             <div class="overlay">
                 <h1>Zuki</h1>
-                <p>Your Friendly, Fantasy-Inspired Personal Robot Companion</p>
+                <p>Your cuddly, intelligent personal companion robot</p>
             </div>
         </div>
 
         <main>
-            <section class="feature">
+            <section class="card">
                 <h2>What is Zuki?</h2>
                 <p>
-                    Zuki is a plushy, lovable personal robot powered by
-                    Raspberry Pi.
-                    With a friendly CLI, optional face UI, and full modularity,
-                    Zuki can
-                    become whatever you imagine — from music maker to life
-                    assistant.
+                    Zuki is your adorable Raspberry Pi-powered robot with a soft
+                    heart and
+                    smart brain. Whether it’s playing music, chatting, or
+                    reacting with cute
+                    facial expressions, Zuki is built to be a delightful
+                    companion.
                 </p>
             </section>
 
-            <section class="feature">
-                <h2>Key Features</h2>
+            <section class="card">
+                <h2>Features</h2>
                 <ul>
-                    <li>Command-line interface (CLI) for direct control</li>
-                    <li>Adorable facial expressions with speech bubbles</li>
-                    <li>Speech recognition and text-to-speech modules</li>
-                    <li>Optional motor control and sensor expansions</li>
-                    <li>Playful mini-apps like a piano or emotion simulator</li>
+                    <li>Voice control & TTS interaction</li>
+                    <li>CLI & visual face UI</li>
+                    <li>Customizable scripts (Python-based)</li>
+                    <li>Optional motor/sensor integration</li>
+                    <li>Remote control via Flask API</li>
                 </ul>
             </section>
 
-            <section class="feature">
+            <section class="card">
                 <h2>How It Works</h2>
-                <p>Zuki runs on Python with separate scripts for modularity:</p>
+                <p>Zuki runs using modular Python files:</p>
                 <ul>
                     <li><code>main.py</code> — CLI control</li>
-                    <li><code>zuki_ui.py</code> — Facial expression UI</li>
-                    <li><code>speech.py</code> — TTS + speech recognition</li>
-                    <li><code>piano.py</code> — Play music via commands</li>
-                    <li><code>web_server.py</code> — Remote control via
-                        Flask</li>
+                    <li><code>zuki_ui.py</code> — Pygame face interface</li>
+                    <li><code>speech.py</code> — Voice interaction</li>
+                    <li><code>web_server.py</code> — Remote API</li>
                 </ul>
             </section>
 
-            <section class="feature">
+            <section class="card">
                 <h2>Get Started</h2>
                 <pre><code>
 git clone https://github.com/ahoymrag/engine.zuki.git
 cd engine.zuki
 python -m venv .zuki
-source .zuki/bin/activate  # Mac/Linux
+source .zuki/bin/activate
 pip install -r requirements.txt
 python main.py
       </code></pre>
             </section>
 
-            <section class="feature">
-                <h2>Explore More</h2>
-                <p>
-                    Dive into Zuki's full source code on
+            <section class="card">
+                <h2>More Info</h2>
+                <p>See the project on
                     <a href="https://github.com/ahoymrag/engine.zuki"
                         target="_blank">GitHub</a>.
                 </p>
@@ -74,23 +195,7 @@ python main.py
         </main>
 
         <footer>
-            &copy; 2025 Alex Gonzalez
+            &copy; 2025 Alex Gonzalez — Zuki Project
         </footer>
-
-        <script>
-    // Fade-in animation as each feature scrolls into view
-    const features = document.querySelectorAll('.feature');
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        }
-      });
-    }, {
-      threshold: 0.1
-    });
-
-    features.forEach(f => observer.observe(f));
-  </script>
     </body>
 </html>
