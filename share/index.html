@@ -138,16 +138,127 @@
       .featured-project {
         width: 100%;
         padding: 2rem 0;
-        background: #1a002c; /* Dark purple background */
         text-align: center;
         color: white;
         position: relative;
-     
+        margin-bottom: 2rem;
+        backdrop-filter: blur(5px);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
       }
-      .zuki-project {
+      .featured-project h2 {
+        margin-top: 0;
+      }
+      .featured-project .home-button {
         margin-top: 1rem;
+        backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
       }
-   
+      #cinemafi-project {
+        background-color: rgba(192, 192, 192, 0.8);
+        border-radius: 0 0 8px 8px;
+        background-image: linear-gradient(to bottom, rgba(192, 192, 192, 0.9), rgba(192, 192, 192, 0.7));
+        padding-bottom: 3rem;
+      }
+      #zuki-project {
+        margin-top: 0;
+        position: relative;
+        border-radius: 8px 8px 0 0;
+        padding-top: 4rem;
+        padding-bottom: 2rem;
+        background: #303840; /* Steel grey background */
+        background-image: linear-gradient(to bottom, #303840, #1a2026); /* Steel grey gradient */
+      }
+      
+      /* Make all project cards consistent */
+      .featured-project .project-card {
+        padding: 1.5rem;
+        margin: 1rem auto;
+        max-width: 600px;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(5px);
+        border-radius: 8px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        position: relative;
+      }
+      
+      /* Apply the background image only to the Zuki card */
+      .project-card-zuki {
+        padding: 1.5rem;
+        margin: 1rem auto;
+        max-width: 600px;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        backdrop-filter: blur(5px);
+        border-radius: 8px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+      }
+      
+      /* Create a pseudo-element for the background image inside the Zuki card */
+      .project-card-zuki::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url('https://storage.googleapis.com/ag-photography/global/zuki/glass-superZuki.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: -2;
+        transform: scale(1.01); /* Slight scale to avoid edge gaps */
+      }
+      
+      /* Overlay gradient on top of the image for the Zuki card */
+      .project-card-zuki::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(to bottom, rgba(26, 0, 44, 0.8), rgba(26, 0, 44, 0.6));
+        z-index: -1;
+      }
+      
+      /* Ensure all content in Zuki card is positioned correctly */
+      .project-card-zuki * {
+        position: relative; /* Keep content above background layers */
+      }
+      
+      #zuki-project h2 {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+        text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+      }
+      /* Styling for the project summary section */
+      .project-summary {
+        background: rgba(255, 255, 255, 0.8);
+        border-radius: 8px;
+        padding: 2rem;
+        margin: 2rem auto;
+        max-width: 1200px;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+      .project-summary h2 {
+        margin-top: 0;
+        color: #333;
+      }
+      .project-summary p {
+        line-height: 1.6;
+        color: #444;
+      }
+      /* Add light glow to buttons for all projects */
+      .featured-project .home-button {
+        margin-top: 1rem;
+        backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+        font-weight: 500;
+      }
     </style>
     <!-- Alpine.js CDN -->
     <script
@@ -155,6 +266,37 @@
       defer></script>
   </head>
   <body>
+
+    <!-- Featured Projects Hero Section at the top -->
+    <section class="featured-project" id="zuki-project">
+      <h2>Featured Projects</h2>
+      
+      <div class="project-card-zuki">
+        <h3>ZUKI - Personal Robot</h3>
+        <p>An advanced AI-powered personal assistant robot exploring the boundaries of human-machine interaction</p>
+        <button class="home-button"
+          @click="window.location.href = './../portfolio/zuki/hello-zuki.html'">Explore Project</button>
+      </div>
+      
+      <div class="featured-project" id="cinemafi-project">
+        <div class="project-card">
+          <h3>cinemaFi</h3>
+          <p>The command center for your indie film investment journey - connecting creators with investors</p>
+          <button class="home-button"
+          @click="window.location.href = './../host/cinemafi/hello-cine/index.html'">Explore Project</button>
+        </div>
+      </div>
+      
+      <!-- Mountain Gorilla Project -->
+      <div class="featured-project" id="gorilla-project">
+        <div class="project-card">
+          <h3>Mountain Gorilla</h3>
+          <p>Based off of the silverback Eth Open SDK - a python based terminal gui for silverback and etch endeavors</p>
+          <button class="home-button"
+          @click="window.location.href = './../portfolio/gorilla/index.html'">Explore Project</button>
+        </div>
+      </div>
+    </section>
 
     <header>
       <h1>My Selected Portfolio</h1>
@@ -189,17 +331,6 @@
           </template>
         </div>
       </template>
-    </section>
-
-    <!-- Featured Project Section at the bottom -->
-    <section class="featured-project">
-      <h2>Featured Projects</h2>
-      <div class="zuki-project">
-        <h3>ZUKI - Personal Robot</h3>
-        <button class="home-button"
-          @click="window.location.href = './../portfolio/zuki/hello-zuki.html'">View
-          Zuki</button>
-      </div>
     </section>
 
     <!-- Modal / Lightbox -->
@@ -324,6 +455,18 @@
         };
       }
     </script>
+
+    <!-- Add a summary of programming languages and capabilities near the bottom -->
+    <section class="project-summary">
+      <h2>Programming & Tech Skills Summary</h2>
+      <p>
+        I'm experienced in a variety of technologies, including HTML, CSS, JavaScript, Alpine.js,
+        Python, Flask, Heroku, React, and more. I can build full-stack applications, work with databases,
+        create up server-side applications, and also handle design, video editing, and creative projects including VR and AR. I have taught students of all ages and skill levels, and have experience in both one-on-one and group settings.
+        My experience allows me to create dynamic websites, interactive UIs, and user
+        experiences across the web, phone, and terminal.
+      </p>
+    </section>
 
   </body>
   <footer

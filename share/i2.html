@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" x-data="portfolioPage()">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>My Shared Portfolio</title>
+    <!-- (Styling remains unchanged, omitted here for brevity) -->
+    <style>/* original styles here */</style>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+  </head>
+  <body>
+
+    <!-- Featured Section -->
+    <section class="featured-project" id="zuki-project">
+      <h1>My Selected Portfolio</h1>
+      <p>After a decade in the tech world, I've stepped away to explore meaningful creative and community-driven projects. Below you’ll find a mix of past and present work.</p>
+
+      <div class="zuki-project">
+        <h3>ZUKI - Personal Robot</h3>
+        <button class="home-button" @click="window.location.href = './../portfolio/zuki/hello-zuki.html'">hello Zuki</button>
+      </div>
+      <div class="featured-project" id="cinemafi-project">
+        <h3>cinemaFi</h3>
+        <p>The command center for your indie film investment journey</p>
+        <button class="home-button" @click="window.location.href = './../host/cinemafi/hello-cine/index.html'">hello Cinemafi</button>
+      </div>
+      <div class="featured-project" style="background-color:#444; margin-top: 1rem;">
+        <h3>Mountain Gorilla</h3>
+        <p>Current exploration: building projects slowly, with care, curiosity, and purpose. 🦍</p>
+      </div>
+    </section>
+
+    <!-- Filter Buttons -->
+    <div class="filter-buttons">
+      <button :class="{'active': filter === 'All'}" @click="filter = 'All'">All</button>
+      <template x-for="cat in categories" :key="cat">
+        <button :class="{'active': filter === cat}" @click="filter = cat" x-text="cat"></button>
+      </template>
+    </div>
+
+    <!-- Gallery Grid -->
+    <section class="gallery-grid">
+      <template x-for="item in filteredItems" :key="item.id">
+        <div class="gallery-item" @click="openModal(item)">
+          <img :src="item.thumbnail" :alt="item.title">
+          <h3 x-text="item.title"></h3>
+          <template x-if="item.mediaType === 'website'">
+            <p class="tags" x-text="item.tags.join(', ')"></p>
+          </template>
+        </div>
+      </template>
+    </section>
+
+    <!-- Services Reminder -->
+    <section class="featured-project" style="background-color: #111; color: white;">
+      <h2>What I Can Do</h2>
+      <p>I offer freelance and contract services in:</p>
+      <ul style="list-style: none; padding: 0;">
+        <li>✨ Front-End Web Design & Development (HTML, CSS, JS, Alpine.js)</li>
+        <li>🎨 Graphic & Motion Design (Adobe Suite, Illustrator, After Effects)</li>
+        <li>🎽️ Video Editing & Audio Production (Premiere, Logic)</li>
+        <li>🧐 Education: Coding Workshops for Youth (12–17)</li>
+        <li>🗂️ Data Dashboards & Light CMS Integrations (JSON-based)</li>
+      </ul>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="featured-project" style="background-color: #007BFF; color: white;">
+      <h2>Let’s Build Something</h2>
+      <p>Whether you need a portfolio, a media kit, a website, or help launching a product—I'm here to collaborate.</p>
+      <p><strong>Languages & Tools:</strong> JavaScript, HTML, CSS, Python, JSON, GitHub Pages, Cordova, Alpine.js</p>
+      <p>📧 <strong>Reach me at:</strong> alex@ahoy.media or via <a style="color: white; text-decoration: underline;" href="https://alexgonzalez.ooo" target="_blank">alexgonzalez.ooo</a></p>
+    </section>
+
+    <!-- Modal / Lightbox -->
+    <div class="modal" x-show="showModal" @click.self="closeModal()" x-transition>
+      <div class="modal-content">
+        <button class="close-btn" @click="closeModal()">✕</button>
+        <template x-if="selectedItem && selectedItem.mediaType === 'video'">
+          <video controls x-bind:src="selectedItem.mediaUrl"></video>
+        </template>
+        <template x-if="selectedItem && selectedItem.mediaType === 'image'">
+          <img class="modal-media" x-bind:src="selectedItem.mediaUrl" alt />
+        </template>
+        <template x-if="selectedItem && selectedItem.mediaType === 'website'">
+          <iframe class="modal-media" x-bind:src="selectedItem.mediaUrl" frameborder="0" style="width: 100%; height: auto; aspect-ratio: 16/9; border-radius: 4px;"></iframe>
+        </template>
+        <h2 x-text="selectedItem ? selectedItem.title : ''"></h2>
+        <p class="description" x-text="selectedItem ? selectedItem.description : ''"></p>
+      </div>
+    </div>
+
+    <!-- Alpine.js Logic (unchanged) -->
+    <script>
+      // Alpine logic here
+    </script>
+
+  </body>
+  <footer style="background: #fff; padding: 1rem; text-align: center; box-shadow: 0 -1px 6px rgba(0,0,0,0.1);">
+    <a href="https://alexgonzalez.ooo//public/cv+resume/25cv/cv25-1.html" target="_blank" style="color: #333; text-decoration: none; font-weight: bold;">View my full CV in print format</a>
+    <p><a href="https://alexgonzalez.ooo" target="_blank" class="home-button">Return Home</a></p>
+    <p style="font-size: 0.85rem; color: #777;">© 2025 Alex Gonzalez · Ahoy Indie Media</p>
+  </footer>
+</html>
