@@ -259,6 +259,51 @@
         box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
         font-weight: 500;
       }
+      /* Add styles for the Mountain Gorilla project card */
+      .project-card-gorilla {
+        padding: 1.5rem;
+        margin: 1rem auto;
+        max-width: 600px;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        backdrop-filter: blur(5px);
+        border-radius: 8px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+      }
+
+      /* Background image for the Gorilla card */
+      .project-card-gorilla::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url('https://storage.googleapis.com/ag-photography/global/mountain_gorilla/Mountain%20Gorilla.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: -2;
+        transform: scale(1.01);
+      }
+
+      /* Overlay gradient for the Gorilla card */
+      .project-card-gorilla::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(to bottom, rgba(78, 42, 132, 0.8), rgba(78, 42, 132, 0.6));
+        z-index: -1;
+      }
+
+      /* Position content properly */
+      .project-card-gorilla * {
+        position: relative;
+      }
     </style>
     <!-- Alpine.js CDN -->
     <script
@@ -288,7 +333,7 @@
       <div class="featured-project" id="cinemafi-project">
         <div class="project-card">
           <h3>cinemaFi</h3>
-          <p>The command center for your indie film investment journey - connecting creators with investors</p>
+          <p>A command center for decentralized indie film fund investment - connecting creators with defi investors</p>
           <button class="home-button"
           @click="window.location.href = './../host/cinemafi/hello-cine/index.html'">Explore Project</button>
         </div>
@@ -296,9 +341,9 @@
       
       <!-- Mountain Gorilla Project -->
       <div class="featured-project" id="gorilla-project">
-        <div class="project-card">
+        <div class="project-card-gorilla">
           <h3>Mountain Gorilla</h3>
-          <p>Based off of the silverback Eth Open SDK - a python based terminal gui for silverback and etch endeavors</p>
+          <p>Based off of the silverback Eth Open SDK - a python based terminal gui for silverback and fintech bot management</p>
           <button class="home-button"
           @click="window.location.href = './../portfolio/gorilla/index.html'">Explore Project</button>
         </div>
@@ -467,7 +512,7 @@
     <section class="project-summary">
       <h2>Programming & Tech Skills Summary</h2>
       <p style="text-align: left; max-width: 800px; margin: 0 auto; line-height: 1.4;">
-        I've experienced a variety of technologies, including HTML, CSS, JavaScript, Alpine.js, Python, Flask, Heroku, React, and more. I build full-stack applications, create custom software, produce podcasts, set up audio visual studios, teach kids on Sunday, host live events every month around New Haven, manage a small indie startup called Ahoy - help people during the day - and code - write and edit hard at night - work with databases, create server-side applications, and also handle design, video editing, and creative projects including VR and AR. I have taught students of all ages and skill levels, and have experience in both one-on-one and group settings. My experience allows me to create dynamic websites, interactive UIs, and user experiences across the web, phone, and terminal.
+        I've experienced a variety of technologies, including HTML, CSS, JavaScript, Alpine.js, Python, Flask, Heroku, React, and more. I build full-stack applications, create custom software, produce podcasts, set up audio visual studios, teach kids on Sunday, host live events every month around New Haven, manage a small indie startup called Ahoy - help people during the day - and code - write and edit hard at night - work with databases, create server-side applications, and also handle design, video editing, and creative projects including VR and AR. I have taught students of all ages and skill levels, and have experience in both one-on-one and group settings. My experience allows me to create dynamic websites, interactive UIs, and user experiences across the web, phone, terminals and robotics.
       </p>
       <a href="https://alexgonzalez.ooo//public/cv+resume/25cv/cv25-1.html"
       target="_blank" 
