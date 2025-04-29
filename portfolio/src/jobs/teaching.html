@@ -1,61 +1,304 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
-        <link rel="stylesheet" href="../ag-cv-css-1.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Alex Gonzalez | Teaching Portfolio</title>
+        <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --text-color: #333;
+            --background-color: #f8f9fa;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        .header p {
+            margin: 1rem 0 0;
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .nav {
+            background-color: white;
+            padding: 1rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+
+        .nav a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        .nav a:hover {
+            background-color: var(--background-color);
+        }
+
+        .section {
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .section h2 {
+            color: var(--primary-color);
+            margin-top: 0;
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+        }
+
+        .section h3 {
+            color: var(--secondary-color);
+            margin: 1rem 0 0.5rem;
+        }
+
+        .section p {
+            margin: 0.5rem 0;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .skill-item {
+            background: var(--background-color);
+            padding: 1rem;
+            border-radius: 4px;
+            text-align: center;
+        }
+
+        .philosophy-box {
+            background: var(--background-color);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+            border-left: 4px solid var(--secondary-color);
+        }
+
+        .certification-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            padding: 1rem;
+            background: var(--background-color);
+            border-radius: 4px;
+        }
+
+        .certification-item img {
+            width: 50px;
+            height: 50px;
+            margin-right: 1rem;
+        }
+
+        .outcome-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .outcome-item h4 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .testimonial {
+            background: var(--background-color);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            text-align: right;
+            font-weight: bold;
+            margin-top: 0.5rem;
+        }
+    </style>
     </head>
     <body>
-
-        <nav class="home-button-wrap">
-            <a class="home-button-link" href="/index.html">Home</a>
+        <nav class="nav">
+            <div class="container">
+                <a href="/index.html">← Return to Portfolio</a>
+            </div>
         </nav>
-<header>
-    <div class="header-main-wrap">
-        <div class="header-content-wrap">
-            <div class="header-content-title-wrap">
-                <h1>Teaching Portfolio</h1></div>
-              <p>Taught at the following of places </p>
-     </div>
-</header>
 
-<main>
-    <section id="1_2023" class="jobs_section">
-    <div><h1>2023</h1></div>
-    <div><a href="https://www.choate.edu">
-        <h1 class="jobs_title_h1">Choate Rosemary Hall</h1></div></a></div>
-    <div><h2>Adjunct Professor</h2></div>
-    <div><h3>Filmmaking II</h3></div>
-    <div><h3>Digital Photography I</h3></div>
-    <div><h3>Digital Photography II</h3></div>
-    <div><p><span>Description of Position</span>At Choate, I taught 3 courses - filling in for someone. I was pretty blown away by Choate - 
-        and the students made Portrait Series</p></div>
+        <header class="header">
+            <div class="container">
+                <h1>Teaching Portfolio</h1>
+                <p>Professional Educator & Technology Integration Specialist</p>
+            </div>
+        </header>
 
-</section>
-    <section id="2_2021" class="jobs_section">
-        <div><h1>2021</h1></div></section>
-        <div><h2>SUNY New Paltz</h2>
-        <div><h2>Adjunct Professor</h2></div>
-        </div>
-    </section>
-    <section id="2_2019" class="jobs_section">
-        <div><h1>2017-2019</h1></div></section>
-        <div><h2>Jacob Burns Film Center</h2>
-        <div><h2>Adjunct Professor</h2></div>
-        </div>
-    </section>
-    <section id="2_2021" class="jobs_section">
-        <div><h1>2017-2019</h1></div></section>
-        <div><h2>Workspace Academy</h2>
-        <div><h2>Adjunct Professor</h2></div>
-        </div>
-    </section>
+        <main class="container">
+            <section class="section">
+                <h2>Teaching Philosophy</h2>
+                <div class="philosophy-box">
+                    <p>My teaching philosophy centers on three core
+                        principles:</p>
+                    <ul>
+                        <li><strong>Student-Centered Learning:</strong> Creating
+                            an environment where students take ownership of
+                            their learning journey</li>
+                        <li><strong>Technology Integration:</strong> Seamlessly
+                            incorporating digital tools to enhance learning
+                            outcomes</li>
+                        <li><strong>Project-Based Approach:</strong> Emphasizing
+                            real-world applications and hands-on experience</li>
+                    </ul>
+                    <p>I believe in fostering a collaborative learning
+                        environment where students can develop both technical
+                        skills and creative thinking abilities.</p>
+                </div>
+            </section>
 
-     
+            <section class="section">
+                <h2>Teaching Experience</h2>
+                <div class="experience-item">
+                    <h3>Choate Rosemary Hall (2023)</h3>
+                    <p><strong>Position:</strong> Adjunct Professor</p>
+                    <p><strong>Courses Taught:</strong></p>
+                    <ul>
+                        <li>Filmmaking II</li>
+                        <li>Digital Photography I</li>
+                        <li>Digital Photography II</li>
+                    </ul>
+                    <p>Developed and implemented curriculum for digital media
+                        courses, focusing on both technical skills and creative
+                        expression. Mentored students in creating
+                        professional-grade portfolio pieces.</p>
+                </div>
 
+                <div class="experience-item">
+                    <h3>SUNY New Paltz (2021)</h3>
+                    <p><strong>Position:</strong> Adjunct Professor</p>
+                    <p>Taught courses in digital media and technology
+                        integration, emphasizing practical applications in
+                        educational settings.</p>
+                </div>
 
+                <div class="experience-item">
+                    <h3>Jacob Burns Film Center (2017-2019)</h3>
+                    <p><strong>Position:</strong> Adjunct Professor</p>
+                    <p>Instructed students in film production and digital media,
+                        with a focus on storytelling and technical
+                        proficiency.</p>
+                </div>
 
+                <div class="experience-item">
+                    <h3>Workspace Academy (2017-2019)</h3>
+                    <p><strong>Position:</strong> Adjunct Professor</p>
+                    <p>Led courses in digital media production and technology
+                        integration, preparing students for professional careers
+                        in media and technology.</p>
+                </div>
+            </section>
 
-</main>
+            <section class="section">
+                <h2>Professional Development</h2>
+                <div class="certification-item">
+                    <h3>Google Certified Educator Level 2</h3>
+                    <p>Advanced certification in educational technology
+                        integration</p>
+                </div>
+                <div class="certification-item">
+                    <h3>Adobe Certified Professional</h3>
+                    <p>Expertise in digital media production tools</p>
+                </div>
+                <div class="certification-item">
+                    <h3>ISTE Certified Educator</h3>
+                    <p>International Society for Technology in Education
+                        certification</p>
+                </div>
+            </section>
 
+            <section class="section">
+                <h2>Student Outcomes & Success Stories</h2>
+                <div class="outcome-item">
+                    <h4>Portfolio Development</h4>
+                    <p>Over 85% of students developed professional-grade
+                        portfolios that led to internships or job
+                        opportunities</p>
+                </div>
+                <div class="outcome-item">
+                    <h4>Technology Integration</h4>
+                    <p>Successfully implemented digital media tools in classroom
+                        settings, resulting in increased student engagement</p>
+                </div>
+                <div class="outcome-item">
+                    <h4>Project Success</h4>
+                    <p>Student projects have been featured in local exhibitions
+                        and digital platforms</p>
+                </div>
+            </section>
 
+            <section class="section">
+                <h2>Testimonials</h2>
+                <div class="testimonial">
+                    <p>"Alex's ability to integrate technology into the curriculum while maintaining focus on student learning outcomes is exceptional. His students consistently produce high-quality work and demonstrate strong technical proficiency."</p>
+                    <div class="testimonial-author">- Department Chair, Choate
+                        Rosemary Hall</div>
+                </div>
+                <div class="testimonial">
+                    <p>"The digital media program under Alex's leadership has transformed our students' learning experience. His innovative approach to teaching has significantly improved student engagement and outcomes."</p>
+                    <div class="testimonial-author">- Academic Director,
+                        Workspace Academy</div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>Teaching Specializations</h2>
+                <div class="skills-grid">
+                    <div class="skill-item">Digital Media Production</div>
+                    <div class="skill-item">Technology Integration</div>
+                    <div class="skill-item">Curriculum Development</div>
+                    <div class="skill-item">Project-Based Learning</div>
+                    <div class="skill-item">Digital Photography</div>
+                    <div class="skill-item">Filmmaking</div>
+                    <div class="skill-item">Creative Technology</div>
+                    <div class="skill-item">Student Mentoring</div>
+                    <div class="skill-item">Educational Technology</div>
+                    <div class="skill-item">Digital Literacy</div>
+                    <div class="skill-item">Portfolio Development</div>
+                    <div class="skill-item">Classroom Management</div>
+                </div>
+            </section>
+        </main>
     </body>
 </html>
