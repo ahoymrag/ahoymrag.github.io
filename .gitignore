@@ -1,0 +1,30 @@
+# Python
+app.py
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Templates and data
+templates/
+data/
+
+# HTML files
+i10.html
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Node modules
+node_modules/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo 
