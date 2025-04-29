@@ -4,21 +4,51 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <title>My Shared Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Clash+Display:wght@400;500;600&display=swap"
+      rel="stylesheet">
     <!-- Minimal Inline Styling for Demo Purposes -->
     <style>
-      * {
-        font-family: 'Montserrat', sans-serif; /* Updated font */
+      :root {
+        --font-primary: 'Inter', sans-serif;
+        --font-heading: 'Clash Display', sans-serif;
+        --color-text: #ffffff;
+        --color-background: #000000;
+        --color-accent: #ffffff;
       }
+
+      * {
+        font-family: var(--font-primary);
+      }
+
       body {
-        font-family: 'Montserrat', sans-serif; /* Updated font */
-        margin: 0; padding: 0;
-        background: #f9f9f9; 
-        color: #333;
+        margin: 0; 
+        padding: 0;
+        background: var(--color-background); 
+        color: var(--color-text);
         perspective: 1px;
         height: 100vh;
         overflow-x: hidden;
         overflow-y: auto;
       }
+
+      h1, h2, h3, .featured-project h2 {
+        font-family: var(--font-heading);
+        font-weight: 500;
+        letter-spacing: -0.02em;
+        color: var(--color-text);
+      }
+
+      .featured-project h2 {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+        text-align: center;
+        text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+      }
+
       header {
         background: rgba(255, 255, 255, 0.8);
         padding: 1rem;
@@ -141,22 +171,30 @@
       }
       .featured-project {
         width: 100%;
-        padding: 2rem 0;
+        padding: 4rem 0;
         text-align: center;
-        color: white;
         position: relative;
         margin-bottom: 2rem;
-        background: rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(5px);
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        background: rgba(0, 0, 0, 0.8);
       }
-      .featured-project h2 {
-        margin-top: 0;
+      .featured-intro {
+        max-width: 800px;
+        margin: 0 auto 3rem auto;
+        padding: 2rem;
+        background: rgba(0, 0, 0, 0.35);
+        border-radius: 12px;
+        box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+        backdrop-filter: blur(8px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
       }
-      .featured-project .home-button {
-        margin-top: 1rem;
-        backdrop-filter: blur(5px);
-        border: 1px solid rgba(255, 255, 255, 0.3);
+      .featured-intro p {
+        color: rgba(255,255,255,0.95);
+        font-size: 1.2rem;
+        line-height: 1.75;
+        text-shadow: 0 2px 4px rgba(0,0,0,0.4);
+        letter-spacing: 0.02em;
+        margin: 0;
+        font-weight: 400;
       }
       #cinemafi-project {
         border-radius: 0 0 8px 8px;
@@ -383,29 +421,29 @@
   <body>
 
     <!-- Featured Projects Hero Section at the top -->
-    <section class="featured-project" id="zuki-project">
+    <section class="featured-project">
       <h2>Featured Projects</h2>
 
-      <!-- Add descriptive blurb here -->
-      <div style="max-width: 800px; margin: 0 auto 2rem auto; padding: 0 1rem;">
-        <p
-          style="color: rgba(255,255,255,0.9); line-height: 1.6; font-size: 1.1rem; text-shadow: 0 1px 2px rgba(0,0,0,0.2);">
-          For the last couple of years, I served as a creative director for a
-          fintech framework developer on the blockchain called ApeWorX. It was a
-          great experience and I learned a lot - but sometimes - startups fail -
-          and ours did as well this past January. We grew from 3 to 17 folks and
-          we were able to raise $5.5M in venture capital. <br><br>
-          In the aftermath of the shutdown, I have decided to apply the lessons
-          I learned at ApeWorX and began to create several projects that
-          hopefully will be on interest to the community at large - but also
-          perhaps get me back into the game of building startups. <br><br>
-          Below are some thesis projects I have been actively working on.
+      <div class="featured-intro">
+        <p>
+          Over the last few years, I served as Creative Director for a
+          blockchain-focused fintech company called ApeWorX. It was a formative
+          experience — we grew from a team of 3 to 17 and raised $4.25M+ in
+          venture capital. But like many startups, ours ultimately shut down
+          this past January.<br><br>
+          In the aftermath, I've been applying the lessons I learned at ApeWorX
+          to a new series of projects — ones that I hope will offer value to the
+          broader community and also help me find my way back into building
+          startups.<br><br>
+          Below, you'll find some of the thesis projects I've been actively
+          developing.
           <br><br>
-          Even further below are some of the video projects I have produced for
-          Ape and for clients. I have a much larger catalog - but I perhaps will
-          save that for another day.
+          Further down are a few selected video pieces I created for ApeWorX and
+          other clients. I have a much larger catalog, perhaps I'll save that
+          for another day.
         </p>
       </div>
+
       <div class="featured-project" id="zuki-project">
         <div class="project-card-zuki">
           <h3>ZUKI - Personal Robot</h3>
@@ -637,9 +675,57 @@
         my CV in resume format</a>
     </section>
 
+    <!-- Teaching Portfolio Call to Action -->
+    <section class="teaching-cta" style="
+      background: rgba(0, 0, 0, 0.8);
+      padding: 4rem 0;
+      text-align: center;
+      margin-top: 2rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    ">
+      <div style="max-width: 800px; margin: 0 auto; padding: 0 2rem;">
+        <h2 style="
+          font-family: var(--font-heading);
+          font-size: 2.5rem;
+          margin-bottom: 1.5rem;
+          color: var(--color-text);
+        ">Teaching Journey</h2>
+        <p style="
+          font-size: 1.2rem;
+          line-height: 1.6;
+          margin-bottom: 2rem;
+          color: rgba(255, 255, 255, 0.9);
+        ">
+          Over the years, I've taught digital media, software development,
+          filmmaking, virtual reality animation, startup entrepreneurship, and
+          more at various institutions including Choate Rosemary Hall, SUNY New
+          Paltz, and Jacob Burns Film Center. I've also worked with various film
+          centers and after-school programs across New Haven and beyond.
+        </p>
+        <a href="./../portfolio/src/jobs/teaching.html"
+          style="
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: rgba(255, 255, 255, 0.1);
+            color: var(--color-text);
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 500;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          "
+          onmouseover="this.style.background='rgba(255, 255, 255, 0.15)'"
+          onmouseout="this.style.background='rgba(255, 255, 255, 0.1)'">
+          View Teaching Portfolio
+        </a>
+      </div>
+    </section>
+
   </body>
   <footer
-    style="background: #fff; padding: 1rem; text-align: center; box-shadow: 0 -1px 6px rgba(0,0,0,0.1);">
+    style="background: #000; padding: 1rem; text-align: center; box-shadow: 0 -1px 6px rgba(0,0,0,0.1); border-top: 1px solid rgba(255, 255, 255, 0.1);">
 
     <p>
       <a href="https://alexgonzalez.ooo" target="_blank"
