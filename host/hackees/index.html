@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" x-data="lacrosseKit()" class="bg-neutral-100 text-gray-900">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Hackees Custom Kit</title>
+        <script defer
+            src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+        <style>
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    h1, h2 {
+      font-weight: 300;
+      margin-bottom: 0.5rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background: white;
+      padding: 1.5rem;
+      border: 1px solid #ddd;
+      border-radius: 1rem;
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+    }
+
+    .btn {
+      background-color: black;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 9999px;
+      font-size: 0.9rem;
+      cursor: pointer;
+      border: none;
+    }
+
+    .btn:hover {
+      background-color: #333;
+    }
+
+    .bundle-builder {
+      margin-top: 3rem;
+      background: #fff;
+      border: 1px solid #ccc;
+      padding: 2rem;
+      border-radius: 1rem;
+    }
+
+    .cookie-banner {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #fefefe;
+      border-top: 1px solid #ccc;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.9rem;
+    }
+  </style>
+    </head>
+    <body>
+
+        <div class="container">
+            <h1>Build Your Own Hackees Kit</h1>
+            <p>Select from our luxurious line of sticks and accessories.</p>
+
+            <div class="grid">
+                <template x-for="product in products" :key="product.id">
+                    <div class="card">
+                        <h2 x-text="product.name"></h2>
+                        <p x-text="product.price"></p>
+                        <button class="btn" @click="addToBundle(product)">Add to
+                            Bundle</button>
+                    </div>
+                </template>
+            </div>
+
+            <div class="bundle-builder">
+                <h2>Your Bundle</h2>
+                <template x-if="bundle.length === 0">
+                    <p class="text-gray-500">No items added yet.</p>
+                </template>
+                <ul>
+                    <template x-for="item in bundle" :key="item.id">
+                        <li class="flex justify-between my-2">
+                            <span x-text="item.name"></span>
+                            <span x-text="item.price"></span>
+                        </li>
+                    </template>
+                </ul>
+                <div class="mt-4">
+                    <strong>Total:</strong> <span x-text="bundleTotal()"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cookie Banner -->
+        <div class="cookie-banner" x-show="showCookies" x-transition>
+            <span>We use cookies to personalize and improve your experience. <a
+                    href="#" style="text-decoration: underline;">Learn
+                    more</a>.</span>
+            <div class="space-x-2">
+                <button class="btn" @click="acceptCookies()">Accept</button>
+                <button class="btn" @click="declineCookies()">Decline</button>
+            </div>
+        </div>
+
+        <script>
+    function lacrosseKit() {
+      return {
+        products: [
+          { id: 1, name: 'Annapolis Blue Hackees Stick', price: '$39' },
+          { id: 2, name: 'Lime Rickee Hackees Stick', price: '$39' },
+          { id: 3, name: 'The Goalie Stick', price: '$49' },
+          { id: 4, name: 'Salute to Service Hackees Stick', price: '$45' },
+          { id: 5, name: 'Mini Lacrosse Goal', price: '$30' },
+          { id: 6, name: 'Extra Mini-Balls', price: 'from $3' },
+          { id: 7, name: 'The "OG" Pink Hackees Stick', price: '$39' }
+        ],
+        bundle: [],
+        showCookies: localStorage.getItem('cookiesAccepted') === null,
+        
+        addToBundle(product) {
+          this.bundle.push(product);
+        },
+
+        bundleTotal() {
+          let total = 0;
+          this.bundle.forEach(p => {
+            const price = parseFloat(p.price.replace(/[^0-9.]/g, ''));
+            if (!isNaN(price)) total += price;
+          });
+          return `$${total.toFixed(2)}`;
+        },
+
+        acceptCookies() {
+          localStorage.setItem('cookiesAccepted', true);
+          this.showCookies = false;
+        },
+
+        declineCookies() {
+          localStorage.setItem('cookiesAccepted', false);
+          this.showCookies = false;
+        }
+      };
+    }
+  </script>
+    </body>
+</html>
