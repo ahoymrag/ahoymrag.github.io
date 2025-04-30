@@ -50,13 +50,28 @@
       }
 
       header {
-        background: rgba(255, 255, 255, 0.8);
-        padding: 1rem;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        background: rgba(255, 255, 255, 0.1);
+        padding: 2rem;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
         text-align: center;
         backdrop-filter: blur(10px);
+        border-radius: 12px;
+        margin: 2rem auto;
+        max-width: 1200px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
       }
-      h1 { margin: 0; }
+      h1 { 
+        margin: 0;
+        font-size: 2.5rem;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        color: rgba(255, 255, 255, 0.95);
+      }
+      header p {
+        margin: 1rem 0 0;
+        font-size: 1.2rem;
+        color: rgba(255, 255, 255, 0.8);
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+      }
       .filter-buttons {
         display: flex; 
         flex-wrap: wrap; 
@@ -86,26 +101,38 @@
         margin: 0 auto;
       }
       .gallery-item {
-        background: rgba(255, 255, 255, 0.8);
-        border: 1px solid rgba(221, 221, 221, 0.3);
-        border-radius: 4px;
-        padding: 0.5rem;
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 12px;
+        padding: 1rem;
         text-align: center;
         cursor: pointer;
-        transition: transform 0.2s, background 0.3s;
-        backdrop-filter: blur(5px);
+        transition: transform 0.3s, background 0.3s, box-shadow 0.3s;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
       }
       .gallery-item:hover {
-        transform: scale(1.02);
-        background: rgba(255, 255, 255, 0.9);
+        transform: scale(1.02) translateY(-5px);
+        background: rgba(255, 255, 255, 0.15);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
       }
       .gallery-item img {
         max-width: 100%;
-        border-radius: 4px;
+        border-radius: 8px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        margin-bottom: 1rem;
       }
       .gallery-item h3 {
         margin: 0.5rem 0 0; 
         font-size: 1.1rem;
+        color: rgba(255, 255, 255, 0.95);
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+      }
+      .gallery-item .tags {
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 0.9rem;
+        margin-top: 0.5rem;
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
       }
       /* Modal Styling */
       .modal {
@@ -428,7 +455,7 @@
         <p>
           Over the last few years, I served as Creative Director for a
           blockchain-focused fintech company called ApeWorX. It was a formative
-          experience — we grew from a team of 3 to 17 and raised $4.25M+ in
+          experience — we grew from a team of 3 to 17 and raised $3.4M+ in
           venture capital. But like many startups, ours ultimately shut down
           this past January.<br><br>
           In the aftermath, I've been applying the lessons I learned at ApeWorX
@@ -479,8 +506,8 @@
     </section>
 
     <header>
-      <h1>My Selected Portfolio</h1>
-      <p>Quick overview of my graphic/web/video projects</p>
+      <h1>Selected Work</h1>
+      <p>Graphic design, web development, and video production</p>
     </header>
 
     <!-- Filter Buttons -->
@@ -654,8 +681,9 @@
     <!-- Add a summary of programming languages and capabilities near the bottom -->
     <section class="project-summary">
       <h2>Technical Expertise & Development Skills</h2>
-      <div style="text-align: left; max-width: 800px; margin: 0 auto;">
-        <p style="line-height: 1.6; margin-bottom: 1.5rem;">
+      <div
+        style="text-align: left; max-width: 800px; margin: 0 auto; padding-left: 2rem;">
+        <p style="line-height: 1.6; margin-bottom: 1.5rem; color: #333;">
           I'm a full-stack developer with extensive experience in both frontend
           and backend technologies. My core technical stack includes:
         </p>
@@ -665,9 +693,9 @@
           <div>
             <h3 style="color: #333; margin-bottom: 0.5rem;">Frontend
               Development</h3>
-            <ul style="list-style: none; padding: 0; margin: 0;">
-              <li>HTML5, CSS3, JavaScript (ES6+)</li>
-              <li>Alpine.js, React</li>
+            <ul style="list-style: none; padding: 0; margin: 0; color: #333;">
+              <li>HTML, CSS, JavaScript</li>
+              <li>Alpine.js, Tailwind CSS</li>
               <li>Responsive Design & UI/UX</li>
               <li>Web Performance Optimization</li>
             </ul>
@@ -676,31 +704,30 @@
           <div>
             <h3 style="color: #333; margin-bottom: 0.5rem;">Backend
               Development</h3>
-            <ul style="list-style: none; padding: 0; margin: 0;">
+            <ul style="list-style: none; padding: 0; margin: 0; color: #333;">
               <li>Python, Flask</li>
-              <li>Database Design & Management</li>
+              <li>JSON Database Design & Dynamic Content Management</li>
               <li>API Development & Integration</li>
-              <li>Server-side Applications</li>
+              <li>Git & GitHub Version Control</li>
             </ul>
           </div>
 
           <div>
             <h3 style="color: #333; margin-bottom: 0.5rem;">Creative
               Technology</h3>
-            <ul style="list-style: none; padding: 0; margin: 0;">
+            <ul style="list-style: none; padding: 0; margin: 0; color: #333;">
+              <li>Unreal Engine 5 Development</li>
+              <li>Adobe Creative Suite (Premiere, Illustrator, After
+                Effects)</li>
               <li>Digital Media Production</li>
-              <li>VR/AR Development</li>
-              <li>Audio/Video Engineering</li>
-              <li>Creative Coding</li>
+              <li>3D Modeling & Animation</li>
             </ul>
           </div>
         </div>
 
-        <p style="line-height: 1.6; margin-bottom: 1.5rem;">
-          I'm particularly passionate
-          about projects that bridge the gap between technical innovation,
-          creative expression, and practical implementation within the real
-          world.
+        <p style="line-height: 1.6; margin-bottom: 1.5rem; color: #333;">
+          I enjoy projects that bridge the gap between technical innovation and
+          practical implementation within the real world.
         </p>
       </div>
       <a href="https://alexgonzalez.ooo//public/cv+resume/25cv/cv25-1.html"
