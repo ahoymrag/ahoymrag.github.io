@@ -42,11 +42,25 @@
       border: 1px solid #eee;
       border-radius: 0.5rem;
       transition: transform 0.2s ease, box-shadow 0.2s ease;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
     }
 
     .card:hover {
       transform: translateY(-2px);
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    }
+
+    .card h2 {
+      font-size: 1.1rem;
+      margin: 0;
+      line-height: 1.4;
+    }
+
+    .card p {
+      margin: 0;
+      font-size: 0.95rem;
     }
 
     .btn {
@@ -60,6 +74,7 @@
       font-weight: 400;
       transition: all 0.3s ease;
       letter-spacing: 0.02em;
+      margin-top: auto;
     }
 
     .btn:hover {
@@ -107,6 +122,7 @@
       left: 0;
       right: 0;
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
       font-weight: 400;
@@ -115,6 +131,28 @@
       text-align: center;
       padding: 0.5rem;
       letter-spacing: 0.02em;
+    }
+
+    .slot-content .product-name {
+      margin-bottom: 0.5rem;
+      line-height: 1.4;
+    }
+
+    .remove-btn {
+      opacity: 0.6;
+      color: #666;
+      background: none;
+      border: none;
+      font-size: 0.8rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      text-decoration: underline;
+      padding: 0.25rem;
+    }
+
+    .remove-btn:hover {
+      opacity: 1;
+      color: #333;
     }
 
     .cookie-banner {
@@ -157,8 +195,10 @@
                             :class="{ 'filled': bundle[index] }"
                             x-transition>
                             <template x-if="bundle[index]">
-                                <div class="slot-content"
-                                    x-text="bundle[index].name"></div>
+                                <div class="slot-content">
+                                    <div class="product-name" x-text="bundle[index].name"></div>
+                                    <button class="remove-btn" @click="removeFromBundle(index)">remove</button>
+                                </div>
                             </template>
                         </div>
                     </template>
@@ -205,6 +245,10 @@
           } else {
             alert("Bundle is full!");
           }
+        },
+
+        removeFromBundle(index) {
+          this.bundle.splice(index, 1);
         },
 
         bundleTotal() {
