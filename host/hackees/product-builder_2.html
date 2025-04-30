@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en" x-data="lacrosseKit()" class="bg-neutral-100 text-gray-900">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Hackees Bundle Builder</title>
+        <script defer
+            src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+        <style>
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background: #fafafa;
+      color: #333;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    h1, h2 {
+      font-weight: 300;
+      margin-bottom: 0.5rem;
+      color: #333;
+      letter-spacing: -0.02em;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .card {
+      background: white;
+      padding: 1.5rem;
+      border: 1px solid #eee;
+      border-radius: 0.5rem;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    }
+
+    .btn {
+      background-color: #333;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.25rem;
+      font-size: 0.9rem;
+      cursor: pointer;
+      border: none;
+      font-weight: 400;
+      transition: all 0.3s ease;
+      letter-spacing: 0.02em;
+    }
+
+    .btn:hover {
+      background-color: #222;
+      transform: translateY(-1px);
+    }
+
+    .bundle-builder {
+      background: white;
+      border: 1px solid #eee;
+      padding: 2rem;
+      border-radius: 0.5rem;
+      margin-bottom: 3rem;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    }
+
+    .bundle-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .slot {
+      width: 100%;
+      padding-top: 100%;
+      position: relative;
+      background: #fafafa;
+      border-radius: 0.5rem;
+      transition: all 0.3s ease;
+      border: 1px dashed #ddd;
+    }
+
+    .slot.filled {
+      background: white;
+      border: 1px solid #333;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+      transform: scale(1.02);
+    }
+
+    .slot-content {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 400;
+      color: #333;
+      font-size: 0.9rem;
+      text-align: center;
+      padding: 0.5rem;
+      letter-spacing: 0.02em;
+    }
+
+    .cookie-banner {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: white;
+      border-top: 1px solid #eee;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
+    </head>
+    <body>
+
+        <div class="container">
+            <nav style="margin-bottom: 2rem;">
+                <a href="/index.html"
+                    style="color: #333; text-decoration: none; font-weight: 500;">←
+                    Back to Home</a>
+            </nav>
+            <h1>Build Your Own Hackees Kit</h1>
+            <p style="color: #666; font-weight: 300;">Pick your favorite items
+                and watch your bundle come to life!</p>
+
+            <div class="bundle-builder">
+                <h2>Your Kit</h2>
+                <p style="color: #666; font-weight: 300;">Build your complete
+                    bundle with 6 items!</p>
+
+                <div class="bundle-grid">
+                    <template x-for="(slot, index) in 6" :key="index">
+                        <div
+                            class="slot"
+                            :class="{ 'filled': bundle[index] }"
+                            x-transition>
+                            <template x-if="bundle[index]">
+                                <div class="slot-content"
+                                    x-text="bundle[index].name"></div>
+                            </template>
+                        </div>
+                    </template>
+                </div>
+
+                <div
+                    style="margin-top: 1rem; font-size: 1.25rem; font-weight: 300; color: #333;"
+                    x-show="bundle.length">
+                    Total: <span x-text="bundleTotal()"></span>
+                </div>
+            </div>
+
+            <div class="grid">
+                <template x-for="product in products" :key="product.id">
+                    <div class="card">
+                        <h2 style="color: #333; font-weight: 300;"
+                            x-text="product.name"></h2>
+                        <p style="color: #666; font-weight: 300;"
+                            x-text="product.price"></p>
+                        <button class="btn" @click="addToBundle(product)">Add to
+                            Bundle</button>
+                    </div>
+                </template>
+            </div>
+        </div>
+
+        <script>
+    function lacrosseKit() {
+      return {
+        products: [
+          { id: 1, name: 'Annapolis Blue Hackees Stick', price: '$39' },
+          { id: 2, name: 'Lime Rickee Hackees Stick', price: '$39' },
+          { id: 3, name: 'The Goalie Stick', price: '$49' },
+          { id: 4, name: 'Salute to Service Hackees Stick', price: '$45' },
+          { id: 5, name: 'Mini Lacrosse Goal', price: '$30' },
+          { id: 6, name: 'Extra Mini-Balls', price: 'from $3' },
+          { id: 7, name: 'The "OG" Pink Hackees Stick', price: '$39' }
+        ],
+        bundle: [],
+
+        addToBundle(product) {
+          if (this.bundle.length < 6) {
+            this.bundle.push(product);
+          } else {
+            alert("Bundle is full!");
+          }
+        },
+
+        bundleTotal() {
+          let total = 0;
+          this.bundle.forEach(p => {
+            const price = parseFloat(p.price.replace(/[^0-9.]/g, ''));
+            if (!isNaN(price)) total += price;
+          });
+          return `$${total.toFixed(2)}`;
+        }
+      };
+    }
+  </script>
+    </body>
+</html>
