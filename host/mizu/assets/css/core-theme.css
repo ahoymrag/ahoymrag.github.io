@@ -1,0 +1,118 @@
+/* --------------------------------------------------
+   🌸 Mizu Sprint Theme — Cherry Blossom + Ink Aesthetic
+   Based on PicoCSS — Japanese minimalism and calm tones
+--------------------------------------------------- */
+
+/* Font + color variables */
+:root {
+	--font-family-sans: "Zen Maru Gothic", "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  
+	/* 🌸 Light mode palette */
+	--color-bg: #fff9f9;               /* Sakura Off-White */
+	--color-panel: rgba(255, 255, 255, 0.65); /* Glass Panel White */
+	--color-ink: #333333;              /* Sumi Ink Gray */
+	--color-muted: #a08c8c;            /* Dusty Rose Gray */
+	--color-primary: #fbbac8;          /* Cherry Blossom Pink */
+	--color-secondary: #fcdde6;        /* Blush Rose */
+	--color-border: #e6dcdc;           /* Pinkish Gray Border */
+	--color-highlight: #fff1f3;        /* Soft Pink Highlight */
+	--color-hover: #fce8f0;            /* Light Petal Hover */
+  
+	--radius: 1rem;
+	--shadow-soft: 0 8px 24px rgba(0, 0, 0, 0.06);
+  }
+  
+  /* Typography */
+  body {
+	background-color: var(--color-bg);
+	font-family: var(--font-family-sans);
+	color: var(--color-ink);
+	line-height: 1.6;
+	letter-spacing: -0.01em;
+  }
+  
+  h1, h2, h3 {
+	font-weight: 600;
+	color: var(--color-ink);
+  }
+  
+  p.lead {
+	font-size: 1.125rem;
+	color: var(--color-muted);
+	max-width: 640px;
+  }
+  
+  /* Layout Blocks (Card-like panels) */
+  section {
+	background: var(--color-panel);
+	backdrop-filter: blur(10px);
+	border-radius: var(--radius);
+	box-shadow: var(--shadow-soft);
+	padding: 2rem;
+	margin-bottom: 2rem;
+	border: 1px solid var(--color-border);
+  }
+  
+  /* CTA Button Group */
+  .cta-button-group {
+	display: flex;
+	gap: 1rem;
+	flex-wrap: wrap;
+	margin-top: 1.25rem;
+  }
+  
+  /* Grid of Features */
+  .feature-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	gap: 1.5rem;
+  }
+  
+  /* Interactive Elements */
+  a[role="button"] {
+	border-radius: 999px;
+	font-weight: 500;
+	padding: 0.75rem 1.5rem;
+	background-color: var(--color-primary); /* 🌸 */
+	border: 1px solid var(--color-secondary);
+	color: var(--color-ink);
+	transition: background 0.3s ease;
+  }
+  
+  a[role="button"]:hover {
+	background-color: var(--color-hover); /* Petal hover */
+  }
+  
+  a:hover {
+	text-decoration: underline;
+  }
+  
+  /* Navigation Links */
+  nav a {
+	color: var(--color-primary);
+	transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+	color: var(--color-muted);
+	text-decoration: none;
+  }
+  
+  /* 🌙 Dark Mode */
+  @media (prefers-color-scheme: dark) {
+	:root {
+	  --color-bg: #1e1e1e;             /* Night Gray */
+	  --color-panel: rgba(38, 38, 38, 0.7); /* Deep Ink Panel */
+	  --color-ink: #ffffff;            /* Bright Ink White */
+	  --color-muted: #bbbbbb;          /* Dusty Pale Gray */
+	  --color-border: #2e2e2e;         /* Shadow Gray */
+	  --color-hover: #3a3a3a;          /* Mid Gray Hover */
+  
+	  --color-primary: #f89aa9;        /* Deep Sakura Pink */
+	  --color-secondary: #3a3a3a;      /* Ash Gray */
+	}
+  
+	body {
+	  color: var(--color-ink);
+	}
+  }
