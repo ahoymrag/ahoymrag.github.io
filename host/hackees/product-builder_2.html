@@ -133,8 +133,21 @@
       letter-spacing: 0.02em;
     }
 
-    .slot-content .product-name {
+    .slot-content .product-image {
+      width: 60%;
+      aspect-ratio: 1;
+      background-color: #f5f5f5;
+      border-radius: 0.25rem;
       margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #999;
+      font-size: 0.7rem;
+    }
+
+    .slot-content .product-name {
+      margin-bottom: 0.25rem;
       line-height: 1.4;
     }
 
@@ -196,6 +209,7 @@
                             x-transition>
                             <template x-if="bundle[index]">
                                 <div class="slot-content">
+                                    <div class="product-image">Image</div>
                                     <div class="product-name" x-text="bundle[index].name"></div>
                                     <button class="remove-btn" @click="removeFromBundle(index)">remove</button>
                                 </div>
@@ -214,6 +228,7 @@
             <div class="grid">
                 <template x-for="product in products" :key="product.id">
                     <div class="card">
+                        <div class="product-image">Product Image</div>
                         <h2 style="color: #333; font-weight: 300;"
                             x-text="product.name"></h2>
                         <p style="color: #666; font-weight: 300;"
@@ -249,6 +264,10 @@
 
         removeFromBundle(index) {
           this.bundle.splice(index, 1);
+        },
+
+        clearBundle() {
+          this.bundle = [];
         },
 
         bundleTotal() {
