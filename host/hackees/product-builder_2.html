@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en" x-data="lacrosseKit()" class="bg-neutral-100 text-gray-900">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Hackees Bundle Builder</title>
-        <script defer
-            src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-        <style>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hackees Bundle Builder</title>
+    <script defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <style>
     body {
       font-family: 'Helvetica Neue', sans-serif;
       margin: 0;
@@ -182,65 +182,123 @@
       font-size: 0.9rem;
       color: #666;
     }
+
+    @keyframes celebrate {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+
+    @keyframes confetti {
+      0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+      100% { transform: translateY(100vh) rotate(360deg); opacity: 0; }
+    }
+
+    .celebration {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      pointer-events: none;
+      z-index: 1000;
+    }
+
+    .confetti {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background: #ff6b6b;
+      animation: confetti 3s ease-in-out forwards;
+    }
+
+    .progress-indicator {
+      margin-top: 1rem;
+      padding: 1rem;
+      background: #f8f9fa;
+      border-radius: 0.5rem;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    .progress-indicator.complete {
+      background: #e3fcef;
+      animation: celebrate 0.5s ease-in-out;
+    }
+
+    .progress-indicator h3 {
+      margin: 0;
+      color: #333;
+      font-weight: 500;
+    }
+
+    .progress-indicator p {
+      margin: 0.5rem 0 0;
+      color: #666;
+    }
   </style>
-    </head>
-    <body>
+  </head>
+  <body>
 
-        <div class="container">
-            <nav style="margin-bottom: 2rem;">
-                <a href="/index.html"
-                    style="color: #333; text-decoration: none; font-weight: 500;">←
-                    Back to Home</a>
-            </nav>
-            <h1>Build Your Own Hackees Kit</h1>
-            <p style="color: #666; font-weight: 300;">Pick your favorite items
-                and watch your bundle come to life!</p>
+    <div class="container">
+      <nav style="margin-bottom: 2rem;">
+        <a href="/index.html"
+          style="color: #333; text-decoration: none; font-weight: 500;">←
+          Back to Home</a>
+      </nav>
+      <h1>Build Your Own Hackees Kit</h1>
+      <p style="color: #666; font-weight: 300;">Pick your favorite items
+        and watch your bundle come to life!</p>
 
-            <div class="bundle-builder">
-                <h2>Your Kit</h2>
-                <p style="color: #666; font-weight: 300;">Build your complete
-                    bundle with 6 items!</p>
+      <div class="bundle-builder">
+        <h2>Your Kit</h2>
+        <p style="color: #666; font-weight: 300;">Add items to build your
+          perfect bundle!</p>
 
-                <div class="bundle-grid">
-                    <template x-for="(slot, index) in 6" :key="index">
-                        <div
-                            class="slot"
-                            :class="{ 'filled': bundle[index] }"
-                            x-transition>
-                            <template x-if="bundle[index]">
-                                <div class="slot-content">
-                                    <div class="product-image">Image</div>
-                                    <div class="product-name" x-text="bundle[index].name"></div>
-                                    <button class="remove-btn" @click="removeFromBundle(index)">remove</button>
-                                </div>
-                            </template>
-                        </div>
-                    </template>
-                </div>
-
-                <div
-                    style="margin-top: 1rem; font-size: 1.25rem; font-weight: 300; color: #333;"
-                    x-show="bundle.length">
-                    Total: <span x-text="bundleTotal()"></span>
-                </div>
-            </div>
-
-            <div class="grid">
-                <template x-for="product in products" :key="product.id">
-                    <div class="card">
-                        <div class="product-image">Product Image</div>
-                        <h2 style="color: #333; font-weight: 300;"
-                            x-text="product.name"></h2>
-                        <p style="color: #666; font-weight: 300;"
-                            x-text="product.price"></p>
-                        <button class="btn" @click="addToBundle(product)">Add to
-                            Bundle</button>
-                    </div>
-                </template>
-            </div>
+        <div class="progress-indicator"
+          :class="{ 'complete': bundle.length >= 4 }">
+          <h3
+            x-text="bundle.length >= 4 ? '🎉 Bundle Complete! 🎉' : 'Building Your Bundle'"></h3>
+          <p
+            x-text="bundle.length >= 4 ? 'You\'ve created an amazing bundle!' : `Add ${4 - bundle.length} more items to complete your bundle`"></p>
         </div>
 
-        <script>
+        <div class="bundle-grid">
+          <template x-for="(item, index) in bundle" :key="index">
+            <div class="slot filled" x-transition>
+              <div class="slot-content">
+                <div class="product-image">Image</div>
+                <div class="product-name" x-text="item.name"></div>
+                <button class="remove-btn"
+                  @click="removeFromBundle(index)">remove</button>
+              </div>
+            </div>
+          </template>
+        </div>
+
+        <div
+          style="margin-top: 1rem; font-size: 1.25rem; font-weight: 300; color: #333;"
+          x-show="bundle.length">
+          Total: <span x-text="bundleTotal()"></span>
+        </div>
+      </div>
+
+      <div class="grid">
+        <template x-for="product in products" :key="product.id">
+          <div class="card">
+            <div class="product-image">Product Image</div>
+            <h2 style="color: #333; font-weight: 300;"
+              x-text="product.name"></h2>
+            <p style="color: #666; font-weight: 300;"
+              x-text="product.price"></p>
+            <button class="btn" @click="addToBundle(product)">Add to
+              Bundle</button>
+          </div>
+        </template>
+      </div>
+    </div>
+
+    <script>
     function lacrosseKit() {
       return {
         products: [
@@ -255,11 +313,31 @@
         bundle: [],
 
         addToBundle(product) {
-          if (this.bundle.length < 6) {
-            this.bundle.push(product);
-          } else {
-            alert("Bundle is full!");
+          this.bundle.push(product);
+          if (this.bundle.length === 4) {
+            this.celebrate();
           }
+        },
+
+        celebrate() {
+          const celebration = document.createElement('div');
+          celebration.className = 'celebration';
+          document.body.appendChild(celebration);
+
+          // Create confetti
+          for (let i = 0; i < 50; i++) {
+            const confetti = document.createElement('div');
+            confetti.className = 'confetti';
+            confetti.style.left = Math.random() * 100 + 'vw';
+            confetti.style.animationDelay = Math.random() * 2 + 's';
+            confetti.style.background = `hsl(${Math.random() * 360}, 100%, 50%)`;
+            celebration.appendChild(confetti);
+          }
+
+          // Remove celebration after animation
+          setTimeout(() => {
+            celebration.remove();
+          }, 3000);
         },
 
         removeFromBundle(index) {
@@ -281,5 +359,5 @@
       };
     }
   </script>
-    </body>
+  </body>
 </html>
