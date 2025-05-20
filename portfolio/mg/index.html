@@ -224,7 +224,119 @@ footer {
   padding: 0.5rem 1rem;
   font-size: 0.9rem;
 }
-</style>
+
+.mg-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+  align-items: start;
+}
+
+.mg-gallery-grid figure {
+  margin: 0;
+}
+
+.mg-gallery-thumb {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 14px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.13);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.mg-gallery-thumb:hover {
+  transform: scale(1.03);
+}
+
+.mg-gallery-grid figcaption {
+  margin-top: 0.7rem;
+  color: #b8dcff;
+  font-size: 1rem;
+}
+
+.mg-lightbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 9999;
+  left: 0; top: 0; width: 100vw; height: 100vh;
+  background: rgba(20,30,50,0.97);
+  transition: opacity 0.2s;
+}
+
+.mg-lightbox-img {
+  max-width: 90vw;
+  max-height: 70vh;
+  border-radius: 12px;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.25);
+  margin-bottom: 1rem;
+}
+
+.mg-lightbox-caption {
+  color: #b8dcff;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.mg-lightbox-close, .mg-lightbox-prev, .mg-lightbox-next {
+  position: absolute;
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+  background: rgba(0,0,0,0.18);
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+
+.mg-lightbox-close {
+  top: 32px; right: 32px;
+}
+
+.mg-lightbox-prev {
+  left: 32px; top: 50%; transform: translateY(-50%);
+}
+
+.mg-lightbox-next {
+  right: 32px; top: 50%; transform: translateY(-50%);
+}
+
+.mg-lightbox-close:hover, .mg-lightbox-prev:hover, .mg-lightbox-next:hover {
+  background: rgba(0,0,0,0.35);
+}
+
+@media (max-width: 600px) {
+  .mg-lightbox-img {
+    max-width: 98vw;
+    max-height: 50vh;
+  }
+  .mg-lightbox-close, .mg-lightbox-prev, .mg-lightbox-next {
+    font-size: 2rem;
+    width: 38px;
+    height: 38px;
+  }
+  .mg-lightbox-close {
+    top: 12px; right: 12px;
+  }
+  .mg-lightbox-prev {
+    left: 12px;
+  }
+  .mg-lightbox-next {
+    right: 12px;
+  }
+}
+        </style>
 
     </head>
     <body>
@@ -330,6 +442,31 @@ python main.py</code></pre>
                     <li>Automated Trade Execution</li>
                 </ul>
             </section>
+
+            <section class="card" style="padding:2.5rem 1.5rem; text-align:center;">
+                <h2 style="margin-bottom:1.5rem;">Project Gallery</h2>
+                <div class="mg-gallery-grid">
+                    <figure>
+                        <img src="https://storage.googleapis.com/ag-photography/full-stack/Alex%20Gonzalez%20-%20Mountain%20Gorilla%20-%201.jpg" alt="Mountain Gorilla App Dashboard" data-index="0" class="mg-gallery-thumb" loading="lazy" />
+                        <figcaption>Dashboard Overview</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://storage.googleapis.com/ag-photography/full-stack/Alex%20Gonzalez%20-%20Mountain%20Gorilla%20-%202.jpg" alt="Mountain Gorilla Bot Cards" data-index="1" class="mg-gallery-thumb" loading="lazy" />
+                        <figcaption>Bot Management</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://storage.googleapis.com/ag-photography/full-stack/Alex%20Gonzalez%20-%20Mountain%20Gorilla%20-%203.jpg" alt="Mountain Gorilla System Status" data-index="2" class="mg-gallery-thumb" loading="lazy" />
+                        <figcaption>System Status & Analytics</figcaption>
+                    </figure>
+                </div>
+                <div id="mg-lightbox" class="mg-lightbox" style="display:none;">
+                    <span class="mg-lightbox-close" title="Close">&times;</span>
+                    <img class="mg-lightbox-img" src="" alt="" />
+                    <div class="mg-lightbox-caption"></div>
+                    <span class="mg-lightbox-prev" title="Previous">&#10094;</span>
+                    <span class="mg-lightbox-next" title="Next">&#10095;</span>
+                </div>
+            </section>
         </main>
 
         <footer>
@@ -337,5 +474,65 @@ python main.py</code></pre>
                 &copy; 2025 Alex Gonzalez — Mountain&nbsp;Gorilla Command Center
             </a>
         </footer>
+
+        <script>
+        (function(){
+            const images = [
+                {
+                    src: 'https://storage.googleapis.com/ag-photography/full-stack/Alex%20Gonzalez%20-%20Mountain%20Gorilla%20-%201.jpg',
+                    caption: 'Dashboard Overview'
+                },
+                {
+                    src: 'https://storage.googleapis.com/ag-photography/full-stack/Alex%20Gonzalez%20-%20Mountain%20Gorilla%20-%202.jpg',
+                    caption: 'Bot Management'
+                },
+                {
+                    src: 'https://storage.googleapis.com/ag-photography/full-stack/Alex%20Gonzalez%20-%20Mountain%20Gorilla%20-%203.jpg',
+                    caption: 'System Status & Analytics'
+                }
+            ];
+            const thumbs = document.querySelectorAll('.mg-gallery-thumb');
+            const lightbox = document.getElementById('mg-lightbox');
+            const lightboxImg = lightbox.querySelector('.mg-lightbox-img');
+            const lightboxCaption = lightbox.querySelector('.mg-lightbox-caption');
+            const closeBtn = lightbox.querySelector('.mg-lightbox-close');
+            const prevBtn = lightbox.querySelector('.mg-lightbox-prev');
+            const nextBtn = lightbox.querySelector('.mg-lightbox-next');
+            let current = 0;
+            function showLightbox(idx) {
+                current = idx;
+                lightboxImg.src = images[current].src;
+                lightboxCaption.textContent = images[current].caption;
+                lightbox.style.display = 'flex';
+                document.body.style.overflow = 'hidden';
+            }
+            function hideLightbox() {
+                lightbox.style.display = 'none';
+                document.body.style.overflow = '';
+            }
+            function showPrev() {
+                showLightbox((current + images.length - 1) % images.length);
+            }
+            function showNext() {
+                showLightbox((current + 1) % images.length);
+            }
+            thumbs.forEach((img, i) => {
+                img.addEventListener('click', () => showLightbox(i));
+            });
+            closeBtn.addEventListener('click', hideLightbox);
+            prevBtn.addEventListener('click', showPrev);
+            nextBtn.addEventListener('click', showNext);
+            lightbox.addEventListener('click', function(e) {
+                if (e.target === lightbox) hideLightbox();
+            });
+            document.addEventListener('keydown', function(e) {
+                if (lightbox.style.display === 'flex') {
+                    if (e.key === 'Escape') hideLightbox();
+                    if (e.key === 'ArrowLeft') showPrev();
+                    if (e.key === 'ArrowRight') showNext();
+                }
+            });
+        })();
+        </script>
     </body>
 </html>
