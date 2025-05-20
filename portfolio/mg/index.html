@@ -59,17 +59,27 @@ body {
   color: #ffffff;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
   white-space: nowrap;
+  font-weight: 300;
+  letter-spacing: -0.04em;
+  line-height: 1.05;
+  transition: font-size 0.3s, font-weight 0.3s;
 }
 
 @media (max-width: 768px) {
   .overlay h1 {
-    font-size: 3rem;
+    font-size: 2.2rem;
+    font-weight: 400;
+    letter-spacing: -0.03em;
+    white-space: normal;
   }
 }
 
 @media (max-width: 480px) {
   .overlay h1 {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    white-space: normal;
   }
 }
 
@@ -221,7 +231,16 @@ footer {
         <div class="hero">
             <div class="overlay">
                 <h1>Mountain&nbsp;Gorilla</h1>
-                <p>Command Center for AI Assistant Management with Blockchain Superpowers</p>
+                <p>Web-Based Command Center for Managing Live AI Bots</p>
+                <div style="margin-top:2rem;">
+                    <a href="https://mountain-gorilla.onrender.com" target="_blank" class="github-button" style="background: linear-gradient(90deg, #88c4ff 0%, #3a7bd5 100%); color: #1e1a34; font-weight: bold; font-size: 1.1rem; margin-bottom: 0.5rem;">Try the Live Web Dashboard</a>
+                    <div style="margin-top:0.5rem; font-size:0.95rem; color:#b8dcff;">
+                        <span style="background:#223a5e; color:#b8dcff; border-radius:8px; padding:2px 10px; font-size:0.85rem; margin-right:0.5rem;">In Development</span>
+                        Modern browser-based interface for real-time bot management.<br>
+                        <span style="color:#88c4ff;">Classic CLI mode also available for advanced users!</span><br>
+                        <span>Try it out and <a href="mailto:alex@ahoy.ooo?subject=MGCC%20Browser%20Feedback" style="color:#88c4ff; text-decoration:underline;">share your feedback</a>!</span>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -229,21 +248,22 @@ footer {
             <section class="card">
                 <h2>Overview</h2>
                 <p>
-                    The Mountain Gorilla Command Center (MGCC) is a minimal, ASCII-driven command-line interface (CLI) inspired by classic Pokédex-style collectible games. MGCC treats each of your bots as distinct, specialized agents that you can summon, train, and deploy to manage fintech tasks, wallets, and blockchain interactions.
+                    Mountain Gorilla Command Center (MGCC) is a modern, web-based dashboard for managing, training, and monitoring your AI bots in real time. Designed for intuitive control and deep analytics, MGCC empowers you to deploy, train, and collaborate with specialized bots for finance, productivity, and more — all from a beautiful browser interface.
                 </p>
                 <p style="margin-top: 1rem">
-                    Leveraging the design patterns and philosophy of ApeWorX's Silverback bot framework and the simplicity of Vyper, MGCC allows rapid prototyping of powerful automated finance strategies in a playful, interactive environment.
+                    For power users and fans of retro tech, MGCC also features a classic ASCII/CLI mode inspired by collectible games and terminal nostalgia.
                 </p>
             </section>
 
             <section class="card">
                 <h2>Features</h2>
                 <ul>
-                    <li><strong>Collectible Bots:</strong> Manage bots as collectible ASCII-art entities</li>
-                    <li><strong>Training & Leveling:</strong> Train bots to increase their level and capabilities with animated CLI feedback</li>
-                    <li><strong>Finance Portal:</strong> Check wallet balances, track monthly spending, and adopt financial strategies</li>
-                    <li><strong>Blockchain Integration:</strong> Utilize ApeWorX's Silverback-style bot automation to respond to on-chain events</li>
-                    <li><strong>Modular Design:</strong> Extendable architecture allowing easy custom bot creation</li>
+                    <li><strong>Live Web Dashboard:</strong> Manage, train, and monitor your bots in real time from any browser</li>
+                    <li><strong>Real-Time Analytics:</strong> Visualize bot activity, system status, and performance instantly</li>
+                    <li><strong>Bot Collaboration:</strong> Deploy, upgrade, and coordinate multiple specialized bots</li>
+                    <li><strong>Finance & Automation:</strong> Track wallets, automate strategies, and respond to blockchain events</li>
+                    <li><strong>Classic CLI Mode:</strong> Optional ASCII/terminal interface for advanced users and retro fans</li>
+                    <li><strong>Modular Design:</strong> Easily extend and create custom bots for your needs</li>
                 </ul>
             </section>
 
@@ -309,23 +329,6 @@ python main.py</code></pre>
                     <li>Telegram Integration</li>
                     <li>Automated Trade Execution</li>
                 </ul>
-            </section>
-
-            <section class="investor-card">
-                <h2>For Investors</h2>
-                <p>
-                    Mountain Gorilla represents a unique opportunity at the intersection of blockchain, AI, and finance. Our product brings playful gamification to serious fintech automation, making complex DeFi strategies accessible through an approachable command-line interface.
-                </p>
-                <p style="margin-top: 1rem">
-                    With a focus on extensibility and community-driven development, Mountain Gorilla has potential applications across DeFi management, personal finance, and enterprise blockchain monitoring.
-                </p>
-                <p style="margin-top: 1rem">
-                    <strong>Why invest?</strong> The growing need for easy-to-use, programmable blockchain tools presents a significant market opportunity as DeFi and crypto adoption continues to increase.
-                </p>
-                
-                <a href="mailto:alex@ahoy.ooo?subject=Mountain%20Gorilla%20Investment%20Inquiry" class="github-button">
-                    Investing Options
-                </a>
             </section>
         </main>
 
