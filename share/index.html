@@ -149,13 +149,15 @@
         z-index: 999;
       }
       .modal-content {
-        background: rgba(255, 255, 255, 0.9);
+        background: linear-gradient(135deg, #181c24 80%, #2a2e39 100%);
         max-width: 800px;
         width: 100%;
         border-radius: 6px;
         position: relative;
         padding: 1rem;
         backdrop-filter: blur(10px);
+        box-shadow: 0 8px 32px rgba(0,0,0,0.7);
+        color: #fff;
       }
       .close-btn {
         position: absolute; 
@@ -173,6 +175,7 @@
         margin-left: auto; 
         margin-right: auto;
         border-radius: 4px;
+        box-shadow: 0 4px 24px rgba(0,0,0,0.4);
       }
       .description {
         margin-top: 0.5rem; 
@@ -521,7 +524,7 @@
         <button
           :class="{'active': filter === cat}"
           @click="filter = cat"
-          x-text="cat">
+          x-text="cat === 'Web Projects' ? 'Full Stack App' : cat">
         </button>
       </template>
     </div>
@@ -561,9 +564,24 @@
 
         <!-- If media is a website -->
         <template x-if="selectedItem && selectedItem.mediaType === 'website'">
-          <iframe class="modal-media" x-bind:src="selectedItem.mediaUrl"
-            frameborder="0"
-            style="width: 100%; height: auto; aspect-ratio: 16/9; border-radius: 4px;"></iframe>
+          <div>
+            <template x-if="selectedItem.gallery && selectedItem.gallery.length">
+              <div style="display:flex; flex-direction:column; align-items:center;">
+                <img :src="selectedScreenshot" alt="Project Screenshot" class="modal-media" style="max-height:340px; object-fit:contain; background:#222;" />
+                <div style="display:flex; gap:0.5rem; margin:0.5rem 0;">
+                  <template x-for="(img, idx) in selectedItem.gallery" :key="img">
+                    <img :src="img" :alt="'Screenshot '+(idx+1)" @click="setScreenshot(idx)" :style="'width:48px;height:36px;object-fit:cover;border-radius:4px;cursor:pointer;border:'+(selectedScreenshot===img?'2px solid #88c4ff':'2px solid #444')" />
+                  </template>
+                </div>
+                <a :href="selectedItem.mediaUrl" target="_blank" style="margin-top:0.5rem; background:#88c4ff; color:#181c24; font-weight:600; padding:0.5rem 1.2rem; border-radius:6px; text-decoration:none; box-shadow:0 2px 8px #0002;">View Live</a>
+              </div>
+            </template>
+            <template x-if="!selectedItem.gallery || !selectedItem.gallery.length">
+              <iframe class="modal-media" x-bind:src="selectedItem.mediaUrl"
+                frameborder="0"
+                style="width: 100%; height: auto; aspect-ratio: 16/9; border-radius: 4px;"></iframe>
+            </template>
+          </div>
         </template>
 
         <h2 x-text="selectedItem ? selectedItem.title : ''"></h2>
@@ -616,6 +634,7 @@
           filter: 'All',
           selectedItem: null,
           showModal: false,
+          selectedScreenshot: '',
 
           async init() {
             try {
@@ -646,20 +665,31 @@
           },
 
           get filteredItems() {
-            if (this.filter === 'All') return this.portfolioItems;
-            return this.portfolioItems.filter(item => item.category === this.filter);
+            let items = this.portfolioItems.slice().sort((a, b) => b.id - a.id);
+            if (this.filter === 'All') return items;
+            return items.filter(item => item.category === this.filter);
           },
 
           openModal(item) {
             this.selectedItem = item;
             this.showModal = true;
-            // Scroll back to top when opening modal
+            // If website with gallery, show first screenshot
+            if (item.mediaType === 'website' && item.gallery && item.gallery.length) {
+              this.selectedScreenshot = item.gallery[0];
+            } else {
+              this.selectedScreenshot = '';
+            }
             window.scrollTo({ top: 0, behavior: 'smooth' });
           },
-
+          setScreenshot(idx) {
+            if (this.selectedItem && this.selectedItem.gallery && this.selectedItem.gallery[idx]) {
+              this.selectedScreenshot = this.selectedItem.gallery[idx];
+            }
+          },
           closeModal() {
             this.showModal = false;
             this.selectedItem = null;
+            this.selectedScreenshot = '';
           }
         };
       }

@@ -348,5 +348,26 @@
     "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/%5BFilmmaking%5D%20%5BThimble%20Island%20Commercial%5D.png",
     "mediaType": "video",
     "mediaUrl": "https://storage.googleapis.com/ag-photography/video-film/%5BFilmmaking%5D%5BThimble_Island%20Commercial%5D.mp4"
+  },
+  {
+    "id": 44,
+    "title": "ApeWorX - ERC4626 Tutorial",
+    "category": "Video Tutorials",
+    "thumbnail": "https://storage.googleapis.com/ag-photography/thumbnails/%5BTutorial%5D%20%5BApeWorX%5D%5BERC4626%5D.jpg",
+    "mediaType": "website",
+    "mediaUrl": "https://storage.googleapis.com/ag-photography/video-tutorials/%5BTutorial%5D%5BApeWorX%5D%5BPart%202_%20How%20to%20Create%20A%20Python%20Console%20To%20Interact%20With%20Ethereum%20Smart%20Contracts%5D.mp4"
+  },
+  {
+    "id": 45,
+    "title": "Mountain Gorilla Command Center",
+    "category": "Full Stack App",
+    "thumbnail": "https://storage.googleapis.com/ag-photography/full-stack/Alex%20Gonzalez%20-%20Mountain%20Gorilla%20-%201.jpg",
+    "mediaType": "website",
+    "mediaUrl": "https://mountain-gorilla.onrender.com",
+    "gallery": [
+      "https://storage.googleapis.com/ag-photography/full-stack/Alex%20Gonzalez%20-%20Mountain%20Gorilla%20-%201.jpg",
+      "https://storage.googleapis.com/ag-photography/full-stack/Alex%20Gonzalez%20-%20Mountain%20Gorilla%20-%202.jpg",
+      "https://storage.googleapis.com/ag-photography/full-stack/Alex%20Gonzalez%20-%20Mountain%20Gorilla%20-%203.jpg"
+    ]
   }
 ]
