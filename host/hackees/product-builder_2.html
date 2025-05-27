@@ -257,10 +257,8 @@
 
         <div class="progress-indicator"
           :class="{ 'complete': bundle.length >= 4 }">
-          <h3
-            x-text="bundle.length >= 4 ? '🎉 Bundle Complete! 🎉' : 'Building Your Bundle'"></h3>
-          <p
-            x-text="bundle.length >= 4 ? 'You\'ve created an amazing bundle!' : `Add ${4 - bundle.length} more items to complete your bundle`"></p>
+          <h3 x-text="bundle.length < 4 ? 'Building Your Bundle' : bundle.length < 6 ? 'Starter Bundle!' : bundle.length < 8 ? 'Pro Bundle!' : bundle.length < 10 ? 'Legendary Bundle!' : 'Ultimate Bundle!' "></h3>
+          <p x-text="bundle.length < 4 ? `Add ${4 - bundle.length} more items to complete your starter bundle` : bundle.length < 6 ? 'You've built a great starter kit! Add more for extra fun and value.' : bundle.length < 8 ? 'You're building a pro-level kit! Try adding a Snapback Lid for the ultimate look.' : bundle.length < 10 ? 'Legend status unlocked! Add a Gift Card for a friend or family member.' : 'You've unlocked a secret offer! Contact us for a special deal.'"></p>
         </div>
 
         <div class="bundle-grid">
@@ -302,29 +300,57 @@
     function lacrosseKit() {
       return {
         products: [
-          { id: 1, name: 'Annapolis Blue Hackees Stick', price: '$39' },
-          { id: 2, name: 'Lime Rickee Hackees Stick', price: '$39' },
+          { id: 1, name: 'The Annapolis Blue', price: '$39' },
+          { id: 2, name: 'The Lime Rickee', price: '$39' },
           { id: 3, name: 'The Goalie Stick', price: '$49' },
-          { id: 4, name: 'Salute to Service Hackees Stick', price: '$45' },
-          { id: 5, name: 'Mini Lacrosse Goal', price: '$30' },
-          { id: 6, name: 'Extra Mini-Balls', price: 'from $3' },
-          { id: 7, name: 'The "OG" Pink Hackees Stick', price: '$39' }
+          { id: 4, name: 'The "Long Pole"', price: '$49' },
+          { id: 5, name: 'The Letterman', price: '$46' },
+          { id: 6, name: 'The Original "OG" Pink', price: '$39' },
+          { id: 7, name: 'The Goal', price: '$49' },
+          { id: 8, name: 'Travel Duffle', price: '$39' },
+          { id: 9, name: 'Extra Mini-Balls', price: 'from $3' },
+          { id: 10, name: 'The Citrus Cooler', price: '$46' },
+          { id: 11, name: 'The Melon Baller', price: '$39' },
+          { id: 12, name: 'The Salute to Service', price: '$46' },
+          { id: 13, name: 'Snapback Lid', price: '$25' },
+          { id: 14, name: 'Gift Cards', price: 'from $25' }
         ],
         bundle: [],
 
         addToBundle(product) {
           this.bundle.push(product);
-          if (this.bundle.length === 4) {
-            this.celebrate();
+          this.checkMilestones();
+        },
+
+        checkMilestones() {
+          const milestones = [4, 6, 8, 10];
+          if (milestones.includes(this.bundle.length)) {
+            this.celebrate(this.bundle.length);
           }
         },
 
-        celebrate() {
+        celebrate(count) {
+          const messages = {
+            4: {
+              title: 'Starter Bundle! 🎉',
+              text: "You've built a great starter kit! Add more for extra fun and value."
+            },
+            6: {
+              title: 'Pro Bundle! 🏆',
+              text: "You're building a pro-level kit! Try adding a Snapback Lid for the ultimate look."
+            },
+            8: {
+              title: 'Legendary Bundle! 🚀',
+              text: 'Legend status unlocked! Add a Gift Card for a friend or family member.'
+            },
+            10: {
+              title: 'Secret Offer Unlocked! 🎁',
+              text: "You've unlocked a secret offer! Contact us for a special deal."
+            }
+          };
           const celebration = document.createElement('div');
           celebration.className = 'celebration';
           document.body.appendChild(celebration);
-
-          // Create confetti
           for (let i = 0; i < 50; i++) {
             const confetti = document.createElement('div');
             confetti.className = 'confetti';
@@ -333,11 +359,25 @@
             confetti.style.background = `hsl(${Math.random() * 360}, 100%, 50%)`;
             celebration.appendChild(confetti);
           }
-
-          // Remove celebration after animation
+          // Show milestone message overlay
+          const overlay = document.createElement('div');
+          overlay.style.position = 'fixed';
+          overlay.style.top = '50%';
+          overlay.style.left = '50%';
+          overlay.style.transform = 'translate(-50%, -50%)';
+          overlay.style.background = 'rgba(255,255,255,0.97)';
+          overlay.style.color = '#222';
+          overlay.style.padding = '2rem 2.5rem';
+          overlay.style.borderRadius = '1rem';
+          overlay.style.boxShadow = '0 8px 32px rgba(0,0,0,0.18)';
+          overlay.style.zIndex = '2000';
+          overlay.style.textAlign = 'center';
+          overlay.innerHTML = `<h2 style='margin:0 0 0.5rem 0;'>${messages[count].title}</h2><p style='margin:0;'>${messages[count].text}</p>`;
+          document.body.appendChild(overlay);
           setTimeout(() => {
             celebration.remove();
-          }, 3000);
+            overlay.remove();
+          }, 3200);
         },
 
         removeFromBundle(index) {
