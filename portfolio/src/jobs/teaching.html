@@ -4,151 +4,398 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Alex Gonzalez | Teaching Portfolio</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
         <style>
+        /* Professional resume — light, solid surfaces */
         :root {
-            --primary-color: #1a365d;
-            --secondary-color: #2b6cb0;
-            --accent-color: #2c5282;
-            --text-color: #2d3748;
-            --background-color: #f7fafc;
+            --primary: #1a365d;
+            --primary-soft: #2c5282;
+            --text: #1e293b;
+            --text-muted: #64748b;
+            --border: #e2e8f0;
+            --bg: #ffffff;
+            --bg-page: #f8fafc;
+            --bg-subtle: #f1f5f9;
         }
-        
+
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'DM Sans', system-ui, -apple-system, sans-serif;
             line-height: 1.6;
-            color: var(--text-color);
-            background-color: var(--background-color);
+            color: var(--text);
+            background: var(--bg-page);
+            min-height: 100vh;
             margin: 0;
             padding: 0;
+            font-feature-settings: "kern" 1, "liga" 1;
+            -webkit-font-smoothing: antialiased;
         }
 
         .container {
+            max-width: 820px;
+            margin: 0 auto;
+            padding: 1.5rem 2rem;
+        }
+
+        /* Spotify-style header: dark bar, name left, contact right */
+        .header {
+            background: #000000;
+            color: #fff;
+            padding: 0 2rem;
+            height: 64px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 1.5rem;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        .header-inner {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 2rem;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1.5rem;
         }
 
-        .header {
-            background-color: var(--primary-color);
-            color: white;
-            padding: 2rem 0;
-            text-align: center;
-            margin-bottom: 2rem;
+        .header-brand {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
         }
 
-        .header h1 {
+        .header-name {
             margin: 0;
-            font-size: 2.5rem;
+            font-size: 1.25rem;
+            font-weight: 700;
+            line-height: 1;
+            letter-spacing: -0.04em;
+            color: #fff;
         }
 
-        .header p {
-            margin: 1rem 0 0;
-            font-size: 1.2rem;
-            opacity: 0.9;
+        .header-title {
+            margin: 0;
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 0.7);
+            letter-spacing: -0.02em;
+        }
+
+        .header-year {
+            margin: 0;
+            font-size: 0.75rem;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 0.5);
+            letter-spacing: 0.02em;
+        }
+
+        .header-contact {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            flex-shrink: 0;
+        }
+
+        .header-contact a {
+            color: rgba(255, 255, 255, 0.9);
+            text-decoration: none;
+            font-size: 0.8125rem;
+            font-weight: 500;
+            transition: color 0.15s;
+        }
+
+        .header-contact a:hover {
+            color: #fff;
+        }
+
+        .header-contact span {
+            color: rgba(255, 255, 255, 0.4);
+            font-size: 0.5rem;
+            vertical-align: middle;
+        }
+
+        @media (max-width: 640px) {
+            .header {
+                padding: 0 1rem;
+                height: auto;
+                min-height: 64px;
+                padding-top: 0.75rem;
+                padding-bottom: 0.75rem;
+            }
+            .header-inner {
+                flex-wrap: wrap;
+            }
+            .header-brand {
+                flex-wrap: wrap;
+            }
+            .header-title {
+                width: 100%;
+                margin-top: 0.25rem;
+                padding-top: 0.25rem;
+                border-top: 1px solid rgba(255, 255, 255, 0.15);
+            }
+            .header-contact {
+                width: 100%;
+                justify-content: flex-start;
+                margin-top: 0.25rem;
+                padding-top: 0.25rem;
+                border-top: 1px solid rgba(255, 255, 255, 0.15);
+            }
         }
 
         .nav {
-            background-color: white;
-            padding: 1rem;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            margin-bottom: 2rem;
+            background: var(--bg);
+            padding: 0.75rem 0;
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid var(--border);
         }
 
         .nav a {
-            color: var(--primary-color);
+            color: var(--primary);
             text-decoration: none;
-            font-weight: bold;
-            padding: 0.5rem 1rem;
-            border-radius: 4px;
-            transition: background-color 0.3s;
+            font-weight: 500;
+            font-size: 0.9375rem;
+            transition: color 0.15s;
         }
 
         .nav a:hover {
-            background-color: var(--background-color);
+            color: var(--primary-soft);
         }
 
         .section {
-            background: white;
-            border-radius: 8px;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            background: var(--bg);
+            padding: 1.5rem 2rem;
+            margin-bottom: 1.25rem;
+            border: 1px solid var(--border);
         }
 
         .section h2 {
-            color: var(--primary-color);
-            margin-top: 0;
-            border-bottom: 2px solid var(--secondary-color);
-            padding-bottom: 0.5rem;
+            font-weight: 600;
+            font-size: 1.125rem;
+            letter-spacing: -0.04em;
+            color: var(--primary);
+            margin: 0 0 1rem;
+            padding-bottom: 0.35rem;
+            border-bottom: 2px solid var(--primary-soft);
         }
 
         .section h3 {
-            color: var(--secondary-color);
-            margin: 1rem 0 0.5rem;
+            font-weight: 600;
+            font-size: 1rem;
+            letter-spacing: -0.04em;
+            color: var(--primary);
+            margin: 1rem 0 0.35rem;
         }
 
         .section p {
-            margin: 0.5rem 0;
+            margin: 0.35rem 0;
+            font-size: 0.9375rem;
+        }
+
+        .section ul {
+            margin: 0.35rem 0;
+            padding-left: 1.25rem;
+        }
+
+        .section li {
+            margin-bottom: 0.25rem;
+            font-size: 0.9375rem;
         }
 
         .skills-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1rem;
-            margin-top: 1rem;
+            grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+            gap: 0.5rem 1rem;
+            margin-top: 0.75rem;
         }
 
         .skill-item {
-            background: var(--background-color);
-            padding: 1rem;
-            border-radius: 4px;
+            background: var(--bg-subtle);
+            padding: 0.5rem 0.75rem;
             text-align: center;
+            font-size: 0.875rem;
+            border: 1px solid var(--border);
         }
 
         .philosophy-box {
-            background: var(--background-color);
-            padding: 1.5rem;
-            border-radius: 8px;
+            background: var(--bg-subtle);
+            padding: 1.25rem 1.5rem;
             margin: 1rem 0;
-            border-left: 4px solid var(--secondary-color);
+            border: 1px solid var(--border);
+            border-left: 4px solid var(--primary-soft);
+        }
+
+        .philosophy-box p, .philosophy-box li {
+            font-size: 0.9375rem;
         }
 
         .certification-item {
             display: flex;
             align-items: center;
-            margin-bottom: 1rem;
-            padding: 1rem;
-            background: var(--background-color);
-            border-radius: 4px;
+            margin-bottom: 0.75rem;
+            padding: 0.75rem 1rem;
+            background: var(--bg-subtle);
+            border: 1px solid var(--border);
         }
 
         .certification-item img {
-            width: 50px;
-            height: 50px;
-            margin-right: 1rem;
+            width: 40px;
+            height: 40px;
+            margin-right: 0.75rem;
         }
 
         .outcome-item {
-            margin-bottom: 1.5rem;
+            margin-bottom: 1rem;
         }
 
         .outcome-item h4 {
-            color: var(--primary-color);
-            margin-bottom: 0.5rem;
+            color: var(--primary);
+            font-size: 0.9375rem;
+            margin-bottom: 0.25rem;
         }
 
         .testimonial {
-            background: var(--background-color);
-            padding: 1.5rem;
-            border-radius: 8px;
+            background: var(--bg-subtle);
+            padding: 1rem 1.25rem;
             margin: 1rem 0;
             font-style: italic;
+            font-size: 0.9375rem;
+            border: 1px solid var(--border);
         }
 
         .testimonial-author {
             text-align: right;
-            font-weight: bold;
-            margin-top: 0.5rem;
+            font-weight: 600;
+            font-size: 0.875rem;
+            margin-top: 0.35rem;
+        }
+
+        .experience-item {
+            padding: 1rem 0;
+            margin-bottom: 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .experience-item:last-child {
+            border-bottom: none;
+        }
+
+        .experience-item h3 {
+            margin-top: 0;
+        }
+
+        .section a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .section a:hover {
+            text-decoration: underline;
+        }
+
+        .nav-inner {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .resume-header h3 {
+            font-size: 1.125rem;
+            margin-top: 0;
+        }
+
+        .gallery-section {
+            padding-bottom: 1.5rem;
+        }
+
+        .gallery-intro {
+            margin: 0 0 1rem;
+            font-size: 0.9375rem;
+            color: var(--text-muted);
+        }
+
+        /* Instagram-style grid: 3 columns, minimal gap, square cells */
+        .instagram-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 3px;
+            margin-top: 0;
+        }
+
+        .ig-cell {
+            margin: 0;
+            aspect-ratio: 1;
+            overflow: hidden;
+        }
+
+        .ig-cell .gallery-placeholder {
+            width: 100%;
+            height: 100%;
+            min-height: 100%;
+            aspect-ratio: 1;
+            border: none;
+            border-radius: 0;
+            font-size: 0.875rem;
+        }
+
+        .ig-cell img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            vertical-align: top;
+        }
+
+        .gallery-placeholder {
+            aspect-ratio: 1;
+            background: var(--bg-subtle);
+            border: 1px dashed var(--border);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+
+        .gallery-note {
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border);
+            font-size: 0.8125rem;
+            color: var(--text-muted);
+        }
+
+        .gallery-note code {
+            background: var(--bg-subtle);
+            padding: 0.1rem 0.25rem;
+        }
+
+        @media (max-width: 480px) {
+            .instagram-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* Print: clean paper resume */
+        @media print {
+            .no-print { display: none !important; }
+            body { background: #fff; color: #111; }
+            .container { padding: 0 1rem; }
+            .section, .philosophy-box, .skill-item, .experience-item,
+            .testimonial, .certification-item {
+                background: #fff !important;
+                border: 1px solid #ddd !important;
+                box-shadow: none !important;
+            }
+            .section h2 { color: #1a365d; border-color: #2b6cb0; }
+            .section h3 { color: #1a365d; }
+            a { color: #1a365d; }
         }
     </style>
     </head>
@@ -156,9 +403,17 @@
 
 
         <header class="header">
-            <div class="container">
-                <h1>Teaching Portfolio</h1>
-           
+            <div class="header-inner">
+                <div class="header-brand">
+                    <h1 class="header-name">Alex Gonzalez</h1>
+                    <span class="header-title">Teaching Portfolio</span>
+                    <span class="header-year">2026</span>
+                </div>
+                <div class="header-contact">
+                    <a href="mailto:agonzalez7@bridgeportedu.net">agonzalez7@bridgeportedu.net</a>
+                    <span aria-hidden="true">·</span>
+                    <a href="tel:+19143919934">(914) 391-9934</a>
+                </div>
             </div>
         </header>
 
@@ -166,7 +421,7 @@
             <section class="section">
                 <h2>Teaching Philosophy</h2>
                 <div class="philosophy-box">
-                    <p>There are many ways to teach—my favorite is project-based learning, because I get to learn alongside my students. I’ve taught in settings from elite prep schools to lower-income urban elementary schools, and the core stays the same: meet students where they are and give them something real to build.</p>
+                    <p>There are many ways to teach—my favorite is project-based learning, because I get to join alongside my students. I’ve taught in settings from elite prep schools to lower-income urban elementary schools, and the core stays the same: meet students where they are and give them something real to build.</p>
                     <ul>
                         <li><strong>Project-Based Learning:</strong> Emphasizing
                             hands-on, real-world projects that allow students to
@@ -205,6 +460,8 @@
                     <p><strong>Position:</strong> STEM Teacher — Grades 1–5</p>
                     <p><strong>Setting:</strong> Lower-income urban schools. Trained in CPI (Crisis Prevention Intervention).</p>
                     <p>Teach five classes per day with 20–30 students per class. Deliver hands-on STEM curriculum tailored to elementary learners in high-need environments.</p>
+                    <p><strong>Learn-at-home website:</strong> Built a complete website for students to access lessons, activities, and resources from home—extending learning beyond the classroom.</p>
+                    <p><strong>Student work:</strong> Students create photography and 3D digital creations as part of the curriculum; see the <a href="#student-gallery">gallery below</a> for examples.</p>
                 </div>
 
                 <div class="experience-item">
@@ -287,51 +544,141 @@
                     <div class="skill-item">CPI / Crisis Prevention</div>
                 </div>
             </section>
+
+            <section class="section">
+                <h2>Full Resume</h2>
+                <div class="resume-header" style="text-align: center; margin-bottom: 2rem;">
+                    <h3 style="margin: 0; font-size: 1.5rem;">Alex Gonzalez</h3>
+                    <p style="margin: 0.5rem 0; opacity: 0.9;">Creative Director | Filmmaker | Software Designer</p>
+                </div>
+
+                <div class="experience-item">
+                    <h3>Contact</h3>
+                    <p>Phone: (914) 391-9934</p>
+                    <p>Email: <a href="mailto:agonzalez7@bridgeportedu.net">agonzalez7@bridgeportedu.net</a></p>
+                    <p>Portfolio: <a href="https://alexgonzalez.ooo/share" target="_blank" rel="noopener">alexgonzalez.ooo/share</a></p>
+                </div>
+
+                <div class="experience-item">
+                    <h3>Professional Summary</h3>
+                    <p>A multidisciplinary professional with a background in film production, software design, and business. Proven ability to lead creative teams, mentor students, and deliver long-term projects in innovative and technical fields.</p>
+                </div>
+
+                <div class="experience-item">
+                    <h3>Work Experience</h3>
+                    <ul>
+                        <li><strong>Product Designer and Frontend Engineer</strong> at The Montauk Wine Project (2025)</li>
+                        <li><strong>Product Designer</strong> at Silverback at ApeWorx, LTD (2021–2025)</li>
+                        <li><strong>Executive Digital Platform Director</strong> at Mission Anabaino (2023): Created a system for new church plants to have a base-level foundation of technology.</li>
+                        <li><strong>Product Designer</strong> at ApeWorx (2022–2023)</li>
+                        <li><strong>Creative Director</strong> at ApeWorx (2021–2022)</li>
+                        <li><strong>Founder and Chief</strong> at Ahoy Indie Media (2022–Present)</li>
+                        <li><strong>Adjunct Film Professor</strong> at Choate Rosemary (2023): Taught undergraduate preparatory courses in Film Studies and Digital Photography.</li>
+                        <li><strong>AV Director</strong> at CPC New Haven (2020–Present): Oversaw the audiovisual department.</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <h3>Teaching Experience</h3>
+                    <ul>
+                        <li>Barnum Public Schools (August 2025 – June 2026). STEM Teacher, Grades 1–5. Lower-income urban schools; CPI trained. Five classes daily, 20–30 students per class. Built a complete learn-at-home website for students; curriculum includes student photography and 3D creations.</li>
+                        <li>Choate Rosemary Hall, Wallingford, CT (2023). Courses Taught: Digital Filmmaking II, Digital Photography I, Digital Photography II</li>
+                        <li>SUNY New Paltz, New Paltz, NY (2019–2021). Courses Taught: Digital Filmmaking II, Digital Photography I, Digital Photography II</li>
+                        <li>Wilton Library – Maker Program, Wilton, CT (2019). Courses Taught: VR World Building</li>
+                        <li>Workspace Academy, Bethel, CT (2019). Courses Taught: Immersive Storytelling, VR Production</li>
+                        <li>New Haven Ives Squared – Maker Program, New Haven, CT (2018). Courses Taught: Immersive Storytelling, VR World Building</li>
+                        <li>Jacob Burns Film Center, Pleasantville, NY (2017–2019). Courses Taught: Adventures in Media, Immersive Storytelling, Podcast People, Camera Tricks</li>
+                        <li>Ridgefield Library, Ridgefield, CT (2018). Courses Taught: Making Magic from Scratch, Immersive Storytelling</li>
+                        <li>Yonkers Public Library, Yonkers, NY (2017–2018). Courses Taught: Making Magic from Scratch</li>
+                        <li>Coding Kidz, NY, NY (2016–2017). Courses Taught: Making Magic from Scratch</li>
+                        <li>Tarrytown Summer Challenge Camp, Tarrytown, NY (2015–2018). Courses Taught: Making Magic from Scratch</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <h3>Recent Filmmaking Projects</h3>
+                    <ul>
+                        <li><em>Creatures in the Tall Grass</em> — In preproduction. Feature-length film (90 min), planned shoot summer 2026.</li>
+                        <li><em>Poets and Friends</em> — Organize and host a monthly poetry event.</li>
+                        <li><em>The Tyler Show</em> Podcast — A video podcast about mental health, music, and art.</li>
+                        <li>Editor and Colorist for <em>Dallas</em> (2025), Childlike Studios</li>
+                        <li>Editor and Media Director for Ahoy Indie Media Live Shows (2025)</li>
+                        <li>Producer | Director | Editor for The Rob Show (2022–2025)</li>
+                        <li>Director | Editor for Silverback Trailer (2023)</li>
+                        <li>Director | Editor for Pantalones Cinematic Skatefilm Opening (2023)</li>
+                        <li>Director | Editor for ChaosNet Trailer (2023)</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <h3>Tangible Skills</h3>
+                    <ul>
+                        <li>Creating Custom GPTs using Advanced AI APIs</li>
+                        <li>Developing Python applications integrated with open-source AI models</li>
+                        <li>Bulk video editing automation</li>
+                        <li>Index creation and data monitoring</li>
+                        <li>Virtual Reality Development (Unreal Engine 4 & 5, APK Development for Oculus Quest & Android)</li>
+                        <li>Film & Video Production (Adobe Premiere Pro, DaVinci Resolve, After Effects, Dragon Capture)</li>
+                        <li>Web & App Development (HTML, CSS, JavaScript, Cordova, Alpine.js, Git Version Control)</li>
+                        <li>Software Programming (OOP, Objective-C, Python for UI apps and internal systems)</li>
+                        <li>UI/UX Design (Responsive design, various CSS & JS frameworks, Figma)</li>
+                        <li>Business & Marketing (Writing business plans, campaign strategies)</li>
+                        <li>Problem-Solving (Troubleshooting, debugging, performance optimization, web security)</li>
+                        <li>Team Collaboration (Remote and in-person leadership for creative & technical projects)</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <h3>Selected Achievements</h3>
+                    <ul>
+                        <li>Launched Ahoy Indie Media App Platform and Debuted a Live Variety Show (2025)</li>
+                        <li>Winner of 2022 ETH DENVER Vega HACKATHON</li>
+                        <li>Creative-in-Residence, New Haven Public Library (2018)</li>
+                        <li>Maker-in-Residence, Ridgefield Library (2018)</li>
+                        <li>Creative Culture Fellowship, Creative Culture Program – Jacob Burns (2017)</li>
+                        <li>Middlebury Film Festival Acceptance – <em>Beyond the Mountain</em> (VR Film, 2017)</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="student-gallery" class="section gallery-section">
+                <h2>Student Work — Barnum Public Schools</h2>
+                <p class="gallery-intro">A selection of student photography and 3D creations from my STEM classes at Barnum.</p>
+                <div class="instagram-grid" role="list">
+                    <figure class="ig-cell">
+                        <div class="gallery-placeholder" aria-hidden="true"><span>1</span></div>
+                    </figure>
+                    <figure class="ig-cell">
+                        <div class="gallery-placeholder" aria-hidden="true"><span>2</span></div>
+                    </figure>
+                    <figure class="ig-cell">
+                        <div class="gallery-placeholder" aria-hidden="true"><span>3</span></div>
+                    </figure>
+                    <figure class="ig-cell">
+                        <div class="gallery-placeholder" aria-hidden="true"><span>4</span></div>
+                    </figure>
+                    <figure class="ig-cell">
+                        <div class="gallery-placeholder" aria-hidden="true"><span>5</span></div>
+                    </figure>
+                    <figure class="ig-cell">
+                        <div class="gallery-placeholder" aria-hidden="true"><span>6</span></div>
+                    </figure>
+                    <figure class="ig-cell">
+                        <div class="gallery-placeholder" aria-hidden="true"><span>7</span></div>
+                    </figure>
+                    <figure class="ig-cell">
+                        <div class="gallery-placeholder" aria-hidden="true"><span>8</span></div>
+                    </figure>
+                    <figure class="ig-cell">
+                        <div class="gallery-placeholder" aria-hidden="true"><span>9</span></div>
+                    </figure>
+                </div>
+                <p class="gallery-note no-print"><strong>To add real work:</strong> Replace each placeholder div with <code>&lt;img src="path/to/image.jpg" alt="Description"&gt;</code>. Add or remove <code>.ig-cell</code> figures to keep a multiple of 3 for a clean grid.</p>
+            </section>
         </main>
 
-        <!-- Call to Action Section -->
-        <section class="section" style="
-            background: var(--primary-color);
-            color: white;
-            text-align: center;
-            margin-top: 2rem;
-            padding: 3rem 2rem;
-            border-radius: 8px;
-        ">
-            <h2 style="
-                color: white;
-                margin-bottom: 1.5rem;
-                border-bottom: none;
-            ">Let's Connect</h2>
-            <p style="
-                font-size: 1.2rem;
-                margin-bottom: 2rem;
-                max-width: 800px;
-                margin-left: auto;
-                margin-right: auto;
-            ">
-                I'm always interested in new teaching opportunities and
-                collaborations. References and additional materials are
-                available upon request.
-            </p>
-            <a href="mailto:alex@ahoy.ooo" style="
-                display: inline-block;
-                background-color: var(--secondary-color);
-                color: white;
-                padding: 1rem 2rem;
-                border-radius: 4px;
-                text-decoration: none;
-                font-weight: bold;
-                transition: background-color 0.3s;
-                margin-top: 1rem;
-            ">Contact Me</a>
-
-            </div>
-          
-        </section>
-        <br><br>
-        <nav class="nav">
-            <div class="container">
+        <nav class="nav no-print">
+            <div class="container nav-inner">
                 <a href="/index.html">← Return to Portfolio</a>
             </div>
         </nav>
