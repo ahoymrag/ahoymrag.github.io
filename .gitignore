@@ -27,4 +27,7 @@ node_modules/
 .vscode/
 .idea/
 *.swp
-*.swo 
+*.swo
+
+# Host / experimental (keep out of repo)
+host/mizu/
