@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Alex Gonzalez | Teaching Portfolio</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
-        <style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Gonzalez | Teaching Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
+        rel="stylesheet">
+    <style>
         /* Professional resume — light, solid surfaces */
         :root {
             --primary: #1a365d;
@@ -127,24 +130,48 @@
                 padding-top: 0.75rem;
                 padding-bottom: 0.75rem;
             }
+
             .header-inner {
                 flex-wrap: wrap;
+                gap: 0.5rem;
+                /* Reduced gap */
             }
+
             .header-brand {
                 flex-wrap: wrap;
             }
+
             .header-title {
                 width: 100%;
                 margin-top: 0.25rem;
                 padding-top: 0.25rem;
                 border-top: 1px solid rgba(255, 255, 255, 0.15);
             }
+
             .header-contact {
                 width: 100%;
                 justify-content: flex-start;
+                flex-direction: column;
+                /* Stack contact info */
+                gap: 0.25rem;
                 margin-top: 0.25rem;
                 padding-top: 0.25rem;
                 border-top: 1px solid rgba(255, 255, 255, 0.15);
+            }
+
+            .header-contact span[aria-hidden="true"] {
+                display: none;
+                /* Hide the separator dot */
+            }
+
+            .container {
+                padding: 1.5rem 1rem;
+                /* Reduce side padding */
+            }
+
+            .instagram-grid {
+                grid-template-columns: repeat(2, 1fr);
+                /* 2 columns on mobile */
             }
         }
 
@@ -230,7 +257,8 @@
             border-left: 4px solid var(--primary-soft);
         }
 
-        .philosophy-box p, .philosophy-box li {
+        .philosophy-box p,
+        .philosophy-box li {
             font-size: 0.9375rem;
         }
 
@@ -376,311 +404,370 @@
             padding: 0.1rem 0.25rem;
         }
 
-        @media (max-width: 480px) {
-            .instagram-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
+
 
         /* Print: clean paper resume */
         @media print {
-            .no-print { display: none !important; }
-            body { background: #fff; color: #111; }
-            .container { padding: 0 1rem; }
-            .section, .philosophy-box, .skill-item, .experience-item,
-            .testimonial, .certification-item {
+            .no-print {
+                display: none !important;
+            }
+
+            body {
+                background: #fff;
+                color: #111;
+            }
+
+            .container {
+                padding: 0 1rem;
+            }
+
+            .section,
+            .philosophy-box,
+            .skill-item,
+            .experience-item,
+            .testimonial,
+            .certification-item {
                 background: #fff !important;
                 border: 1px solid #ddd !important;
                 box-shadow: none !important;
             }
-            .section h2 { color: #1a365d; border-color: #2b6cb0; }
-            .section h3 { color: #1a365d; }
-            a { color: #1a365d; }
+
+            .section h2 {
+                color: #1a365d;
+                border-color: #2b6cb0;
+            }
+
+            .section h3 {
+                color: #1a365d;
+            }
+
+            a {
+                color: #1a365d;
+            }
         }
     </style>
-    </head>
-    <body>
+</head>
+
+<body>
 
 
-        <header class="header">
-            <div class="header-inner">
-                <div class="header-brand">
-                    <h1 class="header-name">Alex Gonzalez</h1>
-                    <span class="header-title">Teaching Portfolio</span>
-                    <span class="header-year">2026</span>
-                </div>
-                <div class="header-contact">
-                    <a href="mailto:agonzalez7@bridgeportedu.net">agonzalez7@bridgeportedu.net</a>
-                    <span aria-hidden="true">·</span>
-                    <a href="tel:+19143919934">(914) 391-9934</a>
-                </div>
+    <header class="header">
+        <div class="header-inner">
+            <div class="header-brand">
+                <h1 class="header-name">Alex Gonzalez</h1>
+                <span class="header-title">Teaching Portfolio</span>
+                <span class="header-year">2026</span>
             </div>
-        </header>
-
-        <main class="container">
-            <section class="section">
-                <h2>Teaching Philosophy</h2>
-                <div class="philosophy-box">
-                    <p>There are many ways to teach—my favorite is project-based learning, because I get to join alongside my students. I’ve taught in settings from elite prep schools to lower-income urban elementary schools, and the core stays the same: meet students where they are and give them something real to build.</p>
-                    <ul>
-                        <li><strong>Project-Based Learning:</strong> Emphasizing
-                            hands-on, real-world projects that allow students to
-                            apply their skills in practical contexts. Each
-                            project serves as a learning journey, combining
-                            guided problem solving with a high dose of personal vision.
-                        </li>
-                        <li><strong>Student Ownership:</strong> Creating an
-                            environment where students take full ownership of
-                            their work and learning process. This includes
-                            setting personal goals, managing project timelines,
-                            and developing their unique creative voice. By the
-                            end of our time together, each student should have
-                            something tangible to share—whether it's a
-                            personal website, a portfolio of work, or a live
-                            project they can showcase.</li>
-                        <li><strong>Safe, Inclusive Classrooms:</strong> I’m trained in CPI (Crisis Prevention Intervention) and believe that clear expectations and de-escalation support learning for everyone. A calm, predictable environment—especially in high-need settings—lets curiosity and creativity thrive.</li>
-                        <li><strong>Iterative Development:</strong> Teaching
-                            through rapid prototyping and continuous feedback
-                            cycles. Students learn to refine their work through
-                            multiple iterations, incorporating feedback and
-                            improving their designs through an interactive
-                            development process.</li>
-                    </ul>
-                    <p>This approach helps students develop both technical
-                        proficiency and creative confidence, from K–5 STEM to
-                        high school and college digital media—preparing them for
-                        real-world challenges in and out of the classroom.</p>
-                </div>
-            </section>
-
-            <section class="section">
-                <h2>Teaching Experience</h2>
-                <div class="experience-item">
-                    <h3>Barnum Public Schools (August 2025 – June 2026)</h3>
-                    <p><strong>Position:</strong> STEM Teacher — Grades 1–5</p>
-                    <p><strong>Setting:</strong> Lower-income urban schools. Trained in CPI (Crisis Prevention Intervention).</p>
-                    <p>Teach five classes per day with 20–30 students per class. Deliver hands-on STEM curriculum tailored to elementary learners in high-need environments.</p>
-                    <p><strong>Learn-at-home website:</strong> Built a complete website for students to access lessons, activities, and resources from home—extending learning beyond the classroom.</p>
-                    <p><strong>Student work:</strong> Students create photography and 3D digital creations as part of the curriculum; see the <a href="#student-gallery">gallery below</a> for examples.</p>
-                </div>
-
-                <div class="experience-item">
-                    <h3>Choate Rosemary Hall (2023)</h3>
-                    <p><strong>Position:</strong> Adjunct Professor</p>
-                    <p><strong>Courses Taught:</strong></p>
-                    <ul>
-                        <li>Filmmaking II</li>
-                        <li>Digital Photography I</li>
-                        <li>Digital Photography II</li>
-                    </ul>
-                    <p>Developed and implemented curriculum for digital filmmaking and photography courses. By the end of the semester, students created original artwork and film and created a portfolio piece to share.</p>
-                </div>
-
-                <div class="experience-item">
-                    <h3>SUNY New Paltz (2019-2022)</h3>
-                    <p><strong>Position:</strong> Adjunct Professor</p>
-                    <p>Taught courses in website development using Wix.  Students focused primarliy on the design - colors - theory - and created their own unique business brand and pretended as if it was real.</p>
-                </div>
-
-                <div class="experience-item">
-                    <h3>Jacob Burns Film Center (2016-2018)</h3>
-                    <p><strong>Position:</strong> Adjunct Professor</p>
-                    <p>Instructed students in film production and digital media,
-                        with a focus on storytelling and technical
-                        proficiency.</p>
-                </div>
-
-                <div class="experience-item">
-                    <h3>Workspace Academy (2017)</h3>
-                    <p><strong>Position:</strong> Adjunct Professor</p>
-                    <p>Led courses in virtual reality where students created their own unique virtual reality experiences using Unreal Engine. Students also learned conditional logic and coding through the use of blueprints.</p>
-                </div>
-
-                <div class="experience-item">
-                    <h3>Public Library Programs (2015-Present)</h3>
-                    <p><strong>Positions:</strong> Digital Media Instructor</p>
-                    <p><strong>Locations:</strong></p>
-                    <ul>
-                        <li>Ridgefield Library</li>
-                        <li>Yonkers Library</li>
-                        <li>Sleepy Hollow Library</li>
-                        <li>New Haven Library</li>
-                        <li>Bethel Library</li>
-                    </ul>
-                    <p>Developed and led workshops in digital media, coding, and
-                        creative technology for diverse age groups. Created
-                        accessible programs that introduced community members to
-                        digital tools and creative expression.</p>
-                </div>
-
-                <div class="experience-item">
-                    <h3>After-School Programs (2015-Present)</h3>
-                    <p><strong>Positions:</strong> Technology & Media
-                        Instructor</p>
-                    <p>Led multiple after-school programs across Connecticut and
-                        New York, teaching digital media production, coding, and
-                        creative technology to K-12 students. Focused on
-                        project-based learning and hands-on experience with
-                        modern digital tools.</p>
-                </div>
-            </section>
-
-            <section class="section">
-                <h2>Teaching Specializations</h2>
-                <div class="skills-grid">
-                    <div class="skill-item">Digital Media Production</div>
-                    <div class="skill-item">Unreal Engine</div>
-                    <div class="skill-item">Curriculum Development</div>
-                    <div class="skill-item">Stop Motion Animation</div>
-                    <div class="skill-item">Digital Photography</div>
-                    <div class="skill-item">Filmmaking</div>
-                    <div class="skill-item">Creative Technology</div>
-                    <div class="skill-item">Student Mentoring</div>
-                    <div class="skill-item">Educational Technology</div>
-                    <div class="skill-item">Digital Literacy</div>
-                    <div class="skill-item">Portfolio Development</div>
-                    <div class="skill-item">Classroom Management</div>
-                    <div class="skill-item">STEM (Grades 1–5)</div>
-                    <div class="skill-item">CPI / Crisis Prevention</div>
-                </div>
-            </section>
-
-            <section class="section">
-                <h2>Full Resume</h2>
-                <div class="resume-header" style="text-align: center; margin-bottom: 2rem;">
-                    <h3 style="margin: 0; font-size: 1.5rem;">Alex Gonzalez</h3>
-                    <p style="margin: 0.5rem 0; opacity: 0.9;">Creative Director | Filmmaker | Software Designer</p>
-                </div>
-
-                <div class="experience-item">
-                    <h3>Contact</h3>
-                    <p>Phone: (914) 391-9934</p>
-                    <p>Email: <a href="mailto:agonzalez7@bridgeportedu.net">agonzalez7@bridgeportedu.net</a></p>
-                    <p>Portfolio: <a href="https://alexgonzalez.ooo/share" target="_blank" rel="noopener">alexgonzalez.ooo/share</a></p>
-                </div>
-
-                <div class="experience-item">
-                    <h3>Professional Summary</h3>
-                    <p>A multidisciplinary professional with a background in film production, software design, and business. Proven ability to lead creative teams, mentor students, and deliver long-term projects in innovative and technical fields.</p>
-                </div>
-
-                <div class="experience-item">
-                    <h3>Work Experience</h3>
-                    <ul>
-                        <li><strong>Product Designer and Frontend Engineer</strong> at The Montauk Wine Project (2025)</li>
-                        <li><strong>Product Designer</strong> at Silverback at ApeWorx, LTD (2021–2025)</li>
-                        <li><strong>Executive Digital Platform Director</strong> at Mission Anabaino (2023): Created a system for new church plants to have a base-level foundation of technology.</li>
-                        <li><strong>Product Designer</strong> at ApeWorx (2022–2023)</li>
-                        <li><strong>Creative Director</strong> at ApeWorx (2021–2022)</li>
-                        <li><strong>Founder and Chief</strong> at Ahoy Indie Media (2022–Present)</li>
-                        <li><strong>Adjunct Film Professor</strong> at Choate Rosemary (2023): Taught undergraduate preparatory courses in Film Studies and Digital Photography.</li>
-                        <li><strong>AV Director</strong> at CPC New Haven (2020–Present): Oversaw the audiovisual department.</li>
-                    </ul>
-                </div>
-
-                <div class="experience-item">
-                    <h3>Teaching Experience</h3>
-                    <ul>
-                        <li>Barnum Public Schools (August 2025 – June 2026). STEM Teacher, Grades 1–5. Lower-income urban schools; CPI trained. Five classes daily, 20–30 students per class. Built a complete learn-at-home website for students; curriculum includes student photography and 3D creations.</li>
-                        <li>Choate Rosemary Hall, Wallingford, CT (2023). Courses Taught: Digital Filmmaking II, Digital Photography I, Digital Photography II</li>
-                        <li>SUNY New Paltz, New Paltz, NY (2019–2021). Courses Taught: Digital Filmmaking II, Digital Photography I, Digital Photography II</li>
-                        <li>Wilton Library – Maker Program, Wilton, CT (2019). Courses Taught: VR World Building</li>
-                        <li>Workspace Academy, Bethel, CT (2019). Courses Taught: Immersive Storytelling, VR Production</li>
-                        <li>New Haven Ives Squared – Maker Program, New Haven, CT (2018). Courses Taught: Immersive Storytelling, VR World Building</li>
-                        <li>Jacob Burns Film Center, Pleasantville, NY (2017–2019). Courses Taught: Adventures in Media, Immersive Storytelling, Podcast People, Camera Tricks</li>
-                        <li>Ridgefield Library, Ridgefield, CT (2018). Courses Taught: Making Magic from Scratch, Immersive Storytelling</li>
-                        <li>Yonkers Public Library, Yonkers, NY (2017–2018). Courses Taught: Making Magic from Scratch</li>
-                        <li>Coding Kidz, NY, NY (2016–2017). Courses Taught: Making Magic from Scratch</li>
-                        <li>Tarrytown Summer Challenge Camp, Tarrytown, NY (2015–2018). Courses Taught: Making Magic from Scratch</li>
-                    </ul>
-                </div>
-
-                <div class="experience-item">
-                    <h3>Recent Filmmaking Projects</h3>
-                    <ul>
-                        <li><em>Creatures in the Tall Grass</em> — In preproduction. Feature-length film (90 min), planned shoot summer 2026.</li>
-                        <li><em>Poets and Friends</em> — Organize and host a monthly poetry event.</li>
-                        <li><em>The Tyler Show</em> Podcast — A video podcast about mental health, music, and art.</li>
-                        <li>Editor and Colorist for <em>Dallas</em> (2025), Childlike Studios</li>
-                        <li>Editor and Media Director for Ahoy Indie Media Live Shows (2025)</li>
-                        <li>Producer | Director | Editor for The Rob Show (2022–2025)</li>
-                        <li>Director | Editor for Silverback Trailer (2023)</li>
-                        <li>Director | Editor for Pantalones Cinematic Skatefilm Opening (2023)</li>
-                        <li>Director | Editor for ChaosNet Trailer (2023)</li>
-                    </ul>
-                </div>
-
-                <div class="experience-item">
-                    <h3>Tangible Skills</h3>
-                    <ul>
-                        <li>Creating Custom GPTs using Advanced AI APIs</li>
-                        <li>Developing Python applications integrated with open-source AI models</li>
-                        <li>Bulk video editing automation</li>
-                        <li>Index creation and data monitoring</li>
-                        <li>Virtual Reality Development (Unreal Engine 4 & 5, APK Development for Oculus Quest & Android)</li>
-                        <li>Film & Video Production (Adobe Premiere Pro, DaVinci Resolve, After Effects, Dragon Capture)</li>
-                        <li>Web & App Development (HTML, CSS, JavaScript, Cordova, Alpine.js, Git Version Control)</li>
-                        <li>Software Programming (OOP, Objective-C, Python for UI apps and internal systems)</li>
-                        <li>UI/UX Design (Responsive design, various CSS & JS frameworks, Figma)</li>
-                        <li>Business & Marketing (Writing business plans, campaign strategies)</li>
-                        <li>Problem-Solving (Troubleshooting, debugging, performance optimization, web security)</li>
-                        <li>Team Collaboration (Remote and in-person leadership for creative & technical projects)</li>
-                    </ul>
-                </div>
-
-                <div class="experience-item">
-                    <h3>Selected Achievements</h3>
-                    <ul>
-                        <li>Launched Ahoy Indie Media App Platform and Debuted a Live Variety Show (2025)</li>
-                        <li>Winner of 2022 ETH DENVER Vega HACKATHON</li>
-                        <li>Creative-in-Residence, New Haven Public Library (2018)</li>
-                        <li>Maker-in-Residence, Ridgefield Library (2018)</li>
-                        <li>Creative Culture Fellowship, Creative Culture Program – Jacob Burns (2017)</li>
-                        <li>Middlebury Film Festival Acceptance – <em>Beyond the Mountain</em> (VR Film, 2017)</li>
-                    </ul>
-                </div>
-            </section>
-
-            <section id="student-gallery" class="section gallery-section">
-                <h2>Student Work — Barnum Public Schools</h2>
-                <p class="gallery-intro">A selection of student photography and 3D creations from my STEM classes at Barnum.</p>
-                <div class="instagram-grid" role="list">
-                    <figure class="ig-cell">
-                        <div class="gallery-placeholder" aria-hidden="true"><span>1</span></div>
-                    </figure>
-                    <figure class="ig-cell">
-                        <div class="gallery-placeholder" aria-hidden="true"><span>2</span></div>
-                    </figure>
-                    <figure class="ig-cell">
-                        <div class="gallery-placeholder" aria-hidden="true"><span>3</span></div>
-                    </figure>
-                    <figure class="ig-cell">
-                        <div class="gallery-placeholder" aria-hidden="true"><span>4</span></div>
-                    </figure>
-                    <figure class="ig-cell">
-                        <div class="gallery-placeholder" aria-hidden="true"><span>5</span></div>
-                    </figure>
-                    <figure class="ig-cell">
-                        <div class="gallery-placeholder" aria-hidden="true"><span>6</span></div>
-                    </figure>
-                    <figure class="ig-cell">
-                        <div class="gallery-placeholder" aria-hidden="true"><span>7</span></div>
-                    </figure>
-                    <figure class="ig-cell">
-                        <div class="gallery-placeholder" aria-hidden="true"><span>8</span></div>
-                    </figure>
-                    <figure class="ig-cell">
-                        <div class="gallery-placeholder" aria-hidden="true"><span>9</span></div>
-                    </figure>
-                </div>
-                <p class="gallery-note no-print"><strong>To add real work:</strong> Replace each placeholder div with <code>&lt;img src="path/to/image.jpg" alt="Description"&gt;</code>. Add or remove <code>.ig-cell</code> figures to keep a multiple of 3 for a clean grid.</p>
-            </section>
-        </main>
-
-        <nav class="nav no-print">
-            <div class="container nav-inner">
-                <a href="/index.html">← Return to Portfolio</a>
+            <div class="header-contact">
+                <a href="mailto:agonzalez7@bridgeportedu.net">agonzalez7@bridgeportedu.net</a>
+                <span aria-hidden="true">·</span>
+                <a href="tel:+19143919934">(914) 391-9934</a>
             </div>
-        </nav>
-    </body>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="student-gallery" class="section gallery-section">
+            <h2>Student Work Highlights</h2>
+            <p class="gallery-intro">A selection of student photography and 3D creations from my STEM classes at Barnum.
+            </p>
+            <div class="instagram-grid" role="list">
+                <figure class="ig-cell">
+                    <div class="gallery-placeholder" aria-hidden="true"><span>1</span></div>
+                </figure>
+                <figure class="ig-cell">
+                    <div class="gallery-placeholder" aria-hidden="true"><span>2</span></div>
+                </figure>
+                <figure class="ig-cell">
+                    <div class="gallery-placeholder" aria-hidden="true"><span>3</span></div>
+                </figure>
+                <figure class="ig-cell">
+                    <div class="gallery-placeholder" aria-hidden="true"><span>4</span></div>
+                </figure>
+                <figure class="ig-cell">
+                    <div class="gallery-placeholder" aria-hidden="true"><span>5</span></div>
+                </figure>
+                <figure class="ig-cell">
+                    <div class="gallery-placeholder" aria-hidden="true"><span>6</span></div>
+                </figure>
+                <figure class="ig-cell">
+                    <div class="gallery-placeholder" aria-hidden="true"><span>7</span></div>
+                </figure>
+                <figure class="ig-cell">
+                    <div class="gallery-placeholder" aria-hidden="true"><span>8</span></div>
+                </figure>
+                <figure class="ig-cell">
+                    <div class="gallery-placeholder" aria-hidden="true"><span>9</span></div>
+                </figure>
+            </div>
+            <p class="gallery-note no-print"><strong>To add real work:</strong> Replace each placeholder div with
+                <code>&lt;img src="path/to/image.jpg" alt="Description"&gt;</code>. Add or remove <code>.ig-cell</code>
+                figures to keep a multiple of 3 for a clean grid.</p>
+        </section>
+
+        <section class="section">
+            <h2>Teaching Philosophy</h2>
+            <div class="philosophy-box">
+                <p>There are many ways to teach—my favorite is project-based learning, because I get to join alongside
+                    my students. I’ve taught in settings from elite prep schools to lower-income urban elementary
+                    schools, and the core stays the same: meet students where they are and give them something real to
+                    build.</p>
+                <ul>
+                    <li><strong>Project-Based Learning:</strong> Emphasizing
+                        hands-on, real-world projects that allow students to
+                        apply their skills in practical contexts. Each
+                        project serves as a learning journey, combining
+                        guided problem solving with a high dose of personal vision.
+                    </li>
+                    <li><strong>Student Ownership:</strong> Creating an
+                        environment where students take full ownership of
+                        their work and learning process. This includes
+                        setting personal goals, managing project timelines,
+                        and developing their unique creative voice. By the
+                        end of our time together, each student should have
+                        something tangible to share—whether it's a
+                        personal website, a portfolio of work, or a live
+                        project they can showcase.</li>
+                    <li><strong>Safe, Inclusive Classrooms:</strong> I’m trained in CPI (Crisis Prevention Intervention)
+                        and believe that clear expectations and de-escalation support learning for everyone. A calm,
+                        predictable environment—especially in high-need settings—lets curiosity and creativity thrive.
+                    </li>
+                    <li><strong>Iterative Development:</strong> Teaching
+                        through rapid prototyping and continuous feedback
+                        cycles. Students learn to refine their work through
+                        multiple iterations, incorporating feedback and
+                        improving their designs through an interactive
+                        development process.</li>
+                </ul>
+                <p>This approach helps students develop both technical
+                    proficiency and creative confidence, from K–5 STEM to
+                    high school and college digital media—preparing them for
+                    real-world challenges in and out of the classroom.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Teaching Experience</h2>
+            <div class="experience-item">
+                <h3>Barnum Public Schools (August 2025 – June 2026)</h3>
+                <p><strong>Position:</strong> STEM Teacher — Grades 1–5</p>
+                <p><strong>Setting:</strong> Lower-income urban schools. Trained in CPI (Crisis Prevention
+                    Intervention).</p>
+                <p>Teach five classes per day with 20–30 students per class. Deliver hands-on STEM curriculum tailored
+                    to elementary learners in high-need environments.</p>
+                <p><strong>Learn-at-home website:</strong> Built a complete website for students to access lessons,
+                    activities, and resources from home—extending learning beyond the classroom.</p>
+                <p><strong>Student work:</strong> Students create photography and 3D digital creations as part of the
+                    curriculum; see the <a href="#student-gallery">gallery below</a> for examples.</p>
+            </div>
+
+            <div class="experience-item">
+                <h3>Choate Rosemary Hall (2023)</h3>
+                <p><strong>Position:</strong> Adjunct Professor</p>
+                <p><strong>Courses Taught:</strong></p>
+                <ul>
+                    <li>Filmmaking II</li>
+                    <li>Digital Photography I</li>
+                    <li>Digital Photography II</li>
+                </ul>
+                <p>Developed and implemented curriculum for digital filmmaking and photography courses. By the end of
+                    the semester, students created original artwork and film and created a portfolio piece to share.</p>
+            </div>
+
+            <div class="experience-item">
+                <h3>SUNY New Paltz (2019-2022)</h3>
+                <p><strong>Position:</strong> Adjunct Professor</p>
+                <p>Taught courses in website development using Wix. Students focused primarliy on the design - colors -
+                    theory - and created their own unique business brand and pretended as if it was real.</p>
+            </div>
+
+            <div class="experience-item">
+                <h3>Jacob Burns Film Center (2016-2018)</h3>
+                <p><strong>Position:</strong> Adjunct Professor</p>
+                <p>Instructed students in film production and digital media,
+                    with a focus on storytelling and technical
+                    proficiency.</p>
+            </div>
+
+            <div class="experience-item">
+                <h3>Workspace Academy (2017)</h3>
+                <p><strong>Position:</strong> Adjunct Professor</p>
+                <p>Led courses in virtual reality where students created their own unique virtual reality experiences
+                    using Unreal Engine. Students also learned conditional logic and coding through the use of
+                    blueprints.</p>
+            </div>
+
+            <div class="experience-item">
+                <h3>Public Library Programs (2015-Present)</h3>
+                <p><strong>Positions:</strong> Digital Media Instructor</p>
+                <p><strong>Locations:</strong></p>
+                <ul>
+                    <li>Ridgefield Library</li>
+                    <li>Yonkers Library</li>
+                    <li>Sleepy Hollow Library</li>
+                    <li>New Haven Library</li>
+                    <li>Bethel Library</li>
+                </ul>
+                <p>Developed and led workshops in digital media, coding, and
+                    creative technology for diverse age groups. Created
+                    accessible programs that introduced community members to
+                    digital tools and creative expression.</p>
+            </div>
+
+            <div class="experience-item">
+                <h3>After-School Programs (2015-Present)</h3>
+                <p><strong>Positions:</strong> Technology & Media
+                    Instructor</p>
+                <p>Led multiple after-school programs across Connecticut and
+                    New York, teaching digital media production, coding, and
+                    creative technology to K-12 students. Focused on
+                    project-based learning and hands-on experience with
+                    modern digital tools.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Teaching Specializations</h2>
+            <div class="skills-grid">
+                <div class="skill-item">Digital Media Production</div>
+                <div class="skill-item">Unreal Engine</div>
+                <div class="skill-item">Curriculum Development</div>
+                <div class="skill-item">Stop Motion Animation</div>
+                <div class="skill-item">Digital Photography</div>
+                <div class="skill-item">Filmmaking</div>
+                <div class="skill-item">Creative Technology</div>
+                <div class="skill-item">Student Mentoring</div>
+                <div class="skill-item">Educational Technology</div>
+                <div class="skill-item">Digital Literacy</div>
+                <div class="skill-item">Portfolio Development</div>
+                <div class="skill-item">Classroom Management</div>
+                <div class="skill-item">STEM (Grades 1–5)</div>
+                <div class="skill-item">CPI / Crisis Prevention</div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Full Resume</h2>
+            <div class="resume-header" style="text-align: center; margin-bottom: 2rem;">
+                <h3 style="margin: 0; font-size: 1.5rem;">Alex Gonzalez</h3>
+                <p style="margin: 0.5rem 0; opacity: 0.9;">Creative Director | Filmmaker | Software Designer</p>
+            </div>
+
+            <div class="experience-item">
+                <h3>Contact</h3>
+                <p>Phone: (914) 391-9934</p>
+                <p>Email: <a href="mailto:agonzalez7@bridgeportedu.net">agonzalez7@bridgeportedu.net</a></p>
+                <p>Portfolio: <a href="https://alexgonzalez.ooo/share" target="_blank"
+                        rel="noopener">alexgonzalez.ooo/share</a></p>
+            </div>
+
+            <div class="experience-item">
+                <h3>Professional Summary</h3>
+                <p>A multidisciplinary professional with a background in film production, software design, and business.
+                    Proven ability to lead creative teams, mentor students, and deliver long-term projects in innovative
+                    and technical fields.</p>
+            </div>
+
+            <div class="experience-item">
+                <h3>Work Experience</h3>
+                <ul>
+                    <li><strong>Product Designer and Frontend Engineer</strong> at The Montauk Wine Project (2025)</li>
+                    <li><strong>Product Designer</strong> at Silverback at ApeWorx, LTD (2021–2025)</li>
+                    <li><strong>Executive Digital Platform Director</strong> at Mission Anabaino (2023): Created a
+                        system for new church plants to have a base-level foundation of technology.</li>
+                    <li><strong>Product Designer</strong> at ApeWorx (2022–2023)</li>
+                    <li><strong>Creative Director</strong> at ApeWorx (2021–2022)</li>
+                    <li><strong>Founder and Chief</strong> at Ahoy Indie Media (2022–Present)</li>
+                    <li><strong>Adjunct Film Professor</strong> at Choate Rosemary (2023): Taught undergraduate
+                        preparatory courses in Film Studies and Digital Photography.</li>
+                    <li><strong>AV Director</strong> at CPC New Haven (2020–Present): Oversaw the audiovisual
+                        department.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h3>Teaching Experience</h3>
+                <ul>
+                    <li>Barnum Public Schools (August 2025 – June 2026). STEM Teacher, Grades 1–5. Lower-income urban
+                        schools; CPI trained. Five classes daily, 20–30 students per class. Built a complete
+                        learn-at-home website for students; curriculum includes student photography and 3D creations.
+                    </li>
+                    <li>Choate Rosemary Hall, Wallingford, CT (2023). Courses Taught: Digital Filmmaking II, Digital
+                        Photography I, Digital Photography II</li>
+                    <li>SUNY New Paltz, New Paltz, NY (2019–2021). Courses Taught: Digital Filmmaking II, Digital
+                        Photography I, Digital Photography II</li>
+                    <li>Wilton Library – Maker Program, Wilton, CT (2019). Courses Taught: VR World Building</li>
+                    <li>Workspace Academy, Bethel, CT (2019). Courses Taught: Immersive Storytelling, VR Production</li>
+                    <li>New Haven Ives Squared – Maker Program, New Haven, CT (2018). Courses Taught: Immersive
+                        Storytelling, VR World Building</li>
+                    <li>Jacob Burns Film Center, Pleasantville, NY (2017–2019). Courses Taught: Adventures in Media,
+                        Immersive Storytelling, Podcast People, Camera Tricks</li>
+                    <li>Ridgefield Library, Ridgefield, CT (2018). Courses Taught: Making Magic from Scratch, Immersive
+                        Storytelling</li>
+                    <li>Yonkers Public Library, Yonkers, NY (2017–2018). Courses Taught: Making Magic from Scratch</li>
+                    <li>Coding Kidz, NY, NY (2016–2017). Courses Taught: Making Magic from Scratch</li>
+                    <li>Tarrytown Summer Challenge Camp, Tarrytown, NY (2015–2018). Courses Taught: Making Magic from
+                        Scratch</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h3>Recent Filmmaking Projects</h3>
+                <ul>
+                    <li><em>Creatures in the Tall Grass</em> — In preproduction. Feature-length film (90 min), planned
+                        shoot summer 2026.</li>
+                    <li><em>Poets and Friends</em> — Organize and host a monthly poetry event.</li>
+                    <li><em>The Tyler Show</em> Podcast — A video podcast about mental health, music, and art.</li>
+                    <li>Editor and Colorist for <em>Dallas</em> (2025), Childlike Studios</li>
+                    <li>Editor and Media Director for Ahoy Indie Media Live Shows (2025)</li>
+                    <li>Producer | Director | Editor for The Rob Show (2022–2025)</li>
+                    <li>Director | Editor for Silverback Trailer (2023)</li>
+                    <li>Director | Editor for Pantalones Cinematic Skatefilm Opening (2023)</li>
+                    <li>Director | Editor for ChaosNet Trailer (2023)</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h3>Tangible Skills</h3>
+                <ul>
+                    <li>Creating Custom GPTs using Advanced AI APIs</li>
+                    <li>Developing Python applications integrated with open-source AI models</li>
+                    <li>Bulk video editing automation</li>
+                    <li>Index creation and data monitoring</li>
+                    <li>Virtual Reality Development (Unreal Engine 4 & 5, APK Development for Oculus Quest & Android)
+                    </li>
+                    <li>Film & Video Production (Adobe Premiere Pro, DaVinci Resolve, After Effects, Dragon Capture)
+                    </li>
+                    <li>Web & App Development (HTML, CSS, JavaScript, Cordova, Alpine.js, Git Version Control)</li>
+                    <li>Software Programming (OOP, Objective-C, Python for UI apps and internal systems)</li>
+                    <li>UI/UX Design (Responsive design, various CSS & JS frameworks, Figma)</li>
+                    <li>Business & Marketing (Writing business plans, campaign strategies)</li>
+                    <li>Problem-Solving (Troubleshooting, debugging, performance optimization, web security)</li>
+                    <li>Team Collaboration (Remote and in-person leadership for creative & technical projects)</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h3>Selected Achievements</h3>
+                <ul>
+                    <li>Launched Ahoy Indie Media App Platform and Debuted a Live Variety Show (2025)</li>
+                    <li>Winner of 2022 ETH DENVER Vega HACKATHON</li>
+                    <li>Creative-in-Residence, New Haven Public Library (2018)</li>
+                    <li>Maker-in-Residence, Ridgefield Library (2018)</li>
+                    <li>Creative Culture Fellowship, Creative Culture Program – Jacob Burns (2017)</li>
+                    <li>Middlebury Film Festival Acceptance – <em>Beyond the Mountain</em> (VR Film, 2017)</li>
+                </ul>
+            </div>
+        </section>
+
+
+    </main>
+
+    <nav class="nav no-print">
+        <div class="container nav-inner">
+            <a href="/index.html">← Return to Portfolio</a>
+        </div>
+    </nav>
+</body>
+
 </html>
