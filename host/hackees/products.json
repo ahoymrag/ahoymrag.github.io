@@ -1,0 +1,68 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Annapolis Blue Hackees Stick",
+      "price": "$39",
+      "variantId": "",
+      "quantity": 1,
+      "image": "https://hackeeslax.com/cdn/shop/files/1_6b248685-105d-4d67-b469-99f49b2977aa.png?v=1746725183&width=600",
+      "description": "Classic blue Hackees stick for the perfect game"
+    },
+    {
+      "id": 2,
+      "name": "Lime Rickee Hackees Stick",
+      "price": "$39",
+      "variantId": "",
+      "quantity": 1,
+      "image": "https://hackeeslax.com/cdn/shop/files/1_6b248685-105d-4d67-b469-99f49b2977aa.png?v=1746725183&width=600",
+      "description": "Bright lime green for maximum visibility"
+    },
+    {
+      "id": 3,
+      "name": "The Goalie Stick",
+      "price": "$49",
+      "variantId": "",
+      "quantity": 1,
+      "image": "https://hackeeslax.com/cdn/shop/files/1_6b248685-105d-4d67-b469-99f49b2977aa.png?v=1746725183&width=600",
+      "description": "Professional grade goalie stick"
+    },
+    {
+      "id": 4,
+      "name": "Salute to Service Hackees Stick",
+      "price": "$45",
+      "variantId": "",
+      "quantity": 1,
+      "image": "https://hackeeslax.com/cdn/shop/files/1_6b248685-105d-4d67-b469-99f49b2977aa.png?v=1746725183&width=600",
+      "description": "Special edition military tribute stick"
+    },
+    {
+      "id": 5,
+      "name": "Mini Lacrosse Goal",
+      "price": "$30",
+      "variantId": "",
+      "quantity": 1,
+      "image": "https://hackeeslax.com/cdn/shop/files/1_6b248685-105d-4d67-b469-99f49b2977aa.png?v=1746725183&width=600",
+      "description": "Portable mini goal for practice"
+    },
+    {
+      "id": 6,
+      "name": "Extra Mini-Balls",
+      "price": "from $3",
+      "variantId": "",
+      "quantity": 1,
+      "image": "https://hackeeslax.com/cdn/shop/files/1_6b248685-105d-4d67-b469-99f49b2977aa.png?v=1746725183&width=600",
+      "description": "Set of 3 mini lacrosse balls"
+    },
+    {
+      "id": 7,
+      "name": "The \"OG\" Pink Hackees Stick",
+      "price": "$39",
+      "variantId": "",
+      "quantity": 1,
+      "image": "https://hackeeslax.com/cdn/shop/files/1_6b248685-105d-4d67-b469-99f49b2977aa.png?v=1746725183&width=600",
+      "image": "/images/pink-og.jpg",
+      "description": "Original pink Hackees stick"
+    }
+  ]
+} 
