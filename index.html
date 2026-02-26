@@ -1,180 +1,204 @@
 <html>
-    <head><!-- AS OF 2.21.24 -->
-        <!-- UPDATED 12-21-24 -->
-        <!-- UPDATED 01-29-25-->
-        <meta name="description"
-            content="Portfolio website for Alex Gonzalez of Sleepy Hollow. Includes CV, animation, VR experiments, and teacher work.">
-        <meta name="keywords"
-            content="Alex Gonzalez, portfolio, photography, CV, animation, VR experiments, teacher work, Sleepy Hollow">
-        <meta name="author" content="Alex Gonzalez">
-        <meta name="robots" content="index, follow">
-        <meta name="googlebot" content="index, follow">
-        <!-- Add any other relevant meta tags -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./portfolio/src/ag-cv-css-1.css">
-        <link rel="stylesheet" href="./src/css/index-addons.css">
-        <title>Alex Gonzalez | Work and Portfolio</title><script defer
-            data-domain="alexgonzalez.ooo"
-            src="https://plausible.io/js/script.js"></script>
-        <script defer data-domain="alexgonzalez.ooo"
-            src="https://plausible.io/js/script.js"></script>
-        <link
-            rel="icon"
-            type="image/png"
-            href="./src/assets/AlexGonzalez-favicon.png" />
-        <script defer
-            src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                const backgroundImages = [
-                    'https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExa3UzcHpuZm1kbXdlaG8xMTV4Y3J0cnU4MGI1YzVmZjZ5aHJyYWx0aSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3HW49pLbfiKsvsc40p/giphy.gif',
-                    'https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbms3MnNnc2hpcjFpdGRtMzE2ZTN5Z3d2dTdzNG80ZmVrNWd0dWh3dyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/5bDAc3il2DySZAFGpQ/giphy.gif',
-                    'https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExc2NhZTBwcm5nazE5MzZ1c245eHlqa2NyOW53eWU3cmplcTdlZ2NxYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/7FfMZCl2DSThYO1KGf/giphy.gif',
-                    'https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExemU4OXhoMXF5eHhtZTVwaTBkNnBuemYwcjQzaDVraXZiYXdtZGNzZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/aCCleAr6W1njtygxHC/giphy.gif',
-                    'https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExM2M2c2g0ZXQyOWttZXdwZHgxbGtjbHExZWg2aHNreW51MGlleml0YyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/irCR68lB8tZDy8GKb0/giphy.gif',
-                    'https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExc3JjODUzYmw1ZHV3YnlrOWI1djlqM3UzajgwaXdseXRhZTAwMWY1aiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xKBdOSxnnd03FaPgxn/giphy.gif',
-                    'https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNGxlOTV3bzhzenJiemZkNDRhMG14djFmOGJqdWFtNGM1dDNsY3poaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3ohhwuJS2LOyBhPt96/giphy.gif',
-                    'https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcnIyMWxvYnQyZjZ2Y3NqMnd2ZXZlM2JpMXdhazdmcmJxd2IxMjltMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/4bhs1boql4XVJgmm4H/giphy.gif',
-                    'https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExbDdlYjVjZ2o2ZzFuYjhycmNvYmNzbjJ2YmU4bGozM2J1MzJzbGJ2aiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/39lJ5rGSMmXbINhurn/giphy.gif',
-                    'https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExY2Y1MjlwNDAyaW93YTlnOWo5anVlcjd3cXk4MDkwNmRmdTNobm83bCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/gIODGWDBuG5AWlUExJ/giphy.gif',
-                    'https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMWpkMjVqeHZ0cG1mYzAzOXdmYnZ4ZWt1eWw0MTM1MTBiYzhndzMweiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/iI4vhciiVh2b3j9sgo/giphy.gif',
-                    'https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExMTI0dHd1eDdnc2lrZTQ4OGlkamp6ejlrejR2aGYybGtqOXhuYTJwNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Kc2J1Ox5fGmt6m9R6w/giphy.gif',
-                    'https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdnJmYXc4YWd6bzZmeGN3M3B2eTZvbnJqc2hscTd4Y3E0YXB1eWJnMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/lpxs7DGIViMi31IvWr/giphy.gif'
+
+<head><!-- AS OF 2.21.24 -->
+    <!-- UPDATED 12-21-24 -->
+    <!-- UPDATED 01-29-25-->
+    <meta name="description"
+        content="Portfolio website for Alex Gonzalez of Sleepy Hollow. Includes CV, animation, VR experiments, and teacher work.">
+    <meta name="keywords"
+        content="Alex Gonzalez, portfolio, photography, CV, animation, VR experiments, teacher work, Sleepy Hollow">
+    <meta name="author" content="Alex Gonzalez">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    <!-- Add any other relevant meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./portfolio/src/ag-cv-css-1.css">
+    <link rel="stylesheet" href="./src/css/index-addons.css">
+    <title>Alex Gonzalez | Work and Portfolio</title>
+    <script defer data-domain="alexgonzalez.ooo" src="https://plausible.io/js/script.js"></script>
+    <script defer data-domain="alexgonzalez.ooo" src="https://plausible.io/js/script.js"></script>
+    <link rel="icon" type="image/png" href="./src/assets/AlexGonzalez-favicon.png" />
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const backgroundImages = [
+                'https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExa3UzcHpuZm1kbXdlaG8xMTV4Y3J0cnU4MGI1YzVmZjZ5aHJyYWx0aSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3HW49pLbfiKsvsc40p/giphy.gif',
+                'https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbms3MnNnc2hpcjFpdGRtMzE2ZTN5Z3d2dTdzNG80ZmVrNWd0dWh3dyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/5bDAc3il2DySZAFGpQ/giphy.gif',
+                'https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExc2NhZTBwcm5nazE5MzZ1c245eHlqa2NyOW53eWU3cmplcTdlZ2NxYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/7FfMZCl2DSThYO1KGf/giphy.gif',
+                'https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExemU4OXhoMXF5eHhtZTVwaTBkNnBuemYwcjQzaDVraXZiYXdtZGNzZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/aCCleAr6W1njtygxHC/giphy.gif',
+                'https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExM2M2c2g0ZXQyOWttZXdwZHgxbGtjbHExZWg2aHNreW51MGlleml0YyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/irCR68lB8tZDy8GKb0/giphy.gif',
+                'https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExc3JjODUzYmw1ZHV3YnlrOWI1djlqM3UzajgwaXdseXRhZTAwMWY1aiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xKBdOSxnnd03FaPgxn/giphy.gif',
+                'https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNGxlOTV3bzhzenJiemZkNDRhMG14djFmOGJqdWFtNGM1dDNsY3poaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3ohhwuJS2LOyBhPt96/giphy.gif',
+                'https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcnIyMWxvYnQyZjZ2Y3NqMnd2ZXZlM2JpMXdhazdmcmJxd2IxMjltMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/4bhs1boql4XVJgmm4H/giphy.gif',
+                'https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExbDdlYjVjZ2o2ZzFuYjhycmNvYmNzbjJ2YmU4bGozM2J1MzJzbGJ2aiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/39lJ5rGSMmXbINhurn/giphy.gif',
+                'https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExY2Y1MjlwNDAyaW93YTlnOWo5anVlcjd3cXk4MDkwNmRmdTNobm83bCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/gIODGWDBuG5AWlUExJ/giphy.gif',
+                'https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMWpkMjVqeHZ0cG1mYzAzOXdmYnZ4ZWt1eWw0MTM1MTBiYzhndzMweiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/iI4vhciiVh2b3j9sgo/giphy.gif',
+                'https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExMTI0dHd1eDdnc2lrZTQ4OGlkamp6ejlrejR2aGYybGtqOXhuYTJwNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Kc2J1Ox5fGmt6m9R6w/giphy.gif',
+                'https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdnJmYXc4YWd6bzZmeGN3M3B2eTZvbnJqc2hscTd4Y3E0YXB1eWJnMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/lpxs7DGIViMi31IvWr/giphy.gif'
 
 
-                ];
+            ];
 
-                const randomIndex = Math.floor(Math.random() * backgroundImages.length);
-                const selectedImage = backgroundImages[randomIndex];
-                document.body.style.backgroundImage = `url(${selectedImage})`;
-                document.body.style.backgroundSize = 'cover';
-                document.body.style.backgroundRepeat = 'no-repeat';
-                document.body.style.backgroundPosition = 'center';
-            });
-        </script>
-    </head>
+            const randomIndex = Math.floor(Math.random() * backgroundImages.length);
+            const selectedImage = backgroundImages[randomIndex];
+            document.body.style.backgroundImage = `url(${selectedImage})`;
+            document.body.style.backgroundSize = 'cover';
+            document.body.style.backgroundRepeat = 'no-repeat';
+            document.body.style.backgroundPosition = 'center';
+        });
+    </script>
+</head>
 
-    <body id="index-body" x-data="{ code: '', showMenu: false }">
+<body id="index-body" x-data="{ code: '', showMenu: false }">
 
-        <header>
-            <div class="header-main-wrap">
-                <div class="header-content-wrap">
-                    <div class="header-content-title-wrap">
-                        <h1>Alex Gonzalez</h1></div>
-                    <div class="header-content-menu-wrap">
-                        <ul class="nav-ul">
-                            <li><a href="./share/index.html"><div
-                                        class="header-button"><h3>Portfolio</h3></div></a></li>
+    <header>
+        <div class="header-main-wrap">
+            <div class="header-content-wrap">
+                <div class="header-content-title-wrap">
+                    <h1>Alex Gonzalez</h1>
+                </div>
+                <div class="header-content-menu-wrap">
+                    <ul class="nav-ul">
+                        <li><a href="./share/index.html">
+                                <div class="header-button">
+                                    <h3>Portfolio</h3>
+                                </div>
+                            </a></li>
 
-                            <!-- <li><a href="./projects/index.html"><div
+                        <!-- <li><a href="./projects/index.html"><div
                                         class="header-button"><h3>Active
                                             Projects</h3></div></a></li> -->
 
-                            <li><a href="./portfolio/src/bts/bts.html"><div
-                                        class="header-button"><h3>Behind the
-                                            Scenes
-                                        </h3></div></a></li>
-                            <!-- <li><a
+                        <li><a href="./portfolio/src/bts/bts.html">
+                                <div class="header-button">
+                                    <h3>Behind the
+                                        Scenes
+                                    </h3>
+                                </div>
+                            </a></li>
+                        <!-- <li><a
                                     href="./portfolio/src/filmANDanimation.html"><div
                                         class="header-button"><h3>Film and
                                             Animation</h3></div></a></li> -->
 
-                            <li><a href="./portfolio/src/about.html"><div
-                                        class="header-button"><h3>About</h3></div></a></li>
-                            <li><a href="./experiments/index.html"><div
-                                        class="header-button"><h3>Experiments</h3></div></a></li>
-                            <li><a
-                                    href="./portfolio/src/jobs/teaching.html"><div
-                                        class="header-button"><h3>Teaching
-                                            Portfolio</h3></div></a></li>
-                            <!-- <li><a href="./projects/VR/index.html"><div
+                        <li><a href="./portfolio/src/about.html">
+                                <div class="header-button">
+                                    <h3>About</h3>
+                                </div>
+                            </a></li>
+                        <li><a href="./experiments/index.html">
+                                <div class="header-button">
+                                    <h3>Experiments</h3>
+                                </div>
+                            </a></li>
+                        <li><a href="/teaching-credentials.html">
+                                <div class="header-button">
+                                    <h3>Teaching
+                                        Portfolio</h3>
+                                </div>
+                            </a></li>
+                        <!-- <li><a href="./projects/VR/index.html"><div
                                         class="header-button"><h3>VR</h3></div></a></li> -->
-                            <!-- <li><a href="./portfolio/churchwork/index.html"><div
+                        <!-- <li><a href="./portfolio/churchwork/index.html"><div
                                         class="header-button"><h3>Church
                                             Work</h3></div></a></li> -->
-                            <!-- <li><a
+                        <!-- <li><a
                                     href="./public/cv+resume/25cv/cv25-1.html"><div
                                         class="header-button"><h3>CV</h3></div></a></li> -->
-                            <!-- <li><a
+                        <!-- <li><a
                                     href="./misc/index.html"><div
                                         class="header-button"><h3>Misc
                                         </h3></div></a></li> -->
-                            <!-- <li><a href="./host/index.html"
+                        <!-- <li><a href="./host/index.html"
                                     class="header-button"><h3>Hosting</h3></a></li> -->
 
-                            <li><a href="./photography/index.html"><div
-                                        class="header-button"><h3>Photography</h3></div></a></li>
-                            <li><a href="./gallery/index.html"><div
-                                        class="header-button"><h3>Paint</h3></div></a></li>
-
-                        </ul></div>
-                </div>
-            </header>
-
-            <footer>
-                <p class="footer-copy">MMXXIII</p>
-                <div x-show="showMenu" class="neumorphic-popup">
-                    <ul>
-                        <li><a href="./projects/index.html">Active
-                                Projects</a></li>
-                        <li><a href="./rough/index.html">Rough Cuts</a></li>
-                        <li><a href="./host/daily-dash/index.html">Daily
-                                Dashboard</a></li>
+                        <li><a href="./photography/index.html">
+                                <div class="header-button">
+                                    <h3>Photography</h3>
+                                </div>
+                            </a></li>
+                        <li><a href="./gallery/index.html">
+                                <div class="header-button">
+                                    <h3>Paint</h3>
+                                </div>
+                            </a></li>
 
                     </ul>
                 </div>
-            </footer>
+            </div>
+    </header>
 
-            <input type="text" x-model="code"
-                @input="showMenu = (code === '1153')"
-                placeholder="secret code" class="centered-input" />
+    <footer>
+        <p class="footer-copy">MMXXIII</p>
+        <div x-show="showMenu" class="neumorphic-popup">
+            <ul>
+                <li><a href="./projects/index.html">Active
+                        Projects</a></li>
+                <li><a href="./rough/index.html">Rough Cuts</a></li>
+                <li><a href="./host/daily-dash/index.html">Daily
+                        Dashboard</a></li>
 
-            <style>
-                .centered-input {
-                    padding: 10px 20px;
-                    font-size: 1.2em;
-                    border: none;
-                    border-radius: 25px;
-                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-                    outline: none;
-                    transition: box-shadow 0.3s ease;
-                }
-                .centered-input:focus {
-                    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-                }
-                .neumorphic-popup {
-                    position: absolute;
-                    bottom: 10px;
-                    left: 50%;
-                    transform: translateX(-50%);
-                    background: rgba(255, 255, 255, 0.9);
-                    box-shadow: 10px 10px 30px #babecc, -10px -10px 30px #ffffff;
-                    border-radius: 15px;
-                    padding: 30px;
-                    backdrop-filter: blur(15px);
-                    display: none;
-                    transition: all 0.3s ease;
-                }
-                [x-show="showMenu"] {
-                    display: block;
-                }
-                .neumorphic-popup ul {
-                    list-style: none;
-                    padding: 0;
-                    margin: 0;
-                }
-                .neumorphic-popup li {
-                    margin: 10px 0;
-                }
-                .neumorphic-popup a {
-                    text-decoration: none;
-                    color: #333;
-                    font-weight: bold;
-                    transition: color 0.3s ease;
-                }
-                .neumorphic-popup a:hover {
-                    color: #007BFF;
-                }
-            </style>
-        </body>
-    </html>
+            </ul>
+        </div>
+    </footer>
+
+    <input type="text" x-model="code" @input="showMenu = (code === '1153')" placeholder="secret code"
+        class="centered-input" />
+
+    <style>
+        .centered-input {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 25px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            outline: none;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .centered-input:focus {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .neumorphic-popup {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 10px 10px 30px #babecc, -10px -10px 30px #ffffff;
+            border-radius: 15px;
+            padding: 30px;
+            backdrop-filter: blur(15px);
+            display: none;
+            transition: all 0.3s ease;
+        }
+
+        [x-show="showMenu"] {
+            display: block;
+        }
+
+        .neumorphic-popup ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .neumorphic-popup li {
+            margin: 10px 0;
+        }
+
+        .neumorphic-popup a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .neumorphic-popup a:hover {
+            color: #007BFF;
+        }
+    </style>
+</body>
+
+</html>

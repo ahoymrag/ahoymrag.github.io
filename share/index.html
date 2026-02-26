@@ -1,801 +1,828 @@
 <!DOCTYPE html>
 <html lang="en" x-data="portfolioPage()">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <title>My Shared Portfolio</title>
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Clash+Display:wght@400;500;600&display=swap"
-      rel="stylesheet">
-    <!-- Minimal Inline Styling for Demo Purposes -->
-    <style>
-      :root {
-        --font-primary: 'Inter', sans-serif;
-        --font-heading: 'Clash Display', sans-serif;
-        --color-text: #ffffff;
-        --color-background: #000000;
-        --color-accent: #ffffff;
-      }
 
-      * {
-        font-family: var(--font-primary);
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>My Shared Portfolio</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Clash+Display:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <!-- Minimal Inline Styling for Demo Purposes -->
+  <style>
+    :root {
+      --font-primary: 'Inter', sans-serif;
+      --font-heading: 'Clash Display', sans-serif;
+      --color-text: #ffffff;
+      --color-background: #000000;
+      --color-accent: #ffffff;
+    }
 
-      body {
-        margin: 0; 
-        padding: 0;
-        background: var(--color-background); 
-        color: var(--color-text);
-        perspective: 1px;
-        height: 100vh;
-        overflow-x: hidden;
-        overflow-y: auto;
-      }
+    * {
+      font-family: var(--font-primary);
+    }
 
-      h1, h2, h3, .featured-project h2 {
-        font-family: var(--font-heading);
-        font-weight: 500;
-        letter-spacing: -0.02em;
-        color: var(--color-text);
-      }
+    body {
+      margin: 0;
+      padding: 0;
+      background: var(--color-background);
+      color: var(--color-text);
+      perspective: 1px;
+      height: 100vh;
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
 
-      .featured-project h2 {
-        font-size: 3rem;
-        margin-bottom: 2rem;
-        text-align: center;
-        text-shadow: 0 2px 4px rgba(0,0,0,0.3);
-      }
+    h1,
+    h2,
+    h3,
+    .featured-project h2 {
+      font-family: var(--font-heading);
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      color: var(--color-text);
+    }
 
-      header {
-        background: rgba(255, 255, 255, 0.1);
-        padding: 2rem;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-        text-align: center;
-        backdrop-filter: blur(10px);
-        border-radius: 12px;
-        margin: 2rem auto;
-        max-width: 1200px;
-        border: 1px solid rgba(255, 255, 255, 0.2);
-      }
-      h1 { 
-        margin: 0;
-        font-size: 2.5rem;
-        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-        color: rgba(255, 255, 255, 0.95);
-      }
-      header p {
-        margin: 1rem 0 0;
-        font-size: 1.2rem;
-        color: rgba(255, 255, 255, 0.8);
-        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-      }
-      .filter-buttons {
-        display: flex; 
-        flex-wrap: wrap; 
-        justify-content: center;
-        gap: 0.5rem; 
-        margin: 1rem 0;
-      }
-      .filter-buttons button {
-        padding: 0.5rem 1rem;
-        border: 1px solid rgba(255, 255, 255, 0.3);
-        background: rgba(255, 255, 255, 0.5);
-        cursor: pointer;
-        border-radius: 4px;
-        backdrop-filter: blur(5px);
-        transition: background 0.3s, color 0.3s;
-      }
-      .filter-buttons .active {
-        background: rgba(51, 51, 51, 0.8);
-        color: #fff;
-      }
-      .gallery-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-        gap: 1rem; 
-        padding: 1rem;
-        max-width: 1200px; 
-        margin: 0 auto;
-      }
-      .gallery-item {
-        background: rgba(255, 255, 255, 0.1);
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        border-radius: 12px;
-        padding: 1rem;
-        text-align: center;
-        cursor: pointer;
-        transition: transform 0.3s, background 0.3s, box-shadow 0.3s;
-        backdrop-filter: blur(10px);
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-      }
-      .gallery-item:hover {
-        transform: scale(1.02) translateY(-5px);
-        background: rgba(255, 255, 255, 0.15);
-        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
-      }
-      .gallery-item img {
-        max-width: 100%;
-        border-radius: 8px;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-        margin-bottom: 1rem;
-      }
-      .gallery-item h3 {
-        margin: 0.5rem 0 0; 
-        font-size: 1.1rem;
-        color: rgba(255, 255, 255, 0.95);
-        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-      }
-      .gallery-item .tags {
-        color: rgba(255, 255, 255, 0.7);
-        font-size: 0.9rem;
-        margin-top: 0.5rem;
-        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-      }
-      /* Modal Styling */
-      .modal {
-        position: fixed; 
-        top: 0; 
-        left: 0;
-        width: 100%; 
-        height: 100%;
-        background: rgba(0,0,0,0.6);
-        display: flex; 
-        justify-content: center; 
-        align-items: center;
-        padding: 1rem;
-        z-index: 999;
-      }
-      .modal-content {
-        background: linear-gradient(135deg, #181c24 80%, #2a2e39 100%);
-        max-width: 800px;
-        width: 100%;
-        border-radius: 6px;
-        position: relative;
-        padding: 1rem;
-        backdrop-filter: blur(10px);
-        box-shadow: 0 8px 32px rgba(0,0,0,0.7);
-        color: #fff;
-      }
-      .close-btn {
-        position: absolute; 
-        top: 1rem; 
-        right: 1rem;
-        background: none; 
-        border: none;
-        font-size: 1.2rem; 
-        cursor: pointer;
-      }
-      video, img.modal-media {
-        max-width: 100%; 
-        margin-bottom: 1rem;
-        display: block; 
-        margin-left: auto; 
-        margin-right: auto;
-        border-radius: 4px;
-        box-shadow: 0 4px 24px rgba(0,0,0,0.4);
-      }
-      .description {
-        margin-top: 0.5rem; 
-        line-height: 1.4;
-      }
-      .tags {
-        font-size: 0.9rem;
-        color: #666;
-        margin-top: 0.5rem;
-      }
-      .home-button {
-        display: inline-block;
-        padding: 0.5rem 1rem;
-        background-color: #007BFF;
-        color: #ffffff;
-        border-radius: 4px;
-        text-decoration: none;
-        transition: background-color 0.3s, color 0.3s;
-      }
-      .home-button:hover {
-        background-color: #0056b3;
-        color: #ffffff;
-      }
-      .featured-project {
-        width: 100%;
-        padding: 4rem 0;
-        text-align: center;
-        position: relative;
-        margin-bottom: 2rem;
-        background: rgba(0, 0, 0, 0.8);
-      }
-      .featured-intro {
-        max-width: 800px;
-        margin: 0 auto 3rem auto;
-        padding: 2rem;
-        background: rgba(0, 0, 0, 0.35);
-        border-radius: 12px;
-        box-shadow: 0 8px 24px rgba(0,0,0,0.3);
-        backdrop-filter: blur(8px);
-        border: 1px solid rgba(255, 255, 255, 0.1);
-      }
-      .featured-intro p {
-        color: rgba(255,255,255,0.95);
-        font-size: 1.2rem;
-        line-height: 1.75;
-        text-shadow: 0 2px 4px rgba(0,0,0,0.4);
-        letter-spacing: 0.02em;
-        margin: 0;
-        font-weight: 400;
-      }
-      #cinemafi-project {
-        border-radius: 0 0 8px 8px;
-        background-image: linear-gradient(to bottom, rgba(192, 192, 192, 0.9), rgba(192, 192, 192, 0.7));
-        padding-bottom: 3rem;
-      }
-      #zuki-project {
-        margin-top: 0;
-        position: relative;
-        border-radius: 8px 8px 0 0;
-        padding-top: 4rem;
-        padding-bottom: 2rem;
-        background: #16191d; /* Steel grey background */
-      }
-      
-      /* Make all project cards consistent */
-      .featured-project .project-card {
-        padding: 1.5rem;
-        margin: 1rem auto;
-        max-width: 600px;
-        backdrop-filter: blur(5px);
-        border-radius: 8px;
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        position: relative;
-      }
-      
-      /* Apply the background image only to the Zuki card */
-      .project-card-zuki {
-        padding: 1.5rem;
-        margin: 1rem auto;
-        max-width: 600px;
-        position: relative;
-        overflow: hidden;
-        z-index: 1;
-        backdrop-filter: blur(5px);
-        border-radius: 8px;
-        border: 1px solid rgba(255, 255, 255, 0.2);
-      }
-      
-      /* Create a pseudo-element for the background image inside the Zuki card */
-      .project-card-zuki::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-image: url('https://storage.googleapis.com/ag-photography/global/zuki/glass-superZuki.jpg');
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        z-index: -2;
-      }
-      
-      /* Overlay gradient on top of the image for the Zuki card */
-      .project-card-zuki::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: linear-gradient(to bottom, rgba(26, 0, 44, 0.8), rgba(26, 0, 44, 0.6));
-        z-index: -1;
-      }
-      
-      /* Ensure all content in Zuki card is positioned correctly */
-      .project-card-zuki * {
-        position: relative; /* Keep content above background layers */
-      }
-      
-      #zuki-project h2 {
-        font-size: 2.5rem;
-        margin-bottom: 2rem;
-        text-shadow: 0 2px 4px rgba(0,0,0,0.3);
-      }
-      /* Styling for the project summary section */
-      .project-summary {
-        background: rgba(255, 255, 255, 0.8);
-        border-radius: 8px;
-        padding: 2rem;
-        margin: 2rem auto;
-        max-width: 1200px;
-        backdrop-filter: blur(10px);
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-        text-align: center;
-      }
-      .project-summary h2 {
-        margin-top: 0;
-        color: #333;
-      }
-      .project-summary p {
-        line-height: 1.6;
-        color: #444;
-      }
-      /* Add light glow to buttons for all projects */
-      .featured-project .home-button {
-        margin-top: 1rem;
-        backdrop-filter: blur(5px);
-        border: 1px solid rgba(255, 255, 255, 0.3);
-        box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
-        font-weight: 500;
-      }
+    .featured-project h2 {
+      font-size: 3rem;
+      margin-bottom: 2rem;
+      text-align: center;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    }
 
-      .home-button:hover {
-        cursor: pointer;
-      }
-      /* Add styles for the Mountain Gorilla project card */
-      .project-card-gorilla {
-        padding: 1.5rem;
-        margin: 1rem auto;
-        max-width: 600px;
-        position: relative;
-        overflow: hidden;
-        z-index: 1;
-        backdrop-filter: blur(5px);
-        border-radius: 8px;
-        border: 1px solid rgba(255, 255, 255, 0.2);
-      }
+    header {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 2rem;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      backdrop-filter: blur(10px);
+      border-radius: 12px;
+      margin: 2rem auto;
+      max-width: 1200px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
 
-      /* Background image for the Gorilla card */
-      .project-card-gorilla::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-image: url('https://storage.googleapis.com/ag-photography/global/mountain_gorilla/Mountain%20Gorilla.png');
-        background-size: cover;
-        background-position: 60% 22%; /* Shift to the left and down */
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        z-index: -2;
-      }
+    h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+      color: rgba(255, 255, 255, 0.95);
+    }
 
-      /* Overlay gradient for the Gorilla card */
-      .project-card-gorilla::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: linear-gradient(to bottom, rgba(78, 42, 132, 0.8), rgba(78, 42, 132, 0.6));
-        z-index: -1;
-      }
+    header p {
+      margin: 1rem 0 0;
+      font-size: 1.2rem;
+      color: rgba(255, 255, 255, 0.8);
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    }
 
-      /* Position content properly */
-      .project-card-gorilla * {
-        position: relative;
-      }
+    .filter-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.5rem;
+      margin: 1rem 0;
+    }
 
-      /* Create a style for the cinemaFi card similar to the others */
-      .project-card-cinema {
-        padding: 1.5rem;
-        margin: 1rem auto;
-        max-width: 600px;
-        position: relative;
-        overflow: hidden;
-        z-index: 1;
-        backdrop-filter: blur(5px);
-        border-radius: 8px;
-        border: 1px solid rgba(255, 255, 255, 0.2);
-      }
+    .filter-buttons button {
+      padding: 0.5rem 1rem;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      background: rgba(255, 255, 255, 0.5);
+      cursor: pointer;
+      border-radius: 4px;
+      backdrop-filter: blur(5px);
+      transition: background 0.3s, color 0.3s;
+    }
 
-      /* Background image for the cinemaFi card */
-      .project-card-cinema::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-image: url('./../host/cinemafi/assets/cinemaFi-25-2.png');
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        z-index: -2;
-        filter: brightness(1.3);
-      }
+    .filter-buttons .active {
+      background: rgba(51, 51, 51, 0.8);
+      color: #fff;
+    }
 
-      /* Overlay gradient for the cinemaFi card */
-      .project-card-cinema::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5)); /* Whiter overlay */
-        z-index: -2;
-      }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 1rem;
+      padding: 1rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
 
-      /* Position content properly */
-      .project-card-cinema * {
-        position: relative;
-      }
+    .gallery-item {
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 12px;
+      padding: 1rem;
+      text-align: center;
+      cursor: pointer;
+      transition: transform 0.3s, background 0.3s, box-shadow 0.3s;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
 
-      /* Update the text color for cinemaFi to ensure visibility against white background */
-      .project-card-cinema h3, .project-card-cinema p {
-        color: #303030;
-        text-shadow: 0 1px 2px rgba(255,255,255,0.3);
-      }
+    .gallery-item:hover {
+      transform: scale(1.02) translateY(-5px);
+      background: rgba(255, 255, 255, 0.15);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    }
 
-      /* Add a parallax container to create depth for the background effects */
-      .parallax-background {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: -10;
-        pointer-events: none;
-      }
-    </style>
-    <!-- Alpine.js CDN -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
-      defer></script>
-  </head>
-  <body>
+    .gallery-item img {
+      max-width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      margin-bottom: 1rem;
+    }
 
-    <!-- Featured Projects Hero Section at the top -->
-    <section class="featured-project">
-      <h2>Featured Projects</h2>
+    .gallery-item h3 {
+      margin: 0.5rem 0 0;
+      font-size: 1.1rem;
+      color: rgba(255, 255, 255, 0.95);
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    }
 
-      <div class="featured-intro">
-        <p>
-          Over the last few years, I served as Creative Director for a
-          blockchain-focused fintech company called ApeWorX. It was a formative
-          experience — we grew from a team of 3 to 17 and raised $3.4M+ in
-          venture capital. But like many startups, ours ultimately shut down
-          this past January.<br><br>
-          In the aftermath, I've been applying the lessons I learned at ApeWorX
-          to a new series of projects — ones that I hope will offer value to the
-          broader community and also help me find my way back into building
-          startups.<br><br>
-          Below, you'll find some of the thesis projects I've been actively
-          developing.
-          <br><br>
-          Further down are a few selected video pieces I created for ApeWorX and
-          other clients. I have a much larger catalog, perhaps I'll save that
-          for another day.
-        </p>
-      </div>
+    .gallery-item .tags {
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 0.9rem;
+      margin-top: 0.5rem;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    }
 
-      <div class="featured-project" id="zuki-project">
-        <div class="project-card-zuki">
-          <h3>ZUKI - Personal Robot</h3>
-          <p>A Python-based, open-source personal assistant robot agent,
-            exploring the boundaries of human-machine interaction</p>
-          <button class="home-button"
-            @click="window.location.href = './../portfolio/zuki/hello-zuki.html'">Explore
-            Project</button>
-        </div></div>
+    /* Modal Styling */
+    .modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+      z-index: 999;
+    }
 
-      <div class="featured-project" id="cinemafi-project">
-        <div class="project-card-cinema">
-          <h3>cinemaFi</h3>
-          <p>A decentralized fintech platform built with Python that connects
-            filmmakers with DeFi investors to fund creative projects</p>
-          <button class="home-button"
-            @click="window.location.href = './../host/cinemafi/hello-cine/index.html'">Explore
-            Project</button>
-        </div>
-      </div>
+    .modal-content {
+      background: linear-gradient(135deg, #181c24 80%, #2a2e39 100%);
+      max-width: 800px;
+      width: 100%;
+      border-radius: 6px;
+      position: relative;
+      padding: 1rem;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.7);
+      color: #fff;
+    }
 
-      <!-- Mountain Gorilla Project -->
-      <div class="featured-project" id="gorilla-project">
-        <div class="project-card-gorilla">
-          <h3>Mountain Gorilla</h3>
-          <p>A fintech command center that deploys AI agents and DeFi bots to
-            automate your decentralized finance operations</p>
-          <button class="home-button"
-            @click="window.location.href = './../portfolio/mg/index.html'">Explore
-            Project</button>
-        </div>
-      </div>
-    </section>
+    .close-btn {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background: none;
+      border: none;
+      font-size: 1.2rem;
+      cursor: pointer;
+    }
 
-    <header>
-      <h1>Selected Work</h1>
-      <p>Graphic design, web development, and video production</p>
-    </header>
+    video,
+    img.modal-media {
+      max-width: 100%;
+      margin-bottom: 1rem;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 4px;
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+    }
 
-    <!-- Filter Buttons -->
-    <div class="filter-buttons">
-      <button
-        :class="{'active': filter === 'All'}"
-        @click="filter = 'All'">
-        All
-      </button>
-      <template x-for="cat in categories" :key="cat">
-        <button
-          :class="{'active': filter === cat}"
-          @click="filter = cat"
-          x-text="cat === 'Web Projects' ? 'Full Stack App' : cat">
-        </button>
-      </template>
+    .description {
+      margin-top: 0.5rem;
+      line-height: 1.4;
+    }
+
+    .tags {
+      font-size: 0.9rem;
+      color: #666;
+      margin-top: 0.5rem;
+    }
+
+    .home-button {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background-color: #007BFF;
+      color: #ffffff;
+      border-radius: 4px;
+      text-decoration: none;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .home-button:hover {
+      background-color: #0056b3;
+      color: #ffffff;
+    }
+
+    .featured-project {
+      width: 100%;
+      padding: 4rem 0;
+      text-align: center;
+      position: relative;
+      margin-bottom: 2rem;
+      background: rgba(0, 0, 0, 0.8);
+    }
+
+    .featured-intro {
+      max-width: 800px;
+      margin: 0 auto 3rem auto;
+      padding: 2rem;
+      background: rgba(0, 0, 0, 0.35);
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .featured-intro p {
+      color: rgba(255, 255, 255, 0.95);
+      font-size: 1.2rem;
+      line-height: 1.75;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+      letter-spacing: 0.02em;
+      margin: 0;
+      font-weight: 400;
+    }
+
+    #cinemafi-project {
+      border-radius: 0 0 8px 8px;
+      background-image: linear-gradient(to bottom, rgba(192, 192, 192, 0.9), rgba(192, 192, 192, 0.7));
+      padding-bottom: 3rem;
+    }
+
+    #zuki-project {
+      margin-top: 0;
+      position: relative;
+      border-radius: 8px 8px 0 0;
+      padding-top: 4rem;
+      padding-bottom: 2rem;
+      background: #16191d;
+      /* Steel grey background */
+    }
+
+    /* Make all project cards consistent */
+    .featured-project .project-card {
+      padding: 1.5rem;
+      margin: 1rem auto;
+      max-width: 600px;
+      backdrop-filter: blur(5px);
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      position: relative;
+    }
+
+    /* Apply the background image only to the Zuki card */
+    .project-card-zuki {
+      padding: 1.5rem;
+      margin: 1rem auto;
+      max-width: 600px;
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+      backdrop-filter: blur(5px);
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    /* Create a pseudo-element for the background image inside the Zuki card */
+    .project-card-zuki::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url('https://storage.googleapis.com/ag-photography/global/zuki/glass-superZuki.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      z-index: -2;
+    }
+
+    /* Overlay gradient on top of the image for the Zuki card */
+    .project-card-zuki::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(to bottom, rgba(26, 0, 44, 0.8), rgba(26, 0, 44, 0.6));
+      z-index: -1;
+    }
+
+    /* Ensure all content in Zuki card is positioned correctly */
+    .project-card-zuki * {
+      position: relative;
+      /* Keep content above background layers */
+    }
+
+    #zuki-project h2 {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Styling for the project summary section */
+    .project-summary {
+      background: rgba(255, 255, 255, 0.8);
+      border-radius: 8px;
+      padding: 2rem;
+      margin: 2rem auto;
+      max-width: 1200px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .project-summary h2 {
+      margin-top: 0;
+      color: #333;
+    }
+
+    .project-summary p {
+      line-height: 1.6;
+      color: #444;
+    }
+
+    /* Add light glow to buttons for all projects */
+    .featured-project .home-button {
+      margin-top: 1rem;
+      backdrop-filter: blur(5px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+      font-weight: 500;
+    }
+
+    .home-button:hover {
+      cursor: pointer;
+    }
+
+    /* Add styles for the Mountain Gorilla project card */
+    .project-card-gorilla {
+      padding: 1.5rem;
+      margin: 1rem auto;
+      max-width: 600px;
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+      backdrop-filter: blur(5px);
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    /* Background image for the Gorilla card */
+    .project-card-gorilla::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url('https://storage.googleapis.com/ag-photography/global/mountain_gorilla/Mountain%20Gorilla.png');
+      background-size: cover;
+      background-position: 60% 22%;
+      /* Shift to the left and down */
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      z-index: -2;
+    }
+
+    /* Overlay gradient for the Gorilla card */
+    .project-card-gorilla::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(to bottom, rgba(78, 42, 132, 0.8), rgba(78, 42, 132, 0.6));
+      z-index: -1;
+    }
+
+    /* Position content properly */
+    .project-card-gorilla * {
+      position: relative;
+    }
+
+    /* Create a style for the cinemaFi card similar to the others */
+    .project-card-cinema {
+      padding: 1.5rem;
+      margin: 1rem auto;
+      max-width: 600px;
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+      backdrop-filter: blur(5px);
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    /* Background image for the cinemaFi card */
+    .project-card-cinema::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url('./../host/cinemafi/assets/cinemaFi-25-2.png');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      z-index: -2;
+      filter: brightness(1.3);
+    }
+
+    /* Overlay gradient for the cinemaFi card */
+    .project-card-cinema::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5));
+      /* Whiter overlay */
+      z-index: -2;
+    }
+
+    /* Position content properly */
+    .project-card-cinema * {
+      position: relative;
+    }
+
+    /* Update the text color for cinemaFi to ensure visibility against white background */
+    .project-card-cinema h3,
+    .project-card-cinema p {
+      color: #303030;
+      text-shadow: 0 1px 2px rgba(255, 255, 255, 0.3);
+    }
+
+    /* Add a parallax container to create depth for the background effects */
+    .parallax-background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -10;
+      pointer-events: none;
+    }
+  </style>
+  <!-- Alpine.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+</head>
+
+<body>
+
+  <!-- Featured Projects Hero Section at the top -->
+  <section class="featured-project">
+    <h2>Featured Projects</h2>
+
+    <div class="featured-intro">
+      <p>
+        Over the last few years, I served as Creative Director for a
+        blockchain-focused fintech company called ApeWorX. It was a formative
+        experience — we grew from a team of 3 to 17 and raised $3.4M+ in
+        venture capital. But like many startups, ours ultimately shut down
+        this past January.<br><br>
+        In the aftermath, I've been applying the lessons I learned at ApeWorX
+        to a new series of projects — ones that I hope will offer value to the
+        broader community and also help me find my way back into building
+        startups.<br><br>
+        Below, you'll find some of the thesis projects I've been actively
+        developing.
+        <br><br>
+        Further down are a few selected video pieces I created for ApeWorX and
+        other clients. I have a much larger catalog, perhaps I'll save that
+        for another day.
+      </p>
     </div>
 
-    <!-- Gallery Grid -->
-    <section class="gallery-grid">
-      <template x-for="item in filteredItems" :key="item.id">
-        <div class="gallery-item" @click="openModal(item)">
-          <img :src="item.thumbnail" :alt="item.title">
-          <h3 x-text="item.title"></h3>
-          <!-- Display tags for websites -->
-          <template x-if="item.mediaType === 'website'">
-            <p class="tags" x-text="item.tags.join(', ')"></p>
+    <div class="featured-project" id="zuki-project">
+      <div class="project-card-zuki">
+        <h3>ZUKI - Personal Robot</h3>
+        <p>A Python-based, open-source personal assistant robot agent,
+          exploring the boundaries of human-machine interaction</p>
+        <button class="home-button" @click="window.location.href = './../portfolio/zuki/hello-zuki.html'">Explore
+          Project</button>
+      </div>
+    </div>
+
+    <div class="featured-project" id="cinemafi-project">
+      <div class="project-card-cinema">
+        <h3>cinemaFi</h3>
+        <p>A decentralized fintech platform built with Python that connects
+          filmmakers with DeFi investors to fund creative projects</p>
+        <button class="home-button" @click="window.location.href = './../host/cinemafi/hello-cine/index.html'">Explore
+          Project</button>
+      </div>
+    </div>
+
+    <!-- Mountain Gorilla Project -->
+    <div class="featured-project" id="gorilla-project">
+      <div class="project-card-gorilla">
+        <h3>Mountain Gorilla</h3>
+        <p>A fintech command center that deploys AI agents and DeFi bots to
+          automate your decentralized finance operations</p>
+        <button class="home-button" @click="window.location.href = './../portfolio/mg/index.html'">Explore
+          Project</button>
+      </div>
+    </div>
+  </section>
+
+  <header>
+    <h1>Selected Work</h1>
+    <p>Graphic design, web development, and video production</p>
+  </header>
+
+  <!-- Filter Buttons -->
+  <div class="filter-buttons">
+    <button :class="{'active': filter === 'All'}" @click="filter = 'All'">
+      All
+    </button>
+    <template x-for="cat in categories" :key="cat">
+      <button :class="{'active': filter === cat}" @click="filter = cat"
+        x-text="cat === 'Web Projects' ? 'Full Stack App' : cat">
+      </button>
+    </template>
+  </div>
+
+  <!-- Gallery Grid -->
+  <section class="gallery-grid">
+    <template x-for="item in filteredItems" :key="item.id">
+      <div class="gallery-item" @click="openModal(item)">
+        <img :src="item.thumbnail" :alt="item.title">
+        <h3 x-text="item.title"></h3>
+        <!-- Display tags for websites -->
+        <template x-if="item.mediaType === 'website'">
+          <p class="tags" x-text="item.tags.join(', ')"></p>
+        </template>
+      </div>
+    </template>
+  </section>
+
+  <!-- Modal / Lightbox -->
+  <div class="modal" x-show="showModal" @click.self="closeModal()" x-transition>
+    <div class="modal-content">
+      <button class="close-btn" @click="closeModal()">✕</button>
+
+      <!-- If media is a video -->
+      <template x-if="selectedItem && selectedItem.mediaType === 'video'">
+        <video controls x-bind:src="selectedItem.mediaUrl"></video>
+      </template>
+
+      <!-- If media is an image -->
+      <template x-if="selectedItem && selectedItem.mediaType === 'image'">
+        <img class="modal-media" x-bind:src="selectedItem.mediaUrl" alt />
+      </template>
+
+      <!-- If media is a website -->
+      <template x-if="selectedItem && selectedItem.mediaType === 'website'">
+        <div>
+          <template x-if="selectedItem.gallery && selectedItem.gallery.length">
+            <div style="display:flex; flex-direction:column; align-items:center;">
+              <img :src="selectedScreenshot" alt="Project Screenshot" class="modal-media"
+                style="max-height:340px; object-fit:contain; background:#222;" />
+              <div style="display:flex; gap:0.5rem; margin:0.5rem 0;">
+                <template x-for="(img, idx) in selectedItem.gallery" :key="img">
+                  <img :src="img" :alt="'Screenshot '+(idx+1)" @click="setScreenshot(idx)"
+                    :style="'width:48px;height:36px;object-fit:cover;border-radius:4px;cursor:pointer;border:'+(selectedScreenshot===img?'2px solid #88c4ff':'2px solid #444')" />
+                </template>
+              </div>
+              <a :href="selectedItem.mediaUrl" target="_blank"
+                style="margin-top:0.5rem; background:#88c4ff; color:#181c24; font-weight:600; padding:0.5rem 1.2rem; border-radius:6px; text-decoration:none; box-shadow:0 2px 8px #0002;">View
+                Live</a>
+            </div>
+          </template>
+          <template x-if="!selectedItem.gallery || !selectedItem.gallery.length">
+            <iframe class="modal-media" x-bind:src="selectedItem.mediaUrl" frameborder="0"
+              style="width: 100%; height: auto; aspect-ratio: 16/9; border-radius: 4px;"></iframe>
           </template>
         </div>
       </template>
-    </section>
 
-    <!-- Modal / Lightbox -->
-    <div
-      class="modal"
-      x-show="showModal"
-      @click.self="closeModal()"
-      x-transition>
-      <div class="modal-content">
-        <button class="close-btn" @click="closeModal()">✕</button>
-
-        <!-- If media is a video -->
-        <template x-if="selectedItem && selectedItem.mediaType === 'video'">
-          <video controls x-bind:src="selectedItem.mediaUrl"></video>
-        </template>
-
-        <!-- If media is an image -->
-        <template x-if="selectedItem && selectedItem.mediaType === 'image'">
-          <img class="modal-media" x-bind:src="selectedItem.mediaUrl" alt />
-        </template>
-
-        <!-- If media is a website -->
-        <template x-if="selectedItem && selectedItem.mediaType === 'website'">
-          <div>
-            <template x-if="selectedItem.gallery && selectedItem.gallery.length">
-              <div style="display:flex; flex-direction:column; align-items:center;">
-                <img :src="selectedScreenshot" alt="Project Screenshot" class="modal-media" style="max-height:340px; object-fit:contain; background:#222;" />
-                <div style="display:flex; gap:0.5rem; margin:0.5rem 0;">
-                  <template x-for="(img, idx) in selectedItem.gallery" :key="img">
-                    <img :src="img" :alt="'Screenshot '+(idx+1)" @click="setScreenshot(idx)" :style="'width:48px;height:36px;object-fit:cover;border-radius:4px;cursor:pointer;border:'+(selectedScreenshot===img?'2px solid #88c4ff':'2px solid #444')" />
-                  </template>
-                </div>
-                <a :href="selectedItem.mediaUrl" target="_blank" style="margin-top:0.5rem; background:#88c4ff; color:#181c24; font-weight:600; padding:0.5rem 1.2rem; border-radius:6px; text-decoration:none; box-shadow:0 2px 8px #0002;">View Live</a>
-              </div>
-            </template>
-            <template x-if="!selectedItem.gallery || !selectedItem.gallery.length">
-              <iframe class="modal-media" x-bind:src="selectedItem.mediaUrl"
-                frameborder="0"
-                style="width: 100%; height: auto; aspect-ratio: 16/9; border-radius: 4px;"></iframe>
-            </template>
-          </div>
-        </template>
-
-        <h2 x-text="selectedItem ? selectedItem.title : ''"></h2>
-        <p class="description"
-          x-text="selectedItem ? selectedItem.description : ''"></p>
-      </div>
+      <h2 x-text="selectedItem ? selectedItem.title : ''"></h2>
+      <p class="description" x-text="selectedItem ? selectedItem.description : ''"></p>
     </div>
+  </div>
 
-    <!-- Alpine.js Logic -->
-    <script>
-      /**
-       * Dynamically generate a thumbnail for a video by loading a frame into a canvas.
-       * Make sure your video is served with proper CORS headers (Access-Control-Allow-Origin)
-       * if it's on a different domain.
-       */
-      async function generateThumbnail(videoUrl, seekTo = 1) {
-        return new Promise((resolve, reject) => {
-          const video = document.createElement('video');
-          video.style.position = 'absolute';
-          video.style.left = '-9999px';
-          video.preload = 'metadata';
-          video.crossOrigin = 'anonymous'; 
-          video.src = videoUrl;
+  <!-- Alpine.js Logic -->
+  <script>
+    /**
+     * Dynamically generate a thumbnail for a video by loading a frame into a canvas.
+     * Make sure your video is served with proper CORS headers (Access-Control-Allow-Origin)
+     * if it's on a different domain.
+     */
+    async function generateThumbnail(videoUrl, seekTo = 1) {
+      return new Promise((resolve, reject) => {
+        const video = document.createElement('video');
+        video.style.position = 'absolute';
+        video.style.left = '-9999px';
+        video.preload = 'metadata';
+        video.crossOrigin = 'anonymous';
+        video.src = videoUrl;
 
-          // Once metadata is loaded, seek to a time to capture the frame
-          video.addEventListener('loadedmetadata', () => {
-            const duration = video.duration;
-            // If the video is shorter than 'seekTo', go near the end
-            if (seekTo > duration) seekTo = duration - 0.1;
-            video.currentTime = seekTo;
-          });
-
-          // When the seek is done, draw the frame to a canvas
-          video.addEventListener('seeked', () => {
-            const canvas = document.createElement('canvas');
-            canvas.width = video.videoWidth;
-            canvas.height = video.videoHeight;
-            const ctx = canvas.getContext('2d');
-            ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
-            resolve(canvas.toDataURL('image/png'));
-          });
-
-          video.addEventListener('error', reject);
+        // Once metadata is loaded, seek to a time to capture the frame
+        video.addEventListener('loadedmetadata', () => {
+          const duration = video.duration;
+          // If the video is shorter than 'seekTo', go near the end
+          if (seekTo > duration) seekTo = duration - 0.1;
+          video.currentTime = seekTo;
         });
-      }
 
-      function portfolioPage() {
-        return {
-          portfolioItems: [],
-          filter: 'All',
-          selectedItem: null,
-          showModal: false,
-          selectedScreenshot: '',
+        // When the seek is done, draw the frame to a canvas
+        video.addEventListener('seeked', () => {
+          const canvas = document.createElement('canvas');
+          canvas.width = video.videoWidth;
+          canvas.height = video.videoHeight;
+          const ctx = canvas.getContext('2d');
+          ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+          resolve(canvas.toDataURL('image/png'));
+        });
 
-          async init() {
-            try {
-              // Fetch your JSON file (adjust path/filename if necessary)
-              const response = await fetch('./share-portfolio.json');
-              this.portfolioItems = await response.json();
+        video.addEventListener('error', reject);
+      });
+    }
 
-              // For each video item without a thumbnail, generate one
-              for (let item of this.portfolioItems) {
-                if (item.mediaType === 'video' && !item.thumbnail) {
-                  try {
-                    item.thumbnail = await generateThumbnail(item.mediaUrl);
-                  } catch (err) {
-                    console.error('Thumbnail generation failed:', err);
-                    // Fallback thumbnail if desired
-                    item.thumbnail = 'https://via.placeholder.com/300/000000/FFFFFF?text=No+Thumbnail';
-                  }
+    function portfolioPage() {
+      return {
+        portfolioItems: [],
+        filter: 'All',
+        selectedItem: null,
+        showModal: false,
+        selectedScreenshot: '',
+
+        async init() {
+          try {
+            // Fetch your JSON file (adjust path/filename if necessary)
+            const response = await fetch('./share-portfolio.json');
+            this.portfolioItems = await response.json();
+
+            // For each video item without a thumbnail, generate one
+            for (let item of this.portfolioItems) {
+              if (item.mediaType === 'video' && !item.thumbnail) {
+                try {
+                  item.thumbnail = await generateThumbnail(item.mediaUrl);
+                } catch (err) {
+                  console.error('Thumbnail generation failed:', err);
+                  // Fallback thumbnail if desired
+                  item.thumbnail = 'https://via.placeholder.com/300/000000/FFFFFF?text=No+Thumbnail';
                 }
               }
-            } catch (error) {
-              console.error('Error fetching portfolio data:', error);
             }
-          },
+          } catch (error) {
+            console.error('Error fetching portfolio data:', error);
+          }
+        },
 
-          get categories() {
-            const cats = this.portfolioItems.map(item => item.category);
-            return [...new Set(cats)];
-          },
+        get categories() {
+          const cats = this.portfolioItems.map(item => item.category);
+          return [...new Set(cats)];
+        },
 
-          get filteredItems() {
-            let items = this.portfolioItems.slice().sort((a, b) => b.id - a.id);
-            if (this.filter === 'All') return items;
-            return items.filter(item => item.category === this.filter);
-          },
+        get filteredItems() {
+          let items = this.portfolioItems.slice().sort((a, b) => b.id - a.id);
+          if (this.filter === 'All') return items;
+          return items.filter(item => item.category === this.filter);
+        },
 
-          openModal(item) {
-            this.selectedItem = item;
-            this.showModal = true;
-            // If website with gallery, show first screenshot
-            if (item.mediaType === 'website' && item.gallery && item.gallery.length) {
-              this.selectedScreenshot = item.gallery[0];
-            } else {
-              this.selectedScreenshot = '';
-            }
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-          },
-          setScreenshot(idx) {
-            if (this.selectedItem && this.selectedItem.gallery && this.selectedItem.gallery[idx]) {
-              this.selectedScreenshot = this.selectedItem.gallery[idx];
-            }
-          },
-          closeModal() {
-            this.showModal = false;
-            this.selectedItem = null;
+        openModal(item) {
+          this.selectedItem = item;
+          this.showModal = true;
+          // If website with gallery, show first screenshot
+          if (item.mediaType === 'website' && item.gallery && item.gallery.length) {
+            this.selectedScreenshot = item.gallery[0];
+          } else {
             this.selectedScreenshot = '';
           }
-        };
-      }
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        },
+        setScreenshot(idx) {
+          if (this.selectedItem && this.selectedItem.gallery && this.selectedItem.gallery[idx]) {
+            this.selectedScreenshot = this.selectedItem.gallery[idx];
+          }
+        },
+        closeModal() {
+          this.showModal = false;
+          this.selectedItem = null;
+          this.selectedScreenshot = '';
+        }
+      };
+    }
 
-      // Add event listeners to the project buttons to scroll to top
-      document.addEventListener('DOMContentLoaded', function() {
-        const projectButtons = document.querySelectorAll('.home-button');
-        projectButtons.forEach(button => {
-          button.addEventListener('click', function() {
-            // Wrap in setTimeout to ensure it happens after the navigation starts
-            setTimeout(() => {
-              window.scrollTo({ top: 0, behavior: 'smooth' });
-            }, 100);
-          });
+    // Add event listeners to the project buttons to scroll to top
+    document.addEventListener('DOMContentLoaded', function () {
+      const projectButtons = document.querySelectorAll('.home-button');
+      projectButtons.forEach(button => {
+        button.addEventListener('click', function () {
+          // Wrap in setTimeout to ensure it happens after the navigation starts
+          setTimeout(() => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          }, 100);
         });
       });
-    </script>
+    });
+  </script>
 
-    <!-- Add a summary of programming languages and capabilities near the bottom -->
-    <section class="project-summary">
-      <h2>Technical Expertise & Development Skills</h2>
+  <!-- Add a summary of programming languages and capabilities near the bottom -->
+  <section class="project-summary">
+    <h2>Technical Expertise & Development Skills</h2>
+    <div style="text-align: left; max-width: 800px; margin: 0 auto; padding-left: 2rem;">
+      <p style="line-height: 1.6; margin-bottom: 1.5rem; color: #333;">
+        I'm a full-stack developer with extensive experience in both frontend
+        and backend technologies. My core technical stack includes:
+      </p>
+
       <div
-        style="text-align: left; max-width: 800px; margin: 0 auto; padding-left: 2rem;">
-        <p style="line-height: 1.6; margin-bottom: 1.5rem; color: #333;">
-          I'm a full-stack developer with extensive experience in both frontend
-          and backend technologies. My core technical stack includes:
-        </p>
-
-        <div
-          style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-bottom: 1.5rem;">
-          <div>
-            <h3 style="color: #333; margin-bottom: 0.5rem;">Frontend
-              Development</h3>
-            <ul style="list-style: none; padding: 0; margin: 0; color: #333;">
-              <li>HTML, CSS, JavaScript</li>
-              <li>Alpine.js, Tailwind CSS</li>
-              <li>Responsive Design & UI/UX</li>
-              <li>Web Performance Optimization</li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 style="color: #333; margin-bottom: 0.5rem;">Backend
-              Development</h3>
-            <ul style="list-style: none; padding: 0; margin: 0; color: #333;">
-              <li>Python, Flask</li>
-              <li>JSON Database Design & Dynamic Content Management</li>
-              <li>API Development & Integration</li>
-              <li>Git & GitHub Version Control</li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 style="color: #333; margin-bottom: 0.5rem;">Creative
-              Technology</h3>
-            <ul style="list-style: none; padding: 0; margin: 0; color: #333;">
-              <li>Unreal Engine 5 Development</li>
-              <li>Adobe Creative Suite (Premiere, Illustrator, After
-                Effects)</li>
-              <li>Digital Media Production</li>
-              <li>3D Modeling & Animation</li>
-            </ul>
-          </div>
+        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-bottom: 1.5rem;">
+        <div>
+          <h3 style="color: #333; margin-bottom: 0.5rem;">Frontend
+            Development</h3>
+          <ul style="list-style: none; padding: 0; margin: 0; color: #333;">
+            <li>HTML, CSS, JavaScript</li>
+            <li>Alpine.js, Tailwind CSS</li>
+            <li>Responsive Design & UI/UX</li>
+            <li>Web Performance Optimization</li>
+          </ul>
         </div>
 
-        <p style="line-height: 1.6; margin-bottom: 1.5rem; color: #333;">
-          I enjoy projects that bridge the gap between technical innovation and
-          practical implementation within the real world.
-        </p>
-      </div>
-      <a href="https://alexgonzalez.ooo//public/cv+resume/25cv/cv25-1.html"
-        target="_blank"
-        style="color: #303030; text-decoration: none; font-weight: bold; background: rgba(255,255,255,0.1); padding: 0.75rem 1.5rem; border-radius: 8px; backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2); transition: all 0.3s ease; display: inline-block; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">View
-        my CV in resume format</a>
-    </section>
+        <div>
+          <h3 style="color: #333; margin-bottom: 0.5rem;">Backend
+            Development</h3>
+          <ul style="list-style: none; padding: 0; margin: 0; color: #333;">
+            <li>Python, Flask</li>
+            <li>JSON Database Design & Dynamic Content Management</li>
+            <li>API Development & Integration</li>
+            <li>Git & GitHub Version Control</li>
+          </ul>
+        </div>
 
-    <!-- Teaching Portfolio Call to Action -->
-    <section class="teaching-cta" style="
+        <div>
+          <h3 style="color: #333; margin-bottom: 0.5rem;">Creative
+            Technology</h3>
+          <ul style="list-style: none; padding: 0; margin: 0; color: #333;">
+            <li>Unreal Engine 5 Development</li>
+            <li>Adobe Creative Suite (Premiere, Illustrator, After
+              Effects)</li>
+            <li>Digital Media Production</li>
+            <li>3D Modeling & Animation</li>
+          </ul>
+        </div>
+      </div>
+
+      <p style="line-height: 1.6; margin-bottom: 1.5rem; color: #333;">
+        I enjoy projects that bridge the gap between technical innovation and
+        practical implementation within the real world.
+      </p>
+    </div>
+    <a href="https://alexgonzalez.ooo//public/cv+resume/25cv/cv25-1.html" target="_blank"
+      style="color: #303030; text-decoration: none; font-weight: bold; background: rgba(255,255,255,0.1); padding: 0.75rem 1.5rem; border-radius: 8px; backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2); transition: all 0.3s ease; display: inline-block; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">View
+      my CV in resume format</a>
+  </section>
+
+  <!-- Teaching Portfolio Call to Action -->
+  <section class="teaching-cta" style="
       background: rgba(0, 0, 0, 0.8);
       padding: 4rem 0;
       text-align: center;
       margin-top: 2rem;
       border-top: 1px solid rgba(255, 255, 255, 0.1);
     ">
-      <div style="max-width: 800px; margin: 0 auto; padding: 0 2rem;">
-        <h2 style="
+    <div style="max-width: 800px; margin: 0 auto; padding: 0 2rem;">
+      <h2 style="
           font-family: var(--font-heading);
           font-size: 2.5rem;
           margin-bottom: 1.5rem;
           color: var(--color-text);
         ">Teaching Journey</h2>
-        <p style="
+      <p style="
           font-size: 1.2rem;
           line-height: 1.6;
           margin-bottom: 2rem;
           color: rgba(255, 255, 255, 0.9);
         ">
-          Over the years, I've taught digital media, software development,
-          filmmaking, virtual reality animation, startup entrepreneurship, and
-          more at various institutions including Choate Rosemary Hall, SUNY New
-          Paltz, and Jacob Burns Film Center. I've also worked with various film
-          centers and after-school programs across New Haven and beyond. Please
-          see my teaching portfolio below for more details.
-        </p>
-        <a href="./../portfolio/src/jobs/teaching.html"
-          style="
+        Over the years, I've taught digital media, software development,
+        filmmaking, virtual reality animation, startup entrepreneurship, and
+        more at various institutions including Choate Rosemary Hall, SUNY New
+        Paltz, and Jacob Burns Film Center. I've also worked with various film
+        centers and after-school programs across New Haven and beyond. Please
+        see my teaching portfolio below for more details.
+      </p>
+      <a href="/teaching-credentials.html" style="
             display: inline-block;
             padding: 1rem 2rem;
             background: rgba(255, 255, 255, 0.1);
@@ -807,21 +834,20 @@
             backdrop-filter: blur(10px);
             transition: all 0.3s ease;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-          "
-          onmouseover="this.style.background='rgba(255, 255, 255, 0.15)'"
-          onmouseout="this.style.background='rgba(255, 255, 255, 0.1)'">
-          View Teaching Portfolio
-        </a>
-      </div>
-    </section>
+          " onmouseover="this.style.background='rgba(255, 255, 255, 0.15)'"
+        onmouseout="this.style.background='rgba(255, 255, 255, 0.1)'">
+        View Teaching Portfolio
+      </a>
+    </div>
+  </section>
 
-  </body>
-  <footer
-    style="background: #000; padding: 1rem; text-align: center; box-shadow: 0 -1px 6px rgba(0,0,0,0.1); border-top: 1px solid rgba(255, 255, 255, 0.1);">
+</body>
+<footer
+  style="background: #000; padding: 1rem; text-align: center; box-shadow: 0 -1px 6px rgba(0,0,0,0.1); border-top: 1px solid rgba(255, 255, 255, 0.1);">
 
-    <p>
-      <a href="https://alexgonzalez.ooo" target="_blank"
-        class="home-button">Return Home</a>
-    </p>
-  </footer>
+  <p>
+    <a href="https://alexgonzalez.ooo" target="_blank" class="home-button">Return Home</a>
+  </p>
+</footer>
+
 </html>
