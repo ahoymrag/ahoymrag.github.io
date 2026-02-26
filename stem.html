@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next-Gen STEM Lab | Players to Producers</title>
+    <meta name="description"
+        content="A professional STEM program for kids 8-15 in New Haven/Bridgeport. Building 3D worlds, hacking hardware, and launching businesses.">
+
+    <!-- Google Fonts for Modern Tech Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        :root {
+            /* High-Contrast Tech-Blue & Dark Mode Palette */
+            --bg-dark: #0A0F1A;
+            --bg-card: rgba(20, 26, 38, 0.7);
+            --bg-card-hover: rgba(30, 42, 60, 0.9);
+            --primary-blue: #00F0FF;
+            --secondary-blue: #0088FF;
+            --accent-purple: #9D00FF;
+            --text-main: #E2E8F0;
+            --text-muted: #94A3B8;
+            --font-display: 'Space Grotesk', sans-serif;
+            --font-body: 'Outfit', sans-serif;
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            font-family: var(--font-body);
+            line-height: 1.6;
+            overflow-x: hidden;
+            /* Subtle background pattern */
+            background-image:
+                radial-gradient(circle at 15% 50%, rgba(0, 240, 255, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 85% 30%, rgba(157, 0, 255, 0.05) 0%, transparent 50%);
+            background-attachment: fixed;
+        }
+
+        /* Typography */
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: var(--font-display);
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            display: inline-block;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Utility */
+        .glass-panel {
+            background: var(--bg-card);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+        }
+
+        /* Print Button Utility */
+        .print-btn-wrapper {
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            z-index: 100;
+        }
+
+        .btn-outline {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: transparent;
+            color: var(--text-muted);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            font-family: var(--font-body);
+            font-size: 0.875rem;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .btn-outline:hover {
+            color: var(--primary-blue);
+            border-color: var(--primary-blue);
+            background: rgba(0, 240, 255, 0.05);
+        }
+
+        /* --- Hero Section --- */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 6rem 1rem 4rem;
+            position: relative;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background:
+                linear-gradient(to bottom, rgba(10, 15, 26, 0.2) 0%, rgba(10, 15, 26, 1) 100%),
+                url('data:image/svg+xml;utf8,<svg width="40" height="40" xmlns="http://www.w3.org/2000/svg"><rect width="1" height="1" fill="rgba(255,255,255,0.05)"/></svg>');
+            z-index: -1;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            animation: fadeUp 1s ease-out;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 5vw, 4.5rem);
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.02em;
+        }
+
+        .hero p {
+            font-size: clamp(1.1rem, 2vw, 1.5rem);
+            color: var(--text-muted);
+            margin-bottom: 3rem;
+            max-width: 800px;
+            margin-inline: auto;
+        }
+
+        .btn-primary {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--secondary-blue), var(--primary-blue));
+            color: #000;
+            font-family: var(--font-display);
+            font-size: 1.25rem;
+            font-weight: 700;
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            transition: var(--transition);
+            box-shadow: 0 0 20px rgba(0, 240, 255, 0.3);
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 0 30px rgba(0, 240, 255, 0.5);
+        }
+
+        /* --- Pillars Section --- */
+        .pillars {
+            padding: 5rem 0;
+            position: relative;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-header h2 {
+            font-size: clamp(2rem, 4vw, 3rem);
+            margin-bottom: 1rem;
+        }
+
+        .pillars-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .pillar-card {
+            padding: 2.5rem 2rem;
+            text-align: center;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .pillar-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--primary-blue), transparent);
+            opacity: 0;
+            transition: var(--transition);
+        }
+
+        .pillar-card:hover {
+            transform: translateY(-10px);
+            background: var(--bg-card-hover);
+            border-color: rgba(0, 240, 255, 0.2);
+        }
+
+        .pillar-card:hover::before {
+            opacity: 1;
+        }
+
+        .pillar-icon {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, var(--primary-blue), var(--accent-purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .pillar-card h3 {
+            font-size: 1.75rem;
+            margin-bottom: 1rem;
+            color: #fff;
+        }
+
+        .pillar-card ul {
+            list-style: none;
+            text-align: left;
+            margin-top: 1.5rem;
+        }
+
+        .pillar-card ul li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.75rem;
+            color: var(--text-muted);
+            font-size: 1rem;
+        }
+
+        .pillar-card ul li::before {
+            content: '▹';
+            position: absolute;
+            left: 0;
+            color: var(--primary-blue);
+            font-weight: bold;
+        }
+
+        /* --- Methodology & Details Section --- */
+        .details-section {
+            padding: 5rem 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .details-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        .leadership-box p {
+            font-size: 1.125rem;
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+
+        .highlight-stat {
+            display: inline-block;
+            background: rgba(0, 240, 255, 0.1);
+            border: 1px solid rgba(0, 240, 255, 0.2);
+            color: var(--primary-blue);
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            font-weight: 600;
+            margin-top: 1rem;
+            font-family: var(--font-display);
+        }
+
+        .age-groups {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .age-card {
+            padding: 1.5rem;
+            border-left: 4px solid var(--secondary-blue);
+        }
+
+        .age-card h4 {
+            font-size: 1.25rem;
+            color: #fff;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .age-badge {
+            font-size: 0.875rem;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-family: var(--font-body);
+            font-weight: 400;
+        }
+
+        .age-card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        /* --- Logistics & Contact --- */
+        .logistics-section {
+            padding: 4rem 0 8rem;
+        }
+
+        .logistics-banner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+            padding: 3rem;
+            background: linear-gradient(to right, rgba(0, 136, 255, 0.1), rgba(157, 0, 255, 0.1));
+            border: 1px solid rgba(0, 240, 255, 0.2);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .specs {
+            display: flex;
+            gap: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .spec-item h5 {
+            font-family: var(--font-body);
+            color: var(--text-muted);
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.25rem;
+        }
+
+        .spec-item p {
+            font-family: var(--font-display);
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        /* Animations */
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .details-grid {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            .pillars-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .logistics-banner {
+                flex-direction: column;
+                text-align: center;
+                padding: 2rem;
+            }
+
+            .specs {
+                gap: 1.5rem;
+                justify-content: center;
+                flex-direction: column;
+            }
+
+            .print-btn-wrapper {
+                position: static;
+                text-align: center;
+                margin-bottom: 2rem;
+                padding-top: 1rem;
+            }
+
+            .hero {
+                padding-top: 3rem;
+            }
+        }
+
+        /* --- PRINT STYLES --- */
+        @media print {
+            body {
+                background: #ffffff;
+                color: #000000;
+                font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                background-image: none;
+            }
+
+            .container {
+                max-width: 100%;
+                padding: 0;
+            }
+
+            .glass-panel,
+            .pillar-card,
+            .logistics-banner,
+            .age-card {
+                background: none;
+                backdrop-filter: none;
+                border: 1px solid #ddd;
+                box-shadow: none;
+                page-break-inside: avoid;
+            }
+
+            .hero {
+                min-height: auto;
+                padding: 2rem 0;
+            }
+
+            .hero::before {
+                display: none;
+            }
+
+            .print-btn-wrapper {
+                display: none;
+            }
+
+            .btn-primary {
+                display: none;
+            }
+
+            .gradient-text,
+            .pillar-icon {
+                background: none;
+                -webkit-text-fill-color: #000;
+                color: #000;
+            }
+
+            h1,
+            h2,
+            h3,
+            h4,
+            h5 {
+                color: #000;
+            }
+
+            p,
+            li {
+                color: #333;
+            }
+
+            .text-muted {
+                color: #555;
+            }
+
+            .pillars {
+                padding: 2rem 0;
+            }
+
+            .details-section,
+            .logistics-section {
+                padding: 2rem 0;
+                border: none;
+            }
+
+            .logistics-banner {
+                background: #f9f9f9;
+            }
+
+            .spec-item p {
+                color: #000;
+            }
+
+            .highlight-stat {
+                background: #f0f0f0;
+                border-color: #ccc;
+                color: #000;
+            }
+
+            .age-card {
+                border-left-color: #333;
+            }
+
+            .age-badge {
+                background: #eee;
+                color: #000;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Print Utility -->
+    <div class="print-btn-wrapper container">
+        <button onclick="window.print()" class="btn-outline">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9"></polyline>
+                <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+                <rect x="6" y="14" width="12" height="8"></rect>
+            </svg>
+            Print Overview
+        </button>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>From Players to Producers:<br> <span class="gradient-text">The Next-Gen STEM Lab</span></h1>
+            <p>Building 3D worlds, hacking hardware, and launching student-led businesses in New Haven.</p>
+            <a href="mailto:alex@alexgonzalez.ooo?subject=Fall 2026 Cohort Inquiry" class="btn-primary">Join the Fall
+                2026 Cohort</a>
+        </div>
+    </section>
+
+    <!-- Hacker & Founder Pillars -->
+    <section class="pillars container">
+        <div class="section-header">
+            <h2>The <span class="gradient-text">Hacker & Founder</span> Core</h2>
+            <p>Moving past standard coding camps into real-world technological creation.</p>
+        </div>
+
+        <div class="pillars-grid">
+            <div class="pillar-card glass-panel">
+                <div class="pillar-icon">🛠️</div>
+                <h3>Pillar 1: Build.</h3>
+                <ul>
+                    <li>Unreal Engine 5 Environments</li>
+                    <li>3D Design & Printing</li>
+                    <li>Applied Robotics</li>
+                </ul>
+            </div>
+
+            <div class="pillar-card glass-panel">
+                <div class="pillar-icon">⚡</div>
+                <h3>Pillar 2: Hack.</h3>
+                <ul>
+                    <li>Python Logic & Scripting</li>
+                    <li>Hardware Deconstruction</li>
+                    <li>Ethical Problem Solving</li>
+                </ul>
+            </div>
+
+            <div class="pillar-card glass-panel">
+                <div class="pillar-icon">🚀</div>
+                <h3>Pillar 3: Launch.</h3>
+                <ul>
+                    <li>Entrepreneurship Basics</li>
+                    <li>Branding & LLC Structures</li>
+                    <li>Digital Storefront Deployment</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Teacher-Led & Safe Details -->
+    <section class="details-section">
+        <div class="container details-grid">
+
+            <div class="leadership-box">
+                <h2>Teacher-Led & <span class="gradient-text">Safe</span></h2>
+                <br>
+                <p>Led by <strong>Alex Gonzalez</strong>, a professional STEM educator and filmmaker dedicated to
+                    transforming how kids interact with technology.</p>
+                <p>Fully <strong>CPI (Crisis Prevention) Certified</strong>, ensuring a safe, regulated, and
+                    constructive environment for all learners.</p>
+                <div class="highlight-stat">
+                    Dedicated to small-group mentorship (Max 6:1 ratio)
+                </div>
+            </div>
+
+            <div class="age-groups">
+                <div class="age-card glass-panel">
+                    <h4>Junior Creators <span class="age-badge">Ages 8-11</span></h4>
+                    <p>Focusing on technological discovery, visual logic structures, and hands-on physical building.</p>
+                </div>
+
+                <div class="age-card glass-panel">
+                    <h4>Founders <span class="age-badge">Ages 12-15</span></h4>
+                    <p>Mastering professional-grade tools, advanced coding paradigms, and business development concepts.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Logistics -->
+    <section class="logistics-section container">
+        <div class="logistics-banner glass-panel">
+            <div class="specs">
+                <div class="spec-item">
+                    <h5>Location</h5>
+                    <p>New Haven, CT</p>
+                </div>
+                <div class="spec-item">
+                    <h5>Format</h5>
+                    <p>6-Week Sprints</p>
+                </div>
+                <div class="spec-item">
+                    <h5>Contact</h5>
+                    <p>alex@alexgonzalez.ooo</p>
+                </div>
+            </div>
+            <div>
+                <a href="mailto:alex@alexgonzalez.ooo?subject=Fall 2026 Cohort Inquiry" class="btn-outline"
+                    style="border-color: var(--primary-blue); color: #fff;">
+                    Request Info Kit
+                </a>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
