@@ -61,8 +61,11 @@
 <body id="index-body" x-data="{ code: '', showMenu: false }">
 
     <!-- FPS FOREST WORLD LAYER — hidden until WebGL confirmed -->
-    <div id="fps-world-root" style="display:none; position:fixed; inset:0; z-index:9000;">
+    <div id="fps-world-root" style="display:none; position:fixed; inset:0; z-index:9000; background:#1a1a1a;">
         <canvas id="fps-canvas"></canvas>
+        <div id="fps-load-indicator" style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); color:#fff; font-family:monospace; opacity:0.5; display:none;">
+            <p>Loading forest...</p>
+        </div>
 
         <!-- Start screen overlay (hidden by default, auto-start enabled) -->
         <div id="fps-start-screen" class="fps-overlay" style="display:none;">

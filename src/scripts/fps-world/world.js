@@ -21,10 +21,16 @@ function isWebGLSupported() {
 
 const isMobile = /Mobi|Android|iPhone|iPad|tablet/i.test(navigator.userAgent);
 
+console.log('[Forest World] WebGL supported:', isWebGLSupported(), 'isMobile:', isMobile);
+
 if (!isWebGLSupported() || isMobile) {
   console.info('[Forest World] WebGL unavailable or mobile — using static fallback.');
 } else {
-  initFPSWorld();
+  try {
+    initFPSWorld();
+  } catch (err) {
+    console.error('[Forest World] Initialization error:', err);
+  }
 }
 
 // ============================================================================
@@ -49,9 +55,14 @@ const BOUNDARY_RADIUS = 28; // player stays within the forest clearing
 // ============================================================================
 
 function initFPSWorld() {
+  console.log('[Forest World] Starting initialization...');
+
   // --- DOM SETUP ---
   const root = document.getElementById('fps-world-root');
   root.style.display = 'block';
+
+  const loadIndicator = document.getElementById('fps-load-indicator');
+  loadIndicator.style.display = 'block';
 
   // Hide existing content but keep in DOM for fallback
   document.querySelector('header').style.display = 'none';
@@ -59,6 +70,7 @@ function initFPSWorld() {
   document.querySelector('.centered-input').style.display = 'none';
 
   // --- SCENE ---
+  console.log('[Forest World] Creating scene...');
   scene = new THREE.Scene();
 
   // Forest sky gradient: warm sunlight filtering through trees
@@ -71,8 +83,18 @@ function initFPSWorld() {
   camera.position.set(0, 1.7, 0); // Eye height
 
   // --- RENDERER ---
+  console.log('[Forest World] Creating renderer...');
   const canvas = document.getElementById('fps-canvas');
-  renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: false });
+  console.log('[Forest World] Canvas found:', canvas);
+
+  try {
+    renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: false });
+    console.log('[Forest World] Renderer created successfully');
+  } catch (e) {
+    console.error('[Forest World] Renderer creation failed:', e);
+    throw e;
+  }
+
   renderer.setSize(window.innerWidth, window.innerHeight);
   renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
   renderer.shadowMap.enabled = true;
@@ -81,6 +103,7 @@ function initFPSWorld() {
   renderer.shadowMap.mapSize.height = 2048;
   renderer.toneMapping = THREE.ACESFilmicToneMapping;
   renderer.toneMappingExposure = 0.9;
+  console.log('[Forest World] Renderer configured');
 
   // --- LIGHTING ---
   // Warm directional sunlight (golden hour)
@@ -129,13 +152,16 @@ function initFPSWorld() {
   window.addEventListener('ag:easterEgg', onEasterEgg);
 
   // Auto-lock controls after scene fully initializes
+  console.log('[Forest World] Scheduling auto-lock...');
   requestAnimationFrame(() => {
+    console.log('[Forest World] First frame scheduled');
     requestAnimationFrame(() => {
+      console.log('[Forest World] Attempting to lock controls...');
       controls.lock();
     });
   });
 
-  console.info('[Forest World] Initialized successfully');
+  console.log('[Forest World] Initialization completed');
 }
 
 // ============================================================================
@@ -355,6 +381,7 @@ function bindUIEvents() {
   });
 
   controls.addEventListener('lock', () => {
+    document.getElementById('fps-load-indicator').style.display = 'none';
     document.getElementById('fps-start-screen').style.display = 'none';
     document.getElementById('fps-paused-screen').style.display = 'none';
     document.getElementById('fps-hud').style.display = 'block';
