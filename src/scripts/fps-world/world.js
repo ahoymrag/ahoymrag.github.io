@@ -7,6 +7,27 @@ import { initParticles, tickParticles } from './particles.js';
 // WEBGL DETECTION & INITIALIZATION GATE
 // ============================================================================
 
+// ============================================================================
+// SCENE STATE — must be declared before initialization code
+// ============================================================================
+
+let scene, camera, renderer, controls;
+let clock, delta;
+let portalsGroup;
+let activePortalURL = null;
+let animationRunning = false;
+let animationFrameId = null;
+let easterPortalAdded = false;
+
+// Key state for movement
+const keys = { w: false, a: false, s: false, d: false };
+const MOVE_SPEED = 8.0;
+const BOUNDARY_RADIUS = 28; // player stays within the forest clearing
+
+// ============================================================================
+// WEBGL DETECTION & INITIALIZATION GATE
+// ============================================================================
+
 function isWebGLSupported() {
   try {
     const canvas = document.createElement('canvas');
@@ -32,23 +53,6 @@ if (!isWebGLSupported() || isMobile) {
     console.error('[Forest World] Initialization error:', err);
   }
 }
-
-// ============================================================================
-// SCENE STATE
-// ============================================================================
-
-let scene, camera, renderer, controls;
-let clock, delta;
-let portalsGroup;
-let activePortalURL = null;
-let animationRunning = false;
-let animationFrameId = null;
-let easterPortalAdded = false;
-
-// Key state for movement
-const keys = { w: false, a: false, s: false, d: false };
-const MOVE_SPEED = 8.0;
-const BOUNDARY_RADIUS = 28; // player stays within the forest clearing
 
 // ============================================================================
 // MAIN INITIALIZATION
