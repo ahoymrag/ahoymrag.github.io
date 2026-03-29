@@ -64,8 +64,8 @@
     <div id="fps-world-root" style="display:none; position:fixed; inset:0; z-index:9000;">
         <canvas id="fps-canvas"></canvas>
 
-        <!-- Start screen overlay -->
-        <div id="fps-start-screen" class="fps-overlay">
+        <!-- Start screen overlay (hidden by default, auto-start enabled) -->
+        <div id="fps-start-screen" class="fps-overlay" style="display:none;">
             <div class="fps-start-card">
                 <h1 class="fps-title">Alex Gonzalez</h1>
                 <p class="fps-subtitle">Explore the forest.</p>
@@ -82,6 +82,18 @@
                 <span class="fps-portal-hint">[ E ] Explore</span>
             </div>
             <div id="fps-escape-hint" class="fps-escape-hint">ESC to exit</div>
+
+            <!-- Minecraft-style control indicator on left -->
+            <div id="fps-minecraft-controls" class="fps-minecraft-controls">
+                <div class="minecraft-key-row">
+                    <div class="minecraft-key minecraft-key-w" data-key="W">W</div>
+                </div>
+                <div class="minecraft-key-row">
+                    <div class="minecraft-key minecraft-key-a" data-key="A">A</div>
+                    <div class="minecraft-key minecraft-key-s" data-key="S">S</div>
+                    <div class="minecraft-key minecraft-key-d" data-key="D">D</div>
+                </div>
+            </div>
         </div>
 
         <!-- Pause / unlock overlay -->

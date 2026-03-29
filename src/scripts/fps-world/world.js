@@ -128,8 +128,10 @@ function initFPSWorld() {
   window.addEventListener('resize', onResize);
   window.addEventListener('ag:easterEgg', onEasterEgg);
 
-  // Show start screen
-  document.getElementById('fps-start-screen').style.display = 'flex';
+  // Auto-lock controls on initialization
+  setTimeout(() => {
+    controls.lock();
+  }, 100);
 
   console.info('[Forest World] Initialized successfully');
 }
@@ -259,18 +261,53 @@ function buildForestTrees() {
 
 function bindKeys() {
   document.addEventListener('keydown', e => {
-    if (e.code === 'KeyW') keys.w = true;
-    if (e.code === 'KeyA') keys.a = true;
-    if (e.code === 'KeyS') keys.s = true;
-    if (e.code === 'KeyD') keys.d = true;
+    if (e.code === 'KeyW') {
+      keys.w = true;
+      updateKeyVisuals('W', true);
+    }
+    if (e.code === 'KeyA') {
+      keys.a = true;
+      updateKeyVisuals('A', true);
+    }
+    if (e.code === 'KeyS') {
+      keys.s = true;
+      updateKeyVisuals('S', true);
+    }
+    if (e.code === 'KeyD') {
+      keys.d = true;
+      updateKeyVisuals('D', true);
+    }
   });
 
   document.addEventListener('keyup', e => {
-    if (e.code === 'KeyW') keys.w = false;
-    if (e.code === 'KeyA') keys.a = false;
-    if (e.code === 'KeyS') keys.s = false;
-    if (e.code === 'KeyD') keys.d = false;
+    if (e.code === 'KeyW') {
+      keys.w = false;
+      updateKeyVisuals('W', false);
+    }
+    if (e.code === 'KeyA') {
+      keys.a = false;
+      updateKeyVisuals('A', false);
+    }
+    if (e.code === 'KeyS') {
+      keys.s = false;
+      updateKeyVisuals('S', false);
+    }
+    if (e.code === 'KeyD') {
+      keys.d = false;
+      updateKeyVisuals('D', false);
+    }
   });
+}
+
+function updateKeyVisuals(key, isActive) {
+  const keyEl = document.querySelector(`[data-key="${key}"]`);
+  if (keyEl) {
+    if (isActive) {
+      keyEl.classList.add('active');
+    } else {
+      keyEl.classList.remove('active');
+    }
+  }
 }
 
 function tickMovement() {

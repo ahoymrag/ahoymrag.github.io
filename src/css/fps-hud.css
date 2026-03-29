@@ -184,6 +184,51 @@
   pointer-events: none;
 }
 
+/* Minecraft-style control indicator */
+.fps-minecraft-controls {
+  position: absolute;
+  bottom: 2rem;
+  left: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  pointer-events: none;
+}
+
+.minecraft-key-row {
+  display: flex;
+  gap: 0.3rem;
+}
+
+.minecraft-key {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(60, 80, 50, 0.3);
+  border: 1px solid rgba(118, 192, 67, 0.2);
+  border-radius: 3px;
+  font-family: 'Barlow', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: rgba(232, 245, 233, 0.25);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: all 0.15s ease;
+}
+
+.minecraft-key.active {
+  background: rgba(118, 192, 67, 0.3);
+  border-color: rgba(118, 192, 67, 0.5);
+  color: rgba(232, 245, 233, 0.7);
+  box-shadow: 0 0 8px rgba(118, 192, 67, 0.2);
+}
+
+.minecraft-key-w {
+  margin-left: 2.3rem;
+}
+
 /* Mobile: hide FPS world entirely (defensive CSS backup to JS detection) */
 @media (max-width: 768px) {
   #fps-world-root {
