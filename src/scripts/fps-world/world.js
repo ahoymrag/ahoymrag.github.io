@@ -55,11 +55,24 @@ if (!isWebGLSupported() || isMobile) {
 }
 
 // ============================================================================
+// PROGRESS TRACKING
+// ============================================================================
+
+function updateProgress(percent) {
+  const bar = document.getElementById('fps-progress-bar');
+  const text = document.getElementById('fps-progress-text');
+  if (bar) bar.style.width = percent + '%';
+  if (text) text.textContent = percent + '%';
+  console.log(`[Forest World] Progress: ${percent}%`);
+}
+
+// ============================================================================
 // MAIN INITIALIZATION
 // ============================================================================
 
 function initFPSWorld() {
   console.log('[Forest World] Starting initialization...');
+  updateProgress(5);
 
   // --- DOM SETUP ---
   const root = document.getElementById('fps-world-root');
@@ -83,6 +96,7 @@ function initFPSWorld() {
   scene.fog = new THREE.FogExp2(0xa8d5ba, 0.015); // Soft depth fog
 
   // --- CAMERA ---
+  updateProgress(15);
   camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 500);
   camera.position.set(0, 1.7, 0); // Eye height
 
@@ -99,17 +113,27 @@ function initFPSWorld() {
     throw e;
   }
 
+  updateProgress(25);
   renderer.setSize(window.innerWidth, window.innerHeight);
   renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-  renderer.shadowMap.enabled = true;
-  renderer.shadowMap.type = THREE.PCFSoftShadowMap;
-  renderer.shadowMap.mapSize.width = 2048;
-  renderer.shadowMap.mapSize.height = 2048;
+
+  try {
+    renderer.shadowMap.enabled = true;
+    renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+    if (renderer.shadowMap.mapSize) {
+      renderer.shadowMap.mapSize.width = 2048;
+      renderer.shadowMap.mapSize.height = 2048;
+    }
+  } catch (e) {
+    console.warn('[Forest World] Shadow map configuration partial:', e);
+  }
+
   renderer.toneMapping = THREE.ACESFilmicToneMapping;
   renderer.toneMappingExposure = 0.9;
   console.log('[Forest World] Renderer configured');
 
   // --- LIGHTING ---
+  updateProgress(35);
   // Warm directional sunlight (golden hour)
   const sunLight = new THREE.DirectionalLight(0xfdb813, 1.2);
   sunLight.position.set(15, 40, 25);
@@ -132,14 +156,19 @@ function initFPSWorld() {
   addSkyDome();
 
   // --- WORLD GEOMETRY ---
+  updateProgress(45);
   buildGround();
   buildWater();
+
+  updateProgress(60);
   buildForestTrees();
 
   // --- PORTALS ---
+  updateProgress(75);
   portalsGroup = initPortals(scene);
 
   // --- PARTICLES / BOKEH EFFECT ---
+  updateProgress(85);
   initParticles(scene);
 
   // --- CONTROLS ---
@@ -156,12 +185,14 @@ function initFPSWorld() {
   window.addEventListener('ag:easterEgg', onEasterEgg);
 
   // Auto-lock controls after scene fully initializes
+  updateProgress(95);
   console.log('[Forest World] Scheduling auto-lock...');
   requestAnimationFrame(() => {
     console.log('[Forest World] First frame scheduled');
     requestAnimationFrame(() => {
       console.log('[Forest World] Attempting to lock controls...');
-      controls.lock();
+      updateProgress(100);
+      setTimeout(() => controls.lock(), 100);
     });
   });
 
