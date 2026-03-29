@@ -128,10 +128,12 @@ function initFPSWorld() {
   window.addEventListener('resize', onResize);
   window.addEventListener('ag:easterEgg', onEasterEgg);
 
-  // Auto-lock controls on initialization
-  setTimeout(() => {
-    controls.lock();
-  }, 100);
+  // Auto-lock controls after scene fully initializes
+  requestAnimationFrame(() => {
+    requestAnimationFrame(() => {
+      controls.lock();
+    });
+  });
 
   console.info('[Forest World] Initialized successfully');
 }
