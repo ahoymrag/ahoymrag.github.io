@@ -1,0 +1,192 @@
+/* fps-hud.css — Forest world HUD styles */
+
+/* Full-screen overlay layers */
+.fps-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(20, 30, 15, 0.85);
+  backdrop-filter: blur(12px);
+  z-index: 100;
+}
+
+/* Start / pause card */
+.fps-start-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 3rem 4rem;
+  border: 2px solid rgba(100, 200, 100, 0.3);
+  border-radius: 12px;
+  background: rgba(30, 50, 35, 0.8);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.fps-title {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 900;
+  font-size: clamp(2rem, 8vw, 6rem);
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #e8f5e9;
+  margin: 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.fps-subtitle {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 300;
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  color: rgba(232, 245, 233, 0.7);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  margin: 0;
+}
+
+.fps-start-button {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 900;
+  font-size: 1.1rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #1a1a1a;
+  background: linear-gradient(135deg, #76c043 0%, #5aa838 100%);
+  border: 2px solid #5aa838;
+  padding: 0.8rem 2.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 12px rgba(90, 168, 56, 0.3);
+}
+
+.fps-start-button:hover {
+  background: linear-gradient(135deg, #87d154 0%, #65b741 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(90, 168, 56, 0.5);
+}
+
+.fps-hint {
+  font-family: 'Barlow', sans-serif;
+  font-size: 0.8rem;
+  color: rgba(232, 245, 233, 0.4);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: 0;
+}
+
+.fps-exit-link {
+  font-family: 'Barlow', sans-serif;
+  font-size: 0.85rem;
+  color: rgba(232, 245, 233, 0.5);
+  text-decoration: underline;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.fps-exit-link:hover {
+  color: #a8d5a8;
+}
+
+/* ---- IN-GAME HUD ---- */
+.fps-hud {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 50;
+}
+
+/* Crosshair: subtle tree-inspired design */
+.fps-crosshair {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 24px;
+  height: 24px;
+}
+
+.fps-crosshair::before,
+.fps-crosshair::after {
+  content: '';
+  position: absolute;
+  background: rgba(232, 245, 233, 0.6);
+  box-shadow: 0 0 4px rgba(232, 245, 233, 0.4);
+}
+
+.fps-crosshair::before {
+  /* horizontal bar */
+  width: 24px;
+  height: 1.5px;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.fps-crosshair::after {
+  /* vertical bar */
+  width: 1.5px;
+  height: 24px;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
+
+/* Portal tooltip — bottom-center */
+.fps-portal-tooltip {
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 1rem 2rem;
+  background: rgba(20, 30, 15, 0.8);
+  border: 1.5px solid rgba(118, 192, 67, 0.6);
+  border-radius: 8px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+#fps-portal-name {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 900;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  color: #c8e6c9;
+}
+
+.fps-portal-hint {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 300;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: rgba(200, 230, 201, 0.6);
+}
+
+/* Escape hint — top-right */
+.fps-escape-hint {
+  position: absolute;
+  top: 1.2rem;
+  right: 1.5rem;
+  font-family: 'Barlow', sans-serif;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: rgba(232, 245, 233, 0.25);
+  pointer-events: none;
+}
+
+/* Mobile: hide FPS world entirely (defensive CSS backup to JS detection) */
+@media (max-width: 768px) {
+  #fps-world-root {
+    display: none !important;
+  }
+}

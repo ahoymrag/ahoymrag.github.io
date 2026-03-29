@@ -14,7 +14,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./portfolio/src/ag-cv-css-1.css">
     <link rel="stylesheet" href="./src/css/index-addons.css">
+    <link rel="stylesheet" href="./src/css/fps-hud.css">
     <title>Alex Gonzalez | Work and Portfolio</title>
+    <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.168.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.168.0/examples/jsm/"
+      }
+    }
+    </script>
     <script defer data-domain="alexgonzalez.ooo" src="https://plausible.io/js/script.js"></script>
     <script defer data-domain="alexgonzalez.ooo" src="https://plausible.io/js/script.js"></script>
     <link rel="icon" type="image/png" href="./src/assets/AlexGonzalez-favicon.png" />
@@ -50,6 +59,40 @@
 </head>
 
 <body id="index-body" x-data="{ code: '', showMenu: false }">
+
+    <!-- FPS FOREST WORLD LAYER — hidden until WebGL confirmed -->
+    <div id="fps-world-root" style="display:none; position:fixed; inset:0; z-index:9000;">
+        <canvas id="fps-canvas"></canvas>
+
+        <!-- Start screen overlay -->
+        <div id="fps-start-screen" class="fps-overlay">
+            <div class="fps-start-card">
+                <h1 class="fps-title">Alex Gonzalez</h1>
+                <p class="fps-subtitle">Explore the forest.</p>
+                <button id="fps-start-btn" class="fps-start-button">ENTER THE FOREST</button>
+                <p class="fps-hint">WASD to walk — Mouse to look — E to explore</p>
+            </div>
+        </div>
+
+        <!-- In-game HUD -->
+        <div id="fps-hud" class="fps-hud" style="display:none;">
+            <div id="fps-crosshair" class="fps-crosshair"></div>
+            <div id="fps-portal-tooltip" class="fps-portal-tooltip" style="display:none;">
+                <span id="fps-portal-name"></span>
+                <span class="fps-portal-hint">[ E ] Explore</span>
+            </div>
+            <div id="fps-escape-hint" class="fps-escape-hint">ESC to exit</div>
+        </div>
+
+        <!-- Pause / unlock overlay -->
+        <div id="fps-paused-screen" class="fps-overlay" style="display:none;">
+            <div class="fps-start-card">
+                <p class="fps-subtitle">You've left the forest</p>
+                <button id="fps-resume-btn" class="fps-start-button">RETURN</button>
+                <a href="#" id="fps-exit-link" class="fps-exit-link">Back to main</a>
+            </div>
+        </div>
+    </div>
 
     <header>
         <div class="header-main-wrap">
@@ -142,7 +185,7 @@
         </div>
     </footer>
 
-    <input type="text" x-model="code" @input="showMenu = (code === '1153')" placeholder="secret code"
+    <input type="text" x-model="code" @input="showMenu = (code === '1153'); if (code === '1153') { window.dispatchEvent(new CustomEvent('ag:easterEgg')) }" placeholder="secret code"
         class="centered-input" />
 
     <style>
@@ -199,6 +242,8 @@
             color: #007BFF;
         }
     </style>
+
+    <script type="module" src="./src/scripts/fps-world/world.js"></script>
 </body>
 
 </html>
