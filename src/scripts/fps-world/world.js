@@ -51,6 +51,10 @@ const EYE_HEIGHT_LERP_SPEED = 0.15;
 let lastSprintParticleTime = 0;
 const SPRINT_PARTICLE_INTERVAL = 0.1;
 
+// Particle tracking (instead of filtering scene.children every frame)
+let activeParticles = [];
+const MAX_PARTICLES = 200; // Cap total particles to prevent memory bloat
+
 // ============================================================================
 // WEBGL DETECTION & INITIALIZATION GATE
 // ============================================================================
@@ -106,87 +110,103 @@ function initAudio() {
 function playJumpSound() {
   if (!audioContext) return;
 
-  const now = audioContext.currentTime;
-  const osc = audioContext.createOscillator();
-  const gain = audioContext.createGain();
+  try {
+    const now = audioContext.currentTime;
+    const osc = audioContext.createOscillator();
+    const gain = audioContext.createGain();
 
-  osc.connect(gain);
-  gain.connect(audioContext.destination);
+    osc.connect(gain);
+    gain.connect(audioContext.destination);
 
-  // Chirp: 200 Hz to 400 Hz over 0.1 seconds
-  osc.frequency.setValueAtTime(200, now);
-  osc.frequency.exponentialRampToValueAtTime(400, now + 0.1);
+    // Chirp: 200 Hz to 400 Hz over 0.1 seconds
+    osc.frequency.setValueAtTime(200, now);
+    osc.frequency.exponentialRampToValueAtTime(400, now + 0.1);
 
-  gain.gain.setValueAtTime(0.3, now);
-  gain.gain.exponentialRampToValueAtTime(0.01, now + 0.1);
+    gain.gain.setValueAtTime(0.3, now);
+    gain.gain.exponentialRampToValueAtTime(0.01, now + 0.1);
 
-  osc.start(now);
-  osc.stop(now + 0.1);
+    osc.start(now);
+    osc.stop(now + 0.1);
+  } catch (e) {
+    console.warn('[Forest World] Jump sound failed:', e);
+  }
 }
 
 function playLandSound() {
   if (!audioContext) return;
 
-  const now = audioContext.currentTime;
-  const osc = audioContext.createOscillator();
-  const gain = audioContext.createGain();
+  try {
+    const now = audioContext.currentTime;
+    const osc = audioContext.createOscillator();
+    const gain = audioContext.createGain();
 
-  osc.connect(gain);
-  gain.connect(audioContext.destination);
+    osc.connect(gain);
+    gain.connect(audioContext.destination);
 
-  // Low tone: 100 Hz, quick decay
-  osc.frequency.setValueAtTime(100, now);
-  gain.gain.setValueAtTime(0.2, now);
-  gain.gain.exponentialRampToValueAtTime(0.01, now + 0.15);
+    // Low tone: 100 Hz, quick decay
+    osc.frequency.setValueAtTime(100, now);
+    gain.gain.setValueAtTime(0.2, now);
+    gain.gain.exponentialRampToValueAtTime(0.01, now + 0.15);
 
-  osc.start(now);
-  osc.stop(now + 0.15);
+    osc.start(now);
+    osc.stop(now + 0.15);
+  } catch (e) {
+    console.warn('[Forest World] Land sound failed:', e);
+  }
 }
 
 function playSprintSound() {
   if (!audioContext) return;
 
-  const now = audioContext.currentTime;
-  const osc = audioContext.createOscillator();
-  const gain = audioContext.createGain();
-  const filter = audioContext.createBiquadFilter();
+  try {
+    const now = audioContext.currentTime;
+    const osc = audioContext.createOscillator();
+    const gain = audioContext.createGain();
+    const filter = audioContext.createBiquadFilter();
 
-  osc.connect(filter);
-  filter.connect(gain);
-  gain.connect(audioContext.destination);
+    osc.connect(filter);
+    filter.connect(gain);
+    gain.connect(audioContext.destination);
 
-  // Wind sound: low frequency with filtered white noise effect
-  osc.frequency.setValueAtTime(50, now);
-  filter.type = 'highpass';
-  filter.frequency.setValueAtTime(800, now);
+    // Wind sound: low frequency with filtered white noise effect
+    osc.frequency.setValueAtTime(50, now);
+    filter.type = 'highpass';
+    filter.frequency.setValueAtTime(800, now);
 
-  gain.gain.setValueAtTime(0.15, now);
-  gain.gain.setValueAtTime(0.15, now + 0.05);
-  gain.gain.exponentialRampToValueAtTime(0.01, now + 0.2);
+    gain.gain.setValueAtTime(0.15, now);
+    gain.gain.setValueAtTime(0.15, now + 0.05);
+    gain.gain.exponentialRampToValueAtTime(0.01, now + 0.2);
 
-  osc.start(now);
-  osc.stop(now + 0.2);
+    osc.start(now);
+    osc.stop(now + 0.2);
+  } catch (e) {
+    console.warn('[Forest World] Sprint sound failed:', e);
+  }
 }
 
 function playSlideSound() {
   if (!audioContext) return;
 
-  const now = audioContext.currentTime;
-  const osc = audioContext.createOscillator();
-  const gain = audioContext.createGain();
+  try {
+    const now = audioContext.currentTime;
+    const osc = audioContext.createOscillator();
+    const gain = audioContext.createGain();
 
-  osc.connect(gain);
-  gain.connect(audioContext.destination);
+    osc.connect(gain);
+    gain.connect(audioContext.destination);
 
-  // Whoosh: descending frequency 300 Hz to 100 Hz
-  osc.frequency.setValueAtTime(300, now);
-  osc.frequency.exponentialRampToValueAtTime(100, now + 0.15);
+    // Whoosh: descending frequency 300 Hz to 100 Hz
+    osc.frequency.setValueAtTime(300, now);
+    osc.frequency.exponentialRampToValueAtTime(100, now + 0.15);
 
-  gain.gain.setValueAtTime(0.25, now);
-  gain.gain.exponentialRampToValueAtTime(0.01, now + 0.15);
+    gain.gain.setValueAtTime(0.25, now);
+    gain.gain.exponentialRampToValueAtTime(0.01, now + 0.15);
 
-  osc.start(now);
-  osc.stop(now + 0.15);
+    osc.start(now);
+    osc.stop(now + 0.15);
+  } catch (e) {
+    console.warn('[Forest World] Slide sound failed:', e);
+  }
 }
 
 // ============================================================================
@@ -256,8 +276,22 @@ function initFPSWorld() {
   }
 
   updateProgress(25);
-  renderer.setSize(window.innerWidth, window.innerHeight);
+
+  // Validate canvas dimensions
+  const width = Math.max(window.innerWidth, 320);
+  const height = Math.max(window.innerHeight, 240);
+  renderer.setSize(width, height);
   renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+
+  // Handle context loss
+  canvas.addEventListener('webglcontextlost', (e) => {
+    e.preventDefault();
+    console.warn('[Forest World] WebGL context lost');
+  });
+
+  canvas.addEventListener('webglcontextrestored', () => {
+    console.log('[Forest World] WebGL context restored');
+  });
 
   try {
     renderer.shadowMap.enabled = true;
@@ -737,6 +771,16 @@ function exitFPSMode() {
     cancelAnimationFrame(animationFrameId);
     animationRunning = false;
   }
+
+  // Clean up particles to prevent memory leaks
+  for (let i = activeParticles.length - 1; i >= 0; i--) {
+    const particle = activeParticles[i];
+    scene.remove(particle);
+    if (particle.geometry) particle.geometry.dispose();
+    if (particle.material) particle.material.dispose();
+  }
+  activeParticles = [];
+
   document.getElementById('fps-world-root').style.display = 'none';
   document.querySelector('header').style.display = '';
   document.querySelector('footer').style.display = '';
@@ -761,11 +805,13 @@ function applyScreenShake() {
 }
 
 function createLandingBurst(position) {
-  // Create visual burst using sprites (simplified version)
-  // This creates a temporary visual effect at landing position
+  // Cap particles to prevent memory bloat
+  if (activeParticles.length >= MAX_PARTICLES) {
+    return;
+  }
 
   // Create a burst of small particles as visual feedback
-  const burstCount = 8;
+  const burstCount = Math.min(8, MAX_PARTICLES - activeParticles.length);
   for (let i = 0; i < burstCount; i++) {
     const angle = (i / burstCount) * Math.PI * 2;
     const radius = 0.5;
@@ -790,12 +836,18 @@ function createLandingBurst(position) {
     };
 
     scene.add(particle);
+    activeParticles.push(particle);
   }
 }
 
 function createSprintTrail(position) {
+  // Cap particles to prevent memory bloat
+  if (activeParticles.length >= MAX_PARTICLES) {
+    return;
+  }
+
   // Create particle trail during sprint/slide
-  const trailCount = 3;
+  const trailCount = Math.min(3, MAX_PARTICLES - activeParticles.length);
   for (let i = 0; i < trailCount; i++) {
     const offsetX = (Math.random() - 0.5) * 0.4;
     const offsetZ = (Math.random() - 0.5) * 0.4;
@@ -822,6 +874,7 @@ function createSprintTrail(position) {
     };
 
     scene.add(particle);
+    activeParticles.push(particle);
   }
 }
 
@@ -837,7 +890,14 @@ function startLoop() {
 
 function loop() {
   animationFrameId = requestAnimationFrame(loop);
-  delta = Math.min(clock.getDelta(), 0.05);
+  delta = clock.getDelta();
+
+  // Validate delta time (prevent NaN or extreme values)
+  if (!isFinite(delta) || delta < 0 || delta > 0.2) {
+    delta = 0.016; // Default to ~60fps if invalid
+  } else {
+    delta = Math.min(delta, 0.05); // Cap at 50ms max step
+  }
 
   // Movement
   tickMovement();
@@ -845,25 +905,28 @@ function loop() {
   // Screen shake feedback
   applyScreenShake();
 
-  // Animate burst particles
-  const burstParticles = scene.children.filter(obj => obj.userData && obj.userData.velocity);
-  burstParticles.forEach(particle => {
+  // Animate particles (tracked in activeParticles array for efficiency)
+  for (let i = activeParticles.length - 1; i >= 0; i--) {
+    const particle = activeParticles[i];
     particle.userData.age += delta;
     const progress = particle.userData.age / particle.userData.lifetime;
 
     if (progress >= 1) {
       scene.remove(particle);
-      particle.geometry.dispose();
-      particle.material.dispose();
+      if (particle.geometry) particle.geometry.dispose();
+      if (particle.material) particle.material.dispose();
+      activeParticles.splice(i, 1);
     } else {
       // Update position
       particle.position.addScaledVector(particle.userData.velocity, delta);
       particle.userData.velocity.y -= GRAVITY * delta;
 
       // Fade out
-      particle.material.opacity = 0.6 * (1 - progress);
+      if (particle.material) {
+        particle.material.opacity = 0.6 * (1 - progress);
+      }
     }
-  });
+  }
 
   // Sprint particle trail emission
   const isMoving = keys.w || keys.a || keys.s || keys.d;
@@ -900,9 +963,21 @@ function loop() {
 }
 
 function onResize() {
-  camera.aspect = window.innerWidth / window.innerHeight;
+  const width = Math.max(window.innerWidth, 320);
+  const height = Math.max(window.innerHeight, 240);
+
+  if (!isFinite(width) || !isFinite(height) || width <= 0 || height <= 0) {
+    return; // Ignore invalid dimensions
+  }
+
+  camera.aspect = width / height;
   camera.updateProjectionMatrix();
-  renderer.setSize(window.innerWidth, window.innerHeight);
+
+  try {
+    renderer.setSize(width, height);
+  } catch (e) {
+    console.warn('[Forest World] Resize failed:', e);
+  }
 }
 
 // ============================================================================
