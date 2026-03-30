@@ -535,7 +535,7 @@ function tickMovement() {
   jumpVelocity -= GRAVITY * delta;
   pos.y += jumpVelocity * delta;
 
-  // Landing detection and particle burst
+  // Landing detection and particle burst (use EYE_HEIGHT as ground level)
   if (pos.y <= EYE_HEIGHT && jumpVelocity < 0) {
     // Landing impact feedback (check before resetting velocity)
     const impactStrength = Math.abs(jumpVelocity);
@@ -549,7 +549,7 @@ function tickMovement() {
     jumpVelocity = 0;
     isGrounded = true;
     jumpsRemaining = 2; // Reset jumps when grounded
-  } else if (pos.y > EYE_HEIGHT) {
+  } else if (pos.y > EYE_HEIGHT + 0.1) {
     isGrounded = false;
   }
 
@@ -564,9 +564,8 @@ function tickMovement() {
     targetEyeHeight = EYE_HEIGHT;
   }
 
-  // Smooth camera height interpolation
+  // Smooth camera height interpolation (for slide effect)
   currentEyeHeight += (targetEyeHeight - currentEyeHeight) * EYE_HEIGHT_LERP_SPEED;
-  camera.position.y = currentEyeHeight;
 
   // Determine speed multiplier
   let speedMultiplier = 1.0;
@@ -590,10 +589,16 @@ function tickMovement() {
     pos.z = Math.sin(angle) * BOUNDARY_RADIUS;
   }
 
-  // Clamp Y to eye height minimum
+  // Maintain eye height (locked to ground, but use the base EYE_HEIGHT for ground)
+  // The slide effect is just a camera offset, not actual ground change
   if (pos.y < EYE_HEIGHT) {
     pos.y = EYE_HEIGHT;
+    jumpVelocity = 0;
   }
+
+  // Apply slide camera offset after all other position logic
+  const slideOffset = currentEyeHeight - EYE_HEIGHT;
+  pos.y += slideOffset;
 }
 
 function bindUIEvents() {
