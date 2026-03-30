@@ -73,11 +73,13 @@ console.log('[Forest World] WebGL supported:', isWebGLSupported(), 'isMobile:', 
 
 if (!isWebGLSupported() || isMobile) {
   console.info('[Forest World] WebGL unavailable or mobile — using static fallback.');
+  // Don't show error, just silently skip - the static site still works
 } else {
   try {
     initFPSWorld();
   } catch (err) {
     console.error('[Forest World] Initialization error:', err);
+    showFallbackError();
   }
 }
 
@@ -204,19 +206,19 @@ function updateProgress(percent) {
 // ============================================================================
 
 function initFPSWorld() {
-  console.log('[Forest World] Starting initialization...');
-  updateProgress(5);
+  try {
+    console.log('[Forest World] Starting initialization...');
+    updateProgress(5);
 
-  // --- DOM SETUP ---
-  const root = document.getElementById('fps-world-root');
-  const canvas = document.getElementById('fps-canvas');
+    // --- DOM SETUP ---
+    const root = document.getElementById('fps-world-root');
+    const canvas = document.getElementById('fps-canvas');
 
-  if (!root || !canvas) {
-    console.error('[Forest World] Required DOM elements missing (fps-world-root or fps-canvas)');
-    return;
-  }
+    if (!root || !canvas) {
+      throw new Error('Required DOM elements missing (fps-world-root or fps-canvas)');
+    }
 
-  root.style.display = 'block';
+    root.style.display = 'block';
 
   const loadIndicator = document.getElementById('fps-load-indicator');
   loadIndicator.style.display = 'block';
@@ -333,6 +335,83 @@ function initFPSWorld() {
     loadIndicator.style.display = 'none';
     document.getElementById('fps-start-screen').style.display = 'flex';
   }, 300);
+  } catch (error) {
+    console.error('[Forest World] Initialization failed:', error);
+    showFallbackError();
+  }
+}
+
+function showFallbackError() {
+  // Hide the FPS world and show a friendly error message
+  const root = document.getElementById('fps-world-root');
+  if (root) {
+    root.style.display = 'none';
+  }
+
+  // Show header/footer again
+  const header = document.querySelector('header');
+  const footer = document.querySelector('footer');
+  const input = document.querySelector('.centered-input');
+  if (header) header.style.display = '';
+  if (footer) footer.style.display = '';
+  if (input) input.style.display = '';
+
+  // Create friendly error message
+  const errorDiv = document.createElement('div');
+  errorDiv.style.cssText = `
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 500px;
+    text-align: center;
+    font-family: monospace;
+    z-index: 9999;
+  `;
+
+  errorDiv.innerHTML = `
+    <h2 style="margin: 0 0 1rem 0; color: #ff6b6b;">The forest path is blocked...</h2>
+    <p style="margin: 0 0 1.5rem 0; opacity: 0.8;">
+      The 3D forest explorer requires WebGL support or encountered a loading issue.
+      This sometimes happens on older browsers or with network delays.
+    </p>
+    <button id="error-retry-btn" style="
+      background: #76c043;
+      color: #000;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+      margin-right: 0.5rem;
+      font-family: monospace;
+    ">Retry</button>
+    <button id="error-back-btn" style="
+      background: transparent;
+      color: #fff;
+      border: 1px solid #666;
+      padding: 0.75rem 1.5rem;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: monospace;
+    ">Back to site</button>
+  `;
+
+  document.body.appendChild(errorDiv);
+
+  // Add event listeners
+  document.getElementById('error-retry-btn').addEventListener('click', () => {
+    errorDiv.remove();
+    initFPSWorld();
+  });
+
+  document.getElementById('error-back-btn').addEventListener('click', () => {
+    errorDiv.remove();
+  });
 }
 
 // ============================================================================
