@@ -22,9 +22,18 @@ let waterMat = null;
 let waterAnimStartTime = null;
 
 // Key state for movement
-const keys = { w: false, a: false, s: false, d: false };
+const keys = { w: false, a: false, s: false, d: false, shift: false, space: false };
 const MOVE_SPEED = 8.0;
+const SPRINT_MULTIPLIER = 1.5;
 const BOUNDARY_RADIUS = 28; // player stays within the forest clearing
+
+// Jump and gravity
+let jumpVelocity = 0;
+const GRAVITY = 25;
+const JUMP_POWER = 15;
+const EYE_HEIGHT = 1.7;
+let isGrounded = true;
+let screenShakeIntensity = 0;
 
 // ============================================================================
 // WEBGL DETECTION & INITIALIZATION GATE
@@ -334,6 +343,18 @@ function bindKeys() {
       keys.d = true;
       updateKeyVisuals('D', true);
     }
+    if (e.code === 'ShiftLeft' || e.code === 'ShiftRight') {
+      keys.shift = true;
+      updateKeyVisuals('Shift', true);
+    }
+    if (e.code === 'Space') {
+      e.preventDefault();
+      keys.space = true;
+      if (isGrounded) {
+        jumpVelocity = JUMP_POWER;
+        isGrounded = false;
+      }
+    }
   });
 
   document.addEventListener('keyup', e => {
@@ -353,6 +374,13 @@ function bindKeys() {
       keys.d = false;
       updateKeyVisuals('D', false);
     }
+    if (e.code === 'ShiftLeft' || e.code === 'ShiftRight') {
+      keys.shift = false;
+      updateKeyVisuals('Shift', false);
+    }
+    if (e.code === 'Space') {
+      keys.space = false;
+    }
   });
 }
 
@@ -370,7 +398,31 @@ function updateKeyVisuals(key, isActive) {
 function tickMovement() {
   if (!controls.isLocked) return;
 
-  const speed = MOVE_SPEED * delta;
+  const pos = controls.object.position;
+
+  // Apply gravity
+  jumpVelocity -= GRAVITY * delta;
+  pos.y += jumpVelocity * delta;
+
+  // Landing detection and particle burst
+  if (pos.y <= EYE_HEIGHT && jumpVelocity < 0) {
+    // Landing impact feedback (check before resetting velocity)
+    const impactStrength = Math.abs(jumpVelocity);
+    if (impactStrength > 3) {
+      screenShakeIntensity = 0.15;
+      createLandingBurst(pos);
+    }
+
+    pos.y = EYE_HEIGHT;
+    jumpVelocity = 0;
+    isGrounded = true;
+  } else if (pos.y > EYE_HEIGHT) {
+    isGrounded = false;
+  }
+
+  // Sprint multiplier
+  const speedMultiplier = keys.shift ? SPRINT_MULTIPLIER : 1.0;
+  const speed = MOVE_SPEED * speedMultiplier * delta;
 
   if (keys.w) controls.moveForward(speed);
   if (keys.s) controls.moveForward(-speed);
@@ -378,7 +430,6 @@ function tickMovement() {
   if (keys.d) controls.moveRight(speed);
 
   // Soft boundary: keep player in the clearing
-  const pos = controls.object.position;
   const flatDist = Math.sqrt(pos.x * pos.x + pos.z * pos.z);
   if (flatDist > BOUNDARY_RADIUS) {
     const angle = Math.atan2(pos.z, pos.x);
@@ -386,8 +437,10 @@ function tickMovement() {
     pos.z = Math.sin(angle) * BOUNDARY_RADIUS;
   }
 
-  // Lock Y to eye height
-  pos.y = 1.7;
+  // Clamp Y to eye height minimum
+  if (pos.y < EYE_HEIGHT) {
+    pos.y = EYE_HEIGHT;
+  }
 }
 
 function bindUIEvents() {
@@ -448,6 +501,56 @@ function exitFPSMode() {
 }
 
 // ============================================================================
+// GAMEPLAY FEEDBACK
+// ============================================================================
+
+function applyScreenShake() {
+  if (screenShakeIntensity <= 0) return;
+
+  // Apply camera jitter
+  const shake = screenShakeIntensity;
+  camera.position.x += (Math.random() - 0.5) * shake;
+  camera.position.z += (Math.random() - 0.5) * shake;
+
+  // Decay intensity
+  screenShakeIntensity *= 0.85;
+  if (screenShakeIntensity < 0.01) screenShakeIntensity = 0;
+}
+
+function createLandingBurst(position) {
+  // Create visual burst using sprites (simplified version)
+  // This creates a temporary visual effect at landing position
+
+  // Create a burst of small particles as visual feedback
+  const burstCount = 8;
+  for (let i = 0; i < burstCount; i++) {
+    const angle = (i / burstCount) * Math.PI * 2;
+    const radius = 0.5;
+    const vx = Math.cos(angle) * radius;
+    const vz = Math.sin(angle) * radius;
+
+    // Create a temporary small sphere that fades and disappears
+    const geo = new THREE.SphereGeometry(0.1, 4, 4);
+    const mat = new THREE.MeshBasicMaterial({
+      color: 0x90ee90,
+      transparent: true,
+      opacity: 0.6,
+    });
+    const particle = new THREE.Mesh(geo, mat);
+    particle.position.copy(position);
+
+    // Store burst particle metadata for animation
+    particle.userData = {
+      velocity: new THREE.Vector3(vx, 2, vz),
+      lifetime: 0.5,
+      age: 0,
+    };
+
+    scene.add(particle);
+  }
+}
+
+// ============================================================================
 // ANIMATION LOOP
 // ============================================================================
 
@@ -463,6 +566,29 @@ function loop() {
 
   // Movement
   tickMovement();
+
+  // Screen shake feedback
+  applyScreenShake();
+
+  // Animate burst particles
+  const burstParticles = scene.children.filter(obj => obj.userData && obj.userData.velocity);
+  burstParticles.forEach(particle => {
+    particle.userData.age += delta;
+    const progress = particle.userData.age / particle.userData.lifetime;
+
+    if (progress >= 1) {
+      scene.remove(particle);
+      particle.geometry.dispose();
+      particle.material.dispose();
+    } else {
+      // Update position
+      particle.position.addScaledVector(particle.userData.velocity, delta);
+      particle.userData.velocity.y -= GRAVITY * delta;
+
+      // Fade out
+      particle.material.opacity = 0.6 * (1 - progress);
+    }
+  });
 
   // Portal proximity
   const tooltip = document.getElementById('fps-portal-tooltip');
