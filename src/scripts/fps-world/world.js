@@ -34,6 +34,22 @@ const JUMP_POWER = 15;
 const EYE_HEIGHT = 1.7;
 let isGrounded = true;
 let screenShakeIntensity = 0;
+let jumpsRemaining = 2;
+
+// Audio
+let audioContext = null;
+
+// Slide mechanic
+let isSliding = false;
+const SLIDE_EYE_HEIGHT = 1.2;
+const SLIDE_SPEED_MULTIPLIER = 2.0;
+let targetEyeHeight = EYE_HEIGHT;
+let currentEyeHeight = EYE_HEIGHT;
+const EYE_HEIGHT_LERP_SPEED = 0.15;
+
+// Sprint particles
+let lastSprintParticleTime = 0;
+const SPRINT_PARTICLE_INTERVAL = 0.1;
 
 // ============================================================================
 // WEBGL DETECTION & INITIALIZATION GATE
@@ -63,6 +79,112 @@ if (!isWebGLSupported() || isMobile) {
   } catch (err) {
     console.error('[Forest World] Initialization error:', err);
   }
+}
+
+// ============================================================================
+// AUDIO SYNTHESIS
+// ============================================================================
+
+function initAudio() {
+  if (audioContext) return; // Already initialized
+
+  const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+  if (!AudioContextClass) {
+    console.warn('[Forest World] Web Audio API not supported');
+    return;
+  }
+
+  try {
+    audioContext = new AudioContextClass();
+  } catch (e) {
+    console.warn('[Forest World] Audio context creation failed:', e);
+  }
+}
+
+function playJumpSound() {
+  if (!audioContext) return;
+
+  const now = audioContext.currentTime;
+  const osc = audioContext.createOscillator();
+  const gain = audioContext.createGain();
+
+  osc.connect(gain);
+  gain.connect(audioContext.destination);
+
+  // Chirp: 200 Hz to 400 Hz over 0.1 seconds
+  osc.frequency.setValueAtTime(200, now);
+  osc.frequency.exponentialRampToValueAtTime(400, now + 0.1);
+
+  gain.gain.setValueAtTime(0.3, now);
+  gain.gain.exponentialRampToValueAtTime(0.01, now + 0.1);
+
+  osc.start(now);
+  osc.stop(now + 0.1);
+}
+
+function playLandSound() {
+  if (!audioContext) return;
+
+  const now = audioContext.currentTime;
+  const osc = audioContext.createOscillator();
+  const gain = audioContext.createGain();
+
+  osc.connect(gain);
+  gain.connect(audioContext.destination);
+
+  // Low tone: 100 Hz, quick decay
+  osc.frequency.setValueAtTime(100, now);
+  gain.gain.setValueAtTime(0.2, now);
+  gain.gain.exponentialRampToValueAtTime(0.01, now + 0.15);
+
+  osc.start(now);
+  osc.stop(now + 0.15);
+}
+
+function playSprintSound() {
+  if (!audioContext) return;
+
+  const now = audioContext.currentTime;
+  const osc = audioContext.createOscillator();
+  const gain = audioContext.createGain();
+  const filter = audioContext.createBiquadFilter();
+
+  osc.connect(filter);
+  filter.connect(gain);
+  gain.connect(audioContext.destination);
+
+  // Wind sound: low frequency with filtered white noise effect
+  osc.frequency.setValueAtTime(50, now);
+  filter.type = 'highpass';
+  filter.frequency.setValueAtTime(800, now);
+
+  gain.gain.setValueAtTime(0.15, now);
+  gain.gain.setValueAtTime(0.15, now + 0.05);
+  gain.gain.exponentialRampToValueAtTime(0.01, now + 0.2);
+
+  osc.start(now);
+  osc.stop(now + 0.2);
+}
+
+function playSlideSound() {
+  if (!audioContext) return;
+
+  const now = audioContext.currentTime;
+  const osc = audioContext.createOscillator();
+  const gain = audioContext.createGain();
+
+  osc.connect(gain);
+  gain.connect(audioContext.destination);
+
+  // Whoosh: descending frequency 300 Hz to 100 Hz
+  osc.frequency.setValueAtTime(300, now);
+  osc.frequency.exponentialRampToValueAtTime(100, now + 0.15);
+
+  gain.gain.setValueAtTime(0.25, now);
+  gain.gain.exponentialRampToValueAtTime(0.01, now + 0.15);
+
+  osc.start(now);
+  osc.stop(now + 0.15);
 }
 
 // ============================================================================
@@ -116,7 +238,8 @@ function initFPSWorld() {
   // --- CAMERA ---
   updateProgress(15);
   camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 500);
-  camera.position.set(0, 1.7, 0); // Eye height
+  camera.position.set(0, EYE_HEIGHT, 0); // Eye height
+  currentEyeHeight = EYE_HEIGHT;
 
   // --- RENDERER ---
   console.log('[Forest World] Creating renderer...');
@@ -327,6 +450,9 @@ function buildForestTrees() {
 
 function bindKeys() {
   document.addEventListener('keydown', e => {
+    // Initialize audio on first user input
+    initAudio();
+
     if (e.code === 'KeyW') {
       keys.w = true;
       updateKeyVisuals('W', true);
@@ -350,9 +476,13 @@ function bindKeys() {
     if (e.code === 'Space') {
       e.preventDefault();
       keys.space = true;
-      if (isGrounded) {
-        jumpVelocity = JUMP_POWER;
+      // Double jump logic
+      if (jumpsRemaining > 0) {
+        const jumpPower = jumpsRemaining === 2 ? JUMP_POWER : JUMP_POWER * 0.8;
+        jumpVelocity = jumpPower;
+        jumpsRemaining--;
         isGrounded = false;
+        playJumpSound();
       }
     }
   });
@@ -399,6 +529,7 @@ function tickMovement() {
   if (!controls.isLocked) return;
 
   const pos = controls.object.position;
+  const isMoving = keys.w || keys.a || keys.s || keys.d;
 
   // Apply gravity
   jumpVelocity -= GRAVITY * delta;
@@ -411,17 +542,39 @@ function tickMovement() {
     if (impactStrength > 3) {
       screenShakeIntensity = 0.15;
       createLandingBurst(pos);
+      playLandSound();
     }
 
     pos.y = EYE_HEIGHT;
     jumpVelocity = 0;
     isGrounded = true;
+    jumpsRemaining = 2; // Reset jumps when grounded
   } else if (pos.y > EYE_HEIGHT) {
     isGrounded = false;
   }
 
-  // Sprint multiplier
-  const speedMultiplier = keys.shift ? SPRINT_MULTIPLIER : 1.0;
+  // Slide mechanic
+  const shouldSlide = keys.shift && isMoving && isGrounded;
+  if (shouldSlide && !isSliding) {
+    isSliding = true;
+    targetEyeHeight = SLIDE_EYE_HEIGHT;
+    playSlideSound();
+  } else if (!shouldSlide && isSliding) {
+    isSliding = false;
+    targetEyeHeight = EYE_HEIGHT;
+  }
+
+  // Smooth camera height interpolation
+  currentEyeHeight += (targetEyeHeight - currentEyeHeight) * EYE_HEIGHT_LERP_SPEED;
+  camera.position.y = currentEyeHeight;
+
+  // Determine speed multiplier
+  let speedMultiplier = 1.0;
+  if (isSliding) {
+    speedMultiplier = SLIDE_SPEED_MULTIPLIER;
+  } else if (keys.shift) {
+    speedMultiplier = SPRINT_MULTIPLIER;
+  }
   const speed = MOVE_SPEED * speedMultiplier * delta;
 
   if (keys.w) controls.moveForward(speed);
@@ -550,6 +703,38 @@ function createLandingBurst(position) {
   }
 }
 
+function createSprintTrail(position) {
+  // Create particle trail during sprint/slide
+  const trailCount = 3;
+  for (let i = 0; i < trailCount; i++) {
+    const offsetX = (Math.random() - 0.5) * 0.4;
+    const offsetZ = (Math.random() - 0.5) * 0.4;
+    const vx = Math.random() * 0.5 - 0.25;
+    const vz = Math.random() * 0.5 - 0.25;
+
+    const geo = new THREE.SphereGeometry(0.05, 4, 4);
+    const mat = new THREE.MeshBasicMaterial({
+      color: isSliding ? 0xffd700 : 0xffc700, // Gold for sprint, brighter gold for slide
+      transparent: true,
+      opacity: 0.5,
+    });
+    const particle = new THREE.Mesh(geo, mat);
+    particle.position.set(
+      position.x + offsetX,
+      position.y - 0.5,
+      position.z + offsetZ
+    );
+
+    particle.userData = {
+      velocity: new THREE.Vector3(vx, 0.5, vz),
+      lifetime: 0.3,
+      age: 0,
+    };
+
+    scene.add(particle);
+  }
+}
+
 // ============================================================================
 // ANIMATION LOOP
 // ============================================================================
@@ -589,6 +774,18 @@ function loop() {
       particle.material.opacity = 0.6 * (1 - progress);
     }
   });
+
+  // Sprint particle trail emission
+  const isMoving = keys.w || keys.a || keys.s || keys.d;
+  if ((keys.shift || isSliding) && isMoving && isGrounded) {
+    lastSprintParticleTime += delta;
+    if (lastSprintParticleTime > SPRINT_PARTICLE_INTERVAL) {
+      createSprintTrail(camera.position);
+      lastSprintParticleTime = 0;
+    }
+  } else {
+    lastSprintParticleTime = 0;
+  }
 
   // Portal proximity
   const tooltip = document.getElementById('fps-portal-tooltip');
