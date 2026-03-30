@@ -327,6 +327,12 @@ function initFPSWorld() {
   // Initialization complete — user will click Start button to lock controls
   updateProgress(100);
   console.log('[Forest World] Initialization completed');
+
+  // Show start screen with fade-out of load indicator
+  setTimeout(() => {
+    loadIndicator.style.display = 'none';
+    document.getElementById('fps-start-screen').style.display = 'flex';
+  }, 300);
 }
 
 // ============================================================================
