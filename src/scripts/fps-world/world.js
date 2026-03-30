@@ -18,6 +18,8 @@ let activePortalURL = null;
 let animationRunning = false;
 let animationFrameId = null;
 let easterPortalAdded = false;
+let waterMat = null;
+let waterAnimStartTime = null;
 
 // Key state for movement
 const keys = { w: false, a: false, s: false, d: false };
@@ -76,6 +78,13 @@ function initFPSWorld() {
 
   // --- DOM SETUP ---
   const root = document.getElementById('fps-world-root');
+  const canvas = document.getElementById('fps-canvas');
+
+  if (!root || !canvas) {
+    console.error('[Forest World] Required DOM elements missing (fps-world-root or fps-canvas)');
+    return;
+  }
+
   root.style.display = 'block';
 
   const loadIndicator = document.getElementById('fps-load-indicator');
@@ -102,7 +111,6 @@ function initFPSWorld() {
 
   // --- RENDERER ---
   console.log('[Forest World] Creating renderer...');
-  const canvas = document.getElementById('fps-canvas');
   console.log('[Forest World] Canvas found:', canvas);
 
   try {
@@ -173,7 +181,7 @@ function initFPSWorld() {
 
   // --- CONTROLS ---
   controls = new PointerLockControls(camera, document.body);
-  scene.add(controls.getObject());
+  scene.add(controls.object);
 
   // --- CLOCK ---
   clock = new THREE.Clock();
@@ -184,18 +192,8 @@ function initFPSWorld() {
   window.addEventListener('resize', onResize);
   window.addEventListener('ag:easterEgg', onEasterEgg);
 
-  // Auto-lock controls after scene fully initializes
-  updateProgress(95);
-  console.log('[Forest World] Scheduling auto-lock...');
-  requestAnimationFrame(() => {
-    console.log('[Forest World] First frame scheduled');
-    requestAnimationFrame(() => {
-      console.log('[Forest World] Attempting to lock controls...');
-      updateProgress(100);
-      setTimeout(() => controls.lock(), 100);
-    });
-  });
-
+  // Initialization complete — user will click Start button to lock controls
+  updateProgress(100);
   console.log('[Forest World] Initialization completed');
 }
 
@@ -253,7 +251,7 @@ function buildGround() {
 function buildWater() {
   // Simple flowing water stream through the forest
   const waterGeo = new THREE.PlaneGeometry(4, 15);
-  const waterMat = new THREE.MeshStandardMaterial({
+  waterMat = new THREE.MeshStandardMaterial({
     color: 0x4da6e6,
     roughness: 0.3,
     metalness: 0.6,
@@ -267,12 +265,8 @@ function buildWater() {
   water.receiveShadow = true;
   scene.add(water);
 
-  // Water animation
-  const startTime = Date.now();
-  setInterval(() => {
-    const elapsed = (Date.now() - startTime) * 0.0001;
-    waterMat.emissiveIntensity = 0.1 + Math.sin(elapsed) * 0.05;
-  }, 16);
+  // Animation will be updated in main loop
+  waterAnimStartTime = Date.now();
 }
 
 function buildForestTrees() {
@@ -377,7 +371,6 @@ function tickMovement() {
   if (!controls.isLocked) return;
 
   const speed = MOVE_SPEED * delta;
-  const prevPos = controls.getObject().position.clone();
 
   if (keys.w) controls.moveForward(speed);
   if (keys.s) controls.moveForward(-speed);
@@ -385,7 +378,7 @@ function tickMovement() {
   if (keys.d) controls.moveRight(speed);
 
   // Soft boundary: keep player in the clearing
-  const pos = controls.getObject().position;
+  const pos = controls.object.position;
   const flatDist = Math.sqrt(pos.x * pos.x + pos.z * pos.z);
   if (flatDist > BOUNDARY_RADIUS) {
     const angle = Math.atan2(pos.z, pos.x);
@@ -402,18 +395,24 @@ function bindUIEvents() {
   const resumeBtn = document.getElementById('fps-resume-btn');
   const exitLink = document.getElementById('fps-exit-link');
 
-  startBtn.addEventListener('click', () => {
-    controls.lock();
-  });
+  if (startBtn) {
+    startBtn.addEventListener('click', () => {
+      controls.lock();
+    });
+  }
 
-  resumeBtn.addEventListener('click', () => {
-    controls.lock();
-  });
+  if (resumeBtn) {
+    resumeBtn.addEventListener('click', () => {
+      controls.lock();
+    });
+  }
 
-  exitLink.addEventListener('click', e => {
-    e.preventDefault();
-    exitFPSMode();
-  });
+  if (exitLink) {
+    exitLink.addEventListener('click', e => {
+      e.preventDefault();
+      exitFPSMode();
+    });
+  }
 
   controls.addEventListener('lock', () => {
     document.getElementById('fps-load-indicator').style.display = 'none';
@@ -476,6 +475,12 @@ function loop() {
 
   // Particle animation
   tickParticles(t);
+
+  // Water animation
+  if (waterMat && waterAnimStartTime) {
+    const elapsed = (Date.now() - waterAnimStartTime) * 0.0001;
+    waterMat.emissiveIntensity = 0.1 + Math.sin(elapsed) * 0.05;
+  }
 
   // Render
   renderer.render(scene, camera);
