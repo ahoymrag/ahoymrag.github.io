@@ -252,10 +252,9 @@ function initFPSWorld() {
   console.log('[Forest World] Creating scene...');
   scene = new THREE.Scene();
 
-  // Forest sky gradient: warm sunlight filtering through trees
-  const skyColor = new THREE.Color(0xa8d5ba); // Warm forest green-tinted sky
-  scene.background = new THREE.Color(0x8aba98); // Forest canopy
-  scene.fog = new THREE.FogExp2(0xa8d5ba, 0.015); // Soft depth fog
+  // Cosmic night sky: nebula atmosphere
+  scene.background = new THREE.Color(0x0a0014); // Near-black deep purple
+  scene.fog = new THREE.FogExp2(0x0d0025, 0.018); // Dark indigo fog
 
   // --- CAMERA ---
   updateProgress(15);
@@ -305,14 +304,14 @@ function initFPSWorld() {
   }
 
   renderer.toneMapping = THREE.ACESFilmicToneMapping;
-  renderer.toneMappingExposure = 0.9;
+  renderer.toneMappingExposure = 0.7;
   console.log('[Forest World] Renderer configured');
 
   // --- LIGHTING ---
   updateProgress(35);
-  // Warm directional sunlight (golden hour)
-  const sunLight = new THREE.DirectionalLight(0xfdb813, 1.2);
-  sunLight.position.set(15, 40, 25);
+  // Cool blue-white moonlight
+  const sunLight = new THREE.DirectionalLight(0xb8d4ff, 0.85);
+  sunLight.position.set(-20, 50, 15);
   sunLight.castShadow = true;
   sunLight.shadow.mapSize.width = 4096;
   sunLight.shadow.mapSize.height = 4096;
@@ -325,7 +324,7 @@ function initFPSWorld() {
   scene.add(sunLight);
 
   // Ambient light for overall illumination
-  const ambientLight = new THREE.AmbientLight(0x90ee90, 0.6);
+  const ambientLight = new THREE.AmbientLight(0x2d0a4e, 0.8);
   scene.add(ambientLight);
 
   // Sky dome for realistic lighting
@@ -453,75 +452,143 @@ function showFallbackError() {
 // ============================================================================
 
 function addSkyDome() {
-  // Create a large sphere for sky
-  const skyGeo = new THREE.SphereGeometry(300, 32, 32);
+  // Outer dome: deep space indigo
+  const skyGeo = new THREE.SphereGeometry(290, 32, 32);
   const skyMat = new THREE.MeshBasicMaterial({
-    color: 0xa8d5ba,
+    color: 0x06001a,
     side: THREE.BackSide,
   });
-  const skyMesh = new THREE.Mesh(skyGeo, skyMat);
-  scene.add(skyMesh);
+  scene.add(new THREE.Mesh(skyGeo, skyMat));
+
+  // Inner nebula haze: semi-transparent purple sphere
+  const nebulaDome = new THREE.SphereGeometry(280, 16, 16);
+  const nebulaMat = new THREE.MeshBasicMaterial({
+    color: 0x3d0a6b,
+    side: THREE.BackSide,
+    transparent: true,
+    opacity: 0.45,
+  });
+  scene.add(new THREE.Mesh(nebulaDome, nebulaMat));
+
+  // Star field
+  const STAR_COUNT = 1800;
+  const starPos = new Float32Array(STAR_COUNT * 3);
+  const starColors = new Float32Array(STAR_COUNT * 3);
+
+  const starPalette = [
+    new THREE.Color(0xffffff),
+    new THREE.Color(0xffe8f0),
+    new THREE.Color(0xe8f0ff),
+    new THREE.Color(0xffccff),
+    new THREE.Color(0xccffff),
+    new THREE.Color(0xddaaff),
+  ];
+
+  for (let i = 0; i < STAR_COUNT; i++) {
+    const phi = Math.acos(2 * Math.random() - 1);
+    const theta = Math.random() * Math.PI * 2;
+    const r = 270;
+
+    starPos[i * 3]     = r * Math.sin(phi) * Math.cos(theta);
+    starPos[i * 3 + 1] = r * Math.cos(phi);
+    starPos[i * 3 + 2] = r * Math.sin(phi) * Math.sin(theta);
+
+    const c = starPalette[Math.floor(Math.random() * starPalette.length)];
+    starColors[i * 3]     = c.r;
+    starColors[i * 3 + 1] = c.g;
+    starColors[i * 3 + 2] = c.b;
+  }
+
+  const starGeo = new THREE.BufferGeometry();
+  starGeo.setAttribute('position', new THREE.BufferAttribute(starPos, 3));
+  starGeo.setAttribute('color',    new THREE.BufferAttribute(starColors, 3));
+
+  const starMat = new THREE.PointsMaterial({
+    size: 0.9,
+    sizeAttenuation: true,
+    vertexColors: true,
+    transparent: true,
+    opacity: 0.9,
+  });
+
+  scene.add(new THREE.Points(starGeo, starMat));
 }
 
 function buildGround() {
-  // Main clearing ground with grass-like appearance
-  const groundGeo = new THREE.PlaneGeometry(60, 60);
+  // Lo-poly faceted terrain
+  const SEG = 30;
+  const groundGeo = new THREE.PlaneGeometry(120, 120, SEG, SEG);
+
+  const pos = groundGeo.attributes.position;
+  for (let i = 0; i < pos.count; i++) {
+    const x = pos.getX(i);
+    const y = pos.getY(i);
+    const distFromCenter = Math.sqrt(x * x + y * y);
+    const edgeFade = Math.max(0, 1 - distFromCenter / 50);
+    pos.setZ(i, (Math.random() - 0.5) * 1.4 * edgeFade);
+  }
+  pos.needsUpdate = true;
+  groundGeo.computeVertexNormals();
+
   const groundMat = new THREE.MeshStandardMaterial({
-    color: 0x6ba876,
-    roughness: 0.9,
+    color: 0x1a0a2e,
+    emissive: 0x0d0520,
+    emissiveIntensity: 0.3,
+    roughness: 1.0,
     metalness: 0.0,
-    emissive: 0x2d5a3d,
-    emissiveIntensity: 0.15,
+    flatShading: true,
   });
   const ground = new THREE.Mesh(groundGeo, groundMat);
   ground.rotation.x = -Math.PI / 2;
-  ground.position.y = 0;
+  ground.position.y = -0.1;
   ground.receiveShadow = true;
   scene.add(ground);
 
-  // Add some variation with low-poly grass tufts
+  // Crystal shards
   for (let i = 0; i < 40; i++) {
     const x = (Math.random() - 0.5) * 50;
     const z = (Math.random() - 0.5) * 50;
-    const grassHeight = 0.4 + Math.random() * 0.6;
+    const h = 0.3 + Math.random() * 0.8;
 
-    const grassGeo = new THREE.ConeGeometry(0.3, grassHeight, 6);
-    const grassMat = new THREE.MeshStandardMaterial({
-      color: new THREE.Color().setHSL(0.35, 0.6, 0.35 + Math.random() * 0.15),
-      roughness: 0.8,
-      metalness: 0.0,
+    const shardGeo = new THREE.ConeGeometry(0.15, h, 4);
+    const hues = [0.5, 0.75, 0.83, 0.88];
+    const shardMat = new THREE.MeshStandardMaterial({
+      color: new THREE.Color().setHSL(hues[Math.floor(Math.random() * hues.length)], 0.8, 0.35 + Math.random() * 0.15),
+      emissive: new THREE.Color().setHSL(0.7, 0.5, 0.1),
+      emissiveIntensity: 0.4,
+      roughness: 0.3,
+      metalness: 0.5,
+      flatShading: true,
     });
-    const grass = new THREE.Mesh(grassGeo, grassMat);
-    grass.position.set(x, grassHeight / 2, z);
-    grass.castShadow = true;
-    grass.receiveShadow = true;
-    scene.add(grass);
+    const shard = new THREE.Mesh(shardGeo, shardMat);
+    shard.position.set(x, h / 2, z);
+    shard.rotation.y = Math.random() * Math.PI;
+    shard.castShadow = true;
+    scene.add(shard);
   }
 }
 
 function buildWater() {
-  // Simple flowing water stream through the forest
+  // Deep violet crystal channel
   const waterGeo = new THREE.PlaneGeometry(4, 15);
   waterMat = new THREE.MeshStandardMaterial({
-    color: 0x4da6e6,
-    roughness: 0.3,
-    metalness: 0.6,
-    emissive: 0x1a3a66,
-    emissiveIntensity: 0.1,
-    normalScale: new THREE.Vector2(0.5, 0.5),
+    color: 0x6600cc,
+    roughness: 0.05,
+    metalness: 0.9,
+    emissive: 0x4400aa,
+    emissiveIntensity: 0.4,
+    normalScale: new THREE.Vector2(0.3, 0.3),
   });
   const water = new THREE.Mesh(waterGeo, waterMat);
   water.rotation.x = -Math.PI / 2;
-  water.position.set(0, 0.01, 0); // Slightly above ground
+  water.position.set(0, 0.01, 0);
   water.receiveShadow = true;
   scene.add(water);
 
-  // Animation will be updated in main loop
   waterAnimStartTime = Date.now();
 }
 
 function buildForestTrees() {
-  // Create a forest of simple trees around the player
   const treePositions = [
     [-15, -8], [-20, 5], [-12, 18], [-25, 25],
     [15, -10], [22, 8], [18, 20], [28, 28],
@@ -529,37 +596,47 @@ function buildForestTrees() {
     [0, 30], [12, -28], [-22, 12],
   ];
 
-  treePositions.forEach(([x, z]) => {
-    const treeHeight = 12 + Math.random() * 6;
-    const trunkRadius = 0.6 + Math.random() * 0.4;
+  const treePalettes = [
+    { trunk: 0x1a0d33, foliage: 0x00b8b8 },
+    { trunk: 0x0d001a, foliage: 0x6600cc },
+    { trunk: 0x0a0a1a, foliage: 0x00ffcc },
+  ];
 
-    // Trunk
-    const trunkGeo = new THREE.CylinderGeometry(trunkRadius, trunkRadius * 1.2, treeHeight, 8);
+  treePositions.forEach(([x, z]) => {
+    const treeHeight = 10 + Math.random() * 5;
+    const scheme = treePalettes[Math.floor(Math.random() * treePalettes.length)];
+
+    // Trunk: 5-sided
+    const trunkGeo = new THREE.CylinderGeometry(0.3, 0.5, treeHeight, 5);
     const trunkMat = new THREE.MeshStandardMaterial({
-      color: new THREE.Color().setHSL(0.08, 0.5, 0.25),
-      roughness: 0.9,
+      color: scheme.trunk,
+      roughness: 0.95,
       metalness: 0.0,
+      flatShading: true,
     });
     const trunk = new THREE.Mesh(trunkGeo, trunkMat);
     trunk.position.set(x, treeHeight / 2, z);
     trunk.castShadow = true;
-    trunk.receiveShadow = true;
     scene.add(trunk);
 
-    // Foliage (simple cone for canopy)
-    const foliageGeo = new THREE.ConeGeometry(treeHeight * 0.6, treeHeight * 0.8, 12);
-    const foliageMat = new THREE.MeshStandardMaterial({
-      color: new THREE.Color().setHSL(0.35, 0.7, 0.35 + Math.random() * 0.1),
-      roughness: 0.7,
-      metalness: 0.0,
-      emissive: 0x1a3a1a,
-      emissiveIntensity: 0.1,
+    // Foliage: 3 stacked cones
+    [0.8, 0.55, 0.35].forEach((scale, tier) => {
+      const coneH = treeHeight * 0.55 * scale;
+      const coneR = treeHeight * 0.45 * scale;
+      const foliageGeo = new THREE.ConeGeometry(coneR, coneH, 6);
+      const foliageMat = new THREE.MeshStandardMaterial({
+        color: new THREE.Color(scheme.foliage).multiplyScalar(0.6 + tier * 0.2),
+        emissive: new THREE.Color(scheme.foliage),
+        emissiveIntensity: 0.05 + tier * 0.03,
+        roughness: 0.7,
+        metalness: 0.1,
+        flatShading: true,
+      });
+      const foliage = new THREE.Mesh(foliageGeo, foliageMat);
+      foliage.position.set(x, treeHeight * (0.5 + tier * 0.25), z);
+      foliage.castShadow = true;
+      scene.add(foliage);
     });
-    const foliage = new THREE.Mesh(foliageGeo, foliageMat);
-    foliage.position.set(x, treeHeight * 0.6, z);
-    foliage.castShadow = true;
-    foliage.receiveShadow = true;
-    scene.add(foliage);
   });
 }
 
@@ -821,7 +898,7 @@ function createLandingBurst(position) {
     // Create a temporary small sphere that fades and disappears
     const geo = new THREE.SphereGeometry(0.1, 4, 4);
     const mat = new THREE.MeshBasicMaterial({
-      color: 0x90ee90,
+      color: 0xcc44ff,
       transparent: true,
       opacity: 0.6,
     });
@@ -856,7 +933,7 @@ function createSprintTrail(position) {
 
     const geo = new THREE.SphereGeometry(0.05, 4, 4);
     const mat = new THREE.MeshBasicMaterial({
-      color: isSliding ? 0xffd700 : 0xffc700, // Gold for sprint, brighter gold for slide
+      color: isSliding ? 0x00ffcc : 0xcc44ff, // Cyan for slide, purple for sprint
       transparent: true,
       opacity: 0.5,
     });

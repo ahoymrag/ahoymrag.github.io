@@ -34,7 +34,7 @@ export function initParticles(scene) {
     sizeAttenuation: true,
     transparent: true,
     opacity: 0.15,
-    color: 0xffffff,
+    color: 0xdd88ff,
   });
 
   bokehParticles = new THREE.Points(bokehGeo, bokehMat);
@@ -47,16 +47,16 @@ export function initParticles(scene) {
   const colors = new Float32Array(PARTICLE_COUNT * 3);
   const sizes = new Float32Array(PARTICLE_COUNT);
 
-  // Warm earthy palette - like sunlight through leaves
+  // Nebula palette - cosmic night atmosphere
   const palette = [
-    new THREE.Color(0xf4e4c1), // Cream
-    new THREE.Color(0xe8d4a8), // Warm beige
-    new THREE.Color(0xd4af37), // Gold
-    new THREE.Color(0xffd700), // Golden
-    new THREE.Color(0xffc700), // Bright gold
-    new THREE.Color(0xf0e68c), // Khaki
-    new THREE.Color(0xffffcc), // Light yellow
-    new THREE.Color(0xfff8dc), // Cornsilk
+    new THREE.Color(0xcc44ff), // Violet
+    new THREE.Color(0xff44cc), // Magenta
+    new THREE.Color(0x44ccff), // Sky cyan
+    new THREE.Color(0x00ffaa), // Mint
+    new THREE.Color(0xff88dd), // Soft pink
+    new THREE.Color(0x8844ff), // Deep purple
+    new THREE.Color(0xffffff), // White star
+    new THREE.Color(0x44ffee), // Aqua teal
   ];
 
   for (let i = 0; i < PARTICLE_COUNT; i++) {
@@ -113,7 +113,7 @@ export function tickParticles(t) {
     posAttr.needsUpdate = true;
 
     // Pulsing opacity for ethereal effect
-    particleSystem.material.opacity = 0.5 + Math.sin(t * 0.7) * 0.15;
+    particleSystem.material.opacity = 0.45 + Math.sin(t * 0.7) * 0.2;
   }
 
   if (bokehParticles) {
