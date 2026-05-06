@@ -1,0 +1,118 @@
+{
+  "name": "Alex Gonzalez",
+  "title": "Systems Engineer | Infrastructure & Automation | Full-Stack Developer",
+  "contact": {
+    "phone": "(914) 391-9934",
+    "email": "alex@ahoy.ooo",
+    "portfolio": "alexgonzalez.ooo/share",
+    "websites": ["ahoy.ooo", "apeworx.io"]
+  },
+  "professional_summary": "Technical systems professional with a proven track record building and automating infrastructure across cloud, web, and application platforms. Experienced in API-driven automation, scripting-based provisioning, and transitioning teams from manual workflows to code-driven operations. Strong communicator with experience translating technical requirements into precise documentation and working cross-functionally with both engineering and non-technical stakeholders.",
+  "work_experience": [
+    {
+      "company": "Barnum School, Bridgeport Public Schools",
+      "years": "2025 - 2026",
+      "title": "STEM Specialist",
+      "description": "Full-time STEM Specialist serving approximately 150 students per day across grades 1–5. Designed and delivered hands-on STEM curriculum integrating science, technology, engineering, and math for early elementary learners at Barnum School."
+    },
+    {
+      "company": "The Montauk Wine Project",
+      "year": "2025",
+      "title": "Product Designer and Frontend Engineer",
+      "description": "Designed and built frontend systems and product interfaces; responsible for architecture decisions, deployment, and ongoing maintenance."
+    },
+    {
+      "company": "Silverback at ApeWorx, LTD",
+      "years": "2021 - 2025",
+      "title": "Product Designer & Systems Integrator",
+      "description": "Designed product systems and integrated APIs across a blockchain developer tooling platform. Built internal tooling, automated workflows, and contributed to documentation standards for a distributed engineering team."
+    },
+    {
+      "company": "Ahoy Indie Media",
+      "years": "2022 - Present",
+      "title": "Founder — Platform Engineering & Operations",
+      "description": "Architected and maintain a multi-platform media operation including web infrastructure, app deployment, and automated media pipelines. Responsible for all technical systems, performance monitoring, and incident resolution."
+    },
+    {
+      "company": "Mission Anabaino",
+      "year": "2023",
+      "title": "Executive Digital Platform Director",
+      "description": "Designed and deployed a standardized technology foundation for new church plants — including web, communications, and AV infrastructure — enabling consistent provisioning across multiple sites."
+    },
+    {
+      "company": "CPC New Haven",
+      "years": "2020 - Present",
+      "title": "AV Director",
+      "description": "Oversee all audiovisual systems including live production, streaming infrastructure, and hardware lifecycle management."
+    }
+  ],
+  "skills": [
+    "Cloud Infrastructure — AWS, Azure, Wasabi (storage provisioning, access management, lifecycle policies)",
+    "Infrastructure as Code (IaC) — API-driven provisioning, scripting-based automation, eliminating manual toil",
+    "Python — automation scripts, internal tooling, API integrations, data pipeline automation",
+    "Shell scripting & PowerShell — system administration, scheduled tasks, workflow automation",
+    "REST API design and integration — building and consuming APIs for platform and infrastructure automation",
+    "Git version control — collaborative development workflows, branching strategies, code review",
+    "Linux/Unix systems — configuration management, security hardening, performance tuning",
+    "Virtualization concepts — VM lifecycle, containerization, Red Hat OpenShift exposure",
+    "Performance monitoring & troubleshooting — diagnosing infrastructure issues, vendor escalation",
+    "Technical documentation — writing precise specs, runbooks, architecture diagrams, and SOPs",
+    "Data workflow design — automating pipelines between storage, compute, and application layers",
+    "Web & App Development (HTML, CSS, JavaScript, Alpine.js, Cordova)",
+    "UI/UX Design (Figma, responsive design, component systems)",
+    "Software Programming (OOP, Python, Objective-C)"
+  ],
+  "teaching_experience": [
+    {
+      "institution": "Barnum School, Bridgeport Public Schools",
+      "years": "2025 - 2026",
+      "courses_taught": ["STEM (Grades 1–5)", "Technology Integration", "Engineering Design Process"]
+    },
+    {
+      "institution": "Choate Rosemary Hall, Wallingford, CT",
+      "year": "2023",
+      "courses_taught": ["Digital Filmmaking II", "Digital Photography I", "Digital Photography II"]
+    },
+    {
+      "institution": "SUNY New Paltz, New Paltz, NY",
+      "years": "2019 - 2021",
+      "courses_taught": ["Digital Filmmaking II", "Digital Photography I", "Digital Photography II"]
+    },
+    {
+      "institution": "Wilton Library - Maker Program, Wilton, CT",
+      "year": "2019",
+      "courses_taught": ["VR World Building"]
+    },
+    {
+      "institution": "Jacob Burns Film Center, Pleasantville, NY",
+      "years": "2017 - 2019",
+      "courses_taught": ["Adventures in Media", "Immersive Storytelling", "Podcast People", "Camera Tricks"]
+    }
+  ],
+  "recent_projects": {
+    "technical": [
+      {
+        "title": "Platform Engineer",
+        "project": "Ahoy Indie Media App Platform (2025)",
+        "description": "Architected and launched a multi-platform media app with automated content pipelines and live-show infrastructure."
+      },
+      {
+        "title": "API Integrations & Internal Tooling",
+        "project": "Silverback / ApeWorx (2021 - 2025)",
+        "description": "Built automation scripts and API integrations for a blockchain developer tools platform used by engineering teams globally."
+      },
+      {
+        "title": "Multi-site Technology Deployment",
+        "project": "Mission Anabaino (2023)",
+        "description": "Standardized and provisioned technology stacks across multiple sites — web, comms, AV — using repeatable deployment patterns."
+      }
+    ]
+  },
+  "achievements": [
+    "Launched Ahoy Indie Media App Platform and Debuted a Live Variety Show (2025)",
+    "Winner of 2022 - ETH DENVER Vega HACKATHON",
+    "Creative-in-Residence, New Haven Public Library (2018)",
+    "Maker-in-Residence, Ridgefield Library (2018)",
+    "Middlebury Film Festival Acceptance - Beyond the Mountain (VR Film, 2017)"
+  ]
+}

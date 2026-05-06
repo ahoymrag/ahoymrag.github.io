@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Alex Gonzalez Resume</title>
+        <meta name="description"
+            content="This is the resume of Alex Gonzalez, a professional with diverse experience." />
+        <meta name="keywords"
+            content="Alex Gonzalez, Resume, Professional Experience, Education, Skills" />
+        <meta name="author" content="Alex Gonzalez" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Include jsPDF from a CDN -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"></script>
+
+        <!-- Inline CSS -->
+        <style>
+    @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+    * {
+      color: black;
+    }
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    ul,
+    li,
+    a {
+      margin: 0;
+      padding: 0;
+      text-decoration: none;
+      font-family: "Open Sans", sans-serif;
+    }
+    body {
+      font-size: 12px;
+      color: #333;
+      background-color: #fff;
+      padding: 24px;
+    }
+    .container {
+      border: 1px solid #ddd;
+      padding: 24px;
+      background: #fff;
+      max-width: 8.5in;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      font-size: 52px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      line-height: 95%;
+      color: black;
+    }
+    h2 {
+      font-size: 24px;
+      font-weight: 700;
+      color: #000000;
+      margin-bottom: 5px;
+    }
+    .bio-subheader {
+      line-height: 95%;
+      font-size: 32px;
+      text-align: left;
+      font-weight: 400; /* or whichever weight you prefer */
+    }
+    .section {
+      margin-bottom: 20px;
+    }
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    ul li {
+      margin-bottom: 5px;
+      padding-left: 20px;
+      position: relative;
+    }
+    ul li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: #bbb;
+    }
+    .position,
+    .company,
+    .year,
+    .degree,
+    .major,
+    .school,
+    .graduation-date,
+    .title,
+    .institution,
+    .role,
+    .project {
+      font-weight: bold;
+    }
+    #print {
+      background-color: black;
+      color: #ffffff;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-style: solid;
+      border-color: black;
+      cursor: pointer;
+      margin-top: 20px;
+      transition: background-color 0.3s ease;
+    }
+    #print:hover {
+      background-color: #ffffff;
+      color: black;
+    }
+    @media print {
+      body,
+      .container {
+        box-shadow: none;
+      }
+      #print {
+        display: none;
+      }
+      .home-button-link {
+        display: none;
+      }
+    }
+    .home-button-wrap {
+      width: 100%;
+      height: 100px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background-color: rgba(127, 28, 28, 0);
+    }
+    .home-button-link {
+      font-family: "Open Sans";
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #ffffffeb;
+      width: 100px;
+      height: 50px;
+      text-align: center;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #333;
+    }
+    .home-button-link:hover {
+      color: #ff0060;
+    }
+  </style>
+    </head>
+
+    <body>
+        <div id="resume" class="container"></div>
+        <div class="home-button-wrap">
+            <button id="print">Print as PDF</button>
+            <a href="/" class="home-button-link">Home</a>
+        </div>
+
+        <!-- Inline JSON data as a JS variable -->
+        <script>
+    const resumeData = {
+      "name": "Alex Gonzalez",
+      "title": "Creative Director | Filmmaker | Software Designer",
+      "contact": {
+        "phone": "(914) 391-9934",
+        "email": "alex@ahoy.ooo",
+        "portfolio": "alexgonzalez.ooo/share",
+        "websites": ["ahoy.ooo", "apeworx.io", "cpcnewhaven.org"]
+      },
+      "professional_summary": "A multidisciplinary professional with a background in film production, software design, and business. Proven ability to lead creative teams, mentor students, and deliver long-term projects in innovative and technical fields.",
+      "work_experience": [
+        {
+          "company": "The Montauk Wine Project",
+          "year": "2025",
+          "title": "Product Designer and Frontend Engineer"
+        },
+        {
+          "company": "Silverback at ApeWorx, LTD",
+          "years": "2021 - 2025",
+          "title": "Product Designer"
+        },
+        {
+          "company": "Mission Anabaino",
+          "year": "2023",
+          "title": "Executive Digital Platform Director",
+          "description": "Created a system for new church plants to have a base-level foundation of technology."
+        },
+        {
+          "company": "ApeWorx",
+          "years": "2022 - 2023",
+          "title": "Product Designer"
+        },
+        {
+          "company": "ApeWorx",
+          "years": "2021 - 2022",
+          "title": "Creative Director"
+        },
+        {
+          "company": "Ahoy Indie Media",
+          "years": "2022 - Present",
+          "title": "Founder and Chief"
+        },
+        {
+          "company": "Choate Rosemary",
+          "year": "2023",
+          "title": "Adjunct Film Professor",
+          "description": "Taught undergraduate preparatory courses in Film Studies and Digital Photography."
+        },
+        {
+          "company": "CPC New Haven",
+          "years": "2020 - Present",
+          "title": "AV Director",
+          "description": "Oversaw the audiovisual department."
+        }
+      ],
+      "teaching_experience": [
+        {
+          "institution": "Choate Rosemary Hall, Wallingford, CT",
+          "year": "2023",
+          "courses_taught": ["Digital Filmmaking II", "Digital Photography I", "Digital Photography II"]
+        },
+        {
+          "institution": "SUNY New Paltz, New Paltz, NY",
+          "years": "2019 - 2021",
+          "courses_taught": ["Digital Filmmaking II", "Digital Photography I", "Digital Photography II"]
+        },
+        {
+          "institution": "Wilton Library - Maker Program, Wilton, CT",
+          "year": "2019",
+          "courses_taught": ["VR World Building"]
+        },
+        {
+          "institution": "Workspace Academy, Bethel, CT",
+          "year": "2019",
+          "courses_taught": ["Immersive Storytelling", "VR Production"]
+        },
+        {
+          "institution": "New Haven Ives Squared - Maker Program, New Haven, CT",
+          "year": "2018",
+          "courses_taught": ["Immersive Storytelling", "VR World Building"]
+        },
+        {
+          "institution": "Jacob Burns Film Center, Pleasantville, NY",
+          "years": "2017 - 2019",
+          "courses_taught": ["Adventures in Media", "Immersive Storytelling", "Podcast People", "Camera Tricks"]
+        },
+        {
+          "institution": "Ridgefield Library, Ridgefield, CT",
+          "year": "2018",
+          "courses_taught": ["Making Magic from Scratch", "Immersive Storytelling"]
+        },
+        {
+          "institution": "Yonkers Public Library, Yonkers, NY",
+          "years": "2017 - 2018",
+          "courses_taught": ["Making Magic from Scratch"]
+        },
+        {
+          "institution": "Coding Kidz, NY, NY",
+          "years": "2016 - 2017",
+          "courses_taught": ["Making Magic from Scratch"]
+        },
+        {
+          "institution": "Tarrytown Summer Challenge Camp, Tarrytown, NY",
+          "years": "2015 - 2018",
+          "courses_taught": ["Making Magic from Scratch"]
+        }
+      ],
+      "recent_projects": {
+        "filmmaking": [
+          {
+            "title": "Editor and Colorist",
+            "project": "Dallas (2025)",
+            "company": "Childlike Studios"
+          },
+          {
+            "title": "Editor and Media Director",
+            "project": "Ahoy Indie Media Live Shows (2025)"
+          },
+          {
+            "title": "Producer | Director | Editor",
+            "project": "The Rob Show (2022 - 2025)"
+          },
+          {
+            "title": "Director | Editor",
+            "project": "Silverback Trailer (2023)"
+          },
+          {
+            "title": "Director | Editor",
+            "project": "Pantalones Cinematic Skatefilm Opening (2023)"
+          },
+          {
+            "title": "Director | Editor",
+            "project": "ChaosNet Trailer (2023)"
+          }
+        ]
+      },
+      "skills": [
+        "Creating Custom GPTs using Advanced AI APIs",
+        "Developing Python applications integrated with open-source AI models",
+        "Bulk video editing automation",
+        "Index creation and data monitoring",
+        "Virtual Reality Development (Unreal Engine 4 & 5, APK Development for Oculus Quest & Android)",
+        "Film & Video Production (Adobe Premiere Pro, DaVinci Resolve, After Effects, Dragon Capture)",
+        "Web & App Development (HTML, CSS, JavaScript, Cordova, Alpine.js, Git Version Control)",
+        "Software Programming (OOP, Objective-C, Python for UI apps and internal systems)",
+        "UI/UX Design (Responsive design, various CSS & JS frameworks, Figma)",
+        "Business & Marketing (Writing business plans, campaign strategies)",
+        "Problem-Solving (Troubleshooting, debugging, performance optimization, web security)",
+        "Team Collaboration (Remote and in-person leadership for creative & technical projects)"
+      ],
+      "achievements": [
+        "Launched Ahoy Indie Media App Platform and Debuted a Live Variety Show (2025)",
+        "Winner of 2022 - ETH DENVER Vega HACKATHON",
+        "Creative-in-Residence, New Haven Public Library (2018)",
+        "Maker-in-Residence, Ridgefield Library (2018)",
+        "Creative Culture Fellowship, Creative Culture Program - Jacob Burns (2017)",
+        "Middlebury Film Festival Acceptance - Beyond the Mountain (VR Film, 2017)"
+      ],
+
+    };
+  </script>
+
+        <!-- Main JS that builds the resume dynamically -->
+        <script>
+    // Populate resume
+    (function () {
+      var resume = resumeData; // data from the inline JSON
+      var resumeDiv = document.getElementById("resume");
+
+      // Name and title
+      resumeDiv.innerHTML += `<h1>${resume.name}</h1>`;
+      resumeDiv.innerHTML += `<h2 class="bio-subheader">${resume.title}</h2>`;
+
+      // Contact
+      resumeDiv.innerHTML += `
+        <div class="section">
+            <br>
+          <h2>Contact</h2>
+          <ul>
+            <li>Phone: ${resume.contact.phone}</li>
+            <li>Email: ${resume.contact.email}</li>
+            <li>Portfolio: ${resume.contact.portfolio}</li>
+          </ul>
+        </div>`;
+
+      // Professional Summary
+      resumeDiv.innerHTML += `
+        <div class="section">
+          <h2>Professional Summary</h2>
+          <p>${resume.professional_summary}</p>
+        </div>`;
+
+      // Work Experience
+      if (resume.work_experience) {
+        let workHTML = resume.work_experience.map((job) => {
+          // Some entries might have 'year' or 'years' property. We'll unify below.
+          const yearString = job.year
+            ? job.year
+            : job.years
+            ? job.years
+            : "";
+          const description = job.description ? `: ${job.description}` : "";
+          return `
+            <li>
+              <span class="position">${job.title}</span> at 
+              <span class="company">${job.company}</span> 
+              (<span class="year">${yearString}</span>)${description}
+            </li>`;
+        }).join("");
+
+        resumeDiv.innerHTML += `
+          <div class="section">
+            <h2>Work Experience</h2>
+            <ul>${workHTML}</ul>
+          </div>`;
+      }
+
+      // Education (If not provided in your original JSON, remove or adjust accordingly)
+      if (resume.education) {
+        let eduHTML = resume.education.map((edu) =>
+          `<li>
+            <span class="degree">${edu.degree}</span> in 
+            <span class="major">${edu.major}</span> from 
+            <span class="school">${edu.school}</span> 
+            (Graduated: <span class="graduation-date">${edu.graduation_date}</span>)
+          </li>`
+        ).join("");
+
+        resumeDiv.innerHTML += `
+          <div class="section">
+            <h2>Education</h2>
+            <ul>${eduHTML}</ul>
+          </div>`;
+      }
+
+      // Teaching Experience
+      if (resume.teaching_experience) {
+        let teachHTML = resume.teaching_experience.map((teach) => {
+          // Some have `year`, some have `years`. We'll show whichever is available:
+          const time = teach.year ? teach.year : (teach.years || "");
+          const location = teach.location ? `, ${teach.location}` : "";
+          const courses = teach.courses_taught.join(", ");
+          return `
+            <li>
+              <span class="title">${teach.title || ""}</span> at 
+              <span class="institution">${teach.institution}</span>
+              ${location} (${time}). Courses Taught: ${courses}
+            </li>`;
+        }).join("");
+
+        resumeDiv.innerHTML += `
+          <div class="section">
+            <h2>Teaching Experience</h2>
+            <ul>${teachHTML}</ul>
+          </div>`;
+      }
+
+      // Recent Projects (Filmmaking, etc.) 
+      if (resume.recent_projects && resume.recent_projects.filmmaking) {
+        const filmProjects = resume.recent_projects.filmmaking.map((proj) => {
+          const company = proj.company ? `, ${proj.company}` : "";
+          return `
+            <li>
+              <span class="title">${proj.title}</span> 
+              for <span class="project">${proj.project}</span>${company}
+            </li>`;
+        }).join("");
+
+        resumeDiv.innerHTML += `
+          <div class="section">
+            <h2>Recent Filmmaking Projects</h2>
+            <ul>${filmProjects}</ul>
+          </div>`;
+      }
+
+      // Skills
+      if (resume.skills) {
+        let skillsHTML = resume.skills.map((skill) => `<li>${skill}</li>`).join("");
+        resumeDiv.innerHTML += `
+          <div class="section">
+            <h2>Tangiable Skills</h2>
+            <ul>${skillsHTML}</ul>
+          </div>`;
+      }
+
+      // Achievements
+      if (resume.achievements) {
+        let achieveHTML = resume.achievements.map((ach) => `<li>${ach}</li>`).join("");
+        resumeDiv.innerHTML += `
+          <div class="section">
+            <h2>Selected Achievements</h2>
+            <ul>${achieveHTML}</ul>
+          </div>`;
+      }
+
+      // References
+      if (resume.references) {
+        let refsHTML = resume.references.map((ref) =>
+          `<li>${ref.name}, ${ref.title} at ${ref.company}</li>`
+        ).join("");
+        resumeDiv.innerHTML += `
+          <div class="section">
+            <h2>References</h2>
+            <ul>${refsHTML}</ul>
+          </div>`;
+      }
+
+      // If there's a cover_letter property with a 'letter' text, show it:
+      if (resume.cover_letter && resume.cover_letter.letter) {
+        const coverLetter = resume.cover_letter.letter.replace(/\n/g, "<br />");
+        resumeDiv.innerHTML += `
+          <div class="section">
+            <h2>Cover Letter</h2>
+            <p>${coverLetter}</p>
+          </div>`;
+      }
+    })();
+
+    // Print to PDF handler
+    document.getElementById("print").addEventListener("click", function () {
+      // Same CSS block we used in <style>, minus the external @import
+      var css = `
+        * {
+          color: black;
+        }
+        body, h1, h2, h3, h4, h5, h6, p, ul, li, a {
+          margin: 0;
+          padding: 0;
+          text-decoration: none;
+        }
+        body {
+          font-family: "Open Sans", sans-serif;
+          font-size: 12px;
+          color: #333;
+          background-color: #fff;
+          padding: 24px;
+        }
+        .container {
+          border: 1px solid #ddd;
+          padding: 24px;
+          background: #fff;
+          max-width: 8.5in;
+          margin: auto;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+          font-size: 52px;
+          font-weight: 700;
+          margin-bottom: 10px;
+          line-height: 95%;
+          color: black;
+        }
+        h2 {
+          font-size: 24px;
+          font-weight: 700;
+          color: #000000;
+          margin-bottom: 5px;
+        }
+        .bio-subheader {
+          line-height: 95%;
+          font-size: 32px;
+          text-align: left;
+          font-weight: 400;
+        }
+        .section {
+          margin-bottom: 20px;
+        }
+        ul {
+          list-style-type: none;
+          padding-left: 0;
+        }
+        ul li {
+          margin-bottom: 5px;
+          padding-left: 20px;
+          position: relative;
+        }
+        ul li::before {
+          content: "•";
+          position: absolute;
+          left: 0;
+          color: #bbb;
+        }
+        .position,
+        .company,
+        .year,
+        .degree,
+        .major,
+        .school,
+        .graduation-date,
+        .title,
+        .institution,
+        .role,
+        .project {
+          font-weight: bold;
+        }
+        #download {
+          background-color: black;
+          color: #ffffff;
+          padding: 10px 20px;
+          font-size: 16px;
+          border-style: solid;
+          border-color: black;
+          cursor: pointer;
+          margin-top: 20px;
+          transition: background-color 0.3s ease;
+        }
+        #download:hover {
+          background-color: #ffffff;
+          color: black;
+        }
+        @media print {
+          body,
+          .container {
+            box-shadow: none;
+          }
+          #download {
+            display: none;
+          }
+        }
+      `;
+
+      var html = '<style>' + css + '</style>';
+      html += document.getElementById("resume").innerHTML;
+
+      // Use jsPDF to convert to PDF
+      var doc = new jsPDF();
+      // Note: fromHTML is older and may not perfectly capture complex styling.
+      // For a more robust approach, consider html2canvas + jsPDF or other libraries.
+      doc.fromHTML(html, 15, 15, {
+        width: 170
+      });
+      doc.save("Alex Gonzalez - 2025 CV.pdf");
+    });
+  </script>
+    </body>
+</html>
