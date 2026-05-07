@@ -59,31 +59,157 @@
 
 <body id="index-body" x-data="{ code: '', showMenu: false }">
 
-    <!-- LANDING CHOICE SCREEN -->
-    <div id="landing-choice" style="position:fixed;inset:0;z-index:99999;display:flex;align-items:center;justify-content:center;background:rgba(10,15,10,0.97);backdrop-filter:blur(8px);">
-        <div style="display:flex;flex-direction:column;align-items:center;gap:2rem;padding:3rem 4rem;border:1px solid rgba(150,220,100,0.25);border-radius:16px;background:rgba(20,35,20,0.9);box-shadow:0 8px 48px rgba(0,0,0,0.5);text-align:center;font-family:monospace;">
-            <h1 style="color:#e8f5e0;font-size:2rem;margin:0;letter-spacing:0.05em;">Alex Gonzalez</h1>
-            <p style="color:rgba(200,240,160,0.6);margin:0;font-size:0.9rem;">Choose your experience</p>
-            <div style="display:flex;gap:1.5rem;flex-wrap:wrap;justify-content:center;margin-top:0.5rem;">
-                <button onclick="chooseFPS()" style="padding:1rem 2rem;background:rgba(80,180,60,0.15);border:1.5px solid rgba(100,200,80,0.5);color:#a8e88a;border-radius:8px;font-family:monospace;font-size:1rem;cursor:pointer;transition:all 0.2s;letter-spacing:0.05em;" onmouseover="this.style.background='rgba(80,180,60,0.3)'" onmouseout="this.style.background='rgba(80,180,60,0.15)'">
-                    &#x25B6; 3D World
-                    <br><span style="font-size:0.7rem;opacity:0.6;">Explore the forest</span>
-                </button>
-                <button onclick="chooseStandard()" style="padding:1rem 2rem;background:rgba(200,200,200,0.08);border:1.5px solid rgba(200,200,200,0.2);color:#d0d0d0;border-radius:8px;font-family:monospace;font-size:1rem;cursor:pointer;transition:all 0.2s;letter-spacing:0.05em;" onmouseover="this.style.background='rgba(200,200,200,0.18)'" onmouseout="this.style.background='rgba(200,200,200,0.08)'">
-                    &#x25A1; Standard
-                    <br><span style="font-size:0.7rem;opacity:0.6;">Portfolio &amp; links</span>
-                </button>
-            </div>
-        </div>
-    </div>
-    <script>
-        function chooseFPS() {
-            document.getElementById('landing-choice').style.display = 'none';
-            const fpsRoot = document.getElementById('fps-world-root');
-            fpsRoot.style.display = 'block';
+    <!-- WELCOME SCREEN -->
+    <style>
+        #welcome-screen {
+            position: fixed;
+            inset: 0;
+            z-index: 99999;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: #080c08;
+            font-family: 'Inter', 'Helvetica Neue', sans-serif;
+            padding: 2rem;
+            opacity: 1;
+            transition: opacity 0.4s ease;
         }
+        #welcome-screen.fade-out {
+            opacity: 0;
+            pointer-events: none;
+        }
+        .welcome-name {
+            font-size: clamp(2.2rem, 6vw, 4rem);
+            font-weight: 700;
+            color: #fff;
+            letter-spacing: -0.03em;
+            margin: 0 0 0.4rem 0;
+            text-align: center;
+        }
+        .welcome-tagline {
+            font-size: 0.95rem;
+            color: rgba(255,255,255,0.35);
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            margin: 0 0 3.5rem 0;
+            text-align: center;
+        }
+        .welcome-cards {
+            display: flex;
+            gap: 1.25rem;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100%;
+            max-width: 680px;
+        }
+        .welcome-card {
+            flex: 1;
+            min-width: 240px;
+            max-width: 300px;
+            padding: 2rem 1.75rem;
+            border-radius: 12px;
+            cursor: pointer;
+            text-align: left;
+            border: 1px solid transparent;
+            transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+            background: none;
+            color: inherit;
+        }
+        .welcome-card:hover {
+            transform: translateY(-3px);
+        }
+        .welcome-card-3d {
+            background: rgba(80,160,60,0.08);
+            border-color: rgba(100,200,80,0.3);
+        }
+        .welcome-card-3d:hover {
+            background: rgba(80,160,60,0.16);
+            border-color: rgba(100,200,80,0.6);
+        }
+        .welcome-card-standard {
+            background: rgba(255,255,255,0.04);
+            border-color: rgba(255,255,255,0.12);
+        }
+        .welcome-card-standard:hover {
+            background: rgba(255,255,255,0.09);
+            border-color: rgba(255,255,255,0.28);
+        }
+        .welcome-card-icon {
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+        .welcome-card-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #fff;
+            margin: 0 0 0.4rem 0;
+        }
+        .welcome-card-desc {
+            font-size: 0.82rem;
+            color: rgba(255,255,255,0.4);
+            line-height: 1.5;
+            margin: 0;
+        }
+        .welcome-card-3d .welcome-card-title { color: #90e070; }
+        .welcome-skip {
+            margin-top: 2.5rem;
+            font-size: 0.75rem;
+            color: rgba(255,255,255,0.18);
+            cursor: pointer;
+            background: none;
+            border: none;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+        .welcome-skip:hover { color: rgba(255,255,255,0.4); }
+    </style>
+
+    <div id="welcome-screen">
+        <h1 class="welcome-name">Alex Gonzalez</h1>
+        <p class="welcome-tagline">Choose your experience</p>
+        <div class="welcome-cards">
+            <button class="welcome-card welcome-card-3d" onclick="chooseFPS()">
+                <span class="welcome-card-icon">🌲</span>
+                <div class="welcome-card-title">Immersive 3D</div>
+                <p class="welcome-card-desc">Explore a 3D world. Walk through the forest, discover portals to projects and work.</p>
+            </button>
+            <button class="welcome-card welcome-card-standard" onclick="chooseStandard()">
+                <span class="welcome-card-icon">◻</span>
+                <div class="welcome-card-title">Traditional</div>
+                <p class="welcome-card-desc">Classic portfolio layout. Navigate directly to work, CV, photography, and more.</p>
+            </button>
+        </div>
+        <button class="welcome-skip" onclick="chooseStandard()">skip →</button>
+    </div>
+
+    <script>
+        (function () {
+            var seen = sessionStorage.getItem('ag-welcome-seen');
+            if (seen) {
+                document.getElementById('welcome-screen').style.display = 'none';
+            }
+        })();
+
+        function dismissWelcome(cb) {
+            sessionStorage.setItem('ag-welcome-seen', '1');
+            var el = document.getElementById('welcome-screen');
+            el.classList.add('fade-out');
+            setTimeout(function () {
+                el.style.display = 'none';
+                if (cb) cb();
+            }, 400);
+        }
+
+        function chooseFPS() {
+            dismissWelcome(function () {
+                document.getElementById('fps-world-root').style.display = 'block';
+            });
+        }
+
         function chooseStandard() {
-            document.getElementById('landing-choice').style.display = 'none';
+            dismissWelcome();
         }
     </script>
 
