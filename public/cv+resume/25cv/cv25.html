@@ -1,326 +1,95 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Alex Gonzalez Resume</title>
-        <meta
-            name="description"
-            content="This is the resume of Alex Gonzalez, a professional with diverse experience." />
-        <meta
-            name="keywords"
-            content="Alex Gonzalez, Resume, Professional Experience, Education, Skills" />
-        <meta name="author" content="Alex Gonzalez" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link
-            rel="icon"
-            type="image/png"
-            href="../../src/assets/AlexGonzalez-favicon.png" />
-        <link rel="stylesheet" href="./cv25.css" />
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"></script>
-    </head>
-    <body>
-        <div id="resume" class="container"></div>
-        <div class="home-button-wrap">
-            <button id="print">Print as PDF</button>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alex Gonzalez — CV 2025</title>
+  <meta name="description" content="CV for Alex Gonzalez — Creative Director, Filmmaker, Software Designer." />
+  <meta name="author" content="Alex Gonzalez" />
+  <link rel="icon" type="image/png" href="../../src/assets/AlexGonzalez-favicon.png" />
+  <link rel="stylesheet" href="./cv25.css" />
+</head>
+<body>
 
-            <a href="/" class="home-button-link">Home</a>
-        </div>
+  <div class="no-print">
+    <button onclick="window.print()">Print / Save as PDF</button>
+    <a href="/public/cv+resume/cv-index.html">← All CVs</a>
+    <a href="/">Home</a>
+  </div>
 
-        <script>
-      fetch("./cv25.json")
-        .then((response) => response.json())
-        .then((resume) => {
-          var resumeDiv = document.getElementById("resume");
+  <div id="resume" class="container"></div>
 
-          // Name and title
-          resumeDiv.innerHTML += `<h1>${resume.name}</h1>`;
-          resumeDiv.innerHTML += `<h2 class="bio-subheader">${resume.title}</h2>`;
-          // Contact
-          resumeDiv.innerHTML += `<div class="section">
-                  <h2>Contact</h2>
-                  <ul>
-                      <li>Phone: ${resume.contact.phone}</li>
-                      <li>Email: ${resume.contact.email}</li>
-                      <li>Portfolio: ${resume.contact.portfolio}</li>
-                  </ul>
-              </div>`;
+  <div class="no-print" style="margin-bottom:2rem;">
+    <a href="/public/cv+resume/cv-index.html">← All CVs</a>
+    <a href="/">Home</a>
+  </div>
 
-          // Professional Summary
-          resumeDiv.innerHTML += `<div class="section">
-                  <h2>Professional Summary</h2>
-                  <p>${resume.professional_summary}</p>
-              </div>`;
+  <script>
+    fetch("./cv25.json")
+      .then(r => r.json())
+      .then(cv => {
+        const el = document.getElementById("resume");
 
-          // Work Experience
-          var workExperienceHTML = resume.work_experience
-            .map(
-              (job) =>
-                `<li><span class="position">${job.title}</span> at <span class="company">${job.company}</span> (<span class="year">${job.year}</span>): ${job.description}</li>`
-            )
-            .join("");
-          resumeDiv.innerHTML += `<div class="section">
-                  <h2>Work Experience</h2>
-                  <ul>${workExperienceHTML}</ul>
-              </div>`;
-
-          // Education
-          var educationHTML = resume.education
-            .map(
-              (edu) =>
-                `<li><span class="degree">${edu.degree}</span> in <span class="major">${edu.major}</span> from <span class="school">${edu.school}</span> (Graduated: <span class="graduation-date">${edu.graduation_date}</span>)</li>`
-            )
-            .join("");
-          resumeDiv.innerHTML += `<div class="section">
-              <h2>Education</h2>
-              <ul>${educationHTML}</ul>
+        // Header
+        el.innerHTML += `
+          <div class="cv-header">
+            <h1>${cv.name}</h1>
+            <div class="cv-title">${cv.title}</div>
+            <div class="cv-contact">
+              <span>${cv.contact.phone}</span>
+              <span>${cv.contact.email}</span>
+              <span>${cv.contact.portfolio}</span>
+            </div>
           </div>`;
 
-          // Teaching Experience
-          var teachingExperienceHTML = resume.teaching_experience
-            .map(
-              (teach) =>
-                `<li><span class="title">${
-                  teach.title
-                }</span> at <span class="institution">${
-                  teach.institution
-                }</span>, ${teach.location} (${
-                  teach.year
-                }). Courses Taught: ${teach.courses_taught.join(", ")}</li>`
-            )
-            .join("");
-          resumeDiv.innerHTML += `<div class="section">
-              <h2>Teaching Experience</h2>
-              <ul>${teachingExperienceHTML}</ul>
+        // Summary
+        el.innerHTML += `
+          <div class="section">
+            <h2>Professional Summary</h2>
+            <p>${cv.professional_summary}</p>
           </div>`;
 
-          // Recent VR and Filmmaking Experience
-          var vrFilmMakingExperienceHTML =
-            resume.recent_vr_and_film_making_experience
-              .map(
-                (exp) =>
-                  `<li><span class="role">${exp.role}</span> for <span class="project">${exp.project}</span> (${exp.year})</li>`
-              )
-              .join("");
-          resumeDiv.innerHTML += `<div class="section">
-              <h2>Recent VR and Filmmaking Experience</h2>
-              <ul>${vrFilmMakingExperienceHTML}</ul>
-          </div>`;
+        // Work Experience
+        const workHTML = cv.work_experience.map(job => `
+          <div class="entry">
+            <div class="entry-header">
+              <div>
+                <span class="entry-title">${job.title}</span>
+                <span class="entry-company"> — ${job.company}</span>
+              </div>
+              <span class="entry-date">${job.years || job.year || ''}</span>
+            </div>
+            ${job.description ? `<div class="entry-desc">${job.description}</div>` : ''}
+          </div>`).join('');
+        el.innerHTML += `<div class="section"><h2>Work Experience</h2>${workHTML}</div>`;
 
-          // Tangible Skills
-          var tangibleSkillsHTML = resume.tangible_skills
-            .map((skill) => `<li>${skill}</li>`)
-            .join("");
-          resumeDiv.innerHTML += `<div class="section">
-              <h2>Tangible Skills</h2>
-              <ul>${tangibleSkillsHTML}</ul>
-          </div>`;
+        // Teaching Experience
+        const teachHTML = cv.teaching_experience.map(t => `
+          <div class="entry">
+            <div class="entry-header">
+              <span class="entry-title">${t.institution}</span>
+              <span class="entry-date">${t.years || t.year || ''}</span>
+            </div>
+            <div class="entry-desc">${t.courses_taught.join(', ')}</div>
+          </div>`).join('');
+        el.innerHTML += `<div class="section"><h2>Teaching Experience</h2>${teachHTML}</div>`;
 
-          // Selected Achievements
-          var selectedAchievementsHTML = resume.selected_achievements
-            .map((achieve) => `<li>${achieve}</li>`)
-            .join("");
-          resumeDiv.innerHTML += `<div class="section">
-              <h2>Selected Achievements</h2>
-              <ul>${selectedAchievementsHTML}</ul>
-          </div>`;
+        // Recent Projects
+        if (cv.recent_projects && cv.recent_projects.filmmaking) {
+          const projHTML = cv.recent_projects.filmmaking.map(p => `
+            <li><span style="font-weight:600">${p.title}</span> — ${p.project}${p.company ? ` (${p.company})` : ''}</li>`
+          ).join('');
+          el.innerHTML += `<div class="section"><h2>Recent Projects</h2><ul>${projHTML}</ul></div>`;
+        }
 
-          // Additional Information
-          var additionalInformationHTML = Object.entries(
-            resume.additional_information
-          )
-            .map(
-              ([key, value]) =>
-                `<li>${
-                  key.charAt(0).toUpperCase() + key.slice(1)
-                }: ${value}</li>`
-            )
-            .join("");
-          resumeDiv.innerHTML += `<div class="section">
-              <h2>Additional Information</h2>
-              <ul>${additionalInformationHTML}</ul>
-          </div>`;
+        // Skills
+        const skillsHTML = cv.skills.map(s => `<span class="skill-tag">${s}</span>`).join('');
+        el.innerHTML += `<div class="section"><h2>Skills</h2><div class="skills-list">${skillsHTML}</div></div>`;
 
-          // Cover Letter
-          var coverLetter = resume.cover_letter.letter.replace(/\n/g, "<br />");
-          resumeDiv.innerHTML += `<div class="section">
-              <h2>Cover Letter</h2>
-              <p>${coverLetter}</p>
-          </div>`;
-        });
-    </script>
-        <!-- PRINT TO PDF -->
-
-        <script>
-  document.getElementById("print").addEventListener("click", function () {
-    var css = `
-    /* ag-cv.css */
-
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
-
-
-* {
-  color: black;
-}
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul,
-li,
-a {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-}
-
-body {
-  font-family: "Open Sans", sans-serif;
-  font-size: 12px;
-  color: #333;
-  background-color: #fff;
-  padding: 24px;
-}
-
-.container {
-  border: 1px solid #ddd;
-  padding: 24px;
-  background: #fff;
-  max-width: 8.5in;
-  margin: auto;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-h1 {
-  font-size: 52px;
-  font-weight: 700;
-  margin-bottom: 10px;
-  line-height: 95%;
-  color: black;
-}
-
-h2 {
-  font-size: 24px;
-  font-weight: 400;
-  color: #000000;
-  margin-bottom: 5px;
-}
-
-.bio-subheader {
-
-  line-height: 95%;
-  font-size: 32px;
-  text-align: left;
-}
-
-.section {
-  margin-bottom: 20px;
-}
-
-ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-ul li {
-  margin-bottom: 5px;
-  padding-left: 20px;
-  position: relative;
-}
-
-ul li::before {
-  content: "•";
-  position: absolute;
-  left: 0;
-  color: #bbb;
-}
-
-.position,
-.company,
-.year,
-.degree,
-.major,
-.school,
-.graduation-date,
-.title,
-.institution,
-.role,
-.project {
-  font-weight: bold;
-}
-
-#download {
-  background-color: black;
-  color: #ffffff;
-  padding: 10px 20px;
-  font-size: 16px;
-  border-style: solid;
-  border-color: black;
-  cursor: pointer;
-  margin-top: 20px;
-  transition: background-color 0.3s ease;
-}
-
-#download:hover {
-  background-color: #ffffff;
-  color: black;
-}
-
-@media print {
-  body,
-  .container {
-    box-shadow: none;
-  }
-
-  #download {
-    display: none;
-  }
-}
-
-.home-button-wrap {
-  width: 100%;
-  height: 100px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  background-color: rgba(127, 28, 28, 0);
-}
-
-.home-button-link {
-  font-family: "Open Sans";
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #ffffffeb;
-  width: 100px;
-  height: 50px;
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #333;
-}
-
-.home-button-link:hover {
-  color: #ff0060;
-}
-
-    `;
-
-    var html = '<style>' + css + '</style>';
-    html += document.getElementById("resume").innerHTML;
-
-    var doc = new jsPDF();
-    doc.fromHTML(html, 15, 15, {
-      width: 170,
-    });
-    doc.save("Alex Gonzalez - 2025 CV.pdf");
-  });
-</script>
-
-    </body>
+        // Achievements
+        const achHTML = cv.achievements.map(a => `<li>${a}</li>`).join('');
+        el.innerHTML += `<div class="section"><h2>Achievements</h2><ul>${achHTML}</ul></div>`;
+      });
+  </script>
+</body>
 </html>
