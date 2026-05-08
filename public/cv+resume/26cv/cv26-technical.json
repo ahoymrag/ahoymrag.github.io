@@ -30,8 +30,8 @@
     {
       "company": "Ahoy Indie Media",
       "years": "2022 - Present",
-      "title": "Founder — Platform Engineering & Operations",
-      "description": "Architected and maintain a multi-platform media operation including web infrastructure, app deployment, and automated media pipelines. Responsible for all technical systems, performance monitoring, and incident resolution."
+      "title": "Founder & Full-Stack Platform Engineer",
+      "description": "Architected and operate a high-performance, direct-to-artist media and commerce platform (ahoy.ooo) distributed across Web (PWA), iOS, Android, and Desktop (Electron). Backend: Flask (Python 3.10+) with modular Blueprints, SQLAlchemy + PostgreSQL, Alembic migrations, Redis-backed sessions and rate limiting, Sentry observability, and structured logging. Frontend: Vue 3 (Composition API, TypeScript), Vite, Pinia state management, Tailwind CSS 4.0, Three.js canvas elements, and offline-capable service workers. Financial layer: Stripe Connect with a pre-funded wallet system, automated artist payouts, webhook reconciliation, and full Postgres audit trails — PCI-DSS compliant, 0% platform fee. Built custom in-memory search indexer with relevance ranking and a gamification engine (Quests/Achievements via JSONB). CI/CD via GitHub Actions across all distribution targets."
     },
     {
       "company": "Mission Anabaino",
@@ -47,20 +47,25 @@
     }
   ],
   "skills": [
+    "Python (Flask, SQLAlchemy, Alembic, Blueprints) — production backend architecture and API design",
+    "PostgreSQL & SQLite — schema design, migrations, JSONB preferences, full audit trails",
+    "Vue 3 (Composition API, TypeScript, Pinia, Vite) — SPA development and state management",
+    "Tailwind CSS 4.0, Three.js — UI systems and interactive canvas experiences",
+    "Capacitor — cross-platform iOS and Android app distribution from a single Vue codebase",
+    "Electron — macOS, Windows, and Linux desktop app packaging and distribution pipelines",
+    "PWA / Service Workers — offline capability, background sync, mobile-first shell architecture",
+    "Stripe Connect — payment infrastructure, wallet systems, automated payouts, webhook reconciliation",
+    "Redis — session management, API rate limiting, caching layers",
+    "Sentry + structlog — error tracking, observability, and structured production logging",
+    "GitHub Actions — CI/CD pipelines for multi-target build and release automation",
+    "Security — CSRF protection, JWT/session hybrid auth, BCrypt, CSP policies, CORS enforcement, PCI-DSS compliance via Stripe Elements",
+    "REST API design — routing, versioning, unified search, media ingestion pipelines",
     "Cloud Infrastructure — AWS, Azure, Wasabi (storage provisioning, access management, lifecycle policies)",
-    "Infrastructure as Code (IaC) — API-driven provisioning, scripting-based automation, eliminating manual toil",
-    "Python — automation scripts, internal tooling, API integrations, data pipeline automation",
-    "Shell scripting & PowerShell — system administration, scheduled tasks, workflow automation",
-    "REST API design and integration — building and consuming APIs for platform and infrastructure automation",
-    "Git version control — collaborative development workflows, branching strategies, code review",
+    "Infrastructure as Code (IaC) — API-driven provisioning, scripting-based automation",
+    "Shell scripting & PowerShell — system administration and workflow automation",
     "Linux/Unix systems — configuration management, security hardening, performance tuning",
-    "Virtualization concepts — VM lifecycle, containerization, Red Hat OpenShift exposure",
-    "Performance monitoring & troubleshooting — diagnosing infrastructure issues, vendor escalation",
     "Technical documentation — writing precise specs, runbooks, architecture diagrams, and SOPs",
-    "Data workflow design — automating pipelines between storage, compute, and application layers",
-    "Web & App Development (HTML, CSS, JavaScript, Alpine.js, Cordova)",
-    "UI/UX Design (Figma, responsive design, component systems)",
-    "Software Programming (OOP, Python, Objective-C)"
+    "Git version control — collaborative development workflows, branching strategies, code review"
   ],
   "teaching_experience": [
     {
@@ -92,9 +97,9 @@
   "recent_projects": {
     "technical": [
       {
-        "title": "Platform Engineer",
-        "project": "Ahoy Indie Media App Platform (2025)",
-        "description": "Architected and launched a multi-platform media app with automated content pipelines and live-show infrastructure."
+        "title": "Founder & Platform Engineer",
+        "project": "Ahoy Indie Media (2022 - Present)",
+        "description": "Full-stack media and commerce platform — Flask/PostgreSQL backend, Vue 3 SPA, Stripe Connect payments, Redis caching, Capacitor mobile apps (iOS/Android), Electron desktop builds (macOS/Windows/Linux), PWA with service workers. Custom search engine, gamification engine, and automated CI/CD via GitHub Actions."
       },
       {
         "title": "API Integrations & Internal Tooling",

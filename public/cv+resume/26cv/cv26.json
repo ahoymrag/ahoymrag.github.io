@@ -44,7 +44,8 @@
     {
       "company": "Ahoy Indie Media",
       "years": "2022 - Present",
-      "title": "Founder and Chief"
+      "title": "Founder & Platform Engineer",
+      "description": "Built and operate a full-stack, multi-platform media and commerce infrastructure for independent artists. Stack includes a Flask/Python backend with PostgreSQL, a Vue 3 SPA (TypeScript, Vite, Pinia), and cross-platform distribution via Capacitor (iOS/Android) and Electron (macOS/Windows/Linux). Implemented a Stripe Connect financial layer for direct fan-to-artist payments with automated payouts and full transaction audit trails. Platform features a custom in-memory search engine, gamification engine, and Redis-backed session/rate-limiting layer."
     },
     {
       "company": "Choate Rosemary",
