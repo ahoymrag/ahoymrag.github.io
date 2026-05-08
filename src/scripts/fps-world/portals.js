@@ -4,15 +4,15 @@ const PORTAL_RING_RADIUS = 28;
 const PORTAL_COUNT = 7;
 const PROXIMITY_THRESHOLD = 9;
 
-// Portal data with cosmic night colors and structure types
+// Portal data with CMYK high-contrast game colors
 const PORTAL_DATA = [
-  { label: 'Portfolio',         url: './share/index.html',               color: 0x00e5ff, type: 'stone_circle' },
-  { label: 'Behind the Scenes', url: './portfolio/src/bts/bts.html',     color: 0xff00aa, type: 'cave' },
-  { label: 'About',             url: './portfolio/src/about.html',        color: 0xaa44ff, type: 'treehouse' },
-  { label: 'Experiments',       url: './experiments/index.html',          color: 0x00ffaa, type: 'cave' },
-  { label: 'Teaching',          url: '/teaching-credentials.html',        color: 0xff6600, type: 'stone_circle' },
-  { label: 'Photography',       url: './photography/index.html',          color: 0xff44cc, type: 'treehouse' },
-  { label: 'Paint',             url: './gallery/index.html',              color: 0x44aaff, type: 'cave' },
+  { label: 'Portfolio',         url: './share/index.html',               color: 0xff00ff, type: 'torii' },        // Magenta
+  { label: 'Behind the Scenes', url: './portfolio/src/bts/bts.html',     color: 0x00ffff, type: 'cave' },         // Cyan
+  { label: 'About',             url: './portfolio/src/about.html',        color: 0xffff00, type: 'treehouse' },    // Yellow
+  { label: 'Experiments',       url: './experiments/index.html',          color: 0xff00ff, type: 'cave' },         // Magenta
+  { label: 'Teaching',          url: '/teaching-credentials.html',        color: 0x00ffff, type: 'torii' },        // Cyan
+  { label: 'Photography',       url: './photography/index.html',          color: 0xffff00, type: 'treehouse' },    // Yellow
+  { label: 'Paint',             url: './gallery/index.html',              color: 0xff00ff, type: 'torii' },        // Magenta
 ];
 
 const portalMeshes = [];
@@ -28,7 +28,9 @@ export function initPortals(scene) {
 
     // Build portal structure based on type
     let structureMeshes;
-    if (data.type === 'stone_circle') {
+    if (data.type === 'torii') {
+      structureMeshes = buildToriiPortal(group, position, data);
+    } else if (data.type === 'stone_circle') {
       structureMeshes = buildStoneCirclePortal(group, position, data);
     } else if (data.type === 'cave') {
       structureMeshes = buildCavePortal(group, position, data);
@@ -38,28 +40,71 @@ export function initPortals(scene) {
 
     // Portal label sprite
     const labelSprite = makeLabelSprite(data.label, data.color);
-    labelSprite.position.set(x, 5.5, z);
-    labelSprite.scale.set(7, 1.8, 1);
+    labelSprite.position.set(x, 6.0, z);
+    labelSprite.scale.set(8, 2, 1);
     group.add(labelSprite);
 
-    // Point light
-    const light = new THREE.PointLight(data.color, 2.0, 22);
-    light.position.set(x, 2.2, z);
+    // Point light (very intense for CMYK vibe)
+    const light = new THREE.PointLight(data.color, 5.0, 30);
+    light.position.set(x, 3, z);
     light.castShadow = true;
     group.add(light);
 
     portalMeshes.push({
-      torus: structureMeshes.primary,
+      primary: structureMeshes.primary,
       light,
       data,
       position: new THREE.Vector3(x, 0, z),
       disc: structureMeshes.disc,
-      pillar: structureMeshes.pillar,
     });
   });
 
   scene.add(group);
   return group;
+}
+
+function buildToriiPortal(group, position, data) {
+  const { x, z } = { x: position.x, z: position.z };
+  const toriiColor = data.color;
+  
+  // Pillars (Black)
+  const pillarGeo = new THREE.CylinderGeometry(0.3, 0.4, 5, 4);
+  const pillarMat = new THREE.MeshStandardMaterial({
+    color: 0x000000,
+    emissive: toriiColor,
+    emissiveIntensity: 0.2,
+    roughness: 0.1,
+    metalness: 1.0,
+  });
+
+  [[-2, 0], [2, 0]].forEach(([ox, oz]) => {
+    const pillar = new THREE.Mesh(pillarGeo, pillarMat);
+    pillar.position.set(x + ox, 2.5, z + oz);
+    pillar.castShadow = true;
+    group.add(pillar);
+  });
+
+  // Neon Crossbeam
+  const kasagiGeo = new THREE.BoxGeometry(5.5, 0.5, 0.6);
+  const kasagiMat = new THREE.MeshStandardMaterial({
+    color: toriiColor,
+    emissive: toriiColor,
+    emissiveIntensity: 2.0,
+  });
+  const kasagi = new THREE.Mesh(kasagiGeo, kasagiMat);
+  kasagi.position.set(x, 5.2, z);
+  kasagi.rotation.y = Math.atan2(x, z) + Math.PI / 2;
+  group.add(kasagi);
+
+  // Floating Disc
+  const discGeo = new THREE.TorusGeometry(1.8, 0.1, 16, 32);
+  const discMat = new THREE.MeshBasicMaterial({ color: toriiColor });
+  const disc = new THREE.Mesh(discGeo, discMat);
+  disc.position.set(x, 2.5, z);
+  disc.lookAt(0, 2.5, 0);
+  group.add(disc);
+
+  return { primary: kasagi, disc };
 }
 
 function buildStoneCirclePortal(group, position, data) {
@@ -85,7 +130,7 @@ function buildStoneCirclePortal(group, position, data) {
     sPos.needsUpdate = true;
 
     const stoneMat = new THREE.MeshStandardMaterial({
-      color: 0x2a1a3e,
+      color: 0x2a2a2a,
       emissive: data.color,
       emissiveIntensity: 0.12,
       roughness: 0.95,
@@ -100,26 +145,6 @@ function buildStoneCirclePortal(group, position, data) {
     group.add(stone);
   }
 
-  // Lintel stones
-  for (let s = 0; s < stoneCount; s += 2) {
-    const a1 = (s / stoneCount) * Math.PI * 2;
-    const a2 = ((s + 1) / stoneCount) * Math.PI * 2;
-    const mx = x + Math.cos((a1 + a2) / 2) * ringR;
-    const mz = z + Math.sin((a1 + a2) / 2) * ringR;
-    const lintelGeo = new THREE.BoxGeometry(1.2, 0.3, 0.35, 1, 1, 1);
-    const lintelMat = new THREE.MeshStandardMaterial({
-      color: 0x1e1030,
-      emissive: data.color,
-      emissiveIntensity: 0.2,
-      roughness: 0.9,
-      flatShading: true,
-    });
-    const lintel = new THREE.Mesh(lintelGeo, lintelMat);
-    lintel.position.set(mx, 2.4, mz);
-    lintel.rotation.y = (a1 + a2) / 2;
-    group.add(lintel);
-  }
-
   // Inner glow disc
   const discGeo = new THREE.CircleGeometry(1.8, 6);
   const discMat = new THREE.MeshBasicMaterial({
@@ -132,19 +157,18 @@ function buildStoneCirclePortal(group, position, data) {
   const disc = new THREE.Mesh(discGeo, discMat);
   disc.position.set(x, 0.05, z);
   disc.rotation.x = -Math.PI / 2;
-  disc.material.emissive = new THREE.Color(data.color);
   group.add(disc);
 
-  return { primary: disc, disc, pillar: disc };
+  return { primary: disc, disc };
 }
 
 function buildCavePortal(group, position, data) {
   const { x, z } = { x: position.x, z: position.z };
 
-  // Cave jambs (pillars)
+  // Cave jambs
   const jambH = 3.5;
   const jambMat = new THREE.MeshStandardMaterial({
-    color: 0x0d0820,
+    color: 0x1a1a1a,
     emissive: data.color,
     emissiveIntensity: 0.08,
     roughness: 1.0,
@@ -164,31 +188,6 @@ function buildCavePortal(group, position, data) {
     jamb.castShadow = true;
     group.add(jamb);
   });
-
-  // Stalactites across arch
-  const stalaCount = 7;
-  for (let s = 0; s < stalaCount; s++) {
-    const t = s / (stalaCount - 1);
-    const sx = x - 1.5 + t * 3.0;
-    const archY = 3.5 + Math.sin(t * Math.PI) * 0.5;
-    const stalaH = 0.4 + Math.sin(t * Math.PI) * 1.0;
-    const stalaR = 0.12 + Math.random() * 0.08;
-
-    const stalaGeo = new THREE.ConeGeometry(stalaR, stalaH, 4);
-    const stalaMat = new THREE.MeshStandardMaterial({
-      color: 0x150830,
-      emissive: data.color,
-      emissiveIntensity: 0.15 + Math.random() * 0.1,
-      roughness: 0.6,
-      metalness: 0.3,
-      flatShading: true,
-    });
-    const stala = new THREE.Mesh(stalaGeo, stalaMat);
-    stala.position.set(sx, archY - stalaH / 2, z);
-    stala.rotation.z = Math.PI;
-    stala.castShadow = true;
-    group.add(stala);
-  }
 
   // Portal disc
   const discGeo = new THREE.PlaneGeometry(2.4, 3.0, 1, 1);
@@ -220,7 +219,7 @@ function buildCavePortal(group, position, data) {
   torus.rotateX(Math.PI / 2);
   group.add(torus);
 
-  return { primary: torus, disc, pillar: torus };
+  return { primary: torus, disc };
 }
 
 function buildTreehousePortal(group, position, data) {
@@ -229,7 +228,7 @@ function buildTreehousePortal(group, position, data) {
 
   // Support posts
   const postMat = new THREE.MeshStandardMaterial({
-    color: 0x0d0526,
+    color: 0x1a1a1a,
     emissive: data.color,
     emissiveIntensity: 0.06,
     roughness: 0.9,
@@ -246,15 +245,8 @@ function buildTreehousePortal(group, position, data) {
 
   // Platform floor
   const floorGeo = new THREE.BoxGeometry(2.4, 0.25, 1.4, 2, 1, 2);
-  const floorPos = floorGeo.attributes.position;
-  for (let v = 0; v < floorPos.count; v++) {
-    if (floorPos.getY(v) > 0) {
-      floorPos.setX(v, floorPos.getX(v) + (Math.random() - 0.5) * 0.1);
-    }
-  }
-  floorPos.needsUpdate = true;
   const floorMat = new THREE.MeshStandardMaterial({
-    color: 0x15082a,
+    color: 0x2a2a2a,
     emissive: data.color,
     emissiveIntensity: 0.1,
     roughness: 0.85,
@@ -265,30 +257,6 @@ function buildTreehousePortal(group, position, data) {
   floor.castShadow = true;
   floor.receiveShadow = true;
   group.add(floor);
-
-  // Railing slats
-  const railMat = new THREE.MeshStandardMaterial({
-    color: data.color,
-    emissive: data.color,
-    emissiveIntensity: 0.5,
-    roughness: 0.4,
-    metalness: 0.6,
-    flatShading: true,
-  });
-
-  for (let r = 0; r < 3; r++) {
-    const t = r / 2;
-    const rx = x - 0.8 + t * 1.6;
-    const slat = new THREE.Mesh(
-      new THREE.BoxGeometry(0.08, 0.7, 0.08, 1, 1, 1),
-      railMat.clone()
-    );
-    slat.position.set(rx, PLATFORM_Y + 0.5, z - 0.6);
-    group.add(slat);
-    const slat2 = slat.clone();
-    slat2.position.z = z + 0.6;
-    group.add(slat2);
-  }
 
   // Portal arch (half-torus)
   const torusGeo = new THREE.TorusGeometry(1.6, 0.12, 5, 10, Math.PI);
@@ -322,7 +290,7 @@ function buildTreehousePortal(group, position, data) {
   disc.rotateX(Math.PI / 2);
   group.add(disc);
 
-  return { primary: torus, disc, pillar: floor };
+  return { primary: torus, disc };
 }
 
 export function updatePortalProximity(camera, tooltipEl, nameEl) {
@@ -339,22 +307,6 @@ export function updatePortalProximity(camera, tooltipEl, nameEl) {
     if (dist < PROXIMITY_THRESHOLD && dist < nearestDist) {
       nearest = portal;
       nearestDist = dist;
-    }
-  }
-
-  // Check easter egg portal if it exists
-  if (nearest === null) {
-    const easterPortal = camera.parent.parent?.userData?.easterPortal;
-    if (easterPortal) {
-      const dx = camPos.x - easterPortal.position.x;
-      const dz = camPos.z - easterPortal.position.z;
-      const dist = Math.sqrt(dx * dx + dz * dz);
-
-      if (dist < PROXIMITY_THRESHOLD) {
-        tooltipEl.style.display = 'flex';
-        nameEl.textContent = easterPortal.data.label;
-        return easterPortal.data.url;
-      }
     }
   }
 
@@ -398,6 +350,8 @@ export function animatePortals() {
   const t = performance.now() * 0.001;
   for (const p of portalMeshes) {
     p.light.intensity = 1.4 + Math.sin(t * 2.5 + p.data.color * 0.0001) * 0.5;
-    p.torus.material.emissiveIntensity = 0.9 + Math.sin(t * 1.5) * 0.4;
+    if (p.primary && p.primary.material && p.primary.material.emissiveIntensity !== undefined) {
+      p.primary.material.emissiveIntensity = 0.9 + Math.sin(t * 1.5) * 0.4;
+    }
   }
 }

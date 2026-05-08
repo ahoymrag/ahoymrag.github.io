@@ -7,8 +7,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(20, 30, 15, 0.85);
-  backdrop-filter: blur(12px);
+  background: rgba(0, 0, 0, 0.85); /* Deep black for arcade contrast */
+  backdrop-filter: blur(4px);
   z-index: 100;
 }
 
@@ -19,76 +19,77 @@
   align-items: center;
   gap: 1.5rem;
   padding: 3rem 4rem;
-  border: 2px solid rgba(100, 200, 100, 0.3);
-  border-radius: 12px;
-  background: rgba(30, 50, 35, 0.8);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  border: 4px solid #00ffff; /* Neon Cyan */
+  background: #000;
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.3), inset 0 0 15px rgba(255, 0, 255, 0.2);
 }
 
 .fps-title {
-  font-family: 'Barlow', sans-serif;
+  font-family: 'Cinzel', serif;
   font-weight: 900;
   font-size: clamp(2rem, 8vw, 6rem);
-  letter-spacing: -0.03em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #e8f5e9;
+  color: #ff00ff; /* Neon Magenta */
   margin: 0;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 0 10px rgba(255, 0, 255, 0.8), 3px 3px 0px #00ffff;
 }
 
 .fps-subtitle {
   font-family: 'Barlow', sans-serif;
-  font-weight: 300;
+  font-weight: 700;
   font-size: clamp(1rem, 3vw, 1.5rem);
-  color: rgba(232, 245, 233, 0.7);
+  color: #ffff00; /* Yellow */
   text-transform: uppercase;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.4em;
   margin: 0;
 }
 
 .fps-start-button {
   font-family: 'Barlow', sans-serif;
   font-weight: 900;
-  font-size: 1.1rem;
-  letter-spacing: 0.15em;
+  font-size: 1.2rem;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: #1a1a1a;
-  background: linear-gradient(135deg, #76c043 0%, #5aa838 100%);
-  border: 2px solid #5aa838;
-  padding: 0.8rem 2.5rem;
+  color: #000;
+  background: #ffff00; /* Solid Yellow */
+  border: none;
+  padding: 1rem 3rem;
   cursor: pointer;
-  transition: all 0.2s ease;
-  box-shadow: 0 4px 12px rgba(90, 168, 56, 0.3);
+  transition: all 0.1s ease;
+  box-shadow: 4px 4px 0px #00ffff;
 }
 
 .fps-start-button:hover {
-  background: linear-gradient(135deg, #87d154 0%, #65b741 100%);
-  transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(90, 168, 56, 0.5);
+  background: #fff;
+  transform: scale(1.05);
+  box-shadow: 6px 6px 0px #ff00ff;
 }
 
 .fps-hint {
   font-family: 'Barlow', sans-serif;
   font-size: 0.8rem;
-  color: rgba(232, 245, 233, 0.4);
+  color: #00ffff;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.2em;
   margin: 0;
 }
 
 .fps-exit-link {
   font-family: 'Barlow', sans-serif;
   font-size: 0.85rem;
-  color: rgba(232, 245, 233, 0.5);
-  text-decoration: underline;
+  color: #ff00ff;
+  text-decoration: none;
+  border-bottom: 2px solid #ff00ff;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.1em;
   cursor: pointer;
-  transition: color 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .fps-exit-link:hover {
-  color: #a8d5a8;
+  color: #fff;
+  border-color: #fff;
 }
 
 /* ---- IN-GAME HUD ---- */
@@ -99,130 +100,118 @@
   z-index: 50;
 }
 
-/* Crosshair: subtle tree-inspired design */
+/* Crosshair: CMYK Target */
 .fps-crosshair {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 24px;
-  height: 24px;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #00ffff;
+  border-radius: 50%;
 }
 
 .fps-crosshair::before,
 .fps-crosshair::after {
   content: '';
   position: absolute;
-  background: rgba(232, 245, 233, 0.6);
-  box-shadow: 0 0 4px rgba(232, 245, 233, 0.4);
+  background: #ff00ff;
 }
 
 .fps-crosshair::before {
-  /* horizontal bar */
-  width: 24px;
-  height: 1.5px;
+  width: 30px;
+  height: 2px;
   top: 50%;
   left: 0;
   transform: translateY(-50%);
 }
 
 .fps-crosshair::after {
-  /* vertical bar */
-  width: 1.5px;
-  height: 24px;
+  width: 2px;
+  height: 30px;
   left: 50%;
   top: 0;
   transform: translateX(-50%);
 }
 
-/* Portal tooltip — bottom-center */
+/* Portal tooltip */
 .fps-portal-tooltip {
   position: absolute;
-  bottom: 15%;
+  bottom: 20%;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.4rem;
-  padding: 1rem 2rem;
-  background: rgba(20, 30, 15, 0.8);
-  border: 1.5px solid rgba(118, 192, 67, 0.6);
-  border-radius: 8px;
-  backdrop-filter: blur(8px);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  gap: 0.5rem;
+  padding: 1.5rem 3rem;
+  background: #000;
+  border: 4px solid #ffff00;
+  box-shadow: 0 0 20px rgba(255, 255, 0, 0.4);
 }
 
 #fps-portal-name {
   font-family: 'Barlow', sans-serif;
   font-weight: 900;
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-transform: uppercase;
-  letter-spacing: -0.02em;
-  color: #c8e6c9;
+  color: #ffff00;
+  text-shadow: 2px 2px 0px #ff00ff;
 }
 
 .fps-portal-hint {
   font-family: 'Barlow', sans-serif;
-  font-weight: 300;
-  font-size: 0.75rem;
+  font-weight: 700;
+  font-size: 0.9rem;
   text-transform: uppercase;
-  letter-spacing: 0.15em;
-  color: rgba(200, 230, 201, 0.6);
+  letter-spacing: 0.2em;
+  color: #00ffff;
 }
 
-/* Escape hint — top-right */
+/* Escape hint */
 .fps-escape-hint {
   position: absolute;
-  top: 1.2rem;
-  right: 1.5rem;
+  top: 1.5rem;
+  right: 2rem;
   font-family: 'Barlow', sans-serif;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   text-transform: uppercase;
-  letter-spacing: 0.12em;
-  color: rgba(232, 245, 233, 0.25);
-  pointer-events: none;
+  letter-spacing: 0.2em;
+  color: #ff00ff;
 }
 
 /* Minecraft-style control indicator */
 .fps-minecraft-controls {
   position: absolute;
-  bottom: 2rem;
-  left: 1.5rem;
+  bottom: 2.5rem;
+  left: 2rem;
   display: flex;
   flex-direction: column;
-  gap: 0.3rem;
-  pointer-events: none;
-}
-
-.minecraft-key-row {
-  display: flex;
-  gap: 0.3rem;
+  gap: 0.5rem;
 }
 
 .minecraft-key {
-  width: 2rem;
-  height: 2rem;
+  width: 2.5rem;
+  height: 2.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(60, 80, 50, 0.3);
-  border: 1px solid rgba(118, 192, 67, 0.2);
-  border-radius: 3px;
+  background: #000;
+  border: 2px solid #00ffff;
   font-family: 'Barlow', sans-serif;
-  font-size: 0.7rem;
-  font-weight: 600;
-  color: rgba(232, 245, 233, 0.25);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  transition: all 0.15s ease;
+  font-size: 0.9rem;
+  font-weight: 900;
+  color: #00ffff;
+  transition: all 0.1s ease;
 }
 
 .minecraft-key.active {
-  background: rgba(118, 192, 67, 0.3);
-  border-color: rgba(118, 192, 67, 0.5);
-  color: rgba(232, 245, 233, 0.7);
-  box-shadow: 0 0 8px rgba(118, 192, 67, 0.2);
+  background: #ffff00;
+  border-color: #ffff00;
+  color: #000;
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #ffff00;
 }
 
 .minecraft-key-w {

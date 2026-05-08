@@ -99,6 +99,10 @@ if (!isWebGLSupported() || isMobile) {
   }, { once: true });
 }
 
+// Robustness: expose to window
+window.initFPSWorld = initFPSWorld;
+console.log('[Forest World] Script loaded and ready.');
+
 // ============================================================================
 // AUDIO SYNTHESIS
 // ============================================================================
@@ -226,6 +230,9 @@ function initFPSWorld() {
     }
 
     root.style.display = 'block';
+    root.style.visibility = 'visible';
+    root.style.opacity = '1';
+    root.style.zIndex = '99999'; // Ensure it's on top of EVERYTHING
 
     const loadIndicator = document.getElementById('fps-load-indicator');
     loadIndicator.style.display = 'block';
@@ -238,20 +245,25 @@ function initFPSWorld() {
     console.log('[Forest World] Creating scene...');
     scene = new THREE.Scene();
 
-    // Pre-dawn: warm amber mist at ground level
-    scene.background = new THREE.Color(0x1a0f05);
-    scene.fog = new THREE.FogExp2(0xd4641a, 0.014);
+    // CMYK Game Aesthetic: Vibrant Cyan mist
+    scene.background = new THREE.Color(0x00ffff); // Cyan
+    scene.fog = new THREE.FogExp2(0x00ffff, 0.015);
 
     // --- CAMERA ---
     updateProgress(15);
-    camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 500);
-    camera.position.set(0, EYE_HEIGHT, 0);
+    camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+    camera.position.set(0, EYE_HEIGHT, 5); // Start slightly back to see origin
     currentEyeHeight = EYE_HEIGHT;
 
     // --- RENDERER ---
     console.log('[Forest World] Creating renderer...');
     try {
-      renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: false });
+      renderer = new THREE.WebGLRenderer({ 
+        canvas, 
+        antialias: true, 
+        alpha: false,
+        powerPreference: 'high-performance'
+      });
       console.log('[Forest World] Renderer created successfully');
     } catch (e) {
       console.error('[Forest World] Renderer creation failed:', e);
@@ -264,63 +276,49 @@ function initFPSWorld() {
     const height = Math.max(window.innerHeight, 240);
     renderer.setSize(width, height);
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-    renderer.toneMapping = THREE.ACESFilmicToneMapping;
-    renderer.toneMappingExposure = 0.9;
+    renderer.toneMapping = THREE.NoToneMapping; // Raw CMYK colors
     renderer.outputColorSpace = THREE.SRGBColorSpace;
-
-    canvas.addEventListener('webglcontextlost', (e) => {
-      e.preventDefault();
-      console.warn('[Forest World] WebGL context lost');
-    });
-    canvas.addEventListener('webglcontextrestored', () => {
-      console.log('[Forest World] WebGL context restored');
-    });
-
-    try {
-      renderer.shadowMap.enabled = true;
-      renderer.shadowMap.type = THREE.PCFSoftShadowMap;
-    } catch (e) {
-      console.warn('[Forest World] Shadow map configuration partial:', e);
-    }
 
     // --- POST-PROCESSING ---
     composer = new EffectComposer(renderer);
     composer.addPass(new RenderPass(scene, camera));
 
+    // High intensity Bloom for that "Game" glow
     const bloomPass = new UnrealBloomPass(
       new THREE.Vector2(width, height),
-      1.2,  // strength — strong bloom for god rays and emissives
-      0.6,  // radius
-      0.3   // threshold — low so dawn glow blooms
+      1.5,  // strong strength
+      0.5,  // radius
+      0.1   // low threshold for maximum glow
     );
     composer.addPass(bloomPass);
     composer.addPass(new OutputPass());
 
-    console.log('[Forest World] Renderer and post-processing configured');
+    // --- DEBUG OBJECT ---
+    // A bright Magenta cube at the center to confirm rendering works
+    const debugBox = new THREE.Mesh(
+      new THREE.BoxGeometry(2, 2, 2),
+      new THREE.MeshBasicMaterial({ color: 0xff00ff }) // Magenta
+    );
+    debugBox.position.set(0, 1, 0);
+    scene.add(debugBox);
 
     // --- LIGHTING ---
     updateProgress(35);
 
-    // Pre-dawn directional light: deep orange from low southeast
-    sunLight = new THREE.DirectionalLight(0xff6a00, 0.4);
-    sunLight.position.set(60, 8, 60); // low southeast angle
+    // CMYK Light: Magenta Sun
+    sunLight = new THREE.DirectionalLight(0xff00ff, 2.0);
+    sunLight.position.set(50, 50, 50); 
     sunLight.castShadow = true;
-    sunLight.shadow.mapSize.width = 4096;
-    sunLight.shadow.mapSize.height = 4096;
-    sunLight.shadow.camera.far = 200;
-    sunLight.shadow.camera.left = -80;
-    sunLight.shadow.camera.right = 80;
-    sunLight.shadow.camera.top = 80;
-    sunLight.shadow.camera.bottom = -80;
-    sunLight.shadow.bias = -0.0001;
+    sunLight.shadow.mapSize.width = 2048;
+    sunLight.shadow.mapSize.height = 2048;
     scene.add(sunLight);
 
-    // Warm ambient: pre-dawn sky glow bouncing from ground
-    const ambientLight = new THREE.AmbientLight(0x3d1a00, 1.2);
+    // Cyan Fill
+    const ambientLight = new THREE.AmbientLight(0x00ffff, 0.5);
     scene.add(ambientLight);
 
-    // Horizon fill light: soft warm from east
-    const fillLight = new THREE.HemisphereLight(0xff7a20, 0x1a0800, 0.5);
+    // Yellow ground bounce
+    const fillLight = new THREE.HemisphereLight(0x00ffff, 0xffff00, 1.0);
     scene.add(fillLight);
 
     // --- WORLD GEOMETRY ---
@@ -343,6 +341,7 @@ function initFPSWorld() {
     // --- CONTROLS ---
     controls = new PointerLockControls(camera, document.body);
     scene.add(controls.object);
+    controls.object.position.set(0, EYE_HEIGHT, 10); // Safe starting position
 
     // --- CLOCK ---
     clock = new THREE.Clock();
@@ -355,6 +354,9 @@ function initFPSWorld() {
 
     updateProgress(100);
     console.log('[Forest World] Initialization completed');
+
+    // Start loop immediately
+    startLoop();
 
     setTimeout(() => {
       loadIndicator.style.display = 'none';
@@ -440,21 +442,20 @@ function addDawnSky() {
 
 function addGodRays() {
   // Translucent planes with additive blending fan out from sun direction
-  const count = 9;
+  const count = 10;
   const azRad = THREE.MathUtils.degToRad(SUN_AZIMUTH_DEG);
   const sunBaseX = Math.cos(azRad);
   const sunBaseZ = Math.sin(azRad);
 
   for (let i = 0; i < count; i++) {
-    const len = 90 + Math.random() * 70;
-    const wid = 5 + Math.random() * 9;
+    const len = 150 + Math.random() * 100;
+    const wid = 5 + Math.random() * 10;
     const geo = new THREE.PlaneGeometry(wid, len);
-    // Offset geometry so the "top" of the plane is at origin (rays fan from sky down)
     geo.translate(0, len * 0.5, 0);
 
-    const baseOpacity = 0.012 + Math.random() * 0.022;
+    const baseOpacity = 0.05 + Math.random() * 0.1;
     const mat = new THREE.MeshBasicMaterial({
-      color: new THREE.Color(1.0, 0.65, 0.25),
+      color: new THREE.Color(0xff00ff), // Magenta rays
       transparent: true,
       opacity: baseOpacity,
       side: THREE.DoubleSide,
@@ -463,21 +464,18 @@ function addGodRays() {
     });
     const ray = new THREE.Mesh(geo, mat);
 
-    // Fan positions: cluster near sun direction but spread wide
-    const spread = 22;
-    const px = sunBaseX * 38 + (Math.random() - 0.5) * spread;
-    const pz = sunBaseZ * 38 + (Math.random() - 0.5) * spread;
-    const py = 2 + Math.random() * 6;
+    const spread = 40;
+    const px = sunBaseX * 50 + (Math.random() - 0.5) * spread;
+    const pz = sunBaseZ * 50 + (Math.random() - 0.5) * spread;
+    const py = 5 + Math.random() * 15;
     ray.position.set(px, py, pz);
 
-    // Tilt each ray slightly differently toward scene center
     ray.lookAt(
-      (Math.random() - 0.5) * 10,
-      -30,
-      (Math.random() - 0.5) * 10
+      (Math.random() - 0.5) * 20,
+      -50,
+      (Math.random() - 0.5) * 20
     );
-    ray.rotateX(Math.PI / 2 + (Math.random() - 0.5) * 0.4);
-    ray.rotateZ((Math.random() - 0.5) * 0.6);
+    ray.rotateX(Math.PI / 2 + (Math.random() - 0.5) * 0.5);
 
     scene.add(ray);
     godRays.push({ mesh: ray, baseOpacity, phase: Math.random() * Math.PI * 2 });
@@ -485,15 +483,14 @@ function addGodRays() {
 }
 
 function addGroundMist() {
-  // Layered translucent planes drifting at ground level
-  const mistCount = 6;
+  const mistCount = 12;
   for (let i = 0; i < mistCount; i++) {
-    const w = 35 + Math.random() * 45;
-    const d = 20 + Math.random() * 30;
+    const w = 50 + Math.random() * 60;
+    const d = 40 + Math.random() * 50;
     const geo = new THREE.PlaneGeometry(w, d, 1, 1);
-    const baseOpacity = 0.06 + Math.random() * 0.08;
+    const baseOpacity = 0.15 + Math.random() * 0.2;
     const mat = new THREE.MeshBasicMaterial({
-      color: new THREE.Color(1.0, 0.75, 0.5),
+      color: new THREE.Color(0x00ffff), // Cyan mist
       transparent: true,
       opacity: baseOpacity,
       side: THREE.DoubleSide,
@@ -502,34 +499,33 @@ function addGroundMist() {
     });
     const mist = new THREE.Mesh(geo, mat);
     mist.rotation.x = -Math.PI / 2;
-    const bx = (Math.random() - 0.5) * 50;
-    const bz = (Math.random() - 0.5) * 50;
-    const by = 0.15 + Math.random() * 0.6;
+    const bx = (Math.random() - 0.5) * 80;
+    const bz = (Math.random() - 0.5) * 80;
+    const by = 0.2 + Math.random() * 1.5;
     mist.position.set(bx, by, bz);
-    mist.userData = { baseOpacity, bx, bz, by, phase: Math.random() * Math.PI * 2, driftX: (Math.random() - 0.5) * 0.4, driftZ: (Math.random() - 0.5) * 0.4 };
+    mist.userData = { baseOpacity, bx, bz, by, phase: Math.random() * Math.PI * 2, driftX: (Math.random() - 0.5) * 0.5, driftZ: (Math.random() - 0.5) * 0.5 };
     scene.add(mist);
     mistPlanes.push(mist);
   }
 }
 
 function addHorizonGlow() {
-  // A bright additive ring on the horizon in the sun's direction — dawn blush
   const azRad = THREE.MathUtils.degToRad(SUN_AZIMUTH_DEG);
-  const hx = Math.cos(azRad) * 200;
-  const hz = Math.sin(azRad) * 200;
+  const hx = Math.cos(azRad) * 250;
+  const hz = Math.sin(azRad) * 250;
 
-  const geo = new THREE.PlaneGeometry(120, 30);
+  const geo = new THREE.PlaneGeometry(200, 60);
   const mat = new THREE.MeshBasicMaterial({
-    color: new THREE.Color(1.0, 0.4, 0.1),
+    color: new THREE.Color(0xff00ff), // Magenta horizon
     transparent: true,
-    opacity: 0.08,
+    opacity: 0.1,
     side: THREE.DoubleSide,
     blending: THREE.AdditiveBlending,
     depthWrite: false,
   });
   const glow = new THREE.Mesh(geo, mat);
-  glow.position.set(hx * 0.15, 4, hz * 0.15);
-  glow.lookAt(0, 4, 0);
+  glow.position.set(hx * 0.3, 10, hz * 0.3);
+  glow.lookAt(0, 10, 0);
   scene.add(glow);
 }
 
@@ -538,72 +534,69 @@ function addHorizonGlow() {
 // ============================================================================
 
 function buildGround() {
-  // Lo-poly faceted terrain — warm earthy dawn tones
-  const SEG = 30;
-  const groundGeo = new THREE.PlaneGeometry(120, 120, SEG, SEG);
+  const SEG = 40;
+  const groundGeo = new THREE.PlaneGeometry(150, 150, SEG, SEG);
 
   const pos = groundGeo.attributes.position;
   for (let i = 0; i < pos.count; i++) {
     const x = pos.getX(i);
     const y = pos.getY(i);
     const distFromCenter = Math.sqrt(x * x + y * y);
-    const edgeFade = Math.max(0, 1 - distFromCenter / 50);
-    pos.setZ(i, (Math.random() - 0.5) * 1.4 * edgeFade);
+    const edgeFade = Math.max(0, 1 - distFromCenter / 70);
+    pos.setZ(i, (Math.random() - 0.5) * 2.0 * edgeFade);
   }
   pos.needsUpdate = true;
   groundGeo.computeVertexNormals();
 
   const groundMat = new THREE.MeshStandardMaterial({
-    color: 0x2a1506,      // deep burnt sienna
-    emissive: 0x3d1200,
-    emissiveIntensity: 0.15,
-    roughness: 1.0,
-    metalness: 0.0,
+    color: 0xffff00,      // Pure Yellow ground
+    emissive: 0xff00ff,   // Magenta glow in cracks
+    emissiveIntensity: 0.1,
+    roughness: 0.1,
+    metalness: 0.5,
     flatShading: true,
   });
   const ground = new THREE.Mesh(groundGeo, groundMat);
   ground.rotation.x = -Math.PI / 2;
-  ground.position.y = -0.1;
+  ground.position.y = -0.5;
   ground.receiveShadow = true;
   scene.add(ground);
 
-  // Dawn-kissed stones: warm amber and rose quartz
-  for (let i = 0; i < 40; i++) {
-    const x = (Math.random() - 0.5) * 50;
-    const z = (Math.random() - 0.5) * 50;
-    const h = 0.3 + Math.random() * 0.8;
-    const shardGeo = new THREE.ConeGeometry(0.15, h, 4);
-    const hues = [0.06, 0.09, 0.04, 0.7]; // orange, amber, red-orange, violet accent
-    const shardMat = new THREE.MeshStandardMaterial({
-      color: new THREE.Color().setHSL(hues[Math.floor(Math.random() * hues.length)], 0.7, 0.3 + Math.random() * 0.15),
-      emissive: new THREE.Color().setHSL(0.07, 0.9, 0.15),
-      emissiveIntensity: 0.6,
-      roughness: 0.3,
-      metalness: 0.5,
+  // CMYK Obelisks
+  for (let i = 0; i < 60; i++) {
+    const x = (Math.random() - 0.5) * 70;
+    const z = (Math.random() - 0.5) * 70;
+    const h = 1 + Math.random() * 5;
+    
+    const obeliskGeo = new THREE.CylinderGeometry(0.1, 0.4, h, 4);
+    const obeliskMat = new THREE.MeshStandardMaterial({
+      color: i % 3 === 0 ? 0x00ffff : (i % 3 === 1 ? 0xff00ff : 0x000000), // C, M, or K
+      emissive: i % 3 === 2 ? 0x000000 : 0x000000,
+      roughness: 0.2,
+      metalness: 0.8,
       flatShading: true,
     });
-    const shard = new THREE.Mesh(shardGeo, shardMat);
-    shard.position.set(x, h / 2, z);
-    shard.rotation.y = Math.random() * Math.PI;
-    shard.castShadow = true;
-    scene.add(shard);
+    const obelisk = new THREE.Mesh(obeliskGeo, obeliskMat);
+    obelisk.position.set(x, h / 2, z);
+    obelisk.rotation.y = Math.random() * Math.PI;
+    obelisk.castShadow = true;
+    scene.add(obelisk);
   }
 }
 
 function buildWater() {
-  // Golden dawn reflection pool
-  const waterGeo = new THREE.PlaneGeometry(4, 15);
+  // Magenta Neon Stream
+  const waterGeo = new THREE.PlaneGeometry(10, 30);
   waterMat = new THREE.MeshStandardMaterial({
-    color: 0xff8800,
-    roughness: 0.02,
-    metalness: 0.95,
-    emissive: 0xff4400,
-    emissiveIntensity: 0.5,
-    normalScale: new THREE.Vector2(0.2, 0.2),
+    color: 0xff00ff, // Neon Magenta
+    roughness: 0.0,
+    metalness: 1.0,
+    emissive: 0xff00ff,
+    emissiveIntensity: 1.0,
   });
   const water = new THREE.Mesh(waterGeo, waterMat);
   water.rotation.x = -Math.PI / 2;
-  water.position.set(0, 0.01, 0);
+  water.position.set(0, 0.05, 0);
   water.receiveShadow = true;
   scene.add(water);
   waterAnimStartTime = Date.now();
@@ -611,29 +604,21 @@ function buildWater() {
 
 function buildForestTrees() {
   const treePositions = [
-    [-15, -8], [-20, 5], [-12, 18], [-25, 25],
-    [15, -10], [22, 8], [18, 20], [28, 28],
-    [-5, -25], [8, -22], [20, -15], [-18, -20],
-    [0, 30], [12, -28], [-22, 12],
+    [-25, -15], [-30, 10], [-20, 30], [-40, 40],
+    [25, -18], [35, 15], [28, 30], [45, 45],
+    [-12, -40], [15, -35], [30, -25], [-30, -30],
+    [0, 50], [20, -45], [-35, 20],
   ];
 
-  // Dawn forest palette: silhouetted dark trunks, warm-lit foliage
-  const treePalettes = [
-    { trunk: 0x1a0800, foliage: 0xff6600 }, // dark / orange-lit
-    { trunk: 0x120400, foliage: 0xff9933 }, // dark / amber
-    { trunk: 0x0d0200, foliage: 0xcc3300 }, // near-black / deep red-orange
-    { trunk: 0x1a0d00, foliage: 0xffcc44 }, // dark / golden
-  ];
-
+  // CMYK Forest: Key (Black) trunks with vibrant highlights
   treePositions.forEach(([x, z]) => {
-    const treeHeight = 10 + Math.random() * 5;
-    const scheme = treePalettes[Math.floor(Math.random() * treePalettes.length)];
-
-    const trunkGeo = new THREE.CylinderGeometry(0.3, 0.5, treeHeight, 5);
+    const treeHeight = 15 + Math.random() * 10;
+    
+    const trunkGeo = new THREE.CylinderGeometry(0.3, 0.6, treeHeight, 4);
     const trunkMat = new THREE.MeshStandardMaterial({
-      color: scheme.trunk,
-      roughness: 0.95,
-      metalness: 0.0,
+      color: 0x000000, // Black trunk
+      roughness: 0.1,
+      metalness: 1.0,
       flatShading: true,
     });
     const trunk = new THREE.Mesh(trunkGeo, trunkMat);
@@ -641,23 +626,20 @@ function buildForestTrees() {
     trunk.castShadow = true;
     scene.add(trunk);
 
-    // Foliage: 3 stacked cones, bright amber/orange on dawn side
-    [0.8, 0.55, 0.35].forEach((scale, tier) => {
-      const coneH = treeHeight * 0.55 * scale;
-      const coneR = treeHeight * 0.45 * scale;
-      const foliageGeo = new THREE.ConeGeometry(coneR, coneH, 6);
-      const foliageMat = new THREE.MeshStandardMaterial({
-        color: new THREE.Color(scheme.foliage).multiplyScalar(0.35 + tier * 0.15),
-        emissive: new THREE.Color(scheme.foliage),
-        emissiveIntensity: 0.12 + tier * 0.08, // upper tiers glow brighter (catching dawn)
-        roughness: 0.8,
-        metalness: 0.0,
+    // Neon foliage rings
+    [0.8, 0.6, 0.4].forEach((scale, tier) => {
+      const ringGeo = new THREE.TorusGeometry(treeHeight * 0.2 * scale, 0.2, 8, 4);
+      const ringMat = new THREE.MeshStandardMaterial({
+        color: tier === 0 ? 0x00ffff : (tier === 1 ? 0xff00ff : 0xffff00), // C, M, Y
+        emissive: tier === 0 ? 0x00ffff : (tier === 1 ? 0xff00ff : 0xffff00),
+        emissiveIntensity: 1.5,
         flatShading: true,
       });
-      const foliage = new THREE.Mesh(foliageGeo, foliageMat);
-      foliage.position.set(x, treeHeight * (0.5 + tier * 0.25), z);
-      foliage.castShadow = true;
-      scene.add(foliage);
+      const ring = new THREE.Mesh(ringGeo, ringMat);
+      ring.position.set(x, treeHeight * (0.5 + tier * 0.2), z);
+      ring.rotation.x = Math.PI / 2;
+      ring.castShadow = true;
+      scene.add(ring);
     });
   });
 }
@@ -913,70 +895,58 @@ function tickDawn(t) {
   // Slowly advance dawn
   dawnTime = Math.min(dawnTime + delta * DAWN_SPEED, 1.0);
 
-  // Animate sky: sun rises from 1.2° to 22° above horizon
+  // Animate sky: transitioning to a vibrant Cyan morning
   if (sky) {
     const elevation = 1.2 + dawnTime * 20.8;
     const sunVec = getSunVector(elevation);
     sky.material.uniforms['sunPosition'].value.copy(sunVec);
 
-    // As sun rises, sky becomes less rayleigh-saturated (transitions from orange to blue)
-    sky.material.uniforms['rayleigh'].value = 3.0 - dawnTime * 1.2;
-    sky.material.uniforms['turbidity'].value = 8 - dawnTime * 4;
-    sky.material.uniforms['mieCoefficient'].value = 0.01 - dawnTime * 0.005;
+    // High intensity scattering for arcade feel
+    sky.material.uniforms['rayleigh'].value = 4.0 - dawnTime * 1.0;
+    sky.material.uniforms['turbidity'].value = 10 - dawnTime * 2;
+    sky.material.uniforms['mieCoefficient'].value = 0.02 - dawnTime * 0.01;
   }
 
-  // Animate sun light: warm orange → golden white
+  // Animate sun light: Neon Magenta
   if (sunLight) {
-    const startColor = new THREE.Color(0xff6a00);
-    const endColor = new THREE.Color(0xfff5cc);
+    const startColor = new THREE.Color(0xff00ff);
+    const endColor = new THREE.Color(0xff00ff);
     sunLight.color.lerpColors(startColor, endColor, dawnTime);
-    sunLight.intensity = 0.4 + dawnTime * 1.2;
+    sunLight.intensity = 2.0 + dawnTime * 1.0;
 
-    // Sun position moves up as dawn progresses
     const elevation = 1.2 + dawnTime * 20.8;
     const sunVec = getSunVector(elevation);
     sunLight.position.copy(sunVec.multiplyScalar(100));
   }
 
-  // Fog: warm amber → light golden haze
+  // Fog: Cyan mist
   if (scene.fog) {
-    const fogStart = new THREE.Color(0xd4641a);
-    const fogEnd = new THREE.Color(0xf0c878);
-    scene.fog.color.lerpColors(fogStart, fogEnd, dawnTime);
+    const fogColor = new THREE.Color(0x00ffff);
+    scene.fog.color.copy(fogColor);
     renderer.setClearColor(scene.fog.color);
   }
 
-  // God rays: pulse opacity, warm to golden over time
+  // God rays: Magenta pulsing
   for (const ray of godRays) {
-    const pulse = 0.7 + 0.3 * Math.sin(t * 0.25 + ray.phase);
-    const dawnBoost = 0.4 + dawnTime * 0.8;
+    const pulse = 0.6 + 0.4 * Math.sin(t * 0.5 + ray.phase);
+    const dawnBoost = 1.0 + dawnTime * 0.5;
     ray.mesh.material.opacity = ray.baseOpacity * pulse * dawnBoost;
-
-    // Color warms from orange to gold
-    const r = 1.0;
-    const g = 0.55 + dawnTime * 0.2;
-    const b = 0.1 + dawnTime * 0.05;
-    ray.mesh.material.color.setRGB(r, g, b);
+    ray.mesh.material.color.setHex(0xff00ff);
   }
 
-  // Ground mist: drift and pulse
+  // Ground mist
   for (const mist of mistPlanes) {
     const ud = mist.userData;
-    mist.position.x = ud.bx + Math.sin(t * ud.driftX + ud.phase) * 4;
-    mist.position.z = ud.bz + Math.cos(t * ud.driftZ + ud.phase) * 3;
-    // Mist brightens with dawn then burns off at full light
-    const burnOff = dawnTime > 0.7 ? 1 - (dawnTime - 0.7) / 0.3 : 1.0;
-    mist.material.opacity = ud.baseOpacity * burnOff * (0.7 + 0.3 * Math.sin(t * 0.15));
+    mist.position.x = ud.bx + Math.sin(t * ud.driftX + ud.phase) * 6;
+    mist.position.z = ud.bz + Math.cos(t * ud.driftZ + ud.phase) * 5;
+    mist.material.opacity = ud.baseOpacity * (0.7 + 0.3 * Math.sin(t * 0.3));
   }
 
-  // Water reflects dawn
+  // Water reflects neon magenta
   if (waterMat && waterAnimStartTime) {
     const elapsed = (Date.now() - waterAnimStartTime) * 0.0001;
-    const dawnGlow = 0.3 + dawnTime * 0.5;
-    waterMat.emissiveIntensity = dawnGlow + Math.sin(elapsed * 3) * 0.1;
-    const wStart = new THREE.Color(0xff4400);
-    const wEnd = new THREE.Color(0xffcc33);
-    waterMat.emissive.lerpColors(wStart, wEnd, dawnTime);
+    waterMat.emissiveIntensity = 1.0 + Math.sin(elapsed * 4) * 0.2;
+    waterMat.emissive.setHex(0xff00ff);
   }
 }
 
@@ -1044,7 +1014,12 @@ function loop() {
   tickDawn(t);
 
   // Render via post-processing composer (bloom)
-  composer.render();
+  try {
+    composer.render();
+  } catch (e) {
+    console.warn('[Forest World] Composer failed, falling back to basic render:', e);
+    renderer.render(scene, camera);
+  }
 }
 
 function onResize() {
