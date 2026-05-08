@@ -74,12 +74,25 @@
           </div>`).join('');
         el.innerHTML += `<div class="section"><h2>Teaching Experience</h2>${teachHTML}</div>`;
 
-        // Recent Projects
-        if (cv.recent_projects && cv.recent_projects.filmmaking) {
-          const projHTML = cv.recent_projects.filmmaking.map(p => `
-            <li><span style="font-weight:600">${p.title}</span> — ${p.project}${p.company ? ` (${p.company})` : ''}</li>`
-          ).join('');
-          el.innerHTML += `<div class="section"><h2>Recent Projects</h2><ul>${projHTML}</ul></div>`;
+        // Recent Projects — software then filmmaking
+        if (cv.recent_projects) {
+          let html = '';
+          if (cv.recent_projects.software) {
+            html += cv.recent_projects.software.map(p => `
+              <div class="entry">
+                <div class="entry-header">
+                  <div><span class="entry-title">${p.title}</span><span class="entry-company"> — ${p.project}</span></div>
+                </div>
+                ${p.description ? `<div class="entry-desc">${p.description}</div>` : ''}
+              </div>`).join('');
+          }
+          if (cv.recent_projects.filmmaking) {
+            const filmHTML = cv.recent_projects.filmmaking.map(p =>
+              `<li><span style="font-weight:600">${p.title}</span> — ${p.project}${p.company ? ` (${p.company})` : ''}</li>`
+            ).join('');
+            html += `<ul style="margin-top:0.5rem">${filmHTML}</ul>`;
+          }
+          if (html) el.innerHTML += `<div class="section"><h2>Recent Projects</h2>${html}</div>`;
         }
 
         // Skills

@@ -113,6 +113,13 @@
     }
   ],
   "recent_projects": {
+    "software": [
+      {
+        "title": "Creator & Lead Developer",
+        "project": "pro-mpt (2025 - Present)",
+        "description": "Local-first CLI tool for archiving, searching, and analyzing AI prompt history. Python/SQLite, rich CLI, multi-model support, and ambient auto-import from Claude Code and Gemini CLI sessions."
+      }
+    ],
     "filmmaking": [
       {
         "title": "Editor and Colorist",

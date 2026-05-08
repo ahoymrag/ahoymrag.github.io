@@ -102,6 +102,11 @@
         "description": "Full-stack media and commerce platform — Flask/PostgreSQL backend, Vue 3 SPA, Stripe Connect payments, Redis caching, Capacitor mobile apps (iOS/Android), Electron desktop builds (macOS/Windows/Linux), PWA with service workers. Custom search engine, gamification engine, and automated CI/CD via GitHub Actions."
       },
       {
+        "title": "Creator & Lead Developer",
+        "project": "pro-mpt (2025 - Present)",
+        "description": "Local-first CLI tool and personal knowledge infrastructure for archiving, searching, and analyzing AI prompt history across models (Claude, GPT-4, Gemini, etc.). Built on Python 3.10+ with SQLite, Click CLI framework, and rich terminal UI. Features: multi-model prompt logging with metadata (app, domain, version, rating), full-text search with filtering, expertise trajectory analysis, ambient auto-import from Claude Code and Gemini CLI session files, interactive mode, and Markdown/JSON/CSV export. Designed around a local-first, no-lock-in philosophy with optional cloud sync planned."
+      },
+      {
         "title": "API Integrations & Internal Tooling",
         "project": "Silverback / ApeWorx (2021 - 2025)",
         "description": "Built automation scripts and API integrations for a blockchain developer tools platform used by engineering teams globally."
