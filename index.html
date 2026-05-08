@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="./portfolio/src/ag-cv-css-1.css">
     <link rel="stylesheet" href="./src/css/index-addons.css">
     <link rel="stylesheet" href="./src/css/fps-hud.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Barlow:wght@300;400;600&display=swap" rel="stylesheet">
     <title>Alex Gonzalez | Work and Portfolio</title>
     <script type="importmap">
     {
@@ -59,133 +61,352 @@
 
 <body id="index-body" x-data="{ code: '', showMenu: false }">
 
-    <!-- WELCOME SCREEN -->
+    <!-- WELCOME SCREEN — indie game start screen -->
     <style>
+        /* ── Base container ─────────────────────────────── */
         #welcome-screen {
             position: fixed;
             inset: 0;
             z-index: 99999;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            background: #080c08;
-            font-family: 'Inter', 'Helvetica Neue', sans-serif;
-            padding: 2rem;
+            overflow: hidden;
             opacity: 1;
-            transition: opacity 0.4s ease;
+            transition: opacity 0.6s ease;
         }
         #welcome-screen.fade-out {
             opacity: 0;
             pointer-events: none;
         }
-        .welcome-name {
-            font-size: clamp(2.2rem, 6vw, 4rem);
-            font-weight: 700;
-            color: #fff;
-            letter-spacing: -0.03em;
-            margin: 0 0 0.4rem 0;
-            text-align: center;
+
+        /* ── Atmospheric background layers ──────────────── */
+        .ws-bg {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(
+                180deg,
+                #060410 0%,
+                #0e0918 22%,
+                #1c0d08 50%,
+                #3a1500 72%,
+                #5c2200 88%,
+                #7a3000 100%
+            );
         }
-        .welcome-tagline {
-            font-size: 0.95rem;
-            color: rgba(255,255,255,0.35);
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
-            margin: 0 0 3.5rem 0;
-            text-align: center;
+
+        /* Horizon fire — bright core where sun meets earth */
+        .ws-horizon {
+            position: absolute;
+            inset: 0;
+            background:
+                radial-gradient(ellipse 100% 38% at 50% 91%,
+                    rgba(255, 90, 10, 0.75) 0%,
+                    rgba(255, 50, 0, 0.4) 28%,
+                    transparent 60%
+                ),
+                radial-gradient(ellipse 55% 20% at 50% 97%,
+                    rgba(255, 200, 60, 0.55) 0%,
+                    rgba(255, 130, 20, 0.3) 40%,
+                    transparent 70%
+                );
         }
-        .welcome-cards {
+
+        /* Atmospheric mist bands */
+        .ws-mist {
+            position: absolute;
+            inset: 0;
+            background:
+                radial-gradient(ellipse 130% 18% at 50% 76%,
+                    rgba(255, 150, 60, 0.14) 0%,
+                    transparent 100%
+                ),
+                radial-gradient(ellipse 90% 12% at 28% 80%,
+                    rgba(255, 180, 100, 0.09) 0%,
+                    transparent 100%
+                ),
+                radial-gradient(ellipse 75% 10% at 72% 78%,
+                    rgba(255, 160, 80, 0.08) 0%,
+                    transparent 100%
+                );
+        }
+
+        /* Subtle dark vignette around edges */
+        .ws-vignette {
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(
+                ellipse 110% 110% at 50% 50%,
+                transparent 38%,
+                rgba(0, 0, 0, 0.55) 100%
+            );
+            pointer-events: none;
+        }
+
+        /* ── Forest silhouette SVG layer ─────────────────── */
+        .ws-trees {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 62%;
+            pointer-events: none;
+        }
+
+        /* ── Content ─────────────────────────────────────── */
+        .ws-content {
+            position: relative;
+            z-index: 10;
+            height: 100%;
             display: flex;
-            gap: 1.25rem;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            padding-bottom: 18vh; /* lift content above the treeline */
+            font-family: 'Barlow', 'Helvetica Neue', sans-serif;
+        }
+
+        .ws-eyebrow {
+            font-size: 0.62rem;
+            font-weight: 600;
+            letter-spacing: 0.4em;
+            color: rgba(255, 170, 70, 0.65);
+            text-transform: uppercase;
+            margin: 0 0 1.1rem 0;
+        }
+
+        .ws-title {
+            font-family: 'Cinzel', Georgia, 'Times New Roman', serif;
+            font-size: clamp(3rem, 9vw, 6.5rem);
+            font-weight: 900;
+            color: #fdf4e8;
+            letter-spacing: 0.05em;
+            line-height: 0.95;
+            text-align: center;
+            margin: 0;
+            text-shadow:
+                0 0 50px rgba(255, 110, 20, 0.7),
+                0 0 100px rgba(255, 60, 0, 0.35),
+                0 0 180px rgba(200, 40, 0, 0.2),
+                0 3px 8px rgba(0, 0, 0, 0.9);
+        }
+
+        /* Thin rule under title — like KAMUI's divider lines */
+        .ws-rule {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            margin: 1.4rem 0 1.1rem;
+        }
+        .ws-rule-line {
+            width: 55px;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(255, 155, 50, 0.7), transparent);
+        }
+        .ws-rule-dot {
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            background: rgba(255, 155, 50, 0.8);
+        }
+
+        .ws-subtitle {
+            font-size: 0.72rem;
+            font-weight: 300;
+            letter-spacing: 0.28em;
+            color: rgba(255, 205, 140, 0.45);
+            text-transform: uppercase;
+            text-align: center;
+            margin: 0 0 2.8rem 0;
+        }
+
+        /* ── Buttons ─────────────────────────────────────── */
+        .ws-choices {
+            display: flex;
+            gap: 1rem;
             flex-wrap: wrap;
             justify-content: center;
-            width: 100%;
-            max-width: 680px;
         }
-        .welcome-card {
-            flex: 1;
-            min-width: 240px;
-            max-width: 300px;
-            padding: 2rem 1.75rem;
-            border-radius: 12px;
+
+        .ws-btn {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.28rem;
+            padding: 1rem 2rem;
+            border-radius: 2px;
             cursor: pointer;
-            text-align: left;
-            border: 1px solid transparent;
-            transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
             background: none;
-            color: inherit;
+            font-family: 'Barlow', sans-serif;
+            transition: transform 0.22s ease, box-shadow 0.22s ease, background 0.22s ease, border-color 0.22s ease;
+            min-width: 195px;
+            text-align: center;
         }
-        .welcome-card:hover {
+
+        /* Primary — "Enter the World" — warm amber glow */
+        .ws-btn-primary {
+            border: 1px solid rgba(255, 130, 30, 0.65);
+            background: rgba(255, 90, 10, 0.08);
+            box-shadow:
+                0 0 18px rgba(255, 90, 10, 0.12),
+                inset 0 0 18px rgba(255, 80, 0, 0.05);
+        }
+        .ws-btn-primary:hover {
+            background: rgba(255, 100, 15, 0.2);
+            border-color: rgba(255, 170, 60, 0.95);
+            box-shadow:
+                0 0 40px rgba(255, 110, 20, 0.45),
+                inset 0 0 30px rgba(255, 90, 0, 0.12);
             transform: translateY(-3px);
         }
-        .welcome-card-3d {
-            background: rgba(80,160,60,0.08);
-            border-color: rgba(100,200,80,0.3);
+
+        /* Secondary — "View Portfolio" — dim neutral */
+        .ws-btn-secondary {
+            border: 1px solid rgba(255, 255, 255, 0.14);
+            background: rgba(255, 255, 255, 0.025);
         }
-        .welcome-card-3d:hover {
-            background: rgba(80,160,60,0.16);
-            border-color: rgba(100,200,80,0.6);
+        .ws-btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.07);
+            border-color: rgba(255, 255, 255, 0.32);
+            transform: translateY(-3px);
         }
-        .welcome-card-standard {
-            background: rgba(255,255,255,0.04);
-            border-color: rgba(255,255,255,0.12);
-        }
-        .welcome-card-standard:hover {
-            background: rgba(255,255,255,0.09);
-            border-color: rgba(255,255,255,0.28);
-        }
-        .welcome-card-icon {
-            font-size: 1.6rem;
-            margin-bottom: 1rem;
-            display: block;
-        }
-        .welcome-card-title {
-            font-size: 1.1rem;
-            font-weight: 600;
-            color: #fff;
-            margin: 0 0 0.4rem 0;
-        }
-        .welcome-card-desc {
-            font-size: 0.82rem;
-            color: rgba(255,255,255,0.4);
-            line-height: 1.5;
-            margin: 0;
-        }
-        .welcome-card-3d .welcome-card-title { color: #90e070; }
-        @media (pointer: coarse) {
-            .welcome-card-3d { display: none; }
-            .welcome-cards { justify-content: center; }
-        }
-        .welcome-skip {
-            margin-top: 2.5rem;
+
+        .ws-btn-label {
             font-size: 0.75rem;
-            color: rgba(255,255,255,0.18);
+            font-weight: 600;
+            letter-spacing: 0.22em;
+            text-transform: uppercase;
+            color: #fdf4e8;
+        }
+        .ws-btn-primary .ws-btn-label { color: #ffc870; }
+
+        .ws-btn-sub {
+            font-size: 0.66rem;
+            font-weight: 300;
+            letter-spacing: 0.04em;
+            color: rgba(255, 255, 255, 0.3);
+        }
+
+        .ws-skip {
+            margin-top: 2.2rem;
+            font-family: 'Barlow', sans-serif;
+            font-size: 0.66rem;
+            font-weight: 300;
+            letter-spacing: 0.18em;
+            color: rgba(255, 255, 255, 0.18);
             cursor: pointer;
             background: none;
             border: none;
-            letter-spacing: 0.05em;
             text-transform: uppercase;
+            transition: color 0.2s;
         }
-        .welcome-skip:hover { color: rgba(255,255,255,0.4); }
+        .ws-skip:hover { color: rgba(255, 255, 255, 0.42); }
+
+        /* Hide 3D option on touch/mobile (pointer lock won't work) */
+        @media (pointer: coarse) {
+            .ws-btn-primary { display: none; }
+            .ws-choices { justify-content: center; }
+        }
+        @media (max-width: 480px) {
+            .ws-choices { flex-direction: column; align-items: center; }
+            .ws-btn { min-width: 260px; }
+        }
     </style>
 
     <div id="welcome-screen">
-        <h1 class="welcome-name">Alex Gonzalez</h1>
-        <p class="welcome-tagline">Choose your experience</p>
-        <div class="welcome-cards">
-            <button class="welcome-card welcome-card-3d" onclick="chooseFPS()">
-                <span class="welcome-card-icon">🌲</span>
-                <div class="welcome-card-title">Immersive 3D</div>
-                <p class="welcome-card-desc">Explore a 3D world. Walk through the forest, discover portals to projects and work.</p>
-            </button>
-            <button class="welcome-card welcome-card-standard" onclick="chooseStandard()">
-                <span class="welcome-card-icon">◻</span>
-                <div class="welcome-card-title">Traditional</div>
-                <p class="welcome-card-desc">Classic portfolio layout. Navigate directly to work, CV, photography, and more.</p>
-            </button>
+        <!-- Atmospheric layers (back to front) -->
+        <div class="ws-bg"></div>
+        <div class="ws-horizon"></div>
+        <div class="ws-mist"></div>
+
+        <!-- Three-layer forest silhouette -->
+        <svg class="ws-trees" viewBox="0 0 1440 600" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg">
+            <!-- Layer 1: far/distant forest — warm dark, full width low profile -->
+            <path fill="#1e0d06" opacity="0.82" d="
+                M 0,600 L 0,335
+                L 22,298 L 38,318 L 56,282 L 74,308 L 92,270
+                L 112,300 L 130,262 L 150,292 L 168,255 L 188,285
+                L 207,248 L 226,278 L 246,242 L 265,272 L 284,238
+                L 303,268 L 322,234 L 342,264 L 360,230 L 380,260
+                L 398,228 L 418,256 L 436,224 L 455,252 L 474,222
+                L 492,248 L 512,230 L 532,250 L 552,238 L 572,255
+                L 592,244 L 615,258 L 638,248 L 660,258 L 682,250
+                L 705,258 L 728,252 L 750,258 L 772,252 L 794,258
+                L 816,250 L 828,252
+                L 852,244 L 872,255 L 892,238 L 912,250 L 932,224
+                L 950,252 L 968,222 L 988,248 L 1008,224 L 1027,252
+                L 1046,228 L 1065,256 L 1084,230 L 1104,260 L 1122,234
+                L 1142,264 L 1160,238 L 1180,268 L 1198,242 L 1218,272
+                L 1237,248 L 1256,278 L 1274,255 L 1294,285 L 1312,260
+                L 1332,292 L 1350,265 L 1370,300 L 1390,275 L 1410,308
+                L 1430,288 L 1440,305
+                L 1440,600 Z
+            "/>
+
+            <!-- Layer 2: mid-distance — darker, left/right clusters, center opens -->
+            <path fill="#120806" d="
+                M 0,600 L 0,295
+                L 18,248 L 38,272 L 58,228 L 80,258 L 102,210
+                L 124,242 L 145,198 L 168,232 L 190,188 L 212,222
+                L 234,178 L 256,212 L 278,165 L 300,202 L 322,158
+                L 344,192 L 366,150 L 388,185 L 410,148 L 432,178
+                L 454,142 L 475,172 L 496,148 L 516,168 L 535,155
+                L 552,172 L 568,162 L 582,175
+                L 605,280 L 640,310 L 720,322 L 800,310 L 838,285
+                L 858,172 L 874,162 L 892,155 L 908,168 L 926,148
+                L 945,172 L 965,142 L 985,178 L 1006,148 L 1028,185
+                L 1050,150 L 1072,192 L 1094,158 L 1116,202 L 1138,165
+                L 1160,212 L 1182,178 L 1204,222 L 1226,188 L 1248,232
+                L 1270,198 L 1292,242 L 1314,210 L 1336,258 L 1358,228
+                L 1380,272 L 1400,248 L 1422,275 L 1440,290
+                L 1440,600 Z
+            "/>
+
+            <!-- Layer 3 left: near trees — near-black, tall, left edge only -->
+            <path fill="#070302" d="
+                M 0,600 L 0,260
+                L 22,202 L 45,240 L 68,188 L 92,228 L 116,172
+                L 140,215 L 164,160 L 188,202 L 212,150 L 238,194
+                L 262,142 L 286,188 L 308,135 L 332,178 L 355,128
+                L 378,165 L 396,148 L 415,170 L 428,195
+                L 445,340 L 445,600 Z
+            "/>
+
+            <!-- Layer 3 right: near trees — near-black, tall, right edge only -->
+            <path fill="#070302" d="
+                M 1440,600 L 1440,260
+                L 1418,202 L 1395,240 L 1372,188 L 1348,228 L 1324,172
+                L 1300,215 L 1276,160 L 1252,202 L 1228,150 L 1202,194
+                L 1178,142 L 1154,188 L 1132,135 L 1108,178 L 1085,128
+                L 1062,165 L 1044,148 L 1025,170 L 1012,195
+                L 995,340 L 995,600 Z
+            "/>
+        </svg>
+
+        <div class="ws-vignette"></div>
+
+        <!-- Content: title + buttons -->
+        <div class="ws-content">
+            <p class="ws-eyebrow">A Portfolio World</p>
+            <h1 class="ws-title">Alex<br>Gonzalez</h1>
+            <div class="ws-rule">
+                <span class="ws-rule-line"></span>
+                <span class="ws-rule-dot"></span>
+                <span class="ws-rule-line"></span>
+            </div>
+            <p class="ws-subtitle">creator · educator · explorer</p>
+
+            <div class="ws-choices">
+                <button class="ws-btn ws-btn-primary" onclick="chooseFPS()">
+                    <span class="ws-btn-label">Enter the World</span>
+                    <span class="ws-btn-sub">Immersive 3D · WASD to explore</span>
+                </button>
+                <button class="ws-btn ws-btn-secondary" onclick="chooseStandard()">
+                    <span class="ws-btn-label">View Portfolio</span>
+                    <span class="ws-btn-sub">Classic layout</span>
+                </button>
+            </div>
+            <button class="ws-skip" onclick="chooseStandard()">skip →</button>
         </div>
-        <button class="welcome-skip" onclick="chooseStandard()">skip →</button>
     </div>
 
     <script>
