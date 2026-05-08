@@ -208,7 +208,7 @@
 
         function chooseFPS() {
             dismissWelcome(function () {
-                document.getElementById('fps-world-root').style.display = 'block';
+                window.dispatchEvent(new CustomEvent('ag:enterFPS'));
             });
         }
 

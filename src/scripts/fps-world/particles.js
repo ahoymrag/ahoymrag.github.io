@@ -33,8 +33,8 @@ export function initParticles(scene) {
     size: 1.5,
     sizeAttenuation: true,
     transparent: true,
-    opacity: 0.15,
-    color: 0xdd88ff,
+    opacity: 0.12,
+    color: 0xffaa44, // warm amber bokeh
   });
 
   bokehParticles = new THREE.Points(bokehGeo, bokehMat);
@@ -47,16 +47,16 @@ export function initParticles(scene) {
   const colors = new Float32Array(PARTICLE_COUNT * 3);
   const sizes = new Float32Array(PARTICLE_COUNT);
 
-  // Nebula palette - cosmic night atmosphere
+  // Dawn dust mote palette — catching first light
   const palette = [
-    new THREE.Color(0xcc44ff), // Violet
-    new THREE.Color(0xff44cc), // Magenta
-    new THREE.Color(0x44ccff), // Sky cyan
-    new THREE.Color(0x00ffaa), // Mint
-    new THREE.Color(0xff88dd), // Soft pink
-    new THREE.Color(0x8844ff), // Deep purple
-    new THREE.Color(0xffffff), // White star
-    new THREE.Color(0x44ffee), // Aqua teal
+    new THREE.Color(0xffcc44), // golden
+    new THREE.Color(0xff8800), // amber
+    new THREE.Color(0xffeeaa), // pale gold
+    new THREE.Color(0xff6600), // deep orange
+    new THREE.Color(0xffdd88), // warm white-gold
+    new THREE.Color(0xffffff), // white light
+    new THREE.Color(0xff9933), // orange-gold
+    new THREE.Color(0xffbb55), // medium amber
   ];
 
   for (let i = 0; i < PARTICLE_COUNT; i++) {
