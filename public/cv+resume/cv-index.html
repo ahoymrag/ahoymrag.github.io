@@ -13,104 +13,242 @@
 
     body {
       font-family: 'Inter', sans-serif;
-      background: #0a0a0a;
-      color: #e0e0e0;
       min-height: 100vh;
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 4rem 1.5rem;
+      padding: clamp(2rem, 6vw, 5rem) 1.25rem;
+      color: #f0f0f0;
+      overflow-x: hidden;
+
+      /* Deep liquid background */
+      background:
+        radial-gradient(ellipse 80% 60% at 20% 10%, rgba(80, 120, 200, 0.18) 0%, transparent 60%),
+        radial-gradient(ellipse 60% 50% at 80% 90%, rgba(140, 80, 200, 0.15) 0%, transparent 55%),
+        radial-gradient(ellipse 50% 40% at 60% 40%, rgba(60, 160, 180, 0.1) 0%, transparent 60%),
+        linear-gradient(160deg, #080c14 0%, #0d0d18 40%, #0a0e1a 100%);
+    }
+
+    /* Ambient orbs for depth */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background:
+        radial-gradient(circle 500px at 15% 25%, rgba(80,130,255,0.07) 0%, transparent 70%),
+        radial-gradient(circle 400px at 85% 75%, rgba(160,80,220,0.06) 0%, transparent 70%);
+      pointer-events: none;
+      z-index: 0;
     }
 
     header {
+      position: relative;
+      z-index: 1;
       text-align: center;
-      margin-bottom: 3rem;
+      margin-bottom: clamp(2rem, 5vw, 3.5rem);
     }
 
     header h1 {
       font-family: 'Cinzel', Georgia, serif;
-      font-size: clamp(2rem, 5vw, 3rem);
+      font-size: clamp(2rem, 7vw, 3.5rem);
       font-weight: 900;
-      letter-spacing: 0.05em;
+      letter-spacing: 0.06em;
       color: #fff;
-      text-align: center;
+      text-shadow: 0 0 60px rgba(120,160,255,0.3), 0 2px 4px rgba(0,0,0,0.5);
     }
 
     header p {
-      margin-top: 0.5rem;
-      color: rgba(255,255,255,0.4);
-      font-size: 0.95rem;
+      margin-top: 0.6rem;
+      font-size: clamp(0.8rem, 2.5vw, 0.95rem);
+      color: rgba(255,255,255,0.35);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
     }
 
+    /* Divider line */
+    .header-rule {
+      width: clamp(40px, 8vw, 60px);
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(160,200,255,0.4), transparent);
+      margin: 1.25rem auto 0;
+    }
+
+    /* Grid */
     .cv-grid {
+      position: relative;
+      z-index: 1;
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      gap: 1.25rem;
+      grid-template-columns: repeat(auto-fill, minmax(min(100%, 270px), 1fr));
+      gap: 1rem;
       width: 100%;
-      max-width: 900px;
+      max-width: 880px;
     }
 
+    /* Liquid glass card */
     .cv-card {
       display: flex;
       flex-direction: column;
-      gap: 0.6rem;
-      padding: 1.5rem;
-      border: 1px solid rgba(255,255,255,0.1);
-      border-radius: 12px;
-      background: rgba(255,255,255,0.04);
+      gap: 0.65rem;
+      padding: 1.6rem 1.5rem;
+      border-radius: 16px;
       text-decoration: none;
       color: inherit;
-      transition: background 0.2s, border-color 0.2s;
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.22s ease, box-shadow 0.22s ease;
+
+      /* Glass layers */
+      background: linear-gradient(
+        135deg,
+        rgba(255,255,255,0.09) 0%,
+        rgba(255,255,255,0.04) 50%,
+        rgba(255,255,255,0.07) 100%
+      );
+      backdrop-filter: blur(20px) saturate(160%);
+      -webkit-backdrop-filter: blur(20px) saturate(160%);
+      border: 1px solid rgba(255,255,255,0.13);
+      box-shadow:
+        0 4px 24px rgba(0,0,0,0.3),
+        0 1px 0 rgba(255,255,255,0.1) inset,
+        0 -1px 0 rgba(0,0,0,0.2) inset;
+    }
+
+    /* Top shine streak */
+    .cv-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.35) 40%, rgba(255,255,255,0.15) 70%, transparent 100%);
+    }
+
+    /* Subtle inner glow on hover */
+    .cv-card::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: 16px;
+      opacity: 0;
+      transition: opacity 0.22s ease;
+      background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(255,255,255,0.06) 0%, transparent 70%);
     }
 
     .cv-card:hover {
-      background: rgba(255,255,255,0.08);
-      border-color: rgba(255,255,255,0.22);
+      transform: translateY(-3px);
+      box-shadow:
+        0 8px 36px rgba(0,0,0,0.4),
+        0 1px 0 rgba(255,255,255,0.14) inset,
+        0 -1px 0 rgba(0,0,0,0.2) inset;
     }
 
-    .cv-card .tag {
-      display: inline-block;
-      font-size: 0.7rem;
+    .cv-card:hover::after { opacity: 1; }
+
+    /* Active tap on mobile */
+    .cv-card:active { transform: translateY(-1px); }
+
+    /* Tags */
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-size: 0.68rem;
       font-weight: 600;
-      letter-spacing: 0.08em;
+      letter-spacing: 0.1em;
       text-transform: uppercase;
-      padding: 0.2rem 0.55rem;
-      border-radius: 4px;
+      padding: 0.25rem 0.6rem;
+      border-radius: 20px;
       width: fit-content;
+      backdrop-filter: blur(8px);
     }
 
-    .tag-general   { background: rgba(100,160,255,0.15); color: #7ab8ff; }
-    .tag-technical { background: rgba(100,220,120,0.15); color: #7de89a; }
-    .tag-legacy    { background: rgba(200,200,200,0.1);  color: #aaa; }
+    .tag-dot {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    .tag-general {
+      background: rgba(100,160,255,0.12);
+      border: 1px solid rgba(100,160,255,0.25);
+      color: #90baff;
+    }
+    .tag-general .tag-dot { background: #90baff; }
+
+    .tag-technical {
+      background: rgba(80,210,140,0.1);
+      border: 1px solid rgba(80,210,140,0.25);
+      color: #70dca0;
+    }
+    .tag-technical .tag-dot { background: #70dca0; }
+
+    .tag-legacy {
+      background: rgba(200,200,200,0.07);
+      border: 1px solid rgba(200,200,200,0.15);
+      color: #999;
+    }
+    .tag-legacy .tag-dot { background: #888; }
 
     .cv-card h2 {
-      font-size: 1.1rem;
+      font-size: clamp(1rem, 3vw, 1.15rem);
       font-weight: 600;
-      color: #fff;
+      color: rgba(255,255,255,0.92);
       line-height: 1.3;
     }
 
     .cv-card p {
-      font-size: 0.85rem;
-      color: rgba(255,255,255,0.45);
-      line-height: 1.5;
+      font-size: 0.83rem;
+      color: rgba(255,255,255,0.4);
+      line-height: 1.55;
+      flex: 1;
     }
 
     .cv-card .arrow {
-      margin-top: auto;
-      padding-top: 0.75rem;
-      font-size: 0.8rem;
-      color: rgba(255,255,255,0.25);
+      margin-top: 0.5rem;
+      font-size: 0.78rem;
+      color: rgba(255,255,255,0.22);
+      transition: color 0.2s, transform 0.2s;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
     }
 
+    .cv-card:hover .arrow {
+      color: rgba(255,255,255,0.5);
+    }
+
+    /* Footer */
     footer {
-      margin-top: 4rem;
+      position: relative;
+      z-index: 1;
+      margin-top: clamp(2.5rem, 6vw, 4rem);
       font-size: 0.8rem;
-      color: rgba(255,255,255,0.2);
     }
 
-    footer a { color: rgba(255,255,255,0.35); text-decoration: none; }
-    footer a:hover { color: rgba(255,255,255,0.6); }
+    footer a {
+      color: rgba(255,255,255,0.25);
+      text-decoration: none;
+      letter-spacing: 0.04em;
+      padding: 0.5rem 1rem;
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 20px;
+      backdrop-filter: blur(8px);
+      transition: color 0.2s, border-color 0.2s;
+      display: inline-block;
+    }
+
+    footer a:hover {
+      color: rgba(255,255,255,0.6);
+      border-color: rgba(255,255,255,0.2);
+    }
+
+    /* Mobile: single column, tighter padding */
+    @media (max-width: 480px) {
+      .cv-grid { grid-template-columns: 1fr; }
+      .cv-card { padding: 1.35rem 1.25rem; }
+    }
   </style>
 </head>
 <body>
@@ -118,26 +256,27 @@
   <header>
     <h1>Alex Gonzalez</h1>
     <p>CVs &amp; Resumes</p>
+    <div class="header-rule"></div>
   </header>
 
   <div class="cv-grid">
 
     <a href="./26cv/cv26.html" class="cv-card">
-      <span class="tag tag-general">General · 2026</span>
+      <span class="tag tag-general"><span class="tag-dot"></span>General · 2026</span>
       <h2>2026 CV</h2>
       <p>Full career overview — creative direction, teaching, software, film, and platform work.</p>
       <span class="arrow">View →</span>
     </a>
 
     <a href="./26cv/cv26-technical.html" class="cv-card">
-      <span class="tag tag-technical">Technical · 2026</span>
+      <span class="tag tag-technical"><span class="tag-dot"></span>Technical · 2026</span>
       <h2>2026 Technical CV</h2>
       <p>Systems engineering focus — infrastructure, automation, cloud, API integration, and scripting. Tailored for IT and engineering roles.</p>
       <span class="arrow">View →</span>
     </a>
 
     <a href="./25cv/cv25.html" class="cv-card">
-      <span class="tag tag-legacy">General · 2025</span>
+      <span class="tag tag-legacy"><span class="tag-dot"></span>General · 2025</span>
       <h2>2025 CV</h2>
       <p>Prior year general CV — creative director, filmmaker, and software designer.</p>
       <span class="arrow">View →</span>
@@ -146,7 +285,7 @@
   </div>
 
   <footer>
-    <a href="/">← Back to alexgonzalez.ooo</a>
+    <a href="/">← alexgonzalez.ooo</a>
   </footer>
 
 </body>
