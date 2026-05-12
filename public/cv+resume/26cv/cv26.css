@@ -6,10 +6,10 @@ body, h1, h2, h3, p, ul, li, a { margin: 0; padding: 0; }
 
 body {
   font-family: "Inter", sans-serif;
-  font-size: 13px;
-  line-height: 1.6;
+  font-size: 12px;
+  line-height: 1.55;
   color: #1a1a1a;
-  background: #f4f4f2;
+  background: #f7f7f5;
   padding: 2rem;
 }
 
@@ -17,41 +17,45 @@ body {
   background: #fff;
   max-width: 8.5in;
   margin: 0 auto;
-  padding: 3rem 3.5rem;
-  box-shadow: 0 2px 24px rgba(0,0,0,0.08);
-  border-radius: 4px;
+  padding: 2.5rem 3rem;
+  box-shadow: 0 1px 18px rgba(0,0,0,0.06);
+  border-radius: 2px;
 }
 
-.cv-header { margin-bottom: 2rem; border-bottom: 2px solid #1a1a1a; padding-bottom: 1.25rem; }
-.cv-header h1 { font-size: 2.6rem; font-weight: 700; letter-spacing: -0.02em; line-height: 1.1; color: #000; }
-.cv-header .cv-title { font-size: 1rem; font-weight: 500; color: #555; margin-top: 0.3rem; }
+.cv-header { margin-bottom: 1.5rem; border-bottom: 1px solid #222; padding-bottom: 1rem; }
+.cv-header h1 { font-size: 2.2rem; font-weight: 700; letter-spacing: -0.03em; line-height: 1.05; color: #000; }
+.cv-header .cv-title { font-size: 0.92rem; font-weight: 500; color: #5a5a5a; margin-top: 0.25rem; }
 .cv-header .cv-contact {
   display: flex; flex-wrap: wrap; gap: 0.4rem 1.5rem;
-  margin-top: 0.75rem; font-size: 0.8rem; color: #444;
+  margin-top: 0.65rem; font-size: 0.76rem; color: #555;
 }
 
-.section { margin-bottom: 1.75rem; }
+.section { margin-bottom: 1.35rem; }
 .section h2 {
-  font-size: 0.65rem;
+  font-size: 0.62rem;
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: #888;
   border-bottom: 1px solid #e0e0e0;
   padding-bottom: 0.3rem;
-  margin-bottom: 0.85rem;
+  margin-bottom: 0.7rem;
 }
 
 ul { list-style: none; padding: 0; }
-ul li { padding: 0.35rem 0 0.35rem 1rem; position: relative; }
+ul li { padding: 0.28rem 0 0.28rem 1rem; position: relative; }
 ul li::before { content: "–"; position: absolute; left: 0; color: #bbb; }
 
-.entry { margin-bottom: 0.75rem; }
+.entry { margin-bottom: 0.6rem; }
 .entry-header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.25rem; }
-.entry-title { font-weight: 600; font-size: 0.9rem; color: #111; }
-.entry-company { font-size: 0.85rem; color: #444; }
-.entry-date { font-size: 0.78rem; color: #888; white-space: nowrap; }
-.entry-desc { font-size: 0.82rem; color: #555; margin-top: 0.2rem; }
+.entry-title { font-weight: 600; font-size: 0.78rem; color: #111; }
+.entry-company { font-size: 0.78rem; color: #4a4a4a; }
+.entry-date { font-size: 0.7rem; color: #888; white-space: nowrap; }
+.entry-desc { font-size: 0.74rem; color: #555; margin-top: 0.16rem; }
+
+.entry-header + .entry-desc {
+  max-width: 68ch;
+}
 
 .skills-list { display: flex; flex-wrap: wrap; gap: 0.4rem; }
 .skill-tag {
@@ -59,7 +63,7 @@ ul li::before { content: "–"; position: absolute; left: 0; color: #bbb; }
   border: 1px solid #e0e0de;
   border-radius: 3px;
   padding: 0.2rem 0.55rem;
-  font-size: 0.78rem;
+  font-size: 0.74rem;
   color: #333;
 }
 
@@ -75,7 +79,7 @@ ul li::before { content: "–"; position: absolute; left: 0; color: #bbb; }
 .no-print button, .no-print a {
   padding: 0.5rem 1.25rem;
   font-family: "Inter", sans-serif;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   font-weight: 500;
   border-radius: 5px;
   cursor: pointer;
@@ -99,7 +103,7 @@ ul li::before { content: "–"; position: absolute; left: 0; color: #bbb; }
 
 @media print {
   body { background: #fff; padding: 0; }
-  .container { box-shadow: none; border-radius: 0; padding: 2rem 2.5rem; }
+  .container { box-shadow: none; border-radius: 0; padding: 1.75rem 2.25rem; }
   .no-print { display: none !important; }
   .section { page-break-inside: avoid; }
 }

@@ -7,9 +7,11 @@
         <link rel="stylesheet" href="2024-style.css">
         <style>
             body {
-                font-family: 'Georgia', serif;
-                background-color: #f4f4f4;
-                color: #333;
+                font-family: 'Barlow', 'Helvetica Neue', Arial, sans-serif;
+                background:
+                    radial-gradient(circle at top left, rgba(255, 174, 0, 0.12), transparent 30%),
+                    linear-gradient(180deg, #f7f3ec 0%, #ffffff 100%);
+                color: #111;
                 margin: 0;
                 padding: 0;
             }
@@ -17,19 +19,22 @@
             header, footer {
                 text-align: center;
                 padding: 20px;
-                background-color: #fff;
-                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                background-color: rgba(255, 255, 255, 0.82);
+                backdrop-filter: blur(10px);
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
                 margin-bottom: 20px;
             }
 
             h1 {
                 font-size: 2.5em;
                 margin: 0;
+                letter-spacing: -0.04em;
+                text-transform: uppercase;
             }
 
             .year-summary {
                 font-size: 1.2em;
-                color: #666;
+                color: #555;
                 margin: 20px 0;
             }
 
@@ -47,13 +52,14 @@
                 list-style: none;
                 margin: 20px 0;
                 padding: 20px;
-                background-color: #fff;
+                background-color: rgba(255, 255, 255, 0.9);
                 border-radius: 8px;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
                 transition: transform 0.2s;
                 display: flex;
                 align-items: center;
                 width: 100%;
+                gap: 20px;
             }
 
             li:hover {
@@ -63,12 +69,14 @@
             .back-to-business-button {
                 display: block;
                 text-align: left;
-                color: #333;
+                color: #111;
                 text-decoration: none;
                 font-weight: bold;
                 font-size: 1.2em;
-                margin-left: 20px;
+                margin-left: 0;
                 transition: background-color 0.3s, color 0.3s;
+                text-transform: uppercase;
+                letter-spacing: 0.03em;
             }
 
             .back-to-business-button:active {
@@ -82,21 +90,25 @@
                 background-color: #ddd;
                 border-radius: 8px;
                 flex-shrink: 0;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
             }
 
             .project-description {
-                margin-left: 20px;
                 flex-grow: 1;
             }
 
             .project-title {
                 font-size: 1.5em;
                 margin-bottom: 10px;
+                text-transform: uppercase;
+                letter-spacing: -0.02em;
             }
 
             .project-summary {
                 font-size: 1em;
-                color: #666;
+                color: #555;
             }
 
             .bio {
@@ -140,7 +152,7 @@
                 width: 80%; /* Could be more or less, depending on screen size */
                 max-width: 600px; /* Maximum width */
                 border-radius: 8px;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                box-shadow: 0 18px 50px rgba(0, 0, 0, 0.18);
             }
 
             .close {

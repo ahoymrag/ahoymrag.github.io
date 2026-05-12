@@ -49,6 +49,38 @@
         ]
     },
     {
+        "title": "pro-mpt",
+        "summary": "A placeholder slot for the pro-mpt GitHub project.",
+        "link": "#",
+        "description": "Project details will be linked once the repository is provided. This slot is reserved to keep the showcase structure consistent while the project is finalized.",
+        "images": [
+            "./placeholder-pro-mpt.jpg",
+            "./placeholder-pro-mpt-2.jpg"
+        ],
+        "additionalLinks": [
+            {
+                "type": "GitHub",
+                "url": "#"
+            }
+        ]
+    },
+    {
+        "title": "cpc-web-app",
+        "summary": "A placeholder slot for the CPC web app GitHub project.",
+        "link": "#",
+        "description": "Project details will be linked once the repository is provided. This slot is reserved to keep the showcase structure consistent while the project is finalized.",
+        "images": [
+            "./placeholder-cpc-web-app.jpg",
+            "./placeholder-cpc-web-app-2.jpg"
+        ],
+        "additionalLinks": [
+            {
+                "type": "GitHub",
+                "url": "#"
+            }
+        ]
+    },
+    {
         "title": "CPC Web App Launch",
         "summary": "A comprehensive web application for CPC management.",
         "link": "https://cpcnewhaven.org",

@@ -16,29 +16,20 @@
       "description": "Full-time STEM Specialist serving approximately 150 students per day across grades 1–5. Designed and delivered hands-on STEM curriculum integrating science, technology, engineering, and math for early elementary learners at Barnum School."
     },
     {
-      "company": "The Montauk Wine Project",
-      "year": "2025",
-      "title": "Product Designer and Frontend Engineer"
-    },
-    {
-      "company": "Silverback at ApeWorx, LTD",
-      "years": "2021 - 2025",
-      "title": "Product Designer"
-    },
-    {
       "company": "Mission Anabaino",
       "year": "2023",
       "title": "Executive Digital Platform Director",
       "description": "Created a system for new church plants to have a base-level foundation of technology."
     },
     {
-      "company": "ApeWorx",
-      "years": "2022 - 2023",
-      "title": "Product Designer"
+      "company": "CPC Web App",
+      "years": "2025 - Present",
+      "title": "Creator & Lead Developer",
+      "description": "Church operations web platform with database sync, archive management, analytics, content validation, and admin tooling. Built and maintained the templates, workflows, and supporting scripts that keep the site and data in sync."
     },
     {
       "company": "ApeWorx",
-      "years": "2021 - 2022",
+      "years": "2021 - 2025",
       "title": "Creative Director"
     },
     {
@@ -117,7 +108,25 @@
       {
         "title": "Creator & Lead Developer",
         "project": "pro-mpt (2025 - Present)",
-        "description": "Local-first CLI tool for archiving, searching, and analyzing AI prompt history. Python/SQLite, rich CLI, multi-model support, and ambient auto-import from Claude Code and Gemini CLI sessions."
+        "link": "https://github.com/ahoymrag/pro-mpt",
+        "description": "Python prompt archive and expertise tracker built around SQLite persistence, Typer CLI commands, Rich terminal UI output, and structured prompt metadata for search, stats, expertise, morning, and export workflows."
+      },
+      {
+        "title": "Creator & Lead Developer",
+        "project": "engine.zuki (2025 - Present)",
+        "link": "https://github.com/ahoymrag/engine.zuki",
+        "description": "Python-based personal robotic operating system with modular automation and orchestration work for utility, kinetic, and intelligence workflows."
+      },
+      {
+        "title": "Creator & Lead Developer",
+        "project": "pips (2025 - Present)",
+        "link": "https://github.com/ahoymrag/pips",
+        "description": "Three.js-powered 3D orchestration frontend built in Vue and JavaScript, with Glade-based agent containers that separate AI context by project and expose explore, build, playful flight, wizard, and reference modes."
+      },
+      {
+        "title": "Creator & Lead Developer",
+        "project": "cpc-web-app (2025 - Present)",
+        "description": "A full-stack web app for CPC workflows, built to support church operations with durable data handling, a responsive user interface, and practical admin tooling."
       }
     ],
     "filmmaking": [
