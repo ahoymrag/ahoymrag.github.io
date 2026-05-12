@@ -1,13 +1,13 @@
 {
   "name": "Alex Gonzalez",
-  "title": "Creative Director | Filmmaker | Software Designer",
+  "title": "Systems Engineer | Platform Engineer | Creative Director",
   "contact": {
     "phone": "(914) 391-9934",
     "email": "alex@ahoy.ooo",
     "portfolio": "alexgonzalez.ooo/share",
     "websites": ["ahoy.ooo", "apeworx.io", "cpcnewhaven.org"]
   },
-  "professional_summary": "A multidisciplinary professional with a background in film production, software design, and business. Proven ability to lead creative teams, mentor students, and deliver long-term projects in innovative and technical fields.",
+  "professional_summary": "Technical systems and platform professional with experience across infrastructure, automation, storage-oriented workflows, product design, and full-stack development. Proven ability to architect, document, and operate production systems while leading cross-functional teams and translating complex requirements into durable software and workflows.",
   "work_experience": [
     {
       "company": "Barnum School, Bridgeport Public Schools",
@@ -26,6 +26,12 @@
       "years": "2025 - Present",
       "title": "Creator & Lead Developer",
       "description": "Church operations web platform with database sync, archive management, analytics, content validation, and admin tooling. Built and maintained the templates, workflows, and supporting scripts that keep the site and data in sync."
+    },
+    {
+      "company": "Silverback / ApeWorx",
+      "years": "2021 - 2025",
+      "title": "Creative Director & Chief Product Designer",
+      "description": "Led product direction and front-end development for a blockchain developer platform that let users create localized bots, containerize their context, and execute on-chain transactions through agent-driven workflows. Coordinated engineering teams around architecture, shipping, and operational needs."
     },
     {
       "company": "ApeWorx",
@@ -158,8 +164,19 @@
     ]
   },
   "skills": [
+    "Infrastructure as Code (IaC) and API-driven provisioning",
+    "Storage and virtualization support — capacity, availability, lifecycle, and migration workflows",
+    "Linux/Unix systems administration and troubleshooting",
+    "Cloud storage and virtualization service support",
+    "Automation scripting with Python, shell, and PowerShell",
+    "Production troubleshooting, observability, and performance tuning",
+    "Database-backed application architecture and synchronization",
+    "Technical documentation, runbooks, and precise specifications",
+    "Cross-functional technical liaison and stakeholder communication",
     "Creating Custom GPTs using Advanced AI APIs",
     "Developing Python applications integrated with open-source AI models",
+    "Modular agent and workflow orchestration",
+    "Containerized bot and multi-agent system design",
     "Bulk video editing automation",
     "Index creation and data monitoring",
     "Virtual Reality Development (Unreal Engine 4 & 5, APK Development for Oculus Quest & Android)",

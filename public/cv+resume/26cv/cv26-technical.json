@@ -1,13 +1,13 @@
 {
   "name": "Alex Gonzalez",
-  "title": "Systems Engineer | Infrastructure & Automation | Full-Stack Developer",
+  "title": "Systems Engineer | Infrastructure & Automation | Platform Engineer",
   "contact": {
     "phone": "(914) 391-9934",
     "email": "alex@ahoy.ooo",
     "portfolio": "alexgonzalez.ooo/share",
     "websites": ["ahoy.ooo", "apeworx.io"]
   },
-  "professional_summary": "Technical systems professional with a proven track record building and automating infrastructure across cloud, web, and application platforms. Experienced in API-driven automation, scripting-based provisioning, and transitioning teams from manual workflows to code-driven operations. Strong communicator with experience translating technical requirements into precise documentation and working cross-functionally with both engineering and non-technical stakeholders.",
+  "professional_summary": "Technical systems and platform professional with a proven track record building and automating infrastructure across cloud, storage, web, and application environments. Experienced in API-driven provisioning, scripting-based automation, containerized workflows, and transitioning teams from manual operations to code-driven systems. Strong communicator with experience translating technical requirements into precise documentation and working cross-functionally with both engineering and non-technical stakeholders.",
   "work_experience": [
     {
       "company": "Barnum School, Bridgeport Public Schools",
@@ -35,24 +35,27 @@
     }
   ],
   "skills": [
+    "Infrastructure as Code (IaC) — API-driven provisioning, scripting-based automation",
+    "Storage and virtualization support — capacity, availability, lifecycle, and migration workflows",
+    "Cloud Infrastructure — AWS, Azure, Wasabi (storage provisioning, access management, lifecycle policies)",
+    "Linux/Unix systems — configuration management, security hardening, performance tuning",
+    "Shell scripting & PowerShell — system administration and workflow automation",
     "Python (Flask, SQLAlchemy, Alembic, Blueprints) — production backend architecture and API design",
     "PostgreSQL & SQLite — schema design, migrations, JSONB preferences, full audit trails",
+    "Redis — session management, API rate limiting, caching layers",
+    "Sentry + structlog — error tracking, observability, and structured production logging",
+    "GitHub Actions — CI/CD pipelines for multi-target build and release automation",
+    "Technical documentation — writing precise specs, runbooks, architecture diagrams, and SOPs",
+    "Technical liaison work — vendor, platform engineering, and stakeholder coordination",
+    "Automated data workflows — syncing content and services between app layers and operational systems",
+    "REST API design — routing, versioning, unified search, media ingestion pipelines",
+    "Security — CSRF protection, JWT/session hybrid auth, BCrypt, CSP policies, CORS enforcement, PCI-DSS compliance via Stripe Elements",
     "Vue 3 (Composition API, TypeScript, Pinia, Vite) — SPA development and state management",
     "Tailwind CSS 4.0, Three.js — UI systems and interactive canvas experiences",
     "Capacitor — cross-platform iOS and Android app distribution from a single Vue codebase",
     "Electron — macOS, Windows, and Linux desktop app packaging and distribution pipelines",
     "PWA / Service Workers — offline capability, background sync, mobile-first shell architecture",
     "Stripe Connect — payment infrastructure, wallet systems, automated payouts, webhook reconciliation",
-    "Redis — session management, API rate limiting, caching layers",
-    "Sentry + structlog — error tracking, observability, and structured production logging",
-    "GitHub Actions — CI/CD pipelines for multi-target build and release automation",
-    "Security — CSRF protection, JWT/session hybrid auth, BCrypt, CSP policies, CORS enforcement, PCI-DSS compliance via Stripe Elements",
-    "REST API design — routing, versioning, unified search, media ingestion pipelines",
-    "Cloud Infrastructure — AWS, Azure, Wasabi (storage provisioning, access management, lifecycle policies)",
-    "Infrastructure as Code (IaC) — API-driven provisioning, scripting-based automation",
-    "Shell scripting & PowerShell — system administration and workflow automation",
-    "Linux/Unix systems — configuration management, security hardening, performance tuning",
-    "Technical documentation — writing precise specs, runbooks, architecture diagrams, and SOPs",
     "Git version control — collaborative development workflows, branching strategies, code review"
   ],
   "teaching_experience": [
