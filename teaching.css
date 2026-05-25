@@ -627,6 +627,116 @@ details[open] summary::before {
 }
 
 
+/* MGE CTA Card */
+.mge-card {
+    display: block;
+    text-decoration: none !important;
+    background-color: var(--primary);
+    background-size: cover;
+    background-position: center top;
+    color: #fff;
+    padding: 0;
+    margin: 0.5rem 0 0;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.mge-card-body {
+    position: relative;
+    z-index: 1;
+    padding: 1.5rem 1.75rem;
+    background: linear-gradient(135deg, rgba(15, 27, 45, 0.92) 50%, rgba(15, 27, 45, 0.6) 100%);
+}
+
+.mge-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(15, 27, 45, 0.18);
+    text-decoration: none !important;
+}
+
+.mge-card:hover .mge-card-body {
+    background: linear-gradient(135deg, rgba(15, 27, 45, 0.88) 40%, rgba(15, 27, 45, 0.5) 100%);
+}
+
+.mge-card-badge {
+    display: inline-block;
+    font-size: 0.6875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 0.2rem 0.6rem;
+    margin-bottom: 0.75rem;
+}
+
+.mge-card-title {
+    font-family: 'Rubik', system-ui, sans-serif;
+    font-size: 1.125rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    color: #fff !important;
+    margin: 0 0 0.5rem;
+}
+
+.mge-card-desc {
+    font-size: 0.875rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0 0 1rem;
+}
+
+.mge-card-link {
+    display: inline-block;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    padding-bottom: 1px;
+    transition: border-color 0.15s;
+}
+
+.mge-card:hover .mge-card-link {
+    border-color: #fff;
+}
+
+/* Footer hero */
+.footer-section {
+    margin-top: 2px;
+    border-top: 2px solid var(--primary);
+    border-bottom: none;
+    padding: 3rem 2rem;
+}
+
+.footer-contact {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.footer-contact a {
+    color: var(--primary-soft);
+    text-decoration: none;
+    font-size: 0.9375rem;
+    font-weight: 500;
+    transition: color 0.15s;
+}
+
+.footer-contact a:hover {
+    color: var(--primary);
+    text-decoration: underline;
+}
+
+.footer-contact span {
+    color: var(--text-muted);
+    font-size: 0.5rem;
+    opacity: 0.5;
+}
+
 /* Print */
 @media print {
     .no-print {
