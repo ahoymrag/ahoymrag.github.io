@@ -737,41 +737,265 @@ details[open] summary::before {
     opacity: 0.5;
 }
 
+/* Print button bar */
+.print-bar {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    z-index: 50;
+}
+
+.print-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.25rem;
+    font-family: 'DM Sans', system-ui, sans-serif;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #fff;
+    background: var(--primary);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0 4px 16px rgba(15, 27, 45, 0.25);
+    transition: background 0.15s, transform 0.15s, box-shadow 0.15s;
+}
+
+.print-btn:hover {
+    background: var(--primary-soft);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 24px rgba(15, 27, 45, 0.35);
+}
+
+.print-btn svg {
+    flex-shrink: 0;
+}
+
+/* Print-only elements — hidden on screen */
+.print-only {
+    display: none;
+}
+
+.hero-contact {
+    margin-top: 0.5rem;
+    font-size: 0.8125rem;
+    color: var(--text-muted);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
 /* Print */
 @media print {
-    .no-print {
+    @page {
+        size: letter;
+        margin: 0.6in 0.7in;
+    }
+
+    .no-print,
+    .lightbox,
+    .mobile-overlay,
+    .menu-toggle,
+    .play-button-overlay,
+    .mge-card,
+    .gallery-section,
+    .video-cell {
         display: none !important;
+    }
+
+    .print-only {
+        display: flex !important;
+    }
+
+    * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
     }
 
     body {
         background: #fff;
-        color: #111;
+        color: #1a1a2e;
+        font-size: 10pt;
+        line-height: 1.45;
     }
 
     .container {
-        padding: 0 1rem;
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
     }
 
-    .section,
-    .philosophy-box,
-    .skill-item,
-    .experience-item,
-    .testimonial,
-    .certification-item {
+    /* Hide the sticky header — hero already has name + contact */
+    .header {
+        display: none;
+    }
+
+    /* Hero — compact top block with name and subtitle */
+    .hero-section {
+        padding: 0 0 0.6rem;
+        margin-bottom: 0;
+        border-bottom: 2px solid #0f1b2d;
+        page-break-after: avoid;
+    }
+
+    .hero-name {
+        font-size: 24pt;
+        margin-bottom: 0.15rem;
+    }
+
+    .hero-subtitle {
+        font-size: 9pt;
+        letter-spacing: 0.06em;
+        color: #444;
+    }
+
+    .hero-contact {
+        margin-top: 0.25rem;
+        font-size: 8.5pt;
+        color: #333;
+        gap: 0.4rem;
+    }
+
+    /* Sections — tight, no card styling */
+    .section {
         background: #fff !important;
         box-shadow: none !important;
+        padding: 0.5rem 0 0.4rem;
+        margin-top: 0;
+        border-bottom: none;
     }
 
     .section h2 {
-        color: #1a365d;
-        border-color: #2b6cb0;
+        color: #0f1b2d;
+        border-bottom: 1px solid #0f1b2d;
+        font-size: 11pt;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        margin: 0 0 0.4rem;
+        padding-bottom: 0.2rem;
+        page-break-after: avoid;
     }
 
     .section h3 {
-        color: #1a365d;
+        color: #1a1a2e;
+        font-size: 10pt;
+        font-weight: 600;
+        margin: 0.4rem 0 0.15rem;
+        page-break-after: avoid;
     }
 
+    .section p {
+        font-size: 9.5pt;
+        margin: 0.15rem 0;
+    }
+
+    .section li {
+        font-size: 9.5pt;
+        margin-bottom: 0.1rem;
+    }
+
+    .section ul {
+        margin: 0.15rem 0;
+        padding-left: 1.1rem;
+    }
+
+    /* Experience items — tight borders */
+    .experience-item {
+        padding: 0.35rem 0;
+        border-bottom: 1px solid #e0e0e0;
+        page-break-inside: avoid;
+    }
+
+    .experience-item:last-child {
+        border-bottom: none;
+    }
+
+    /* Philosophy box — subtle left accent */
+    .philosophy-box {
+        background: none !important;
+        border-left: 2px solid #0f1b2d;
+        padding: 0.3rem 0 0.3rem 0.75rem;
+        margin: 0.25rem 0;
+        page-break-inside: avoid;
+    }
+
+    .philosophy-box p,
+    .philosophy-box li {
+        font-size: 9.5pt;
+    }
+
+    /* Skills grid — compact pills */
+    .skills-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0.25rem;
+        margin-top: 0.35rem;
+    }
+
+    .skill-item {
+        background: #f0f2f5 !important;
+        border: 1px solid #d0d3da !important;
+        box-shadow: none !important;
+        padding: 0.25rem 0.4rem;
+        font-size: 8pt;
+        border-radius: 0;
+    }
+
+    /* Video showcase — hide entirely (not useful in PDF) */
+    .instagram-grid[style*="grid-template-columns: repeat(2"] {
+        display: none !important;
+    }
+
+    /* Resume header inside full resume section */
+    .resume-header h3 {
+        font-size: 12pt !important;
+    }
+
+    /* Footer — compact */
+    .footer-section {
+        padding: 0.6rem 0 0;
+        border-top: 2px solid #0f1b2d;
+        border-bottom: none;
+        page-break-inside: avoid;
+    }
+
+    .footer-contact {
+        margin-top: 0.35rem;
+    }
+
+    .footer-contact a {
+        font-size: 9pt;
+        color: #1a1a2e;
+    }
+
+    /* Links — dark, no underline */
     a {
-        color: #1a365d;
+        color: #0f1b2d;
+        text-decoration: none;
+    }
+
+    /* Page break helpers */
+    h2, h3 {
+        page-break-after: avoid;
+    }
+
+    ul, ol {
+        page-break-before: avoid;
+    }
+
+    /* Details/summary — force open and flatten */
+    details {
+        display: block !important;
+    }
+
+    details summary {
+        display: none !important;
+    }
+
+    details > *:not(summary) {
+        display: block !important;
     }
 }
