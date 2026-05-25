@@ -28,6 +28,34 @@ body {
     padding: 1.5rem 2rem;
 }
 
+/* Hero section */
+.hero-section {
+    text-align: center;
+    padding: 3rem 2rem 2.5rem;
+    margin-bottom: 1.25rem;
+    background: var(--bg);
+    border: 1px solid var(--border);
+}
+
+.hero-name {
+    font-family: 'Rubik', system-ui, sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    color: var(--primary);
+    margin: 0 0 0.5rem;
+    line-height: 1.2;
+}
+
+.hero-subtitle {
+    font-family: 'DM Sans', system-ui, sans-serif;
+    font-size: 1.05rem;
+    font-weight: 400;
+    color: var(--text-muted);
+    margin: 0;
+    letter-spacing: 0.02em;
+}
+
 /* Spotify-style header: dark bar, name left, contact right */
 .header {
     background: #000000;
@@ -332,9 +360,10 @@ body {
 }
 
 .section h2 {
+    font-family: 'Rubik', system-ui, sans-serif;
     font-weight: 600;
-    font-size: 1.125rem;
-    letter-spacing: -0.04em;
+    font-size: 1.25rem;
+    letter-spacing: -0.02em;
     color: var(--primary);
     margin: 0 0 1rem;
     padding-bottom: 0.35rem;
@@ -476,6 +505,39 @@ body {
     margin: 0 0 1rem;
     font-size: 0.9375rem;
     color: var(--text-muted);
+}
+
+/* Dropdown styling */
+details summary {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--primary);
+    font-size: 0.9375rem;
+    border: 1px solid var(--border);
+    padding: 0.75rem 1rem !important;
+    background: var(--bg-subtle);
+    transition: background 0.15s;
+}
+
+details summary:hover {
+    background: var(--border);
+}
+
+details summary::-webkit-details-marker {
+    display: none;
+}
+
+details summary::before {
+    content: "▶";
+    font-size: 0.7rem;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+
+details[open] summary::before {
+    transform: rotate(90deg);
 }
 
 /* Instagram-style grid: 3 columns, minimal gap, square cells */
