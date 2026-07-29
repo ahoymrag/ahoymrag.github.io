@@ -61,6 +61,59 @@
 
 <body id="index-body" x-data="{ code: '', showMenu: false }">
 
+    <div class="landing-shell">
+        <section class="landing-hero" id="curriculum-gameplan">
+            <div>
+                <p class="landing-kicker">Curriculum gameplan</p>
+                <h1 class="landing-title">Build a studio that can teach, ship, and travel into 3D.</h1>
+                <p class="landing-copy">
+                    The regular portfolio stays front and center here, but we can also frame your curriculum work as a set of modular tracks.
+                    That gives you a clean way to publish workshops, courses, and classroom-ready units without starting from scratch each time.
+                </p>
+                <div class="landing-actions">
+                    <button class="launch-fps-inline" onclick="chooseFPS()">Launch 3D Experience</button>
+                    <a class="landing-link" href="#curriculum-grid">See the curriculum lanes</a>
+                </div>
+                <div class="curriculum-note">
+                    Suggested rollout: start with one flagship unit, one shorter workshop version, and one portfolio-ready showcase for each track.
+                </div>
+            </div>
+
+            <aside class="curriculum-panel">
+                <h2>Curriculum lanes</h2>
+                <p>
+                    These are the types of curriculum we can develop, package, and reuse across school, studio, and community settings.
+                </p>
+                <div class="curriculum-grid" id="curriculum-grid">
+                    <article class="curriculum-card">
+                        <h3>Foundations</h3>
+                        <p>Visual literacy, composition, critique, and making students comfortable with tools and process.</p>
+                    </article>
+                    <article class="curriculum-card">
+                        <h3>Story Studio</h3>
+                        <p>Film, animation, writing, and editing units built around narrative and personal voice.</p>
+                    </article>
+                    <article class="curriculum-card">
+                        <h3>Interactive Media</h3>
+                        <p>Web, 3D, VR, and spatial storytelling lessons that introduce playful technical fluency.</p>
+                    </article>
+                    <article class="curriculum-card">
+                        <h3>Portfolio Practice</h3>
+                        <p>Documentation, reflection, presentation, and professional identity for learners and artists.</p>
+                    </article>
+                    <article class="curriculum-card">
+                        <h3>Cross-Curricular</h3>
+                        <p>History, science, literacy, and community projects that make the curriculum useful beyond art class.</p>
+                    </article>
+                    <article class="curriculum-card">
+                        <h3>Capstone</h3>
+                        <p>Showcase projects, exhibitions, and capstones that let students publish work publicly and confidently.</p>
+                    </article>
+                </div>
+            </aside>
+        </section>
+    </div>
+
     <!-- WELCOME SCREEN — indie game start screen -->
     <style>
         /* ── Base container ─────────────────────────────── */
@@ -278,6 +331,194 @@
             color: rgba(255, 255, 255, 0.3);
         }
 
+        #welcome-screen {
+            display: none;
+        }
+
+        .landing-shell {
+            width: min(1180px, calc(100% - 2rem));
+            margin: 1.25rem auto 2rem;
+        }
+
+        .landing-hero {
+            display: grid;
+            grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr);
+            gap: 1.25rem;
+            padding: 1.4rem;
+            border: 1px solid rgba(255, 255, 255, 0.16);
+            border-radius: 24px;
+            background:
+                linear-gradient(135deg, rgba(13, 8, 20, 0.84), rgba(72, 29, 7, 0.58)),
+                radial-gradient(circle at top right, rgba(255, 149, 58, 0.24), transparent 35%),
+                rgba(8, 6, 12, 0.38);
+            box-shadow:
+                0 30px 70px rgba(0, 0, 0, 0.32),
+                inset 0 1px 0 rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(12px);
+        }
+
+        .landing-kicker {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.6rem;
+            margin: 0 0 0.75rem;
+            color: rgba(255, 205, 140, 0.72);
+            font-size: 0.72rem;
+            text-transform: uppercase;
+            letter-spacing: 0.32em;
+        }
+
+        .landing-title {
+            margin: 0;
+            color: #fff4e4;
+            font-size: clamp(2.2rem, 5vw, 4.2rem);
+            line-height: 0.95;
+            letter-spacing: -0.04em;
+        }
+
+        .landing-copy {
+            max-width: 56ch;
+            margin: 1rem 0 1.4rem;
+            color: rgba(255, 245, 230, 0.78);
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+
+        .landing-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.85rem;
+            align-items: center;
+        }
+
+        .landing-button,
+        .landing-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.4rem;
+            min-height: 48px;
+            padding: 0.9rem 1.2rem;
+            border-radius: 999px;
+            text-decoration: none;
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            letter-spacing: 0.04em;
+            transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease, background 0.18s ease;
+        }
+
+        .landing-button {
+            border: 1px solid rgba(255, 177, 82, 0.8);
+            color: #201106;
+            background: linear-gradient(180deg, #ffd07a 0%, #ff9f3a 100%);
+            box-shadow: 0 14px 30px rgba(255, 133, 22, 0.25);
+        }
+
+        .landing-button:hover,
+        .landing-link:hover {
+            transform: translateY(-2px);
+        }
+
+        .landing-link {
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            color: rgba(255, 245, 230, 0.88);
+            background: rgba(255, 255, 255, 0.03);
+        }
+
+        .curriculum-panel {
+            padding: 1.2rem;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .curriculum-panel h2 {
+            margin: 0 0 0.55rem;
+            color: #fff0d8;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.22em;
+        }
+
+        .curriculum-panel p {
+            margin: 0 0 1rem;
+            color: rgba(255, 244, 228, 0.72);
+            line-height: 1.6;
+        }
+
+        .curriculum-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 0.8rem;
+        }
+
+        .curriculum-card {
+            padding: 0.95rem;
+            border-radius: 16px;
+            background: rgba(6, 6, 10, 0.34);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .curriculum-card h3 {
+            margin: 0 0 0.45rem;
+            color: #ffd48a;
+            font-size: 0.9rem;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+        }
+
+        .curriculum-card p {
+            margin: 0;
+            font-size: 0.94rem;
+            color: rgba(255, 245, 230, 0.76);
+            line-height: 1.55;
+        }
+
+        .curriculum-note {
+            margin-top: 1rem;
+            padding: 0.9rem 1rem;
+            border-left: 3px solid rgba(255, 177, 82, 0.75);
+            background: rgba(255, 177, 82, 0.08);
+            color: rgba(255, 243, 225, 0.84);
+            font-size: 0.95rem;
+            line-height: 1.55;
+        }
+
+        .launch-fps-inline {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.95rem 1.2rem;
+            border-radius: 999px;
+            border: 1px solid rgba(255, 177, 82, 0.82);
+            background: linear-gradient(180deg, rgba(255, 208, 122, 0.98), rgba(255, 159, 58, 0.98));
+            color: #201106;
+            font: inherit;
+            font-weight: 800;
+            letter-spacing: 0.04em;
+            cursor: pointer;
+            box-shadow: 0 14px 30px rgba(255, 133, 22, 0.22);
+        }
+
+        .launch-fps-inline:hover {
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 900px) {
+            .landing-hero {
+                grid-template-columns: 1fr;
+            }
+            .curriculum-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (pointer: coarse) {
+            .launch-fps-inline {
+                display: none;
+            }
+        }
+
         .ws-skip {
             margin-top: 2.2rem;
             font-family: 'Inter', sans-serif;
@@ -403,15 +644,32 @@
 
     <script>
         (function () {
-            var seen = sessionStorage.getItem('ag-welcome-seen');
-            if (seen) {
-                document.getElementById('welcome-screen').style.display = 'none';
+            var welcome = document.getElementById('welcome-screen');
+            if (welcome) {
+                welcome.style.display = 'none';
             }
         })();
+
+        function launchForestExperience() {
+            sessionStorage.setItem('ag-welcome-seen', '1');
+            var welcome = document.getElementById('welcome-screen');
+            if (welcome) {
+                welcome.style.display = 'none';
+            }
+            if (typeof window.initFPSWorld === 'function') {
+                window.initFPSWorld();
+                return;
+            }
+            window.dispatchEvent(new CustomEvent('ag:enterFPS'));
+        }
 
         function dismissWelcome(cb) {
             sessionStorage.setItem('ag-welcome-seen', '1');
             var el = document.getElementById('welcome-screen');
+            if (!el) {
+                if (cb) cb();
+                return;
+            }
             el.classList.add('fade-out');
             setTimeout(function () {
                 el.style.display = 'none';
@@ -420,17 +678,15 @@
         }
 
         function chooseFPS() {
-            dismissWelcome(function () {
-                window.dispatchEvent(new CustomEvent('ag:enterFPS'));
-                // Safety: if the script is loaded and exposed the function, call it directly
-                if (typeof window.initFPSWorld === 'function') {
-                    window.initFPSWorld();
-                }
-            });
+            launchForestExperience();
         }
 
         function chooseStandard() {
-            dismissWelcome();
+            sessionStorage.setItem('ag-welcome-seen', '1');
+            var el = document.getElementById('welcome-screen');
+            if (el) {
+                el.style.display = 'none';
+            }
         }
     </script>
 

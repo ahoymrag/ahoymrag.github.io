@@ -106,6 +106,10 @@ function playTone(f1, f2, dur, vol = 0.2) {
 // ============================================================================
 
 function initFPSWorld() {
+  const rootCheck = document.getElementById('fps-world-root');
+  if (animationRunning || (rootCheck && rootCheck.style.display === 'block')) {
+    return;
+  }
   console.log('[World] Starting...');
 
   const root   = document.getElementById('fps-world-root');
@@ -598,6 +602,9 @@ function onEasterEgg() {
   const light = new THREE.PointLight(DATA.color,2,25); light.position.y=2.5; scene.add(light);
   scene.userData.easterPortal = { position:new THREE.Vector3(), data:DATA, torus, light };
 }
+
+window.initFPSWorld = initFPSWorld;
+window.exitFPSMode = exitFPSMode;
 
 function makeLabelSprite(text, color) {
   const c = document.createElement('canvas'); c.width=512; c.height=128;
