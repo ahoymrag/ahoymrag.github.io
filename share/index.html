@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <title>Alex Gonzalez | Portfolio</title>
+  <link rel="icon" type="image/png" href="./../src/assets/AlexGonzalez-favicon.png" />
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -565,7 +566,7 @@
   <section class="gallery-grid">
     <template x-for="item in filteredItems" :key="item.id">
       <div class="gallery-item" @click="openModal(item)">
-        <img :src="item.thumbnail" :alt="item.title">
+        <img :src="item.thumbnail" :alt="item.title" loading="lazy">
         <h3 x-text="item.title"></h3>
         <!-- Display tags for websites -->
         <template x-if="item.mediaType === 'website'">
