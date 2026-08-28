@@ -387,6 +387,102 @@
                 box-sizing: border-box;
                 width: 100%;
             }
+
+            .back-home-button {
+                margin: 28px 8px 0 0;
+                padding: 14px 20px;
+                border: 1px solid #111;
+                font-size: 0.82rem;
+                letter-spacing: 0.08em;
+                text-transform: uppercase;
+                transition: background-color 0.2s, color 0.2s, transform 0.2s;
+            }
+
+            .back-home-button:hover {
+                background: #fff;
+                color: #111;
+                transform: translateY(-2px);
+            }
+
+            .gallery-image {
+                display: block;
+                position: relative;
+                padding: 0;
+                border: 0;
+                background: transparent;
+                cursor: zoom-in;
+                overflow: hidden;
+            }
+
+            .gallery-image::after {
+                content: 'Open gallery ↗';
+                position: absolute;
+                right: 16px;
+                bottom: 16px;
+                padding: 9px 12px;
+                background: rgba(17, 17, 17, 0.86);
+                color: #fff;
+                font-size: 0.72rem;
+                font-weight: 700;
+                letter-spacing: 0.08em;
+                opacity: 0;
+                text-transform: uppercase;
+                transition: opacity 0.2s;
+            }
+
+            .gallery-image:hover::after,
+            .gallery-image:focus-visible::after {
+                opacity: 1;
+            }
+
+            .gallery-image img {
+                transition: transform 0.35s ease, filter 0.35s ease;
+            }
+
+            .gallery-image:hover img,
+            .gallery-image:focus-visible img {
+                filter: brightness(0.82);
+                transform: scale(1.02);
+            }
+
+            .gallery-modal {
+                display: none;
+                position: fixed;
+                inset: 0;
+                z-index: 20;
+                align-items: center;
+                justify-content: center;
+                padding: 28px;
+                background: rgba(0, 0, 0, 0.92);
+            }
+
+            .gallery-modal.is-open {
+                display: flex;
+            }
+
+            .gallery-modal img {
+                display: block;
+                max-width: min(1200px, 94vw);
+                max-height: 88vh;
+                object-fit: contain;
+            }
+
+            .gallery-close {
+                position: absolute;
+                top: 22px;
+                right: 26px;
+                border: 1px solid #fff;
+                padding: 10px 14px;
+                background: transparent;
+                color: #fff;
+                cursor: pointer;
+                font-size: 1rem;
+            }
+
+            .gallery-close:hover {
+                background: #fff;
+                color: #111;
+            }
         </style>
     </head>
     <body x-data="{ showModal: false, currentProject: {} }">
@@ -414,8 +510,17 @@
         </main>
 
         <div id="film-stills" class="film-stills" aria-label="Creatures in the Tall Grass stills">
-            <img src="./portfolio-content/creatures-stills/CREATURES-STILL-A-1.png" alt="A figure entering tall grass">
-            <img src="./portfolio-content/creatures-stills/CREATURES-STILL-A-5.png" alt="Two figures walking through a field">
+            <button class="gallery-image" type="button" data-gallery-image="./portfolio-content/creatures-stills/CREATURES-STILL-A-1.png" data-gallery-alt="A figure entering tall grass">
+                <img src="./portfolio-content/creatures-stills/CREATURES-STILL-A-1.png" alt="A figure entering tall grass">
+            </button>
+            <button class="gallery-image" type="button" data-gallery-image="./portfolio-content/creatures-stills/CREATURES-STILL-A-5.png" data-gallery-alt="Two figures walking through a field">
+                <img src="./portfolio-content/creatures-stills/CREATURES-STILL-A-5.png" alt="Two figures walking through a field">
+            </button>
+        </div>
+
+        <div class="gallery-modal" id="gallery-modal" role="dialog" aria-modal="true" aria-label="Creatures in the Tall Grass image gallery">
+            <button class="gallery-close" type="button" aria-label="Close gallery">Close ×</button>
+            <img id="gallery-modal-image" src="" alt="">
         </div>
 
         <!-- Modal Structure -->
@@ -444,6 +549,32 @@
             <p>© 2026 Alex Gonzalez</p>
         </footer>
         <script>
+            const galleryModal = document.getElementById('gallery-modal');
+            const galleryModalImage = document.getElementById('gallery-modal-image');
+            const galleryClose = galleryModal.querySelector('.gallery-close');
+
+            function closeGallery() {
+                galleryModal.classList.remove('is-open');
+                galleryModalImage.src = '';
+            }
+
+            document.querySelectorAll('[data-gallery-image]').forEach((button) => {
+                button.addEventListener('click', () => {
+                    galleryModalImage.src = button.dataset.galleryImage;
+                    galleryModalImage.alt = button.dataset.galleryAlt;
+                    galleryModal.classList.add('is-open');
+                    galleryClose.focus();
+                });
+            });
+
+            galleryClose.addEventListener('click', closeGallery);
+            galleryModal.addEventListener('click', (event) => {
+                if (event.target === galleryModal) closeGallery();
+            });
+            document.addEventListener('keydown', (event) => {
+                if (event.key === 'Escape') closeGallery();
+            });
+
             fetch('projects.json')
                 .then(response => response.json())
                 .then(data => {
