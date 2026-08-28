@@ -3,15 +3,13 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>2025-2026 Project Showcase</title>
+        <title>2026 Project Showcase</title>
         <link rel="stylesheet" href="2024-style.css">
         <style>
             body {
                 font-family: 'Barlow', 'Helvetica Neue', Arial, sans-serif;
-                background:
-                    radial-gradient(circle at top left, rgba(255, 174, 0, 0.12), transparent 30%),
-                    linear-gradient(180deg, #fff6d8 0%, #fffaf0 45%, #ffffff 100%);
-                color: #111;
+                background: #101b1a;
+                color: #f3efe3;
                 margin: 0;
                 padding: 0;
             }
@@ -19,9 +17,9 @@
             header, footer {
                 text-align: center;
                 padding: 20px;
-                background-color: rgba(255, 255, 255, 0.82);
+                background-color: rgba(16, 27, 26, 0.9);
                 backdrop-filter: blur(10px);
-                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.24);
                 margin-bottom: 20px;
             }
 
@@ -29,18 +27,21 @@
                 min-height: 28vh;
                 display: grid;
                 place-content: center;
+                border-bottom: 1px solid #d8ff62;
             }
 
             h1 {
-                font-size: 2.5em;
+                font-size: clamp(3rem, 9vw, 8rem);
                 margin: 0;
-                letter-spacing: -0.04em;
+                color: #f3efe3;
+                letter-spacing: -0.07em;
+                line-height: 0.88;
                 text-transform: uppercase;
             }
 
             .year-summary {
                 font-size: 1.2em;
-                color: #555;
+                color: #b6c5b5;
                 margin: 20px 0;
             }
 
@@ -57,9 +58,10 @@
                 padding: 48px;
                 margin: 0;
                 color: #fff;
+                text-decoration: none;
                 background:
-                    linear-gradient(180deg, rgba(9, 53, 38, 0.05), rgba(9, 53, 38, 0.9)),
-                    repeating-linear-gradient(82deg, #78a84a 0 4px, #47783e 4px 8px, #a7c95b 8px 11px, #315f3b 11px 16px);
+                    linear-gradient(180deg, rgba(16, 27, 26, 0.04), rgba(16, 27, 26, 0.94)),
+                    url('./portfolio-content/creatures-stills/CREATURES-STILL-A-1.png') center / cover;
             }
 
             .featured-film-content {
@@ -67,7 +69,7 @@
             }
 
             .featured-film-label {
-                color: #ffe36e;
+                color: #d8ff62;
                 font-size: 0.9em;
                 font-weight: bold;
                 letter-spacing: 0.14em;
@@ -77,6 +79,7 @@
             .featured-film h2 {
                 max-width: 720px;
                 margin: 12px 0;
+                color: #f3efe3;
                 font-size: clamp(3rem, 10vw, 8rem);
                 line-height: 0.9;
                 letter-spacing: -0.07em;
@@ -88,6 +91,32 @@
                 font-size: 1.25em;
             }
 
+            .view-film {
+                display: inline-block;
+                margin-top: 18px;
+                padding: 14px 22px;
+                border: 1px solid #d8ff62;
+                color: #101b1a;
+                background: #d8ff62;
+                font-weight: bold;
+                text-transform: uppercase;
+                letter-spacing: 0.08em;
+            }
+
+            .film-stills {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 16px;
+                max-width: 1100px;
+                margin: 80px auto;
+                padding: 0 20px;
+            }
+
+            .film-stills img {
+                display: block;
+                width: 100%;
+            }
+
             ul {
                 padding: 0;
             }
@@ -96,14 +125,23 @@
                 list-style: none;
                 margin: 20px 0;
                 padding: 20px;
-                background-color: rgba(255, 255, 255, 0.9);
-                border-radius: 8px;
-                box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+                background-color: #f3efe3;
+                border-radius: 0;
+                box-shadow: 0 18px 40px rgba(0, 0, 0, 0.24);
                 transition: transform 0.2s;
                 display: flex;
                 align-items: center;
                 width: 100%;
                 gap: 20px;
+            }
+
+            .project-link {
+                display: flex;
+                align-items: center;
+                width: 100%;
+                gap: 20px;
+                color: inherit;
+                text-decoration: none;
             }
 
             li:hover {
@@ -113,7 +151,7 @@
             .back-to-business-button {
                 display: block;
                 text-align: left;
-                color: #111;
+                color: #101b1a;
                 text-decoration: none;
                 font-weight: bold;
                 font-size: 1.2em;
@@ -124,15 +162,15 @@
             }
 
             .back-to-business-button:active {
-                background-color: #ddd;
-                color: #000;
+                background-color: #d8ff62;
+                color: #101b1a;
             }
 
             .project-thumbnail {
                 width: 120px;
                 height: 120px;
-                background-color: #ddd;
-                border-radius: 8px;
+                background-color: #d8ff62;
+                border-radius: 0;
                 flex-shrink: 0;
                 background-size: cover;
                 background-position: center;
@@ -142,7 +180,7 @@
             .project-number {
                 align-self: flex-end;
                 min-width: 2em;
-                color: #777;
+                color: #d76b43;
                 font-size: 1.1em;
                 font-weight: bold;
             }
@@ -153,6 +191,7 @@
 
             .project-title {
                 font-size: 1.5em;
+                color: #101b1a;
                 margin-bottom: 10px;
                 text-transform: uppercase;
                 letter-spacing: -0.02em;
@@ -160,19 +199,19 @@
 
             .project-summary {
                 font-size: 1em;
-                color: #555;
+                color: #52605b;
             }
 
             .projects-heading {
                 margin: 80px 0 20px;
-                color: #47783e;
+                color: #d8ff62;
                 font-size: 2.2em;
                 text-transform: uppercase;
             }
 
             .project-type {
                 margin: 44px 0 12px;
-                color: #d46b32;
+                color: #f08a5d;
                 font-size: 0.95em;
                 letter-spacing: 0.14em;
                 text-transform: uppercase;
@@ -180,7 +219,7 @@
 
             .bio {
                 font-size: 1em;
-                color: #333;
+                color: #b6c5b5;
                 margin-top: 10px;
             }
 
@@ -188,15 +227,15 @@
                 display: inline-block;
                 margin-top: 20px;
                 padding: 10px 20px;
-                background-color: #333;
-                color: #fff;
+                background-color: #f08a5d;
+                color: #101b1a;
                 text-decoration: none;
                 border-radius: 5px;
                 transition: background-color 0.3s;
             }
 
             .back-home-button:hover {
-                background-color: #555;
+                background-color: #d8ff62;
             }
 
             .modal {
@@ -212,10 +251,10 @@
             }
 
             .modal-content {
-                background-color: #fefefe;
+                background-color: #f3efe3;
                 margin: 15% auto; /* 15% from the top and centered */
                 padding: 20px;
-                border: 1px solid #888;
+                border: 1px solid #d8ff62;
                 width: 80%; /* Could be more or less, depending on screen size */
                 max-width: 600px; /* Maximum width */
                 border-radius: 8px;
@@ -235,32 +274,149 @@
                 text-decoration: none;
                 cursor: pointer;
             }
+
+            /* Portfolio system: monochrome everywhere except the featured film. */
+            body {
+                background: #111;
+                color: #111;
+            }
+
+            header,
+            footer {
+                background-color: #111;
+                box-shadow: none;
+            }
+
+            header {
+                border-bottom: 1px solid #fff;
+            }
+
+            header h1,
+            footer,
+            footer p {
+                color: #fff;
+            }
+
+            .year-summary {
+                color: #bdbdbd;
+            }
+
+            main {
+                background: #fff;
+                color: #111;
+                box-shadow: none;
+            }
+
+            .projects-heading,
+            .project-type {
+                color: #111;
+            }
+
+            li {
+                background-color: #f5f5f5;
+                border: 1px solid #d7d7d7;
+                box-shadow: none;
+                border-radius: 0;
+            }
+
+            .project-number,
+            .project-summary {
+                color: #666;
+            }
+
+            .project-thumbnail {
+                background-color: #d7d7d7;
+                border-radius: 0;
+                filter: grayscale(1);
+            }
+
+            .back-home-button {
+                background-color: #111;
+                color: #fff;
+                border-radius: 0;
+                box-shadow: none;
+            }
+
+            .back-home-button:hover {
+                background-color: #444;
+            }
+
+            /* Modern editorial type and flatter project rows. */
+            body,
+            button,
+            input,
+            textarea,
+            select {
+                font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont,
+                    "Segoe UI", Helvetica, Arial, sans-serif;
+            }
+
+            h1,
+            h2,
+            h3,
+            .project-title,
+            .project-type,
+            .back-home-button,
+            .view-film {
+                font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont,
+                    "Segoe UI", Helvetica, Arial, sans-serif;
+                font-weight: 700;
+            }
+
+            .featured-film {
+                background: url('./portfolio-content/creatures-stills/CREATURES-STILL-A-1.png') center / cover;
+            }
+
+            .project-description {
+                margin: 0;
+                padding: 0;
+                background: transparent;
+                border-radius: 0;
+                box-shadow: none;
+            }
+
+            .project-description .project-summary {
+                margin: 0;
+                padding: 0;
+                background: transparent;
+                border-radius: 0;
+                box-shadow: none;
+            }
+
+            li {
+                box-sizing: border-box;
+                width: 100%;
+            }
         </style>
     </head>
     <body x-data="{ showModal: false, currentProject: {} }">
         <header>
-            <h1>2025-2026 Project Showcase</h1>
+            <h1>2026 Project Showcase</h1>
             <p class="year-summary">A year 
                 showcasing projects </p>
-            <p class="work-in-progress-warning"
-                style="color: rgb(0, 0, 0); font-weight: bold;">
-                Warning: This is a major work in progress.
-            </p>
         </header>
-        <section class="featured-film">
+        <a class="featured-film" href="creatures-in-the-tall-grass.html" aria-label="View Creatures in the Tall Grass">
             <div class="featured-film-content">
                 <div class="featured-film-label">Featured film · Debut</div>
                 <h2>Creatures in the Tall Grass</h2>
                 <p>My debut featured film. I did not produce more during this period because I was a public school teacher.</p>
+                <span class="view-film">View film ↗</span>
             </div>
-        </section>
+        </a>
         <main>
             <h2 class="projects-heading">Other projects</h2>
             <ul id="project-list">
                 <!-- Projects will be dynamically inserted here -->
             </ul>
             <a class="back-home-button" href="../../index.html">Back to Home</a>
+            <a class="back-home-button" href="teaching.html">Teaching</a>
+            <a class="back-home-button" href="../../public/cv+resume/cv-index.html">Full Resume ↗</a>
         </main>
+
+        <div id="film-stills" class="film-stills" aria-label="Creatures in the Tall Grass stills">
+            <img src="./portfolio-content/creatures-stills/CREATURES-STILL-A-1.png" alt="A figure entering tall grass">
+            <img src="./portfolio-content/creatures-stills/CREATURES-STILL-A-5.png" alt="Two figures walking through a field">
+        </div>
 
         <!-- Modal Structure -->
         <div x-show="showModal" class="modal">
@@ -285,7 +441,7 @@
             </div>
         </div>
         <footer>
-            <p>© 2025-2026 Alex Gonzalez</p>
+            <p>© 2026 Alex Gonzalez</p>
         </footer>
         <script>
             fetch('projects.json')
@@ -303,13 +459,13 @@
                         }
                         const listItem = document.createElement('li');
                         const romanNumerals = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X'];
-                        listItem.innerHTML = `
+                        listItem.innerHTML = `<a class="project-link" href="${project.link}">
                             <div class="project-number">${romanNumerals[index + 1] || index + 2}</div>
                             <div class="project-thumbnail" style="background-image: url('${project.images[0]}');"></div>
                             <div class="project-description">
                                 <div class="project-title">${project.title}</div>
                                 <div class="project-summary">${project.summary}</div>
-                            </div>
+                            </div></a>
                         `;
                         projectList.appendChild(listItem);
                     });

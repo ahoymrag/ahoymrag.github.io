@@ -249,6 +249,23 @@
       .cv-grid { grid-template-columns: 1fr; }
       .cv-card { padding: 1.35rem 1.25rem; }
     }
+
+    /* Monochrome document hub */
+    body { color: #111; background: #fff; }
+    body::before { display: none; }
+    header h1 { font-family: 'Inter', sans-serif; color: #111; text-shadow: none; font-size: clamp(3rem, 10vw, 7rem); letter-spacing: -.08em; text-transform: uppercase; }
+    header p { color: #555; }
+    .header-rule { background: #111; }
+    .hub-section { width: 100%; max-width: 880px; margin: 4rem 0 1rem; border-top: 1px solid #111; padding-top: 1rem; }
+    .hub-section h2 { font-size: .8rem; letter-spacing: .16em; text-transform: uppercase; }
+    .cv-card { border-radius: 0; color: #111; background: #fff; border: 1px solid #111; box-shadow: 6px 6px 0 #111; backdrop-filter: none; }
+    .cv-card::before, .cv-card::after { display: none; }
+    .cv-card:hover { box-shadow: 3px 3px 0 #111; transform: translate(3px, 3px); }
+    .cv-card h2 { color: #111; }
+    .cv-card p, .cv-card .arrow { color: #444; }
+    .tag { border-radius: 0; color: #111 !important; background: #fff !important; border: 1px solid #111 !important; }
+    .tag-dot { background: #111 !important; }
+    footer a { color: #111; border-color: #111; border-radius: 0; }
   </style>
 </head>
 <body>
@@ -282,6 +299,25 @@
       <span class="arrow">View →</span>
     </a>
 
+  </div>
+
+  <section class="hub-section">
+    <h2>Portfolio</h2>
+  </section>
+
+  <div class="cv-grid">
+    <a href="../../portfolio/portfolio-index.html" class="cv-card">
+      <span class="tag"><span class="tag-dot"></span>Portfolio · 2026</span>
+      <h2>Portfolio Index</h2>
+      <p>Year-organized portfolio work, projects, filmmaking, teaching, and experiments.</p>
+      <span class="arrow">Open portfolio →</span>
+    </a>
+    <a href="../../portfolio/2025-2026portfolio/teaching.html" class="cv-card">
+      <span class="tag"><span class="tag-dot"></span>Practice</span>
+      <h2>Teaching</h2>
+      <p>Digital media, filmmaking, photography, virtual reality, software, and creative entrepreneurship.</p>
+      <span class="arrow">View teaching →</span>
+    </a>
   </div>
 
   <footer>

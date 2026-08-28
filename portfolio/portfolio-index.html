@@ -10,24 +10,44 @@
             rel="stylesheet">
         <style>
             body {
-                font-family: 'Barlow', sans-serif;
-                background-color: #f0f0f0;
-                color: #333;
+                font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+                background-color: #111;
+                color: #fff;
                 margin: 0;
                 padding: 0;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                height: 100vh;
+                min-height: 100vh;
             }
 
             .container {
-                text-align: center;
+                width: min(1080px, calc(100% - 48px));
+                padding: 72px 0;
             }
 
             h1 {
-                font-size: 3em;
-                margin-bottom: 20px;
+                font-size: clamp(2.8rem, 7vw, 6.5rem);
+                line-height: .9;
+                letter-spacing: -.07em;
+                margin: 0;
+            }
+
+            .intro {
+                max-width: 560px;
+                color: #bdbdbd;
+                font-size: 1.05rem;
+                line-height: 1.6;
+                margin: 24px 0 56px;
+            }
+
+            .eyebrow {
+                color: #8f8f8f;
+                font-size: .75rem;
+                font-weight: 700;
+                letter-spacing: .16em;
+                margin: 0 0 18px;
+                text-transform: uppercase;
             }
 
             .year-card {
@@ -35,17 +55,19 @@
                 display: inline-block;
                 width: 300px;
                 height: 200px;
-                margin: 20px;
+                margin: 10px;
                 background-color: #fff;
-                border-radius: 10px;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                border: 1px solid #fff;
+                border-radius: 0;
+                box-shadow: none;
                 text-decoration: none;
-                color: #333;
-                font-size: 1.5em;
-                line-height: 200px;
+                color: #111;
+                font-size: 1.45em;
+                font-weight: 700;
+                line-height: normal;
                 vertical-align: middle;
                 overflow: hidden;
-                transition: box-shadow 0.3s;
+                transition: background-color 0.2s, color 0.2s, transform 0.2s;
             }
 
             .year-card::before {
@@ -55,13 +77,18 @@
                 left: 0;
                 width: 100%;
                 height: 100%;
-                background-color: rgba(0, 0, 0, 0.1);
-                transition: top 0.5s ease;
+                background-color: #111;
+                transition: top 0.25s ease;
                 z-index: 0;
             }
 
             .year-card:hover::before {
                 top: 0;
+            }
+
+            .year-card:hover {
+                color: #fff;
+                transform: translateY(-4px);
             }
 
             .year-card:active {
@@ -81,16 +108,52 @@
             .year-card span {
                 position: relative;
                 z-index: 1;
+                display: grid;
+                height: 100%;
+                place-items: center;
+            }
+
+            .archive-link {
+                background: transparent;
+                color: #fff;
+            }
+
+            .archive-link::before {
+                background: #fff;
+            }
+
+            .archive-link:hover {
+                color: #111;
+            }
+
+            @media (max-width: 700px) {
+                .container {
+                    padding: 48px 0;
+                }
+
+                .year-card {
+                    display: flex;
+                    width: 100%;
+                    height: 120px;
+                    margin: 8px 0;
+                }
+
+                .year-card span {
+                    width: 100%;
+                }
             }
         </style>
     </head>
     <body>
         <div class="container">
+            <p class="eyebrow">Selected work · 2023—2026</p>
+            <h1>Alex Gonzalez<br>Portfolio</h1>
+            <p class="intro">Filmmaker, creative technologist, and educator. A record of selected projects across film, web, interactive media, and teaching.</p>
             <a href="2025-2026portfolio/index.html" class="year-card">
                 <span>2025-2026</span>
             </a>
-            <a href="2024portfolio/index.html" class="year-card">
-                <span>2024</span>
+            <a href="../share/index.html" class="year-card archive-link">
+                <span>2024-2025</span>
             </a>
             <a href="src/portfolio.html" class="year-card">
                 <span>2023 and Before</span>
