@@ -17,7 +17,28 @@ h1 { max-width: 980px; margin: 0; font-size: clamp(3.6rem, 12vw, 10rem); line-he
 .film-hero { min-height: 82vh; padding: 0; justify-content: flex-end; color: #fff; background: linear-gradient(180deg, transparent 35%, rgba(0,0,0,.86)), url('./portfolio-content/creatures-stills/CREATURES-STILL-A-1.png') center / cover; }
 .film-hero > div { padding: 48px; }
 .film-hero h1 { max-width: 850px; }
+.film-page { background: #0b0b0b; color: #f5f5f5; }
+.film-page .detail-shell { max-width: 1280px; }
+.film-page .detail-nav { border-color: rgba(255,255,255,.35); color: #fff; }
+.film-page .detail-hero { margin-left: calc(clamp(20px, 5vw, 72px) * -1); margin-right: calc(clamp(20px, 5vw, 72px) * -1); padding-left: clamp(20px, 5vw, 72px); padding-right: clamp(20px, 5vw, 72px); }
+.film-page .eyebrow { color: #e8c36a; }
+.film-page .lede { max-width: 700px; }
+.film-meta { display: flex; flex-wrap: wrap; gap: 10px 28px; margin-top: 24px; color: rgba(255,255,255,.72); font-size: .78rem; letter-spacing: .1em; text-transform: uppercase; }
+.film-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px; }
+.film-cta a { padding: 13px 18px; border: 1px solid #e8c36a; color: #111; background: #e8c36a; font-size: .78rem; font-weight: 700; letter-spacing: .1em; text-decoration: none; text-transform: uppercase; }
+.film-cta a.secondary { color: #fff; background: transparent; border-color: rgba(255,255,255,.5); }
+.film-page .detail-card { color: #111; background: #f3f3f3; border-top-color: #e8c36a; }
+.film-page .status { color: #9b6412; }
+.film-page .still-grid { grid-template-columns: repeat(12, 1fr); gap: 12px; }
+.film-page figure { margin: 0; }
+.film-page figure:nth-child(1), .film-page figure:nth-child(4) { grid-column: span 7; }
+.film-page figure:nth-child(2), .film-page figure:nth-child(3), .film-page figure:nth-child(5) { grid-column: span 5; }
+.film-page figure img { aspect-ratio: 16 / 9; object-fit: cover; }
+.film-page figcaption { padding-top: 8px; color: rgba(255,255,255,.55); font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; }
+.film-page footer { border-color: rgba(255,255,255,.35); }
+.film-page footer a { color: #fff; }
 .still-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-top: 40px; }
 .still-grid img { display: block; width: 100%; height: auto; }
 footer { margin-top: 70px; padding-top: 20px; border-top: 1px solid #111; font-size: .8rem; }
 @media (max-width: 700px) { .detail-grid, .still-grid { grid-template-columns: 1fr; } .film-hero > div { padding: 28px 20px; } .detail-hero { min-height: 55vh; } }
+@media (max-width: 700px) { .film-page figure:nth-child(n) { grid-column: span 12; } }
