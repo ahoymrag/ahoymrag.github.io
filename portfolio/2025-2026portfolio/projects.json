@@ -1,0 +1,6 @@
+[
+    {"title":"Filmmaking — Creatures in the Tall Grass","summary":"A filmmaking project about creatures moving through the tall grass.","link":"#","description":"I did not produce more during this period because I was working as a public school teacher.","images":["./placeholder-filmmaking.jpg"],"additionalLinks":[]},
+    {"type":"Web","title":"CPC - WEB - APP","summary":"A web application for CPC.","link":"#","description":"CPC - WEB - APP.","images":["./placeholder-cpc-web-app.jpg"],"additionalLinks":[]},
+    {"type":"Tools","title":"pro-mpt","summary":"A prompt and project exploration.","link":"#","description":"pro-mpt.","images":["./placeholder-pro-mpt.jpg"],"additionalLinks":[]},
+    {"type":"Experiments","title":"pathr","summary":"A project in development.","link":"#","description":"pathr.","images":["./placeholder-pathr.jpg"],"additionalLinks":[]}
+]

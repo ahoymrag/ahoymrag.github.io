@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>2025-2026 Project Showcase</title>
+        <link rel="stylesheet" href="2024-style.css">
+        <style>
+            body {
+                font-family: 'Barlow', 'Helvetica Neue', Arial, sans-serif;
+                background:
+                    radial-gradient(circle at top left, rgba(255, 174, 0, 0.12), transparent 30%),
+                    linear-gradient(180deg, #fff6d8 0%, #fffaf0 45%, #ffffff 100%);
+                color: #111;
+                margin: 0;
+                padding: 0;
+            }
+
+            header, footer {
+                text-align: center;
+                padding: 20px;
+                background-color: rgba(255, 255, 255, 0.82);
+                backdrop-filter: blur(10px);
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+                margin-bottom: 20px;
+            }
+
+            header {
+                min-height: 28vh;
+                display: grid;
+                place-content: center;
+            }
+
+            h1 {
+                font-size: 2.5em;
+                margin: 0;
+                letter-spacing: -0.04em;
+                text-transform: uppercase;
+            }
+
+            .year-summary {
+                font-size: 1.2em;
+                color: #555;
+                margin: 20px 0;
+            }
+
+            main {
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 20px;
+            }
+
+            .featured-film {
+                min-height: 100vh;
+                display: grid;
+                align-items: end;
+                padding: 48px;
+                margin: 0;
+                color: #fff;
+                background:
+                    linear-gradient(180deg, rgba(9, 53, 38, 0.05), rgba(9, 53, 38, 0.9)),
+                    repeating-linear-gradient(82deg, #78a84a 0 4px, #47783e 4px 8px, #a7c95b 8px 11px, #315f3b 11px 16px);
+            }
+
+            .featured-film-content {
+                max-width: 780px;
+            }
+
+            .featured-film-label {
+                color: #ffe36e;
+                font-size: 0.9em;
+                font-weight: bold;
+                letter-spacing: 0.14em;
+                text-transform: uppercase;
+            }
+
+            .featured-film h2 {
+                max-width: 720px;
+                margin: 12px 0;
+                font-size: clamp(3rem, 10vw, 8rem);
+                line-height: 0.9;
+                letter-spacing: -0.07em;
+                text-transform: uppercase;
+            }
+
+            .featured-film p {
+                max-width: 520px;
+                font-size: 1.25em;
+            }
+
+            ul {
+                padding: 0;
+            }
+
+            li {
+                list-style: none;
+                margin: 20px 0;
+                padding: 20px;
+                background-color: rgba(255, 255, 255, 0.9);
+                border-radius: 8px;
+                box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+                transition: transform 0.2s;
+                display: flex;
+                align-items: center;
+                width: 100%;
+                gap: 20px;
+            }
+
+            li:hover {
+                transform: translateY(-5px);
+            }
+
+            .back-to-business-button {
+                display: block;
+                text-align: left;
+                color: #111;
+                text-decoration: none;
+                font-weight: bold;
+                font-size: 1.2em;
+                margin-left: 0;
+                transition: background-color 0.3s, color 0.3s;
+                text-transform: uppercase;
+                letter-spacing: 0.03em;
+            }
+
+            .back-to-business-button:active {
+                background-color: #ddd;
+                color: #000;
+            }
+
+            .project-thumbnail {
+                width: 120px;
+                height: 120px;
+                background-color: #ddd;
+                border-radius: 8px;
+                flex-shrink: 0;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+
+            .project-number {
+                align-self: flex-end;
+                min-width: 2em;
+                color: #777;
+                font-size: 1.1em;
+                font-weight: bold;
+            }
+
+            .project-description {
+                flex-grow: 1;
+            }
+
+            .project-title {
+                font-size: 1.5em;
+                margin-bottom: 10px;
+                text-transform: uppercase;
+                letter-spacing: -0.02em;
+            }
+
+            .project-summary {
+                font-size: 1em;
+                color: #555;
+            }
+
+            .projects-heading {
+                margin: 80px 0 20px;
+                color: #47783e;
+                font-size: 2.2em;
+                text-transform: uppercase;
+            }
+
+            .project-type {
+                margin: 44px 0 12px;
+                color: #d46b32;
+                font-size: 0.95em;
+                letter-spacing: 0.14em;
+                text-transform: uppercase;
+            }
+
+            .bio {
+                font-size: 1em;
+                color: #333;
+                margin-top: 10px;
+            }
+
+            .back-home-button {
+                display: inline-block;
+                margin-top: 20px;
+                padding: 10px 20px;
+                background-color: #333;
+                color: #fff;
+                text-decoration: none;
+                border-radius: 5px;
+                transition: background-color 0.3s;
+            }
+
+            .back-home-button:hover {
+                background-color: #555;
+            }
+
+            .modal {
+                display: none; /* Hidden by default */
+                position: fixed; /* Stay in place */
+                z-index: 1; /* Sit on top */
+                left: 0;
+                top: 0;
+                width: 100%; /* Full width */
+                height: 100%; /* Full height */
+                overflow: auto; /* Enable scroll if needed */
+                background-color: rgba(0, 0, 0, 0.5); /* Black w/ opacity */
+            }
+
+            .modal-content {
+                background-color: #fefefe;
+                margin: 15% auto; /* 15% from the top and centered */
+                padding: 20px;
+                border: 1px solid #888;
+                width: 80%; /* Could be more or less, depending on screen size */
+                max-width: 600px; /* Maximum width */
+                border-radius: 8px;
+                box-shadow: 0 18px 50px rgba(0, 0, 0, 0.18);
+            }
+
+            .close {
+                color: #aaa;
+                float: right;
+                font-size: 28px;
+                font-weight: bold;
+            }
+
+            .close:hover,
+            .close:focus {
+                color: black;
+                text-decoration: none;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body x-data="{ showModal: false, currentProject: {} }">
+        <header>
+            <h1>2025-2026 Project Showcase</h1>
+            <p class="year-summary">A year 
+                showcasing projects </p>
+            <p class="work-in-progress-warning"
+                style="color: rgb(0, 0, 0); font-weight: bold;">
+                Warning: This is a major work in progress.
+            </p>
+        </header>
+        <section class="featured-film">
+            <div class="featured-film-content">
+                <div class="featured-film-label">Featured film · Debut</div>
+                <h2>Creatures in the Tall Grass</h2>
+                <p>My debut featured film. I did not produce more during this period because I was a public school teacher.</p>
+            </div>
+        </section>
+        <main>
+            <h2 class="projects-heading">Other projects</h2>
+            <ul id="project-list">
+                <!-- Projects will be dynamically inserted here -->
+            </ul>
+            <a class="back-home-button" href="../../index.html">Back to Home</a>
+        </main>
+
+        <!-- Modal Structure -->
+        <div x-show="showModal" class="modal">
+            <div class="modal-content">
+                <span class="close" @click="showModal = false">&times;</span>
+                <h2 x-text="currentProject.title"></h2>
+                <p x-text="currentProject.description"></p>
+                <div x-show="currentProject.videos">
+                    <h3>Demo Videos</h3>
+                    <template x-for="video in currentProject.videos">
+                        <iframe :src="video" frameborder="0" allowfullscreen></iframe>
+                    </template>
+                </div>
+                <div x-show="currentProject.additionalLinks">
+                    <h3>Additional Links</h3>
+                    <ul>
+                        <template x-for="link in currentProject.additionalLinks">
+                            <li><a :href="link.url" target="_blank" x-text="link.type"></a></li>
+                        </template>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>© 2025-2026 Alex Gonzalez</p>
+        </footer>
+        <script>
+            fetch('projects.json')
+                .then(response => response.json())
+                .then(data => {
+                    const projectList = document.getElementById('project-list');
+                    let previousType = '';
+                    data.slice(1).forEach((project, index) => {
+                        if (project.type !== previousType) {
+                            const typeHeading = document.createElement('h3');
+                            typeHeading.className = 'project-type';
+                            typeHeading.textContent = project.type;
+                            projectList.appendChild(typeHeading);
+                            previousType = project.type;
+                        }
+                        const listItem = document.createElement('li');
+                        const romanNumerals = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X'];
+                        listItem.innerHTML = `
+                            <div class="project-number">${romanNumerals[index + 1] || index + 2}</div>
+                            <div class="project-thumbnail" style="background-image: url('${project.images[0]}');"></div>
+                            <div class="project-description">
+                                <div class="project-title">${project.title}</div>
+                                <div class="project-summary">${project.summary}</div>
+                            </div>
+                        `;
+                        projectList.appendChild(listItem);
+                    });
+                })
+                .catch(error => console.error('Error loading projects:', error));
+        </script>
+    </body>
+</html>

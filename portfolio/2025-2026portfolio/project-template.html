@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Project Details</title>
+        <link rel="stylesheet" href="2024-style.css">
+    </head>
+    <body>
+        <header>
+            <h1 id="project-title">Project Title</h1>
+        </header>
+        <main>
+            <div id="project-details">
+                <!-- Project details will be dynamically inserted here -->
+            </div>
+            <a class="back-home-button" href="../index.html">Back to Home</a>
+        </main>
+        <footer>
+            <p>© 2024 Alex Gonzalez</p>
+        </footer>
+        <script>
+            const urlParams = new URLSearchParams(window.location.search);
+            const projectId = urlParams.get('id');
+
+            fetch('projects.json')
+                .then(response => response.json())
+                .then(data => {
+                    const project = data[projectId];
+                    if (project) {
+                        document.getElementById('project-title').textContent = project.title;
+                        document.getElementById('project-details').innerHTML = `
+                            <div class="project-summary">${project.summary}</div>
+                            <div class="project-description">${project.description}</div>
+                            ${project.images.map(image => `<img src="${image}" alt="${project.title} image" class="project-image">`).join('')}
+                            ${project.videos.map(video => `<iframe src="${video}" frameborder="0" allowfullscreen class="project-video"></iframe>`).join('')}
+                            ${project.additionalLinks.map(link => `<a href="${link.url}" target="_blank">${link.type}</a>`).join('')}
+                            <div class="project-contributions">
+                                <h3>Contributions</h3>
+                                <ul>
+                                    ${project.contributions.roles.map(role => `<li>${role}</li>`).join('')}
+                                </ul>
+                                <h3>Tools Used</h3>
+                                <ul>
+                                    ${project.contributions.tools.map(tool => `<li>${tool}</li>`).join('')}
+                                </ul>
+                            </div>
+                            <a class="back-to-business-button" href="${project.link}">Read More</a>
+                        `;
+                    } else {
+                        document.getElementById('project-details').textContent = 'Project not found.';
+                    }
+                })
+                .catch(error => console.error('Error loading project:', error));
+        </script>
+    </body>
+</html>
