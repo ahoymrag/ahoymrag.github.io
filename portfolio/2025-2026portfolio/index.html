@@ -330,6 +330,35 @@
                 filter: grayscale(1);
             }
 
+            .project-thumbnail.cpc-app-logo {
+                position: relative;
+                display: grid;
+                place-items: center;
+                overflow: hidden;
+                background: #1769d1 url('https://cpcnewhaven.org/assets/web-assets/cpcLOGO.png') center / 78% auto no-repeat;
+                filter: none;
+                color: #fff;
+                isolation: isolate;
+            }
+
+            .project-thumbnail.prompt-logo {
+                display: grid;
+                place-items: center;
+                background: #f0c928;
+                filter: none;
+                color: #111;
+            }
+
+            .project-thumbnail.prompt-logo::after {
+                content: 'pro-mpt';
+                font-size: 1.25rem;
+                font-weight: 800;
+                letter-spacing: -0.06em;
+            }
+
+            .project-thumbnail.pathr-logo { display: grid; place-items: center; background: #68764a; filter: none; color: #fff4df; }
+            .project-thumbnail.pathr-logo::after { content: 'pathr'; font-size: 1.4rem; font-weight: 800; letter-spacing: -0.07em; }
+
             .back-home-button {
                 background-color: #111;
                 color: #fff;
@@ -590,9 +619,20 @@
                         }
                         const listItem = document.createElement('li');
                         const romanNumerals = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X'];
+                        const thumbnailClass = project.title === 'CPC - WEB - APP'
+                            ? ' cpc-app-logo'
+                            : project.title === 'pro-mpt' ? ' prompt-logo'
+                            : project.title === 'pathr' ? ' pathr-logo' : '';
+                        const thumbnailMarkup = project.title === 'CPC - WEB - APP'
+                            ? `<div class="project-thumbnail${thumbnailClass}" role="img" aria-label="CPC New Haven logo"></div>`
+                            : project.title === 'pro-mpt'
+                                ? `<div class="project-thumbnail${thumbnailClass}" role="img" aria-label="pro-mpt temporary logo"></div>`
+                            : project.title === 'pathr'
+                                ? `<div class="project-thumbnail${thumbnailClass}" role="img" aria-label="pathr temporary logo"></div>`
+                            : `<div class="project-thumbnail${thumbnailClass}" style="background-image: url('${project.images[0]}');"></div>`;
                         listItem.innerHTML = `<a class="project-link" href="${project.link}">
                             <div class="project-number">${romanNumerals[index + 1] || index + 2}</div>
-                            <div class="project-thumbnail" style="background-image: url('${project.images[0]}');"></div>
+                            ${thumbnailMarkup}
                             <div class="project-description">
                                 <div class="project-title">${project.title}</div>
                                 <div class="project-summary">${project.summary}</div>
