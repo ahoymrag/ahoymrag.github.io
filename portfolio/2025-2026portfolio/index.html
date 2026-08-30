@@ -382,7 +382,19 @@
 
             h1,
             h2,
-            h3,
+            h3 {
+                background-color: transparent;
+                background-image: none;
+            }
+
+            .ahoy-logo-thumb {
+                background-color: #000;
+                background-image: url('https://app.ahoy.ooo/assets/u_ahoy23-DPVI_krh.png');
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+
             .project-title,
             .project-type,
             .back-home-button,
@@ -641,13 +653,16 @@
                         const thumbnailClass = project.title === 'CPC - WEB - APP'
                             ? ' cpc-app-logo'
                             : project.title === 'pro-mpt' ? ' prompt-logo'
-                            : project.title === 'pathr' ? ' pathr-logo' : '';
+                            : project.title === 'pathr' ? ' pathr-logo'
+                            : project.title === 'Ahoy Indie Media' ? ' ahoy-logo-thumb' : '';
                         const thumbnailMarkup = project.title === 'CPC - WEB - APP'
                             ? `<div class="project-thumbnail${thumbnailClass}" role="img" aria-label="CPC New Haven logo"></div>`
                             : project.title === 'pro-mpt'
                                 ? `<div class="project-thumbnail${thumbnailClass}" role="img" aria-label="pro-mpt temporary logo"></div>`
                             : project.title === 'pathr'
                                 ? `<div class="project-thumbnail${thumbnailClass}" role="img" aria-label="pathr temporary logo"></div>`
+                            : project.title === 'Ahoy Indie Media'
+                                ? `<div class="project-thumbnail${thumbnailClass}" role="img" aria-label="Ahoy Indie Media logo"></div>`
                             : `<div class="project-thumbnail${thumbnailClass}" style="background-image: url('${project.images[0]}');"></div>`;
                         listItem.innerHTML = `<a class="project-link" href="${project.link}">
                             <div class="project-number">${romanNumerals[index + 1] || index + 2}</div>
