@@ -1,6 +1,7 @@
 <html>
 
 <head><!-- AS OF 2.21.24 -->
+    <meta charset="UTF-8">
     <!-- UPDATED 12-21-24 -->
     <!-- UPDATED 01-29-25-->
     <meta name="description"
@@ -13,7 +14,7 @@
     <!-- Add any other relevant meta tags -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./portfolio/src/ag-cv-css-1.css">
-    <link rel="stylesheet" href="./src/css/index-addons.css">
+    <link rel="stylesheet" href="./src/css/index-addons.css?v=20260830-nav5">
     <link rel="stylesheet" href="./src/css/fps-hud.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
@@ -55,6 +56,7 @@
             document.body.style.backgroundSize = 'cover';
             document.body.style.backgroundRepeat = 'no-repeat';
             document.body.style.backgroundPosition = 'center';
+            document.body.style.backgroundAttachment = 'fixed';
         });
     </script>
 </head>
@@ -526,34 +528,20 @@
                                         class="header-button"><h3>Active
                                             Projects</h3></div></a></li> -->
 
-                        <li><a href="./portfolio/src/bts/bts.html">
-                                <div class="header-button">
-                                    <h3>Behind the
-                                        Scenes
-                                    </h3>
+                        <li class="nav-submenu">
+                            <details>
+                                <summary><span class="header-button"><h3>More</h3></span></summary>
+                                <div class="nav-submenu-links">
+                                    <a href="./portfolio/src/about.html">About</a>
+                                    <a href="./experiments/index.html">Experiments</a>
+                                    <a href="./portfolio/src/bts/bts.html">Behind the Scenes</a>
+                                    <a href="/teaching-credentials.html">Teaching Portfolio</a>
+                                    <a href="./public/cv+resume/cv-index.html">CV</a>
+                                    <a href="./photography/index.html">Photography</a>
+                                    <a href="./gallery/index.html">Paint</a>
                                 </div>
-                            </a></li>
-                        <!-- <li><a
-                                    href="./portfolio/src/filmANDanimation.html"><div
-                                        class="header-button"><h3>Film and
-                                            Animation</h3></div></a></li> -->
-
-                        <li><a href="./portfolio/src/about.html">
-                                <div class="header-button">
-                                    <h3>About</h3>
-                                </div>
-                            </a></li>
-                        <li><a href="./experiments/index.html">
-                                <div class="header-button">
-                                    <h3>Experiments</h3>
-                                </div>
-                            </a></li>
-                        <li><a href="/teaching-credentials.html">
-                                <div class="header-button">
-                                    <h3>Teaching
-                                        Portfolio</h3>
-                                </div>
-                            </a></li>
+                            </details>
+                        </li>
                         <!-- <li><a href="./projects/VR/index.html"><div
                                         class="header-button"><h3>VR</h3></div></a></li> -->
                         <!-- <li><a href="./portfolio/churchwork/index.html"><div
@@ -568,22 +556,6 @@
                                         </h3></div></a></li> -->
                         <!-- <li><a href="./host/index.html"
                                     class="header-button"><h3>Hosting</h3></a></li> -->
-
-                        <li><a href="./public/cv+resume/cv-index.html">
-                                <div class="header-button">
-                                    <h3>CV</h3>
-                                </div>
-                            </a></li>
-                        <li><a href="./photography/index.html">
-                                <div class="header-button">
-                                    <h3>Photography</h3>
-                                </div>
-                            </a></li>
-                        <li><a href="./gallery/index.html">
-                                <div class="header-button">
-                                    <h3>Paint</h3>
-                                </div>
-                            </a></li>
 
                     </ul>
                 </div>
