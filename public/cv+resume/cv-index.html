@@ -57,6 +57,8 @@
       text-shadow: 0 0 60px rgba(120,160,255,0.3), 0 2px 4px rgba(0,0,0,0.5);
     }
 
+    header h1 a { color: inherit; text-decoration: none; }
+
     header p {
       margin-top: 0.6rem;
       font-size: clamp(0.8rem, 2.5vw, 0.95rem);
@@ -147,6 +149,17 @@
 
     /* Active tap on mobile */
     .cv-card:active { transform: translateY(-1px); }
+
+    .cv-card:focus-visible {
+      outline: 3px solid #111;
+      outline-offset: 5px;
+      box-shadow: 6px 6px 0 #111, 0 0 0 8px #fff;
+    }
+
+    .cv-card:active,
+    .cv-card:focus-visible {
+      background: #f2f2f2;
+    }
 
     /* Tags */
     .tag {
@@ -266,12 +279,14 @@
     .tag { border-radius: 0; color: #111 !important; background: #fff !important; border: 1px solid #111 !important; }
     .tag-dot { background: #111 !important; }
     footer a { color: #111; border-color: #111; border-radius: 0; }
+    .cv-card:focus-visible { outline: 3px solid #111; outline-offset: 5px; box-shadow: 6px 6px 0 #111, 0 0 0 8px #fff; }
+    .cv-card:active, .cv-card:focus-visible { background: #f2f2f2; }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Alex Gonzalez</h1>
+    <h1><a href="../../index.html" aria-label="Alex Gonzalez home">Alex Gonzalez</a></h1>
     <p>CVs &amp; Resumes</p>
     <div class="header-rule"></div>
   </header>
@@ -292,7 +307,7 @@
     <a href="https://storage.googleapis.com/ag-photography/resume/Alex_Gonzalez_Educator_Resume.pdf" class="cv-card">
       <span class="tag"><span class="tag-dot"></span>Resume · 2026</span>
       <h2>Educator Resume</h2>
-      <p>Educator, filmmaker, and creative technologist with teaching, media, software, and curriculum experience.</p>
+      <p>Official resume PDF.</p>
       <span class="arrow">Open PDF ↗</span>
     </a>
 
@@ -303,15 +318,8 @@
   </section>
 
   <div class="cv-grid">
-    <a href="./25cv/cv25.html" class="cv-card">
-      <span class="tag"><span class="tag-dot"></span>General · 2025</span>
-      <h2>2025 CV</h2>
-      <p>Prior year general CV — creative director, filmmaker, and software designer.</p>
-      <span class="arrow">View →</span>
-    </a>
-
     <a href="../../share/index.html" class="cv-card">
-      <span class="tag"><span class="tag-dot"></span>Portfolio · Past</span>
+      <span class="tag"><span class="tag-dot"></span>Portfolio · 2021–2025</span>
       <h2>Older Portfolio</h2>
       <p>Earlier professional portfolio work across web, product, film, and digital media.</p>
       <span class="arrow">View older portfolio →</span>
