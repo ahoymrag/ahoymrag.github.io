@@ -63,7 +63,15 @@ Location: `portfolio/2025-2026portfolio/portfolio-content/creatures-bts/` and `s
 
 > **IMPORTANT**: These 5 coffee images belong **ONLY** in general site background rotations (`index.html`, `portfolio/portfolio-index.html`, `portfolio/2025-2026portfolio/index.html`). They must **NEVER** be placed on the *Creatures in the Tall Grass* project page (`creatures-in-the-tall-grass.html`).
 
-### C. Film Stills (6 PNG Stills)
+### C. Alex Gonzalez Portraits (2 Active Images)
+Location: `portfolio/2025-2026portfolio/portfolio-content/creatures-bts/` and `src/assets/creatures-bts/`
+
+| Filename | Description | Active In |
+|---|---|---|
+| `ag-portrait-beach.jpg` | Alex standing in the sunset tide on the beach holding shoes | Site background pools ONLY |
+| `ag-portrait-childhood.jpg` | Young Alex as a toddler in space pajamas and purple overalls | Site background pools ONLY |
+
+### D. Film Stills (6 PNG Stills)
 Location: `portfolio/2025-2026portfolio/portfolio-content/creatures-stills/`
 - `CREATURES-STILL-A-1.png` through `CREATURES-STILL-A-6.png`
 
@@ -73,13 +81,13 @@ Location: `portfolio/2025-2026portfolio/portfolio-content/creatures-stills/`
 
 ### 1. `index.html` (Homepage)
 - **Background Layer**: `#ecm-bg` (`.ecm-bg-layer`) and `.ecm-grain-overlay`.
-- **Image Pool**: Array of 14 images (9 CITG BTS + 5 Coffee).
+- **Image Pool**: Array of 16 images (9 CITG BTS + 5 Coffee + 2 Portraits).
 - **Behavior**: Picks a random background on load, transitions smoothly every 10 seconds if `prefers-reduced-motion` is false.
 - **Components**: Welcome overlay / modal, Curriculum panel, link to FPS Forest World, portfolio links.
 
 ### 2. `portfolio/portfolio-index.html` (Portfolio Gateway)
 - **Background Layer**: `#ecm-bg` (`.ecm-bg-layer`) and `.ecm-grain-overlay`.
-- **Image Pool**: Array of 14 images (9 CITG BTS + 5 Coffee).
+- **Image Pool**: Array of 16 images (9 CITG BTS + 5 Coffee + 2 Portraits).
 - **Behavior**: Random background on load, cycles every 10 seconds.
 - **Navigation**: Year links for `2026`, `2024-2025`, and `2023 and Before`.
 
