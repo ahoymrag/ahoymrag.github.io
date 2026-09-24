@@ -2,8 +2,6 @@
 
 <head><!-- AS OF 2.21.24 -->
     <meta charset="UTF-8">
-    <!-- UPDATED 12-21-24 -->
-    <!-- UPDATED 01-29-25-->
     <meta name="description"
         content="Portfolio website for Alex Gonzalez of Sleepy Hollow. Includes CV, animation, VR experiments, and teacher work.">
     <meta name="keywords"
@@ -11,7 +9,6 @@
     <meta name="author" content="Alex Gonzalez">
     <meta name="robots" content="index, follow">
     <meta name="googlebot" content="index, follow">
-    <!-- Add any other relevant meta tags -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./portfolio/src/ag-cv-css-1.css">
     <link rel="stylesheet" href="./src/css/index-addons.css?v=20260830-nav5">
@@ -33,35 +30,55 @@
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const backgroundImages = [
-                'https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExa3UzcHpuZm1kbXdlaG8xMTV4Y3J0cnU4MGI1YzVmZjZ5aHJyYWx0aSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3HW49pLbfiKsvsc40p/giphy.gif',
-                'https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbms3MnNnc2hpcjFpdGRtMzE2ZTN5Z3d2dTdzNG80ZmVrNWd0dWh3dyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/5bDAc3il2DySZAFGpQ/giphy.gif',
-                'https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExc2NhZTBwcm5nazE5MzZ1c245eHlqa2NyOW53eWU3cmplcTdlZ2NxYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/7FfMZCl2DSThYO1KGf/giphy.gif',
-                'https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExemU4OXhoMXF5eHhtZTVwaTBkNnBuemYwcjQzaDVraXZiYXdtZGNzZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/aCCleAr6W1njtygxHC/giphy.gif',
-                'https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExM2M2c2g0ZXQyOWttZXdwZHgxbGtjbHExZWg2aHNreW51MGlleml0YyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/irCR68lB8tZDy8GKb0/giphy.gif',
-                'https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExc3JjODUzYmw1ZHV3YnlrOWI1djlqM3UzajgwaXdseXRhZTAwMWY1aiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xKBdOSxnnd03FaPgxn/giphy.gif',
-                'https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNGxlOTV3bzhzenJiemZkNDRhMG14djFmOGJqdWFtNGM1dDNsY3poaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3ohhwuJS2LOyBhPt96/giphy.gif',
-                'https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcnIyMWxvYnQyZjZ2Y3NqMnd2ZXZlM2JpMXdhazdmcmJxd2IxMjltMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/4bhs1boql4XVJgmm4H/giphy.gif',
-                'https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExbDdlYjVjZ2o2ZzFuYjhycmNvYmNzbjJ2YmU4bGozM2J1MzJzbGJ2aiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/39lJ5rGSMmXbINhurn/giphy.gif',
-                'https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExY2Y1MjlwNDAyaW93YTlnOWo5anVlcjd3cXk4MDkwNmRmdTNobm83bCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/gIODGWDBuG5AWlUExJ/giphy.gif',
-                'https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMWpkMjVqeHZ0cG1mYzAzOXdmYnZ4ZWt1eWw0MTM1MTBiYzhndzMweiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/iI4vhciiVh2b3j9sgo/giphy.gif',
-                'https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExMTI0dHd1eDdnc2lrZTQ4OGlkamp6ejlrejR2aGYybGtqOXhuYTJwNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Kc2J1Ox5fGmt6m9R6w/giphy.gif',
-                'https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdnJmYXc4YWd6bzZmeGN3M3B2eTZvbnJqc2hscTd4Y3E0YXB1eWJnMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/lpxs7DGIViMi31IvWr/giphy.gif'
-
-
+                './src/assets/creatures-bts/citg-bts-01-desk-rig.jpg',
+                './src/assets/creatures-bts/citg-bts-02-marsh-road.jpg',
+                './src/assets/creatures-bts/citg-bts-03-tripod-field.jpg',
+                './src/assets/creatures-bts/citg-bts-04-crew-pizza.jpg',
+                './src/assets/creatures-bts/citg-bts-06-field-walk.jpg',
+                './src/assets/creatures-bts/citg-bts-07-attic-rafters.jpg',
+                './src/assets/creatures-bts/citg-bts-08-interior-camera.jpg',
+                './src/assets/creatures-bts/citg-bts-09-woods-thumbsup.jpg',
+                './src/assets/creatures-bts/citg-bts-10-field-trail.jpg',
+                './src/assets/creatures-bts/ecm-koffee-01-interior.jpg',
+                './src/assets/creatures-bts/ecm-koffee-02-counter.jpg',
+                './src/assets/creatures-bts/ecm-koffee-03-espresso.jpg',
+                './src/assets/creatures-bts/ecm-koffee-04-cup.jpg',
+                './src/assets/creatures-bts/ecm-koffee-05-sticker.jpg'
             ];
 
-            const randomIndex = Math.floor(Math.random() * backgroundImages.length);
-            const selectedImage = backgroundImages[randomIndex];
-            document.body.style.backgroundImage = `url(${selectedImage})`;
-            document.body.style.backgroundSize = 'cover';
-            document.body.style.backgroundRepeat = 'no-repeat';
-            document.body.style.backgroundPosition = 'center';
-            document.body.style.backgroundAttachment = 'fixed';
+            let currentIndex = Math.floor(Math.random() * backgroundImages.length);
+            const bgEl = document.getElementById('ecm-bg');
+
+            const applyBg = (index) => {
+                const imgUrl = backgroundImages[index];
+                if (bgEl) {
+                    bgEl.style.backgroundImage = `linear-gradient(180deg, rgba(8, 10, 12, 0.72) 0%, rgba(8, 10, 12, 0.85) 100%), url('${imgUrl}')`;
+                } else {
+                    document.body.style.backgroundImage = `linear-gradient(180deg, rgba(8, 10, 12, 0.72) 0%, rgba(8, 10, 12, 0.85) 100%), url('${imgUrl}')`;
+                    document.body.style.backgroundSize = 'cover';
+                    document.body.style.backgroundRepeat = 'no-repeat';
+                    document.body.style.backgroundPosition = 'center';
+                    document.body.style.backgroundAttachment = 'fixed';
+                }
+            };
+
+            applyBg(currentIndex);
+
+            // Subtle background rotation every 10 seconds if user hasn't requested reduced motion
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches && backgroundImages.length > 1) {
+                setInterval(function () {
+                    currentIndex = (currentIndex + 1) % backgroundImages.length;
+                    applyBg(currentIndex);
+                }, 10000);
+            }
         });
     </script>
 </head>
 
 <body id="index-body">
+    <!-- Elm City Motion style cinematic background & film grain -->
+    <div id="ecm-bg" class="ecm-bg-layer" aria-hidden="true"></div>
+    <div class="ecm-grain-overlay" aria-hidden="true"></div>
 
     <!-- WELCOME SCREEN — indie game start screen -->
     <style>
@@ -539,6 +556,7 @@
                                     <a href="./public/cv+resume/cv-index.html">CV</a>
                                     <a href="./photography/index.html">Photography</a>
                                     <a href="./gallery/index.html">Paint</a>
+                                    <a href="./active-index.html">Index</a>
                                 </div>
                             </details>
                         </li>

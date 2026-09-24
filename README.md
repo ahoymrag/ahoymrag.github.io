@@ -23,5 +23,13 @@ HTML, CSS, JavaScript, Python, Svelte, TeX, and more.
 ## 🌐 Live Site
 Visit the portfolio and project site: [alexgonzalez.ooo](http://alexgonzalez.ooo)
 
+## 🤖 Agent Handoff & Recent Session Status
+For incoming AI agents (Codex, Antigravity, Claude, etc.) or collaborators, see **[HANDOFF.md](HANDOFF.md)** for complete context, active photo pools, page architectures, and strict development rules.
+
+**Key recent highlights (September 2026):**
+- **Elm City Motion (ECM) Aesthetic**: High-contrast monochrome tone curves, procedural SVG film grain noise overlays, and auto-cycling background layers across the Homepage, Portfolio Gateway, and 2026 Showcase.
+- **Creatures in the Tall Grass**: 9 curated BTS photos and 6 film stills (completely captionless), interactive 9-pill hero background switcher, and responsive grid layout. Client coffee imagery is isolated strictly to general background rotations.
+- **Permanent Image Rules**: NYC pickup truck/trailer photo (`citg-bts-05-uhaul-prep.jpg`) is permanently excluded per user preference. All stills remain captionless.
+
 ## 🤝 Contributions
 This repository represents a personal journey but remains open to ideas, feedback, and collaboration.

@@ -11,15 +11,32 @@
   <link rel="stylesheet" href="detail.css">
 </head>
 <body class="film-page">
+  <div id="ecm-bg" class="ecm-bg-layer" aria-hidden="true"></div>
+  <div class="ecm-grain-overlay" aria-hidden="true"></div>
   <div class="detail-shell">
     <nav class="detail-nav"><a href="index.html">2026 Showcase</a><a href="../../public/cv+resume/cv-index.html">Resume</a></nav>
-    <header class="detail-hero film-hero">
+    <header class="detail-hero film-hero" id="film-hero-header">
       <div>
         <p class="eyebrow">A feature film by Alex Gonzalez · 2026</p>
         <h1>Creatures in the Tall Grass</h1>
         <p class="lede">After arriving in Branford, Dallas finds a monitored marsh at the edge of his new home—and begins to follow the evidence of something hidden there.</p>
         <div class="film-meta"><span>Debut feature</span><span>Screenplay in development</span><span>Branford, Connecticut</span></div>
-        <div class="film-cta"><a href="#stills">View stills ↓</a><a class="secondary" href="../../public/cv+resume/cv-index.html">View resume ↗</a></div>
+        <div class="film-cta">
+          <a href="#stills">View stills ↓</a>
+          <a href="#bts">Behind the scenes ↓</a>
+          <a class="secondary" href="../../public/cv+resume/cv-index.html">View resume ↗</a>
+        </div>
+        <div class="bg-pills" aria-label="Select hero background photo">
+          <button type="button" class="bg-pill is-active" data-bg="./portfolio-content/creatures-bts/citg-bts-02-marsh-road.jpg">01 Marsh Road</button>
+          <button type="button" class="bg-pill" data-bg="./portfolio-content/creatures-bts/citg-bts-01-desk-rig.jpg">02 Studio Rig</button>
+          <button type="button" class="bg-pill" data-bg="./portfolio-content/creatures-bts/citg-bts-03-tripod-field.jpg">03 Field</button>
+          <button type="button" class="bg-pill" data-bg="./portfolio-content/creatures-bts/citg-bts-04-crew-pizza.jpg">04 Crew</button>
+          <button type="button" class="bg-pill" data-bg="./portfolio-content/creatures-bts/citg-bts-06-field-walk.jpg">05 Field Walk</button>
+          <button type="button" class="bg-pill" data-bg="./portfolio-content/creatures-bts/citg-bts-07-attic-rafters.jpg">06 Attic</button>
+          <button type="button" class="bg-pill" data-bg="./portfolio-content/creatures-bts/citg-bts-08-interior-camera.jpg">07 Camera Rig</button>
+          <button type="button" class="bg-pill" data-bg="./portfolio-content/creatures-bts/citg-bts-09-woods-thumbsup.jpg">08 Woods</button>
+          <button type="button" class="bg-pill" data-bg="./portfolio-content/creatures-bts/citg-bts-10-field-trail.jpg">09 Trail</button>
+        </div>
       </div>
     </header>
 
@@ -28,16 +45,78 @@
       <article class="detail-card"><h2>The film</h2><p>The screenplay moves from arrival and discovery, through an encounter with an injured creature and a widening tracking network, toward a return to the marsh.</p><p class="status">Featured debut · In development</p></article>
     </section>
 
-    <section id="stills" aria-label="Film stills"><p class="gallery-note">Ungraded stills from <em>Creatures in the Tall Grass</em>.</p><div class="still-grid">
-      <figure><img src="portfolio-content/creatures-stills/CREATURES-STILL-A-1.png" alt="Figure entering tall grass"><figcaption>Ungraded still · The field</figcaption></figure>
-      <figure><img src="portfolio-content/creatures-stills/CREATURES-STILL-A-2.png" alt="Figure standing in a dim interior"><figcaption>Arrival / interior</figcaption></figure>
-      <figure><img src="portfolio-content/creatures-stills/CREATURES-STILL-A-3.png" alt="Figure in a dark interior"><figcaption>The signal</figcaption></figure>
-      <figure><img src="portfolio-content/creatures-stills/CREATURES-STILL-A-4.png" alt="Close view of a figure near the field"><figcaption>Watching the edge</figcaption></figure>
-      <figure><img src="portfolio-content/creatures-stills/CREATURES-STILL-A-5.png" alt="Two figures walking through a field"><figcaption>The way through</figcaption></figure>
-      <figure><img src="portfolio-content/creatures-stills/CREATURES-STILL-A-6.png" alt="Figure standing near houses"><figcaption>After the return</figcaption></figure>
+    <section id="stills" aria-label="Film stills"><div class="still-grid">
+      <figure><img src="portfolio-content/creatures-stills/CREATURES-STILL-A-1.png" alt="Figure entering tall grass"></figure>
+      <figure><img src="portfolio-content/creatures-stills/CREATURES-STILL-A-2.png" alt="Figure standing in a dim interior"></figure>
+      <figure><img src="portfolio-content/creatures-stills/CREATURES-STILL-A-3.png" alt="Figure in a dark interior"></figure>
+      <figure><img src="portfolio-content/creatures-stills/CREATURES-STILL-A-4.png" alt="Close view of a figure near the field"></figure>
+      <figure><img src="portfolio-content/creatures-stills/CREATURES-STILL-A-5.png" alt="Two figures walking through a field"></figure>
+      <figure><img src="portfolio-content/creatures-stills/CREATURES-STILL-A-6.png" alt="Figure standing near houses"></figure>
     </div></section>
+
+    <section id="bts" aria-label="Production and behind the scenes">
+      <div class="bts-grid">
+        <figure>
+          <img src="portfolio-content/creatures-bts/citg-bts-02-marsh-road.jpg" alt="Shoulder rig looking down Branford marsh road with two actors walking">
+        </figure>
+        <figure>
+          <img src="portfolio-content/creatures-bts/citg-bts-01-desk-rig.jpg" alt="RED Komodo camera setup with monitor and creature feather puppet on desk">
+        </figure>
+        <figure>
+          <img src="portfolio-content/creatures-bts/citg-bts-03-tripod-field.jpg" alt="Camera on tripod positioned in tall marsh grass">
+        </figure>
+        <figure>
+          <img src="portfolio-content/creatures-bts/citg-bts-04-crew-pizza.jpg" alt="Alex Gonzalez and crew member on couch with pizza during screenplay review">
+        </figure>
+        <figure>
+          <img src="portfolio-content/creatures-bts/citg-bts-06-field-walk.jpg" alt="Alex trekking across field with backpack">
+        </figure>
+        <figure>
+          <img src="portfolio-content/creatures-bts/citg-bts-07-attic-rafters.jpg" alt="Alex and collaborator under attic rafters">
+        </figure>
+        <figure>
+          <img src="portfolio-content/creatures-bts/citg-bts-08-interior-camera.jpg" alt="Alex operating camera on tripod for interior setup">
+        </figure>
+        <figure>
+          <img src="portfolio-content/creatures-bts/citg-bts-09-woods-thumbsup.jpg" alt="Alex giving thumbs up in woods">
+        </figure>
+        <figure>
+          <img src="portfolio-content/creatures-bts/citg-bts-10-field-trail.jpg" alt="Alex walking along meadow trail">
+        </figure>
+      </div>
+    </section>
 
     <footer><a href="../../public/cv+resume/cv-index.html">View full resume ↗</a><br><br><a href="index.html">← Back to 2026 Showcase</a></footer>
   </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const heroHeader = document.getElementById('film-hero-header');
+      const pills = document.querySelectorAll('.bg-pill');
+      const bgLayer = document.getElementById('ecm-bg');
+
+      const setBg = (url) => {
+        if (heroHeader) {
+          heroHeader.style.backgroundImage = `linear-gradient(180deg, rgba(11, 13, 14, 0.25) 20%, rgba(11, 13, 14, 0.94) 100%), url('${url}')`;
+        }
+        if (bgLayer) {
+          bgLayer.style.backgroundImage = `linear-gradient(180deg, rgba(8, 12, 14, 0.78) 0%, rgba(8, 12, 14, 0.92) 100%), url('${url}')`;
+        }
+      };
+
+      pills.forEach((pill) => {
+        pill.addEventListener('click', function () {
+          pills.forEach(p => p.classList.remove('is-active'));
+          this.classList.add('is-active');
+          const bg = this.getAttribute('data-bg');
+          if (bg) setBg(bg);
+        });
+      });
+
+      // Initial backdrop
+      if (bgLayer) {
+        bgLayer.style.backgroundImage = "linear-gradient(180deg, rgba(8, 12, 14, 0.78) 0%, rgba(8, 12, 14, 0.92) 100%), url('./portfolio-content/creatures-bts/citg-bts-02-marsh-road.jpg')";
+      }
+    });
+  </script>
 </body>
 </html>

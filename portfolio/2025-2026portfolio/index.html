@@ -8,10 +8,32 @@
         <style>
             body {
                 font-family: 'Barlow', 'Helvetica Neue', Arial, sans-serif;
-                background: #101b1a;
+                background-color: #0c0e10;
                 color: #f3efe3;
                 margin: 0;
                 padding: 0;
+                position: relative;
+            }
+
+            .ecm-bg-layer {
+                position: fixed;
+                inset: 0;
+                z-index: -2;
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                filter: contrast(1.12);
+                transition: opacity 1s cubic-bezier(0.4, 0, 0.2, 1);
+            }
+
+            .ecm-grain-overlay {
+                position: fixed;
+                inset: 0;
+                z-index: -1;
+                opacity: 0.28;
+                pointer-events: none;
+                background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 170 170' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.95' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.35'/%3E%3C/svg%3E");
+                mix-blend-mode: soft-light;
             }
 
             header, footer {
@@ -534,6 +556,8 @@
         </style>
     </head>
     <body x-data="{ showModal: false, currentProject: {} }">
+        <div id="ecm-bg" class="ecm-bg-layer" aria-hidden="true"></div>
+        <div class="ecm-grain-overlay" aria-hidden="true"></div>
         <header>
             <h1>2026 Project Showcase</h1>
             <p class="year-summary">A year 
@@ -576,6 +600,33 @@
             <button class="gallery-image" type="button" data-gallery-image="./portfolio-content/creatures-stills/CREATURES-STILL-A-6.png" data-gallery-alt="Figure standing near houses">
                 <img src="./portfolio-content/creatures-stills/CREATURES-STILL-A-6.png" alt="Figure standing near houses">
             </button>
+            <button class="gallery-image" type="button" data-gallery-image="./portfolio-content/creatures-bts/citg-bts-01-desk-rig.jpg" data-gallery-alt="Behind the scenes: Camera rig and creature puppet on desk">
+                <img src="./portfolio-content/creatures-bts/citg-bts-01-desk-rig.jpg" alt="Behind the scenes: Camera rig and creature puppet on desk">
+            </button>
+            <button class="gallery-image" type="button" data-gallery-image="./portfolio-content/creatures-bts/citg-bts-02-marsh-road.jpg" data-gallery-alt="Behind the scenes: Camera looking down Branford marsh road">
+                <img src="./portfolio-content/creatures-bts/citg-bts-02-marsh-road.jpg" alt="Behind the scenes: Camera looking down Branford marsh road">
+            </button>
+            <button class="gallery-image" type="button" data-gallery-image="./portfolio-content/creatures-bts/citg-bts-03-tripod-field.jpg" data-gallery-alt="Behind the scenes: Camera on tripod in tall grass">
+                <img src="./portfolio-content/creatures-bts/citg-bts-03-tripod-field.jpg" alt="Behind the scenes: Camera on tripod in tall grass">
+            </button>
+            <button class="gallery-image" type="button" data-gallery-image="./portfolio-content/creatures-bts/citg-bts-04-crew-pizza.jpg" data-gallery-alt="Behind the scenes: Screenplay & production crew pizza session">
+                <img src="./portfolio-content/creatures-bts/citg-bts-04-crew-pizza.jpg" alt="Behind the scenes: Screenplay & production crew pizza session">
+            </button>
+            <button class="gallery-image" type="button" data-gallery-image="./portfolio-content/creatures-bts/citg-bts-06-field-walk.jpg" data-gallery-alt="Behind the scenes: Field trek with backpack">
+                <img src="./portfolio-content/creatures-bts/citg-bts-06-field-walk.jpg" alt="Behind the scenes: Field trek with backpack">
+            </button>
+            <button class="gallery-image" type="button" data-gallery-image="./portfolio-content/creatures-bts/citg-bts-07-attic-rafters.jpg" data-gallery-alt="Behind the scenes: Attic rafter location setup">
+                <img src="./portfolio-content/creatures-bts/citg-bts-07-attic-rafters.jpg" alt="Behind the scenes: Attic rafter location setup">
+            </button>
+            <button class="gallery-image" type="button" data-gallery-image="./portfolio-content/creatures-bts/citg-bts-08-interior-camera.jpg" data-gallery-alt="Behind the scenes: Operating camera rig for interior shot">
+                <img src="./portfolio-content/creatures-bts/citg-bts-08-interior-camera.jpg" alt="Behind the scenes: Operating camera rig for interior shot">
+            </button>
+            <button class="gallery-image" type="button" data-gallery-image="./portfolio-content/creatures-bts/citg-bts-09-woods-thumbsup.jpg" data-gallery-alt="Behind the scenes: Woods shoot day thumbs up">
+                <img src="./portfolio-content/creatures-bts/citg-bts-09-woods-thumbsup.jpg" alt="Behind the scenes: Woods shoot day thumbs up">
+            </button>
+            <button class="gallery-image" type="button" data-gallery-image="./portfolio-content/creatures-bts/citg-bts-10-field-trail.jpg" data-gallery-alt="Behind the scenes: Marsh edge trail exploration">
+                <img src="./portfolio-content/creatures-bts/citg-bts-10-field-trail.jpg" alt="Behind the scenes: Marsh edge trail exploration">
+            </button>
         </div>
 
         <div class="gallery-modal" id="gallery-modal" role="dialog" aria-modal="true" aria-label="Creatures in the Tall Grass image gallery">
@@ -609,6 +660,37 @@
             <p>© 2026 ALEX GONZALEZ · ALL RIGHTS RESERVED</p>
         </footer>
         <script>
+            // Elm City Motion style background switcher
+            const backgroundImages = [
+                './portfolio-content/creatures-bts/citg-bts-01-desk-rig.jpg',
+                './portfolio-content/creatures-bts/citg-bts-02-marsh-road.jpg',
+                './portfolio-content/creatures-bts/citg-bts-03-tripod-field.jpg',
+                './portfolio-content/creatures-bts/citg-bts-04-crew-pizza.jpg',
+                './portfolio-content/creatures-bts/citg-bts-06-field-walk.jpg',
+                './portfolio-content/creatures-bts/citg-bts-07-attic-rafters.jpg',
+                './portfolio-content/creatures-bts/citg-bts-08-interior-camera.jpg',
+                './portfolio-content/creatures-bts/citg-bts-09-woods-thumbsup.jpg',
+                './portfolio-content/creatures-bts/citg-bts-10-field-trail.jpg',
+                './portfolio-content/creatures-bts/ecm-koffee-01-interior.jpg',
+                './portfolio-content/creatures-bts/ecm-koffee-02-counter.jpg',
+                './portfolio-content/creatures-bts/ecm-koffee-03-espresso.jpg',
+                './portfolio-content/creatures-bts/ecm-koffee-04-cup.jpg',
+                './portfolio-content/creatures-bts/ecm-koffee-05-sticker.jpg'
+            ];
+            let currentBgIndex = Math.floor(Math.random() * backgroundImages.length);
+            const bgElement = document.getElementById('ecm-bg');
+            const applyShowcaseBg = (idx) => {
+                if (bgElement) {
+                    bgElement.style.backgroundImage = `linear-gradient(180deg, rgba(8, 12, 14, 0.78) 0%, rgba(8, 12, 14, 0.9) 100%), url('${backgroundImages[idx]}')`;
+                }
+            };
+            applyShowcaseBg(currentBgIndex);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches && backgroundImages.length > 1) {
+                setInterval(() => {
+                    currentBgIndex = (currentBgIndex + 1) % backgroundImages.length;
+                    applyShowcaseBg(currentBgIndex);
+                }, 9500);
+            }
             const galleryModal = document.getElementById('gallery-modal');
             const galleryModalImage = document.getElementById('gallery-modal-image');
             const galleryClose = galleryModal.querySelector('.gallery-close');
