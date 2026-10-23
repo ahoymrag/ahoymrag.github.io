@@ -35,7 +35,7 @@ The site serves multiple purposes:
 - **Global CSS**: `src/css/super-global.css` — Site-wide utilities and resets
 - **Responsive design**: Uses viewport meta tags and mobile-first CSS
 
-The site uses Tailwind CSS (in dependencies) and PostCSS with Autoprefixer configured, but there's no build step—CSS is handwritten and included directly in HTML.
+CSS is handwritten and included directly in HTML. Root npm tooling and vendored node_modules were removed because the public site does not use them.
 
 ### JavaScript
 
@@ -105,7 +105,7 @@ When modifying `src/scripts/fps-world/`:
 **Portfolio & Static Pages:**
 - **HTML5 / CSS3 / JavaScript** — Core technologies
 - **Alpine.js** — Minimal JavaScript interactivity (no build step)
-- **Tailwind CSS / PostCSS / Autoprefixer** — Configured but no build process
+- **Handwritten CSS** — Included directly, with no npm build process
 - **Plausible Analytics** — Lightweight analytics tracking
 - **GitHub Pages** — Hosting and deployment
 
@@ -148,7 +148,7 @@ When modifying `src/scripts/fps-world/`:
 ## Notes for Future Development
 
 **General:**
-- The `package.json` includes React Router and Cordova, but they're not currently used—these can be cleaned up if not needed
+- Root npm dependencies, the Svelte dashboard experiment, and the Cordova JourneyApp experiment were removed on October 23, 2026. Do not restore unused tooling.
 - If adding a build process (Tailwind compilation, minification), update this AGENTS.md
 - When adding new sections, follow the existing pattern: create a directory, add section-specific CSS, link from navigation
 - Ensure all new pages include necessary meta tags (description, keywords) for SEO

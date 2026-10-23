@@ -22,3 +22,9 @@ Sources:
 - A Google Maps API key is committed in `projects/lilMap/journeyApp/package.json` and `projects/lilMap/journeyApp/www/index.html`. Client Maps keys are visible by design; verify API restrictions, application restrictions, quotas, and usage in Google Cloud. Restrictions and misuse were not checked. Removing the string alone would not revoke it or remove Git history.
 - JourneyApp's online dependency audit was blocked by automatic approval review because it exports dependency metadata to npm. No complete all-project dependency clearance is claimed.
 - This review does not establish that other Render applications are patched or that no compromise has occurred.
+
+## Cleanup — October 23, 2026
+
+Removed the unused root npm manifests and stopped tracking the vendored `node_modules` tree. Removed the Svelte dashboard and Cordova JourneyApp experiments and the map listing that linked to JourneyApp. These removals eliminate the audited dependency trees from the published repository rather than upgrading unused applications. Other experimental pages remain because existing site pages still link to them.
+
+Removed Experiments from the homepage More menu. Public portfolio content and assets remain in place. The local ignored npm cache is retained, including the pre-existing modified `.DS_Store`; it is no longer published or required by this site. The committed Maps key remains in Git history and still needs restrictions or revocation in Google Cloud. Live Render services and the installed local Node runtime remain outside this cleanup.
